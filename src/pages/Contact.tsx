@@ -45,24 +45,57 @@ export default function Contact() {
       return;
     }
 
-    // Here you would typically send the data to your backend
-    console.log("Form submitted:", formData);
+    // Formatar dados para WhatsApp
+    const formatarMensagemWhatsApp = () => {
+      let mensagem = `🏢 *NOVO CONTATO - SITE MONITORAR*\n\n`;
+      mensagem += `👤 *Nome:* ${formData.name}\n`;
+      mensagem += `📞 *Telefone:* ${formData.phone}\n`;
+      mensagem += `📧 *E-mail:* ${formData.email}\n`;
+      
+      if (formData.company) {
+        mensagem += `🏭 *Empresa:* ${formData.company}\n`;
+      }
+      
+      if (formData.activity) {
+        mensagem += `⚙️ *Atividade:* ${formData.activity}\n`;
+      }
+      
+      if (formData.interest) {
+        mensagem += `🎯 *Área de Interesse:* ${formData.interest}\n`;
+      }
+      
+      if (formData.message) {
+        mensagem += `\n💬 *Mensagem:*\n${formData.message}`;
+      }
+      
+      return mensagem;
+    };
+
+    // Enviar via WhatsApp
+    const phoneNumber = "5521997521212";
+    const mensagemFormatada = formatarMensagemWhatsApp();
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(mensagemFormatada)}`;
+    
+    // Abrir WhatsApp
+    window.open(whatsappUrl, '_blank');
     
     toast({
-      title: "Mensagem enviada!",
-      description: "Entraremos em contato em breve. Obrigado!",
+      title: "Redirecionando para WhatsApp!",
+      description: "Seus dados foram formatados e serão enviados via WhatsApp.",
     });
 
-    // Reset form
-    setFormData({
-      name: "",
-      phone: "",
-      email: "",
-      company: "",
-      activity: "",
-      interest: "",
-      message: ""
-    });
+    // Reset form após um pequeno delay
+    setTimeout(() => {
+      setFormData({
+        name: "",
+        phone: "",
+        email: "",
+        company: "",
+        activity: "",
+        interest: "",
+        message: ""
+      });
+    }, 1000);
   };
 
   const handleInputChange = (field: string, value: string) => {
@@ -218,8 +251,9 @@ export default function Contact() {
                   />
                 </div>
 
-                <Button type="submit" className="w-full bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200">
-                  Enviar Mensagem
+                <Button type="submit" className="w-full bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-200 flex items-center justify-center gap-2">
+                  <Phone className="h-5 w-5" />
+                  Enviar via WhatsApp
                 </Button>
               </form>
               </CardContent>

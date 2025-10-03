@@ -28,6 +28,7 @@ import { AnimatedText } from "@/components/AnimatedText";
 import { LogosCarousel } from "@/components/LogosCarousel";
 import { OfferingsSection } from "@/components/OfferingsSection";
 import { InstagramFeed } from "@/components/InstagramFeed";
+import { useNavigate } from "react-router-dom";
 
 const stats = [
   { number: "16", label: "Anos de experiência", icon: Award },
@@ -67,6 +68,16 @@ const segments = [
 ];
 
 export default function Home() {
+  const navigate = useNavigate();
+
+  // Função para abrir WhatsApp com mensagem personalizada
+  const handleConsultorClick = () => {
+    const phoneNumber = "5521997521212";
+    const message = "Olá! Gostaria de falar com um consultor da Monitorar Consultoria sobre os serviços oferecidos.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -147,7 +158,10 @@ export default function Home() {
                     ))}
                   </ul>
                   <div className="text-center mt-auto">
-                    <Button className="w-full bg-[#4fc106] hover:bg-[#43ad06] text-white">
+                    <Button 
+                      onClick={handleConsultorClick}
+                      className="w-full bg-[#4fc106] hover:bg-[#43ad06] text-white"
+                    >
                       Fale com um Consultor
                     </Button>
                   </div>
@@ -393,7 +407,11 @@ export default function Home() {
             Entre em contato conosco e descubra como podemos ajudar sua empresa 
             a manter os mais altos padrões de segurança e sustentabilidade.
           </p>
-          <Button size="lg" className="bg-success hover:bg-success/90 text-white px-8 py-3 text-lg">
+          <Button 
+            onClick={handleConsultorClick}
+            size="lg" 
+            className="bg-success hover:bg-success/90 text-white px-8 py-3 text-lg"
+          >
             Fale com um Consultor
           </Button>
         </div>

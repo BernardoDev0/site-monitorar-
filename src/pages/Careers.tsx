@@ -13,6 +13,8 @@ import {
   Clock,
   MapPin
 } from "lucide-react";
+// Imagem de fundo para a seção hero
+import careersBg from "/equipe/equipe5.png";
 
 const benefits = [
   {
@@ -93,6 +95,23 @@ export default function Careers() {
   const [current, setCurrent] = useState(0);
   const total = bannerImages.length;
 
+  // Função para abrir WhatsApp para candidatura
+  const handleCandidatarClick = () => {
+    const phoneNumber = "5521997521212";
+    const message = "Olá! Gostaria de me candidatar a uma vaga na Monitorar Consultoria. Podemos conversar?";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
+  // Função para enviar currículo por email
+  const handleEnviarCurriculoClick = () => {
+    const email = "recrutamento@monitorarconsultoria.com.br";
+    const subject = "Currículo - Interesse em Trabalhar na Monitorar";
+    const body = "Olá!%0A%0AEstou interessado(a) em trabalhar na Monitorar Consultoria e gostaria de enviar meu currículo.%0A%0AAtenciosamente.";
+    const mailtoUrl = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=${body}`;
+    window.location.href = mailtoUrl;
+  };
+
   // Autoplay simples: avança a cada 4s
   useEffect(() => {
     if (!carouselApi) return;
@@ -117,12 +136,50 @@ export default function Careers() {
   return (
     <div className="min-h-screen py-20 pt-32 md:pt-36 lg:pt-40">
       <div className="container mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-16">
-          <h1 className="section-title">Trabalhe Conosco</h1>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Faça parte de uma equipe que está transformando o mercado de segurança e meio ambiente
-          </p>
+        {/* Hero Trabalhe Conosco com imagem de fundo */}
+        <div className="mb-12 relative rounded-3xl overflow-hidden mt-0 z-0">
+          {/* Background image com overlays */}
+          <div className="absolute inset-0">
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105"
+              style={{
+                backgroundImage: `url(${careersBg})`,
+                filter: 'brightness(0.85) contrast(1.2) saturate(1.15)'
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-slate-900/75 via-emerald-900/60 to-green-800/70" />
+            <div className="absolute inset-0 bg-black/40" />
+          </div>
+          <div className="text-center py-16 relative">
+            {/* Decoração de fundo */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-64 h-64 bg-gradient-to-r from-primary/10 to-secondary/10 rounded-full blur-3xl opacity-30" />
+            </div>
+            
+            <div className="relative z-10">
+              <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-sm px-6 py-2 rounded-full mb-6 border border-white/20">
+                <div className="w-2 h-2 bg-primary rounded-full animate-pulse" />
+                <span className="text-sm font-medium text-white">Trabalhe Conosco</span>
+                <div className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
+              </div>
+              
+              <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-md">
+                Faça Parte da Nossa Equipe
+              </h1>
+              
+              <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow">
+                Junte-se a uma equipe que está <span className="font-semibold text-green-200">transformando o mercado</span> de 
+                <span className="font-semibold text-emerald-300">segurança e meio ambiente</span>
+              </p>
+              
+              {/* Linha decorativa */}
+              <div className="flex items-center justify-center mt-8">
+                <div className="h-[2px] w-40 bg-gradient-to-r from-transparent via-white/80 to-transparent" />
+                <div className="mx-4 w-3.5 h-3.5 rounded-full bg-white/90 shadow-[0_0_12px_rgba(255,255,255,0.8)] ring-2 ring-white/40" />
+                <div className="h-[2px] w-40 bg-gradient-to-l from-transparent via-white/80 to-transparent" />
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Company Culture */}
@@ -232,7 +289,10 @@ export default function Careers() {
                         </div>
                       </div>
                     </div>
-                    <Button className="mt-4 md:mt-0">
+                    <Button 
+                      onClick={handleCandidatarClick}
+                      className="mt-4 md:mt-0"
+                    >
                       Candidatar-se
                     </Button>
                   </div>
@@ -309,7 +369,11 @@ export default function Careers() {
           <div className="text-xl font-semibold mb-4">
             recrutamento@monitorarconsultoria.com.br
           </div>
-          <Button variant="secondary" className="px-8 py-3 text-lg font-semibold">
+          <Button 
+            onClick={handleEnviarCurriculoClick}
+            variant="secondary" 
+            className="px-8 py-3 text-lg font-semibold"
+          >
             Enviar Currículo
           </Button>
         </section>

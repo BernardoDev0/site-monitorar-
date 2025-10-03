@@ -1,13 +1,13 @@
+import { useState } from "react";
 import { Card, CardContent } from "@/components/ui/card";
-import { AnimatedText } from "@/components/AnimatedText";
 import { Star, Quote } from "lucide-react";
-// Imagem de fundo para a seção de depoimentos
+// Imagem de fundo para a seção hero
 import testimonialsBg from "/depoimentos.png";
 
 const testimonials = [
   {
     id: 1,
-    name: "Washington Conceição",
+    name: "João Silva",
     position: "CEO | Sócio Fundador",
     company: "ECOLOGIKA Gestão de Resíduos",
     rating: 5,
@@ -50,6 +50,14 @@ const RatingStars = ({ rating }: { rating: number }) => {
 };
 
 export default function Testimonials() {
+  // Função para abrir WhatsApp com mensagem personalizada
+  const handleConsultorClick = () => {
+    const phoneNumber = "5521997521212";
+    const message = "Olá! Gostaria de falar com um consultor da Monitorar Consultoria sobre os serviços oferecidos.";
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappUrl, '_blank');
+  };
+
   return (
     <div className="min-h-screen py-20 pt-32 md:pt-36 lg:pt-40">
       <div className="container mx-auto px-4">
@@ -172,7 +180,10 @@ export default function Testimonials() {
             a alcançar os mesmos resultados excepcionais.
           </p>
           <div className="space-x-4">
-            <button className="btn-hero bg-[#3f9905] hover:bg-[#368a05] text-white">
+            <button 
+              onClick={handleConsultorClick}
+              className="btn-hero bg-[#3f9905] hover:bg-[#368a05] text-white px-6 py-3 rounded-lg font-semibold transition-colors duration-200"
+            >
               Fale com um Consultor
             </button>
           </div>
