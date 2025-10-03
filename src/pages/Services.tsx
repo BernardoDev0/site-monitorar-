@@ -91,7 +91,7 @@ export default function Services() {
     <div className="min-h-screen py-20 pt-32 md:pt-36 lg:pt-40">
       <div className="container mx-auto px-4">
         {/* Hero Serviços com imagem de fundo */}
-        <div className="mb-12 relative rounded-3xl overflow-hidden -mt-[80px] z-0">
+        <div className="mb-12 relative rounded-3xl overflow-hidden m-0 z-0">
           {/* Background image com overlays */}
           <div className="absolute inset-0">
             <div

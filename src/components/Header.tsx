@@ -52,7 +52,7 @@ export const Header = () => {
 
   // Funções para redes sociais
   const handleInstagramClick = () => {
-    window.open('https://www.instagram.com/monitorarconsultoria/', '_blank');
+    window.open('https://www.instagram.com/monitorarconsultoria_/', '_blank');
   };
 
   const handleLinkedinClick = () => {
