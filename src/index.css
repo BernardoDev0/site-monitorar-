@@ -1,0 +1,237 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes waveSlide {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes wave {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+/* Monitorar Consultoria Design System 
+   Brand Colors: Azul escuro (#24304c), Verde 01 (#3f9905), Verde 02 (#4fc106), Verde 03 (#90ed18)
+   Typography: DM Sans
+*/
+
+@layer base {
+  :root {
+    /* Brand Colors */
+    --brand-blue: 218 34% 22%; /* #24304c */
+    --brand-green-1: 86 85% 31%; /* #3f9905 */
+    --brand-green-2: 85 92% 39%; /* #4fc106 */
+    --brand-green-3: 92 87% 51%; /* #90ed18 */
+    
+    /* Core Design System */
+    --background: 0 0% 100%;
+    --foreground: 218 34% 22%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 218 34% 22%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 218 34% 22%;
+
+    --primary: 218 34% 22%; /* Brand Blue */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 86 85% 31%; /* Brand Green 1 */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 85 92% 39%; /* Brand Green 2 */
+    --accent-foreground: 0 0% 100%;
+
+    --success: 92 87% 51%; /* Brand Green 3 */
+    --success-foreground: 218 34% 22%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 218 34% 22%;
+
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(218 34% 22%), hsl(218 34% 30%));
+    --gradient-secondary: linear-gradient(135deg, hsl(86 85% 31%), hsl(85 92% 39%));
+    --gradient-hero: linear-gradient(135deg, hsl(218 34% 22% / 0.7), hsl(218 34% 15% / 0.8));
+
+    /* Shadows */
+    --shadow-elegant: 0 10px 30px -10px hsl(218 34% 22% / 0.2);
+    --shadow-glow: 0 0 40px hsl(85 92% 39% / 0.3);
+
+    /* Animations */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 218 34% 22%;
+    --sidebar-primary: 218 34% 22%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 240 4.8% 95.9%;
+    --sidebar-accent-foreground: 218 34% 22%;
+    --sidebar-border: 220 13% 91%;
+    --sidebar-ring: 217.2 91.2% 59.8%;
+  }
+
+  .dark {
+    --background: 218 34% 8%;
+    --foreground: 0 0% 98%;
+
+    --card: 218 34% 10%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 218 34% 10%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 85 92% 39%;
+    --primary-foreground: 218 34% 8%;
+
+    --secondary: 86 85% 31%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 218 20% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 92 87% 51%;
+    --accent-foreground: 218 34% 8%;
+
+    --success: 92 87% 51%;
+    --success-foreground: 218 34% 8%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 218 20% 20%;
+    --input: 218 20% 20%;
+    --ring: 85 92% 39%;
+    --sidebar-background: 218 34% 8%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 85 92% 39%;
+    --sidebar-primary-foreground: 218 34% 8%;
+    --sidebar-accent: 218 20% 15%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 218 20% 20%;
+    --sidebar-ring: 85 92% 39%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-dm-sans;
+    padding-top: 80px; /* Espaço padrão para o header fixo */
+  }
+  
+  @media (max-width: 768px) {
+    body {
+      padding-top: 60px; /* Espaço reduzido para dispositivos móveis */
+    }
+  }
+  
+  /* Custom component classes */
+  .hero-gradient {
+    background: var(--gradient-hero);
+  }
+  
+  /* Glassy, leve e performático: usa backdrop-filter pequeno com fallback */
+  .btn-hero {
+    /* Fallback sólido para navegadores sem suporte a backdrop-filter */
+    background: linear-gradient(
+      135deg,
+      hsl(var(--accent) / 0.16),
+      hsl(var(--success) / 0.16)
+    );
+    @apply text-foreground font-semibold px-8 py-4 rounded-lg transition-colors duration-200 border border-white/20;
+
+    /* Efeito glass sutil (suportado de forma ampla e barato) */
+    backdrop-filter: saturate(120%) blur(6px);
+    -webkit-backdrop-filter: saturate(120%) blur(6px);
+
+    /* Borda interna leve para dar profundidade sem sombra pesada */
+    box-shadow: inset 0 1px 0 0 rgba(255,255,255,0.25);
+  }
+
+  .btn-hero:hover {
+    background: linear-gradient(
+      135deg,
+      hsl(var(--accent) / 0.24),
+      hsl(var(--success) / 0.24)
+    );
+    @apply text-foreground;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-primary mb-6;
+  }
+  
+  .card-service {
+    @apply bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-all duration-300 hover:-translate-y-1;
+  }
+
+  /* Reveal utility (opacity + translate only) */
+  .reveal-hidden { opacity: 0; transform: translateY(12px); }
+  .reveal-visible { opacity: 1; transform: translateY(0); transition: transform .6s ease-out, opacity .6s ease-out; }
+
+  /* Line-draw SVG helper */
+  .line-draw { stroke-dasharray: var(--dash, 120); stroke-dashoffset: var(--dash, 120); }
+  .line-draw.animated { animation: line-draw .6s ease-out forwards; }
+  @keyframes line-draw { to { stroke-dashoffset: 0; } }
+
+  .skeleton { @apply bg-muted/60 rounded; position: relative; overflow: hidden; }
+  .skeleton::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); transform: translateX(-100%); animation: skeleton 1.2s infinite; }
+  @keyframes skeleton { to { transform: translateX(100%); } }
+
+  /* Reduce motion — desativado por solicitação (sempre animar) */
+}
+  
+  /* Marquee (logos) */
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
+  .animate-marquee { animation-name: marquee; animation-timing-function: linear; animation-iteration-count: infinite; }
+  
+  /* Shine animation for header */
+  .shine-animation {
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.1) 30%,
+      rgba(255, 255, 255, 0.2) 50%,
+      rgba(255, 255, 255, 0.1) 70%,
+      transparent 100%
+    );
+    animation: shine 4s ease-in-out infinite;
+    transform: translateX(-100%);
+  }
+  
+  @keyframes shine {
+    0% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
