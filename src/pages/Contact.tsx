@@ -295,13 +295,13 @@ export default function Contact() {
                   </div>
                 </div>
 
-                <div className="flex items-center space-x-4 py-4 border-b border-gray-100 last:border-b-0">
-                  <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center">
+                <div className="flex items-start space-x-4 py-4 border-b border-gray-100 last:border-b-0">
+                  <div className="w-12 h-12 rounded-lg bg-secondary flex items-center justify-center flex-shrink-0">
                     <Mail className="h-5 w-5 text-white" />
                   </div>
-                  <div className="flex-1">
+                  <div className="flex-1 min-w-0">
                     <h3 className="font-semibold text-gray-800 mb-2">E-mail</h3>
-                    <p className="text-muted-foreground">administrativo@monitorarconsultoria.com.br</p>
+                    <p className="text-muted-foreground break-all">administrativo@monitorarconsultoria.com.br</p>
                   </div>
                 </div>
 

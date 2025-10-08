@@ -213,10 +213,10 @@ export const Header = () => {
               <div className="h-6 w-px bg-gray-300 hidden lg:block"></div>
               
               <div className="flex items-center space-x-2 text-gray-700">
-                <Mail className="h-4 w-4" />
-                <div>
+                <Mail className="h-4 w-4 flex-shrink-0" />
+                <div className="min-w-0">
                   <div className="text-xs text-gray-500">Email</div>
-                  <div className="text-xs lg:text-sm font-medium hidden sm:block">administrativo@monitorarconsultoria.com.br</div>
+                  <div className="text-xs lg:text-sm font-medium hidden sm:block break-all">administrativo@monitorarconsultoria.com.br</div>
                   <div className="text-xs lg:text-sm font-medium sm:hidden">contato@...</div>
                 </div>
               </div>
