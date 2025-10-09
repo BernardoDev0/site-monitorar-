@@ -28,7 +28,7 @@ const navigationItems = [
     dropdown: [
       { name: "Segurança do trabalho", href: "/servicos/seguranca" },
       { name: "Meio ambiente", href: "/servicos/meio-ambiente" },
-      { name: "Representação Drager", href: "/servicos" }
+      { name: "Representação Drager", href: "/servicos/drager" }
     ]
   },
   { name: "Nossos Clientes", href: "/clientes" },

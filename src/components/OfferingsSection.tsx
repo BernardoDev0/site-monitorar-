@@ -29,7 +29,7 @@ export function OfferingsSection() {
   return (
     <section className="py-20">
       <div className="container mx-auto px-4">
-        <h2 className="section-title text-center">O que oferecemos</h2>
+        <h2 className="section-title text-center">O que fornecemos</h2>
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {services.map((service, i) => (
             <ServiceCard

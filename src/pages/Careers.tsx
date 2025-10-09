@@ -293,7 +293,7 @@ export default function Careers() {
                       </div>
                     </div>
                     <Button 
-                      onClick={handleCandidatarClick}
+                      onClick={handleEnviarCurriculoClick}
                       className="mt-4 md:mt-0"
                     >
                       Candidatar-se

@@ -1,3 +1,4 @@
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { AnimatedText } from "@/components/AnimatedText";
@@ -79,13 +80,20 @@ const safetyServices = [
 
 export default function Services() {
   const location = useLocation();
-  const currentPath = location.pathname.toLowerCase();
-  let initialTab: "environmental" | "safety" | "drager" = "environmental";
-  if (currentPath.includes("seguranca") || currentPath.includes("hazop") || currentPath.includes("auditorias") || currentPath.includes("treinamentos")) {
-    initialTab = "safety";
-  } else if (currentPath.includes("meio-ambiente")) {
-    initialTab = "environmental";
-  }
+  const [activeTab, setActiveTab] = useState<"environmental" | "safety" | "drager">("environmental");
+
+  useEffect(() => {
+    const currentPath = location.pathname.toLowerCase();
+    if (currentPath.includes("seguranca") || currentPath.includes("hazop") || currentPath.includes("auditorias") || currentPath.includes("treinamentos")) {
+      setActiveTab("safety");
+    } else if (currentPath.includes("meio-ambiente")) {
+      setActiveTab("environmental");
+    } else if (currentPath.includes("drager")) {
+      setActiveTab("drager");
+    } else {
+      setActiveTab("environmental"); // default tab
+    }
+  }, [location.pathname]);
 
   return (
     <div className="min-h-screen py-20 pt-32 md:pt-36 lg:pt-40">
@@ -136,7 +144,7 @@ export default function Services() {
           </div>
         </div>
 
-        <Tabs defaultValue={initialTab} className="w-full">
+        <Tabs value={activeTab} onValueChange={setActiveTab} className="w-full">
           <div className="flex justify-center mb-8">
             <TabsList>
               <TabsTrigger value="environmental">Meio Ambiente</TabsTrigger>
@@ -228,7 +236,7 @@ export default function Services() {
               <div className="max-w-2xl mx-auto">
                 <p className="text-base text-muted-foreground mb-6 text-center">
                   Como representantes oficiais da Dräger no Brasil, oferecemos equipamentos 
-                  de última geração para detecção de gases e proteção individual.
+                  de última geração para detecção de gases e proteção respiratória.
                 </p>
                 
                 <div className="flex flex-wrap justify-center gap-3 mb-6">

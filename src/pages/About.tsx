@@ -27,9 +27,9 @@ const values = [
 
 const achievements = [
   { number: "16", label: "Anos de Experiência", icon: Award },
-  { number: "800%", label: "Crescimento em Faturamento", icon: Target },
+  { number: "800%", label: "Crescimento", icon: Target },
   { number: "33ª", label: "Posição Ranking Exame", icon: Building2 },
-  { number: "500+", label: "Clientes Atendidos", icon: Users }
+  { number: "500+", label: "Projetos Realizados", icon: Users }
 ];
 
 
@@ -128,13 +128,13 @@ export default function About() {
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20 shadow-lg">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-green-300 rounded-full animate-pulse" />
-                <span className="font-semibold text-white text-sm md:text-base">Fundada em 2008</span>
+                <span className="font-semibold text-white text-sm md:text-base">Fundada em 2009</span>
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20 shadow-lg">
               <div className="flex items-center gap-2">
                 <div className="w-3 h-3 bg-emerald-300 rounded-full animate-pulse" />
-                <span className="font-semibold text-white text-sm md:text-base">100+ Clientes</span>
+                <span className="font-semibold text-white text-sm md:text-base">500+ Projetos</span>
               </div>
             </div>
             <div className="bg-white/10 backdrop-blur-sm px-4 py-3 rounded-xl border border-white/20 shadow-lg">
@@ -173,7 +173,7 @@ export default function About() {
               <div className="space-y-6">
                 <Card className="card-service p-8 border-l-4 border-l-secondary">
                   <CardContent className="p-0">
-                    <h3 className="text-2xl font-bold text-secondary mb-4">2008 - O Início</h3>
+                    <h3 className="text-2xl font-bold text-secondary mb-4">2009 - O Início</h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                       Fundada por profissionais experientes que identificaram a necessidade de serviços especializados em segurança do trabalho e meio ambiente no mercado brasileiro.
                     </p>
@@ -184,7 +184,7 @@ export default function About() {
                   <CardContent className="p-0">
                     <h3 className="text-2xl font-bold text-accent mb-4">2025 - Consolidação</h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      16 anos depois, alcançamos a 33ª posição no ranking da revista Exame com crescimento de 800% em faturamento, atendendo mais de 100 clientes.
+                      16 anos depois, alcançamos a 33ª posição no ranking da revista Exame com crescimento de 800%, atendendo mais de 100 clientes.
                     </p>
                   </CardContent>
                 </Card>

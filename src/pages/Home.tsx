@@ -33,7 +33,7 @@ import { useNavigate } from "react-router-dom";
 
 const stats = [
   { number: "16", label: "Anos de experiência", icon: Award },
-  { number: "800%", label: "Crescimento em faturamento", icon: TrendingUp },
+  { number: "800%", label: "Crescimento", icon: TrendingUp },
   { number: "33ª", label: "Colocação ranking Exame", icon: Globe },
   { number: "100+", label: "Clientes atendidos", icon: Users },
 ];
@@ -42,7 +42,7 @@ const services = [
   {
     icon: Leaf,
     title: "Meio Ambiente",
-    description: "Desenvolvemos soluções sustentáveis visando proteger e melhorar a qualidade do meio ambiente realizando auditoria e certificação ambiental, monitoramento de qualidade do ar, avaliação geoambiental, monitoramento de efluentes e licenciamento ambiental.",
+    description: "Desenvolvemos soluções sustentáveis para proteger e melhorar a qualidade do meio ambiente realizando auditoria e certificação ambiental, monitoramento de qualidade do ar, avaliação geoambiental, monitoramento de efluentes e licenciamento ambiental.",
     items: ["LDAR", "PTS", "Procon Fumaça Preta", "Áreas Impactadas", "Ruído Extramuros", "Licenciamento"]
   },
   {
@@ -54,7 +54,7 @@ const services = [
   {
     icon: Award,
     title: "Representação Dräger",
-    description: "A Dräger é líder internacional em tecnologia de segurança desde 1889: soluções para indústria química, incêndio, água, mineração, petróleo e gás e muito mais.",
+    description: "A Dräger é líder internacional em tecnologia de segurança desde 1889, oferecendo soluções inovadoras para os setores de indústria química, combate a incêndio, saneamento, mineração, petróleo e gás, entre outros.",
     items: ["Detectores de Gases", "Equipamentos de Proteção", "Calibração", "Manutenção"]
   }
 ];
@@ -102,7 +102,7 @@ export default function Home() {
         <AnimatedText
           as="h1"
           className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-success"
-          text="Melhores soluções – Vamos trabalhar juntos?"
+          text="As melhores soluções para o seu negócio – Vamos trabalhar juntos?"
         />
         <Reveal delayMs={80}>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
@@ -147,7 +147,7 @@ export default function Home() {
       <section className="py-20 bg-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="section-title">PRINCIPAIS ÁREAS DE ATUAÇÃO</h2>
+            <h2 className="section-title">Principais áreas de atuação</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Oferecemos soluções completas em segurança do trabalho, saúde e meio ambiente
             </p>

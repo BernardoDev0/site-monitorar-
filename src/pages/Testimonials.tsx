@@ -7,7 +7,7 @@ import testimonialsBg from "/depoimentos.png";
 const testimonials = [
   {
     id: 1,
-    name: "João Silva",
+    name: "Washington Conceição",
     position: "CEO | Sócio Fundador",
     company: "ECOLOGIKA Gestão de Resíduos",
     rating: 5,
@@ -174,7 +174,7 @@ export default function Testimonials() {
         {/* CTA Section */}
         <div className="text-center mt-16">
           <h2 className="text-2xl font-bold text-primary mb-4">
-            Quer ser nosso próximo caso de sucesso?
+            Quer ser nosso próximo case de sucesso?
           </h2>
           <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
             Entre em contato conosco e descubra como podemos ajudar sua empresa 
