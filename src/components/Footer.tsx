@@ -11,7 +11,7 @@ export const Footer = () => {
           <div className="space-y-4">
             <Logo variant="light" size="sm" logoSrc="/moni2.png" />
             <p className="text-xs sm:text-sm opacity-90 leading-relaxed">
-              Soluções especializadas em segurança do trabalho, saúde ocupacional e meio ambiente.
+              Soluções especializadas em Segurança do trabalho, Saúde ocupacional e Meio ambiente.
             </p>
           </div>
 

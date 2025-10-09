@@ -126,12 +126,12 @@ export default function Services() {
               </div>
               
               <h1 className="text-4xl md:text-5xl font-bold mb-6 text-white drop-shadow-md">
-                Soluções completas em segurança e meio ambiente
+                Soluções completas em Segurança e Meio ambiente
               </h1>
               
               <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow">
-                Oferecemos serviços especializados em <span className="font-semibold text-green-200">segurança do trabalho</span> e 
-                <span className="font-semibold text-emerald-300"> meio ambiente</span> para proteger pessoas e o planeta
+                Oferecemos serviços especializados em <span className="font-semibold text-green-200">Segurança do trabalho</span> e 
+                <span className="font-semibold text-emerald-300"> Meio ambiente</span> para proteger pessoas e o planeta
               </p>
               
               {/* Linha decorativa */}
@@ -235,7 +235,7 @@ export default function Services() {
 
               <div className="max-w-2xl mx-auto">
                 <p className="text-base text-muted-foreground mb-6 text-center">
-                  Como representantes oficiais da Dräger no Brasil, oferecemos equipamentos 
+                  Como representantes oficiais da Dräger, oferecemos equipamentos 
                   de última geração para detecção de gases e proteção respiratória.
                 </p>
                 

@@ -177,8 +177,8 @@ export default function Clients() {
               
               <p className="text-xl text-white/90 max-w-3xl mx-auto leading-relaxed drop-shadow">
                 Parceiros de renome que escolheram a <span className="font-semibold text-green-200">Monitorar</span> para suas necessidades de 
-                <span className="font-semibold text-green-200"> segurança</span> e 
-                <span className="font-semibold text-emerald-300"> meio ambiente</span>
+                <span className="font-semibold text-green-200"> Segurança</span> e 
+                <span className="font-semibold text-emerald-300"> Meio ambiente</span>
               </p>
               
               {/* Linha decorativa (alto contraste) */}

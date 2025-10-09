@@ -188,7 +188,7 @@ export default function Careers() {
         {/* Company Culture */}
         <section className="mb-20">
           <h2 className="text-3xl font-bold text-center mb-12 text-primary">
-            Por que Trabalhar na Monitorar?
+            Por que trabalhar na Monitorar?
           </h2>
           {/* Banner carrossel (troca automático) */}
           <div className="mb-10 flex justify-center">
@@ -246,7 +246,7 @@ export default function Careers() {
               Crescimento Extraordinário
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Nos últimos 5 anos, crescemos 800% em faturamento e chegamos à 33ª colocação 
+              Nos últimos 5 anos, crescemos 800% e chegamos à 33ª colocação 
               no ranking da revista Exame. Esse crescimento cria oportunidades únicas para nossos colaboradores.
             </p>
           </div>

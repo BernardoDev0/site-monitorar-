@@ -14,7 +14,7 @@ const values = [
   {
     icon: Eye,
     title: "Nossa Visão",
-    description: "Ser a empresa mais reconhecida nas áreas de meio ambiente e segurança do trabalho do país.",
+    description: "Ser a empresa mais reconhecida nas áreas de Meio ambiente e Segurança do trabalho do país.",
     color: "from-blue-500 to-cyan-600"
   },
   {
@@ -175,7 +175,7 @@ export default function About() {
                   <CardContent className="p-0">
                     <h3 className="text-2xl font-bold text-secondary mb-4">2009 - O Início</h3>
                     <p className="text-lg text-muted-foreground leading-relaxed">
-                      Fundada por profissionais experientes que identificaram a necessidade de serviços especializados em segurança do trabalho e meio ambiente no mercado brasileiro.
+                      Fundada por profissionais experientes que identificaram a necessidade de serviços especializados em Segurança do trabalho e Meio ambiente no mercado brasileiro.
                     </p>
                   </CardContent>
                 </Card>
