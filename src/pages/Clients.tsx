@@ -30,8 +30,7 @@ const clients: Client[] = [
   { 
     name: "", 
     logo: "/clientes/transpetro.png",
-    sector: "Logística",
-    isSpecial: true
+    sector: "Logística"
   },
   { 
     name: "", 
@@ -68,7 +67,22 @@ const clients: Client[] = [
     name: "", 
     logo: "/clientes/nitriflex.png",
     sector: "Borrachas",
+  },
+  { 
+    name: "", 
+    logo: "/clientes/biogenese.jpeg",
+    sector: "Meio Ambiente",
     isSpecial: true
+  },
+  { 
+    name: "", 
+    logo: "/clientes/dratec.jpeg",
+    sector: "Tecnologia"
+  },
+  { 
+    name: "", 
+    logo: "/clientes/ecologika.jpeg",
+    sector: "Meio Ambiente"
   },
 ];
 

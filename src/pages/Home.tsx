@@ -20,7 +20,6 @@ import {
   CheckCircle
 } from "lucide-react";
 import heroImage from "@/assets/hero-refinery.jpg";
-// Video moved to public folder for better loading
 import paisagemImage from "@/assets/paisagem.png";
 import { ParallaxHero } from "@/components/ParallaxHero";
 import { Reveal } from "@/components/Reveal";
@@ -68,10 +67,26 @@ const segments = [
   { icon: HardHat, name: "Construção Civil" },
 ];
 
+const clientsLogos = [
+  { src: "/clientes/petrobras.png", alt: "Petrobras" },
+  { src: "/clientes/transpetro.png", alt: "Transpetro" },
+  { src: "/clientes/csn.png", alt: "CSN" },
+  { src: "/clientes/ream.png", alt: "REAM" },
+  { src: "/clientes/ipiranga.png", alt: "Ipiranga" },
+  { src: "/clientes/lubrizol.png", alt: "Lubrizol" },
+  { src: "/clientes/firjan.png", alt: "FIRJAN", className: "md:h-16 h-14" },
+  { src: "/clientes/drager.png", alt: "Dräger" },
+  { src: "/clientes/nitriflex.png", alt: "Nitriflex", className: "md:h-16 h-14 object-contain opacity-80 hover:opacity-100 transition-opacity" },
+  { src: "/clientes/iconic.png", alt: "Iconic" },
+  { src: "/clientes/rand.png", alt: "RAND" },
+  { src: "/clientes/biogenese.jpeg", alt: "Biogenese", className: "md:h-16 h-14" },
+  { src: "/clientes/dratec.jpeg", alt: "Dratec", className: "md:h-16 h-14" },
+  { src: "/clientes/ecologika.jpeg", alt: "Ecologika", className: "md:h-16 h-14" },
+];
+
 export default function Home() {
   const navigate = useNavigate();
 
-  // Função para abrir WhatsApp com mensagem personalizada
   const handleConsultorClick = useCallback(() => {
     const phoneNumber = "5521997521212";
     const message = "Olá! Gostaria de falar com um consultor da Monitorar Consultoria sobre os serviços oferecidos.";
@@ -79,7 +94,6 @@ export default function Home() {
     window.open(whatsappUrl, '_blank');
   }, []);
 
-  // Memoizar os dados processados para os stats
   const processedStats = useMemo(() => {
     return stats.map(stat => {
       const match = String(stat.number).match(/^(\D*)(\d+)(\D*)$/);
@@ -121,7 +135,6 @@ export default function Home() {
                   <stat.icon className="h-10 w-10 text-success md:h-12 md:w-12" />
                 </div>
                 <div className="text-3xl md:text-4xl font-bold">
-                  {/* Extrai número e sufixo/prefixo */}
                   {(() => {
                     const match = String(stat.number).match(/^(\D*)(\d+)(\D*)$/);
                     const prefix = match?.[1] ?? "";
@@ -355,7 +368,7 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            {/* Licensing Card (replacing Energy Solutions) */}
+            {/* Licensing Card */}
             <Card className="group overflow-hidden hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/80 backdrop-blur-sm border border-white/20 h-full flex flex-col">
               <div 
                 className="h-48 bg-cover bg-center relative overflow-hidden"
@@ -413,13 +426,11 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="py-20 relative overflow-hidden">
-        {/* Background Image */}
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${paisagemImage})` }}
         ></div>
         
-        {/* Dark Overlay for text readability */}
         <div className="absolute inset-0 bg-black/55"></div>
         
         <div className="container mx-auto px-4 text-center relative z-10">
@@ -451,20 +462,8 @@ export default function Home() {
         <div className="container mx-auto px-4">
           <h2 className="text-xl md:text-2xl font-semibold text-primary text-center mb-8">Nossos Clientes</h2>
           <LogosCarousel
-            logos={[
-              { src: "/clientes/petrobras.png", alt: "Petrobras" },
-              { src: "/clientes/transpetro.png", alt: "Transpetro" },
-              { src: "/clientes/csn.png", alt: "CSN" },
-              { src: "/clientes/ream.png", alt: "REAM" },
-              { src: "/clientes/ipiranga.png", alt: "Ipiranga" },
-              { src: "/clientes/lubrizol.png", alt: "Lubrizol" },
-              { src: "/clientes/firjan.png", alt: "FIRJAN", className: "md:h-16 h-14" },
-              { src: "/clientes/drager.png", alt: "Dräger" },
-              { src: "/clientes/nitriflex.png", alt: "Nitriflex", className: "md:h-24 h-24" },
-              { src: "/clientes/iconic.png", alt: "Iconic" },
-              { src: "/clientes/rand.png", alt: "RAND" },
-            ]}
-            speed={28}
+            logos={clientsLogos}
+            speed={50}
           />
         </div>
       </section>
