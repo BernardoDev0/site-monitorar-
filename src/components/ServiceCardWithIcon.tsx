@@ -26,7 +26,7 @@ const ServiceCardWithIconComponent = ({ title, icon: Icon, description, fullDesc
   }, []);
 
   const handleConsultant = useCallback(() => {
-    window.open('https://wa.me/5521999999999', '_blank');
+    window.open('https://wa.me/5521997521212', '_blank');
   }, []);
 
   return (

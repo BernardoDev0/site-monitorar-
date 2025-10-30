@@ -25,7 +25,7 @@ const ServiceCardComponent = ({ title, image, description, fullDescription, dela
   }, []);
 
   const handleConsultant = useCallback(() => {
-    window.open('https://wa.me/5521999999999', '_blank');
+    window.open('https://wa.mes/5521997521212', '_blank');
   }, []);
 
   return (
