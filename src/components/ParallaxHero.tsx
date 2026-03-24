@@ -37,10 +37,11 @@ export function ParallaxHero({ backgroundUrl, backgroundVideo, overlayClassName 
       {backgroundVideo ? (
         <>
           <video
+            key={backgroundVideo}
             ref={videoRef}
-            className={`absolute inset-0 w-full h-full object-cover will-change-transform transition-opacity duration-1000 ${
-              videoLoaded && !videoError ? 'opacity-100' : 'opacity-0'
-            }`}
+            src={backgroundVideo}
+            className={`absolute inset-0 w-full h-full object-cover will-change-transform transition-opacity duration-1000 ${videoLoaded && !videoError ? 'opacity-100' : 'opacity-0'
+              }`}
             autoPlay
             muted
             loop
@@ -53,9 +54,6 @@ export function ParallaxHero({ backgroundUrl, backgroundVideo, overlayClassName 
             onError={(e) => {
               console.error('Video failed to load:', e);
               setVideoError(true);
-              if (videoRef.current) {
-                videoRef.current.style.display = 'none';
-              }
             }}
             onCanPlay={() => {
               console.log('Video can start playing');
@@ -67,20 +65,18 @@ export function ParallaxHero({ backgroundUrl, backgroundVideo, overlayClassName 
               }
             }}
           >
-            <source src={backgroundVideo} type="video/mp4" />
             Seu navegador não suporta vídeos HTML5.
           </video>
           {/* Fallback image - always show until video loads or if video fails */}
-          <div 
-            ref={bgRef} 
-            className={`absolute inset-0 will-change-transform transition-opacity duration-1000 ${
-              videoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
-            }`}
-            style={{ 
-              backgroundImage: `url(${backgroundUrl})`, 
-              backgroundSize: "cover", 
+          <div
+            ref={bgRef}
+            className={`absolute inset-0 will-change-transform transition-opacity duration-1000 ${videoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
+              }`}
+            style={{
+              backgroundImage: `url(${backgroundUrl})`,
+              backgroundSize: "cover",
               backgroundPosition: "center"
-            }} 
+            }}
           />
         </>
       ) : (

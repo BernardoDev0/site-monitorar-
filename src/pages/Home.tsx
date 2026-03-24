@@ -223,7 +223,7 @@ export default function Home() {
               <div
                 className="h-48 bg-cover bg-center relative overflow-hidden"
                 style={{
-                  backgroundImage: `url('/public/epis.png')`
+                  backgroundImage: `url('/epis.png')`
                 }}
               >
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent" />
