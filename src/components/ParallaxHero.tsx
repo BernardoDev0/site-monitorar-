@@ -70,17 +70,17 @@ export function ParallaxHero({ backgroundUrl, backgroundVideo, overlayClassName 
           {/* Fallback image - always show until video loads or if video fails */}
           <div
             ref={bgRef}
-            className={`absolute inset-0 will-change-transform transition-opacity duration-1000 ${videoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
+            className={`absolute inset-0 bg-slate-900 will-change-transform transition-opacity duration-1000 ${videoLoaded && !videoError ? 'opacity-0' : 'opacity-100'
               }`}
-            style={{
+            style={backgroundUrl ? {
               backgroundImage: `url(${backgroundUrl})`,
               backgroundSize: "cover",
               backgroundPosition: "center"
-            }}
+            } : undefined}
           />
         </>
       ) : (
-        <div ref={bgRef} className="absolute inset-0 will-change-transform" style={{ backgroundImage: `url(${backgroundUrl})`, backgroundSize: "cover", backgroundPosition: "center" }} />
+        <div ref={bgRef} className="absolute inset-0 bg-slate-900 will-change-transform" style={backgroundUrl ? { backgroundImage: `url(${backgroundUrl})`, backgroundSize: "cover", backgroundPosition: "center" } : undefined} />
       )}
       <div className={`absolute inset-0 ${overlayClassName}`}></div>
       <div className="relative z-10 container mx-auto px-4 text-center">

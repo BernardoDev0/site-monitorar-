@@ -19,7 +19,6 @@ import {
   FileText,
   CheckCircle
 } from "lucide-react";
-import heroImage from "@/assets/hero-refinery.jpg";
 import paisagemImage from "@/assets/paisagem.png";
 import { ParallaxHero } from "@/components/ParallaxHero";
 import { Reveal } from "@/components/Reveal";
@@ -112,7 +111,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <ParallaxHero backgroundVideo="/refinaria2.mp4" backgroundUrl={heroImage}>
+      <ParallaxHero backgroundVideo="/refinaria2.mp4">
         <AnimatedText
           as="h1"
           className="text-4xl md:text-6xl font-bold mb-6 leading-tight text-success"
