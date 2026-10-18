@@ -37,3 +37,8 @@ O proprietário confirmou explicitamente: "EU JA REVISEI DA PUSH LOGO". Registra
 HAZOP: promoção explícita da URL existente que antes renderizava a página genérica de serviços; essa página genérica continua em /servicos e /servicos/seguranca. Textos dos 94 documentos mantidos. Blog com oito páginas; 113 URLs canônicas no sitemap; busca interna inclui artigos. Robots continua permitindo rastreamento. Build público e preview aprovados; 29 testes aprovados, incluindo todos os 94 documentos com HTML, autor, canonical, index/follow, H1 único e inclusão no sitemap; links e imagens internos resolvem. Testes de exclusão de rascunhos atualizados para estado publicado, mantendo validação de aprovação, revisão, fontes e credenciais.
 
 Limites: publicação não comprova indexação ou posição no Google. Search Console ainda não conectado. Validador atual exige fontes verificadas há até sete dias: revalidar antes de futuros builds após esse prazo. Próxima etapa: push main e conferência do deployment e URLs públicas.
+## Redes sociais na primeira tela — 18/10/2026
+
+Instagram e LinkedIn adicionados acima do título da home, com ícones, nomes visíveis e links oficiais já usados no rodapé. Alvos de toque de 44px, foco visível, abertura segura em nova aba e ajuste responsivo. Identidade, vídeo, textos e CTA existentes preservados. Impeccable aplicado como refinamento da identidade existente; sem geração de imagens necessária.
+
+Validação: typecheck e build aprovados (94 documentos, 113 URLs no sitemap). Navegador Chromium em 1440x900, 390x844 e 320x640: ambos os links visíveis na primeira tela e sem overflow horizontal; destinos conferidos. Capturas e resultado local em .organic/home-social-*.png e .organic/home-social-check.json.

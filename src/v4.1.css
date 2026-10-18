@@ -22,6 +22,11 @@
 .erm-mobile-subnav a { justify-content:space-between; gap:12px; }
 .erm-hero { min-height:clamp(480px,66svh,680px); }
 .erm-hero-copy { padding:56px 32px 88px; }
+.home-social-links { display:flex; flex-wrap:wrap; gap:10px; margin-bottom:24px; }
+.home-social-links a { display:inline-flex; align-items:center; justify-content:center; gap:9px; min-height:44px; padding:10px 16px; border:1px solid #82919e; border-radius:999px; background:#24304c; color:#fcfdfd; font-size:14px; font-weight:600; line-height:1.25; text-decoration:none; transition:background-color 180ms ease-out,border-color 180ms ease-out; }
+.home-social-links a:hover { background:#354762; border-color:#fcfdfd; }
+.home-social-links a:focus-visible { outline:3px solid #b9ec92; outline-offset:4px; }
+@media (prefers-reduced-motion:reduce) { .home-social-links a { transition:none; } }
 .erm-hero h1 { font-size:clamp(36px,4vw,58px); max-width:800px; }
 .erm-section,.section-space { padding-block:clamp(64px,6vw,88px); }
 .erm-service { gap:48px; }

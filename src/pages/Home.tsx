@@ -3,6 +3,8 @@ import { Button } from "@/components/ui/button";
 import { ExpertiseSection } from "@/components/home/ExpertiseSection";
 
 import {
+  Instagram,
+  Linkedin,
   Shield,
   Leaf,
   Award,
@@ -93,6 +95,10 @@ export default function Home() {
     <div className="erm-home">
       {/* Hero Section */}
       <StaticHero>
+        <nav className="home-social-links" aria-label="Redes sociais da Monitorar">
+          <a href="https://instagram.com/monitorarconsultoria_" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Monitorar (abre em nova aba)"><Instagram size={19} aria-hidden="true"/><span>Instagram</span><span aria-hidden="true">↗</span></a>
+          <a href="https://linkedin.com/company/monitorar-consultoria" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da Monitorar (abre em nova aba)"><Linkedin size={19} aria-hidden="true"/><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
+        </nav>
         <h1 data-enter>As melhores soluções para o seu negócio – Vamos trabalhar juntos?</h1>
         <Reveal delayMs={80}>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
