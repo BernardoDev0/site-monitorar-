@@ -1,4 +1,5 @@
 import {verificationMeta} from './site-verification.mjs';
+import {analyticsHead} from './analytics.mjs';
 import {loadSiteData} from './page-data.mjs';
 import { spawnSync } from 'node:child_process';
 import { readFile,writeFile,mkdir,readdir,rename,rm } from 'node:fs/promises';
@@ -12,6 +13,7 @@ const preview=process.argv.includes('--preview');
 // Ownership tokens and measurement IDs are public identifiers, not credentials.
 const integrations=JSON.parse(await readFile(new URL('../content/site-integrations.json',import.meta.url),'utf8'));
 const verificationEnv={...integrations};
+const analyticsMarkup=analyticsHead(process.env.GA4_MEASUREMENT_ID?.trim() || integrations.GA4_MEASUREMENT_ID,{preview});
 for(const key of ['GOOGLE_SITE_VERIFICATION','BING_SITE_VERIFICATION'])if(process.env[key]?.trim())verificationEnv[key]=process.env[key];
 const target=preview?'dist-preview':'dist';
 const out='.organic-stage-'+(preview?'preview':'public');
@@ -37,6 +39,7 @@ for(const row of rows){
  const schema=schemaFor(row,preview);
  let html=template.replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<meta\s+(?:name|property)="(?:description|author|keywords|robots|og:[^"]+|twitter:[^"]+)"[^>]*>/g,'').replace(/<link rel="canonical"[^>]*>/g,'');
  html=html.replace('</head>',(preview?'':verificationMeta(verificationEnv))+'</head>');
+ html=html.replace('</head>',analyticsMarkup+'</head>');
  html=html.replace('<html lang="en">','<html lang="pt-BR">').replace('</head>',head+'<script type="application/ld+json">'+json(schema)+'</script></head>');
  html=html.replace('<div id="root"></div>','<div id="root">'+render(row.path,row.page,documents.length>0,content)+'</div><script id="page-data" type="application/json">'+json({page:row.page,hasEditorial:documents.length>0,content})+'</script>');
  if(preview && !row.page) html=html.replace('<body>','<body><aside style="position:relative;z-index:60;background:#fff2cb;color:#24304c;padding:1rem">Prévia local não publicada · <a href="/conteudos/emissoes-fugitivas">Revisar primeiro lote editorial</a></aside>');

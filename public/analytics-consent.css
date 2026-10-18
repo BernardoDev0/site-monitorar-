@@ -1,0 +1,9 @@
+.analytics-consent { position:fixed; z-index:1000; bottom:16px; left:16px; max-width:480px; width:calc(100% - 32px); padding:20px; border:1px solid #c5d0d5; border-radius:18px; background:#f8faf7; color:#24304c; box-shadow:0 8px 30px #24304c24; font:14px/1.6 'DM Sans',sans-serif; }
+.analytics-consent[hidden] { display:none; }
+.analytics-consent p { margin:0 0 14px; }
+.analytics-consent a { color:inherit; text-decoration:underline; }
+.analytics-consent>div { display:flex; gap:10px; flex-wrap:wrap; }
+.analytics-consent button { min-height:44px; padding:10px 16px; border:1px solid #61756b; border-radius:24px; background:#eef3ea; color:#24304c; font:inherit; cursor:pointer; }
+.analytics-consent button:hover { background:#dce8d5; }
+.analytics-preferences { color:inherit; font:inherit; text-align:left; text-decoration:underline; min-height:44px; cursor:pointer; background:transparent; border:0; }
+.analytics-consent button:focus-visible,.analytics-preferences:focus-visible { outline:3px solid #347308; outline-offset:3px; }
