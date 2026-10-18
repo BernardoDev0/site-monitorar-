@@ -32,7 +32,7 @@ with sync_playwright() as p:
     assert page.locator('.analytics-consent').is_hidden()
     assert not google_requests
     page.get_by_role('button',name='Preferências de cookies').click()
-    page.get_by_role('button',name='Permitir estatísticas',exact=True).click()
+    page.get_by_role('button',name='Permitir',exact=True).click()
     page.wait_for_function('window.dataLayer?.length >= 4')
     assert len(google_requests)==1 and 'G-VD3JR25R7P' in google_requests[0]
     commands=page.evaluate('window.dataLayer.map(x=>Array.from(x))')

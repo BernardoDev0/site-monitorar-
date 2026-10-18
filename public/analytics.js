@@ -27,7 +27,7 @@
   const banner = document.createElement('section');
   banner.className = 'analytics-consent';
   banner.setAttribute('aria-label', 'Preferências de estatísticas');
-  banner.innerHTML = '<p>Podemos usar cookies do Google Analytics para entender as visitas e melhorar o site? <a href="/politica-privacidade">Saiba mais</a>.</p><div><button type="button" data-choice="denied">Não permitir</button><button type="button" data-choice="granted">Permitir estatísticas</button></div>';
+  banner.innerHTML = '<p>Podemos usar cookies do Google Analytics para entender as visitas e melhorar o site? <a href="/politica-privacidade">Saiba mais</a>.</p><div><button type="button" data-choice="denied">Não permitir</button><button type="button" data-choice="granted">Permitir</button></div>';
   window.addEventListener('monitorar:analytics-preferences', () => { banner.hidden = false; banner.querySelector('button').focus(); });
   document.body.append(banner);
   banner.hidden = consent === 'granted' || consent === 'denied';
