@@ -22,3 +22,13 @@ Adicionado controle contextual usando o estilo existente: aparece quando há mov
 Validação Chrome: autoplay normal; movimento reduzido inicialmente pausado; clique inicia e tempo avança; reload lembra reproduzir; pausar e reload preservam pausa; rejeição de autoplay disponibiliza controle. Build, typecheck e 37 testes passaram. Teste direto na aba conectada também reproduziu após clicar no controle.
 
 SEO: robots.txt e sitemap públicos HTTP 200, 121 URLs no sitemap. Home, serviço de emissões fugitivas e artigo introdutório HTTP 200, canonical próprio, index/follow e sem X-Robots-Tag restritivo. Consulta pública de busca encontrou a home, mas esse provedor não comprova a cobertura do índice Google nem posição para consultas genéricas. Search Console continua pendente por decisão do usuário. Nenhuma solicitação de indexação foi enviada, nenhuma promessa de ranking feita. Referência: https://developers.google.com/search/docs/crawling-indexing/ask-google-to-recrawl (dias a semanas; sem garantia).
+
+## Estado atual: autoplay e movimento solicitado explicitamente
+
+A instrução posterior do usuário substitui a solução com botão: vídeo automático, sem Reproduzir, carrossel contínuo e entradas GSAP no scroll. Removidos o controle e a preferência de sessão que podia manter o vídeo pausado. O vídeo usa autoplay, muted, playsInline, retoma ao voltar e tenta novamente na primeira interação se o navegador bloquear autoplay. Nenhum código consegue garantir autoplay diante de toda restrição imposta pelo navegador.
+
+Carrossel e entradas GSAP deixam de ser desligados por prefers-reduced-motion, conforme pedido explícito do usuário após o diagnóstico. Isto é uma exceção deliberada à orientação de movimento reduzido da skill Impeccable/animate; não declarar conformidade integral de acessibilidade. Nenhuma configuração do Windows/navegador foi alterada. CSS de outras transições e menu mantém tratamento anterior.
+
+Entradas abaixo da dobra: fade e deslocamento de 18px, 0,6s, power3.out, uma vez por seção. Conteúdo inicial e HTML sem JavaScript permanecem visíveis. Carrossel pausa fora de vista/aba oculta; vídeo também pausa fora da vista/aba oculta.
+
+Regressão reproduzível: python scripts/check-home-motion.py [origin]. Evidências motion-local.json: Chrome desktop com e sem movimento reduzido e celular com movimento reduzido, autoplay sem clique, nenhum botão, opacidade intermediária da entrada e deslocamento real do carrossel. Artefato sem JavaScript tem conteúdo e tag de propriedade. Relatório anterior playback-regression.json descreve a versão substituída, não o comportamento atual.

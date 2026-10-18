@@ -8,18 +8,14 @@ export function LogosCarousel({ logos, speed = 40 }: Props) {
   useEffect(() => {
     const element = root.current, belt = track.current;
     if (!element || !belt) return;
-    const mm = gsap.matchMedia();
-    mm.add('(prefers-reduced-motion: no-preference)', () => {
-      element.dataset.animated = 'true';
-      const tween = gsap.fromTo(belt, {xPercent:0}, {xPercent:-50,duration:Number.isFinite(speed) && speed > 0 ? speed : 40,ease:'none',repeat:-1,paused:true});
-      let visible = false;
-      const update = () => { if (visible && !document.hidden) tween.play(); else tween.pause(); };
-      const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); });
-      observer.observe(element);
-      document.addEventListener('visibilitychange',update);
-      return () => { tween.kill(); gsap.set(belt,{clearProps:'transform'}); delete element.dataset.animated; observer.disconnect(); document.removeEventListener('visibilitychange',update); };
-    });
-    return () => mm.revert();
+    element.dataset.animated = 'true';
+    const tween = gsap.fromTo(belt, {xPercent:0}, {xPercent:-50,duration:Number.isFinite(speed) && speed > 0 ? speed : 40,ease:'none',repeat:-1,paused:true});
+    let visible = false;
+    const update = () => { if (visible && !document.hidden) tween.play(); else tween.pause(); };
+    const observer = new IntersectionObserver(([entry]) => { visible = entry.isIntersecting; update(); });
+    observer.observe(element);
+    document.addEventListener('visibilitychange',update);
+    return () => { tween.kill(); gsap.set(belt,{clearProps:'transform'}); delete element.dataset.animated; observer.disconnect(); document.removeEventListener('visibilitychange',update); };
   }, [speed]);
   return <div ref={root} className="client-marquee">
     <div className="client-marquee-window" tabIndex={0} role="region" aria-label="Clientes da Monitorar">

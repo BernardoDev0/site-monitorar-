@@ -1,0 +1,46 @@
+{
+  "origin": "http://127.0.0.1:4173",
+  "results": [
+    {
+      "width": 1440,
+      "preference": "reduce",
+      "video": {
+        "time": 0.535307,
+        "ready": 4,
+        "muted": true,
+        "autoplay": true
+      },
+      "revealMidOpacity": 0.8178,
+      "carouselBefore": "matrix(1, 0, 0, 1, -20.5109, 0)",
+      "carouselAfter": "matrix(1, 0, 0, 1, -77.4509, 0)"
+    },
+    {
+      "width": 1440,
+      "preference": "no-preference",
+      "video": {
+        "time": 0.528314,
+        "ready": 4,
+        "muted": true,
+        "autoplay": true
+      },
+      "revealMidOpacity": 0.8064,
+      "carouselBefore": "matrix(1, 0, 0, 1, -20.592, 0)",
+      "carouselAfter": "matrix(1, 0, 0, 1, -77.4509, 0)"
+    },
+    {
+      "width": 390,
+      "preference": "reduce",
+      "video": {
+        "time": 0.532506,
+        "ready": 4,
+        "muted": true,
+        "autoplay": true
+      },
+      "revealMidOpacity": 0.8178,
+      "carouselBefore": "matrix(1, 0, 0, 1, -15.1008, 0)",
+      "carouselAfter": "matrix(1, 0, 0, 1, -56.3992, 0)"
+    }
+  ],
+  "noJavaScriptContentVisible": true,
+  "googleVerificationInHTML": true
+}

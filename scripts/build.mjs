@@ -9,6 +9,10 @@ import { schemaFor } from './schema.mjs';
 import { loadCorpus,loadRegistry,publicDocument,validatePublic,validateManifest,origin } from './editorial.mjs';
 import { editorialPages } from './editorial-pages.mjs';
 const preview=process.argv.includes('--preview');
+// Ownership tokens and measurement IDs are public identifiers, not credentials.
+const integrations=JSON.parse(await readFile(new URL('../content/site-integrations.json',import.meta.url),'utf8'));
+const verificationEnv={...integrations};
+for(const key of ['GOOGLE_SITE_VERIFICATION','BING_SITE_VERIFICATION'])if(process.env[key]?.trim())verificationEnv[key]=process.env[key];
 const target=preview?'dist-preview':'dist';
 const out='.organic-stage-'+(preview?'preview':'public');
 function vite(args){const p=spawnSync(process.execPath,['node_modules/vite/bin/vite.js',...args],{stdio:'inherit'});if(p.status!==0) process.exit(p.status||1);}
@@ -32,7 +36,7 @@ for(const row of rows){
  '<meta property="og:title" content="'+esc(row.title)+'"/><meta property="og:description" content="'+esc(row.description)+'"/><meta property="og:url" content="'+origin+row.path+'"/><meta property="og:image" content="'+origin+'/simbolo-monitorar.png"/><meta property="og:type" content="'+(row.page?.type==='article'?'article':'website')+'"/>';
  const schema=schemaFor(row,preview);
  let html=template.replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<meta\s+(?:name|property)="(?:description|author|keywords|robots|og:[^"]+|twitter:[^"]+)"[^>]*>/g,'').replace(/<link rel="canonical"[^>]*>/g,'');
- html=html.replace('</head>',verificationMeta()+'</head>');
+ html=html.replace('</head>',(preview?'':verificationMeta(verificationEnv))+'</head>');
  html=html.replace('<html lang="en">','<html lang="pt-BR">').replace('</head>',head+'<script type="application/ld+json">'+json(schema)+'</script></head>');
  html=html.replace('<div id="root"></div>','<div id="root">'+render(row.path,row.page,documents.length>0,content)+'</div><script id="page-data" type="application/json">'+json({page:row.page,hasEditorial:documents.length>0,content})+'</script>');
  if(preview && !row.page) html=html.replace('<body>','<body><aside style="position:relative;z-index:60;background:#fff2cb;color:#24304c;padding:1rem">Prévia local não publicada · <a href="/conteudos/emissoes-fugitivas">Revisar primeiro lote editorial</a></aside>');
