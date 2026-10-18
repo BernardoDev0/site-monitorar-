@@ -1,0 +1,46 @@
+{
+  "/robots.txt": {
+    "status": 200,
+    "xRobotsTag": null,
+    "canonical": [],
+    "robots": [],
+    "body": "User-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Twitterbot\nAllow: /\n\nUser-agent: facebookexternalhit\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n"
+  },
+  "/sitemap.xml": {
+    "status": 200,
+    "xRobotsTag": null,
+    "canonical": [],
+    "robots": [],
+    "urls": 121
+  },
+  "/": {
+    "status": 200,
+    "xRobotsTag": null,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://www.monitorarconsultoria.com.br/\"/>"
+    ],
+    "robots": [
+      "<meta name=\"robots\" content=\"index, follow\"/>"
+    ]
+  },
+  "/servicos/emissoes-fugitivas": {
+    "status": 200,
+    "xRobotsTag": null,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas\"/>"
+    ],
+    "robots": [
+      "<meta name=\"robots\" content=\"index, follow\"/>"
+    ]
+  },
+  "/blog/o-que-sao-emissoes-fugitivas": {
+    "status": 200,
+    "xRobotsTag": null,
+    "canonical": [
+      "<link rel=\"canonical\" href=\"https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas\"/>"
+    ],
+    "robots": [
+      "<meta name=\"robots\" content=\"index, follow\"/>"
+    ]
+  }
+}
