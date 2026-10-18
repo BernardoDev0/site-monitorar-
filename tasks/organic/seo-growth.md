@@ -8,7 +8,7 @@
 - [x] Separar integridade de publicações da manutenção de fontes e preparar recibos.
 - [x] Preparar verificação de propriedade sem DNS e roteiro de contas.
 - [x] Concluir testes, inspeção no navegador e evidências.
-- [ ] Commit/push autorizado e verificação de produção.
+- [x] Commit/push autorizado e verificação de produção.
 - [ ] Proprietário entrar nas contas, obter tokens e concluir comprovação.
 - [ ] Enviar sitemap nas contas verificadas e registrar baseline real.
 - [ ] Medir indexação, consultas e IA em 7/28/90 dias; conversões dependem de coletor real.

@@ -24,6 +24,6 @@ O proprietário precisa autenticar nas contas e obter tokens legítimos. Seguir 
 
 ## Continuidade e retorno
 
-Próximo passo desta execução: commit/push autorizado e conferência do deployment/URLs. Evidências de produção serão registradas separadamente. Para retornar a apresentação anterior, reverter o commit SEO Growth preservando os commits de publicação e redes sociais; não executar reset/clean. Para futuro conteúdo novo, preparar manifesto e recibos juntos com `editorial prepare-release`, validar antes de promover. Não ativar publicação recorrente.
+Commit de implementação d0c91c5 enviado para origin/main; Vercel confirmou success. Todas as 121 URLs do sitemap foram consultadas em produção: HTTP 200, index/follow e canonical correspondente. Home/RJ e links artigo→serviço também confirmados. Evidências em evidence/production.json. Isso não comprova indexação pelo Google. Para retornar a apresentação anterior, reverter o commit SEO Growth preservando os commits de publicação e redes sociais; não executar reset/clean. Para futuro conteúdo novo, preparar manifesto e recibos juntos com `editorial prepare-release`, validar antes de promover. Não ativar publicação recorrente.
 
 Skills: Schema utilizada para correspondência entre JSON-LD e conteúdo real. Orientações de identidade do Impeccable já carregadas na sessão preservadas nos ajustes de navegação e texto; sem novo conceito visual, imagens ou fontes. Documentação externa consultada está em PLAN.md.

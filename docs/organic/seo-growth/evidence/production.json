@@ -1,0 +1,618 @@
+{
+  "checked_at": "2026-10-18T19:43:57.359509+00:00",
+  "deployment_commit": "d0c91c5ffcf9d7098013782cfca146446012a6b8",
+  "sitemap_count": 121,
+  "all_canonical_indexable_http200": true,
+  "home_rj": true,
+  "article_service_links": true,
+  "robots": "User-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Twitterbot\nAllow: /\n\nUser-agent: facebookexternalhit\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n",
+  "urls": [
+    {
+      "url": "https://www.monitorarconsultoria.com.br/",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/sobre",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/seguranca",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/drager",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/clientes",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/depoimentos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/trabalhe-conosco",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/contato",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/politica-privacidade",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/ruido-extramuros",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/hazop",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-e-canalizadas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/o-que-e-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-contratar-monitoramento-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/dados-para-orcamento-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/planejamento-de-campanha-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/cadastro-de-componentes-para-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/componentes-sem-acesso-em-programas-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/reparo-e-reverificacao-em-programas-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/registro-de-vazamentos-em-programas-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/indicadores-de-programas-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ogi-e-analisadores-na-deteccao-de-vazamentos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/epa-method-21-contexto-e-limites",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/calibracao-e-rastreabilidade-de-dados-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/comparacao-entre-campanhas-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-petrobras",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pts-mp10-e-mp25-diferencas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/planejamento-do-monitoramento-de-pts",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-monitoramento-de-pts",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/qualidade-do-ar-ambiente-e-emissao-na-fonte",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/fumaca-preta-e-opacidade-diferencas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/procon-fumaca-preta-inea-fontes-e-requisitos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/registros-de-programa-de-controle-de-fumaca-preta",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ruido-extramuros-e-ruido-ocupacional",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-preparar-avaliacao-de-ruido-extramuros",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ruido-ambiental-residual-e-especifico",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-ruido-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/investigacao-de-reclamacoes-de-ruido",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/lacunas-de-dados-em-avaliacoes-geoambientais",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/historico-de-uso-da-area-e-modelo-conceitual",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/avaliacao-preliminar-investigacao-confirmatoria-e-detalhada",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/representatividade-de-amostras-de-solo-e-agua",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/cadeia-de-custodia-de-amostras-ambientais",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-investigacao-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/medidas-de-gerenciamento-e-remediacao-diferencas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/lp-li-lo-objetivos-e-diferencas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/documentos-para-iniciar-licenciamento-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/condicionantes-ambientais-controle-de-evidencias",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/renovacao-de-licenca-ambiental-planejamento",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/alteracoes-no-empreendimento-e-licenciamento",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/competencia-do-orgao-licenciador",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/gestao-sms-integracao-e-responsabilidades",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/requisitos-legais-matriz-e-evidencias-sms",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-preparar-documentos-para-auditoria-sms",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/indicadores-preventivos-e-reativos-sms",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/procedimentos-operacionais-e-controle-documental-sms",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/hazop-finalidade-e-limites",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/documentos-e-entradas-para-estudo-hazop",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/equipe-e-responsabilidades-em-estudos-hazop",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/recomendacoes-hazop-registro-e-acompanhamento",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/registro-de-treinamento-certificado-e-competencia",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/detectores-portateis-e-fixos-diferencas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/teste-de-resposta-calibracao-e-manutencao-de-detectores",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/dados-ausentes-no-monitoramento-do-ar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/por-que-decibeis-nao-se-somam-como-numeros-comuns",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ruido-tonal-e-impulsivo",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/resultado-nao-detectado-em-analises-ambientais",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/valores-orientadores-e-avaliacao-de-risco",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-organizar-resposta-a-pedido-de-complementacao",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/licenca-ambiental-e-outras-autorizacoes",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/consulta-e-participacao-publica-no-licenciamento",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/amostragem-de-evidencias-em-auditorias-de-sms",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/nos-e-intencao-de-projeto-em-estudos-hazop",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/conteudo-pratico-e-modalidade-de-capacitacao",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/documentacao-do-equipamento-e-adequacao-a-aplicacao",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/2",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/3",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/4",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/5",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/6",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/7",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/8",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/qualidade-do-ar",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/ruido-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/areas-impactadas",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/licenciamento-ambiental",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/seguranca-de-processos-e-gestao-sms",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/hazop",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/treinamentos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/equipamentos",
+      "status": 200,
+      "indexable": true
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos",
+      "status": 200,
+      "indexable": true
+    }
+  ],
+  "google_indexation": "not measured",
+  "account_verification": "pending owner authentication"
+}
