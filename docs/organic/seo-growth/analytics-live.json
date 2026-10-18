@@ -1,0 +1,26 @@
+{
+  "origin": "https://www.monitorarconsultoria.com.br/",
+  "hits": [
+    {
+      "status": 204,
+      "measurementId": [
+        "G-VD3JR25R7P"
+      ],
+      "event": [
+        "page_view"
+      ]
+    },
+    {
+      "status": 204,
+      "measurementId": [
+        "G-VD3JR25R7P"
+      ],
+      "event": [
+        "contact_click"
+      ]
+    }
+  ],
+  "tagScripts": 1,
+  "dashboardAccess": false,
+  "testContactNoMessageSent": true
+}
