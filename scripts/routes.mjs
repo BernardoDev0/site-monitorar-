@@ -1,10 +1,10 @@
 export const legacy=[
- ['/', 'Monitorar Consultoria | Meio ambiente e segurança do trabalho','Consultoria em meio ambiente e segurança do trabalho. Conheça os serviços da Monitorar e converse sobre as necessidades do seu projeto.'],
+ ['/', 'Engenharia e consultoria ambiental no RJ | Monitorar','Engenharia e consultoria ambiental no Rio de Janeiro: emissões fugitivas, LDAR, qualidade do ar, ruído e segurança do trabalho. Converse com a Monitorar.'],
  ['/sobre','Sobre a Monitorar Consultoria','Conheça a Monitorar Consultoria, sua história e atuação em meio ambiente e segurança do trabalho.'],
  ['/sobre/historia','História | Monitorar Consultoria','História e trajetória apresentadas pela Monitorar Consultoria.','/sobre'],
  ['/sobre/missao','Missão | Monitorar Consultoria','Missão e valores apresentados pela Monitorar Consultoria.','/sobre'],
  ['/sobre/equipe','Equipe | Monitorar Consultoria','Conheça a atuação da equipe da Monitorar Consultoria.','/sobre'],
- ['/servicos','Serviços | Monitorar Consultoria','Consulte os serviços de meio ambiente, segurança do trabalho e equipamentos apresentados pela Monitorar.'],
+ ['/servicos','Serviços de engenharia e consultoria ambiental | Monitorar','Consulte os serviços de meio ambiente, segurança do trabalho e equipamentos apresentados pela Monitorar.'],
  ['/servicos/meio-ambiente','Consultoria ambiental | Monitorar','Conheça as áreas de atuação ambiental da Monitorar, incluindo qualidade do ar, LDAR, ruído e licenciamento.','/servicos'],
  ['/servicos/seguranca','Segurança do trabalho | Monitorar','Serviços de gestão de SMS, HAZOP, auditorias e treinamentos apresentados pela Monitorar Consultoria.'],
  ['/servicos/hazop','HAZOP | Monitorar Consultoria','Informações sobre análise de operabilidade e perigos e contato com a Monitorar.','/servicos/seguranca'],

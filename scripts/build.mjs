@@ -1,3 +1,4 @@
+import {verificationMeta} from './site-verification.mjs';
 import {loadSiteData} from './page-data.mjs';
 import { spawnSync } from 'node:child_process';
 import { readFile,writeFile,mkdir,readdir,rename,rm } from 'node:fs/promises';
@@ -14,7 +15,10 @@ function vite(args){const p=spawnSync(process.execPath,['node_modules/vite/bin/v
 vite(['build','--outDir',out]);
 vite(['build','--ssr','src/entry-server.tsx','--outDir','.organic-server']);
 const {render}=await import(pathToFileURL(path.resolve('.organic-server/entry-server.js')));
-const {rows,content,candidates,documents,search}=await loadSiteData(preview);
+const {rows,content,candidates,documents,search,maintenance}=await loadSiteData(preview);
+await mkdir('.organic',{recursive:true});
+await writeFile('.organic/maintenance.json',JSON.stringify(maintenance,null,2));
+if(maintenance.length)console.warn('Editorial maintenance due for '+maintenance.length+' documents; approved published versions retained.');
 await writeFile(out+'/search-index.json',JSON.stringify(search));
 const template=await readFile(out+'/index.html','utf8');
 const editorialCss=(await readdir(out+'/assets')).find(n=>n.startsWith('EditorialApp-')&&n.endsWith('.css'));
@@ -28,6 +32,7 @@ for(const row of rows){
  '<meta property="og:title" content="'+esc(row.title)+'"/><meta property="og:description" content="'+esc(row.description)+'"/><meta property="og:url" content="'+origin+row.path+'"/><meta property="og:image" content="'+origin+'/simbolo-monitorar.png"/><meta property="og:type" content="'+(row.page?.type==='article'?'article':'website')+'"/>';
  const schema=schemaFor(row,preview);
  let html=template.replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<meta\s+(?:name|property)="(?:description|author|keywords|robots|og:[^"]+|twitter:[^"]+)"[^>]*>/g,'').replace(/<link rel="canonical"[^>]*>/g,'');
+ html=html.replace('</head>',verificationMeta()+'</head>');
  html=html.replace('<html lang="en">','<html lang="pt-BR">').replace('</head>',head+'<script type="application/ld+json">'+json(schema)+'</script></head>');
  html=html.replace('<div id="root"></div>','<div id="root">'+render(row.path,row.page,documents.length>0,content)+'</div><script id="page-data" type="application/json">'+json({page:row.page,hasEditorial:documents.length>0,content})+'</script>');
  if(preview && !row.page) html=html.replace('<body>','<body><aside style="position:relative;z-index:60;background:#fff2cb;color:#24304c;padding:1rem">Prévia local não publicada · <a href="/conteudos/emissoes-fugitivas">Revisar primeiro lote editorial</a></aside>');

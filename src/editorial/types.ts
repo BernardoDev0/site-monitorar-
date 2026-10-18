@@ -3,7 +3,12 @@ export interface EditorialMedia {
  focalPoint?:string;status:'existing-collection'|'generated-reviewed';
 }
 export interface EditorialPage {
- id:string;slug:string;type:"service"|"article"|"hub"|"case"|"company"|"listing"|"directory"|"search";title:string;summary:string;
+ id:string;slug:string;type:"service"|"article"|"hub"|"case"|"company"|"listing"|"directory"|"search"|"collection";title:string;summary:string;
+ first_published_at?:string|null;
+ breadcrumbs?:{slug:string;title:string}[];
+ services?:{slug:string;title:string}[];
+ topic?:{slug:string;title:string};
+ topicEntries?:EditorialPage[];
  body:{heading:string;paragraphs:string[];items?:string[];table?:{caption:string;headers:string[];rows:string[][]}}[];source_urls:string[];
  topic_cluster?:string;service_links?:string[];entries?:EditorialPage[];pageNumber?:number;pageCount?:number;noindex?:boolean;
  author:string|null;reviewer:string|null;reviewed_at:string|null;substantive_updated_at:string|null;preview:boolean;

@@ -1,6 +1,8 @@
 import {readFile,writeFile,mkdir} from 'node:fs/promises';
 import {loadCorpus,loadRegistry,versionOf,validatePublic,simulate,rollback,atomicJson,prepareRelease,readPause} from './editorial.mjs';
 import {createHash} from 'node:crypto';
+import {checkSource} from './source-check.mjs';
+import {sealPublication,validatePublished,maintenanceIssues} from './editorial.mjs';
 const [command,id,...args]=process.argv.slice(2);
 const docs=await loadCorpus(),registry=await loadRegistry();
 
@@ -9,23 +11,20 @@ if(command==='status'){
  const catalog=JSON.parse(await readFile('content/catalog.json','utf8'));
  const published=JSON.parse(await readFile('content/published.json','utf8'));
  console.log(JSON.stringify({proposals:catalog.length,articleProposals:catalog.filter(d=>d.type==='article').length,drafted:docs.length,technicalReview:docs.filter(d=>d.status==='technical_review').length,approved:docs.filter(d=>!validatePublic(d,registry).length).length,publishedInManifest:Object.keys(published.current).length,production:'requires separate live verification; manifest count is not proof of deployment or Google indexation',documents:docs.map(d=>({id:d.id,status:d.status,blockers:validatePublic(d,registry)}))},null,2));
+}else if(command==='maintenance'){
+ const published=JSON.parse(await readFile('content/published.json','utf8'));
+ console.log(JSON.stringify(Object.values(published.current).map(d=>({id:d.id,slug:d.slug,issues:maintenanceIssues(d,registry)})).filter(d=>d.issues.length),null,2));
 }else if(command==='check-sources'){
- const hosts=new Set(['www.epa.gov','www.who.int','webstore.iec.ch','agencia.petrobras.com.br']);
- const updates=[];let count=0;
- for(const url of [...new Set(docs.flatMap(d=>d.source_urls))]){
-  if(++count>50)throw new Error('Request budget exceeded');
-  const u=new URL(url);if(u.protocol!=='https:'||!hosts.has(u.hostname))throw new Error('Source not allowlisted: '+u.hostname);
-  let available=false,hash=null,status=null;
-  for(let attempt=0;attempt<2;attempt++){
-   try{const response=await fetch(url,{signal:AbortSignal.timeout(10000),redirect:'manual'});status=response.status;
-    if(response.ok){const bytes=Buffer.from(await response.arrayBuffer());const {createHash}=await import('node:crypto');hash=createHash('sha256').update(bytes).digest('hex');available=true;}break;
-   }catch{if(attempt===0)await new Promise(r=>setTimeout(r,1000));}
-  }
-  const previous=registry.sources[url];if(previous?.hash&&hash&&previous.hash!==hash)updates.push({url,previous_hash:previous.hash,new_hash:hash,action:'review source changes; do not auto-publish'});
-  registry.sources[url]={available,checked_at:new Date().toISOString(),status,hash};
+ const urls=[...new Set(docs.flatMap(d=>d.source_urls))];
+ if(urls.length>50)throw new Error('Request budget exceeded');
+ const updates=[],checks=[];
+ for(const url of urls){
+  const previous=registry.sources[url];const checked=await checkSource(url);checks.push({url,...checked});
+  if(previous?.hash&&checked.hash&&previous.hash!==checked.hash)updates.push({url,previous_hash:previous.hash,new_hash:checked.hash,action:'review source changes; do not auto-publish'});
+  registry.sources[url]=checked;
  }
- await atomicJson('content/registry.json',registry);await atomicJson('.organic/source-proposals.json',updates);
- console.log(JSON.stringify({checked:count,available:Object.values(registry.sources).filter(s=>s.available).length,proposals:updates.length}));
+ await atomicJson('content/registry.json',registry);await atomicJson('.organic/source-proposals.json',updates);await atomicJson('.organic/source-checks.json',checks);
+ console.log(JSON.stringify({checked:checks.length,available:checks.filter(s=>s.available).length,proposals:updates.length,failed:checks.filter(s=>!s.available)}));
 }else if(command==='approve'){
  const doc=docs.find(d=>d.id===id);if(!doc)throw new Error('Unknown document');
  const by=args[args.indexOf('--by')+1];if(!args.includes('--by')||!by)throw new Error('Real authorized approver required: --by id');
@@ -45,8 +44,12 @@ if(command==='status'){
  const current=await state();
  const paused=await readPause();
  const baseline=JSON.parse(await readFile('content/published.json','utf8'));
- const candidate=prepareRelease(baseline,current,registry,{paused});
+ const receipts=JSON.parse(await readFile('content/publication-receipts.json','utf8'));
+ const candidate=prepareRelease(baseline,current,registry,{paused,receipts});
+ const nextReceipts={...receipts};
+ for(const d of Object.values(candidate.current)){if(!receipts[d.slug]||receipts[d.slug].version!==d.approved_version)nextReceipts[d.slug]=sealPublication(d,registry);}
+ await atomicJson('.organic/release-receipts.json',nextReceipts);
  await atomicJson('.organic/release-candidate.json',candidate);
  await atomicJson('.organic/release-candidate-digest.json',{sha256:createHash('sha256').update(await readFile('.organic/release-candidate.json')).digest('hex'),created_at:new Date().toISOString()});
  console.log('Candidate saved in .organic/release-candidate.json. Published manifest unchanged.');
-}else{console.log('Commands: status, check-sources, approve ID --by PERSON, simulate [ID], pause, resume, rollback, prepare-release');}
+}else{console.log('Commands: status, maintenance, check-sources, approve ID --by PERSON, simulate [ID], pause, resume, rollback, prepare-release');}

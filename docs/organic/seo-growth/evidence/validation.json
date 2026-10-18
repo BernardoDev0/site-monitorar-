@@ -1,0 +1,29 @@
+{
+  "checked_at": "2026-10-18T19:42:24.872180+00:00",
+  "baseline_urls": 113,
+  "new_urls": 121,
+  "removed": [],
+  "added": [
+    "https://www.monitorarconsultoria.com.br/conteudos/areas-impactadas",
+    "https://www.monitorarconsultoria.com.br/conteudos/equipamentos",
+    "https://www.monitorarconsultoria.com.br/conteudos/hazop",
+    "https://www.monitorarconsultoria.com.br/conteudos/licenciamento-ambiental",
+    "https://www.monitorarconsultoria.com.br/conteudos/qualidade-do-ar",
+    "https://www.monitorarconsultoria.com.br/conteudos/ruido-ambiental",
+    "https://www.monitorarconsultoria.com.br/conteudos/seguranca-de-processos-e-gestao-sms",
+    "https://www.monitorarconsultoria.com.br/conteudos/treinamentos"
+  ],
+  "approved_corpus_unchanged": true,
+  "tests": {
+    "passed": 37,
+    "failed": 0
+  },
+  "typecheck": "passed",
+  "lint": {
+    "errors": 0,
+    "existing_warnings": 8
+  },
+  "build": "passed",
+  "build_preview": "passed",
+  "browser_checks": 21
+}

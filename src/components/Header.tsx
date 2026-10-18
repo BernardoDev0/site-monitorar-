@@ -3,13 +3,13 @@ import { useLocation } from 'react-router-dom';
 import { useContext, useEffect, useRef } from 'react';
 import { Menu, Search, ChevronDown, ArrowRight } from 'lucide-react';
 import { ContentContext } from '@/editorial/ContentContext';
-import { topicLabels } from '@/editorial/topics';
+import { topicLabels, topicPaths } from '@/editorial/topics';
 
 type NavItem = {name:string;href:string;description?:string;children?:string[][]};
 const baseItems: NavItem[] = [
   { name: 'Home', href: '/' },
   { name: 'Sobre', href: '/sobre', description: 'Monitorar Consultoria', children: [['Nossa História', '/sobre/historia'], ['Missão e Valores', '/sobre/missao'], ['Equipe', '/sobre/equipe']] },
-  { name: 'Serviços', href: '/servicos', description: 'Segurança do trabalho e meio ambiente', children: [['Segurança do trabalho', '/servicos/seguranca'], ['Meio ambiente', '/servicos/meio-ambiente'], ['Representação Drager', '/servicos/drager'], ['HAZOP', '/servicos/hazop'], ['Auditorias', '/servicos/auditorias'], ['Treinamentos', '/servicos/treinamentos']] },
+  { name: 'Serviços', href: '/servicos', description: 'Segurança do trabalho e meio ambiente', children: [['Segurança do trabalho', '/servicos/seguranca'], ['Meio ambiente', '/servicos/meio-ambiente'], ['Emissões fugitivas e LDAR', '/servicos/emissoes-fugitivas'], ['Ruído extramuros', '/servicos/ruido-extramuros'], ['Representação Drager', '/servicos/drager'], ['HAZOP', '/servicos/hazop'], ['Auditorias', '/servicos/auditorias'], ['Treinamentos', '/servicos/treinamentos']] },
   { name: 'Nossos Clientes', href: '/clientes' },
   { name: 'Depoimentos', href: '/depoimentos' },
   { name: 'Trabalhe Conosco', href: '/trabalhe-conosco' },
@@ -21,7 +21,7 @@ export function Header() {
   const content = useContext(ContentContext);
   const header = useRef<HTMLElement>(null);
   const topics = [...new Set(content.filter(d => d.type === 'article').map(d => d.topic_cluster).filter((t): t is string => !!t))];
-  const items: NavItem[] = [...baseItems, {name:'Blog',href:'/blog',description:'Conhecimento para decisões ambientais',children:[['Todos os artigos','/blog'],['Biblioteca por assunto','/conteudos'],['Buscar conteúdos','/busca'],...topics.map(t => [topicLabels[t] || t, '/busca#tema='+encodeURIComponent(t)])]}];
+  const items: NavItem[] = [...baseItems, {name:'Blog',href:'/blog',description:'Conhecimento para decisões ambientais',children:[['Todos os artigos','/blog'],['Biblioteca por assunto','/conteudos'],['Buscar conteúdos','/busca'],...topics.map(t => [topicLabels[t] || t, topicPaths[t] || '/busca#tema='+encodeURIComponent(t)])]}];
   useEffect(() => {
     const element = header.current;
     if (!element) return;

@@ -51,9 +51,30 @@ export async function loadCorpus() {
  return Promise.all(names.map(async n=>documentSchema.parse(JSON.parse(await readFile('content/documents/'+n,'utf8')))));
 }
 export async function loadRegistry() {return JSON.parse(await readFile('content/registry.json','utf8'));}
+// Freeze source evidence at approval time. Later monitoring never rewrites this receipt.
+export function sealPublication(doc,registry,now=new Date()) {
+ const errors=validatePublic(doc,{...registry,now});
+ if(errors.length)throw new Error(doc.id+': '+errors.join('; '));
+ return {version:doc.approved_version,approved_at:now.toISOString(),first_published_at:doc.first_published_at,sources:Object.fromEntries(doc.source_urls.map(url=>[url,structuredClone(registry.sources[url])]))};
+}
+export function validatePublished(doc,registry,receipt,{now=new Date()}={}) {
+ if(!receipt||receipt.version!==doc.approved_version)return ['published approval receipt missing or mismatched'];
+ if(!receipt.approved_at||!Number.isFinite(Date.parse(receipt.approved_at))||new Date(receipt.approved_at)>now)return ['invalid approval receipt date'];
+ if(doc.first_published_at!==receipt.first_published_at)return ['publication date differs from receipt'];
+ return validatePublic(doc,{...registry,sources:receipt.sources,now:new Date(receipt.approved_at)});
+}
+export function maintenanceIssues(doc,registry,now=new Date()) {
+ const issues=[];
+ if(new Date(doc.review_due_at)<=now)issues.push('review due');
+ for(const url of doc.source_urls){const s=registry.sources[url];
+  if(!s?.available||!s.checked_at||!Number.isFinite(Date.parse(s.checked_at))||now-new Date(s.checked_at)>7*86400000)issues.push('source check due: '+url);
+  if(s?.hash!==doc.approved_sources?.[url])issues.push('source changed: '+url);
+ }
+ return issues;
+}
 export function publicDocument(d,registry,preview=false) {
  return {id:d.id,slug:d.slug,type:d.type,title:d.title,summary:d.summary,body:d.body,source_urls:d.source_urls,
- topic_cluster:d.topic_cluster,
+ topic_cluster:d.topic_cluster,service_links:d.service_links,first_published_at:d.first_published_at,
  author:registry.people[d.author_id]?.authorized?registry.people[d.author_id].name:null,reviewer:registry.people[d.reviewer_id]?.authorized?registry.people[d.reviewer_id].name:null,
  reviewed_at:d.reviewed_at,substantive_updated_at:d.substantive_updated_at,preview};
 }
@@ -86,7 +107,8 @@ export function prepareRelease(baseline, proposed, registry, options={}) {
  validateManifest(proposed.current,registry);
  for(const slug of Object.keys(baseline.current)) if(!proposed.current[slug]) throw new Error('Release would remove existing page: '+slug);
  for(const d of Object.values(proposed.current)) {
-  const errors=validatePublic(d,{...registry,...options});
+  const unchanged=baseline.current[d.slug]?.approved_version===d.approved_version&&JSON.stringify(baseline.current[d.slug])===JSON.stringify(d);
+  const errors=unchanged&&options.receipts?validatePublished(d,registry,options.receipts[d.slug],options):validatePublic(d,{...registry,...options});
   if(errors.length) throw new Error(d.id+': '+errors.join('; '));
  }
  return proposed;

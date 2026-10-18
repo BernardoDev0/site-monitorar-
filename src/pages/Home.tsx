@@ -99,10 +99,11 @@ export default function Home() {
           <a href="https://instagram.com/monitorarconsultoria_" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Monitorar (abre em nova aba)"><Instagram size={19} aria-hidden="true"/><span>Instagram</span><span aria-hidden="true">↗</span></a>
           <a href="https://linkedin.com/company/monitorar-consultoria" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da Monitorar (abre em nova aba)"><Linkedin size={19} aria-hidden="true"/><span>LinkedIn</span><span aria-hidden="true">↗</span></a>
         </nav>
-        <h1 data-enter>As melhores soluções para o seu negócio – Vamos trabalhar juntos?</h1>
+        <h1 data-enter>Engenharia e consultoria ambiental no Rio de Janeiro</h1>
+        <p className="home-brand-line">As melhores soluções para o seu negócio – Vamos trabalhar juntos?</p>
         <Reveal delayMs={80}>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
-            Mantenha sua empresa protegida: com serviços de segurança do trabalho, saúde e meio ambiente alinhados com a sua estratégia.
+            Mantenha sua empresa protegida: com serviços de segurança do trabalho, saúde e meio ambiente alinhados com a sua estratégia. Com sede no Rio de Janeiro, atendemos projetos no RJ e em outras regiões do Brasil conforme o escopo.
           </p>
         </Reveal>
       </StaticHero>

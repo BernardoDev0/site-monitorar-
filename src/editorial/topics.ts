@@ -1,5 +1,3 @@
-export const topicLabels: Record<string, string> = {
-  fugitivas: 'Emissões fugitivas', ar: 'Qualidade do ar', ruido: 'Ruído ambiental',
-  areas: 'Áreas contaminadas', licenciamento: 'Licenciamento ambiental', sms: 'Gestão de SMS',
-  hazop: 'HAZOP', treinamentos: 'Treinamentos', equipamentos: 'Equipamentos',
-};
+import topics from '../../content/topics.json';
+export const topicLabels: Record<string,string> = Object.fromEntries(topics.map(t=>[t.id,t.label]));
+export const topicPaths: Record<string,string> = Object.fromEntries(topics.map(t=>[t.id,t.slug]));

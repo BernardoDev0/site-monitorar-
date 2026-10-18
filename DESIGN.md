@@ -1,3 +1,5 @@
+> **Escopo vigente SEO Growth (18/10/2026):** implementação autorizada, RJ prioritário e engenharia ambiental confirmada. Publicação dos 90 artigos e redes sociais já realizada. SEO técnico, nove assuntos, links comerciais e dados estruturados implementados; estado em `docs/organic/seo-growth/STATE.md`. Avisos de não publicação abaixo são históricos; não ativar publicação editorial recorrente.
+
 > **Escopo vigente V4.2:** GSAP discreto, megamenus fluidos, vídeo 60fps ida/reversa sem controles por escolha do proprietário, carrossel contínuo e busca institucional. Expertise compactada após pedido com captura. Estado em docs/organic/v4.2/EXECUTION-STATE.md. Preservar identidade e conteúdo; sem push/publicação.
 
 > **Escopo vigente V4.1:** refinamento aprovado da V4: navegação com megamenus, proporções, blog fotográfico e nitidez das mesmas imagens. DM Sans e identidade mantidas. Estado em docs/organic/v4.1/EXECUTION-STATE.md. 96 imagens inéditas pendentes do gerador nativo; sem push/publicação. Avisos anteriores são histórico.

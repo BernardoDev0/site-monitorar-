@@ -191,3 +191,11 @@
  .expertise-copy a { font-size:13px; }
 }
 @media(prefers-reduced-motion:reduce) { .expertise-copy a svg { transition:none; } }
+
+/* SEO growth: compact contextual navigation within the existing visual system. */
+.erm-hero p.home-brand-line { font-size:clamp(16px,1.5vw,20px); line-height:1.45; margin-bottom:16px; }
+.service-detail-links { display:flex; flex-direction:column; gap:12px; }
+.service-detail-links a,.topic-article-links a,.editorial-service-links a { text-decoration:underline; text-underline-offset:4px; }
+.topic-article-links { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px 28px; }
+.topic-article-links li { padding-block:6px; }
+@media(max-width:640px) { .topic-article-links { grid-template-columns:1fr; } }

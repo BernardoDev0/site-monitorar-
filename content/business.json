@@ -1,0 +1,16 @@
+{
+  "name": "Monitorar Consultoria",
+  "url": "https://www.monitorarconsultoria.com.br",
+  "description": "Engenharia e consultoria ambiental com sede no Rio de Janeiro. Meio ambiente, emissões fugitivas, segurança do trabalho e equipamentos.",
+  "phone": "+552138811212",
+  "whatsapp": "5521997521212",
+  "email": "administrativo@monitorarconsultoria.com.br",
+  "address": {
+    "streetAddress": "Av. José Silva de Azevedo Neto, 200, Bloco 7, Loja 205, Barra da Tijuca",
+    "addressLocality": "Rio de Janeiro",
+    "addressRegion": "RJ",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://instagram.com/monitorarconsultoria_", "https://linkedin.com/company/monitorar-consultoria"],
+  "logo": "/moni3.png"
+}

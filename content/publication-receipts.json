@@ -1,0 +1,1452 @@
+{
+  "/servicos/emissoes-fugitivas": {
+    "version": "c7da288639431f5eac746c3ff9668dc67ef9b19d4491f028ea45b927785ffadf",
+    "approved_at": "2026-10-18T19:34:32.539Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/servicos/ruido-extramuros": {
+    "version": "06c3ba9fddd3ce30b08a400ebdd830d8e59f1515949e28585ca99685326f3da3",
+    "approved_at": "2026-10-18T19:34:32.542Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/servicos/hazop": {
+    "version": "e7a52eaf9247a5552fbea6db8795128303998175554f48aac67ea4ded0dee5b9",
+    "approved_at": "2026-10-18T19:34:32.542Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://webstore.iec.ch/en/publication/24321": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.055451+00:00",
+        "status": 200,
+        "hash": "c31bced2e434ab45e384f3d6af640a83c8c4cc99bc82fd5eb462f17559ecce15"
+      }
+    }
+  },
+  "/conteudos/emissoes-fugitivas": {
+    "version": "11d89d3375871e87584906dffa504b71d9f3fc33c3cb15ffd5573804ede286eb",
+    "approved_at": "2026-10-18T19:34:32.542Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/o-que-sao-emissoes-fugitivas": {
+    "version": "6993557c3748c8a495fb06b5af783a9c735c50183f8e788ed9ef8ec313c0bb02",
+    "approved_at": "2026-10-18T19:34:32.543Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/emissoes-fugitivas-e-canalizadas": {
+    "version": "ffa319ab19e00aefc7fee19a292693329aef942bd788505a500c49c1bedf8e0f",
+    "approved_at": "2026-10-18T19:34:32.543Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas": {
+    "version": "ca39b463cc23cc7aafe77db493beff0dcbfa4a6a8987a6494b01c84621d37f2a",
+    "approved_at": "2026-10-18T19:34:32.543Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      },
+      "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.300537+00:00",
+        "status": 200,
+        "hash": "a1a82f0911614ffa4f7acecca192e75a754c2b216dc38539bc72a2437982b6af"
+      }
+    }
+  },
+  "/blog/o-que-e-ldar": {
+    "version": "e548d914a2b3a582ecad792add1c3414b927cfee8056a5f8c83467796d89e6b3",
+    "approved_at": "2026-10-18T19:34:32.544Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/como-contratar-monitoramento-de-emissoes-fugitivas": {
+    "version": "a6848248c91c052b128b3f783d1c2b9a456305db3cb498c7f92cede1fa263e49",
+    "approved_at": "2026-10-18T19:34:32.544Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/dados-para-orcamento-de-emissoes-fugitivas": {
+    "version": "6dc6c2445bce8939093846cf56b454021d9f16f200719237d811bc84c28b9eb0",
+    "approved_at": "2026-10-18T19:34:32.544Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/planejamento-de-campanha-de-emissoes-fugitivas": {
+    "version": "5c97a1ba28bc6065ef53910fd7bdf5e6b881d65b546994d0eede69ff78965ab4",
+    "approved_at": "2026-10-18T19:34:32.544Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/cadastro-de-componentes-para-ldar": {
+    "version": "65e9ddf2b197eb81c1d05867c3878c57233729a59a161c35c938dbacba91769d",
+    "approved_at": "2026-10-18T19:34:32.544Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/componentes-sem-acesso-em-programas-ldar": {
+    "version": "31a77fa0efbf5fcb52c89392508a03c83723711129392417aee26541669e196c",
+    "approved_at": "2026-10-18T19:34:32.544Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/reparo-e-reverificacao-em-programas-ldar": {
+    "version": "ab88216d5ec2573f9aa59b57da2d6ff3f9365d77dd0b198401825e52b44c64da",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/registro-de-vazamentos-em-programas-ldar": {
+    "version": "3f2cd299b6ab37ba33404b87ed7b226f38e3af734621f7f1e3f11939ae87828a",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/indicadores-de-programas-ldar": {
+    "version": "dc8615a5598b6d1cd9951c0249a248f878fcb2073520a895cd1cf4d9d1401548",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/como-ler-relatorio-de-emissoes-fugitivas": {
+    "version": "c465581ad9eb5bfcbd011a81dd29843b99b7edd6c87c757d68a62b46b2768015",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/ogi-e-analisadores-na-deteccao-de-vazamentos": {
+    "version": "7b085877f6ab7cc953b93f13413d1e4175fd576a966c0104eaba4e2b1684716f",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/epa-method-21-contexto-e-limites": {
+    "version": "fd205c33f9e830d3786410073025a1df17ebad719fba86d2b23df8fda39d9016",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes": {
+    "version": "cbb2879ea81d8ad8fa5249757530044dc814ba9340f74132d3dcdf1936f0c94d",
+    "approved_at": "2026-10-18T19:34:32.545Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/calibracao-e-rastreabilidade-de-dados-ldar": {
+    "version": "1d92119d0c9fed379782a7a8258883e52634237bdf432169c2eaf2f3a8439f04",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos": {
+    "version": "4f4a332e3e705fbf585e3fd330194bae170dbaba2ce469ce53060b3c37b99c91",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas": {
+    "version": "32060ee45202273728421ebf6f6e91e7d31de2b158b11d6a0317dd3511bed846",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/comparacao-entre-campanhas-de-emissoes-fugitivas": {
+    "version": "11a4d303d616ea0adaa70ba3db8cbafc9803c50159c38189679ceee61dd15b98",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas": {
+    "version": "a93b85a88e24fdc818b3502dd61af18ac7c849156c086cc8927fdce5e16cf8bb",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar": {
+    "version": "4b9f442996883b496135245951fa7627634277533e34d44c61479cfcb20c2ced",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas": {
+    "version": "dc52cbb9f63dddfc810a67af9017205ecee9f840212dfe07322b65d61eeb7e4b",
+    "approved_at": "2026-10-18T19:34:32.546Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar": {
+    "version": "60e52a0db5e95d9bc936588f51e6adff13f947bcd364b33322e93bd0762374ef",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar": {
+    "version": "23b2789ab0f284e50bf1cef03e2d5498de5b8f852dbe6502e9fdeb023aa72f53",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.326035+00:00",
+        "status": 200,
+        "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+      },
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.237526+00:00",
+        "status": 200,
+        "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+      }
+    }
+  },
+  "/blog/emissoes-fugitivas-petrobras": {
+    "version": "830056611c5321ffea4d2dd85f0b53d8f15f432231388732d2e8a6e1a2532506",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://sustentabilidade.petrobras.com.br/w/sobre-o-relatorio-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.055451+00:00",
+        "status": 200,
+        "hash": "d44c048cb2968a793db53702d27adc6adec1b2a4acdfb253f3a4c37f23bcca01"
+      }
+    }
+  },
+  "/blog/pts-mp10-e-mp25-diferencas": {
+    "version": "bc5dc312e088f8c55ab20093f7b158b3e1b3add8fef5bf502723fcd8d7273187",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/planejamento-do-monitoramento-de-pts": {
+    "version": "c91421a7a1c29207f1ec9d17e9a45cd0cc30127d58290dad752984d8eb2b0495",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/representatividade-dos-pontos-de-monitoramento-do-ar": {
+    "version": "047edf2c32f7e9b45540974289fc852cd6a79ff13784bc44d4832c525fa7bac2",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/como-ler-relatorio-de-monitoramento-de-pts": {
+    "version": "47f01c121f51b73dc41d27abdd2505dcc6887cf525a950e8c5f1e855068c64aa",
+    "approved_at": "2026-10-18T19:34:32.547Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/qualidade-do-ar-ambiente-e-emissao-na-fonte": {
+    "version": "82f1dbc7ba73a4a203466e627434abdbbb338f1db1a3c876fcc32fc4acdf8fdc",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/fumaca-preta-e-opacidade-diferencas": {
+    "version": "a297c654ad21ddfc45d626d76a0ccf77894f8d68f3ade4f0dff5d035edc02903",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.inea.rj.gov.br/procon-fumaca-preta/": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.247795+00:00",
+        "status": 200,
+        "hash": "1ae707dd1eea59b597a2312f1b02ff72ed5fb6c2160ba0128b0db221ae7b9202"
+      }
+    }
+  },
+  "/blog/procon-fumaca-preta-inea-fontes-e-requisitos": {
+    "version": "08e5a494544e6a8924263ae3dbc5cfed4f1d82a773ca1b399b4999b70fe32d6e",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.inea.rj.gov.br/procon-fumaca-preta/": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.247795+00:00",
+        "status": 200,
+        "hash": "1ae707dd1eea59b597a2312f1b02ff72ed5fb6c2160ba0128b0db221ae7b9202"
+      }
+    }
+  },
+  "/blog/registros-de-programa-de-controle-de-fumaca-preta": {
+    "version": "65480d86749fb20b328f9ce81452446aa8f6cf585a622e833fae4025c7935146",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.inea.rj.gov.br/procon-fumaca-preta/": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.247795+00:00",
+        "status": 200,
+        "hash": "1ae707dd1eea59b597a2312f1b02ff72ed5fb6c2160ba0128b0db221ae7b9202"
+      }
+    }
+  },
+  "/blog/ruido-extramuros-e-ruido-ocupacional": {
+    "version": "806bee33e46061db479ae83e58f852df9ad3c118342ec4c07a1b4377ef8ea816",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/como-preparar-avaliacao-de-ruido-extramuros": {
+    "version": "87929dcfc4e99729b15261e627268c142f327fd6c740a33f2155bd8ec83fd7fb",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/ruido-ambiental-residual-e-especifico": {
+    "version": "c2e1a538f7727d038d8e82981ae0041ce36332dde32daeef16496448c213ea3d",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental": {
+    "version": "0c7606b0960d133927491d47a61c2dcce94f6a600567bcbfaf4437163ba0bf43",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/como-ler-relatorio-de-ruido-ambiental": {
+    "version": "53e00e9782acb01f6829bff639b90d238bae5176320b985f969fef28e905724e",
+    "approved_at": "2026-10-18T19:34:32.548Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/abnt-nbr-10151-contexto-e-aplicabilidade": {
+    "version": "63f05d0473be37fdf890ebf39ed332fdf6fcacc539e9b0b98631df928457cb8f",
+    "approved_at": "2026-10-18T19:34:32.549Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/investigacao-de-reclamacoes-de-ruido": {
+    "version": "ca6fe265af242e1b20eaf270ba9ad70c26e543be2ef3a59d4d23889a36903ba7",
+    "approved_at": "2026-10-18T19:34:32.549Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/lacunas-de-dados-em-avaliacoes-geoambientais": {
+    "version": "443c31a17e4173441ecc36355a08e61d9ecb14f835188c3d4c8b1d7151a1587e",
+    "approved_at": "2026-10-18T19:34:32.549Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/historico-de-uso-da-area-e-modelo-conceitual": {
+    "version": "c020c0de3131957eb63f170c31dd749ff5cc1a1e928ae16d0240e5d3695cd2c5",
+    "approved_at": "2026-10-18T19:34:32.549Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/avaliacao-preliminar-investigacao-confirmatoria-e-detalhada": {
+    "version": "e784a83bddd4d23e00b9d29b74e82ad7197f2a948ec6984f78e89b61e4d52ecb",
+    "approved_at": "2026-10-18T19:34:32.549Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/representatividade-de-amostras-de-solo-e-agua": {
+    "version": "c7b819b5817f1b04609c5013b745cdab0adcee00a605033f66a5e29b6050cf6e",
+    "approved_at": "2026-10-18T19:34:32.549Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/cadeia-de-custodia-de-amostras-ambientais": {
+    "version": "9e766fe9378b9451f87f0f5f9c07f32757b0a8402d815110449211e64f0dcd6e",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/como-ler-relatorio-de-investigacao-ambiental": {
+    "version": "747a3e88d6afa64b7405440d9ccd3904405a831b942c1b32e1786f29d4b8ffe7",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/medidas-de-gerenciamento-e-remediacao-diferencas": {
+    "version": "28c6ec26270cfff1a521bd77838361ab0332f3935b9e0696ddb92f60da841607",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/lp-li-lo-objetivos-e-diferencas": {
+    "version": "3d6d4c3cc386542e06b6bb6995b67caaa83369a5668341cfdfb4a2c5ba9409c7",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/documentos-para-iniciar-licenciamento-ambiental": {
+    "version": "a47471ed845c8e3ea450ec8fb05af0eeba2eeba048e9307e652305ed8802c22f",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/condicionantes-ambientais-controle-de-evidencias": {
+    "version": "406f1e6187f6b64b256906376240a721db5b45d689fd2804071564b519f98157",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/renovacao-de-licenca-ambiental-planejamento": {
+    "version": "a5ecfa5a88d848d7c046000a27676ee2db4a08d6f3905f542e41757125bdd6fa",
+    "approved_at": "2026-10-18T19:34:32.550Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/alteracoes-no-empreendimento-e-licenciamento": {
+    "version": "190741e247a009160b7ef6096f1dc5446b2faee19b03a4af14cc06d68e1fd8fa",
+    "approved_at": "2026-10-18T19:34:32.551Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/competencia-do-orgao-licenciador": {
+    "version": "efc2453e77b39d0373cf364cdfcb2396f6ad380826787eed4018828700cff717",
+    "approved_at": "2026-10-18T19:34:32.551Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/estudos-ambientais-no-licenciamento-como-definir-escopo": {
+    "version": "788784243a625d2d5f7797065da136e890e0ea58dbef2eaea25bb0492c9cfa5b",
+    "approved_at": "2026-10-18T19:34:32.551Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/gestao-sms-integracao-e-responsabilidades": {
+    "version": "5b1453586ecd15c2a571ee6f54725251d551bec3b07886f0f978912cbbdcb8ba",
+    "approved_at": "2026-10-18T19:34:32.551Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/requisitos-legais-matriz-e-evidencias-sms": {
+    "version": "d2a9a4c2cabb368948d71142724bd340f98d86ee9cf7c099a382b841a3385803",
+    "approved_at": "2026-10-18T19:34:32.551Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/auditoria-interna-e-auditoria-de-conformidade-legal": {
+    "version": "b41c00c2dfe314622417f66c7396c3e8f3ca485efbdd12fc67ec9a38d1b3074e",
+    "approved_at": "2026-10-18T19:34:32.551Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/como-preparar-documentos-para-auditoria-sms": {
+    "version": "b8def267c809176e2744992ea23fbe13a59900f345a6636de56673c80abd61f2",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia": {
+    "version": "b0fc59b2b01ea2df77964867459146cec8ea6b6693411d6c55abab7bfeef7270",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/indicadores-preventivos-e-reativos-sms": {
+    "version": "370791e96d2e7e9dcfe0761807e48028938e2765d691f4912531d2fe202a7751",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/procedimentos-operacionais-e-controle-documental-sms": {
+    "version": "a79e12ee0a978969e9750ce572294c2b8142fd6c619c8929263cdb7aac431ca2",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.839562+00:00",
+        "status": 200,
+        "hash": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+      }
+    }
+  },
+  "/blog/hazop-finalidade-e-limites": {
+    "version": "533cb45e2b3396ae5c77d91af03dfa59ca5509f932d6c3a5413dfb5d502b3b6a",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.839562+00:00",
+        "status": 200,
+        "hash": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+      }
+    }
+  },
+  "/blog/documentos-e-entradas-para-estudo-hazop": {
+    "version": "5df7dae1138cb2f88525bbc9673916bfbada3ca2963b37e05c4db609575590fc",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://webstore.iec.ch/en/publication/24321": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.055451+00:00",
+        "status": 200,
+        "hash": "c31bced2e434ab45e384f3d6af640a83c8c4cc99bc82fd5eb462f17559ecce15"
+      }
+    }
+  },
+  "/blog/equipe-e-responsabilidades-em-estudos-hazop": {
+    "version": "692762357c2075c3c633cc2bbabc88ce63d745368ee125e4df770f2e181af064",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.839562+00:00",
+        "status": 200,
+        "hash": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+      }
+    }
+  },
+  "/blog/recomendacoes-hazop-registro-e-acompanhamento": {
+    "version": "d52eed108069400b70c9d0ecded5d553b0d6da5e5935cc0659840da855002cd5",
+    "approved_at": "2026-10-18T19:34:32.552Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.839562+00:00",
+        "status": 200,
+        "hash": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+      }
+    }
+  },
+  "/blog/matriz-de-treinamentos-requisitos-e-funcoes": {
+    "version": "ea70af1600687ea99ade379ea779314d39b069b92982ca7bd30ed2e6a93ca235",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/registro-de-treinamento-certificado-e-competencia": {
+    "version": "588d2f3eb5a5a43748832bd6dc93a9100798d36362eb16858580b6cde336dca8",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes": {
+    "version": "4d3af96240e90ca83cb1dfb2c3b19d8473848ec5eb6151d8726cafbe490858d6",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+        "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+        "status": 200,
+        "available": true,
+        "checked_at": "2026-10-18T19:11:28.429Z",
+        "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
+      }
+    }
+  },
+  "/blog/detectores-portateis-e-fixos-diferencas": {
+    "version": "97a72396797549a3d39457078ec89b65d7bb622d89acee0b095fefb037cc71b8",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+        "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+        "status": 200,
+        "available": true,
+        "checked_at": "2026-10-18T19:11:28.429Z",
+        "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
+      }
+    }
+  },
+  "/blog/teste-de-resposta-calibracao-e-manutencao-de-detectores": {
+    "version": "0e00b99833a06c305d669b37760198702bc55c6ab96a2803f136f0c465eae73a",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+        "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+        "status": 200,
+        "available": true,
+        "checked_at": "2026-10-18T19:11:28.429Z",
+        "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
+      }
+    }
+  },
+  "/blog/informacoes-para-especificar-equipamentos-de-seguranca": {
+    "version": "1baa3b13a18c7a07e69d9136aba49abb5a9630428a5428117558ef1506ddcecf",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+        "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+        "status": 200,
+        "available": true,
+        "checked_at": "2026-10-18T19:11:28.429Z",
+        "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
+      }
+    }
+  },
+  "/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa": {
+    "version": "7ec28dfec6e45726bffe6d254da00d8076718f19b83d812d584cd21b7d650bc8",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/dados-ausentes-no-monitoramento-do-ar": {
+    "version": "042eda8df47d3b4964fb5c6ec7161bb070e78b7b677990dd22ecf5e0ff9d6a1e",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.559585+00:00",
+        "status": 200,
+        "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+      },
+      "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.056451+00:00",
+        "status": 200,
+        "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+      }
+    }
+  },
+  "/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente": {
+    "version": "d459bd66adcfa58fffd17946c953a7c952e9089f49bc83036bdfae66f8572ae3",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://conama.mma.gov.br/?id=827&option=com_sisconama&task=arquivo.download": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.054451+00:00",
+        "status": 200,
+        "hash": "75349443dd3f7e89b3d4d1b1183ce2d83b9455af68279b4014291f8d4822a7aa"
+      }
+    }
+  },
+  "/blog/por-que-decibeis-nao-se-somam-como-numeros-comuns": {
+    "version": "71e1eb7295362c4f39fe6e27727472364d4003a3f1e1d3d3f3857578d968ff73",
+    "approved_at": "2026-10-18T19:34:32.553Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.hse.gov.uk/noise/calculator.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.174628+00:00",
+        "status": 200,
+        "hash": "5b40c5bb399abf7ddd53c18e62ef0c6f3c35e53ab7ba000f8be7d7c5c72729ea"
+      }
+    }
+  },
+  "/blog/ruido-tonal-e-impulsivo": {
+    "version": "a417a7245856161a35acc1423eadb142a2d045a125b352860e86550c66ae1932",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.who.int/europe/publications/i/item/9789289053563": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.504534+00:00",
+        "status": 200,
+        "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
+      }
+    }
+  },
+  "/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental": {
+    "version": "2099810d22491104fa2fb9e91920b6e10e03c9b6d642ca176c219f715b80aa21",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.bipm.org/en/committees/jc/jcgm/publications": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:10.055451+00:00",
+        "status": 200,
+        "hash": "1744e072efa68eb9cd0a3b01c2227256b70cc2be425f52921be2d3269060253f"
+      }
+    }
+  },
+  "/blog/resultado-nao-detectado-em-analises-ambientais": {
+    "version": "910fa15380e417a2e23e6c30b1fc8b1300e14a93e46827d40614dc9618107316",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/valores-orientadores-e-avaliacao-de-risco": {
+    "version": "6399c4b91b7506444fe01893ba373c6c01c6e33b232eb1ec39d8e34663b89210",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais": {
+    "version": "a82f3f4c26d3d3a6ee7b99292f10db9f0affb9c61cc0e77d03dfcfd7238abda7",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.113112+00:00",
+        "status": 200,
+        "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+      }
+    }
+  },
+  "/blog/como-organizar-resposta-a-pedido-de-complementacao": {
+    "version": "02aa402efef6f03f3df394cec1799b51aca41854a01dae02c06a5035f567bb64",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/licenca-ambiental-e-outras-autorizacoes": {
+    "version": "0436b51e437169b4bb80352d808c796432e71ffad8c70d105a7693030cb64c06",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/consulta-e-participacao-publica-no-licenciamento": {
+    "version": "ffe8aa60c800faa5d6217b892b57a8d1e1ebedc29241186e26e103576888b859",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.442322+00:00",
+        "status": 200,
+        "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+      },
+      "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:12.386322+00:00",
+        "status": 200,
+        "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+      }
+    }
+  },
+  "/blog/amostragem-de-evidencias-em-auditorias-de-sms": {
+    "version": "dcfb3cc8467b2d958ace1bb6678f025b80c5f04ab1b4fd09ec25f9e25bff7ea1",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas": {
+    "version": "ce402357d6257a0f410b083f21c36a3c6ea06dc45e6c235d7a73b520dc319300",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/nos-e-intencao-de-projeto-em-estudos-hazop": {
+    "version": "0ae65a0609defc0ada74ca602d1a57c0d5877d4cdf4f21979237f399d01ea8c4",
+    "approved_at": "2026-10-18T19:34:32.554Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.839562+00:00",
+        "status": 200,
+        "hash": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+      }
+    }
+  },
+  "/blog/conteudo-pratico-e-modalidade-de-capacitacao": {
+    "version": "df3e32c45460a732647b786ee6692fe6b15b22efd2ffb1b2e8ad22fdfcc41dbd",
+    "approved_at": "2026-10-18T19:34:32.555Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+        "available": true,
+        "checked_at": "2026-10-18T19:01:11.548839+00:00",
+        "status": 200,
+        "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+      }
+    }
+  },
+  "/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases": {
+    "version": "04ad528e67e8eb5540e0e8d8e75a8a3013da500f9d317bd373816db8851720f2",
+    "approved_at": "2026-10-18T19:34:32.555Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+        "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+        "status": 200,
+        "available": true,
+        "checked_at": "2026-10-18T19:11:28.429Z",
+        "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
+      }
+    }
+  },
+  "/blog/documentacao-do-equipamento-e-adequacao-a-aplicacao": {
+    "version": "4a8c91be246b03ba43eb72e61c125ba51f195e2f0a0bf4b121841d63da5f1901",
+    "approved_at": "2026-10-18T19:34:32.555Z",
+    "first_published_at": "2026-10-18T19:12:02.612Z",
+    "sources": {
+      "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+        "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+        "status": 200,
+        "available": true,
+        "checked_at": "2026-10-18T19:11:28.429Z",
+        "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
+      }
+    }
+  }
+}

@@ -1,0 +1,1221 @@
+{
+  "created_at": "2026-10-18T19:39:22.742Z",
+  "region": "RJ prioritário; Brasil conforme escopo confirmado pelo proprietário",
+  "volume": null,
+  "difficulty": null,
+  "ranking": null,
+  "note": "Mapa editorial de intenções, não lista de posições ou volumes medidos. Termos não devem ser inseridos em massa nas páginas.",
+  "rows": [
+    {
+      "url": "/",
+      "intent": "comercial local",
+      "primary": "engenharia e consultoria ambiental no Rio de Janeiro",
+      "queries": [
+        "empresa de engenharia ambiental RJ",
+        "engenharia ambiental Rio de Janeiro",
+        "consultoria ambiental RJ",
+        "empresa de consultoria ambiental",
+        "consultoria ambiental Rio de Janeiro",
+        "consultoria ambiental para empresas"
+      ],
+      "priority": 1
+    },
+    {
+      "url": "/servicos/emissoes-fugitivas",
+      "intent": "comercial",
+      "primary": "Monitoramento de emissões fugitivas e LDAR",
+      "queries": [
+        "emissões fugitivas",
+        "monitoramento de emissões fugitivas",
+        "empresa de LDAR",
+        "programa LDAR",
+        "orçamento de monitoramento de emissões fugitivas",
+        "detecção de vazamentos industriais"
+      ],
+      "priority": 1
+    },
+    {
+      "url": "/servicos#qualidade-ar",
+      "intent": "comercial",
+      "primary": "Qualidade do ar, PTS e Fumaça Preta",
+      "queries": [
+        "monitoramento da qualidade do ar",
+        "monitoramento de PTS",
+        "partículas totais em suspensão",
+        "fumaça preta",
+        "PROCON Fumaça Preta",
+        "monitoramento ambiental industrial"
+      ],
+      "priority": 1
+    },
+    {
+      "url": "/servicos/ruido-extramuros",
+      "intent": "comercial",
+      "primary": "Avaliação de ruído extramuros",
+      "queries": [
+        "ruído extramuros",
+        "avaliação de ruído ambiental",
+        "medição de ruído ambiental RJ",
+        "relatório de ruído ambiental"
+      ],
+      "priority": 1
+    },
+    {
+      "url": "/servicos#areas-impactadas",
+      "intent": "comercial",
+      "primary": "Avaliação de áreas impactadas",
+      "queries": [
+        "avaliação geoambiental",
+        "investigação ambiental",
+        "áreas contaminadas",
+        "investigação confirmatória",
+        "investigação detalhada"
+      ],
+      "priority": 2
+    },
+    {
+      "url": "/servicos#licenciamento",
+      "intent": "comercial",
+      "primary": "Consultoria para licenciamento ambiental",
+      "queries": [
+        "licenciamento ambiental RJ",
+        "consultoria para licenciamento ambiental",
+        "licenciamento INEA",
+        "renovação de licença ambiental",
+        "condicionantes ambientais",
+        "licença prévia de instalação e operação"
+      ],
+      "priority": 1
+    },
+    {
+      "url": "/servicos/seguranca#sms",
+      "intent": "comercial",
+      "primary": "Gestão de Segurança, Meio Ambiente e Saúde",
+      "queries": [
+        "gestão de SMS",
+        "consultoria em segurança do trabalho",
+        "auditoria de conformidade",
+        "auditoria de segurança do trabalho",
+        "gestão de requisitos legais"
+      ],
+      "priority": 2
+    },
+    {
+      "url": "/servicos/hazop",
+      "intent": "comercial",
+      "primary": "Estudo HAZOP",
+      "queries": [
+        "estudo HAZOP",
+        "análise de perigos e operabilidade",
+        "empresa de HAZOP",
+        "segurança de processos"
+      ],
+      "priority": 2
+    },
+    {
+      "url": "/servicos/seguranca#treinamentos",
+      "intent": "comercial",
+      "primary": "Treinamentos em segurança do trabalho",
+      "queries": [
+        "treinamento de segurança do trabalho",
+        "capacitação em segurança do trabalho",
+        "matriz de treinamentos",
+        "treinamentos NR 33 e NR 35"
+      ],
+      "priority": 2
+    },
+    {
+      "url": "/servicos/drager",
+      "intent": "comercial",
+      "primary": "Equipamentos Dräger",
+      "queries": [
+        "equipamentos Dräger",
+        "detectores de gases",
+        "detector portátil de gases",
+        "proteção respiratória",
+        "calibração de detectores de gases"
+      ],
+      "priority": 2
+    },
+    {
+      "url": "/blog/o-que-sao-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "O que são emissões fugitivas",
+      "queries": [
+        "o que são emissões fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/emissoes-fugitivas-e-canalizadas",
+      "intent": "informacional",
+      "primary": "Emissões fugitivas e canalizadas",
+      "queries": [
+        "emissões fugitivas e canalizadas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Detecção e quantificação de emissões fugitivas",
+      "queries": [
+        "detecção e quantificação de emissões fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/o-que-e-ldar",
+      "intent": "informacional",
+      "primary": "O que é LDAR",
+      "queries": [
+        "o que é ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/como-contratar-monitoramento-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Como contratar monitoramento de emissões fugitivas",
+      "queries": [
+        "como contratar monitoramento de emissões fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/dados-para-orcamento-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Dados para orçamento de emissões fugitivas",
+      "queries": [
+        "dados para orçamento de emissões fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/planejamento-de-campanha-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Planejamento de campanha de emissões fugitivas",
+      "queries": [
+        "planejamento de campanha de emissões fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/cadastro-de-componentes-para-ldar",
+      "intent": "informacional",
+      "primary": "Cadastro de componentes para LDAR",
+      "queries": [
+        "cadastro de componentes para ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/componentes-sem-acesso-em-programas-ldar",
+      "intent": "informacional",
+      "primary": "Componentes sem acesso em LDAR",
+      "queries": [
+        "componentes sem acesso em ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/reparo-e-reverificacao-em-programas-ldar",
+      "intent": "informacional",
+      "primary": "Reparo e reverificação em LDAR",
+      "queries": [
+        "reparo e reverificação em ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/registro-de-vazamentos-em-programas-ldar",
+      "intent": "informacional",
+      "primary": "Registro de vazamentos em LDAR",
+      "queries": [
+        "registro de vazamentos em ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/indicadores-de-programas-ldar",
+      "intent": "informacional",
+      "primary": "Indicadores de LDAR",
+      "queries": [
+        "indicadores de ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/como-ler-relatorio-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Como ler relatório de emissões fugitivas",
+      "queries": [
+        "como ler relatório de emissões fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/ogi-e-analisadores-na-deteccao-de-vazamentos",
+      "intent": "informacional",
+      "primary": "OGI e analisadores na detecção",
+      "queries": [
+        "ogi e analisadores na detecção"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/epa-method-21-contexto-e-limites",
+      "intent": "informacional",
+      "primary": "EPA Method 21: contexto e limites",
+      "queries": [
+        "epa method 21: contexto e limites"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes",
+      "intent": "informacional",
+      "primary": "PPM e taxa de emissão",
+      "queries": [
+        "ppm e taxa de emissão"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/calibracao-e-rastreabilidade-de-dados-ldar",
+      "intent": "informacional",
+      "primary": "Calibração e rastreabilidade em LDAR",
+      "queries": [
+        "calibração e rastreabilidade em ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+      "intent": "informacional",
+      "primary": "Substâncias e condições de detecção",
+      "queries": [
+        "substâncias e condições de detecção"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Meteorologia em campanhas de fugitivas",
+      "queries": [
+        "meteorologia em campanhas de fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/comparacao-entre-campanhas-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Comparação entre campanhas",
+      "queries": [
+        "comparação entre campanhas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas",
+      "intent": "informacional",
+      "primary": "Inventário de GEE e monitoramento de fugitivas",
+      "queries": [
+        "inventário de gee e monitoramento de fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+      "intent": "informacional",
+      "primary": "Critérios de vazamento e gatilhos de ação em LDAR",
+      "queries": [
+        "critérios de vazamento e gatilhos de ação em ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas",
+      "intent": "informacional",
+      "primary": "Tanques e classificação de fontes fugitivas",
+      "queries": [
+        "tanques e classificação de fontes fugitivas"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar",
+      "intent": "informacional",
+      "primary": "Qualidade e aceite de dados LDAR",
+      "queries": [
+        "qualidade e aceite de dados ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+      "intent": "informacional",
+      "primary": "Mudanças na planta e atualização de LDAR",
+      "queries": [
+        "mudanças na planta e atualização de ldar"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/emissoes-fugitivas-petrobras",
+      "intent": "informacional",
+      "primary": "Emissões fugitivas Petrobras",
+      "queries": [
+        "emissões fugitivas petrobras"
+      ],
+      "topic": "fugitivas",
+      "collection": "/conteudos/emissoes-fugitivas",
+      "commercial_destination": "/servicos/emissoes-fugitivas",
+      "priority": 1
+    },
+    {
+      "url": "/blog/pts-mp10-e-mp25-diferencas",
+      "intent": "informacional",
+      "primary": "PTS, MP10 e MP2,5",
+      "queries": [
+        "pts, mp10 e mp2,5"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/planejamento-do-monitoramento-de-pts",
+      "intent": "informacional",
+      "primary": "Planejamento de monitoramento de PTS",
+      "queries": [
+        "planejamento de monitoramento de pts"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+      "intent": "informacional",
+      "primary": "Representatividade de pontos de monitoramento",
+      "queries": [
+        "representatividade de pontos de monitoramento"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/como-ler-relatorio-de-monitoramento-de-pts",
+      "intent": "informacional",
+      "primary": "Como ler relatório de PTS",
+      "queries": [
+        "como ler relatório de pts"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/qualidade-do-ar-ambiente-e-emissao-na-fonte",
+      "intent": "informacional",
+      "primary": "Ar ambiente e emissão na fonte",
+      "queries": [
+        "ar ambiente e emissão na fonte"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/fumaca-preta-e-opacidade-diferencas",
+      "intent": "informacional",
+      "primary": "Fumaça Preta e opacidade",
+      "queries": [
+        "fumaça preta e opacidade"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/procon-fumaca-preta-inea-fontes-e-requisitos",
+      "intent": "informacional",
+      "primary": "PROCON Fumaça Preta e fontes oficiais",
+      "queries": [
+        "procon fumaça preta e fontes oficiais"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/registros-de-programa-de-controle-de-fumaca-preta",
+      "intent": "informacional",
+      "primary": "Registros de controle de Fumaça Preta",
+      "queries": [
+        "registros de controle de fumaça preta"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/ruido-extramuros-e-ruido-ocupacional",
+      "intent": "informacional",
+      "primary": "Ruído extramuros e ocupacional",
+      "queries": [
+        "ruído extramuros e ocupacional"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/como-preparar-avaliacao-de-ruido-extramuros",
+      "intent": "informacional",
+      "primary": "Preparação para avaliação de ruído",
+      "queries": [
+        "preparação para avaliação de ruído"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/ruido-ambiental-residual-e-especifico",
+      "intent": "informacional",
+      "primary": "Ruído residual e específico",
+      "queries": [
+        "ruído residual e específico"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental",
+      "intent": "informacional",
+      "primary": "Pontos e períodos de avaliação de ruído",
+      "queries": [
+        "pontos e períodos de avaliação de ruído"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/como-ler-relatorio-de-ruido-ambiental",
+      "intent": "informacional",
+      "primary": "Como ler relatório de ruído ambiental",
+      "queries": [
+        "como ler relatório de ruído ambiental"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+      "intent": "informacional",
+      "primary": "ABNT NBR 10151: contexto e aplicabilidade",
+      "queries": [
+        "abnt nbr 10151: contexto e aplicabilidade"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/investigacao-de-reclamacoes-de-ruido",
+      "intent": "informacional",
+      "primary": "Investigação de reclamações de ruído",
+      "queries": [
+        "investigação de reclamações de ruído"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/lacunas-de-dados-em-avaliacoes-geoambientais",
+      "intent": "informacional",
+      "primary": "Lacunas de dados em avaliações geoambientais",
+      "queries": [
+        "lacunas de dados em avaliações geoambientais"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/historico-de-uso-da-area-e-modelo-conceitual",
+      "intent": "informacional",
+      "primary": "Histórico da área e modelo conceitual",
+      "queries": [
+        "histórico da área e modelo conceitual"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/avaliacao-preliminar-investigacao-confirmatoria-e-detalhada",
+      "intent": "informacional",
+      "primary": "Etapas da investigação ambiental",
+      "queries": [
+        "etapas da investigação ambiental"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/representatividade-de-amostras-de-solo-e-agua",
+      "intent": "informacional",
+      "primary": "Representatividade de amostras",
+      "queries": [
+        "representatividade de amostras"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/cadeia-de-custodia-de-amostras-ambientais",
+      "intent": "informacional",
+      "primary": "Cadeia de custódia de amostras",
+      "queries": [
+        "cadeia de custódia de amostras"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/como-ler-relatorio-de-investigacao-ambiental",
+      "intent": "informacional",
+      "primary": "Como ler relatório de investigação",
+      "queries": [
+        "como ler relatório de investigação"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/medidas-de-gerenciamento-e-remediacao-diferencas",
+      "intent": "informacional",
+      "primary": "Gerenciamento e remediação",
+      "queries": [
+        "gerenciamento e remediação"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/lp-li-lo-objetivos-e-diferencas",
+      "intent": "informacional",
+      "primary": "LP, LI e LO",
+      "queries": [
+        "lp, li e lo"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/documentos-para-iniciar-licenciamento-ambiental",
+      "intent": "informacional",
+      "primary": "Documentos para iniciar licenciamento",
+      "queries": [
+        "documentos para iniciar licenciamento"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/condicionantes-ambientais-controle-de-evidencias",
+      "intent": "informacional",
+      "primary": "Controle de condicionantes ambientais",
+      "queries": [
+        "controle de condicionantes ambientais"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/renovacao-de-licenca-ambiental-planejamento",
+      "intent": "informacional",
+      "primary": "Planejamento de renovação de licença",
+      "queries": [
+        "planejamento de renovação de licença"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/alteracoes-no-empreendimento-e-licenciamento",
+      "intent": "informacional",
+      "primary": "Alterações no empreendimento",
+      "queries": [
+        "alterações no empreendimento"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/competencia-do-orgao-licenciador",
+      "intent": "informacional",
+      "primary": "Competência do órgão licenciador",
+      "queries": [
+        "competência do órgão licenciador"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+      "intent": "informacional",
+      "primary": "Escopo de estudos ambientais",
+      "queries": [
+        "escopo de estudos ambientais"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/gestao-sms-integracao-e-responsabilidades",
+      "intent": "informacional",
+      "primary": "Integração e responsabilidades em SMS",
+      "queries": [
+        "integração e responsabilidades em sms"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/requisitos-legais-matriz-e-evidencias-sms",
+      "intent": "informacional",
+      "primary": "Matriz de requisitos e evidências SMS",
+      "queries": [
+        "matriz de requisitos e evidências sms"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+      "intent": "informacional",
+      "primary": "Auditorias internas e de conformidade",
+      "queries": [
+        "auditorias internas e de conformidade"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/como-preparar-documentos-para-auditoria-sms",
+      "intent": "informacional",
+      "primary": "Preparação de documentos para auditoria",
+      "queries": [
+        "preparação de documentos para auditoria"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+      "intent": "informacional",
+      "primary": "Não conformidade e eficácia da ação",
+      "queries": [
+        "não conformidade e eficácia da ação"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/indicadores-preventivos-e-reativos-sms",
+      "intent": "informacional",
+      "primary": "Indicadores preventivos e reativos SMS",
+      "queries": [
+        "indicadores preventivos e reativos sms"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/procedimentos-operacionais-e-controle-documental-sms",
+      "intent": "informacional",
+      "primary": "Controle documental de procedimentos",
+      "queries": [
+        "controle documental de procedimentos"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/hazop-finalidade-e-limites",
+      "intent": "informacional",
+      "primary": "HAZOP: finalidade e limites",
+      "queries": [
+        "hazop: finalidade e limites"
+      ],
+      "topic": "hazop",
+      "collection": "/conteudos/hazop",
+      "commercial_destination": "/servicos/hazop",
+      "priority": 2
+    },
+    {
+      "url": "/blog/documentos-e-entradas-para-estudo-hazop",
+      "intent": "informacional",
+      "primary": "Documentos e entradas para HAZOP",
+      "queries": [
+        "documentos e entradas para hazop"
+      ],
+      "topic": "hazop",
+      "collection": "/conteudos/hazop",
+      "commercial_destination": "/servicos/hazop",
+      "priority": 2
+    },
+    {
+      "url": "/blog/equipe-e-responsabilidades-em-estudos-hazop",
+      "intent": "informacional",
+      "primary": "Equipe e responsabilidades HAZOP",
+      "queries": [
+        "equipe e responsabilidades hazop"
+      ],
+      "topic": "hazop",
+      "collection": "/conteudos/hazop",
+      "commercial_destination": "/servicos/hazop",
+      "priority": 2
+    },
+    {
+      "url": "/blog/recomendacoes-hazop-registro-e-acompanhamento",
+      "intent": "informacional",
+      "primary": "Acompanhamento de recomendações HAZOP",
+      "queries": [
+        "acompanhamento de recomendações hazop"
+      ],
+      "topic": "hazop",
+      "collection": "/conteudos/hazop",
+      "commercial_destination": "/servicos/hazop",
+      "priority": 2
+    },
+    {
+      "url": "/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+      "intent": "informacional",
+      "primary": "Matriz de treinamentos",
+      "queries": [
+        "matriz de treinamentos"
+      ],
+      "topic": "treinamentos",
+      "collection": "/conteudos/treinamentos",
+      "commercial_destination": "/servicos/seguranca#treinamentos",
+      "priority": 2
+    },
+    {
+      "url": "/blog/registro-de-treinamento-certificado-e-competencia",
+      "intent": "informacional",
+      "primary": "Certificado e competência",
+      "queries": [
+        "certificado e competência"
+      ],
+      "topic": "treinamentos",
+      "collection": "/conteudos/treinamentos",
+      "commercial_destination": "/servicos/seguranca#treinamentos",
+      "priority": 2
+    },
+    {
+      "url": "/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+      "intent": "informacional",
+      "primary": "Detecção de gases e proteção respiratória",
+      "queries": [
+        "detecção de gases e proteção respiratória"
+      ],
+      "topic": "equipamentos",
+      "collection": "/conteudos/equipamentos",
+      "commercial_destination": "/servicos/drager",
+      "priority": 2
+    },
+    {
+      "url": "/blog/detectores-portateis-e-fixos-diferencas",
+      "intent": "informacional",
+      "primary": "Detectores portáteis e fixos",
+      "queries": [
+        "detectores portáteis e fixos"
+      ],
+      "topic": "equipamentos",
+      "collection": "/conteudos/equipamentos",
+      "commercial_destination": "/servicos/drager",
+      "priority": 2
+    },
+    {
+      "url": "/blog/teste-de-resposta-calibracao-e-manutencao-de-detectores",
+      "intent": "informacional",
+      "primary": "Teste de resposta, calibração e manutenção",
+      "queries": [
+        "teste de resposta, calibração e manutenção"
+      ],
+      "topic": "equipamentos",
+      "collection": "/conteudos/equipamentos",
+      "commercial_destination": "/servicos/drager",
+      "priority": 2
+    },
+    {
+      "url": "/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+      "intent": "informacional",
+      "primary": "Informações para especificar equipamentos",
+      "queries": [
+        "informações para especificar equipamentos"
+      ],
+      "topic": "equipamentos",
+      "collection": "/conteudos/equipamentos",
+      "commercial_destination": "/servicos/drager",
+      "priority": 2
+    },
+    {
+      "url": "/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+      "intent": "informacional",
+      "primary": "Médias e picos na qualidade do ar: por que o período importa",
+      "queries": [
+        "médias e picos na qualidade do ar: por que o período importa"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/dados-ausentes-no-monitoramento-do-ar",
+      "intent": "informacional",
+      "primary": "Dados ausentes no monitoramento do ar",
+      "queries": [
+        "dados ausentes no monitoramento do ar"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+      "intent": "informacional",
+      "primary": "Padrões de qualidade do ar: como verificar a referência vigente",
+      "queries": [
+        "padrões de qualidade do ar: como verificar a referência vigente"
+      ],
+      "topic": "ar",
+      "collection": "/conteudos/qualidade-do-ar",
+      "commercial_destination": "/servicos#qualidade-ar",
+      "priority": 2
+    },
+    {
+      "url": "/blog/por-que-decibeis-nao-se-somam-como-numeros-comuns",
+      "intent": "informacional",
+      "primary": "Por que decibéis não se somam como números comuns",
+      "queries": [
+        "por que decibéis não se somam como números comuns"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/ruido-tonal-e-impulsivo",
+      "intent": "informacional",
+      "primary": "Ruído tonal e impulsivo",
+      "queries": [
+        "ruído tonal e impulsivo"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+      "intent": "informacional",
+      "primary": "Incerteza de medição em relatórios de ruído ambiental",
+      "queries": [
+        "incerteza de medição em relatórios de ruído ambiental"
+      ],
+      "topic": "ruido",
+      "collection": "/conteudos/ruido-ambiental",
+      "commercial_destination": "/servicos/ruido-extramuros",
+      "priority": 2
+    },
+    {
+      "url": "/blog/resultado-nao-detectado-em-analises-ambientais",
+      "intent": "informacional",
+      "primary": "Resultado não detectado em análises ambientais",
+      "queries": [
+        "resultado não detectado em análises ambientais"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/valores-orientadores-e-avaliacao-de-risco",
+      "intent": "informacional",
+      "primary": "Valores orientadores e avaliação de risco",
+      "queries": [
+        "valores orientadores e avaliação de risco"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+      "intent": "informacional",
+      "primary": "Mudança de uso da área e validade das conclusões ambientais",
+      "queries": [
+        "mudança de uso da área e validade das conclusões ambientais"
+      ],
+      "topic": "areas",
+      "collection": "/conteudos/areas-impactadas",
+      "commercial_destination": "/servicos#areas-impactadas",
+      "priority": 2
+    },
+    {
+      "url": "/blog/como-organizar-resposta-a-pedido-de-complementacao",
+      "intent": "informacional",
+      "primary": "Como organizar resposta a pedido de complementação",
+      "queries": [
+        "como organizar resposta a pedido de complementação"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/licenca-ambiental-e-outras-autorizacoes",
+      "intent": "informacional",
+      "primary": "Licença ambiental e outras autorizações",
+      "queries": [
+        "licença ambiental e outras autorizações"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/consulta-e-participacao-publica-no-licenciamento",
+      "intent": "informacional",
+      "primary": "Consulta e participação pública no licenciamento",
+      "queries": [
+        "consulta e participação pública no licenciamento"
+      ],
+      "topic": "licenciamento",
+      "collection": "/conteudos/licenciamento-ambiental",
+      "commercial_destination": "/servicos#licenciamento",
+      "priority": 2
+    },
+    {
+      "url": "/blog/amostragem-de-evidencias-em-auditorias-de-sms",
+      "intent": "informacional",
+      "primary": "Amostragem de evidências em auditorias de SMS",
+      "queries": [
+        "amostragem de evidências em auditorias de sms"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+      "intent": "informacional",
+      "primary": "Troca de informações de riscos entre contratante e contratadas",
+      "queries": [
+        "troca de informações de riscos entre contratante e contratadas"
+      ],
+      "topic": "sms",
+      "collection": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "commercial_destination": "/servicos/seguranca#sms",
+      "priority": 2
+    },
+    {
+      "url": "/blog/nos-e-intencao-de-projeto-em-estudos-hazop",
+      "intent": "informacional",
+      "primary": "Nós e intenção de projeto em estudos HAZOP",
+      "queries": [
+        "nós e intenção de projeto em estudos hazop"
+      ],
+      "topic": "hazop",
+      "collection": "/conteudos/hazop",
+      "commercial_destination": "/servicos/hazop",
+      "priority": 2
+    },
+    {
+      "url": "/blog/conteudo-pratico-e-modalidade-de-capacitacao",
+      "intent": "informacional",
+      "primary": "Conteúdo prático e modalidade de capacitação",
+      "queries": [
+        "conteúdo prático e modalidade de capacitação"
+      ],
+      "topic": "treinamentos",
+      "collection": "/conteudos/treinamentos",
+      "commercial_destination": "/servicos/seguranca#treinamentos",
+      "priority": 2
+    },
+    {
+      "url": "/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+      "intent": "informacional",
+      "primary": "Interferências e sensibilidade cruzada em detectores de gases",
+      "queries": [
+        "interferências e sensibilidade cruzada em detectores de gases"
+      ],
+      "topic": "equipamentos",
+      "collection": "/conteudos/equipamentos",
+      "commercial_destination": "/servicos/drager",
+      "priority": 2
+    },
+    {
+      "url": "/blog/documentacao-do-equipamento-e-adequacao-a-aplicacao",
+      "intent": "informacional",
+      "primary": "Documentação do equipamento e adequação à aplicação",
+      "queries": [
+        "documentação do equipamento e adequação à aplicação"
+      ],
+      "topic": "equipamentos",
+      "collection": "/conteudos/equipamentos",
+      "commercial_destination": "/servicos/drager",
+      "priority": 2
+    }
+  ]
+}

@@ -13,9 +13,10 @@ interface ServiceCardProps {
   description: string;
   fullDescription: string;
   delayMs?: number;
+  href?: string;
 }
 
-const ServiceCardComponent = ({ title, image, description, fullDescription, delayMs = 0 }: ServiceCardProps) => {
+const ServiceCardComponent = ({ title, image, description, fullDescription, href, delayMs = 0 }: ServiceCardProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   const handleExpand = useCallback(() => {
@@ -50,6 +51,7 @@ const ServiceCardComponent = ({ title, image, description, fullDescription, dela
             >
               Saiba mais
             </Button></DialogTrigger>
+            {href&&<a className="text-link" href={href}>Conhecer o serviço de {title} ↗</a>}
           </CardContent>
         </Card>
       </Reveal>

@@ -38,6 +38,7 @@ export function OfferingsSection() {
               image={service.image}
               description={service.description}
               fullDescription={service.fullDescription}
+              href={["/servicos/ruido-extramuros","/servicos/emissoes-fugitivas","/servicos#qualidade-ar"][i]}
               delayMs={i * 80}
             />
           ))}
