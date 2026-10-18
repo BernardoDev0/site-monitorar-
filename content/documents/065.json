@@ -1,0 +1,56 @@
+{
+  "id": "065",
+  "slug": "/blog/como-ler-relatorio-de-investigacao-ambiental",
+  "type": "article",
+  "title": "Como ler relatório de investigação",
+  "summary": "Um relatório de investigação ambiental deve ser lido a partir da finalidade, do modelo conceitual e da área efetivamente examinada. A tabela de resultados é importante, mas não resume o significado do estudo.",
+  "topic_cluster": "areas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Comece pela pergunta investigada",
+      "paragraphs": [
+        "Um relatório de investigação ambiental deve ser lido a partir da finalidade, do modelo conceitual e da área efetivamente examinada. A tabela de resultados é importante, mas não resume o significado do estudo.",
+        "Confira como os pontos foram escolhidos, quais compartimentos foram avaliados e quais limitações ocorreram. Depois verifique a identificação das análises, unidades e referências de comparação."
+      ]
+    },
+    {
+      "heading": "Resultado, comparação e conclusão",
+      "paragraphs": [
+        "Essas três camadas precisam permanecer distinguíveis. O laboratório apresenta resultados de amostras identificadas; a avaliação compara informações dentro de um contexto; a conclusão responde à pergunta do estudo com seus limites.",
+        "Num exemplo hipotético, um resultado é informado como não detectado. Isso não equivale automaticamente a concentração zero. É necessário considerar a capacidade analítica e a referência com a qual se pretende comparar o resultado. Se a capacidade do método não permite responder à pergunta, o relatório deve reconhecer essa limitação."
+      ]
+    },
+    {
+      "heading": "Como formular um pedido de esclarecimento",
+      "paragraphs": [
+        "Indique o ponto, o resultado ou a conclusão que precisa de explicação. Pergunte qual evidência sustenta a inferência e como foram tratadas lacunas ou divergências. Essa abordagem é mais produtiva do que pedir uma declaração genérica de que a área está “regular”.",
+        "As conclusões devem respeitar uso, cenário, período e abrangência do trabalho. Um estudo pode apoiar uma decisão específica sem encerrar todas as questões sobre a área. Requisitos administrativos e valores aplicáveis precisam ser conferidos na jurisdição pertinente."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "060",
+    "061",
+    "062"
+  ],
+  "created_at": "2026-10-18T07:00:30.174Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.174Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-investigacao-ambiental",
+  "indexability": false,
+  "review_due_at": null
+}

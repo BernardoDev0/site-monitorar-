@@ -1,0 +1,57 @@
+{
+  "id": "047",
+  "slug": "/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+  "type": "article",
+  "title": "Representatividade de pontos de monitoramento",
+  "summary": "A localização de um ponto de monitoramento influencia a informação produzida. Um ponto próximo de uma via movimentada e outro afastado de fontes imediatas podem responder a perguntas diferentes, mesmo na mesma região.",
+  "topic_cluster": "ar",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Um ponto representa uma situação",
+      "paragraphs": [
+        "A localização de um ponto de monitoramento influencia a informação produzida. Um ponto próximo de uma via movimentada e outro afastado de fontes imediatas podem responder a perguntas diferentes, mesmo na mesma região.",
+        "Representatividade não significa escolher apenas o local mais conveniente. É a relação entre o lugar observado e a condição que se pretende compreender. A justificativa deve considerar o objetivo, o entorno e a escala espacial da avaliação."
+      ]
+    },
+    {
+      "heading": "Como registrar o entorno",
+      "paragraphs": [
+        "Um exemplo hipotético: durante uma campanha, uma obra próxima passa a movimentar solo. O dado não deve ser apagado por destoar dos anteriores. A mudança precisa ser registrada e considerada na interpretação, distinguindo observação de atribuição de origem.",
+        "Fotografias, coordenadas, croqui e descrição do entorno ajudam a reconstruir o contexto. Esses registros devem ter data e permitir reconhecer alterações. Uma imagem aérea antiga não substitui a descrição da condição encontrada no período de avaliação."
+      ]
+    },
+    {
+      "heading": "Perguntas para o relatório",
+      "paragraphs": [
+        "Qual pergunta o ponto foi escolhido para responder? Quais fontes e obstáculos foram considerados? Houve mudança de posição ou de entorno? Os resultados são comparáveis aos de campanhas anteriores?",
+        "A orientação da EPA sobre monitoramento ambiente relaciona a localização à finalidade da rede. Sua aplicação a uma campanha específica exige planejamento técnico. Um único ponto não caracteriza automaticamente todo um empreendimento, bairro ou município; o alcance espacial da conclusão deve ser explicitado."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+    "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "045",
+    "046",
+    "048"
+  ],
+  "created_at": "2026-10-18T07:00:30.167Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.167Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+  "indexability": false,
+  "review_due_at": null
+}

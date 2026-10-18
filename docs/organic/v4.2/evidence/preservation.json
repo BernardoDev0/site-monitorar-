@@ -1,0 +1,23 @@
+{
+  "backup": "D:\\monitorar-recovery\\motion-20261018-145607",
+  "changed": [
+    "src/v4-base.css",
+    "src/v4.1.css",
+    "src/v4.css",
+    "src/components/Header.tsx",
+    "src/components/VideoHero.tsx",
+    "src/components/home/LogosCarousel.tsx",
+    "src/editorial/Search.tsx",
+    "src/hooks/use-page-motion.ts",
+    "src/pages/Home.tsx",
+    "scripts/page-data.mjs",
+    "tests/v2.test.mjs",
+    "tests/v41-media.test.mjs",
+    "README.md"
+  ],
+  "missing": [],
+  "editorial_documents_unchanged": 94,
+  "note": "Backup taken before V4.2 implementation. Previous uncommitted work preserved. Public media originals separately verified by existing V4.1 manifest.",
+  "original_assets_unchanged": true,
+  "original_assets_count": 62
+}

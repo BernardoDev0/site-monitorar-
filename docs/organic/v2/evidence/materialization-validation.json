@@ -1,0 +1,229 @@
+{
+  "verified_at_utc": "2026-10-17T16:33:27.060510+00:00",
+  "scope": "documentation, cross-artifact contracts and preservation only; no redesign tests",
+  "status": "pass",
+  "passed": 40,
+  "total": 40,
+  "checks": [
+    {
+      "name": "13 main artifacts exist and are nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "seven specifications",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 01-scope-and-preservation.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 02-design-impeccable-taste.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 03-blog-and-templates.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 04-original-content-and-90-urls.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 05-technical-seo-and-quality.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 06-editorial-operations.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "spec sections: 07-measurement-and-release.md",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "90 unique stable IDs and paths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "24 original columns preserved first",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "12 services 6 hubs 72 articles",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "nine batches of ten",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "only040/060 paths replaced",
+      "passed": true,
+      "detail": [
+        "040",
+        "060"
+      ]
+    },
+    {
+      "name": "training cluster corrected",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "specific editorial fields nonempty",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "90 distinct questions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "explicit relationships unique without selflinks/parent cycles",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "90 matching briefs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "brief identities match paths and questions",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "structured editorial matrix has90rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ambiens required19columns",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "785 unique Ambiens URLs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ambiens CSV/snapshot same URLs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "Ambiens reading states reconcile",
+      "passed": true,
+      "detail": {
+        "main_body_read": 24,
+        "metadata_extracted_not_read": 332,
+        "http_404_no_body_review": 39,
+        "excluded_not_requested": 372,
+        "technical_pagination_checked": 17,
+        "technical_blank_variant_checked": 1
+      }
+    },
+    {
+      "name": "24 own semantic notes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "editorial semantic mappings use read sources",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "design coverage13fields and17rows",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "all17legacy routes covered",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "task contract complete",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "eight first implementation tasks",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "28 requirements defined and covered",
+      "passed": true,
+      "detail": {
+        "unknown": [],
+        "uncovered": []
+      }
+    },
+    {
+      "name": "task dependencies refer to known IDs",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "321 preexisting files unchanged",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "independent editorial artifact hashes preserved",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "relative markdown links resolve",
+      "passed": true,
+      "detail": []
+    },
+    {
+      "name": "15 real PNG screenshots at recorded widths",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "62 existing assets match inventory hashes",
+      "passed": true,
+      "detail": null
+    },
+    {
+      "name": "git diff --check",
+      "passed": true,
+      "detail": ""
+    },
+    {
+      "name": "new Markdown has no trailing whitespace",
+      "passed": true,
+      "detail": []
+    }
+  ],
+  "not_run": [
+    "build/preview/test/typecheck/lint were already run during audit; not repeated for unchanged code",
+    "redesign browser tests",
+    "new Lighthouse protocol",
+    "NVDA",
+    "production release/indexing/analytics"
+  ]
+}

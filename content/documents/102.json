@@ -1,0 +1,57 @@
+{
+  "id": "102",
+  "slug": "/blog/consulta-e-participacao-publica-no-licenciamento",
+  "type": "article",
+  "title": "Consulta e participação pública no licenciamento",
+  "summary": "A participação pública no licenciamento envolve mecanismos definidos pelas regras e pelo processo correspondente. Audiência, consulta e acesso a documentos não devem ser tratados como etapas idênticas nem como exigências universais para qualquer empreendimento.",
+  "topic_cluster": "licenciamento",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Participação depende do procedimento aplicável",
+      "paragraphs": [
+        "A participação pública no licenciamento envolve mecanismos definidos pelas regras e pelo processo correspondente. Audiência, consulta e acesso a documentos não devem ser tratados como etapas idênticas nem como exigências universais para qualquer empreendimento.",
+        "Antes de orientar a participação, confirme órgão responsável, processo, documentos disponíveis e canais oficiais. Prazos e formas de manifestação precisam ser consultados na comunicação pertinente, sem depender apenas de divulgação informal."
+      ]
+    },
+    {
+      "heading": "Preparar uma contribuição compreensível",
+      "paragraphs": [
+        "Uma manifestação útil identifica o tema, a localização ou situação relevante, a informação observada e a pergunta ou solicitação. Quando houver documentos de apoio, explique sua origem e relação com o assunto. Isso ajuda a distinguir observações verificáveis de inferências.",
+        "Num exemplo hipotético, um morador descreve um evento recorrente em determinado horário. Informar datas, local e condições conhecidas pode contribuir para a análise, sem exigir que ele atribua uma causa técnica que não consegue demonstrar."
+      ]
+    },
+    {
+      "heading": "Acompanhar sem presumir o resultado",
+      "paragraphs": [
+        "Guarde o protocolo e verifique os canais de acompanhamento. O recebimento de uma contribuição não significa que todas as solicitações serão acolhidas; sua consideração ocorre dentro das regras do procedimento.",
+        "Também é importante preservar dados pessoais e evitar divulgar informações sensíveis desnecessárias. O texto apresentado deve focar a questão ambiental e sua relação com a decisão. Este artigo oferece orientação de organização, enquanto direitos, formas e etapas específicas precisam ser confirmados nas normas e comunicações oficiais aplicáveis."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm",
+    "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "067",
+    "068",
+    "069"
+  ],
+  "created_at": "2026-10-18T07:00:30.189Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.189Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/consulta-e-participacao-publica-no-licenciamento",
+  "indexability": false,
+  "review_due_at": null
+}

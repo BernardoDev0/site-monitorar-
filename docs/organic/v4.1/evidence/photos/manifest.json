@@ -1,0 +1,1805 @@
+{
+  "records": [
+    {
+      "id": 1,
+      "source": "src\\assets\\hero-refinery.jpg",
+      "sha256_original": "dba91d7a0a5aaa2eb9f907c2062a565119abd4fa2503d6345a5bbd777ece7755",
+      "candidate": "D:\\monitorar-tools\\v4.1\\01-refined.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.33,
+      "original_size": [
+        1920,
+        1080
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/01-480.webp",
+          "width": 480,
+          "bytes": 20862
+        },
+        {
+          "src": "/media/photos-v41/01-800.webp",
+          "width": 800,
+          "bytes": 50106
+        },
+        {
+          "src": "/media/photos-v41/01-1200.webp",
+          "width": 1200,
+          "bytes": 99554
+        },
+        {
+          "src": "/media/photos-v41/01-1600.webp",
+          "width": 1600,
+          "bytes": 151240
+        },
+        {
+          "src": "/media/photos-v41/01-1920.webp",
+          "width": 1920,
+          "bytes": 196416
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 2,
+      "source": "src\\assets\\paisagem.png",
+      "sha256_original": "f94d46cff9feb65e2e157a54b9213ee886a35200dcd8aced44ca51bb6c29a580",
+      "candidate": "D:\\monitorar-tools\\v4.1\\02-refined.png",
+      "size": [
+        2048,
+        2048
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 31.71,
+      "original_size": [
+        1024,
+        1024
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/02-480.webp",
+          "width": 480,
+          "bytes": 96250
+        },
+        {
+          "src": "/media/photos-v41/02-800.webp",
+          "width": 800,
+          "bytes": 263898
+        },
+        {
+          "src": "/media/photos-v41/02-1200.webp",
+          "width": 1200,
+          "bytes": 573864
+        },
+        {
+          "src": "/media/photos-v41/02-1600.webp",
+          "width": 1600,
+          "bytes": 895006
+        },
+        {
+          "src": "/media/photos-v41/02-1920.webp",
+          "width": 1920,
+          "bytes": 1143228
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 3,
+      "source": "public\\epis.png",
+      "sha256_original": "feacff0992f1f0b62f6916fc19d417b76364d282d7450b13f2367ff59d90cc39",
+      "candidate": "D:\\monitorar-tools\\v4.1\\03-refined.png",
+      "size": [
+        1704,
+        1026
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.37,
+      "original_size": [
+        1704,
+        1026
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.6,
+          0,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/03-480.webp",
+          "width": 480,
+          "bytes": 28732
+        },
+        {
+          "src": "/media/photos-v41/03-800.webp",
+          "width": 800,
+          "bytes": 59838
+        },
+        {
+          "src": "/media/photos-v41/03-1200.webp",
+          "width": 1200,
+          "bytes": 108490
+        },
+        {
+          "src": "/media/photos-v41/03-1600.webp",
+          "width": 1600,
+          "bytes": 153476
+        },
+        {
+          "src": "/media/photos-v41/03-1704.webp",
+          "width": 1704,
+          "bytes": 178928
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 4,
+      "source": "public\\pessoas\\Picture12.jpg",
+      "sha256_original": "f1df38bcb56c93e92e28fdc36361d1d35c3b5d7c26d488c0c8f94d8d1550d05e",
+      "candidate": "D:\\monitorar-tools\\v4.1\\04-refined.png",
+      "size": [
+        1152,
+        984
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 10.54,
+      "original_size": [
+        576,
+        492
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          0.95
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/04-480.webp",
+          "width": 480,
+          "bytes": 42320
+        },
+        {
+          "src": "/media/photos-v41/04-800.webp",
+          "width": 800,
+          "bytes": 85228
+        },
+        {
+          "src": "/media/photos-v41/04-1152.webp",
+          "width": 1152,
+          "bytes": 125848
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 5,
+      "source": "public\\pessoas\\Picture13.jpg",
+      "sha256_original": "ee6e4830968b0f0bcf108b689f4431c62903a138ef0a25f599bb155353033fc8",
+      "candidate": "D:\\monitorar-tools\\v4.1\\05-refined.png",
+      "size": [
+        520,
+        924
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.02,
+      "original_size": [
+        260,
+        462
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.25,
+          0.3,
+          0.8,
+          0.9
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/05-480.webp",
+          "width": 480,
+          "bytes": 123108
+        },
+        {
+          "src": "/media/photos-v41/05-520.webp",
+          "width": 520,
+          "bytes": 134442
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 6,
+      "source": "public\\pessoas\\Picture14.jpg",
+      "sha256_original": "03f4d5b15d3756548c338018683c6d7fb7ad9777214f831ca8767a597c8a2be9",
+      "candidate": "D:\\monitorar-tools\\v4.1\\06-refined.png",
+      "size": [
+        716,
+        954
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 5.27,
+      "original_size": [
+        358,
+        477
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.1,
+          0.25,
+          0.72,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/06-480.webp",
+          "width": 480,
+          "bytes": 91304
+        },
+        {
+          "src": "/media/photos-v41/06-716.webp",
+          "width": 716,
+          "bytes": 146042
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 7,
+      "source": "public\\servicos\\licenciamento.jpg",
+      "sha256_original": "a4bd575f4be0c9986d852821d63c6d60973abc7b7c9a48fe906dee67283f1d8a",
+      "candidate": "D:\\monitorar-tools\\v4.1\\07-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.84,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0.3,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/07-480.webp",
+          "width": 480,
+          "bytes": 26590
+        },
+        {
+          "src": "/media/photos-v41/07-800.webp",
+          "width": 800,
+          "bytes": 51500
+        },
+        {
+          "src": "/media/photos-v41/07-1200.webp",
+          "width": 1200,
+          "bytes": 82984
+        },
+        {
+          "src": "/media/photos-v41/07-1600.webp",
+          "width": 1600,
+          "bytes": 116488
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 8,
+      "source": "public\\paisagem2.png",
+      "sha256_original": "737da12aaf4ffb5850a58ce02ee840a1e2c3e4c56c4bcb66c1a4df0f39ebf219",
+      "candidate": "D:\\monitorar-tools\\v4.1\\08-refined.png",
+      "size": [
+        1408,
+        736
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.04,
+      "original_size": [
+        1408,
+        736
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/08-480.webp",
+          "width": 480,
+          "bytes": 39428
+        },
+        {
+          "src": "/media/photos-v41/08-800.webp",
+          "width": 800,
+          "bytes": 98098
+        },
+        {
+          "src": "/media/photos-v41/08-1200.webp",
+          "width": 1200,
+          "bytes": 193244
+        },
+        {
+          "src": "/media/photos-v41/08-1408.webp",
+          "width": 1408,
+          "bytes": 251692
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 9,
+      "source": "public\\equipe\\equipe5.png",
+      "sha256_original": "296cd909b18b7d07f498b2614dc1bd7e1f35a611d8aa276270d12533b40db830",
+      "candidate": "D:\\monitorar-tools\\v4.1\\09-refined.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.05,
+      "original_size": [
+        1536,
+        1024
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/09-480.webp",
+          "width": 480,
+          "bytes": 22882
+        },
+        {
+          "src": "/media/photos-v41/09-800.webp",
+          "width": 800,
+          "bytes": 61450
+        },
+        {
+          "src": "/media/photos-v41/09-1200.webp",
+          "width": 1200,
+          "bytes": 163394
+        },
+        {
+          "src": "/media/photos-v41/09-1536.webp",
+          "width": 1536,
+          "bytes": 316554
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 10,
+      "source": "public\\equipe\\equipe1.JPG",
+      "sha256_original": "51fb90cada2e8545c42eba63fae64eb43b9647400cf4fc8c777a8b78f9f8ce7a",
+      "candidate": "D:\\monitorar-tools\\v4.1\\10-refined.png",
+      "size": [
+        1280,
+        960
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.24,
+      "original_size": [
+        1280,
+        960
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.04,
+          0.16,
+          0.94,
+          0.98
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/10-480.webp",
+          "width": 480,
+          "bytes": 43238
+        },
+        {
+          "src": "/media/photos-v41/10-800.webp",
+          "width": 800,
+          "bytes": 116090
+        },
+        {
+          "src": "/media/photos-v41/10-1200.webp",
+          "width": 1200,
+          "bytes": 245434
+        },
+        {
+          "src": "/media/photos-v41/10-1280.webp",
+          "width": 1280,
+          "bytes": 269184
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 11,
+      "source": "public\\equipe\\equipe2.jpeg",
+      "sha256_original": "643cf24e78b57d5316b44450dd3c2dcece2422c149ba88db44f7f59b0045e731",
+      "candidate": "D:\\monitorar-tools\\v4.1\\11-refined.png",
+      "size": [
+        2048,
+        1536
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 26.35,
+      "original_size": [
+        1024,
+        768
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0.25,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/11-480.webp",
+          "width": 480,
+          "bytes": 53876
+        },
+        {
+          "src": "/media/photos-v41/11-800.webp",
+          "width": 800,
+          "bytes": 133932
+        },
+        {
+          "src": "/media/photos-v41/11-1200.webp",
+          "width": 1200,
+          "bytes": 250634
+        },
+        {
+          "src": "/media/photos-v41/11-1600.webp",
+          "width": 1600,
+          "bytes": 367068
+        },
+        {
+          "src": "/media/photos-v41/11-1920.webp",
+          "width": 1920,
+          "bytes": 454116
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 12,
+      "source": "public\\equipe\\equipe6.jpeg",
+      "sha256_original": "923b9ffc5153d5824e829d8a66952be4323ffaaa835865f292b32edf05d10d1a",
+      "candidate": "D:\\monitorar-tools\\v4.1\\12-refined.png",
+      "size": [
+        1280,
+        960
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.27,
+      "original_size": [
+        1280,
+        960
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.12,
+          0.2,
+          0.9,
+          0.92
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/12-480.webp",
+          "width": 480,
+          "bytes": 62766
+        },
+        {
+          "src": "/media/photos-v41/12-800.webp",
+          "width": 800,
+          "bytes": 165438
+        },
+        {
+          "src": "/media/photos-v41/12-1200.webp",
+          "width": 1200,
+          "bytes": 346308
+        },
+        {
+          "src": "/media/photos-v41/12-1280.webp",
+          "width": 1280,
+          "bytes": 390948
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 13,
+      "source": "src\\assets\\refinary+floresta.png",
+      "sha256_original": "97d6cad527cf6e624890e84b73e329d9a1c1b6941a925fbf8c521a1aba9a58ec",
+      "candidate": "D:\\monitorar-tools\\v4.1\\13-refined.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.33,
+      "original_size": [
+        1536,
+        1024
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/13-480.webp",
+          "width": 480,
+          "bytes": 40810
+        },
+        {
+          "src": "/media/photos-v41/13-800.webp",
+          "width": 800,
+          "bytes": 105858
+        },
+        {
+          "src": "/media/photos-v41/13-1200.webp",
+          "width": 1200,
+          "bytes": 208176
+        },
+        {
+          "src": "/media/photos-v41/13-1536.webp",
+          "width": 1536,
+          "bytes": 305258
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 14,
+      "source": "public\\faleconosco.png",
+      "sha256_original": "1262e66c8035d3cbbf95c2c6373b7c7d9d18cf3eb6688e71caf629d9b6958b22",
+      "candidate": "D:\\monitorar-tools\\v4.1\\14-refined.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.31,
+      "original_size": [
+        1536,
+        1024
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.28,
+          0,
+          0.85,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/14-480.webp",
+          "width": 480,
+          "bytes": 21578
+        },
+        {
+          "src": "/media/photos-v41/14-800.webp",
+          "width": 800,
+          "bytes": 48688
+        },
+        {
+          "src": "/media/photos-v41/14-1200.webp",
+          "width": 1200,
+          "bytes": 110788
+        },
+        {
+          "src": "/media/photos-v41/14-1536.webp",
+          "width": 1536,
+          "bytes": 193538
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 15,
+      "source": "public\\depoimentos.png",
+      "sha256_original": "7842743595b01c79e28aaa4ec232c57b19ec528ea02a6ee13490e8019b9e33ea",
+      "candidate": "D:\\monitorar-tools\\v4.1\\15-refined.png",
+      "size": [
+        2048,
+        1576
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 26.4,
+      "original_size": [
+        1024,
+        788
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0.25,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/15-480.webp",
+          "width": 480,
+          "bytes": 43164
+        },
+        {
+          "src": "/media/photos-v41/15-800.webp",
+          "width": 800,
+          "bytes": 96614
+        },
+        {
+          "src": "/media/photos-v41/15-1200.webp",
+          "width": 1200,
+          "bytes": 172342
+        },
+        {
+          "src": "/media/photos-v41/15-1600.webp",
+          "width": 1600,
+          "bytes": 252616
+        },
+        {
+          "src": "/media/photos-v41/15-1920.webp",
+          "width": 1920,
+          "bytes": 313452
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 16,
+      "source": "public\\paisagem4.png.png",
+      "sha256_original": "58d14a5ff834ad441206ae63cc56a8b4c0e9d3037d840332cf3237de0d2508cb",
+      "candidate": "D:\\monitorar-tools\\v4.1\\16-refined.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.31,
+      "original_size": [
+        1536,
+        1024
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/16-480.webp",
+          "width": 480,
+          "bytes": 42246
+        },
+        {
+          "src": "/media/photos-v41/16-800.webp",
+          "width": 800,
+          "bytes": 107382
+        },
+        {
+          "src": "/media/photos-v41/16-1200.webp",
+          "width": 1200,
+          "bytes": 220288
+        },
+        {
+          "src": "/media/photos-v41/16-1536.webp",
+          "width": 1536,
+          "bytes": 332804
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 17,
+      "source": "public\\servicos\\qualidade-ar.jpg",
+      "sha256_original": "95bb6db5165d39d11cebdc0ddb56b83acad91108447fde0ce7c909d33d667e54",
+      "candidate": "D:\\monitorar-tools\\v4.1\\17-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.82,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/17-480.webp",
+          "width": 480,
+          "bytes": 29546
+        },
+        {
+          "src": "/media/photos-v41/17-800.webp",
+          "width": 800,
+          "bytes": 69990
+        },
+        {
+          "src": "/media/photos-v41/17-1200.webp",
+          "width": 1200,
+          "bytes": 129666
+        },
+        {
+          "src": "/media/photos-v41/17-1600.webp",
+          "width": 1600,
+          "bytes": 186026
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 18,
+      "source": "public\\servicos\\areas-impactadas.jpg",
+      "sha256_original": "5fab9f5b590e074cab418d46f848bc2f989e7cfe307d007aa79b30b447ad3c3e",
+      "candidate": "D:\\monitorar-tools\\v4.1\\18-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.91,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.32,
+          0.05,
+          1,
+          0.95
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/18-480.webp",
+          "width": 480,
+          "bytes": 61546
+        },
+        {
+          "src": "/media/photos-v41/18-800.webp",
+          "width": 800,
+          "bytes": 137432
+        },
+        {
+          "src": "/media/photos-v41/18-1200.webp",
+          "width": 1200,
+          "bytes": 239660
+        },
+        {
+          "src": "/media/photos-v41/18-1600.webp",
+          "width": 1600,
+          "bytes": 346236
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 19,
+      "source": "public\\servicos\\avaliacao-ruido.jpg",
+      "sha256_original": "41a70b30b9151d5a6e9174035841d992f61b54d0428a383aa213ce5a7190f51c",
+      "candidate": "D:\\monitorar-tools\\v4.1\\19-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.84,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0.2,
+          0.85,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/19-480.webp",
+          "width": 480,
+          "bytes": 17156
+        },
+        {
+          "src": "/media/photos-v41/19-800.webp",
+          "width": 800,
+          "bytes": 34036
+        },
+        {
+          "src": "/media/photos-v41/19-1200.webp",
+          "width": 1200,
+          "bytes": 56648
+        },
+        {
+          "src": "/media/photos-v41/19-1600.webp",
+          "width": 1600,
+          "bytes": 76654
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 20,
+      "source": "public\\servicos\\gestao-sms.jpg",
+      "sha256_original": "d53494d873ad4fb200fe3647228d5119388ce63e9af0570fdcb7b5f0f8c076ac",
+      "candidate": "D:\\monitorar-tools\\v4.1\\20-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.92,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0.2,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/20-480.webp",
+          "width": 480,
+          "bytes": 38744
+        },
+        {
+          "src": "/media/photos-v41/20-800.webp",
+          "width": 800,
+          "bytes": 72452
+        },
+        {
+          "src": "/media/photos-v41/20-1200.webp",
+          "width": 1200,
+          "bytes": 117936
+        },
+        {
+          "src": "/media/photos-v41/20-1600.webp",
+          "width": 1600,
+          "bytes": 168256
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 21,
+      "source": "public\\servicos\\hazop.jpg",
+      "sha256_original": "22a54d57736b830d8fa8784d70667f1022f3f7fd7de6fae61a442483637c875a",
+      "candidate": "D:\\monitorar-tools\\v4.1\\21-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.87,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.08,
+          0.15,
+          0.96,
+          0.95
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/21-480.webp",
+          "width": 480,
+          "bytes": 26562
+        },
+        {
+          "src": "/media/photos-v41/21-800.webp",
+          "width": 800,
+          "bytes": 50118
+        },
+        {
+          "src": "/media/photos-v41/21-1200.webp",
+          "width": 1200,
+          "bytes": 80216
+        },
+        {
+          "src": "/media/photos-v41/21-1600.webp",
+          "width": 1600,
+          "bytes": 109034
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 22,
+      "source": "public\\servicos\\auditorias.jpg",
+      "sha256_original": "7f4b3ef0790a0a38819052d031d2f74ca48e94d4e3907ebdbc5b41dd2d316b49",
+      "candidate": "D:\\monitorar-tools\\v4.1\\22-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.93,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.05,
+          0.05,
+          0.8,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/22-480.webp",
+          "width": 480,
+          "bytes": 34316
+        },
+        {
+          "src": "/media/photos-v41/22-800.webp",
+          "width": 800,
+          "bytes": 64196
+        },
+        {
+          "src": "/media/photos-v41/22-1200.webp",
+          "width": 1200,
+          "bytes": 104124
+        },
+        {
+          "src": "/media/photos-v41/22-1600.webp",
+          "width": 1600,
+          "bytes": 144014
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 23,
+      "source": "public\\servicos\\treinamentos.jpg",
+      "sha256_original": "ef02b7d2dafa785658dc5d7e3df899fd633459bc5143da683116a6651173c1cd",
+      "candidate": "D:\\monitorar-tools\\v4.1\\23-refined.png",
+      "size": [
+        1600,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.89,
+      "original_size": [
+        800,
+        800
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.05,
+          0.15,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/23-480.webp",
+          "width": 480,
+          "bytes": 24378
+        },
+        {
+          "src": "/media/photos-v41/23-800.webp",
+          "width": 800,
+          "bytes": 43714
+        },
+        {
+          "src": "/media/photos-v41/23-1200.webp",
+          "width": 1200,
+          "bytes": 71208
+        },
+        {
+          "src": "/media/photos-v41/23-1600.webp",
+          "width": 1600,
+          "bytes": 99642
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 24,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1518837695005-2083093ee35b.jpg",
+      "sha256_original": "3c979df04acaa5375621fc49084b38aaedb0545b0d59c29482e99bfd2856cc0f",
+      "candidate": "D:\\monitorar-tools\\v4.1\\24-refined.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.57,
+      "original_size": [
+        2400,
+        1600
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/24-480.webp",
+          "width": 480,
+          "bytes": 15142
+        },
+        {
+          "src": "/media/photos-v41/24-800.webp",
+          "width": 800,
+          "bytes": 28986
+        },
+        {
+          "src": "/media/photos-v41/24-1200.webp",
+          "width": 1200,
+          "bytes": 53232
+        },
+        {
+          "src": "/media/photos-v41/24-1600.webp",
+          "width": 1600,
+          "bytes": 100120
+        },
+        {
+          "src": "/media/photos-v41/24-1920.webp",
+          "width": 1920,
+          "bytes": 163542
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 25,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1441974231531-c6227db76b6e.jpg",
+      "sha256_original": "47a042f405eef7bc3a8e11b08398d3301f0dbbfe522e2d6aecb2094fbbbe84aa",
+      "candidate": "D:\\monitorar-tools\\v4.1\\25-refined.png",
+      "size": [
+        2400,
+        1598
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.7,
+      "original_size": [
+        2400,
+        1598
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/25-480.webp",
+          "width": 480,
+          "bytes": 61854
+        },
+        {
+          "src": "/media/photos-v41/25-800.webp",
+          "width": 800,
+          "bytes": 166474
+        },
+        {
+          "src": "/media/photos-v41/25-1200.webp",
+          "width": 1200,
+          "bytes": 360168
+        },
+        {
+          "src": "/media/photos-v41/25-1600.webp",
+          "width": 1600,
+          "bytes": 620128
+        },
+        {
+          "src": "/media/photos-v41/25-1920.webp",
+          "width": 1920,
+          "bytes": 853788
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 26,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1486406146926-c627a92ad1ab.jpg",
+      "sha256_original": "666c223a427d8914990fe02e67d9c6361909966a2bd158d43c7216aeaab32de7",
+      "candidate": "D:\\monitorar-tools\\v4.1\\26-refined.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.68,
+      "original_size": [
+        2400,
+        1600
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/26-480.webp",
+          "width": 480,
+          "bytes": 43760
+        },
+        {
+          "src": "/media/photos-v41/26-800.webp",
+          "width": 800,
+          "bytes": 107700
+        },
+        {
+          "src": "/media/photos-v41/26-1200.webp",
+          "width": 1200,
+          "bytes": 214364
+        },
+        {
+          "src": "/media/photos-v41/26-1600.webp",
+          "width": 1600,
+          "bytes": 330388
+        },
+        {
+          "src": "/media/photos-v41/26-1920.webp",
+          "width": 1920,
+          "bytes": 427098
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 27,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1581594549595-35f6edc7b762.jpg",
+      "sha256_original": "37cb18bf7f7d3a20db41d52c9d785c02bf0d4c3a4b87ce5f754fd8b8094188c9",
+      "candidate": "D:\\monitorar-tools\\v4.1\\27-refined.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "agent_visual_review_accepted",
+      "seconds": 0.1,
+      "original_size": [
+        2400,
+        1600
+      ],
+      "method": "prior_neural_denoise_protected_then_unsharp",
+      "protected_rectangles": [
+        [
+          0.1,
+          0,
+          0.85,
+          0.3
+        ],
+        [
+          0.15,
+          0.15,
+          1,
+          1
+        ]
+      ],
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/27-480.webp",
+          "width": 480,
+          "bytes": 29524
+        },
+        {
+          "src": "/media/photos-v41/27-800.webp",
+          "width": 800,
+          "bytes": 61438
+        },
+        {
+          "src": "/media/photos-v41/27-1200.webp",
+          "width": 1200,
+          "bytes": 110968
+        },
+        {
+          "src": "/media/photos-v41/27-1600.webp",
+          "width": 1600,
+          "bytes": 173666
+        },
+        {
+          "src": "/media/photos-v41/27-1920.webp",
+          "width": 1920,
+          "bytes": 235996
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 28,
+      "source": "public\\refinary plant.png",
+      "sha256_original": "450d2adc6b483027c7624e6398ad4b8ba8cffd71b991466f7cdd26579ee19629",
+      "candidate": "D:\\monitorar-tools\\v4.1\\28-refined.png",
+      "original_size": [
+        1024,
+        1024
+      ],
+      "size": [
+        2048,
+        2048
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [],
+      "status": "agent_visual_review_accepted",
+      "seconds": 32.06,
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/28-480.webp",
+          "width": 480,
+          "bytes": 59294
+        },
+        {
+          "src": "/media/photos-v41/28-800.webp",
+          "width": 800,
+          "bytes": 157340
+        },
+        {
+          "src": "/media/photos-v41/28-1200.webp",
+          "width": 1200,
+          "bytes": 324506
+        },
+        {
+          "src": "/media/photos-v41/28-1600.webp",
+          "width": 1600,
+          "bytes": 506596
+        },
+        {
+          "src": "/media/photos-v41/28-1920.webp",
+          "width": 1920,
+          "bytes": 649736
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 29,
+      "source": "public\\seguranca_industrial.png",
+      "sha256_original": "b36ee516804a1a6d57a77993dc274d6a9cce74b4dce30d10cb854848e01a6b21",
+      "candidate": "D:\\monitorar-tools\\v4.1\\29-refined.png",
+      "original_size": [
+        1704,
+        1280
+      ],
+      "size": [
+        3408,
+        2560
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [],
+      "status": "agent_visual_review_accepted",
+      "seconds": 70.47,
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/29-480.webp",
+          "width": 480,
+          "bytes": 27836
+        },
+        {
+          "src": "/media/photos-v41/29-800.webp",
+          "width": 800,
+          "bytes": 51774
+        },
+        {
+          "src": "/media/photos-v41/29-1200.webp",
+          "width": 1200,
+          "bytes": 85918
+        },
+        {
+          "src": "/media/photos-v41/29-1600.webp",
+          "width": 1600,
+          "bytes": 123128
+        },
+        {
+          "src": "/media/photos-v41/29-1920.webp",
+          "width": 1920,
+          "bytes": 149930
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 30,
+      "source": "public\\equipe\\equipe3.jpeg",
+      "sha256_original": "27363262128614e22617d2f304b57d8af927e580ec7667fba88b2f1ef9cb096e",
+      "candidate": "D:\\monitorar-tools\\v4.1\\30-refined.png",
+      "original_size": [
+        683,
+        678
+      ],
+      "size": [
+        1366,
+        1356
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "status": "agent_visual_review_accepted",
+      "seconds": 14.1,
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/30-480.webp",
+          "width": 480,
+          "bytes": 31032
+        },
+        {
+          "src": "/media/photos-v41/30-800.webp",
+          "width": 800,
+          "bytes": 57284
+        },
+        {
+          "src": "/media/photos-v41/30-1200.webp",
+          "width": 1200,
+          "bytes": 91332
+        },
+        {
+          "src": "/media/photos-v41/30-1366.webp",
+          "width": 1366,
+          "bytes": 105988
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 31,
+      "source": "public\\equipe\\equipe4.jpg",
+      "sha256_original": "7ab4b2434c9fc2217a52fe89e6592e4bab7b54624f0f701cd27d621c6bfaac06",
+      "candidate": "D:\\monitorar-tools\\v4.1\\31-refined.png",
+      "original_size": [
+        586,
+        1024
+      ],
+      "size": [
+        1172,
+        2048
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "status": "agent_visual_review_accepted",
+      "seconds": 21.11,
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/31-480.webp",
+          "width": 480,
+          "bytes": 133308
+        },
+        {
+          "src": "/media/photos-v41/31-800.webp",
+          "width": 800,
+          "bytes": 271824
+        },
+        {
+          "src": "/media/photos-v41/31-1172.webp",
+          "width": 1172,
+          "bytes": 402714
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 32,
+      "source": "public\\equipe\\foto-07.jpg.jpeg",
+      "sha256_original": "24c992679a698c8a42c28c0088275e8bf8e0472cc4f28453df0d585f700a6a09",
+      "candidate": "D:\\monitorar-tools\\v4.1\\32-refined.png",
+      "original_size": [
+        600,
+        600
+      ],
+      "size": [
+        1200,
+        1200
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "status": "agent_visual_review_accepted",
+      "seconds": 14.05,
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/32-480.webp",
+          "width": 480,
+          "bytes": 53232
+        },
+        {
+          "src": "/media/photos-v41/32-800.webp",
+          "width": 800,
+          "bytes": 99196
+        },
+        {
+          "src": "/media/photos-v41/32-1200.webp",
+          "width": 1200,
+          "bytes": 159678
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 33,
+      "source": "public\\equipe\\foto-08.jpg.jpeg",
+      "sha256_original": "d286f1201ce81a1744c8d401c8ea4b8f764ae0b58b71c03b38ab9c3acd88b9f0",
+      "candidate": "D:\\monitorar-tools\\v4.1\\33-refined.png",
+      "original_size": [
+        600,
+        600
+      ],
+      "size": [
+        1200,
+        1200
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "status": "agent_visual_review_accepted",
+      "seconds": 14.06,
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/33-480.webp",
+          "width": 480,
+          "bytes": 35960
+        },
+        {
+          "src": "/media/photos-v41/33-800.webp",
+          "width": 800,
+          "bytes": 65206
+        },
+        {
+          "src": "/media/photos-v41/33-1200.webp",
+          "width": 1200,
+          "bytes": 103902
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 34,
+      "source": "public\\equipe\\matheus.jpeg",
+      "sha256_original": "1cbd4fb9be33605494e88d5d084b1fd57b47bf033f965d1fe49db6172352253d",
+      "candidate": "D:\\monitorar-tools\\v4.1\\34-refined.png",
+      "original_size": [
+        576,
+        1280
+      ],
+      "size": [
+        1152,
+        2560
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "status": "agent_visual_review_accepted",
+      "seconds": 28.07,
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/34-480.webp",
+          "width": 480,
+          "bytes": 104850
+        },
+        {
+          "src": "/media/photos-v41/34-800.webp",
+          "width": 800,
+          "bytes": 201554
+        },
+        {
+          "src": "/media/photos-v41/34-1152.webp",
+          "width": 1152,
+          "bytes": 300766
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 35,
+      "source": "public\\monitorar\\trabalhar-img.jpeg",
+      "sha256_original": "da900858d4fc6620c9477501fb5ffa46516006afe85ed28ad5012c69aedac16e",
+      "candidate": "D:\\monitorar-tools\\v4.1\\35-refined.png",
+      "original_size": [
+        1080,
+        1080
+      ],
+      "size": [
+        2160,
+        2160
+      ],
+      "method": "original_resampling_and_deterministic_unsharp",
+      "protected_rectangles": [
+        [
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "status": "agent_visual_review_accepted",
+      "seconds": 42.81,
+      "neural_contribution": false,
+      "files": [
+        {
+          "src": "/media/photos-v41/35-480.webp",
+          "width": 480,
+          "bytes": 47600
+        },
+        {
+          "src": "/media/photos-v41/35-800.webp",
+          "width": 800,
+          "bytes": 93876
+        },
+        {
+          "src": "/media/photos-v41/35-1200.webp",
+          "width": 1200,
+          "bytes": 159450
+        },
+        {
+          "src": "/media/photos-v41/35-1600.webp",
+          "width": 1600,
+          "bytes": 229100
+        },
+        {
+          "src": "/media/photos-v41/35-1920.webp",
+          "width": 1920,
+          "bytes": 278898
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 36,
+      "source": "src\\assets\\environmental-monitoring.jpg",
+      "sha256_original": "265513b5f04278584a5d363a547706e89374818f599a1b87a6c1f838a876c6a7",
+      "candidate": "D:\\monitorar-tools\\v4.1\\36-refined.png",
+      "original_size": [
+        800,
+        600
+      ],
+      "size": [
+        1600,
+        1200
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [],
+      "status": "agent_visual_review_accepted",
+      "seconds": 17.6,
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/36-480.webp",
+          "width": 480,
+          "bytes": 36178
+        },
+        {
+          "src": "/media/photos-v41/36-800.webp",
+          "width": 800,
+          "bytes": 77656
+        },
+        {
+          "src": "/media/photos-v41/36-1200.webp",
+          "width": 1200,
+          "bytes": 142462
+        },
+        {
+          "src": "/media/photos-v41/36-1600.webp",
+          "width": 1600,
+          "bytes": 205002
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    },
+    {
+      "id": 37,
+      "source": "src\\assets\\safety-inspection.jpg",
+      "sha256_original": "7744abb73bfa6012bb684dae7a607c8838535eede048f3196b8544e680709ee1",
+      "candidate": "D:\\monitorar-tools\\v4.1\\37-refined.png",
+      "original_size": [
+        800,
+        600
+      ],
+      "size": [
+        1600,
+        1200
+      ],
+      "method": "classical_sr_x2_protected_then_unsharp",
+      "protected_rectangles": [],
+      "status": "agent_visual_review_accepted",
+      "seconds": 17.75,
+      "neural_contribution": true,
+      "files": [
+        {
+          "src": "/media/photos-v41/37-480.webp",
+          "width": 480,
+          "bytes": 30652
+        },
+        {
+          "src": "/media/photos-v41/37-800.webp",
+          "width": 800,
+          "bytes": 61652
+        },
+        {
+          "src": "/media/photos-v41/37-1200.webp",
+          "width": 1200,
+          "bytes": 106316
+        },
+        {
+          "src": "/media/photos-v41/37-1600.webp",
+          "width": 1600,
+          "bytes": 144160
+        }
+      ],
+      "review": "Comparison sheets and representative full-resolution crops; not human technical approval."
+    }
+  ],
+  "model": "001_classicalSR_DF2K_s64w8_SwinIR-M_x2.pth",
+  "weights_sha256": "2032ebf8f401dd3ce2fae5f3852117cb72101ec6ed8358faa64c2a3fa09ed4ac",
+  "code_commit": "6545850fbf8df298df73d81f3e8cba638787c8bd",
+  "device": "cuda"
+}

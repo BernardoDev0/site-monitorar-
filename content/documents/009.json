@@ -1,0 +1,101 @@
+{
+  "id": "009",
+  "slug": "/servicos/hazop",
+  "type": "service",
+  "title": "Estudo HAZOP",
+  "summary": "Prepare um estudo de perigos e operabilidade com fronteiras claras, documentos consistentes e responsabilidades definidas para as recomendações.",
+  "topic_cluster": "hazop",
+  "primary_intent": "comercial",
+  "body": [
+    {
+      "heading": "Discussão estruturada sobre o processo",
+      "paragraphs": [
+        "HAZOP é um estudo de perigos e operabilidade que utiliza análise estruturada para investigar desvios e possíveis consequências. Objetivos claros, documentação adequada e participação de pessoas com conhecimento pertinente influenciam a qualidade do trabalho.",
+        "A Monitorar apresenta HAZOP entre seus serviços. A proposta deve delimitar sistema, interfaces, participantes, preparação e produtos esperados. O estudo não garante ausência de risco."
+      ]
+    },
+    {
+      "heading": "Limites e entradas",
+      "paragraphs": [
+        "Antes das sessões, defina o que integra o estudo e qual versão documental será utilizada. Mudanças de projeto, condições operacionais e interfaces fora do escopo devem ser identificadas para evitar pressupostos inconsistentes.",
+        "Documentos incompletos não descrevem uma instalação integralmente conhecida. A equipe precisa explicitar lacunas e decidir como resolvê-las ou registrá-las durante o trabalho."
+      ]
+    },
+    {
+      "heading": "Participação e entregáveis",
+      "paragraphs": [
+        "O nome da metodologia não substitui o conhecimento do processo. A organização deve definir responsabilidades e participação das especialidades relevantes conforme a necessidade do projeto.",
+        "Registros da discussão e recomendações rastreáveis podem integrar a entrega contratada. Responsabilidade por avaliar, implementar e acompanhar recomendações deve ser acordada; emitir o relatório não encerra automaticamente esse percurso."
+      ]
+    },
+    {
+      "heading": "Preparação para contratar",
+      "paragraphs": [
+        "Explique objetivo, etapa do empreendimento e documentação disponível. Informe estudos anteriores e mudanças relevantes. Isso permite discutir preparação e formato do trabalho.",
+        "O conteúdo complementar sobre documentos e entradas ajuda a organizar a conversa. A referência técnica aplicável e os limites do estudo precisam de confirmação dos responsáveis pelo contexto."
+      ]
+    },
+    {
+      "heading": "Da preparação às recomendações",
+      "paragraphs": [
+        "Uma reunião HAZOP precisa de fronteiras compreensíveis. Sem definir o trecho de processo e a intenção de operação, os participantes podem discutir partes diferentes da instalação usando os mesmos nomes. A preparação deve tornar visíveis as revisões dos documentos, as premissas e as dúvidas que precisam de confirmação.",
+        "O registro de recomendações não é a execução das medidas. A contratação deve distinguir condução das sessões, documentação, esclarecimentos posteriores e acompanhamento. A tabela abaixo organiza essa conversa, sem reproduzir requisitos de norma licenciada nem atribuir certificação à Monitorar."
+      ],
+      "table": {
+        "caption": "Matriz ilustrativa de contratação de estudo, sujeita à revisão técnica",
+        "headers": [
+          "Momento",
+          "O que combinar",
+          "Entregável a definir"
+        ],
+        "rows": [
+          [
+            "Preparação",
+            "Fronteiras, documentos e participantes",
+            "Lista de entradas e premissas"
+          ],
+          [
+            "Sessões",
+            "Agenda, participação e forma de registro",
+            "Registros das discussões e desvios analisados"
+          ],
+          [
+            "Consolidação",
+            "Revisão das informações e pendências",
+            "Relatório e recomendações rastreáveis"
+          ],
+          [
+            "Acompanhamento",
+            "Responsáveis e limites do contrato",
+            "Plano de encaminhamento, quando contratado"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://webstore.iec.ch/en/publication/24321"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/hazop",
+    "/servicos/treinamentos"
+  ],
+  "related_content_ids": [
+    "082"
+  ],
+  "created_at": "2026-10-16T17:00:00.000Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T16:53:43.112Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/servicos/hazop",
+  "indexability": true,
+  "review_due_at": null
+}

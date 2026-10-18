@@ -1,0 +1,37 @@
+{
+  "axe": [
+    {
+      "route": "/",
+      "violations": []
+    },
+    {
+      "route": "/sobre",
+      "violations": []
+    },
+    {
+      "route": "/servicos",
+      "violations": []
+    },
+    {
+      "route": "/contato",
+      "violations": []
+    },
+    {
+      "route": "/blog",
+      "violations": []
+    },
+    {
+      "route": "/busca",
+      "violations": []
+    },
+    {
+      "route": "/depoimentos",
+      "violations": []
+    }
+  ],
+  "keyboard_skip": true,
+  "css_zoom_200_contact": true,
+  "limitations": [
+    "Automated checks are not a full WCAG assessment; no physical-device or screen-reader test."
+  ]
+}

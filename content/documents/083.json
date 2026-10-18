@@ -1,0 +1,56 @@
+{
+  "id": "083",
+  "slug": "/blog/equipe-e-responsabilidades-em-estudos-hazop",
+  "type": "article",
+  "title": "Equipe e responsabilidades HAZOP",
+  "summary": "A equipe de um HAZOP precisa reunir conhecimento suficiente sobre projeto, operação, manutenção e riscos do sistema estudado. A composição depende do escopo; uma lista fixa de cargos não garante que as perguntas relevantes serão respondidas.",
+  "topic_cluster": "hazop",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Conhecimentos complementares sustentam a sessão",
+      "paragraphs": [
+        "A equipe de um HAZOP precisa reunir conhecimento suficiente sobre projeto, operação, manutenção e riscos do sistema estudado. A composição depende do escopo; uma lista fixa de cargos não garante que as perguntas relevantes serão respondidas.",
+        "A facilitação organiza o método e a discussão. Participantes técnicos contribuem com informações sobre o processo. O registro preserva premissas, decisões e encaminhamentos. Esses papéis precisam ser definidos antes da sessão, inclusive quando uma pessoa acumula funções compatíveis."
+      ]
+    },
+    {
+      "heading": "Participar não significa aprovar tudo",
+      "paragraphs": [
+        "Num cenário hipotético, a manutenção esclarece a acessibilidade de um componente, enquanto a operação descreve os modos de funcionamento. A equipe de projeto confirma a intenção e os limites do sistema. Nenhuma dessas contribuições, isoladamente, substitui as demais.",
+        "Quando a resposta depende de um especialista ausente, registre a pendência e o responsável por obtê-la. A assinatura de presença demonstra participação, mas não deve ser interpretada automaticamente como aprovação de cada hipótese ou autorização da solução proposta."
+      ]
+    },
+    {
+      "heading": "Preparação e continuidade",
+      "paragraphs": [
+        "Disponibilize documentos com antecedência e reserve tempo compatível com a complexidade. Mudanças de participantes entre sessões exigem manter continuidade das premissas e decisões. Interrupções frequentes ou falta de acesso às informações reduzem a qualidade da análise.",
+        "Ao encerrar, distribua registros e responsabilidades de acompanhamento. A organização precisa definir quem decide sobre recomendações, quem executa ações e quem verifica o resultado. A equipe do estudo identifica e documenta questões; o tratamento posterior requer governança própria e não pode desaparecer com o término da reunião."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "081",
+    "082",
+    "084"
+  ],
+  "created_at": "2026-10-18T07:00:30.181Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.181Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/equipe-e-responsabilidades-em-estudos-hazop",
+  "indexability": false,
+  "review_due_at": null
+}

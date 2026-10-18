@@ -1,0 +1,56 @@
+{
+  "id": "084",
+  "slug": "/blog/recomendacoes-hazop-registro-e-acompanhamento",
+  "type": "article",
+  "title": "Acompanhamento de recomendações HAZOP",
+  "summary": "Acompanhar recomendações de HAZOP exige manter o vínculo entre a ação proposta, o cenário discutido e a intenção de projeto. Uma lista de tarefas sem esse contexto pode permitir um encerramento formal que não responde à questão original.",
+  "topic_cluster": "hazop",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "A recomendação precisa ser reencontrada",
+      "paragraphs": [
+        "Acompanhar recomendações de HAZOP exige manter o vínculo entre a ação proposta, o cenário discutido e a intenção de projeto. Uma lista de tarefas sem esse contexto pode permitir um encerramento formal que não responde à questão original.",
+        "Use identificador estável, referência ao nó e ao registro da sessão, descrição da recomendação, responsável pelo encaminhamento e situação. Diferencie decisão pendente, ação em execução e verificação concluída."
+      ]
+    },
+    {
+      "heading": "Avaliar alternativas com rastreabilidade",
+      "paragraphs": [
+        "Uma recomendação pode demandar estudo adicional antes da definição da solução. Se uma alternativa for escolhida, documente a justificativa técnica e a relação com o cenário. Alterar o texto para coincidir com o que já foi feito elimina informação importante.",
+        "Num exemplo hipotético, solicitar avaliação de uma proteção não equivale a instalar um dispositivo qualquer. O encerramento precisa demonstrar o que foi avaliado, quais requisitos foram considerados e por que a decisão responde à recomendação. Questões novas podem exigir retorno à análise."
+      ]
+    },
+    {
+      "heading": "Evidência de implementação e de verificação",
+      "paragraphs": [
+        "Separe prova de execução, como um desenho revisado, da verificação de que a alteração atende ao objetivo. Dependendo do caso, serão necessários testes, revisão de procedimentos, capacitação ou outras evidências definidas pelos responsáveis técnicos.",
+        "O HSE relaciona a gestão de mudanças ao registro e à confirmação das ações previstas. O acompanhamento deve ainda identificar recomendações que condicionam etapas posteriores. Prazos administrativos não devem ser confundidos com autorização técnica para avançar enquanto condições relevantes permanecem sem resolução."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "081",
+    "082",
+    "083"
+  ],
+  "created_at": "2026-10-18T07:00:30.181Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.181Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/recomendacoes-hazop-registro-e-acompanhamento",
+  "indexability": false,
+  "review_due_at": null
+}

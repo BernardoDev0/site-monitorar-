@@ -42,7 +42,7 @@ export const Logo = ({
     : "opacity-90";
 
   return (
-    <Link to="/" className={`flex items-center space-x-3 ${className}`}>
+    <Link reloadDocument to="/" className={`flex items-center space-x-3 ${className}`}>
       <img 
         src={logoSrc} 
         alt="Monitorar Consultoria Logo" 

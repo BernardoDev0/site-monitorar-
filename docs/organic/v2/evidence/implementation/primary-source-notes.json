@@ -1,0 +1,25 @@
+{
+  "accessed_at": "2026-10-17T16:59:27.147886+00:00",
+  "sources": [
+    {
+      "url": "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf",
+      "sha256": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583",
+      "read_scope": "PDF pages 9–14 and 17–22: purpose, sources, program elements, identification, monitoring, repair and records; not full PDF read",
+      "own_note": "LDAR connects identification, classification, monitoring, repair and records. Numeric thresholds and deadlines in this US document are not universal Brazilian requirements."
+    },
+    {
+      "url": "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf",
+      "sha256": "a1a82f0911614ffa4f7acecca192e75a754c2b216dc38539bc72a2437982b6af",
+      "read_scope": "Sections 1–8.3.2, PDF pages 1–5; beginning of page 6. Version 8/3/2017, document warns to consult eCFR for official current text.",
+      "own_note": "Section 2.1 limits the method to locating/classifying leaks, not direct mass emission rates. References compound/instrument response matter. No legal applicability certification."
+    }
+  ],
+  "human_technical_approval": false,
+  "not_completed": [
+    "Brazilian legal applicability",
+    "Quantification/metrology primary literature",
+    "Current licensed HAZOP standard",
+    "Noise technical primary source review",
+    "Technical review by authorized person"
+  ]
+}

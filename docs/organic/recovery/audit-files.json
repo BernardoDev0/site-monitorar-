@@ -1,0 +1,166 @@
+[
+  {
+    "file": ".gitignore",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/catalog.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/002.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/006.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/009.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/013.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/019.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/021.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/022.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/023.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/053.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "content/documents/082.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "docs/organic/execution-state.md",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "docs/organic/v2/EXECUTION-STATE.md",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "docs/organic/v2/TASKS.md",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "index.html",
+    "classification": "mixed; do not restore wholesale"
+  },
+  {
+    "file": "package.json",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "scripts/build.mjs",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "scripts/editorial-cli.mjs",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "scripts/editorial.mjs",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "scripts/serve.mjs",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "src/App.tsx",
+    "classification": "mixed; do not restore wholesale"
+  },
+  {
+    "file": "src/components/Footer.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/components/Header.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/editorial/EditorialApp.tsx",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "src/editorial/editorial.css",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "src/editorial/types.ts",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "src/entry-server.tsx",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "src/main.tsx",
+    "classification": "mixed; do not restore wholesale"
+  },
+  {
+    "file": "src/pages/About.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Careers.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Clients.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Contact.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Home.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/NotFound.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Privacy.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Services.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "src/pages/Testimonials.tsx",
+    "classification": "visual/content; selective recovery required"
+  },
+  {
+    "file": "tests/artifact.test.mjs",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "tests/editorial.test.mjs",
+    "classification": "technical/editorial"
+  },
+  {
+    "file": "vercel.json",
+    "classification": "technical/editorial"
+  }
+]

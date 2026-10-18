@@ -1,0 +1,56 @@
+{
+  "id": "095",
+  "slug": "/blog/ruido-tonal-e-impulsivo",
+  "type": "article",
+  "title": "Ruído tonal e impulsivo",
+  "summary": "Ruído tonal apresenta componentes que se destacam em determinadas frequências. Ruído impulsivo envolve eventos de curta duração com características temporais específicas. A identificação técnica depende dos critérios do método utilizado, e não apenas da impressão de quem escuta.",
+  "topic_cluster": "ruido",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O nível global não descreve todo o som",
+      "paragraphs": [
+        "Ruído tonal apresenta componentes que se destacam em determinadas frequências. Ruído impulsivo envolve eventos de curta duração com características temporais específicas. A identificação técnica depende dos critérios do método utilizado, e não apenas da impressão de quem escuta.",
+        "Dois ambientes com níveis globais próximos podem ter características sonoras diferentes. Por isso, um relatório deve informar quando a análise exige dados espectrais, temporais ou procedimentos adicionais previstos na referência aplicável."
+      ]
+    },
+    {
+      "heading": "Registrar o evento e sua condição",
+      "paragraphs": [
+        "Num exemplo hipotético, um equipamento produz um som contínuo durante operação e eventos breves na partida. Uma medição que registra apenas uma condição pode não responder à pergunta sobre a outra. O planejamento precisa considerar os modos relevantes.",
+        "Anote horário, duração, identificação provável da fonte e condições observadas, distinguindo observação de conclusão. A gravação ou descrição de um evento pode ajudar a contextualizar, mas não substitui as exigências do método para classificação e avaliação."
+      ]
+    },
+    {
+      "heading": "Critérios não devem ser presumidos",
+      "paragraphs": [
+        "Solicite a norma ou procedimento adotado, sua edição e a justificativa de aplicação. Eventuais ajustes de avaliação dependem dessa referência e da caracterização realizada. Não existe uma correção numérica universal aplicável a qualquer som percebido como agudo ou abrupto.",
+        "As diretrizes da OMS contextualizam efeitos do ruído ambiental na saúde, mas não substituem os critérios técnicos e legais locais. A classificação e a conclusão de um caso devem ser feitas por profissionais competentes com acesso às referências completas e aos dados necessários."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.who.int/europe/publications/i/item/9789289053563"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "053",
+    "054",
+    "055"
+  ],
+  "created_at": "2026-10-18T07:00:30.187Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.187Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/ruido-tonal-e-impulsivo",
+  "indexability": false,
+  "review_due_at": null
+}

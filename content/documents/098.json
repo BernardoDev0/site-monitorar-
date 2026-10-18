@@ -1,0 +1,56 @@
+{
+  "id": "098",
+  "slug": "/blog/valores-orientadores-e-avaliacao-de-risco",
+  "type": "article",
+  "title": "Valores orientadores e avaliação de risco",
+  "summary": "Valores orientadores e valores de triagem ajudam a organizar a avaliação de resultados ambientais conforme a referência que os define. Sua utilização não deve ser confundida automaticamente com uma avaliação de risco específica para a área.",
+  "topic_cluster": "areas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Triagem e avaliação de risco têm finalidades diferentes",
+      "paragraphs": [
+        "Valores orientadores e valores de triagem ajudam a organizar a avaliação de resultados ambientais conforme a referência que os define. Sua utilização não deve ser confundida automaticamente com uma avaliação de risco específica para a área.",
+        "A avaliação de risco considera relações entre contaminantes, meios, vias de exposição e receptores, dentro de hipóteses e critérios definidos. O resultado depende dessas condições. Um único valor de concentração não descreve sozinho toda essa cadeia."
+      ]
+    },
+    {
+      "heading": "Uma comparação precisa de contexto",
+      "paragraphs": [
+        "Considere duas áreas hipotéticas com o mesmo resultado analítico, mas usos e possibilidades de exposição diferentes. A igualdade do número não demonstra igualdade de risco. Também não permite dispensar os procedimentos exigidos pelo órgão competente.",
+        "Antes de comparar, confirme substância, matriz, unidade e referência aplicável. Valores de triagem estrangeiros, como os apresentados pela EPA, não devem ser transportados diretamente como critérios legais brasileiros. Sua finalidade e premissas precisam ser compreendidas."
+      ]
+    },
+    {
+      "heading": "Como ler a conclusão",
+      "paragraphs": [
+        "Procure o modelo conceitual, as hipóteses de exposição, as incertezas e as condições que delimitam a avaliação. Quando um valor é excedido, o encaminhamento depende do procedimento aplicável; não se deve declarar uma solução universal com base apenas nessa comparação.",
+        "Da mesma forma, resultados abaixo de um valor não corrigem lacunas de investigação ou de representatividade. A análise precisa integrar dados e contexto. Este texto explica a diferença entre instrumentos, sem emitir conclusão sobre uma área real ou substituir a avaliação técnica exigida."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "060",
+    "061",
+    "062"
+  ],
+  "created_at": "2026-10-18T07:00:30.188Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.188Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/valores-orientadores-e-avaliacao-de-risco",
+  "indexability": false,
+  "review_due_at": null
+}

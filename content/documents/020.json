@@ -1,0 +1,57 @@
+{
+  "id": "020",
+  "slug": "/blog/emissoes-fugitivas-e-canalizadas",
+  "type": "article",
+  "title": "Emissões fugitivas e canalizadas",
+  "summary": "Emissões fugitivas e canalizadas se distinguem pelo caminho de liberação. Uma saída de chaminé conduz um efluente; uma perda em uma vedação ocorre numa interface de contenção. Identificar essa diferença ajuda a escolher o objeto do estudo antes de discutir equipamentos.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O caminho da emissão muda a pergunta",
+      "paragraphs": [
+        "Emissões fugitivas e canalizadas se distinguem pelo caminho de liberação. Uma saída de chaminé conduz um efluente; uma perda em uma vedação ocorre numa interface de contenção. Identificar essa diferença ajuda a escolher o objeto do estudo antes de discutir equipamentos.",
+        "O nome da instalação não resolve a classificação. Uma mesma unidade pode ter uma chaminé, componentes sujeitos a vazamentos e perdas evaporativas. Cada mecanismo precisa constar do levantamento. Também é necessário declarar a fronteira usada: estudar componentes de processo não significa ter avaliado todas as emissões atmosféricas da unidade."
+      ]
+    },
+    {
+      "heading": "Um exemplo de escopos que não se substituem",
+      "paragraphs": [
+        "Considere uma indústria hipotética que possui uma caldeira e uma linha com válvulas. O relatório de uma amostragem na saída da caldeira responde a perguntas sobre aquele efluente e aquelas condições. Ele não demonstra que as vedações das válvulas estão íntegras. Uma inspeção LDAR dessas válvulas, por sua vez, não caracteriza automaticamente a emissão da chaminé.",
+        "Para comparar propostas, separe quatro campos: fonte identificada, substância de interesse, grandeza pretendida e condição de operação. Se um campo permanece indefinido, duas ofertas com o mesmo nome comercial podem entregar informações diferentes."
+      ]
+    },
+    {
+      "heading": "Como registrar a fronteira",
+      "paragraphs": [
+        "Uma lista útil distingue fontes incluídas, excluídas e ainda não classificadas. Um esquema de processo pode ajudar a localizar as saídas e interfaces, desde que tenha identificação e versão. A lista deve ser conferida com quem conhece a operação, sem presumir que o desenho represente todas as modificações da planta.",
+        "O guia LDAR da EPA é uma referência para vazamentos em equipamentos. Sua aplicação não transforma qualquer fonte não canalizada em componente abrangido pelo mesmo programa, nem estabelece por si só uma obrigação brasileira. O enquadramento e os métodos precisam ser definidos para a situação concreta."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "019",
+    "021",
+    "022"
+  ],
+  "created_at": "2026-10-18T07:00:30.156Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.156Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-e-canalizadas",
+  "indexability": false,
+  "review_due_at": null
+}

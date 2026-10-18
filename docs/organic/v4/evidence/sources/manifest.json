@@ -1,0 +1,86 @@
+{
+  "checked_at": "2026-10-18T06:38:18.129473+00:00",
+  "sources": [
+    {
+      "id": 1,
+      "url": "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+      "status": 200,
+      "sha256": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce",
+      "text_chars": 679,
+      "text_file": "01.txt"
+    },
+    {
+      "id": 2,
+      "url": "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf",
+      "status": 200,
+      "sha256": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583",
+      "text_chars": 91558,
+      "text_file": "02.txt"
+    },
+    {
+      "id": 3,
+      "url": "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+      "status": 200,
+      "sha256": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559",
+      "text_chars": 3491,
+      "text_file": "03.txt"
+    },
+    {
+      "id": 4,
+      "url": "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring",
+      "status": 200,
+      "sha256": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a",
+      "text_chars": 3624,
+      "text_file": "04.txt"
+    },
+    {
+      "id": 5,
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.119",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": 6,
+      "url": "https://www.osha.gov/laws-regs/regulations/standardnumber/1910/1910.134",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": 7,
+      "url": "https://www.osha.gov/publications/shib093013",
+      "error": "HTTP Error 403: Forbidden"
+    },
+    {
+      "id": 8,
+      "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm",
+      "status": 200,
+      "sha256": "94fb069a66b25091678a30940efa68ae48e1ba872ded5a87adcb6cf07fee4309",
+      "text_chars": 24752,
+      "text_file": "08.txt"
+    },
+    {
+      "id": 9,
+      "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+      "status": 200,
+      "sha256": "cc016afc1e70441f84223773b0d49871d6b917077390d9f8d87a66dc0cf165b6",
+      "text_chars": 110254,
+      "text_file": "09.txt"
+    },
+    {
+      "id": 10,
+      "url": "https://cetesb.sp.gov.br/areas-contaminadas/wp-content/uploads/sites/17/2023/12/Manual-GAC-3a-Edicao.pdf",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:992)>"
+    },
+    {
+      "id": 11,
+      "url": "https://www.who.int/europe/publications/i/item/9789289053563",
+      "status": 200,
+      "sha256": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38",
+      "text_chars": 1317,
+      "text_file": "11.txt"
+    },
+    {
+      "id": 12,
+      "url": "https://www.inea.rj.gov.br/ar-agua-e-solo/qualidade-do-ar/",
+      "error": "HTTP Error 404: Not Found"
+    }
+  ]
+}

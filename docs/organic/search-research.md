@@ -1,0 +1,8 @@
+# Pesquisa de busca
+Amostra16/10/2026: consultoria ambiental; emissões fugitivas; emissões fugitivas Petrobras; LDAR Brasil; consultoria ambiental RJ. Ferramenta não oferece SERP geolocalizada controlada nem separação confiável de anúncios/mapa/AI Overviews. Volume, dificuldade, posição, tráfego, indexação: não medidos.
+
+Referências comerciais examinadas: Mineral https://www.ldar.com.br/; Athma https://athmaambiental.com.br/servicos-2/; Applus https://www.applus.com/br/pt/what-we-do/service-sheet/programas-de-detec%C3%A7%C3%A3o-e-repara%C3%A7%C3%A3o-de-fugas-(ldar); LabPlus https://www.labplusambiental.com.br/emissoes-fugitivas; Aires https://www.aires.com.br/servicos; RioAmbiental https://rioambiental.com.br/; Reserva https://reservaeng.com.br/servicos/emissoes-atmosferica/.
+Aprendizados: separar oferta de guia técnico; explicar entradas/entregáveis; tornar evidências verificáveis e contato contextual. Não copiar texto, imagens ou claims de concorrentes.
+Intenção ampla consultoria ambiental: comercial; fugitivas: informacional e comercial técnica; Petrobras: documental/informacional com componente navegacional. Formato escolhido: análise independente de fontes públicas datadas; sem case ou endosso inferido. Fontes Petrobras atuais tiveram indisponibilidade/redirecionamento eleitoral; não tratar snippets como texto lido.
+
+Mapa90 é inventário candidato; pesquisa específica por pauta ainda necessária. Prioridade comercial não autoriza fabricação de volume. Dados de Search Console/Analytics/Perfil da Empresa e exportações continuam pendentes; ausência de acesso não significa ausência de tráfego.

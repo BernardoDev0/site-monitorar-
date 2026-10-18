@@ -1,0 +1,56 @@
+{
+  "id": "061",
+  "slug": "/blog/historico-de-uso-da-area-e-modelo-conceitual",
+  "type": "article",
+  "title": "Histórico da área e modelo conceitual",
+  "summary": "O histórico de uma área reúne informações sobre usos, processos, intervenções e mudanças relevantes. Ele contribui para formular hipóteses sobre possíveis fontes e caminhos de contato, mas não transforma toda atividade passada em contaminação confirmada.",
+  "topic_cluster": "areas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O histórico ajuda a formular hipóteses",
+      "paragraphs": [
+        "O histórico de uma área reúne informações sobre usos, processos, intervenções e mudanças relevantes. Ele contribui para formular hipóteses sobre possíveis fontes e caminhos de contato, mas não transforma toda atividade passada em contaminação confirmada.",
+        "Um modelo conceitual organiza essas relações e explicita o que é conhecido ou incerto. Deve evoluir com os dados, em vez de servir apenas como ilustração fixa no início do relatório."
+      ]
+    },
+    {
+      "heading": "Cruzar fontes sem apagar divergências",
+      "paragraphs": [
+        "Em um exemplo hipotético, uma planta indica um antigo depósito, enquanto uma entrevista situa a atividade em outro local. A divergência precisa ser registrada e investigada. Escolher silenciosamente uma versão pode direcionar a amostragem para uma hipótese incompleta.",
+        "Documentos, imagens históricas, registros operacionais e observações de campo têm capacidades e limitações diferentes. Identifique origem, período e confiabilidade. Uma fotografia pode mostrar uma estrutura, mas nem sempre revela a substância armazenada ou a condição de sua operação."
+      ]
+    },
+    {
+      "heading": "Do modelo à próxima pergunta",
+      "paragraphs": [
+        "O modelo deve permitir reconhecer fontes potenciais, meios envolvidos, possíveis caminhos e receptores, distinguindo relações demonstradas de hipóteses. A próxima etapa deve responder às incertezas que importam para a decisão.",
+        "Não use um desenho genérico de solo e água como substituto dessa análise. A contribuição do modelo está na ligação com a área real e na exposição das lacunas. Sua elaboração e atualização exigem avaliação técnica e referências aplicáveis ao contexto territorial do estudo."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "060",
+    "062",
+    "063"
+  ],
+  "created_at": "2026-10-18T07:00:30.173Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.173Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/historico-de-uso-da-area-e-modelo-conceitual",
+  "indexability": false,
+  "review_due_at": null
+}

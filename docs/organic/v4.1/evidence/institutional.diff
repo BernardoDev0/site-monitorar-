@@ -1,0 +1,128 @@
+--- baseline/src/pages/About.tsx
++++ src/pages/About.tsx
+@@ -1,3 +1,4 @@
++import { Photo } from '@/components/Photo';
+ import { photoUrl } from '@/lib/photo';
+ import { Card, CardContent } from '@/components/ui/card';
+ import { Leaf, Eye, ThumbsUp, Users, Award, Target, CheckCircle, Building2, Lightbulb, Heart, Shield } from 'lucide-react';
+@@ -66,6 +67,7 @@
+               </div>
+               
+               <div className="relative">
++                <Photo src="/equipe/equipe2.jpeg" alt="Registro da equipe Monitorar" className="section-photo institutional-visual" loading="lazy" width={1024} height={768}/>
+                 <div className="bg-gradient-to-br from-secondary/10 to-accent/10 rounded-3xl p-8 h-96 flex items-center justify-center">
+                   <div className="text-center">
+                     <div className="w-24 h-24 bg-gradient-to-br from-secondary to-accent rounded-full flex items-center justify-center mx-auto mb-6">
+@@ -93,6 +95,7 @@
+             <div className="w-24 h-1 bg-primary mx-auto" />
+           </div>
+           
++          <Photo src="/paisagem2.png" alt="" className="section-photo institutional-visual" loading="lazy" width={1408} height={736}/>
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+             {values.map((value, index) => (
+               <Card key={index} className="card-service group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2">
+@@ -164,6 +167,7 @@
+             </p>
+           </div>
+           
++          <Photo src="/equipe/equipe1.JPG" alt="Equipe Monitorar reunida" className="section-photo institutional-visual" loading="lazy" width={1280} height={960}/>
+           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+             <Card className="card-service group hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+               <CardContent className="p-8 text-center">
+--- baseline/src/pages/Careers.tsx
++++ src/pages/Careers.tsx
+@@ -44,4 +44,4 @@
+     ]
+   }
+ ];
+-export default function Careers(){return <><PageIntro eyebrow="Trabalhe conosco" title="Conhecimento técnico se constrói em equipe."><p>Apresente sua experiência e seu interesse em trabalhar com meio ambiente e segurança do trabalho.</p></PageIntro><section className="site-wrap section-space"><h2>Por que trabalhar conosco?</h2><div className="v4-benefits">{benefits.map(b=><div key={b.title}><h3>{b.title}</h3><p>{b.description}</p></div>)}</div><div className="v4-team-gallery">{['/equipe/equipe1.JPG','/equipe/equipe2.jpeg','/equipe/equipe6.jpeg'].map((src,i)=><Photo src={src} key={src} alt={'Equipe Monitorar, registro '+(i+1)} width={1280} height={960} loading="lazy"/>)}</div></section><div className="site-wrap prose-content"><h2>Converse sobre oportunidades</h2><p>Consulte a disponibilidade atual antes de enviar sua candidatura. A descrição abaixo informa o perfil profissional apresentado pela empresa e não confirma uma seleção aberta neste momento.</p>{positions.map(p=><section key={p.title}><h3>{p.title}</h3><p>{p.department} · {p.location} · Modalidade informada: {p.type}</p><p>Perfil para atuação com inspeções ambientais em campo.</p><ul>{p.requirements.map(r=><li key={r}>{r}</li>)}</ul></section>)}<h2>Como entrar em contato</h2><p>Informe a área de interesse e um resumo da sua formação. Não envie documentos sensíveis no primeiro contato.</p><a className="button" href={'mailto:'+CONTACT.email}>Consultar oportunidades por e-mail ↗</a><p>Veja também nossa <a href="/politica-privacidade">política de privacidade</a>.</p></div></>}
++export default function Careers(){return <><PageIntro eyebrow="Trabalhe conosco" title="Conhecimento técnico se constrói em equipe."><p>Apresente sua experiência e seu interesse em trabalhar com meio ambiente e segurança do trabalho.</p></PageIntro><section className="site-wrap section-space"><h2>Por que trabalhar conosco?</h2><div className="v4-benefits">{benefits.map(b=><div key={b.title}><h3>{b.title}</h3><p>{b.description}</p></div>)}</div><div className="v4-team-gallery">{['/equipe/equipe1.JPG','/equipe/equipe2.jpeg','/equipe/equipe6.jpeg'].map((src,i)=><Photo src={src} key={src} alt={'Equipe Monitorar, registro '+(i+1)} width={1280} height={960} loading="lazy"/>)}</div></section><div className="site-wrap prose-content"><Photo src="/equipe/equipe6.jpeg" alt="Registro da equipe Monitorar" width={1280} height={960} loading="lazy" className="section-photo"/><h2>Converse sobre oportunidades</h2><p>Consulte a disponibilidade atual antes de enviar sua candidatura. A descrição abaixo informa o perfil profissional apresentado pela empresa e não confirma uma seleção aberta neste momento.</p>{positions.map(p=><section key={p.title}><h3>{p.title}</h3><p>{p.department} · {p.location} · Modalidade informada: {p.type}</p><p>Perfil para atuação com inspeções ambientais em campo.</p><ul>{p.requirements.map(r=><li key={r}>{r}</li>)}</ul></section>)}<h2>Como entrar em contato</h2><p>Informe a área de interesse e um resumo da sua formação. Não envie documentos sensíveis no primeiro contato.</p><a className="button" href={'mailto:'+CONTACT.email}>Consultar oportunidades por e-mail ↗</a><p>Veja também nossa <a href="/politica-privacidade">política de privacidade</a>.</p></div></>}
+--- baseline/src/pages/Contact.tsx
++++ src/pages/Contact.tsx
+@@ -1,3 +1,4 @@
++import {Photo} from '@/components/Photo';
+ import {useRef,useState} from 'react';
+ import {PageIntro} from '@/components/PageIntro';
+ import {CONTACT,WHATSAPP_URL,whatsAppMessageUrl,recordContactClick} from '@/lib/contact';
+@@ -5,5 +6,5 @@
+  const [message,setMessage]=useState(''),[feedback,setFeedback]=useState('');const output=useRef<HTMLTextAreaElement>(null);
+  function prepare(e:React.FormEvent<HTMLFormElement>){e.preventDefault();const data=new FormData(e.currentTarget);setMessage(['Solicitação de contato à Monitorar',...['Nome','Telefone','E-mail','Empresa','Atividade','Interesse','Mensagem'].map(k=>data.get(k)?`${k}: ${data.get(k)}`:'')].filter(Boolean).join('\n'));setFeedback('Mensagem preparada no seu navegador. Revise o texto e abra o WhatsApp para concluir o envio.');requestAnimationFrame(()=>output.current?.focus());}
+  async function copy(){try{await navigator.clipboard.writeText(message);setFeedback('Texto copiado. Abra o canal escolhido e conclua o envio por lá.');}catch{output.current?.focus();output.current?.select();setFeedback('Não foi possível copiar automaticamente. O texto foi selecionado para você copiar manualmente.');}}
+- return <><PageIntro eyebrow="Contato" title="Vamos definir o próximo passo."><p>Conte o objetivo do seu projeto. A equipe poderá orientar as informações necessárias para discutir o escopo.</p></PageIntro><div className="site-wrap contact-grid"><aside><h2>Fale com a Monitorar</h2><a href={'tel:'+CONTACT.phone} onClick={()=>recordContactClick('phone')}>(21) 3881-1212</a><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={()=>recordContactClick('whatsapp')}>WhatsApp: (21) 99752-1212 ↗</a><a href={'mailto:'+CONTACT.email} onClick={()=>recordContactClick('email')}>{CONTACT.email}</a><p>O2 Corporate & Offices<br/>Av. José Silva de Azevedo Neto, 200<br/>Bloco 7, Loja 205 · Barra da Tijuca<br/>Rio de Janeiro, RJ</p><p>Segunda a sexta, das 8h às 17h.</p></aside><div><form className="contact-form" onSubmit={prepare}><p>Os campos com * são necessários para preparar a mensagem. O formulário não envia dados automaticamente.</p><div className="form-pair"><label>Nome *<input name="Nome" autoComplete="name" required maxLength={120}/></label><label>Telefone *<input name="Telefone" type="tel" autoComplete="tel" required maxLength={40}/></label></div><label>E-mail *<input name="E-mail" type="email" autoComplete="email" required maxLength={200}/></label><div className="form-pair"><label>Empresa<input name="Empresa" autoComplete="organization" maxLength={200}/></label><label>Atividade<input name="Atividade" maxLength={200}/></label></div><label>Área de interesse<select name="Interesse" defaultValue=""><option value="">Selecione uma área</option>{['Meio ambiente','Emissões fugitivas e LDAR','Ruído extramuros','Segurança do trabalho','HAZOP','Treinamentos','Equipamentos Dräger','Outros'].map(s=><option key={s}>{s}</option>)}</select></label><label>Sobre o projeto<textarea name="Mensagem" maxLength={4000} placeholder="Objetivo, localização, prazo e informações já disponíveis."/></label><p>Evite incluir dados sensíveis. Leia nossa <a className="text-link" href="/politica-privacidade">política de privacidade</a>.</p><button className="button" type="submit">Preparar mensagem</button><noscript><p>A preparação de mensagem requer JavaScript. Use os links de telefone ou e-mail para entrar em contato.</p></noscript></form>{message&&<div className="contact-form mt-8"><label>Revise sua mensagem<textarea ref={output} value={message} onChange={e=>setMessage(e.target.value)} rows={10}/></label><div className="actions"><button className="button" onClick={()=>void copy()}>Copiar mensagem</button><a className="text-link" href={whatsAppMessageUrl(message)} target="_blank" rel="noopener noreferrer" onClick={()=>recordContactClick('whatsapp')}>Abrir WhatsApp com esta mensagem ↗</a></div></div>}<p role="status" className={feedback?'contact-feedback mt-5':''}>{feedback}</p></div></div></>;
++ return <><PageIntro eyebrow="Contato" title="Vamos definir o próximo passo."><p>Conte o objetivo do seu projeto. A equipe poderá orientar as informações necessárias para discutir o escopo.</p></PageIntro><div className="site-wrap contact-grid"><aside><Photo src="/equipe/equipe2.jpeg" alt="" width={1024} height={768} loading="lazy" className="section-photo"/><h2>Fale com a Monitorar</h2><a href={'tel:'+CONTACT.phone} onClick={()=>recordContactClick('phone')}>(21) 3881-1212</a><a href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer" onClick={()=>recordContactClick('whatsapp')}>WhatsApp: (21) 99752-1212 ↗</a><a href={'mailto:'+CONTACT.email} onClick={()=>recordContactClick('email')}>{CONTACT.email}</a><p>O2 Corporate & Offices<br/>Av. José Silva de Azevedo Neto, 200<br/>Bloco 7, Loja 205 · Barra da Tijuca<br/>Rio de Janeiro, RJ</p><p>Segunda a sexta, das 8h às 17h.</p></aside><div><form className="contact-form" onSubmit={prepare}><p>Os campos com * são necessários para preparar a mensagem. O formulário não envia dados automaticamente.</p><div className="form-pair"><label>Nome *<input name="Nome" autoComplete="name" required maxLength={120}/></label><label>Telefone *<input name="Telefone" type="tel" autoComplete="tel" required maxLength={40}/></label></div><label>E-mail *<input name="E-mail" type="email" autoComplete="email" required maxLength={200}/></label><div className="form-pair"><label>Empresa<input name="Empresa" autoComplete="organization" maxLength={200}/></label><label>Atividade<input name="Atividade" maxLength={200}/></label></div><label>Área de interesse<select name="Interesse" defaultValue=""><option value="">Selecione uma área</option>{['Meio ambiente','Emissões fugitivas e LDAR','Ruído extramuros','Segurança do trabalho','HAZOP','Treinamentos','Equipamentos Dräger','Outros'].map(s=><option key={s}>{s}</option>)}</select></label><label>Sobre o projeto<textarea name="Mensagem" maxLength={4000} placeholder="Objetivo, localização, prazo e informações já disponíveis."/></label><p>Evite incluir dados sensíveis. Leia nossa <a className="text-link" href="/politica-privacidade">política de privacidade</a>.</p><button className="button" type="submit">Preparar mensagem</button><noscript><p>A preparação de mensagem requer JavaScript. Use os links de telefone ou e-mail para entrar em contato.</p></noscript></form>{message&&<div className="contact-form mt-8"><label>Revise sua mensagem<textarea ref={output} value={message} onChange={e=>setMessage(e.target.value)} rows={10}/></label><div className="actions"><button className="button" onClick={()=>void copy()}>Copiar mensagem</button><a className="text-link" href={whatsAppMessageUrl(message)} target="_blank" rel="noopener noreferrer" onClick={()=>recordContactClick('whatsapp')}>Abrir WhatsApp com esta mensagem ↗</a></div></div>}<p role="status" className={feedback?'contact-feedback mt-5':''}>{feedback}</p></div></div></>;
+ }
+--- baseline/src/pages/Home.tsx
++++ src/pages/Home.tsx
+@@ -42,18 +42,21 @@
+   {
+     icon: Leaf,
+     title: "Meio Ambiente",
++    image: "/servicos/areas-impactadas.jpg",
+     description: "Desenvolvemos soluções sustentáveis para proteger e melhorar a qualidade do meio ambiente realizando auditoria e certificação ambiental, monitoramento de qualidade do ar, avaliação geoambiental, monitoramento de efluentes e licenciamento ambiental.",
+     items: ["LDAR", "PTS", "Procon Fumaça Preta", "Áreas Impactadas", "Ruído Extramuros", "Licenciamento"]
+   },
+   {
+     icon: Shield,
+     title: "Segurança do Trabalho",
++    image: "/servicos/gestao-sms.jpg",
+     description: "Consultoria em segurança do trabalho, planejamento e implementação de programas de segurança, elaboração de programas e laudos técnicos, treinamentos e gestão de SMS.",
+     items: ["Gestão de SMS", "HAZOP", "Auditorias", "Treinamentos"]
+   },
+   {
+     icon: Award,
+     title: "Representação Dräger",
++    image: "/epis.png",
+     description: "A Dräger é líder internacional em tecnologia de segurança desde 1889, oferecendo soluções inovadoras para os setores de indústria química, combate a incêndio, saneamento, mineração, petróleo e gás, entre outros.",
+     items: ["Detectores de Gases", "Equipamentos de Proteção", "Calibração", "Manutenção"]
+   }
+@@ -99,7 +102,7 @@
+       </StaticHero>
+ 
+       {/* Stats Section */}
+-      <section className="erm-stats">
++      <section className="erm-stats"><Photo src="/equipe/equipe6.jpeg" alt="" width={1280} height={960} loading="lazy" className="stats-photo"/>
+         <div className="container mx-auto px-4">
+           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+             {stats.map((stat, index) => (
+@@ -130,7 +133,7 @@
+           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+             {services.map((service) => (
+               <article key={service.title} className="erm-service" data-reveal>
+-                <h3>{service.title}</h3>
++                <div className="service-visual"><h3>{service.title}</h3><Photo src={service.image} alt="" width={800} height={800} loading="lazy" sizes="(max-width:767px) 100vw, 35vw"/></div>
+                 <div>
+                   <p>{service.description}</p>
+                   <ul>{service.items.map(item => <li key={item}><CheckCircle aria-hidden="true" size={17}/><span>{item}</span></li>)}</ul>
+--- baseline/src/pages/Services.tsx
++++ src/pages/Services.tsx
+@@ -63,5 +63,5 @@
+  const {pathname}=useLocation();const safety=/seguranca|hazop|auditorias|treinamentos/.test(pathname),drager=pathname.endsWith('/drager');
+  const items=safety?safetyServices:environmentalServices;
+  return <><PageIntro eyebrow="Serviços" title="Nossos Serviços"><p>Soluções completas em segurança do trabalho e meio ambiente</p></PageIntro><div className="site-wrap"><nav className="subnav" aria-label="Áreas de atuação"><a href="/servicos" aria-current={!safety&&!drager?'page':undefined}>Meio Ambiente</a><a href="/servicos/seguranca" aria-current={safety?'page':undefined}>Segurança do Trabalho</a><a href="/servicos/drager" aria-current={drager?'page':undefined}>Representação Dräger</a></nav>
+- {drager?<section className="v4-drager"><h2>Representação Dräger</h2><p>Como representantes oficiais da Dräger, oferecemos equipamentos de última geração para detecção de gases e proteção respiratória.</p><ul>{['Detectores de Gases','Equipamentos de Proteção','Calibração','Manutenção'].map(t=><li key={t}>{t}</li>)}</ul><a className="button" href="/drager-catalogo.pdf" target="_blank" rel="noopener noreferrer">Conheça os Equipamentos Dräger</a></section>:<section className="v4-services"><h2>{safety?'Segurança do Trabalho':'Meio Ambiente'}</h2>{!safety&&<p>Ajudamos empresas a cumprir regulamentos ambientais, reduzir impactos negativos e promover a sustentabilidade, com planos de ação e práticas corretas.</p>}{items.map((item,i)=><article id={safety?['sms','hazop','auditorias','treinamentos'][i]:['qualidade-ar','areas-impactadas','ruido','licenciamento'][i]} key={item.title} className="v4-service-detail"><Photo className="v4-page-photo" src={'/servicos/'+images[i+(safety?4:0)]+'.jpg'} alt={item.title} width={800} height={800} loading="lazy"/><div><h3>{item.title}</h3><p>{item.description}</p><p>{item.fullDescription}</p><a className="text-link" href="/contato">Conversar sobre {item.title.toLocaleLowerCase('pt-BR')} ↗</a></div></article>)}</section>}</div><ProjectCTA/></>;
++ {drager?<section className="v4-drager"><Photo src="/epis.png" alt="Equipamentos do acervo institucional" width={1704} height={1026} loading="lazy" className="section-photo"/><h2>Representação Dräger</h2><p>Como representantes oficiais da Dräger, oferecemos equipamentos de última geração para detecção de gases e proteção respiratória.</p><ul>{['Detectores de Gases','Equipamentos de Proteção','Calibração','Manutenção'].map(t=><li key={t}>{t}</li>)}</ul><a className="button" href="/drager-catalogo.pdf" target="_blank" rel="noopener noreferrer">Conheça os Equipamentos Dräger</a></section>:<section className="v4-services"><h2>{safety?'Segurança do Trabalho':'Meio Ambiente'}</h2>{!safety&&<p>Ajudamos empresas a cumprir regulamentos ambientais, reduzir impactos negativos e promover a sustentabilidade, com planos de ação e práticas corretas.</p>}{items.map((item,i)=><article id={safety?['sms','hazop','auditorias','treinamentos'][i]:['qualidade-ar','areas-impactadas','ruido','licenciamento'][i]} key={item.title} className="v4-service-detail"><Photo className="v4-page-photo" src={'/servicos/'+images[i+(safety?4:0)]+'.jpg'} alt={item.title} width={800} height={800} loading="lazy"/><div><h3>{item.title}</h3><p>{item.description}</p><p>{item.fullDescription}</p><a className="text-link" href="/contato">Conversar sobre {item.title.toLocaleLowerCase('pt-BR')} ↗</a></div></article>)}</section>}</div><ProjectCTA/></>;
+ }
+--- baseline/src/pages/Testimonials.tsx
++++ src/pages/Testimonials.tsx
+@@ -22,4 +22,4 @@
+     content: "Qualidade e compromisso são dois valores fundamentais que fazem a parceria com a MONITORAR CONSULTORIA ser de tanto sucesso. Juntos, conseguimos elevar os padrões de segurança de processos industriais, entregando valor aos nossos clientes."
+   }
+ ];
+-export default function Testimonials(){return <><PageIntro eyebrow="Depoimentos" title="O trabalho, na voz de quem esteve conosco."><p>Relatos apresentados por profissionais de organizações que se relacionam com a Monitorar.</p></PageIntro><div className="site-wrap quote-list">{testimonials.map(t=><blockquote key={t.id}><p>“{t.content}”</p><footer><strong>{t.name}</strong>{t.position}<br/>{t.company}</footer></blockquote>)}</div><ProjectCTA/></>}
++export default function Testimonials(){return <><PageIntro eyebrow="Depoimentos" title="O trabalho, na voz de quem esteve conosco."><p>Relatos apresentados por profissionais de organizações que se relacionam com a Monitorar.</p></PageIntro><div className="site-wrap quote-list">{testimonials.map(t=><blockquote key={t.id}><img src={["/clientes/ecologika.jpeg","/clientes/dratec.jpeg","/clientes/biogenese.jpeg"][t.id-1]} alt={t.company} width={160} height={80} loading="lazy" className="quote-company-logo"/><p>“{t.content}”</p><footer><strong>{t.name}</strong>{t.position}<br/>{t.company}</footer></blockquote>)}</div><ProjectCTA/></>}
+--- baseline/src/components/InstagramFeed.tsx
++++ src/components/InstagramFeed.tsx
+@@ -1,9 +1,10 @@
++import {Photo} from './Photo';
+ import { Instagram } from "lucide-react";
+ export function InstagramFeed() {
+-  return <section className="container mx-auto px-4 py-12" aria-labelledby="instagram-heading">
+-    <h2 id="instagram-heading" className="text-2xl font-bold text-primary">Acompanhe a Monitorar</h2>
++  return <section className="container mx-auto px-4 py-12 instagram-illustrated" aria-labelledby="instagram-heading">
++    <div><h2 id="instagram-heading" className="text-2xl font-bold text-primary">Acompanhe a Monitorar</h2>
+     <p className="my-4 text-muted-foreground">Publicações e novidades no perfil institucional.</p>
+     <a className="inline-flex items-center gap-2 underline underline-offset-4" href="https://instagram.com/monitorarconsultoria_" target="_blank" rel="noopener noreferrer"><Instagram aria-hidden="true" size={20}/> Ver perfil no Instagram</a>
+-  </section>;
++  </div><Photo src="/equipe/equipe6.jpeg" alt="Registro institucional da equipe Monitorar" width={1280} height={960} loading="lazy"/></section>;
+ }
+ export default InstagramFeed;

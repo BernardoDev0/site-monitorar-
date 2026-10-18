@@ -1,0 +1,56 @@
+{
+  "id": "078",
+  "slug": "/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+  "type": "article",
+  "title": "Não conformidade e eficácia da ação",
+  "summary": "Uma não conformidade é uma diferença demonstrável entre um critério aplicável e a situação observada. Seu tratamento começa por descrever o fato com precisão. Um enunciado como “melhorar controles” não identifica a falha nem permite verificar seu encerramento.",
+  "topic_cluster": "sms",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Corrigir o fato e evitar a repetição",
+      "paragraphs": [
+        "Uma não conformidade é uma diferença demonstrável entre um critério aplicável e a situação observada. Seu tratamento começa por descrever o fato com precisão. Um enunciado como “melhorar controles” não identifica a falha nem permite verificar seu encerramento.",
+        "A correção trata a situação encontrada; a ação corretiva busca atuar nas causas para evitar recorrência. Esses trabalhos podem ocorrer em momentos diferentes. Resolver um documento faltante, por exemplo, não explica por que o fluxo deixou de produzi-lo."
+      ]
+    },
+    {
+      "heading": "Construir um plano verificável",
+      "paragraphs": [
+        "Num exemplo hipotético, uma revisão de procedimento não chegou a parte da equipe. O plano pode incluir disponibilizar a versão correta, investigar o mecanismo de distribuição e ajustar o controle. Para cada ação, registre responsável, prazo e evidência de execução.",
+        "A causa não deve ser presumida como “falta de atenção” sem examinar o processo. Acesso, instruções conflitantes, ferramentas e definição de responsabilidades podem contribuir para a ocorrência. A análise precisa ser proporcional à relevância e à recorrência do problema."
+      ]
+    },
+    {
+      "heading": "Eficácia exige um critério anterior",
+      "paragraphs": [
+        "Defina o que demonstrará que a solução funcionou e em que momento isso poderá ser observado. No exemplo, verificar a distribuição da próxima revisão e entrevistar uma amostra dos usuários produz informação diferente de apenas confirmar que um e-mail foi enviado.",
+        "Se o critério não for atendido, reabra a análise ou ajuste a ação. Encerramento administrativo e eficácia são estados distintos. O registro final deve mostrar a evidência examinada, o resultado e quem realizou a verificação, preservando eventuais limitações da amostra."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "074",
+    "075",
+    "076"
+  ],
+  "created_at": "2026-10-18T07:00:30.179Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.179Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+  "indexability": false,
+  "review_due_at": null
+}

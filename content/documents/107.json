@@ -1,0 +1,56 @@
+{
+  "id": "107",
+  "slug": "/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+  "type": "article",
+  "title": "Interferências e sensibilidade cruzada em detectores de gases",
+  "summary": "Sensibilidade cruzada é a resposta de um sensor a substâncias diferentes daquela usada como referência principal. Sua presença e intensidade dependem da tecnologia, do sensor e das condições. Uma indicação não deve ser interpretada como identificação química universal.",
+  "topic_cluster": "equipamentos",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Um sensor pode responder a mais de uma substância",
+      "paragraphs": [
+        "Sensibilidade cruzada é a resposta de um sensor a substâncias diferentes daquela usada como referência principal. Sua presença e intensidade dependem da tecnologia, do sensor e das condições. Uma indicação não deve ser interpretada como identificação química universal.",
+        "Manuais e fichas técnicas podem apresentar interferências conhecidas e condições de avaliação. Essas informações precisam corresponder ao componente instalado. Consultar uma tabela de outro sensor da mesma marca pode levar a uma conclusão incorreta."
+      ]
+    },
+    {
+      "heading": "O contexto da leitura importa",
+      "paragraphs": [
+        "Considere uma instalação hipotética com possibilidade de mistura de gases. O valor mostrado pelo equipamento precisa ser interpretado à luz dessa composição possível e das limitações documentadas. Ausência de uma substância numa tabela não deve ser tratada como prova de ausência de interferência em qualquer situação.",
+        "Também diferencie interferência de falha e de inadequação de faixa. São questões distintas que exigem investigação própria. O histórico do equipamento e as condições da leitura ajudam o responsável técnico a formular a análise."
+      ]
+    },
+    {
+      "heading": "Perguntas ao fornecedor",
+      "paragraphs": [
+        "Informe os agentes relevantes e solicite documentação específica de resposta, limitações e compatibilidade. Registre modelo, sensor, revisão da ficha e pressupostos da recomendação. Quando a composição não é conhecida, essa incerteza precisa permanecer explícita.",
+        "Não aplique fatores de correção ou altere alarmes com base em informação genérica. A avaliação deve seguir as instruções do fabricante e a análise de riscos. O objetivo é reconhecer quando uma leitura exige interpretação especializada, evitando atribuir ao número uma certeza que o instrumento não fornece."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "087",
+    "088",
+    "089"
+  ],
+  "created_at": "2026-10-18T07:00:30.184Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.184Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+  "indexability": false,
+  "review_due_at": null
+}

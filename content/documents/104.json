@@ -1,0 +1,56 @@
+{
+  "id": "104",
+  "slug": "/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+  "type": "article",
+  "title": "Troca de informações de riscos entre contratante e contratadas",
+  "summary": "A troca de informações de riscos entre contratante e contratadas deve considerar as atividades e suas interferências. Cada organização pode conhecer apenas parte do cenário; a combinação dos trabalhos pode criar questões que não aparecem nos documentos isolados.",
+  "topic_cluster": "sms",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "As interfaces precisam aparecer antes do trabalho",
+      "paragraphs": [
+        "A troca de informações de riscos entre contratante e contratadas deve considerar as atividades e suas interferências. Cada organização pode conhecer apenas parte do cenário; a combinação dos trabalhos pode criar questões que não aparecem nos documentos isolados.",
+        "Reúna descrição das atividades, locais, condições relevantes e responsáveis pela comunicação. As disposições pertinentes da NR-1 devem ser verificadas para a situação concreta, juntamente com outros requisitos aplicáveis. Não reduza a integração à entrega de uma pasta padronizada."
+      ]
+    },
+    {
+      "heading": "Informação precisa chegar a quem executa",
+      "paragraphs": [
+        "Num exemplo hipotético, duas equipes atuam em áreas próximas e alteram seus horários. A mudança pode afetar interfaces previamente avaliadas. O fluxo de comunicação deve permitir revisar essas condições antes da execução, conforme os procedimentos definidos.",
+        "Registre o que foi compartilhado, com quem e para qual atividade. Confirme entendimento das informações essenciais. Uma assinatura de recebimento não demonstra sozinha que a informação era suficiente, atual ou compreendida pelos envolvidos."
+      ]
+    },
+    {
+      "heading": "Atualizar durante o contrato",
+      "paragraphs": [
+        "Mudanças de escopo, equipe, equipamento ou condição de operação devem acionar a revisão pertinente. Defina quem pode interromper o encaminhamento de uma atividade quando faltam informações e quem resolve a pendência.",
+        "No encerramento, preserve os registros relevantes e as lições identificadas. A contratação não elimina responsabilidades próprias nem transfere automaticamente todas as obrigações para a outra parte. A finalidade da integração é permitir decisões informadas sobre riscos e controles, com atribuições e evidências claras."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "074",
+    "075",
+    "076"
+  ],
+  "created_at": "2026-10-18T07:00:30.190Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.190Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+  "indexability": false,
+  "review_due_at": null
+}

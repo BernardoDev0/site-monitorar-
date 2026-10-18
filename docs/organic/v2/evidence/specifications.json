@@ -1,0 +1,261 @@
+[
+  {
+    "file": "01-scope-and-preservation.md",
+    "title": "Escopo, preservação e estado verdadeiro",
+    "problem": "Há 32 arquivos versionados modificados, arquivos não versionados, 17 rotas legadas e dez rascunhos. A missão V2 separa planejamento, implementação e publicação.",
+    "objective": "Evoluir o site inteiro sem perder alterações, corpus, URLs, ativos ou a distinção entre prévia e público.",
+    "out": "Migração de framework, exclusão de histórico, alteração de DNS/contas, publicação e instalação silenciosa.",
+    "files": "scripts/routes.mjs; scripts/build.mjs; scripts/serve.mjs; src/App.tsx; public/drager-catalogo.pdf; docs/organic e specs/organic anteriores; content; PRODUCT.md; DESIGN.md.",
+    "requirements": [
+      [
+        "S01-R01",
+        "Antes de editar código, registrar snapshot/hash do estado sujo e inventário das 17 rotas, aliases, PDFs e arquivos tocados. Preservar alterações concorrentes. Não usar reset/clean/stash destrutivo. A V2 ocupa diretórios separados.",
+        "Comparar hashes, rotas e PDF; nenhum arquivo anterior alterado na entrega documental."
+      ],
+      [
+        "S01-R02",
+        "Distinguir autorização de documentos, implementação local e publicação. Não aprovar conteúdo em nome de pessoa nem instalar/atualizar ferramentas por inferência. Identificar arquivos novos como propostas.",
+        "Registro de permissões e git status; nenhuma ação externa automática."
+      ]
+    ],
+    "decisions": "Manter React 18/Vite 5 e a geração estática. A meta de 90 trata de conteúdo útil; aliases e paginação não contam. O lote B é a primeira fatia visível e C completa a cobertura.",
+    "states": "Arquivo ausente ou mudança concorrente: registrar e comparar, nunca restaurar cegamente. Colisão de rota: bloquear substituição não explícita. Ativo sem direito confirmado: preservar e usar fallback no novo destaque.",
+    "deps": "Direção visual confirmada; autorização de cada fase. Confirmações factuais só bloqueiam alegações pertinentes.",
+    "accept": "Todas as rotas/ativos preservados e alterações anteriores intactas; distinção público/preview documentada.",
+    "tests": "Hash baseline/final; diff; inventário HTTP; teste PDF e aliases; checagem de paths fora de V2.",
+    "risks": "Reset acidental; arquivo não versionado perdido; alegação de publicação por build local. Mitigar por snapshot e logs de escopo.",
+    "rollback": "Restaurar apenas mudanças da tarefa a partir do snapshot do estado sujo; documentos V2 são aditivos e não substituem anteriores."
+  },
+  {
+    "file": "02-design-impeccable-taste.md",
+    "title": "Redesign integral e uso coordenado das skills",
+    "problem": "A home repete grades e heroes genéricos; serviço, artigo e hub são semelhantes. Clientes fica invisível com movimento reduzido. A revisão anterior não abrangeu um redesign integral.",
+    "objective": "Aplicar Campo e precisão a todas as famílias reais, com identidade preservada, fluxo claro e acessibilidade verificável.",
+    "out": "Novas métricas/cases inventados, fontes novas, bibliotecas obrigatórias, efeitos permanentes e migração de stack.",
+    "files": "src/index.css; tailwind.config.ts; src/components/Header.tsx, Footer.tsx, Logo.tsx, ParallaxHero.tsx, WhatsAppButton.tsx; src/pages/Home.tsx, About.tsx, Services.tsx, Clients.tsx, Testimonials.tsx, Careers.tsx, Contact.tsx, Privacy.tsx, NotFound.tsx; src/lib/contact.ts.",
+    "requirements": [
+      [
+        "S02-R01",
+        "Usar Campo e precisão e os tokens do DESIGN-PLAN: DM Sans, azul/verde, máximo de 1200 px, gutters de 20/32 px e artigo com 68ch/18px. Fallback tipográfico se não houver fotografia com uso confirmado.",
+        "Comparação visual por família; identidade reconhecível e nenhuma prova inventada."
+      ],
+      [
+        "S02-R02",
+        "Cobrir todas as linhas de design-coverage.csv. Compartilhar tokens, não impor o mesmo layout a serviço, artigo e hub. Preservar destinos institucionais e Dräger/PDF.",
+        "Cada linha tem evidência desktop/mobile e revisão Impeccable/Taste na implementação."
+      ],
+      [
+        "S02-R03",
+        "Navegação e conteúdo essenciais visíveis sem JavaScript; alvos de 44 px, foco e contraste; larguras 390/768/1440; zoom de 200%, cores forçadas e movimento reduzido. Animações úteis de 140–220 ms.",
+        "Teclado, noJS, ausência de overflow e conteúdo não oculto; contraste por pares reais."
+      ],
+      [
+        "S02-R04",
+        "Contato mostra canais cedo, prepara mensagem local editável, preserva campos e informa somente o efeito ocorrido. Não enviar formulário nem inserir dados pessoais em URL/evento.",
+        "Testes de inválido/preparado/edição/cópia falha e sucesso; saídas externas interceptadas."
+      ],
+      [
+        "S02-R05",
+        "Corrigir os 14 itens de Clientes com opacity 0 em movimento reduzido e alt undefined já no B02. Derivar a alternativa de nome real; não inventar nomes.",
+        "Estilos computados e inspeção de imagem com redução ativa/inativa."
+      ]
+    ],
+    "decisions": "Header com Início/Empresa/Serviços/Blog/Contato; menu móvel details/summary básico sem JavaScript. Home com texto em 7/12 e imagem em 5/12 no desktop. Artigos sem hero publicitário gigante. Direitos e alegações devem ser confirmados antes de novo destaque.",
+    "states": "Menu fechado/aberto/foco; formulário inválido/preparado/editado/copiado/erro; sem vagas; imagem sem autorização; depoimento sem evidência; público/preview.",
+    "deps": "B02 após direção confirmada; C após shell/templates. Direitos e revisão factual não bloqueiam geometria e navegação.",
+    "accept": "Jornada home→blog→021→002→contato e alternativa home→serviço→artigo; cobertura integral posterior; nenhum novo conteúdo depende de animação.",
+    "tests": "Screenshots três larguras; teclado/foco; zoom200%; cores forçadas; reduced motion; noJS; contato sintético; PDF.",
+    "risks": "Trocar verdade por decoração; padronização excessiva; perda de navegação antiga; fotos sem direito. Tratar por matriz de cobertura e inventário de provas.",
+    "rollback": "Restaurar somente componentes/tokens tocados; preservar conteúdo e estado anteriores; manter matrizes e evidências de comparação."
+  },
+  {
+    "file": "03-blog-and-templates.md",
+    "title": "Blog, navegação e contratos dos templates",
+    "problem": "/blog retorna 404 local; /conteudos mistura tipos; não há busca/paginação próprias nem templates adequadamente distintos.",
+    "objective": "Criar descoberta editorial real com HTML rastreável, estados honestos e relações artigo↔serviço↔hub.",
+    "out": "Busca externa paga, CMS novo, páginas de filtro indexáveis, popularidade inventada, publicação automática e paginação para inflar a meta de 90.",
+    "files": "scripts/build.mjs; src/main.tsx; src/entry-server.tsx; src/editorial/NavigationContext.tsx, EditorialApp.tsx, types.ts, editorial.css; scripts/editorial.mjs; novos componentes em src/editorial: BlogIndex, TopicDirectory, Pagination, SearchPage, ArticleTemplate, ServiceTemplate, HubTemplate, ContentTable, ContentFigure.",
+    "requirements": [
+      [
+        "S03-R01",
+        "Emitir /blog e integrá-lo a header/home/footer. Listar somente artigos elegíveis; cards com título/resumo próprios e informação editorial verdadeira. Até três destaques curados explicitamente; sem destaque se nenhum for elegível.",
+        "0/1/12/13/25artigos; serviços nunca listados; links presentes no HTML."
+      ],
+      [
+        "S03-R02",
+        "/conteudos é diretório de hubs;013–018 têm esse pai. Hub inclui síntese própria e percursos. Público sem hubs usa estado vazio, noindex e exclusão do sitemap.",
+        "Pais sem autolinks/ciclos e síntese presente; o índice não conta na meta de 90."
+      ],
+      [
+        "S03-R03",
+        "Doze artigos por página; /blog/pagina/1 redireciona com 308 para /blog; demais páginas válidas têm canonical próprio; inteiro inválido ou fora do intervalo retorna 404. Com zero aprovados: /blog retorna 200, noindex,follow e fica fora do sitemap.",
+        "Conferir status, cards, prev/next e canonical com 0/1/12/13/25 artigos; nenhuma página 2 vazia."
+      ],
+      [
+        "S03-R04",
+        "Serviço contém aplicação/entradas/escopo/entregas/limites; artigo responde pergunta com sumário/corpo/fontes; hub orienta percursos. Preservar body legado e estender com blocos semânticos de tabela/figura, caption/cabeçalhos/alternativa textual.",
+        "Comparar os três tipos e o HTML sem JavaScript; renderizar documento antigo sem os campos novos."
+      ],
+      [
+        "S03-R05",
+        "Relações explícitas porID/URL, únicas, sem autolink e só para destino elegível. Projetar cluster, service_links e referências legíveis. Público usa catálogo/blog elegível como fallback ou omite relação.",
+        "Nenhum link para draft; referências/navegação presentes no HTML; projeção sem campos internos."
+      ],
+      [
+        "S03-R06",
+        "/busca carrega índice leve ao interagir: título, resumo, cluster, slug e revisão real. Normalizar caixa/acentos; todos os termos no título/resumo; título exato prioritário; revisão/ID como desempate. Um filtro de tema, estado no fragmento e grupos de 12 com Mostrar mais.",
+        "Acentos, combinação de termos, filtro, limpar, ordem, anúncio de resultados e zero resultados."
+      ],
+      [
+        "S03-R07",
+        "Busca noindex,follow e fora do sitemap; sem JavaScript oferece temas. Blog, hubs e paginação continuam navegáveis. Prévia com aviso/noindex e dez pilotos, separados em seis artigos, um hub e três serviços.",
+        "Falha de índice com recuperação; zero conteúdos honesto; nenhuma autoria/data falsa ou índice público com draft."
+      ]
+    ],
+    "decisions": "Ordenar o público por revisão real decrescente e ID; prévia sem revisão, por ID. Consultas/filtros não geram URLs rastreáveis combinatórias. O público usa versões publicadas e a prévia usa rascunhos validados. Referências apresentam nome, contexto e link.",
+    "states": "Vazio público; prévia com pilotos; página válida/inválida; busca inicial/carregando/resultado/vazio/erro/limpar; destaque ausente; destino relacionado ainda não elegível.",
+    "deps": "B01 (integridade) e B02 (shell) precedem B03/B04; B05 vem após B03. Revisão humana é necessária para publicar, não para demonstrar a prévia.",
+    "accept": "Jornada completa, listagens coerentes com tipo e elegibilidade, conteúdo principal sem JS e paginação testada.",
+    "tests": "Fixtures com 0/1/12/13/25 artigos; contrato de projeção; HTTP/canonical/sitemap; busca determinística; tabela acessível; navegação sem JavaScript; compatibilidade do corpo legado.",
+    "risks": "Vazar drafts; misturar serviços no blog; índice vazio indexável; busca decorativa; fragmento com dados pessoais. Mitigar por índice mínimo e testes.",
+    "rollback": "Retornar componentes/build ao snapshot, conservar documentos e rotas; manter versões antigas de body renderizáveis."
+  },
+  {
+    "file": "04-original-content-and-90-urls.md",
+    "title": "Pesquisa, originalidade e 90 URLs úteis",
+    "problem": "Noventa briefs repetem perguntas; 81 listas têm duplicatas, nove têm autolinks e seis hubs são pais de si mesmos. Dez rascunhos não entregam matrizes prometidas. Pesquisa concorrencial não equivale a fonte normativa.",
+    "objective": "Manter 90 intenções úteis, com fronteira, contribuição demonstrável, fontes específicas e revisão por versão.",
+    "out": "Copiar/refrasear concorrente em massa, criar oferta por analogia, meta universal de palavras, inflar contagem com utilitárias.",
+    "files": "docs/organic/v2/url-map-v2.csv e briefs; futura correção de scripts/catalog.mjs; content/documents/002.json e content/documents/021.json apenas na implementação autorizada; demais documentos em lotes.",
+    "requirements": [
+      [
+        "S04-R01",
+        "Cada ID preserva histórico/caminho, tipo/cluster, público, pergunta própria, fronteira, estrutura, artefato, fontes com estado de leitura, links, CTA, aceite e bloqueios. São 90 propostas distintas; a distribuição 12/6/72 é mantida por decisão, não como dogma.",
+        "90 IDs e slugs únicos, nove lotes de dez; IDs 040/060 preservados como substituições, não novos IDs; utilitárias excluídas."
+      ],
+      [
+        "S04-R02",
+        "Detalhar dez pilotos e aprofundar 002/021 primeiro. 002: matriz de escopo, responsabilidade, entrega e exclusão. 021: matriz de objetivo, resultado, dados e limites, com três cenários hipotéticos. Não converter ppm em massa sem método e entradas.",
+        "Perguntas respondidas, tabelas acessíveis, exemplos marcados e fontes contextualizadas; manter technical_review."
+      ],
+      [
+        "S04-R03",
+        "040 substitui intenção absorvida por 036/019; 060 por 016/062; 011/085/086 pertencem a treinamentos. 044/Petrobras é análise independente de documento público datado. Higiene ocupacional fica fora da oferta. Não inventar pessoas, casos, preços, prazos ou vínculos.",
+        "Histórico de substituição, fronteiras verificadas e revisão factual/técnica por versão."
+      ],
+      [
+        "S04-R04",
+        "Inventário Ambiens distingue descoberto/acessado/lido/excluído e limites; registrar forças/lacunas e correspondências próprias. Fonte primária precisa leitura/contexto antes de afirmação.",
+        "785 registros reconciliados; 24 leituras não equivalem a 374 respostas 200; nenhum corpo copiado no corpus."
+      ]
+    ],
+    "decisions": "Preservar 88 caminhos. 040 e 060 são candidatos não publicados, sem redirect presumido. 011, 085 e 086 foram reclassificados. Corrigir relações também na origem futura. D01 completa os oito pilotos restantes após B07.",
+    "states": "Brief pendente de pesquisa; draft técnico; fonte indisponível; divergência normativa; oferta não confirmada; pessoa não autorizada; aprovado porhash; mudança material invalida aceite.",
+    "deps": "Pesquisa primária específica e especialista por tema; confirmação institucional por alegação. Layout e prévia independem dessas liberações.",
+    "accept": "Cada página resolve sua pergunta com instrumento próprio e limite claro; revisões reais, sem avaliar qualidade por extensão.",
+    "tests": "IDs, lotes, links e pais; leitura manual dos briefs; correspondências com a pesquisa; exemplos rotulados; duplicidade exata como sinal e revisão semântica humana.",
+    "risks": "Canibalização, fonte estrangeira tratada como obrigação brasileira, copyright de norma, cópia de argumentos e aprovação sem revisor. Registrar versão, jurisdição e limites.",
+    "rollback": "Preservar a versão anterior e o ID; reverter somente a versão em rascunho; conteúdo público muda pelo fluxo de liberação."
+  },
+  {
+    "file": "05-technical-seo-and-quality.md",
+    "title": "SEO técnico, renderização, desempenho e acessibilidade",
+    "problem": "As correções locais não estão comprovadas em produção; o sitemap público observado entrega HTML. Há falhas de rotas, projeção e movimento reduzido. O orçamento anterior não inclui mídia e fontes.",
+    "objective": "Entregar HTML compreensível, rotas e status coerentes, acessibilidade verificável e desempenho medido com protocolo.",
+    "out": "Promessas de ranking, certificação WCAG por Lighthouse, migração por preferência e aprovação de produção a partir de build local.",
+    "files": "scripts/build.mjs, routes.mjs, serve.mjs, schema.mjs, editorial.mjs; src/entry-server.tsx; src/index.css; src/editorial; public; tests/artifact.test.mjs e tests/editorial.test.mjs; vercel.json somente em implementação autorizada.",
+    "requirements": [
+      [
+        "S05-R01",
+        "Cada rota entrega conteúdo, H1, links, idioma, title, description, canonical, Open Graph e JSON-LD coerentes. Article, Service, Breadcrumb e Organization usam somente dados reais e visíveis. Tabelas e referências estão no HTML sem JavaScript.",
+        "Parsear HTML/JSON-LD e verificar ausência de autoria, data ou review fictícios."
+      ],
+      [
+        "S05-R02",
+        "Sitemap XML contém somente canônicas elegíveis e lastmod verdadeiro quando usado. Robots não bloqueia acidentalmente. /index.html normaliza para /. Preservar aliases e 404 real. Prévia noindex; rascunhos fora de público, links e índices. Metadados públicos não contêm localhost.",
+        "Conferir status e content-type, inventário de aliases e exclusão de rascunhos; testar provedor somente após deploy autorizado."
+      ],
+      [
+        "S05-R03",
+        "Orçamentos: JS gzip 170 kB comercial/110 kB editorial, CSS 20 kB, fontes 100 kB; transferência móvel inicial 650/400 kB. Vídeo sob demanda, imagens com dimensões/lazy e fontes com licença. Medir três execuções pelo protocolo V2.",
+        "Registrar versões, rede 1600 kbps/RTT 150 ms, CPU 4×, viewport 390 px, cache limpo, mediana e variação. Metas de laboratório: LCP ≤2,5 s, CLS ≤0,1, TBT ≤200 ms."
+      ],
+      [
+        "S05-R04",
+        "Objetivo WCAG 2.2 AA com testes manuais de teclado, foco, contraste, zoom 200%, 390/768/1440 px, cores forçadas e movimento reduzido; NVDA quando disponível. Conteúdo essencial nunca fica oculto.",
+        "Matriz por família e estado, limitações explícitas e Clientes visível sem animação."
+      ]
+    ],
+    "decisions": "Manter React/Vite estático. Bloqueio de crawl não substitui noindex. Disponibilizar assets necessários. Busca, paginação e utilitárias seguem políticas explícitas. Contar JS inicial completo, não somente o entrypoint.",
+    "states": "Erro de build não promove a saída; URL inexistente retorna 404; fonte/imagem indisponível recebe fallback. Distinguir sem JavaScript, prévia e público. Teste manual indisponível é registrado como não executado.",
+    "deps": "B01–B07 e cobertura C; licenças de ativos pertinentes; acesso externo apenas para validação após release autorizado.",
+    "accept": "Contratos automatizados e revisão manual por família; orçamentos sobre transferências reais; nenhuma alegação de INP de campo.",
+    "tests": "Build público e prévia, typecheck, lint e testes; HTTP/HTML/JSON-LD; links locais; capturas; laboratório com protocolo; teclado e movimento reduzido.",
+    "risks": "Otimizar nota retirando conteúdo, confundir localhost com campo, canonical global, soft 404 e perda de PDF. Exigir evidência por rota e protocolo.",
+    "rollback": "Manter artefato anterior disponível; falha impede promoção; reverter arquivos tocados sem perder corpus."
+  },
+  {
+    "file": "06-editorial-operations.md",
+    "title": "Operação editorial, aprovação e automação",
+    "problem": "As validações diferem entre simulação e preparação. Uma pausa inválida pode ser ignorada e nomes podem ser projetados sem autorização. Cadastro local não autentica o aprovador.",
+    "objective": "Reaproveitar JSON/Zod/registry/hash com validação consistente, candidato separado e aprovação humana real.",
+    "out": "CMS, banco, fila, API paga, cron, escritor/publicador autônomo e aprovação simulada.",
+    "files": "scripts/editorial.mjs; scripts/editorial-cli.mjs; scripts/build.mjs; content/documents e registros/manifestos existentes; tests/editorial.test.mjs; futuro candidato separado do publicado.",
+    "requirements": [
+      [
+        "S06-R01",
+        "Usar validador compartilhado em simulação, preparação e build: chave = slug, IDs/slugs/corpos únicos, rotas reservadas, sem colisão silenciosa, fontes/versionamento/relações coerentes. Projeção pública mínima inclui somente pessoas com authorized.",
+        "Rejeitar as mesmas fixtures inválidas em todas as entradas; HTML e índices sem campos privados."
+      ],
+      [
+        "S06-R02",
+        "Separar escrita, revisão técnica/editorial, evidência institucional e aprovação. Aprovação vinculada ao hash exige pessoa real autorizada e ato registrado; cadastro pela CLI não autentica sozinho. Mudança material invalida aprovação.",
+        "Hash antigo deixa de ser elegível; revisão, data e autor não são inventados; limitação de autenticação explícita."
+      ],
+      [
+        "S06-R03",
+        "Pausa ilegível ou malformada bloqueia a operação. Preparação gera candidato com digest sem alterar publicado. Build público usa snapshots aprovados independentes de drafts. Validar saída temporária antes de promover e manter rollback.",
+        "Rascunho inválido não derruba versão publicada válida; falha parcial não promove; idempotência e preparação sem deploy."
+      ]
+    ],
+    "decisions": "O fluxo local não é CMS nem publicador ativo. Hash normalizado detecta repetição exata; similaridade semântica exige revisão. Hash de HTML com shell comum não prova duplicidade. Mudanças de conteúdo/data precisam de justificativa real.",
+    "states": "Pausa ativa/inválida; fonte pendente/indisponível; rascunho inválido; revisão insuficiente; hash divergente; colisão de rota; candidato validado/publicado anterior; falha de build.",
+    "deps": "Revisores e evidências para elegibilidade; B01 não exige aprovar artigos; publicação autorizada separadamente.",
+    "accept": "Todas as entradas aplicam os mesmos invariantes; nenhum nome não autorizado; preparação não publica; rollback preserva versões anteriores.",
+    "tests": "Fixtures de chave/slug, ID, corpo, rotas, pausa, authorized, hash antigo, candidato separado, draft inválido, rollback e idempotência.",
+    "risks": "Falsa autenticação, corpos duplicados sob slugs diferentes, pausa ignorada, build dependente de drafts e rollback que apaga trabalho. Mitigar com contratos únicos e snapshots.",
+    "rollback": "Retomar manifesto/artefato anterior sem apagar revisões; descartar candidato sem reescrever o histórico de aprovação."
+  },
+  {
+    "file": "07-measurement-and-release.md",
+    "title": "Medição, liberação e retorno à versão anterior",
+    "problem": "Não há dados verificados de GSC, GA ou conversão. Clique local não comprova contato recebido; build local não verifica CDN ou indexação.",
+    "objective": "Preparar medição proporcional e liberação verificável, com autorização e reversão.",
+    "out": "Ativar analytics, cron ou deploy automaticamente; prometer leads/ranking; coletar PII ou comprar tráfego/links.",
+    "files": "src/lib/contact.ts; src/pages/Contact.tsx; src/components/WhatsAppButton.tsx; scripts/build.mjs; manifesto/artefatos de candidato; hospedagem somente com autorização.",
+    "requirements": [
+      [
+        "S07-R01",
+        "Eventos de contato contêm apenas channel/path, sem formulário, telefone, email, query, fragmento ou mensagem. Separar clique, cópia, recebimento e oportunidade. Preservar a tarefa do visitante.",
+        "Interceptar saídas; verificar payload mínimo; nenhuma afirmação de envio ou integração inexistente."
+      ],
+      [
+        "S07-R02",
+        "Separar release de interface e lotes de conteúdo. Preparar candidato com digest, rotas, aprovações, testes e artefato anterior. Publicar somente com autorização específica; verificar HTTP/HTML/CDN depois.",
+        "Candidato não dispara CI, push ou deploy; não contém drafts; rollback ensaiado localmente."
+      ],
+      [
+        "S07-R03",
+        "GSC, GA e Perfil da Empresa permanecem não medidos até acesso autorizado. Baseline com origem/data; marca versus serviço/cluster; checagens 24/72 h e avaliações 2/4/8 semanas após release. Separar permissões de busca e treinamento.",
+        "Relatório distingue zero de falta de acesso, laboratório de campo e clique de lead; nenhuma promessa de controlar robôs ou citações."
+      ]
+    ],
+    "decisions": "O primeiro release técnico pode conter zero novos editoriais. A meta 90 não é pré-condição. Nenhum domínio paralelo. Métricas observacionais não provam causalidade.",
+    "states": "Sem acesso: não medido. Erro de integração: não concluído. Candidato reprovado, publicação não autorizada ou falha após release com retorno.",
+    "deps": "Acesso e titular para GSC/GA; autorização para ação externa; E01 e aprovações pertinentes.",
+    "accept": "Plano de instrumentação mínimo, release revisável e reversão definida; nenhuma publicação ou medição fictícia.",
+    "tests": "Payload sem PII; inspeção de candidato; hashes; rollback local; HTTP após release apenas se autorizado.",
+    "risks": "Confundir clique com lead, disparar deploy pelo build, atribuir causalidade indevida. Mitigar com limites e autorização por ação.",
+    "rollback": "Retornar artefato anterior aprovado; desabilitar somente integração autorizada que falhou; conservar registros sem PII."
+  }
+]

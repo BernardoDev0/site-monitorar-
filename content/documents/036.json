@@ -1,0 +1,57 @@
+{
+  "id": "036",
+  "slug": "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+  "type": "article",
+  "title": "Substâncias e condições de detecção",
+  "summary": "A capacidade de detectar uma liberação depende da substância, do princípio de medição e das condições de uso. O nome comercial do equipamento ou a expressão “detector de gases” não demonstram que ele seja adequado a todos os fluidos presentes na instalação.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Um detector não responde a qualquer substância",
+      "paragraphs": [
+        "A capacidade de detectar uma liberação depende da substância, do princípio de medição e das condições de uso. O nome comercial do equipamento ou a expressão “detector de gases” não demonstram que ele seja adequado a todos os fluidos presentes na instalação.",
+        "Antes de uma campanha de fugitivas, o inventário de processos deve relacionar os fluidos e as interfaces de interesse. Informações de composição precisam ter origem e versão. Uma mudança de produto pode exigir reavaliação da abordagem mesmo que os componentes físicos permaneçam iguais."
+      ]
+    },
+    {
+      "heading": "Quando o resultado parece conclusivo demais",
+      "paragraphs": [
+        "Num exemplo hipotético, uma campanha não registra indicação em um conjunto de componentes. Para interpretar esse resultado, é preciso saber se o sistema era sensível às substâncias esperadas e se as condições permitiam a avaliação. “Sem indicação” descreve uma observação dentro dessas condições; não equivale a provar ausência universal de emissão.",
+        "O relatório deve separar ausência de indicação, medição inválida e componente não inspecionado. Misturar essas situações sob a mesma marcação elimina informação necessária para decidir o próximo passo."
+      ]
+    },
+    {
+      "heading": "Preparação para definir o método",
+      "paragraphs": [
+        "Reúna composição dos fluidos, estado operacional, condições de acesso e objetivo do levantamento. Solicite que a proposta identifique limitações do método e a documentação do instrumento que sustenta sua aplicação.",
+        "A leitura instrumental pode envolver resposta a misturas e dependência de configuração. Não aplicar fatores universais de correção. Este artigo trata da adequação de métodos para fugitivas; a seleção de detectores usados na proteção de pessoas exige avaliação de segurança própria, sem transferir conclusões automaticamente entre os dois contextos."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "019",
+    "020",
+    "021"
+  ],
+  "created_at": "2026-10-18T07:00:30.162Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.162Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+  "indexability": false,
+  "review_due_at": null
+}

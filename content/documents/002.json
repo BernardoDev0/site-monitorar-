@@ -1,0 +1,128 @@
+{
+  "id": "002",
+  "slug": "/servicos/emissoes-fugitivas",
+  "type": "service",
+  "title": "Monitoramento de emissões fugitivas",
+  "summary": "Organize a contratação de uma campanha de emissões fugitivas: informações iniciais, responsabilidades, entregas e limites que precisam constar no escopo.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "comercial",
+  "body": [
+    {
+      "heading": "Um escopo que começa pela pergunta certa",
+      "paragraphs": [
+        "O monitoramento de emissões fugitivas ajuda a organizar informações sobre perdas de substâncias em equipamentos e componentes de uma instalação. A proposta precisa partir do objetivo do contratante: localizar ocorrências, acompanhar manutenção, organizar registros ou responder a uma exigência específica. Esses objetivos podem exigir entregas diferentes.",
+        "A Monitorar apresenta LDAR em seu portfólio ambiental. Para um projeto concreto, equipe, técnicas, instrumentos e atividades devem ser confirmados na proposta. A menção a uma técnica no site não substitui a definição formal do que será executado."
+      ]
+    },
+    {
+      "heading": "Informações para preparar a conversa",
+      "paragraphs": [
+        "Informe a atividade da instalação, as unidades envolvidas e o objetivo do trabalho. Um cadastro de componentes permite discutir cobertura e estimativa de esforço. Se ainda não existir, sua elaboração deve ser tratada como atividade explícita, não como premissa escondida.",
+        "Condições de acesso, procedimentos internos de segurança e janelas de operação também influenciam o escopo. Informações confidenciais devem ser compartilhadas somente por um canal acordado com os responsáveis pelo projeto."
+      ]
+    },
+    {
+      "heading": "Entregáveis, responsabilidades e limites",
+      "paragraphs": [
+        "A proposta deve indicar quais registros serão produzidos, como os componentes serão identificados e como as limitações serão documentadas. Detectar, reparar e verificar novamente são atividades distintas. É preciso definir a responsabilidade por cada uma e o caminho de comunicação de ocorrências.",
+        "Uma lista de pontos encontrados não equivale automaticamente a uma estimativa de massa emitida. Se a necessidade envolve quantificação, método e condições de validade precisam ser discutidos antes da campanha. O EPA Method 21 é uma referência estrangeira, não prova de obrigação universal no Brasil."
+      ]
+    },
+    {
+      "heading": "Converse sobre seu projeto",
+      "paragraphs": [
+        "Use o contato para explicar o problema e solicitar uma conversa sobre o escopo. A proposta comercial confirmará atividades, entregas, prazos e exclusões. Não é possível prometer cobertura integral sem conhecer acesso, disponibilidade operacional e limites do método."
+      ]
+    },
+    {
+      "heading": "Matriz para discutir responsabilidades",
+      "paragraphs": [
+        "A matriz abaixo é um roteiro ilustrativo de negociação, não uma lista de atividades automaticamente incluídas. Ela deve ser confirmada pela Monitorar e pelo contratante antes de integrar uma proposta. Uma responsabilidade sem nome, prazo e entrega tende a se tornar uma lacuna entre a campanha e a decisão operacional.",
+        "Se a instalação não tiver um cadastro confiável, não trate o número estimado de componentes como cobertura assegurada. Discuta uma etapa de reconhecimento e registre como inclusões, exclusões e alterações serão validadas. O contratante precisa indicar quem pode liberar acesso e esclarecer a condição operacional."
+      ],
+      "table": {
+        "caption": "Exemplo ilustrativo de matriz de escopo, sujeito à confirmação comercial",
+        "headers": [
+          "Etapa",
+          "Responsabilidade a definir",
+          "Entrega a combinar",
+          "Limite a explicitar"
+        ],
+        "rows": [
+          [
+            "Preparação",
+            "Contratante informa objetivo; equipe técnica avalia entradas",
+            "Lista de documentos e plano de trabalho",
+            "Dependência de documentos atualizados"
+          ],
+          [
+            "Cadastro",
+            "Definir quem identifica, registra e valida os componentes",
+            "Cadastro com identificadores e localização",
+            "Inclusões e alterações não presumidas"
+          ],
+          [
+            "Inspeção",
+            "Equipe e condições de campo confirmadas na proposta",
+            "Registros por componente e condições da avaliação",
+            "Acesso, operação e resposta do método"
+          ],
+          [
+            "Ocorrências",
+            "Definir destinatário e canal de comunicação",
+            "Registro rastreável das ocorrências",
+            "Inspeção não autoriza intervenção operacional"
+          ],
+          [
+            "Reparo",
+            "Responsável da instalação ou contratado específico",
+            "Histórico da intervenção",
+            "Não presumir manutenção incluída"
+          ],
+          [
+            "Reverificação",
+            "Definir quem executa e quando",
+            "Resultado vinculado ao componente e reparo",
+            "Reparo declarado não é resultado verificado"
+          ],
+          [
+            "Relatório",
+            "Definir formato, arquivos e responsável pelo aceite",
+            "Síntese, base de dados e limitações acordadas",
+            "Quantificação exige escopo e método próprios"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "013",
+    "021",
+    "023",
+    "024",
+    "026",
+    "028"
+  ],
+  "created_at": "2026-10-16T17:00:00.000Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T16:53:43.109Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas",
+  "indexability": true,
+  "review_due_at": null
+}

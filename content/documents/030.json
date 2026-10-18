@@ -1,0 +1,89 @@
+{
+  "id": "030",
+  "slug": "/blog/indicadores-de-programas-ldar",
+  "type": "article",
+  "title": "Indicadores de LDAR",
+  "summary": "Cobertura, pendências e reverificação medem aspectos diferentes do programa. Use denominadores claros e evite confundir menos ocorrências com menos emissões.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Um indicador precisa explicar o que contou",
+      "paragraphs": [
+        "Antes de comparar percentuais, confira numerador, denominador, período e critérios. “Percentual de vazamentos” pode usar o total cadastrado, o total previsto ou o total avaliado como base. Esses denominadores respondem a perguntas diferentes e não devem ser trocados sem explicação.",
+        "Separar cobertura e ocorrência evita uma conclusão enganosa: uma campanha com menos pontos acessados pode encontrar menos ocorrências sem que a instalação tenha melhorado. O registro de pontos não avaliados precisa acompanhar a leitura dos resultados."
+      ]
+    },
+    {
+      "heading": "Resultados de gestão não são automaticamente massa evitada",
+      "paragraphs": [
+        "A quantidade de componentes reparados e reverificados é útil para acompanhar o programa. Ela não informa sozinha quantos quilogramas deixaram de ser emitidos. Uma estimativa de massa exige método, dados e hipóteses adequados, incluindo o tratamento do tempo.",
+        "O guia da EPA discute os elementos e a gestão de registros de LDAR; os indicadores ilustrativos abaixo são uma organização própria para análise. Não são metas universais nem desempenho observado da Monitorar. Uma meta deve ser justificada pelo contexto do programa, e não escolhida apenas por parecer positiva no painel."
+      ]
+    },
+    {
+      "heading": "Quadro de apoio à decisão",
+      "paragraphs": [
+        "Exemplo hipotético: a campanha A avaliou 100 pontos e encontrou 10 ocorrências; a B avaliou 50 e encontrou 6. A queda de 10 para 6 não prova redução do problema. A cobertura mudou e os grupos avaliados podem ser diferentes. Comparabilidade exige examinar os componentes e as condições, além dos totais."
+      ],
+      "table": {
+        "caption": "Indicadores de acompanhamento e limites de interpretação",
+        "headers": [
+          "Indicador ilustrativo",
+          "Base a declarar",
+          "Limitação"
+        ],
+        "rows": [
+          [
+            "Cobertura",
+            "Componentes avaliados / componentes previstos",
+            "Não descreve qualidade do procedimento"
+          ],
+          [
+            "Ocorrências entre avaliados",
+            "Componentes classificados / componentes avaliados",
+            "Depende do critério e do universo"
+          ],
+          [
+            "Pendências de retorno",
+            "Ocorrências com reverificação pendente",
+            "Não equivale a falha de reparo confirmada"
+          ],
+          [
+            "Encerramentos verificados",
+            "Ocorrências encerradas segundo critério / universo definido",
+            "Não equivale a massa evitada"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "013",
+    "002",
+    "021",
+    "027",
+    "031"
+  ],
+  "created_at": "2026-10-17T17:03:40.668Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T17:03:40.668Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/indicadores-de-programas-ldar",
+  "indexability": true,
+  "review_due_at": null
+}

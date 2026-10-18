@@ -1,0 +1,28 @@
+
+> vite_react_shadcn_ts@0.0.0 build
+> node scripts/build.mjs
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1682 modules transformed.
+rendering chunks...
+computing gzip size...
+.organic-stage-public/index.html                          1.23 kB │ gzip:  0.57 kB
+.organic-stage-public/assets/index-1DTgYegG.css         113.47 kB │ gzip: 20.60 kB
+.organic-stage-public/assets/EditorialApp-CBDaAuYi.js     8.96 kB │ gzip:  3.34 kB
+.organic-stage-public/assets/SiteShell-CL_ubE4K.js       10.47 kB │ gzip:  3.90 kB
+.organic-stage-public/assets/ScrollTrigger-88WqrurJ.js   43.98 kB │ gzip: 18.26 kB
+.organic-stage-public/assets/index-a9woYdh8.js           70.83 kB │ gzip: 27.95 kB
+.organic-stage-public/assets/App-f0XBa1J4.js            130.63 kB │ gzip: 38.23 kB
+.organic-stage-public/assets/index-De-I1poN.js          160.48 kB │ gzip: 52.48 kB
+✓ built in 4.01s
+vite v5.4.19 building SSR bundle for production...
+transforming...
+✓ 36 modules transformed.
+rendering chunks...
+.organic-server/entry-server.js  115.47 kB
+✓ built in 615ms
+{"output":"dist","legacy":17,"editorial":0,"preview":false,"urls":10}
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme

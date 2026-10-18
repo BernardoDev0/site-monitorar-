@@ -1,0 +1,385 @@
+{
+  "code_commit": "6545850fbf8df298df73d81f3e8cba638787c8bd",
+  "weights_sha256": "917cd972f7ba80786871add249ad43e4477ce2db59b4ad63e2fa446f7221d013",
+  "device": "cuda",
+  "records": [
+    {
+      "id": 1,
+      "source": "src/assets/hero-refinery.jpg",
+      "sha256_original": "dba91d7a0a5aaa2eb9f907c2062a565119abd4fa2503d6345a5bbd777ece7755",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\01.png",
+      "size": [
+        1920,
+        1080
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.06
+    },
+    {
+      "id": 2,
+      "source": "src/assets/paisagem.png",
+      "sha256_original": "f94d46cff9feb65e2e157a54b9213ee886a35200dcd8aced44ca51bb6c29a580",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\02.png",
+      "size": [
+        1024,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.04
+    },
+    {
+      "id": 3,
+      "source": "public/epis.png",
+      "sha256_original": "feacff0992f1f0b62f6916fc19d417b76364d282d7450b13f2367ff59d90cc39",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\03.png",
+      "size": [
+        1704,
+        1026
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.05
+    },
+    {
+      "id": 4,
+      "source": "public/pessoas/Picture12.jpg",
+      "sha256_original": "f1df38bcb56c93e92e28fdc36361d1d35c3b5d7c26d488c0c8f94d8d1550d05e",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\04.png",
+      "size": [
+        576,
+        492
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.01
+    },
+    {
+      "id": 5,
+      "source": "public/pessoas/Picture13.jpg",
+      "sha256_original": "ee6e4830968b0f0bcf108b689f4431c62903a138ef0a25f599bb155353033fc8",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\05.png",
+      "size": [
+        260,
+        462
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.01
+    },
+    {
+      "id": 6,
+      "source": "public/pessoas/Picture14.jpg",
+      "sha256_original": "03f4d5b15d3756548c338018683c6d7fb7ad9777214f831ca8767a597c8a2be9",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\06.png",
+      "size": [
+        358,
+        477
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.01
+    },
+    {
+      "id": 7,
+      "source": "public/servicos/licenciamento.jpg",
+      "sha256_original": "a4bd575f4be0c9986d852821d63c6d60973abc7b7c9a48fe906dee67283f1d8a",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\07.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.02
+    },
+    {
+      "id": 8,
+      "source": "public/paisagem2.png",
+      "sha256_original": "737da12aaf4ffb5850a58ce02ee840a1e2c3e4c56c4bcb66c1a4df0f39ebf219",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\08.png",
+      "size": [
+        1408,
+        736
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.04
+    },
+    {
+      "id": 9,
+      "source": "public/equipe/equipe5.png",
+      "sha256_original": "296cd909b18b7d07f498b2614dc1bd7e1f35a611d8aa276270d12533b40db830",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\09.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 0.06
+    },
+    {
+      "id": 10,
+      "source": "public/equipe/equipe1.JPG",
+      "sha256_original": "51fb90cada2e8545c42eba63fae64eb43b9647400cf4fc8c777a8b78f9f8ce7a",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\10.png",
+      "size": [
+        1280,
+        960
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 66.64
+    },
+    {
+      "id": 11,
+      "source": "public/equipe/equipe2.jpeg",
+      "sha256_original": "643cf24e78b57d5316b44450dd3c2dcece2422c149ba88db44f7f59b0045e731",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\11.png",
+      "size": [
+        1024,
+        768
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 45.05
+    },
+    {
+      "id": 12,
+      "source": "public/equipe/equipe6.jpeg",
+      "sha256_original": "923b9ffc5153d5824e829d8a66952be4323ffaaa835865f292b32edf05d10d1a",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\12.png",
+      "size": [
+        1280,
+        960
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 65.48
+    },
+    {
+      "id": 13,
+      "source": "src/assets/refinary+floresta.png",
+      "sha256_original": "97d6cad527cf6e624890e84b73e329d9a1c1b6941a925fbf8c521a1aba9a58ec",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\13.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 88.66
+    },
+    {
+      "id": 14,
+      "source": "public/faleconosco.png",
+      "sha256_original": "1262e66c8035d3cbbf95c2c6373b7c7d9d18cf3eb6688e71caf629d9b6958b22",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\14.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 88.5
+    },
+    {
+      "id": 15,
+      "source": "public/depoimentos.png",
+      "sha256_original": "7842743595b01c79e28aaa4ec232c57b19ec528ea02a6ee13490e8019b9e33ea",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\15.png",
+      "size": [
+        1024,
+        788
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 44.3
+    },
+    {
+      "id": 16,
+      "source": "public/paisagem4.png.png",
+      "sha256_original": "58d14a5ff834ad441206ae63cc56a8b4c0e9d3037d840332cf3237de0d2508cb",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\16.png",
+      "size": [
+        1536,
+        1024
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 90.16
+    },
+    {
+      "id": 17,
+      "source": "public/servicos/qualidade-ar.jpg",
+      "sha256_original": "95bb6db5165d39d11cebdc0ddb56b83acad91108447fde0ce7c909d33d667e54",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\17.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 32.03
+    },
+    {
+      "id": 18,
+      "source": "public/servicos/areas-impactadas.jpg",
+      "sha256_original": "5fab9f5b590e074cab418d46f848bc2f989e7cfe307d007aa79b30b447ad3c3e",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\18.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 31.69
+    },
+    {
+      "id": 19,
+      "source": "public/servicos/avaliacao-ruido.jpg",
+      "sha256_original": "41a70b30b9151d5a6e9174035841d992f61b54d0428a383aa213ce5a7190f51c",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\19.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 32.0
+    },
+    {
+      "id": 20,
+      "source": "public/servicos/gestao-sms.jpg",
+      "sha256_original": "d53494d873ad4fb200fe3647228d5119388ce63e9af0570fdcb7b5f0f8c076ac",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\20.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 31.17
+    },
+    {
+      "id": 21,
+      "source": "public/servicos/hazop.jpg",
+      "sha256_original": "22a54d57736b830d8fa8784d70667f1022f3f7fd7de6fae61a442483637c875a",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\21.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 31.72
+    },
+    {
+      "id": 22,
+      "source": "public/servicos/auditorias.jpg",
+      "sha256_original": "7f4b3ef0790a0a38819052d031d2f74ca48e94d4e3907ebdbc5b41dd2d316b49",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\22.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 32.7
+    },
+    {
+      "id": 23,
+      "source": "public/servicos/treinamentos.jpg",
+      "sha256_original": "ef02b7d2dafa785658dc5d7e3df899fd633459bc5143da683116a6651173c1cd",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\23.png",
+      "size": [
+        800,
+        800
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 32.41
+    },
+    {
+      "id": 24,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1518837695005-2083093ee35b.jpg",
+      "sha256_original": "3c979df04acaa5375621fc49084b38aaedb0545b0d59c29482e99bfd2856cc0f",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\24.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 216.19
+    },
+    {
+      "id": 25,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1441974231531-c6227db76b6e.jpg",
+      "sha256_original": "47a042f405eef7bc3a8e11b08398d3301f0dbbfe522e2d6aecb2094fbbbe84aa",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\25.png",
+      "size": [
+        2400,
+        1598
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 216.81
+    },
+    {
+      "id": 26,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1486406146926-c627a92ad1ab.jpg",
+      "sha256_original": "666c223a427d8914990fe02e67d9c6361909966a2bd158d43c7216aeaab32de7",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\26.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 216.03
+    },
+    {
+      "id": 27,
+      "source": "D:\\monitorar-tools\\v4\\remote-originals\\photo-1581594549595-35f6edc7b762.jpg",
+      "sha256_original": "37cb18bf7f7d3a20db41d52c9d785c02bf0d4c3a4b87ce5f754fd8b8094188c9",
+      "candidate": "D:\\monitorar-tools\\v4\\candidates\\27.png",
+      "size": [
+        2400,
+        1600
+      ],
+      "model": "005_colorDN_DFWB_s128w8_SwinIR-M_noise15.pth",
+      "blend": 0.35,
+      "status": "candidate_requires_visual_review",
+      "seconds": 213.61
+    }
+  ]
+}

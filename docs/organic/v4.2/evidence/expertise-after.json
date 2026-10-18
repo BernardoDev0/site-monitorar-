@@ -1,0 +1,35 @@
+{
+  "before_desktop_height": 4308.171875,
+  "checks": [
+    {
+      "width": 320,
+      "height": 2169.921875,
+      "texts_links_and_order_preserved": true,
+      "images": 6
+    },
+    {
+      "width": 390,
+      "height": 1871.890625,
+      "texts_links_and_order_preserved": true,
+      "images": 6
+    },
+    {
+      "width": 768,
+      "height": 1191.546875,
+      "texts_links_and_order_preserved": true,
+      "images": 6
+    },
+    {
+      "width": 1440,
+      "height": 1091.609375,
+      "texts_links_and_order_preserved": true,
+      "images": 6
+    },
+    {
+      "width": 1920,
+      "height": 1094.828125,
+      "texts_links_and_order_preserved": true,
+      "images": 6
+    }
+  ]
+}

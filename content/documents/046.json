@@ -1,0 +1,57 @@
+{
+  "id": "046",
+  "slug": "/blog/planejamento-do-monitoramento-de-pts",
+  "type": "article",
+  "title": "Planejamento de monitoramento de PTS",
+  "summary": "Planejar monitoramento de PTS exige definir a pergunta antes de escolher pontos ou datas. Caracterizar uma condição, acompanhar uma tendência e responder a uma solicitação administrativa podem exigir estratégias diferentes.",
+  "topic_cluster": "ar",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O objetivo orienta a campanha",
+      "paragraphs": [
+        "Planejar monitoramento de PTS exige definir a pergunta antes de escolher pontos ou datas. Caracterizar uma condição, acompanhar uma tendência e responder a uma solicitação administrativa podem exigir estratégias diferentes.",
+        "A EPA destaca que localização de estações e seleção de métodos dependem da finalidade dos dados. O planejamento deve relacionar essa finalidade à fração de material particulado, ao método, à duração e às condições operacionais que precisam ser representadas."
+      ]
+    },
+    {
+      "heading": "Da pergunta ao calendário",
+      "paragraphs": [
+        "Considere uma atividade hipotética que funciona apenas em determinados turnos. Uma campanha concentrada fora desses turnos pode produzir dados válidos sobre o período amostrado, mas não responder à pergunta sobre a atividade em operação. O problema não se resolve apenas aumentando a quantidade de medições sem revisar o calendário.",
+        "Registre horários, situações operacionais relevantes e restrições de acesso. Defina como serão documentadas interrupções e perdas de amostras. Não preencher automaticamente lacunas com zero: ausência de dado e ausência de material particulado são situações distintas."
+      ]
+    },
+    {
+      "heading": "Entregas a combinar",
+      "paragraphs": [
+        "O plano deve informar os pontos previstos e sua justificativa, a referência de medição, os registros de qualidade e o tratamento de ocorrências. O relatório precisa mostrar o que foi efetivamente executado em comparação com o planejado.",
+        "Peça que desvios de ponto, período ou método sejam identificados com sua consequência para a interpretação. Uma campanha bem documentada permite reconhecer o que os dados sustentam e quais questões continuam abertas, sem prometer representatividade ilimitada."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+    "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "045",
+    "047",
+    "048"
+  ],
+  "created_at": "2026-10-18T07:00:30.166Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.166Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/planejamento-do-monitoramento-de-pts",
+  "indexability": false,
+  "review_due_at": null
+}

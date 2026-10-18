@@ -1,0 +1,56 @@
+{
+  "id": "097",
+  "slug": "/blog/resultado-nao-detectado-em-analises-ambientais",
+  "type": "article",
+  "title": "Resultado não detectado em análises ambientais",
+  "summary": "Um resultado descrito como não detectado informa que o procedimento analítico não produziu detecção nas condições e no limite informados. Ele não demonstra que a substância está ausente em qualquer concentração ou em toda a área investigada.",
+  "topic_cluster": "areas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Não detectado não significa ausência absoluta",
+      "paragraphs": [
+        "Um resultado descrito como não detectado informa que o procedimento analítico não produziu detecção nas condições e no limite informados. Ele não demonstra que a substância está ausente em qualquer concentração ou em toda a área investigada.",
+        "Leia o resultado junto da matriz, unidade, método e limites apresentados pelo laboratório. Limite de detecção, limite de quantificação e limite de reporte podem ter funções distintas. A nomenclatura precisa ser confirmada no documento correspondente."
+      ]
+    },
+    {
+      "heading": "O limite pode impedir a resposta",
+      "paragraphs": [
+        "Imagine um resultado hipotético cujo limite de reporte é superior ao valor usado na avaliação. A indicação de não detecção pode não responder se a concentração está abaixo desse valor de referência. A adequação do método deveria ser examinada no planejamento.",
+        "Outro cuidado é não substituir todos os não detectados por zero antes de calcular estatísticas. O tratamento desses dados depende do objetivo e do método adotado, devendo ficar documentado. Uma convenção de cálculo não transforma o valor estimado em medição."
+      ]
+    },
+    {
+      "heading": "Contextualizar a amostra",
+      "paragraphs": [
+        "Relacione o resultado ao ponto, profundidade, data e condição da amostragem. Uma amostra representa o material coletado dentro dos limites do plano; não deve ser estendida automaticamente a locais ou períodos não avaliados.",
+        "Quando a informação for insuficiente, registre a pergunta que permanece aberta e encaminhe a avaliação ao responsável técnico. O esclarecimento pode envolver documentação laboratorial, adequação analítica ou revisão do plano. A conclusão deve respeitar o alcance dos dados disponíveis."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "060",
+    "061",
+    "062"
+  ],
+  "created_at": "2026-10-18T07:00:30.188Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.188Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/resultado-nao-detectado-em-analises-ambientais",
+  "indexability": false,
+  "review_due_at": null
+}

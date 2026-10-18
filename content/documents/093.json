@@ -1,0 +1,56 @@
+{
+  "id": "093",
+  "slug": "/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+  "type": "article",
+  "title": "Padrões de qualidade do ar: como verificar a referência vigente",
+  "summary": "Verificar um padrão de qualidade do ar exige localizar o ato oficial, sua vigência e os critérios associados ao poluente e ao período de avaliação. Uma tabela reproduzida sem data ou fonte pode estar desatualizada ou omitir condições importantes.",
+  "topic_cluster": "ar",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "A referência precisa estar identificada",
+      "paragraphs": [
+        "Verificar um padrão de qualidade do ar exige localizar o ato oficial, sua vigência e os critérios associados ao poluente e ao período de avaliação. Uma tabela reproduzida sem data ou fonte pode estar desatualizada ou omitir condições importantes.",
+        "A página oficial do Ministério do Meio Ambiente sobre padrões de qualidade do ar apresenta a Resolução CONAMA 506/2024 como referência nacional. Para aplicação concreta, consulte o texto oficial, eventuais alterações posteriores e as disposições pertinentes ao local e ao período analisado."
+      ]
+    },
+    {
+      "heading": "Não confundir indicador com limite aplicável",
+      "paragraphs": [
+        "Antes da comparação, confira unidade, tempo de média, método de cálculo e critérios de validade dos dados. Um índice de comunicação pública e um padrão normativo podem ter funções diferentes. A cor de um painel não substitui a análise do critério correspondente.",
+        "Num exemplo hipotético, um relatório antigo pode estar corretamente baseado na norma vigente à época. Reavaliar o resultado com uma referência posterior exige explicar o objetivo e a base temporal. Não se deve apagar essa diferença ao atualizar uma tabela."
+      ]
+    },
+    {
+      "heading": "Uma ficha de consulta reproduzível",
+      "paragraphs": [
+        "Registre órgão, número do ato, data, endereço oficial, versão consultada e trechos utilizados. Relacione cada comparação ao poluente e à estatística efetivamente calculada. Se houver dúvida sobre transição ou aplicação territorial, mantenha a conclusão pendente até esclarecimento.",
+        "Este artigo não reproduz limites numéricos nem constitui parecer de conformidade. Seu propósito é organizar a consulta e evitar que uma decisão técnica dependa de uma imagem de tabela sem origem verificável."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://conama.mma.gov.br/?id=827&option=com_sisconama&task=arquivo.download"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "045",
+    "046",
+    "047"
+  ],
+  "created_at": "2026-10-18T07:00:30.186Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.186Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+  "indexability": false,
+  "review_due_at": null
+}

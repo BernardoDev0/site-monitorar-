@@ -1,0 +1,57 @@
+{
+  "id": "067",
+  "slug": "/blog/lp-li-lo-objetivos-e-diferencas",
+  "type": "article",
+  "title": "LP, LI e LO",
+  "summary": "LP, LI e LO são denominações conhecidas no licenciamento ambiental, mas o alcance concreto deve ser conferido no ato emitido e no enquadramento aplicável. Não se deve presumir que toda atividade seguirá a mesma sequência ou que uma licença substitui qualquer outra autorização.",
+  "topic_cluster": "licenciamento",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Cada licença tem um objeto",
+      "paragraphs": [
+        "LP, LI e LO são denominações conhecidas no licenciamento ambiental, mas o alcance concreto deve ser conferido no ato emitido e no enquadramento aplicável. Não se deve presumir que toda atividade seguirá a mesma sequência ou que uma licença substitui qualquer outra autorização.",
+        "O processo depende da atividade, localização, situação do empreendimento e legislação vigente. Mudanças normativas também exigem atenção a disposições de aplicação e transição."
+      ]
+    },
+    {
+      "heading": "Ler o documento antes de concluir",
+      "paragraphs": [
+        "Em um exemplo hipotético, uma empresa recebe licença relacionada à instalação de determinada estrutura. Isso não deve ser interpretado como autorização irrestrita de operação de qualquer atividade no local. O objeto, as condições e as limitações do ato precisam ser lidos integralmente.",
+        "Organize número do processo, titular, endereço, atividade, capacidade quando indicada, prazo e condicionantes. Confronte esses dados com a situação real. Divergências de titularidade, escopo ou configuração não devem ser resolvidas por suposição."
+      ]
+    },
+    {
+      "heading": "Uma matriz de acompanhamento",
+      "paragraphs": [
+        "Para cada ato, registre o que autoriza, o que condiciona e quais providências permanecem pendentes. Separe solicitação protocolada de decisão emitida. O protocolo comprova uma apresentação documental, não necessariamente deferimento.",
+        "Consulte a legislação consolidada e as instruções do órgão competente, incluindo a Lei Complementar 140/2011 e a legislação geral pertinente. Este artigo orienta a leitura e organização dos documentos; não enquadra uma atividade específica nem promete obtenção de licença."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm",
+    "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "068",
+    "069",
+    "070"
+  ],
+  "created_at": "2026-10-18T07:00:30.175Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.175Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/lp-li-lo-objetivos-e-diferencas",
+  "indexability": false,
+  "review_due_at": null
+}

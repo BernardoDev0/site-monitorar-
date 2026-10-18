@@ -1,0 +1,146 @@
+{
+  "viewports": [
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 60,
+      "headerHeight": 186,
+      "videoElements": 0,
+      "variant": "reference",
+      "width": 390,
+      "status": 200,
+      "videoRequested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 80,
+      "headerHeight": 230,
+      "videoElements": 0,
+      "variant": "reference",
+      "width": 1440,
+      "status": 200,
+      "videoRequested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 72,
+      "headerHeight": 72,
+      "videoElements": 0,
+      "variant": "erm",
+      "width": 320,
+      "status": 200,
+      "videoRequested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 72,
+      "headerHeight": 72,
+      "videoElements": 0,
+      "variant": "erm",
+      "width": 390,
+      "status": 200,
+      "videoRequested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 84,
+      "headerHeight": 84,
+      "videoElements": 0,
+      "variant": "erm",
+      "width": 768,
+      "status": 200,
+      "videoRequested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 84,
+      "headerHeight": 84,
+      "videoElements": 0,
+      "variant": "erm",
+      "width": 1440,
+      "status": 200,
+      "videoRequested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "sections": 9,
+      "brokenImages": [],
+      "heroTop": 84,
+      "headerHeight": 84,
+      "videoElements": 0,
+      "variant": "erm",
+      "width": 1920,
+      "status": 200,
+      "videoRequested": false
+    }
+  ],
+  "preservation": {
+    "headings_equal": true,
+    "prose_equal": true,
+    "all_original_main_links_present": true,
+    "client_logos_equal": true,
+    "client_logo_count": 13,
+    "stats_equal": true,
+    "missing_destinations": [],
+    "added_destinations": [
+      "/blog",
+      "/busca",
+      "mailto:administrativo@monitorarconsultoria.com.br",
+      "tel:+552138811212"
+    ]
+  },
+  "interactions": {
+    "desktop_keyboard_menu": true,
+    "dialog_text_equal": true,
+    "dialogs_checked": 3,
+    "client_carousel_scroll": true,
+    "internal_links": {
+      "/": 200,
+      "/blog": 200,
+      "/busca": 200,
+      "/clientes": 200,
+      "/contato": 200,
+      "/conteudos": 200,
+      "/depoimentos": 200,
+      "/politica-privacidade": 200,
+      "/servicos": 200,
+      "/servicos/drager": 200,
+      "/servicos/meio-ambiente": 200,
+      "/servicos/seguranca": 200,
+      "/sobre": 200,
+      "/sobre/equipe": 200,
+      "/sobre/historia": 200,
+      "/sobre/missao": 200,
+      "/trabalhe-conosco": 200
+    },
+    "mobile_js_False_reduced_motion": true,
+    "mobile_js_True_reduced_motion": true
+  },
+  "page_errors": [],
+  "exceptions": [
+    "Hero photo converted to WebP with responsive sizes; original preserved.",
+    "Landscape photo converted to WebP; original preserved.",
+    "Hero video/player removed by instruction.",
+    "Header contact/language information moved to footer.",
+    "Blog and search added to primary navigation; hero CTA added.",
+    "Duplicate carousel clones replaced by a manually scrollable unique-logo list."
+  ]
+}

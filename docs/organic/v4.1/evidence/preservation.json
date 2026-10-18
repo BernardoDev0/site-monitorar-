@@ -1,0 +1,390 @@
+{
+  "baseline": "D:\\monitorar-recovery\\v4.1-20261018-135135",
+  "changed": [
+    "DESIGN.md",
+    "PRODUCT.md",
+    "README.md",
+    "scripts/page-data.mjs",
+    "src/components/FeaturedArticles.tsx",
+    "src/components/Header.tsx",
+    "src/components/InstagramFeed.tsx",
+    "src/components/PageIntro.tsx",
+    "src/editorial/ContentContext.tsx",
+    "src/editorial/EditorialApp.tsx",
+    "src/editorial/types.ts",
+    "src/hooks/use-page-motion.ts",
+    "src/lib/photos.json",
+    "src/main.tsx",
+    "src/pages/About.tsx",
+    "src/pages/Careers.tsx",
+    "src/pages/Contact.tsx",
+    "src/pages/Home.tsx",
+    "src/pages/Services.tsx",
+    "src/pages/Testimonials.tsx"
+  ],
+  "missing": [],
+  "articles": [
+    {
+      "id": "019",
+      "unchanged": true
+    },
+    {
+      "id": "020",
+      "unchanged": true
+    },
+    {
+      "id": "021",
+      "unchanged": true
+    },
+    {
+      "id": "022",
+      "unchanged": true
+    },
+    {
+      "id": "023",
+      "unchanged": true
+    },
+    {
+      "id": "024",
+      "unchanged": true
+    },
+    {
+      "id": "025",
+      "unchanged": true
+    },
+    {
+      "id": "026",
+      "unchanged": true
+    },
+    {
+      "id": "027",
+      "unchanged": true
+    },
+    {
+      "id": "028",
+      "unchanged": true
+    },
+    {
+      "id": "029",
+      "unchanged": true
+    },
+    {
+      "id": "030",
+      "unchanged": true
+    },
+    {
+      "id": "031",
+      "unchanged": true
+    },
+    {
+      "id": "032",
+      "unchanged": true
+    },
+    {
+      "id": "033",
+      "unchanged": true
+    },
+    {
+      "id": "034",
+      "unchanged": true
+    },
+    {
+      "id": "035",
+      "unchanged": true
+    },
+    {
+      "id": "036",
+      "unchanged": true
+    },
+    {
+      "id": "037",
+      "unchanged": true
+    },
+    {
+      "id": "038",
+      "unchanged": true
+    },
+    {
+      "id": "039",
+      "unchanged": true
+    },
+    {
+      "id": "040",
+      "unchanged": true
+    },
+    {
+      "id": "041",
+      "unchanged": true
+    },
+    {
+      "id": "042",
+      "unchanged": true
+    },
+    {
+      "id": "043",
+      "unchanged": true
+    },
+    {
+      "id": "044",
+      "unchanged": true
+    },
+    {
+      "id": "045",
+      "unchanged": true
+    },
+    {
+      "id": "046",
+      "unchanged": true
+    },
+    {
+      "id": "047",
+      "unchanged": true
+    },
+    {
+      "id": "048",
+      "unchanged": true
+    },
+    {
+      "id": "049",
+      "unchanged": true
+    },
+    {
+      "id": "050",
+      "unchanged": true
+    },
+    {
+      "id": "051",
+      "unchanged": true
+    },
+    {
+      "id": "052",
+      "unchanged": true
+    },
+    {
+      "id": "053",
+      "unchanged": true
+    },
+    {
+      "id": "054",
+      "unchanged": true
+    },
+    {
+      "id": "055",
+      "unchanged": true
+    },
+    {
+      "id": "056",
+      "unchanged": true
+    },
+    {
+      "id": "057",
+      "unchanged": true
+    },
+    {
+      "id": "058",
+      "unchanged": true
+    },
+    {
+      "id": "059",
+      "unchanged": true
+    },
+    {
+      "id": "060",
+      "unchanged": true
+    },
+    {
+      "id": "061",
+      "unchanged": true
+    },
+    {
+      "id": "062",
+      "unchanged": true
+    },
+    {
+      "id": "063",
+      "unchanged": true
+    },
+    {
+      "id": "064",
+      "unchanged": true
+    },
+    {
+      "id": "065",
+      "unchanged": true
+    },
+    {
+      "id": "066",
+      "unchanged": true
+    },
+    {
+      "id": "067",
+      "unchanged": true
+    },
+    {
+      "id": "068",
+      "unchanged": true
+    },
+    {
+      "id": "069",
+      "unchanged": true
+    },
+    {
+      "id": "070",
+      "unchanged": true
+    },
+    {
+      "id": "071",
+      "unchanged": true
+    },
+    {
+      "id": "072",
+      "unchanged": true
+    },
+    {
+      "id": "073",
+      "unchanged": true
+    },
+    {
+      "id": "074",
+      "unchanged": true
+    },
+    {
+      "id": "075",
+      "unchanged": true
+    },
+    {
+      "id": "076",
+      "unchanged": true
+    },
+    {
+      "id": "077",
+      "unchanged": true
+    },
+    {
+      "id": "078",
+      "unchanged": true
+    },
+    {
+      "id": "079",
+      "unchanged": true
+    },
+    {
+      "id": "080",
+      "unchanged": true
+    },
+    {
+      "id": "081",
+      "unchanged": true
+    },
+    {
+      "id": "082",
+      "unchanged": true
+    },
+    {
+      "id": "083",
+      "unchanged": true
+    },
+    {
+      "id": "084",
+      "unchanged": true
+    },
+    {
+      "id": "085",
+      "unchanged": true
+    },
+    {
+      "id": "086",
+      "unchanged": true
+    },
+    {
+      "id": "087",
+      "unchanged": true
+    },
+    {
+      "id": "088",
+      "unchanged": true
+    },
+    {
+      "id": "089",
+      "unchanged": true
+    },
+    {
+      "id": "090",
+      "unchanged": true
+    },
+    {
+      "id": "091",
+      "unchanged": true
+    },
+    {
+      "id": "092",
+      "unchanged": true
+    },
+    {
+      "id": "093",
+      "unchanged": true
+    },
+    {
+      "id": "094",
+      "unchanged": true
+    },
+    {
+      "id": "095",
+      "unchanged": true
+    },
+    {
+      "id": "096",
+      "unchanged": true
+    },
+    {
+      "id": "097",
+      "unchanged": true
+    },
+    {
+      "id": "098",
+      "unchanged": true
+    },
+    {
+      "id": "099",
+      "unchanged": true
+    },
+    {
+      "id": "100",
+      "unchanged": true
+    },
+    {
+      "id": "101",
+      "unchanged": true
+    },
+    {
+      "id": "102",
+      "unchanged": true
+    },
+    {
+      "id": "103",
+      "unchanged": true
+    },
+    {
+      "id": "104",
+      "unchanged": true
+    },
+    {
+      "id": "105",
+      "unchanged": true
+    },
+    {
+      "id": "106",
+      "unchanged": true
+    },
+    {
+      "id": "107",
+      "unchanged": true
+    },
+    {
+      "id": "108",
+      "unchanged": true
+    }
+  ],
+  "original_assets_checked": 62,
+  "original_assets_changed": []
+}

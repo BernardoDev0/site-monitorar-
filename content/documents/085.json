@@ -1,0 +1,55 @@
+{
+  "id": "085",
+  "slug": "/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+  "type": "article",
+  "title": "Matriz de treinamentos",
+  "summary": "Uma matriz de treinamentos relaciona atividades e responsabilidades às necessidades de capacitação. Começar por um catálogo de cursos pode deixar lacunas: pessoas com o mesmo cargo podem executar tarefas diferentes e precisar de preparações distintas.",
+  "topic_cluster": "treinamentos",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "A função é o início do levantamento",
+      "paragraphs": [
+        "Uma matriz de treinamentos relaciona atividades e responsabilidades às necessidades de capacitação. Começar por um catálogo de cursos pode deixar lacunas: pessoas com o mesmo cargo podem executar tarefas diferentes e precisar de preparações distintas.",
+        "Mapeie funções, atividades, locais e condições de execução. Em seguida, identifique requisitos aplicáveis e conhecimentos necessários. A NR-1 contém disposições gerais sobre capacitação; normas específicas podem estabelecer condições adicionais que precisam ser verificadas."
+      ]
+    },
+    {
+      "heading": "Campos que permitem acompanhar a situação",
+      "paragraphs": [
+        "Registre público abrangido, fundamento, conteúdo previsto, modalidade permitida, evidência esperada e responsável pelo acompanhamento. Frequência e carga horária devem vir do requisito aplicável ou de uma definição tecnicamente justificada, sem copiar valores de outro curso.",
+        "Num exemplo hipotético, uma pessoa muda de função e passa a realizar atividade antes não prevista. A matriz deve apontar a nova necessidade antes da execução. O histórico de cursos continua útil, mas não comprova automaticamente preparo para a função nova."
+      ]
+    },
+    {
+      "heading": "Manter a matriz viva",
+      "paragraphs": [
+        "Admissões, mudanças de processo, equipamentos e responsabilidades são oportunidades de revisão. A atualização deve conversar com os responsáveis pela operação e pela gestão de pessoas, para que a informação não fique isolada em uma planilha.",
+        "Ao verificar a situação, diferencie inscrição, participação, conclusão e avaliação de competência quando pertinente. Um campo marcado como concluído precisa conduzir à evidência correspondente. A matriz organiza o acompanhamento; não substitui a análise do conteúdo e dos requisitos de cada capacitação."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "086",
+    "106"
+  ],
+  "created_at": "2026-10-18T07:00:30.182Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.182Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+  "indexability": false,
+  "review_due_at": null
+}

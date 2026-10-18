@@ -1,0 +1,56 @@
+{
+  "id": "087",
+  "slug": "/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+  "type": "article",
+  "title": "Detecção de gases e proteção respiratória",
+  "summary": "Um detector fornece informações sobre gases para os quais foi projetado e configurado, dentro de condições e limites definidos. Um equipamento de proteção respiratória tem outra função, relacionada à proteção do usuário conforme sua seleção, ajuste e utilização adequados.",
+  "topic_cluster": "equipamentos",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Medir e proteger são funções distintas",
+      "paragraphs": [
+        "Um detector fornece informações sobre gases para os quais foi projetado e configurado, dentro de condições e limites definidos. Um equipamento de proteção respiratória tem outra função, relacionada à proteção do usuário conforme sua seleção, ajuste e utilização adequados.",
+        "A presença de um detector não substitui medidas de controle nem permite escolher proteção respiratória por associação automática. Uma indicação de concentração precisa ser interpretada considerando substância, sensor, faixa, interferências e condições de uso."
+      ]
+    },
+    {
+      "heading": "Informações que não podem faltar",
+      "paragraphs": [
+        "Antes de especificar equipamentos, identifique a avaliação de riscos disponível, os agentes relevantes, o contexto da atividade e as condições ambientais. Pergunte quais informações o detector precisa fornecer e qual decisão será tomada a partir delas.",
+        "Num exemplo hipotético, detectar um gás selecionado não comprova ausência de outros agentes. Da mesma forma, um equipamento respiratório destinado a uma aplicação não deve ser presumido adequado a outra. As limitações do fabricante são parte central da análise."
+      ]
+    },
+    {
+      "heading": "Encaminhar a seleção técnica",
+      "paragraphs": [
+        "Solicite análise por profissionais competentes e documentação correspondente ao modelo e à aplicação. Não escolha combinação de detector e proteção apenas por semelhança visual, marca ou disponibilidade comercial.",
+        "Este conteúdo organiza perguntas para especificação e contratação; não orienta entrada em atmosfera perigosa nem configuração de alarmes. Procedimentos operacionais, condições de emergência e medidas de proteção precisam ser definidos no contexto da avaliação de riscos e dos requisitos aplicáveis, com instruções do fabricante disponíveis aos responsáveis."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "088",
+    "089",
+    "090"
+  ],
+  "created_at": "2026-10-18T07:00:30.182Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.182Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+  "indexability": false,
+  "review_due_at": null
+}

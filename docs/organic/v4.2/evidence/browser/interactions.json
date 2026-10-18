@@ -1,0 +1,86 @@
+[
+  {
+    "name": "hover Sobre",
+    "pass": true
+  },
+  {
+    "name": "cross into panel Sobre",
+    "pass": true
+  },
+  {
+    "name": "leave Sobre",
+    "pass": true
+  },
+  {
+    "name": "hover Serviços",
+    "pass": true
+  },
+  {
+    "name": "cross into panel Serviços",
+    "pass": true
+  },
+  {
+    "name": "leave Serviços",
+    "pass": true
+  },
+  {
+    "name": "hover Blog",
+    "pass": true
+  },
+  {
+    "name": "cross into panel Blog",
+    "pass": true
+  },
+  {
+    "name": "leave Blog",
+    "pass": true
+  },
+  {
+    "name": "keyboard open",
+    "pass": true
+  },
+  {
+    "name": "tab into panel",
+    "pass": true
+  },
+  {
+    "name": "escape returns focus and closes",
+    "pass": true
+  },
+  {
+    "name": "outside click",
+    "pass": true
+  },
+  {
+    "name": "last page has six unique cards",
+    "pass": true
+  },
+  {
+    "name": "mobile blog opens",
+    "pass": true
+  },
+  {
+    "name": "nested mobile escape",
+    "pass": true
+  },
+  {
+    "name": "mobile toc collapsed",
+    "pass": true
+  },
+  {
+    "name": "toc navigation",
+    "pass": true
+  },
+  {
+    "name": "zoom 200 percent no overflow",
+    "pass": true
+  },
+  {
+    "name": "no js disclosure",
+    "pass": true
+  },
+  {
+    "name": "no js pagination",
+    "pass": true
+  }
+]

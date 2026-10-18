@@ -1,0 +1,866 @@
+[
+  {
+    "id": "001",
+    "slug": "/servicos/meio-ambiente",
+    "title": "Consultoria ambiental",
+    "contribution": "Matriz necessidade→serviço→dados iniciais→próximo passo.",
+    "cluster": "ambiental",
+    "type": "service"
+  },
+  {
+    "id": "002",
+    "slug": "/servicos/emissoes-fugitivas",
+    "title": "Monitoramento de emissões fugitivas",
+    "contribution": "Matriz de escopo, responsabilidades, entregas e exclusões confirmada pela empresa.",
+    "cluster": "fugitivas",
+    "type": "service"
+  },
+  {
+    "id": "003",
+    "slug": "/servicos/monitoramento-pts",
+    "title": "Monitoramento de PTS",
+    "contribution": "Ficha de escopo e exemplo de estrutura de relatório.",
+    "cluster": "ar",
+    "type": "service"
+  },
+  {
+    "id": "004",
+    "slug": "/servicos/fumaca-preta",
+    "title": "Avaliação de Fumaça Preta",
+    "contribution": "Quadro objeto, método confirmado, documentação e exclusões.",
+    "cluster": "ar",
+    "type": "service"
+  },
+  {
+    "id": "005",
+    "slug": "/servicos/areas-impactadas",
+    "title": "Avaliação de áreas impactadas",
+    "contribution": "Triagem comercial com dados disponíveis, lacunas e encaminhamento.",
+    "cluster": "areas",
+    "type": "service"
+  },
+  {
+    "id": "006",
+    "slug": "/servicos/ruido-extramuros",
+    "title": "Avaliação de ruído extramuros",
+    "contribution": "Escopo por motivo da solicitação, entradas e entregáveis.",
+    "cluster": "ruido",
+    "type": "service"
+  },
+  {
+    "id": "007",
+    "slug": "/servicos/licenciamento-ambiental",
+    "title": "Licenciamento ambiental",
+    "contribution": "Quadro consultoria×empreendedor×órgão e checklist inicial.",
+    "cluster": "licenciamento",
+    "type": "service"
+  },
+  {
+    "id": "008",
+    "slug": "/servicos/gestao-sms",
+    "title": "Gestão de SMS",
+    "contribution": "Escopo por atividade, responsável, evidência e periodicidade acordada.",
+    "cluster": "sms",
+    "type": "service"
+  },
+  {
+    "id": "009",
+    "slug": "/servicos/hazop",
+    "title": "Estudo HAZOP",
+    "contribution": "Quadro de responsabilidades e entregas contratuais sem garantia de risco zero.",
+    "cluster": "hazop",
+    "type": "service"
+  },
+  {
+    "id": "010",
+    "slug": "/servicos/auditorias",
+    "title": "Auditorias",
+    "contribution": "Matriz de modalidade, critério, evidência e relatório.",
+    "cluster": "sms",
+    "type": "service"
+  },
+  {
+    "id": "011",
+    "slug": "/servicos/treinamentos",
+    "title": "Treinamentos",
+    "contribution": "Catálogo confirmado com público, pré-requisitos, formato e documentação; retirar IEC como fonte genérica.",
+    "cluster": "treinamentos",
+    "type": "service"
+  },
+  {
+    "id": "012",
+    "slug": "/servicos/drager",
+    "title": "Equipamentos Dräger",
+    "contribution": "Quadro de categorias e canais confirmados; evidência de vínculo e uso de marca.",
+    "cluster": "equipamentos",
+    "type": "service"
+  },
+  {
+    "id": "013",
+    "slug": "/conteudos/emissoes-fugitivas",
+    "title": "Conhecimento sobre emissões fugitivas",
+    "contribution": "Percursos por tarefa, mapa de conceitos e limites comuns.",
+    "cluster": "fugitivas",
+    "type": "hub"
+  },
+  {
+    "id": "014",
+    "slug": "/conteudos/qualidade-do-ar",
+    "title": "Conhecimento sobre qualidade do ar",
+    "contribution": "Árvore conceitual fonte→transporte→receptor→pergunta.",
+    "cluster": "ar",
+    "type": "hub"
+  },
+  {
+    "id": "015",
+    "slug": "/conteudos/ruido-ambiental",
+    "title": "Conhecimento sobre ruído ambiental",
+    "contribution": "Mapa problema→informação necessária→leitura recomendada.",
+    "cluster": "ruido",
+    "type": "hub"
+  },
+  {
+    "id": "016",
+    "slug": "/conteudos/areas-impactadas",
+    "title": "Conhecimento sobre áreas impactadas",
+    "contribution": "Mapa de decisões e incertezas, não sequência universal de serviços.",
+    "cluster": "areas",
+    "type": "hub"
+  },
+  {
+    "id": "017",
+    "slug": "/conteudos/licenciamento-ambiental",
+    "title": "Conhecimento sobre licenciamento",
+    "contribution": "Mapa de percursos condicionais e fontes para enquadramento.",
+    "cluster": "licenciamento",
+    "type": "hub"
+  },
+  {
+    "id": "018",
+    "slug": "/conteudos/seguranca-de-processos-e-gestao-sms",
+    "title": "Segurança de processos e SMS",
+    "contribution": "Mapa de interfaces e responsabilidades com caminhos SMS, HAZOP e treinamento.",
+    "cluster": "sms",
+    "type": "hub"
+  },
+  {
+    "id": "019",
+    "slug": "/blog/o-que-sao-emissoes-fugitivas",
+    "title": "O que são emissões fugitivas",
+    "contribution": "Diagrama de mecanismos e exemplos conceituais contrastados.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "020",
+    "slug": "/blog/emissoes-fugitivas-e-canalizadas",
+    "title": "Emissões fugitivas e canalizadas",
+    "contribution": "Árvore de classificação com casos limítrofes revisados.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "021",
+    "slug": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+    "title": "Detecção e quantificação de emissões fugitivas",
+    "contribution": "Matriz objetivo→resultado→entrada→limitação e três cenários ilustrativos.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "022",
+    "slug": "/blog/o-que-e-ldar",
+    "title": "O que é LDAR",
+    "contribution": "Fluxo cadastro→observação→comunicação→ação→verificação com responsabilidades.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "023",
+    "slug": "/blog/como-contratar-monitoramento-de-emissoes-fugitivas",
+    "title": "Como contratar monitoramento de emissões fugitivas",
+    "contribution": "Duas propostas hipotéticas e matriz de comparação com critérios de aceite.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "024",
+    "slug": "/blog/dados-para-orcamento-de-emissoes-fugitivas",
+    "title": "Dados para orçamento de emissões fugitivas",
+    "contribution": "Formulário-modelo comentado: obrigatório, útil, confidencial.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "025",
+    "slug": "/blog/planejamento-de-campanha-de-emissoes-fugitivas",
+    "title": "Planejamento de campanha de emissões fugitivas",
+    "contribution": "Cronograma relativo e matriz de interfaces sem prazo universal.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "026",
+    "slug": "/blog/cadastro-de-componentes-para-ldar",
+    "title": "Cadastro de componentes para LDAR",
+    "contribution": "Dicionário de dados e exemplo de mudança preservando histórico.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "027",
+    "slug": "/blog/componentes-sem-acesso-em-programas-ldar",
+    "title": "Componentes sem acesso em LDAR",
+    "contribution": "Classificação de impedimentos e exemplo de relatório de cobertura; conferir regras aplicáveis.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "028",
+    "slug": "/blog/reparo-e-reverificacao-em-programas-ldar",
+    "title": "Reparo e reverificação em LDAR",
+    "contribution": "Registro de estados, responsáveis e pendências.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "029",
+    "slug": "/blog/registro-de-vazamentos-em-programas-ldar",
+    "title": "Registro de vazamentos em LDAR",
+    "contribution": "Ficha ilustrativa com vínculo e proveniência dos dados; validar campos.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "030",
+    "slug": "/blog/indicadores-de-programas-ldar",
+    "title": "Indicadores de LDAR",
+    "contribution": "Exemplo numérico com denominadores explícitos e indicadores incompatíveis.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "031",
+    "slug": "/blog/como-ler-relatorio-de-emissoes-fugitivas",
+    "title": "Como ler relatório de emissões fugitivas",
+    "contribution": "Relatório ilustrativo anotado sem dados de clientes.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "032",
+    "slug": "/blog/ogi-e-analisadores-na-deteccao-de-vazamentos",
+    "title": "OGI e analisadores na detecção",
+    "contribution": "Matriz técnica sustentada por fontes específicas e condições.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "033",
+    "slug": "/blog/epa-method-21-contexto-e-limites",
+    "title": "EPA Method 21: contexto e limites",
+    "contribution": "Mapa documento→finalidade→aplicação dependente de outro requisito; leitura integral pertinente.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "034",
+    "slug": "/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes",
+    "title": "PPM e taxa de emissão",
+    "contribution": "Exemplo próprio mostrando dados ausentes sem conversão universal.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "035",
+    "slug": "/blog/calibracao-e-rastreabilidade-de-dados-ldar",
+    "title": "Calibração e rastreabilidade em LDAR",
+    "contribution": "Trilha instrumento→verificação→registro→resultado.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "036",
+    "slug": "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+    "title": "Substâncias e condições de detecção",
+    "contribution": "Matriz de perguntas sobre substância e processo e incertezas de composição.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "037",
+    "slug": "/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas",
+    "title": "Meteorologia em campanhas de fugitivas",
+    "contribution": "Quadro condições a registrar e consequência interpretativa; separar técnicas.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "038",
+    "slug": "/blog/comparacao-entre-campanhas-de-emissoes-fugitivas",
+    "title": "Comparação entre campanhas",
+    "contribution": "Checklist de equivalência e exemplo de mudança de cobertura.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "039",
+    "slug": "/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas",
+    "title": "Inventário de GEE e monitoramento de fugitivas",
+    "contribution": "Mapa de fronteiras, grandezas e dados adicionais; fonte primária do inventário considerado.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "040",
+    "slug": "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+    "title": "Critérios de vazamento e gatilhos de ação em LDAR",
+    "contribution": "Quadro separando limite técnico, critério do programa e decisão documentada sem números universais.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "041",
+    "slug": "/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas",
+    "title": "Tanques e classificação de fontes fugitivas",
+    "contribution": "Diagrama de mecanismos, critérios e limitações; fonte específica sobre tanques.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "042",
+    "slug": "/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar",
+    "title": "Qualidade e aceite de dados LDAR",
+    "contribution": "Conjunto sintético com inconsistências e regras de verificação justificadas.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "043",
+    "slug": "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+    "title": "Mudanças na planta e atualização de LDAR",
+    "contribution": "Exemplo de componente incluído, alterado e desativado com rastreabilidade.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "044",
+    "slug": "/blog/emissoes-fugitivas-petrobras",
+    "title": "Emissões fugitivas Petrobras",
+    "contribution": "Matriz documento/data/afirmação/métrica/limite; retirar EPA como fonte exclusiva.",
+    "cluster": "fugitivas",
+    "type": "article"
+  },
+  {
+    "id": "045",
+    "slug": "/blog/pts-mp10-e-mp25-diferencas",
+    "title": "PTS, MP10 e MP2,5",
+    "contribution": "Diagrama de frações e tabela de grandezas e uso.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "046",
+    "slug": "/blog/planejamento-do-monitoramento-de-pts",
+    "title": "Planejamento de monitoramento de PTS",
+    "contribution": "Modelo de escopo por pergunta de avaliação.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "047",
+    "slug": "/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+    "title": "Representatividade de pontos de monitoramento",
+    "contribution": "Dois cenários ilustrativos contrastados com limitações; documento técnico de localização.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "048",
+    "slug": "/blog/como-ler-relatorio-de-monitoramento-de-pts",
+    "title": "Como ler relatório de PTS",
+    "contribution": "Quadro de leitura com números ilustrativos e contexto obrigatório.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "049",
+    "slug": "/blog/qualidade-do-ar-ambiente-e-emissao-na-fonte",
+    "title": "Ar ambiente e emissão na fonte",
+    "contribution": "Diagrama de transporte e exemplo de inferência indevida.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "050",
+    "slug": "/blog/fumaca-preta-e-opacidade-diferencas",
+    "title": "Fumaça Preta e opacidade",
+    "contribution": "Matriz objeto, grandeza/observação e limite.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "051",
+    "slug": "/blog/procon-fumaca-preta-inea-fontes-e-requisitos",
+    "title": "PROCON Fumaça Preta e fontes oficiais",
+    "contribution": "Percurso de consulta oficial com data e aplicabilidade.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "052",
+    "slug": "/blog/registros-de-programa-de-controle-de-fumaca-preta",
+    "title": "Registros de controle de Fumaça Preta",
+    "contribution": "Planilha conceitual de campos e exemplo de histórico.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "053",
+    "slug": "/blog/ruido-extramuros-e-ruido-ocupacional",
+    "title": "Ruído extramuros e ocupacional",
+    "contribution": "Tabela finalidade/receptor/período/resultado/uso indevido.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "054",
+    "slug": "/blog/como-preparar-avaliacao-de-ruido-extramuros",
+    "title": "Preparação para avaliação de ruído",
+    "contribution": "Checklist atividade/horários/entorno/motivo/acesso.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "055",
+    "slug": "/blog/ruido-ambiental-residual-e-especifico",
+    "title": "Ruído residual e específico",
+    "contribution": "Cenário ilustrativo anotado e limites de inferência.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "056",
+    "slug": "/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental",
+    "title": "Pontos e períodos de avaliação de ruído",
+    "contribution": "Matriz cenário→informação→justificativa da observação.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "057",
+    "slug": "/blog/como-ler-relatorio-de-ruido-ambiental",
+    "title": "Como ler relatório de ruído ambiental",
+    "contribution": "Relatório ilustrativo com campos e ressalvas destacados.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "058",
+    "slug": "/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+    "title": "ABNT NBR 10151: contexto e aplicabilidade",
+    "contribution": "Mapa norma/legislação/finalidade e limites.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "059",
+    "slug": "/blog/investigacao-de-reclamacoes-de-ruido",
+    "title": "Investigação de reclamações de ruído",
+    "contribution": "Registro sem PII desnecessária e fluxo de investigação.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "060",
+    "slug": "/blog/lacunas-de-dados-em-avaliacoes-geoambientais",
+    "title": "Lacunas de dados em avaliações geoambientais",
+    "contribution": "Mapa lacuna→conclusão afetada→informação necessária.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "061",
+    "slug": "/blog/historico-de-uso-da-area-e-modelo-conceitual",
+    "title": "Histórico da área e modelo conceitual",
+    "contribution": "Exemplo hipotético distinguindo evidência, hipótese e lacuna.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "062",
+    "slug": "/blog/avaliacao-preliminar-investigacao-confirmatoria-e-detalhada",
+    "title": "Etapas da investigação ambiental",
+    "contribution": "Quadro pergunta/evidência de entrada/resultado de cada etapa.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "063",
+    "slug": "/blog/representatividade-de-amostras-de-solo-e-agua",
+    "title": "Representatividade de amostras",
+    "contribution": "Cenário sintético de cobertura insuficiente; fonte primária de desenho amostral.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "064",
+    "slug": "/blog/cadeia-de-custodia-de-amostras-ambientais",
+    "title": "Cadeia de custódia de amostras",
+    "contribution": "Fluxo e ficha com transferências e condições registradas; protocolos pertinentes.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "065",
+    "slug": "/blog/como-ler-relatorio-de-investigacao-ambiental",
+    "title": "Como ler relatório de investigação",
+    "contribution": "Quadro de afirmações classificadas e evidências necessárias.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "066",
+    "slug": "/blog/medidas-de-gerenciamento-e-remediacao-diferencas",
+    "title": "Gerenciamento e remediação",
+    "contribution": "Matriz finalidade/evidência/limite por classe de ação.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "067",
+    "slug": "/blog/lp-li-lo-objetivos-e-diferencas",
+    "title": "LP, LI e LO",
+    "contribution": "Quadro condicionado a enquadramento com fontes e ressalvas.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "068",
+    "slug": "/blog/documentos-para-iniciar-licenciamento-ambiental",
+    "title": "Documentos para iniciar licenciamento",
+    "contribution": "Checklist atividade/local/fase/capacidade/órgão/documentos existentes.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "069",
+    "slug": "/blog/condicionantes-ambientais-controle-de-evidencias",
+    "title": "Controle de condicionantes ambientais",
+    "contribution": "Modelo com vínculo à licença e evidência.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "070",
+    "slug": "/blog/renovacao-de-licenca-ambiental-planejamento",
+    "title": "Planejamento de renovação de licença",
+    "contribution": "Cronograma relativo e mapa de dependências.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "071",
+    "slug": "/blog/alteracoes-no-empreendimento-e-licenciamento",
+    "title": "Alterações no empreendimento",
+    "contribution": "Quadro mudança/informação/fonte/responsável.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "072",
+    "slug": "/blog/competencia-do-orgao-licenciador",
+    "title": "Competência do órgão licenciador",
+    "contribution": "Percurso de consulta e evidências necessárias.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "073",
+    "slug": "/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+    "title": "Escopo de estudos ambientais",
+    "contribution": "Matriz exigência→pergunta→informação→entrega.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "074",
+    "slug": "/blog/gestao-sms-integracao-e-responsabilidades",
+    "title": "Integração e responsabilidades em SMS",
+    "contribution": "Matriz de responsabilidades de cenário hipotético revisado.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "075",
+    "slug": "/blog/requisitos-legais-matriz-e-evidencias-sms",
+    "title": "Matriz de requisitos e evidências SMS",
+    "contribution": "Exemplo requisito→aplicabilidade→responsável→evidência→revisão.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "076",
+    "slug": "/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+    "title": "Auditorias internas e de conformidade",
+    "contribution": "Tabela comparativa com perguntas de auditoria.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "077",
+    "slug": "/blog/como-preparar-documentos-para-auditoria-sms",
+    "title": "Preparação de documentos para auditoria",
+    "contribution": "Índice de evidências e exemplo de inconsistência.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "078",
+    "slug": "/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+    "title": "Não conformidade e eficácia da ação",
+    "contribution": "Registro ilustrativo com critérios de encerramento.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "079",
+    "slug": "/blog/indicadores-preventivos-e-reativos-sms",
+    "title": "Indicadores preventivos e reativos SMS",
+    "contribution": "Exemplos com denominadores e períodos e limites interpretativos.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "080",
+    "slug": "/blog/procedimentos-operacionais-e-controle-documental-sms",
+    "title": "Controle documental de procedimentos",
+    "contribution": "Fluxo elaboração/revisão/distribuição/obsolescência e exemplo.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "081",
+    "slug": "/blog/hazop-finalidade-e-limites",
+    "title": "HAZOP: finalidade e limites",
+    "contribution": "Mapa entrada→discussão→registro→recomendação e limites.",
+    "cluster": "hazop",
+    "type": "article"
+  },
+  {
+    "id": "082",
+    "slug": "/blog/documentos-e-entradas-para-estudo-hazop",
+    "title": "Documentos e entradas para HAZOP",
+    "contribution": "Índice comentado com revisão, proprietário e pendência.",
+    "cluster": "hazop",
+    "type": "article"
+  },
+  {
+    "id": "083",
+    "slug": "/blog/equipe-e-responsabilidades-em-estudos-hazop",
+    "title": "Equipe e responsabilidades HAZOP",
+    "contribution": "Matriz papel/conhecimento/contribuição/limite.",
+    "cluster": "hazop",
+    "type": "article"
+  },
+  {
+    "id": "084",
+    "slug": "/blog/recomendacoes-hazop-registro-e-acompanhamento",
+    "title": "Acompanhamento de recomendações HAZOP",
+    "contribution": "Registro de recomendação, avaliação e encerramento.",
+    "cluster": "hazop",
+    "type": "article"
+  },
+  {
+    "id": "085",
+    "slug": "/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+    "title": "Matriz de treinamentos",
+    "contribution": "Matriz de necessidades baseada em funções hipotéticas.",
+    "cluster": "treinamentos",
+    "type": "article"
+  },
+  {
+    "id": "086",
+    "slug": "/blog/registro-de-treinamento-certificado-e-competencia",
+    "title": "Certificado e competência",
+    "contribution": "Quadro de evidências e limites de cada documento.",
+    "cluster": "treinamentos",
+    "type": "article"
+  },
+  {
+    "id": "087",
+    "slug": "/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+    "title": "Detecção de gases e proteção respiratória",
+    "contribution": "Matriz finalidade/informação/limite e perguntas ao especialista.",
+    "cluster": "equipamentos",
+    "type": "article"
+  },
+  {
+    "id": "088",
+    "slug": "/blog/detectores-portateis-e-fixos-diferencas",
+    "title": "Detectores portáteis e fixos",
+    "contribution": "Quadro de contexto, integração, operação e limitações.",
+    "cluster": "equipamentos",
+    "type": "article"
+  },
+  {
+    "id": "089",
+    "slug": "/blog/teste-de-resposta-calibracao-e-manutencao-de-detectores",
+    "title": "Teste de resposta, calibração e manutenção",
+    "contribution": "Trilha de objetivos e documentos baseada em manual identificado.",
+    "cluster": "equipamentos",
+    "type": "article"
+  },
+  {
+    "id": "090",
+    "slug": "/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+    "title": "Informações para especificar equipamentos",
+    "contribution": "Formulário-modelo com riscos, condições, integração e restrições.",
+    "cluster": "equipamentos",
+    "type": "article"
+  },
+  {
+    "id": "091",
+    "slug": "/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+    "title": "Médias e picos na qualidade do ar: por que o período importa",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "092",
+    "slug": "/blog/dados-ausentes-no-monitoramento-do-ar",
+    "title": "Dados ausentes no monitoramento do ar",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "093",
+    "slug": "/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+    "title": "Padrões de qualidade do ar: como verificar a referência vigente",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "ar",
+    "type": "article"
+  },
+  {
+    "id": "094",
+    "slug": "/blog/por-que-decibeis-nao-se-somam-como-numeros-comuns",
+    "title": "Por que decibéis não se somam como números comuns",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "095",
+    "slug": "/blog/ruido-tonal-e-impulsivo",
+    "title": "Ruído tonal e impulsivo",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "096",
+    "slug": "/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+    "title": "Incerteza de medição em relatórios de ruído ambiental",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "ruido",
+    "type": "article"
+  },
+  {
+    "id": "097",
+    "slug": "/blog/resultado-nao-detectado-em-analises-ambientais",
+    "title": "Resultado não detectado em análises ambientais",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "098",
+    "slug": "/blog/valores-orientadores-e-avaliacao-de-risco",
+    "title": "Valores orientadores e avaliação de risco",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "099",
+    "slug": "/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+    "title": "Mudança de uso da área e validade das conclusões ambientais",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "areas",
+    "type": "article"
+  },
+  {
+    "id": "100",
+    "slug": "/blog/como-organizar-resposta-a-pedido-de-complementacao",
+    "title": "Como organizar resposta a pedido de complementação",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "101",
+    "slug": "/blog/licenca-ambiental-e-outras-autorizacoes",
+    "title": "Licença ambiental e outras autorizações",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "102",
+    "slug": "/blog/consulta-e-participacao-publica-no-licenciamento",
+    "title": "Consulta e participação pública no licenciamento",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "licenciamento",
+    "type": "article"
+  },
+  {
+    "id": "103",
+    "slug": "/blog/amostragem-de-evidencias-em-auditorias-de-sms",
+    "title": "Amostragem de evidências em auditorias de SMS",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "104",
+    "slug": "/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+    "title": "Troca de informações de riscos entre contratante e contratadas",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "sms",
+    "type": "article"
+  },
+  {
+    "id": "105",
+    "slug": "/blog/nos-e-intencao-de-projeto-em-estudos-hazop",
+    "title": "Nós e intenção de projeto em estudos HAZOP",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "hazop",
+    "type": "article"
+  },
+  {
+    "id": "106",
+    "slug": "/blog/conteudo-pratico-e-modalidade-de-capacitacao",
+    "title": "Conteúdo prático e modalidade de capacitação",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "treinamentos",
+    "type": "article"
+  },
+  {
+    "id": "107",
+    "slug": "/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+    "title": "Interferências e sensibilidade cruzada em detectores de gases",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "equipamentos",
+    "type": "article"
+  },
+  {
+    "id": "108",
+    "slug": "/blog/documentacao-do-equipamento-e-adequacao-a-aplicacao",
+    "title": "Documentação do equipamento e adequação à aplicação",
+    "contribution": "Pergunta e análise própria conforme corpo editorial V4; revisão técnica pendente.",
+    "cluster": "equipamentos",
+    "type": "article"
+  }
+]

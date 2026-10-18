@@ -1,0 +1,70 @@
+{
+  "video": {
+    "duration": 19.9,
+    "source": "http://127.0.0.1:8081/media/refinaria-pingpong-desktop.mp4",
+    "loop": true,
+    "presented": 1290,
+    "total": 1291,
+    "dropped": 0,
+    "rafMedian": 6.900000000001455,
+    "rafP95": 7
+  },
+  "menu_slow_bridge_rapid_switch_reverse_escape": true,
+  "header": [
+    {
+      "width": 320,
+      "overflow": false,
+      "desktop": false,
+      "overlap": false
+    },
+    {
+      "width": 390,
+      "overflow": false,
+      "desktop": false,
+      "overlap": false
+    },
+    {
+      "width": 768,
+      "overflow": false,
+      "desktop": false,
+      "overlap": false
+    },
+    {
+      "width": 1280,
+      "overflow": false,
+      "desktop": false,
+      "overlap": false
+    },
+    {
+      "width": 1290,
+      "overflow": false,
+      "desktop": true,
+      "overlap": false
+    },
+    {
+      "width": 1440,
+      "overflow": false,
+      "desktop": true,
+      "overlap": false
+    },
+    {
+      "width": 1920,
+      "overflow": false,
+      "desktop": true,
+      "overlap": false
+    }
+  ],
+  "logos": {
+    "width": 3120,
+    "groupWidths": [
+      3120,
+      3119.999755859375
+    ],
+    "count": 13,
+    "moved": true,
+    "wraps": 1,
+    "maxStepError": 0.5420000000002911
+  },
+  "reduced_motion": true,
+  "errors": []
+}

@@ -1,0 +1,292 @@
+{
+  "checks": [
+    {
+      "route": "/",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/blog",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/conteudos",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/busca",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/servicos",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/sobre",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/clientes",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/depoimentos",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/trabalhe-conosco",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/politica-privacidade",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/contato",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/servicos/emissoes-fugitivas",
+      "width": 390,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/blog",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/conteudos",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/busca",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/servicos",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/sobre",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/clientes",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/depoimentos",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/trabalhe-conosco",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/politica-privacidade",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/contato",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/servicos/emissoes-fugitivas",
+      "width": 768,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/blog",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/conteudos",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/busca",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/servicos",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/sobre",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/clientes",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/depoimentos",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/trabalhe-conosco",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/politica-privacidade",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/contato",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    },
+    {
+      "route": "/servicos/emissoes-fugitivas",
+      "width": 1440,
+      "status": 200,
+      "horizontal_overflow": false,
+      "h1": 1
+    }
+  ],
+  "interaction_checks": [
+    "mobile menu Escape",
+    "search accent/case normalization",
+    "empty and clear search",
+    "fragment state",
+    "contact local preparation",
+    "clipboard failure",
+    "no-JS navigation",
+    "14 logos reduced motion"
+  ],
+  "limitations": [
+    "Chromium emulation, not physical mobile devices",
+    "No NVDA or full WCAG conformance assessment",
+    "No Google indexing measured"
+  ]
+}

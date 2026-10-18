@@ -1,0 +1,32 @@
+[
+  {
+    "route": "/sobre/historia",
+    "target_y": 125,
+    "visible": true
+  },
+  {
+    "route": "/sobre/missao",
+    "target_y": 144.53125,
+    "visible": true
+  },
+  {
+    "route": "/sobre/equipe",
+    "target_y": 124.78125,
+    "visible": true
+  },
+  {
+    "route": "/servicos/auditorias",
+    "target_y": 0.515625,
+    "visible": true
+  },
+  {
+    "route": "/servicos/treinamentos",
+    "target_y": 0.90625,
+    "visible": true
+  },
+  {
+    "route": "/servicos/hazop",
+    "preview": "preexisting editorial draft at this URL",
+    "public": "preserved institutional service with hazop anchor"
+  }
+]

@@ -1,0 +1,56 @@
+{
+  "id": "074",
+  "slug": "/blog/gestao-sms-integracao-e-responsabilidades",
+  "type": "article",
+  "title": "Integração e responsabilidades em SMS",
+  "summary": "Integrar segurança, meio ambiente e saúde exige definir quem decide, quem executa e quem verifica cada atividade. Um organograma identifica posições, mas não esclarece sozinho as interfaces de uma tarefa que envolve manutenção, operação e prestadores.",
+  "topic_cluster": "sms",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Responsabilidade precisa chegar à operação",
+      "paragraphs": [
+        "Integrar segurança, meio ambiente e saúde exige definir quem decide, quem executa e quem verifica cada atividade. Um organograma identifica posições, mas não esclarece sozinho as interfaces de uma tarefa que envolve manutenção, operação e prestadores.",
+        "Considere a substituição hipotética de um equipamento. A manutenção conhece a intervenção, a operação conhece as condições do processo e a equipe de SMS contribui com a avaliação dos riscos e requisitos pertinentes. A definição de controles depende da troca dessas informações antes do trabalho."
+      ]
+    },
+    {
+      "heading": "Uma matriz que resolve dúvidas",
+      "paragraphs": [
+        "Para cada entrega, registre um responsável, participantes consultados e evidência esperada. Na preparação, a entrega pode ser o escopo definido; na execução, o registro das condições e autorizações; no encerramento, a confirmação das verificações previstas. Uma mesma pessoa pode exercer mais de um papel, desde que isso seja possível e explícito.",
+        "A matriz não transfere obrigações legais por conveniência administrativa. Também não substitui a avaliação de competência ou a disponibilidade de recursos. Quando duas áreas entendem que a decisão pertence à outra, existe uma lacuna a resolver antes de avançar."
+      ]
+    },
+    {
+      "heading": "Como verificar a integração",
+      "paragraphs": [
+        "Escolha uma atividade recente e percorra seus registros do início ao fim. Observe se as mudanças de escopo chegaram a todos os envolvidos e se alguém verificou o encerramento. O objetivo é confrontar a responsabilidade descrita com o fluxo realmente praticado.",
+        "Registre divergências e ajuste o processo. Reunir assinaturas após a execução pode documentar ciência, mas não comprova que a informação necessária estava disponível no momento da decisão. A análise do caso concreto deve considerar os requisitos aplicáveis, inclusive as disposições pertinentes da NR-1."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "075",
+    "076",
+    "077"
+  ],
+  "created_at": "2026-10-18T07:00:30.178Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.178Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/gestao-sms-integracao-e-responsabilidades",
+  "indexability": false,
+  "review_due_at": null
+}

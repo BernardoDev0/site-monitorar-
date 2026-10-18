@@ -1,0 +1,106 @@
+{
+  "id": "021",
+  "slug": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+  "type": "article",
+  "title": "Detecção e quantificação de emissões fugitivas",
+  "summary": "Uma indicação, uma leitura em ppm e uma taxa em kg/h respondem a perguntas diferentes. Veja o que cada resultado permite concluir e quais dados ainda faltam.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Duas perguntas, resultados diferentes",
+      "paragraphs": [
+        "Detecção procura reconhecer uma ocorrência nas condições de observação. Quantificação procura atribuir valor a uma grandeza, com unidade e procedimento definidos. Uma técnica pode localizar um ponto sem fornecer os dados necessários para estimar sua taxa de emissão.",
+        "Imagine uma campanha que registra um componente e uma indicação de presença de gás. Esse registro pode orientar investigação e acompanhamento. Ele não contém, por si só, todas as informações exigidas para calcular massa liberada por unidade de tempo."
+      ]
+    },
+    {
+      "heading": "Concentração não é vazão mássica",
+      "paragraphs": [
+        "Uma concentração descreve a presença de uma substância em uma mistura segundo determinada convenção. Uma taxa de emissão relaciona uma quantidade liberada a um intervalo de tempo. A diferença entre essas grandezas não desaparece ao usar um instrumento mais sensível.",
+        "Uma conversão exige modelo ou método aplicável, entradas adequadas e condições de validade. Não existe autorização para transformar qualquer leitura em ppm diretamente em quilogramas por hora. O relatório deve explicar a origem dos números e das estimativas."
+      ]
+    },
+    {
+      "heading": "O que verificar no relatório",
+      "paragraphs": [
+        "Procure objetivo, procedimentos, identificação dos pontos, condições observadas e limitações. Verifique se o resultado é medição, cálculo, estimativa ou classificação. Essas categorias têm utilidades diferentes e precisam permanecer distinguíveis.",
+        "Quando houver valor quantitativo, sua interpretação depende também das premissas e incertezas. Uma diferença numérica entre campanhas não demonstra melhoria ou piora sem verificar cobertura, método e condições operacionais."
+      ]
+    },
+    {
+      "heading": "Como levar a diferença para a proposta",
+      "paragraphs": [
+        "Escreva a decisão que será tomada com o resultado. Priorizar manutenção pode exigir informação diferente daquela usada em um inventário. Comparar períodos exige condições comparáveis e uma forma de tratar mudanças na instalação.",
+        "A proposta precisa tornar visível o que está incluído e o que demanda atividade adicional. Essa clareza evita contratar detecção esperando uma quantificação que não fazia parte do escopo."
+      ]
+    },
+    {
+      "heading": "Três resultados que não devem ser confundidos",
+      "paragraphs": [
+        "No resumo do EPA Method 21, seção 2.1 da versão disponibilizada em 03/08/2017, o método é descrito para localizar e classificar vazamentos, e não para medir diretamente a taxa de emissão em massa. Essa distinção é útil para revisar uma proposta: o nome de um método não transforma a grandeza observada em outra.",
+        "Considere três cenários hipotéticos. Uma imagem registra uma indicação junto a um componente: o material pode apoiar a localização da ocorrência, mas não informa sozinho uma taxa. Um analisador apresenta uma leitura em ppm: faltam contexto de calibração, substâncias e procedimento para interpretá-la. Um relatório apresenta kg/h: é necessário identificar o método de obtenção, as entradas, a duração e as hipóteses. Nenhum dos três cenários representa um projeto realizado pela Monitorar.",
+        "Uma taxa estimada não deve ser multiplicada automaticamente pelas horas de um ano. Essa extrapolação também exige uma hipótese de duração e representatividade da condição observada. Se a operação é intermitente ou houve reparo, a hipótese pode deixar de representar o período."
+      ],
+      "table": {
+        "caption": "Matriz de interpretação dos resultados; exemplos conceituais, não procedimento operacional",
+        "headers": [
+          "Resultado",
+          "O que pode apoiar",
+          "Dados a conferir",
+          "Inferência que não permite sozinho"
+        ],
+        "rows": [
+          [
+            "Indicação visual ou instrumental",
+            "Localizar e investigar uma possível ocorrência",
+            "Componente, data, técnica e condições de observação",
+            "Massa emitida ou composição completa"
+          ],
+          [
+            "Leitura de concentração",
+            "Avaliação conforme o procedimento e referência utilizados",
+            "Unidade, gás de referência, resposta do instrumento e condição local",
+            "Conversão universal de ppm para kg/h"
+          ],
+          [
+            "Taxa de emissão",
+            "Estimativa ou medição de quantidade por tempo no escopo declarado",
+            "Método, modelo, entradas, unidades, hipóteses e limitações",
+            "Valor anual sem justificar duração e representatividade"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf",
+    "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "002",
+    "019",
+    "023",
+    "013",
+    "022"
+  ],
+  "created_at": "2026-10-16T17:00:00.000Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T16:53:43.110Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+  "indexability": true,
+  "review_due_at": null
+}

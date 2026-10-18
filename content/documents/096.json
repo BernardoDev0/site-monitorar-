@@ -1,0 +1,56 @@
+{
+  "id": "096",
+  "slug": "/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+  "type": "article",
+  "title": "Incerteza de medição em relatórios de ruído ambiental",
+  "summary": "Incerteza de medição expressa a dispersão de valores atribuíveis à grandeza medida conforme a avaliação realizada. Ela não é sinônimo de erro conhecido nem uma margem arbitrária acrescentada para facilitar uma conclusão.",
+  "topic_cluster": "ruido",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Resultado e incerteza precisam ser lidos juntos",
+      "paragraphs": [
+        "Incerteza de medição expressa a dispersão de valores atribuíveis à grandeza medida conforme a avaliação realizada. Ela não é sinônimo de erro conhecido nem uma margem arbitrária acrescentada para facilitar uma conclusão.",
+        "Em ruído ambiental, o relatório precisa deixar claro o que foi medido e quais condições estão abrangidas. Instrumentação, procedimento e variabilidade pertinente devem ser tratados conforme o método, com limites de aplicação explícitos."
+      ]
+    },
+    {
+      "heading": "Proximidade de um critério exige cuidado",
+      "paragraphs": [
+        "Considere um resultado hipotético próximo de um valor de referência. A conclusão não deve ser obtida simplesmente somando ou subtraindo a incerteza conforme a conveniência. É necessário conhecer a regra de decisão aplicável e a forma de apresentação do resultado.",
+        "Uma declaração de conformidade precisa mostrar o critério utilizado. Se o contrato ou a norma estabelece uma regra, ela deve ser identificada; se a avaliação não permite declarar atendimento, a limitação precisa aparecer na conclusão."
+      ]
+    },
+    {
+      "heading": "Perguntas úteis ao responsável técnico",
+      "paragraphs": [
+        "Qual grandeza e intervalo o resultado representa? Como a incerteza foi avaliada e expressa? Qual regra sustenta a comparação? Há condições fora do alcance da medição? Essas perguntas permitem compreender o relatório sem transformar o número final em certeza absoluta.",
+        "O vocabulário internacional de metrologia do BIPM oferece a base conceitual para distinguir resultado, erro e incerteza. A aplicação acústica e normativa requer referências específicas. Este texto não fornece um orçamento de incerteza nem substitui a análise metrológica do procedimento empregado."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.bipm.org/en/committees/jc/jcgm/publications"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "053",
+    "054",
+    "055"
+  ],
+  "created_at": "2026-10-18T07:00:30.187Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.187Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+  "indexability": false,
+  "review_due_at": null
+}

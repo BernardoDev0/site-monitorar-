@@ -1,0 +1,56 @@
+{
+  "id": "059",
+  "slug": "/blog/investigacao-de-reclamacoes-de-ruido",
+  "type": "article",
+  "title": "Investigação de reclamações de ruído",
+  "summary": "Uma reclamação de ruído contém informações sobre uma experiência percebida. Para investigá-la, é útil organizar quando, onde e em quais condições o evento foi observado, sem exigir que o reclamante identifique tecnicamente a fonte.",
+  "topic_cluster": "ruido",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Transformar o relato em uma pergunta investigável",
+      "paragraphs": [
+        "Uma reclamação de ruído contém informações sobre uma experiência percebida. Para investigá-la, é útil organizar quando, onde e em quais condições o evento foi observado, sem exigir que o reclamante identifique tecnicamente a fonte.",
+        "O relato não deve ser descartado por ausência de uma medição caseira. Também não deve ser tratado como prova suficiente de origem ou de infração. Ele é uma entrada para o planejamento da avaliação."
+      ]
+    },
+    {
+      "heading": "Um registro que preserva contexto",
+      "paragraphs": [
+        "Num exemplo hipotético, o incômodo acontece em horários variáveis. Um registro com data, intervalo aproximado, duração e características percebidas ajuda a relacionar ocorrências com atividades possíveis. Dados pessoais devem ser limitados ao necessário e tratados de forma adequada.",
+        "A equipe pode confrontar o histórico com informações de operação, condições do entorno e observações de campo. Se o evento não ocorrer durante a visita, a ausência deve ser registrada. Não perceber o som em uma ocasião não demonstra que o relato anterior era incorreto."
+      ]
+    },
+    {
+      "heading": "Fechar a investigação com limites claros",
+      "paragraphs": [
+        "O resultado deve separar fatos observados, hipóteses avaliadas e questões não resolvidas. Eventuais medidas de controle precisam corresponder ao diagnóstico e ter acompanhamento de sua efetividade.",
+        "Uma comunicação responsável explica o que foi examinado e qual é o próximo encaminhamento. Prometer solução antes de reconhecer a origem pode gerar intervenções sem efeito. A avaliação técnica deve observar os métodos e referências pertinentes, sem substituir investigação por respostas automáticas ou conclusões baseadas apenas em percepção."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.who.int/europe/publications/i/item/9789289053563"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "053",
+    "054",
+    "055"
+  ],
+  "created_at": "2026-10-18T07:00:30.171Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.171Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/investigacao-de-reclamacoes-de-ruido",
+  "indexability": false,
+  "review_due_at": null
+}

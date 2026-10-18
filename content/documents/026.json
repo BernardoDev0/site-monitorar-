@@ -1,0 +1,93 @@
+{
+  "id": "026",
+  "slug": "/blog/cadastro-de-componentes-para-ldar",
+  "type": "article",
+  "title": "Cadastro de componentes para LDAR",
+  "summary": "Um cadastro útil permite reencontrar o componente e acompanhar sua história. Veja como evitar IDs ambíguos, versões conflitantes e alterações sem registro.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O identificador conecta campo e histórico",
+      "paragraphs": [
+        "O cadastro é mais do que uma contagem. Seu papel é ligar um componente físico aos registros de avaliação, ocorrências e intervenções. Se dois componentes compartilham o mesmo identificador, uma nova leitura pode ser atribuída ao equipamento errado. Se o identificador muda sem rastreabilidade, o histórico pode parecer interrompido.",
+        "O guia LDAR da EPA destaca identificação única, localização e atualização de registros diante de adições e retiradas. Não é necessário inferir uma regra brasileira a partir disso para reconhecer a utilidade da rastreabilidade. O formato de cadastro deve ser definido conforme a instalação e o uso dos dados."
+      ]
+    },
+    {
+      "heading": "Atualização precisa de uma regra de mudança",
+      "paragraphs": [
+        "Defina quem pode incluir, corrigir ou desativar um item e como a alteração será registrada. Uma substituição física pode exigir um novo vínculo no histórico; simplesmente reutilizar o nome anterior sem explicação pode esconder a mudança. Preserve a relação entre o registro antigo e o atual quando ela for pertinente.",
+        "Localização deve ser compreensível para quem não participou da primeira campanha. Uma descrição como “válvula ao lado da bomba” pode ser insuficiente em uma área com vários conjuntos semelhantes. Combine planta, unidade, identificação de equipamento e outros campos adequados, evitando dados desnecessários ou confidenciais na versão pública."
+      ]
+    },
+    {
+      "heading": "Quadro de apoio à decisão",
+      "paragraphs": [
+        "Exemplo hipotético: após uma modificação, o ponto V-012 deixa de existir e uma nova válvula ocupa outro trecho. Marcar apenas “V-012 atualizado” pode confundir comparações. O registro deve explicar a mudança física e o destino do histórico, conforme a regra de identificação adotada."
+      ],
+      "table": {
+        "caption": "Estrutura ilustrativa de cadastro, a adaptar ao projeto",
+        "headers": [
+          "Campo",
+          "Função",
+          "Erro a evitar"
+        ],
+        "rows": [
+          [
+            "ID",
+            "Vincular todos os eventos ao componente",
+            "Duplicar ou reutilizar sem controle"
+          ],
+          [
+            "Localização",
+            "Permitir reencontrar o ponto",
+            "Descrição dependente da memória de uma pessoa"
+          ],
+          [
+            "Tipo e contexto",
+            "Interpretar o item no processo",
+            "Categoria presumida sem validação"
+          ],
+          [
+            "Estado cadastral",
+            "Distinguir ativo, retirado e pendente",
+            "Apagar itens com histórico"
+          ],
+          [
+            "Revisão",
+            "Reconhecer quem alterou e por quê",
+            "Sobrescrever a base sem trilha"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "013",
+    "002",
+    "025",
+    "029"
+  ],
+  "created_at": "2026-10-17T17:03:40.668Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T17:03:40.668Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/cadastro-de-componentes-para-ldar",
+  "indexability": true,
+  "review_due_at": null
+}

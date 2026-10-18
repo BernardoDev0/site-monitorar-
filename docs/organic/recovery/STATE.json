@@ -1,0 +1,18 @@
+{
+  "status": "awaiting_visual_approval",
+  "scope": "isolated Home sample only",
+  "backup": "D:\\monitorar-recovery\\20261017-192451",
+  "preview": "http://127.0.0.1:4180/",
+  "source": "docs/organic/recovery/preview",
+  "next_action": "Stop; wait for owner visual approval. Do not expand to other pages.",
+  "production_changed": false,
+  "push": false,
+  "deployed": false,
+  "blog_and_90_url_plan_preserved": true,
+  "technical_limitations": [
+    "Chromium emulation only",
+    "No physical mobile or screen reader audit",
+    "No Google indexing measurement",
+    "Existing lint warnings and Browserslist age retained"
+  ]
+}

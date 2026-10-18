@@ -1,0 +1,34 @@
+{
+  "checked_at": "2026-10-17T23:37:38.773435+00:00",
+  "typecheck_application": "passed",
+  "typecheck_isolated_preview": "passed",
+  "lint": {
+    "errors": 0,
+    "warnings": 8,
+    "new_warnings": 0
+  },
+  "public_build": "passed",
+  "editorial_build": "passed",
+  "isolated_build": "passed",
+  "tests": {
+    "passed": 22,
+    "failed": 0
+  },
+  "dependency_change": {
+    "name": "gsap",
+    "version": "3.15.0",
+    "only_lock_version_addition": true
+  },
+  "npm_audit_install_report": {
+    "moderate": 5,
+    "high": 29,
+    "triaged": false,
+    "automatic_fix": false
+  },
+  "limitations": [
+    "Chromium emulation, no physical device or screen reader",
+    "No production measurement or Google indexing test",
+    "Image generation unavailable",
+    "Home-only visual checkpoint"
+  ]
+}

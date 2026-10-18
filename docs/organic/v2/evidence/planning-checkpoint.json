@@ -1,0 +1,929 @@
+{
+  "date": "2026-10-17",
+  "scope": "research-audit-planning-only",
+  "mode": "Default; documentação V2 materializada; sem redesign/publicação nesta entrega",
+  "repo": {
+    "root": "D:/site-monitorar--main",
+    "remote": "https://github.com/BernardoDev0/site-monitorar-",
+    "branch": "codex/organic-monitorar",
+    "head": "b253b47",
+    "company": "Monitorar Consultoria",
+    "origin": "https://www.monitorarconsultoria.com.br/"
+  },
+  "promptRead": "PROMPT_2_CODEX_MONITORAR_SEO_IMPECCABLE_TASTE.md all612lines",
+  "verification": {
+    "build": "pass17legacy10canonical0editorial",
+    "preview": "pass10drafts+/conteudos",
+    "tests": "16/16",
+    "typecheck": "pass",
+    "lint": "0errors8warnings",
+    "blog": "404local public+preview",
+    "published": "empty"
+  },
+  "productionRead": {
+    "date": "2026-10-17",
+    "home": "200 initialHTML1801B noH1 canonicalwithoutwww",
+    "sitemap": "200text/html same1801B",
+    "blog": "200 sameSPAshell1801B",
+    "robots": "200160B allowpublic"
+  },
+  "evidence": {
+    "dir": "C:/Users/Bernardo/AppData/Local/Temp/monitorar-v2-audit",
+    "screenshots": 15,
+    "viewport1440": [
+      "home",
+      "sobre",
+      "servicos",
+      "clientes",
+      "depoimentos",
+      "carreiras",
+      "contato",
+      "privacidade",
+      "404",
+      "indice",
+      "artigo",
+      "servico"
+    ],
+    "viewport390": [
+      "home",
+      "contato",
+      "artigo"
+    ],
+    "reducedMotion": true,
+    "notes": "full-page may show lazy images not requested; clients invisibility specifically reproduced",
+    "inspection": "All15 screenshots now inspected, including3mobile390; images lazy belowfold treated cautiously"
+  },
+  "newFinding": {
+    "path": "src/pages/Clients.tsx",
+    "reducedMotion": "14 .animate-slide-in-up nodes opacity0 animationnone; normal opacity1 slideInUp; first img alt Logo undefined",
+    "css": "src/index.css:246 blanket animation:none"
+  },
+  "skills": {
+    "impeccable": {
+      "local": "C:/Users/Bernardo/.codex/skills/impeccable",
+      "hash": "2291f40c01e5ea13e8803ddfdfb07583057b815de26d3fa78f145cef4b19c336",
+      "read": [
+        "SKILL.md",
+        "reference/brand.md",
+        "reference/shape.md",
+        "scripts/load-context.mjs"
+      ],
+      "executed": "loader only: migratedfalse contextroot",
+      "upstreamCommit": "08d5b470495d242ca0470f4aeae1956c3a074f83",
+      "upstreamHash": "5fb0d412928c03e62d2536adfd878ad6aad6f9ce343956aa4f7164da06da3459",
+      "licenseUpstream": "Apache2.0",
+      "localCommit": "unknown"
+    },
+    "taste": {
+      "local": "C:/Users/Bernardo/.agents/skills/taste-skill/SKILL.md",
+      "hash": "aad50bb2af3349f7402af6b96df73472decf8de1ebb8208166761047d6f04d27",
+      "redesignHash": "899f431654883ad81d4007b1dfe7f3662c4bb1883440d9b1fc433e13ca4fb8f2",
+      "redesignPath": "C:/Users/Bernardo/.agents/skills/redesign-skill/SKILL.md",
+      "upstreamCommit": "f624f37a8c650b9cc550253104925efe4c8de246",
+      "upstreamMainHash": "ee847084e58f5a81a46120912be9cd15f083570a6ca8f3d1a30372a720633043",
+      "upstreamRedesignHash": "a75d547d04595fe97a5d377dddf145d029d51487a4f2a0a5a9d3b532ca3b84cd",
+      "licenseUpstream": "MIT",
+      "localCommit": "unknown",
+      "difference": "localnumeric8/6/4 upstreamv2nonumeric; not installed",
+      "rejected": [
+        "fabricatednames/metrics/dates",
+        "fontswap",
+        "forcediconlibrary",
+        "FramerMotionperpetualbento",
+        "stackmigration"
+      ]
+    }
+  },
+  "editorial": {
+    "count": 90,
+    "types": "12services6hubs72articles",
+    "stableIds": true,
+    "actions": "retain/deepen/replace/pending-specific-research",
+    "replacements": {
+      "040": {
+        "old": "/blog/o-que-o-ldar-informa-sobre-covs",
+        "proposed": "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+        "absorbed": [
+          "036",
+          "019"
+        ]
+      },
+      "060": {
+        "old": "/blog/avaliacao-geoambiental-etapas-e-limites",
+        "proposed": "/blog/lacunas-de-dados-em-avaliacoes-geoambientais",
+        "absorbed": [
+          "016",
+          "062"
+        ]
+      }
+    },
+    "recluster": {
+      "treinamentos": [
+        "011",
+        "085",
+        "086"
+      ]
+    },
+    "linkIssues": {
+      "duplicates": 81,
+      "selflinks": 9,
+      "selfparents": 6
+    },
+    "sourceIssues": [
+      "044usesEPAonly",
+      "011085086useIEC-HAZOP"
+    ],
+    "batches": [
+      [
+        "002",
+        "006",
+        "009",
+        "013",
+        "019",
+        "021",
+        "022",
+        "023",
+        "053",
+        "082"
+      ],
+      [
+        "001",
+        "020",
+        "024",
+        "025",
+        "026",
+        "027",
+        "028",
+        "029",
+        "030",
+        "031"
+      ],
+      [
+        "032",
+        "033",
+        "034",
+        "035",
+        "036",
+        "037",
+        "038",
+        "039",
+        "040",
+        "044"
+      ],
+      [
+        "003",
+        "004",
+        "014",
+        "041",
+        "042",
+        "043",
+        "045",
+        "046",
+        "047",
+        "048"
+      ],
+      [
+        "015",
+        "049",
+        "050",
+        "051",
+        "052",
+        "054",
+        "055",
+        "056",
+        "057",
+        "058"
+      ],
+      [
+        "005",
+        "016",
+        "059",
+        "060",
+        "061",
+        "062",
+        "063",
+        "064",
+        "065",
+        "066"
+      ],
+      [
+        "007",
+        "017",
+        "018",
+        "067",
+        "068",
+        "069",
+        "070",
+        "071",
+        "072",
+        "073"
+      ],
+      [
+        "008",
+        "010",
+        "074",
+        "075",
+        "076",
+        "077",
+        "078",
+        "079",
+        "080",
+        "081"
+      ],
+      [
+        "011",
+        "012",
+        "083",
+        "084",
+        "085",
+        "086",
+        "087",
+        "088",
+        "089",
+        "090"
+      ]
+    ],
+    "pilotBriefs": [
+      {
+        "id": "002",
+        "title": "Monitoramento de emissões fugitivas",
+        "question": "O que posso contratar e quem responde pelas atividades e entregas?",
+        "artifact": "Matriz escopo/responsabilidade/entrega/exclusão",
+        "dependency": "confirmar oferta e alegações; revisão técnica"
+      },
+      {
+        "id": "021",
+        "title": "Detecção e quantificação de emissões fugitivas",
+        "question": "Preciso detectar ou quantificar, e quais informações tornam a conclusão válida?",
+        "artifact": "Matriz objetivo/resultado/dados/limites; três cenários: imagem indicativa, ppm, taxa com método/premissas",
+        "dependency": "fontes de quantificação/metrologia e revisão técnica"
+      },
+      {
+        "id": "006",
+        "title": "Avaliação de ruído extramuros",
+        "question": "Como delimitar uma avaliação de ruído do empreendimento no entorno?",
+        "artifact": "Quadro motivo/informações necessárias/produto esperado",
+        "dependency": "confirmar oferta e norma brasileira; WHO não substitui critério local"
+      },
+      {
+        "id": "009",
+        "title": "Estudo HAZOP",
+        "question": "Como contratar HAZOP com preparação, participação e produtos definidos?",
+        "artifact": "Matriz contratante/facilitador/especialidades/entregas",
+        "dependency": "confirmar oferta e responsabilidades; especialista e consulta lícita"
+      },
+      {
+        "id": "013",
+        "title": "Conhecimento sobre emissões fugitivas",
+        "question": "Por onde começar conforme minha necessidade?",
+        "artifact": "Mapa compreender/contratar/acompanhar/interpretar",
+        "dependency": "síntese revisada e vínculos elegíveis"
+      },
+      {
+        "id": "019",
+        "title": "O que são emissões fugitivas",
+        "question": "O que caracteriza uma emissão fugitiva e por que o mecanismo importa?",
+        "artifact": "Diagrama mecanismos e quadro mecanismo/pergunta/limite",
+        "dependency": "revisar casos limítrofes e fontes por mecanismo"
+      },
+      {
+        "id": "022",
+        "title": "O que é LDAR",
+        "question": "O que faz LDAR ser um programa, além de uma campanha?",
+        "artifact": "Fluxograma estados/registros/responsabilidades",
+        "dependency": "ler EPA com contexto sem importar obrigação estrangeira"
+      },
+      {
+        "id": "023",
+        "title": "Como contratar monitoramento de emissões fugitivas",
+        "question": "Como comparar propostas que entregam coisas diferentes?",
+        "artifact": "Duas propostas hipotéticas comentadas e matriz de escopo/aceite",
+        "dependency": "revisar critérios sem preços/desempenho inventados"
+      },
+      {
+        "id": "053",
+        "title": "Ruído extramuros e ocupacional",
+        "question": "Por que a mesma atividade exige avaliações com objetivos distintos?",
+        "artifact": "Tabela finalidade/receptor/local/período/resultado",
+        "dependency": "fontes oficiais ambientais/ocupacionais; CTA só ambiental"
+      },
+      {
+        "id": "082",
+        "title": "Documentos e entradas para HAZOP",
+        "question": "Que documentação e lacunas organizar antes do estudo?",
+        "artifact": "Índice documento/finalidade/revisão/responsável/sistema/lacuna",
+        "dependency": "especialista e referência lícita; não pedir documentos internos publicamente"
+      }
+    ]
+  },
+  "noRepositoryFilesCreated": false,
+  "agents": {
+    "business": "completed;90matrix and briefs materialized",
+    "technical": "hastechnicaldelta+7tasks in final response",
+    "public": "completed;785records materialized"
+  },
+  "design": {
+    "recommended": "Campo e precisão",
+    "scene": "Responsável ambiental/engenharia/compras lendo no escritório claro ou em celular de trabalho para entender escopo e decidir o próximo contato.",
+    "directions": [
+      {
+        "name": "Campo e precisão",
+        "chosen": true,
+        "anchors": [
+          "logo Monitorar moni3.png/moni2.png",
+          "fotografia de equipe já existente em Careers e imagens técnicas do acervo, com direitos a confirmar",
+          "matrizes de escopo e registros técnicos próprios a produzir"
+        ],
+        "layout": "home comercial dividida texto 7/12 e imagem 5/12; navegação por necessidade; artigos com leitura simples e diagramas quando úteis",
+        "color": "azul institucional domina abertura comercial; neutros claros azulados para leitura; verde como sinal de ação e orientação",
+        "type": "DM Sans preservada, contraste de peso 400/500/600/700",
+        "motion": "interações 140–220ms, sem loops/scroll hijack; conteúdo visível por padrão"
+      },
+      {
+        "name": "Caderno técnico",
+        "chosen": false,
+        "layout": "mais denso, índices e diagramas no primeiro plano, fotografia menor",
+        "tradeoff": "favorece consulta recorrente; menos presença institucional e comercial"
+      },
+      {
+        "name": "Institucional panorâmico",
+        "chosen": false,
+        "layout": "fotografia ampla, narrativa de trajetória/equipe, verde mais presente",
+        "tradeoff": "depende mais de acervo autorizado e evidências de história; pior economia de leitura para guias"
+      }
+    ],
+    "tokens": {
+      "maxWidth": "1200px",
+      "gutters": "20px mobile;32px tablet/desktop",
+      "articleWidth": "68ch",
+      "body": "18px; line-height1.7–1.75",
+      "h1": "home clamp36–60px; artigo clamp32–46px; conteúdo nunca truncado",
+      "radii": "8px controles;12px imagens/grupos quando úteis",
+      "targets": "44x44px para controles; foco visível contraste3:1; texto normal4.5:1",
+      "font": "DM Sans, sem nova família ou biblioteca de ícones",
+      "colors": "reutilizar valores azul/verde atuais do tema como tokens base, neutros claros para leitura; ajustar pares de foreground/background apenas para cumprir contraste; não substituir identidade"
+    },
+    "header": "uma faixa consistente, logo sempre presente, Início/Empresa/Serviços/Blog/Contato; subitens preservam páginas de empresa/clientes/depoimentos/carreiras; mobile details/summary com links HTML, Escape aprimorado por JS; sem depender de hover; sem sobreposição com faixa de preview",
+    "home": "abertura clara→escolha por necessidade→destaque fugitivas/LDAR→como preparar escopo→provas somente autorizadas→blog→contato; não duplicar três catálogos de cards; não ampliar alegações sem evidência",
+    "templates": {
+      "service": "resumo de oferta, quando se aplica, entradas, matriz de escopo/responsabilidade, entregas e limites, conteúdo educativo e CTA contextual",
+      "article": "pergunta/resposta inicial, sumário, corpo68ch, tabelas/figuras acessíveis, referências com contexto, autoria/revisão verdadeiras, serviço relacionado",
+      "hub": "síntese própria, mapa conceitual e percursos por tarefa; não índice automático",
+      "blog": "descoberta dos artigos, destaque explícito curado, temas reais e paginação",
+      "company": "história/equipe/evidência por evento e alegação, sem métricas promocionais não confirmadas",
+      "case": "somente se autorização e evidência disponíveis; nenhuma nova rota por padrão",
+      "contact": "canais primeiro e preparação local de mensagem; edição/cópia com feedback verdadeiro; nenhum envio implícito"
+    },
+    "coverage": [
+      [
+        "/",
+        "Home, Header, ParallaxHero, OfferingsSection, LogosCarousel, InstagramFeed",
+        "narrativa por necessidade, entrada blog, prova verificável"
+      ],
+      [
+        "/sobre + /sobre/historia + /sobre/missao + /sobre/equipe",
+        "About",
+        "história e equipe em seções próprias; preservar aliases/canonicals até migração justificada"
+      ],
+      [
+        "/servicos + /servicos/meio-ambiente",
+        "Services, ServiceCard, ServiceCardWithIcon",
+        "catálogo por necessidade, links para destinos elegíveis; descrições úteis antes de diálogo"
+      ],
+      [
+        "/servicos/seguranca + /servicos/hazop + /servicos/auditorias + /servicos/treinamentos",
+        "Services, futuros templates dedicados",
+        "limites entre gestão, estudo, auditoria e treinamento; promoção explícita de conteúdo dedicado"
+      ],
+      [
+        "/servicos/drager",
+        "Services, drager-catalogo.pdf",
+        "equipamentos e download preservado; relação comercial e escopo dependem comprovação"
+      ],
+      [
+        "/clientes",
+        "Clients",
+        "logos legíveis sem depender de animação; nomes/alt corretos; prova e autorização; sem contagens inventadas"
+      ],
+      [
+        "/depoimentos",
+        "Testimonials",
+        "citações contextualizadas; origem/data/autorização; não criar estrelas ou estatísticas"
+      ],
+      [
+        "/trabalhe-conosco",
+        "Careers",
+        "vagas reais e estado sem vagas; instruções/canal; galeria controlada; validade da vaga a confirmar"
+      ],
+      [
+        "/contato",
+        "Contact, contact.ts, WhatsAppButton",
+        "escolha de canal e mensagem local editável; estados de erro/cópia preservados"
+      ],
+      [
+        "/politica-privacidade",
+        "Privacy",
+        "leitura simples, âncoras; revisão factual do fluxo real sem inventar tratamento"
+      ],
+      [
+        "404",
+        "NotFound",
+        "retorno home/serviços/blog; HTTP404 real; sem hero promocional"
+      ],
+      [
+        "/blog + /blog/pagina/N",
+        "novos índices/paginação",
+        "apenas artigos, links descobríveis, estado vazio, 12 por página"
+      ],
+      [
+        "/conteudos + seis hubs",
+        "EditorialApp e novo hub/diretório",
+        "diretório não conta na meta; hubs têm síntese e percursos"
+      ],
+      [
+        "/blog/:slug",
+        "EditorialApp e novo ArticleTemplate",
+        "sumário, respostas, tabelas, referências e vínculos; nunca hero publicitário gigante"
+      ],
+      [
+        "serviços dedicados IDs001–012",
+        "novo ServiceTemplate",
+        "escopo e contratação, diferente do artigo"
+      ],
+      [
+        "/busca",
+        "novo SearchPage",
+        "busca real local, estados acessíveis e fallback por temas"
+      ],
+      [
+        "componentes compartilhados",
+        "Header/Footer/Logo/Radix/buttons/links/tables/forms/breadcrumbs/empty/error",
+        "teclado, foco, 390/768/1440, zoom200%, forcedcolors e reducedmotion"
+      ]
+    ],
+    "images": "inventário real de54 public+8 src/assets; licença/origem não inferida pelo arquivo; preferir derivados locais com direitos e preservar originais; catálogoPDF e vídeo sob demanda preservados; se não houver fotografia com uso confirmado para o novo destaque, usar composição tipográfica e diagrama próprio sem fotografia; nunca placeholder apresentado como operação real",
+    "skillExecution": "Impeccable local contexto+brand+shape aplicados ao brief; Taste local scan/diagnose+upstream documental comparado; nenhuma automação v2, mockup gerado ou implementação executada",
+    "selectionStatus": "confirmedByUser",
+    "userDecision": "Campo e precisão (recomendado): presença institucional e clareza técnica equilibradas.",
+    "chosen": "Campo e precisão",
+    "userApprovedDirection": true,
+    "contentClaims": "não criar novos números, cases, depoimentos, relações comerciais ou títulos técnicos; alegações existentes entram no inventário de comprovação e não recebem novo destaque sem evidência"
+  },
+  "blog": {
+    "routes": {
+      "blog": "/blog",
+      "directory": "/conteudos",
+      "search": "/busca",
+      "pagination": "/blog/pagina/N"
+    },
+    "pageSize": 12,
+    "firstPage": "/blog/pagina/1→308 /blog",
+    "outOfRange": "404",
+    "canonicals": "self por página válida",
+    "emptyPublic": "200 noindex,follow; fora sitemap; mensagem honesta de acervo em preparação",
+    "public": "somente manifestos elegíveis",
+    "preview": "6 artigos019021022023053082;1hub013;3serviços002006009; todos rascunhos",
+    "sort": "revisão real decrescente, ID desempate; destaques até3IDs curados com razão",
+    "search": "carregar índice leve só ao interagir; title/summary/cluster/slug/reviewdate; normalizar caixa e acentos; todos termos no título/resumo; correspondência exata título prioritária, desempate revisão/ID; filtro único tema; estado em fragmento; resultados em links canônicos",
+    "searchIndexing": "noindex,follow; fora sitemap; sem combinações dequery rastejáveis; sem corpo/PII/dados internos",
+    "noJS": "blog/hubs/paginação/links e menus funcionam; busca informa JS e oferece caminhos por temas",
+    "relationships": "URLs eIDs explícitos, só destinos públicos elegíveis; fallback para blog/catálogo público quando hub/serviço dedicado não aprovado; nunca link público para rascunho"
+  },
+  "technicalPlan": {
+    "publicModel": "preservar body legado; acrescentar blocos semânticos de tabela/figura com caption, cabeçalhos e alternativa textual; projeção pública inclui cluster, relações de serviço e referências legíveis; campos por tipo para escopo, síntese e percursos",
+    "integrity": [
+      "validador único chave=slug; IDs/slugs/corpos únicos; rotas reservadas; relações únicas e sem ciclos",
+      "controle de pausa malformado bloqueia",
+      "publicDocument só projeta pessoas authorized",
+      "build público usa versões publicadas imutáveis e não depende de rascunhos independentes",
+      "promoção de legado explícita, nunca colisão silenciosa",
+      "prepare-release grava candidato comdigest, não muda publicado atual",
+      "saída build temporária promovida apenas após validar",
+      "/index.html normaliza para/"
+    ],
+    "performance": {
+      "JSgzipInitial": {
+        "home": 170,
+        "service": 170,
+        "company": 170,
+        "contact": 170,
+        "blog": 110,
+        "article": 110,
+        "hub": 110
+      },
+      "CSSgzipInitial": 20,
+      "fontsWOFF2KB": 100,
+      "transferMobileKB": {
+        "home": 650,
+        "service": 650,
+        "company": 650,
+        "contact": 650,
+        "blog": 400,
+        "article": 400,
+        "hub": 400
+      },
+      "LCPImageKB": {
+        "mobile": 120,
+        "desktop": 180
+      },
+      "media": "sem vídeo no carregamento inicial; imagens abaixo da dobra lazy com dimensões; fontes locais após licença verificada",
+      "lab": "3execuções, cachelimpo, mesma versão navegador/Lighthouse, viewport390,CPU4x,rede1600kbps/RTT150ms;medianaLCP<=2.5s,CLS<=0.1,TBT<=200ms;relatar protocolo e limites, sem alegar INP de campo"
+    },
+    "release": "design/funcionalidade e lotes de conteúdo têm permissões distintas; 90 não são pré-condição para release técnico; sem deploy/push/cron nesta rodada",
+    "measurement": "não medido até acesso autorizado; eventos só canal/path, sem formulário/hash/query; checagens técnicas24/72h e análise2/4/8semanas após release real; sem garantia de ranking",
+    "artifactsGenerated": [
+      "dist",
+      "dist-preview",
+      ".organic-server"
+    ]
+  },
+  "firstImplementationBatch": [
+    {
+      "id": "B01",
+      "specification": "01-scope-and-preservation + 06-editorial-operations",
+      "requirement_ids": [
+        "S01-R01",
+        "S06-R01",
+        "S06-R02",
+        "S06-R03"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "plano/shape aprovados"
+      ],
+      "actual_files_or_components": [
+        "scripts/editorial.mjs",
+        "scripts/editorial-cli.mjs",
+        "scripts/build.mjs",
+        "scripts/serve.mjs",
+        "tests/editorial.test.mjs",
+        "tests/artifact.test.mjs"
+      ],
+      "concrete_change": "registrar baseline; centralizar invariantes de manifesto, bloquear pausa corrompida, validar projeção de pessoas, separar publicado de rascunhos/candidato; reservar rotas; corrigir /index.html",
+      "skill_and_reference": "preservação e auditoria técnica; sem automação estética",
+      "acceptance_test": "fixtures de chave≠slug, duplicatas, nome não autorizado, pausa inválida, colisões e rascunho inválido; build design preserva publicados",
+      "evidence_to_save": "logs de contratos, hashes baseline, inventário de rotas",
+      "human_dependency": "nenhuma para corrigir código local; não aprovar conteúdo",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "G:8–12h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B02",
+      "specification": "02-design-impeccable-taste",
+      "requirement_ids": [
+        "S02-R01",
+        "S02-R02",
+        "S02-R03",
+        "S02-R05"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "direção Campo e precisão confirmada; aprovação do lote local ainda necessária"
+      ],
+      "actual_files_or_components": [
+        "src/index.css",
+        "tailwind.config.ts",
+        "src/components/Header.tsx",
+        "src/components/Footer.tsx",
+        "src/components/Logo.tsx",
+        "src/pages/Home.tsx",
+        "src/components/ParallaxHero.tsx",
+        "src/pages/Clients.tsx"
+      ],
+      "concrete_change": "aplicar tokens e direção única; header consistente com Blog; nova composição da home; rodapé/canais; conteúdo visível e reducedmotion seguro; corrigir visibilidade com reduced motion e alt de clientes no shell compartilhado, sem antecipar redesign completo da página",
+      "skill_and_reference": "Impeccable brand/shape e Taste scan/diagnose; construção/revisão aplicáveis após aprovação",
+      "acceptance_test": "home→blog e home→serviços por teclado/semJS; logo/menu não cobertos; 390/768/1440; sem métricas novas não comprovadas;14itens de Clientes visíveis com reduced motion e nenhum alt undefined",
+      "evidence_to_save": "capturas por largura e registro das decisões",
+      "human_dependency": "direção já confirmada; direitos e origem antes de novos destaques de fotos",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "G:8–12h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B03",
+      "specification": "03-blog-and-templates",
+      "requirement_ids": [
+        "S03-R01",
+        "S03-R02",
+        "S03-R03"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "B01",
+        "B02"
+      ],
+      "actual_files_or_components": [
+        "scripts/build.mjs",
+        "src/main.tsx",
+        "src/entry-server.tsx",
+        "src/editorial/NavigationContext.tsx",
+        "novos BlogIndex, TopicDirectory, Pagination"
+      ],
+      "concrete_change": "emitir /blog e /conteudos sempre; só artigos no blog, hubs no diretório;12por página, links HTML e normalização",
+      "skill_and_reference": "Impeccable fluxos/estados; Taste composição e densidade",
+      "acceptance_test": "0/1/12/13/25artigos; página2 só≥13; página1→308; inválida404; público não lista drafts",
+      "evidence_to_save": "inventários HTML, screenshots vazio/cheio, testes de HTTP",
+      "human_dependency": "nenhuma para UI, conteúdo continua rascunho",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "M:4–8h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B04",
+      "specification": "03-blog-and-templates + 05-technical-seo-and-quality",
+      "requirement_ids": [
+        "S03-R04",
+        "S03-R05",
+        "S05-R01"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "B01",
+        "B02"
+      ],
+      "actual_files_or_components": [
+        "src/editorial/EditorialApp.tsx",
+        "src/editorial/types.ts",
+        "src/editorial/editorial.css",
+        "scripts/editorial.mjs",
+        "scripts/schema.mjs",
+        "novos ArticleTemplate, ServiceTemplate, HubTemplate, ContentTable, ContentFigure"
+      ],
+      "concrete_change": "separar templates; projetar relações/cluster/referências; blocos de tabelas/figuras acessíveis compatíveis com body legado",
+      "skill_and_reference": "Impeccable leitura/hierarquia; Taste diferenciação; accessibility/schema",
+      "acceptance_test": "artigo difere visivelmente de serviço e hub; tabela acessível e presente semJS; links só para destinos elegíveis; sem autoria/data falsa",
+      "evidence_to_save": "capturas da jornada; HTML/JSONLD por tipo",
+      "human_dependency": "revisão técnica para novas matrizes antes de liberar público",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "G:8–12h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B05",
+      "specification": "03-blog-and-templates",
+      "requirement_ids": [
+        "S03-R06",
+        "S03-R07"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "B03"
+      ],
+      "actual_files_or_components": [
+        "scripts/build.mjs",
+        "novo SearchPage",
+        "novo gerador de índice público de busca"
+      ],
+      "concrete_change": "busca local /busca sob demanda; título/resumo normalizados; filtro tema; estado emfragmento; erro/vazio/limpar/mostrarmais",
+      "skill_and_reference": "Impeccable estados; Taste interação útil; accessibility",
+      "acceptance_test": "acentos/caixa, zeroresultado, falhaíndice, teclado, noJSfallback; índicepúblico semdrafts e semcamposinternos",
+      "evidence_to_save": "testes funcionais e capturas dos estados",
+      "human_dependency": "nenhuma; sem API e semanalyticsnovo",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "M:4–8h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B06",
+      "specification": "02-design-impeccable-taste + 07-measurement-and-release",
+      "requirement_ids": [
+        "S02-R04",
+        "S07-R01"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "B02"
+      ],
+      "actual_files_or_components": [
+        "src/pages/Contact.tsx",
+        "src/lib/contact.ts",
+        "src/components/WhatsAppButton.tsx"
+      ],
+      "concrete_change": "canais no início; formulário compacto de preparação; revisão/cópia honestas; preservarcampos; eventos semPII",
+      "skill_and_reference": "Impeccable fluxo/clareza; Taste formulários; accessibility",
+      "acceptance_test": "validarcampos, editar/copyfail/success, semlimpeza, semenvioafirmado, cliqueexternointerceptado",
+      "evidence_to_save": "capturas erro/preparado/cópia e payloads semPII",
+      "human_dependency": "nenhuma paraUI; envio real nunca realizado pelos testes",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "P:2–4h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B07",
+      "specification": "04-original-content-and-90-urls",
+      "requirement_ids": [
+        "S04-R01",
+        "S04-R02"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "B04"
+      ],
+      "actual_files_or_components": [
+        "content/documents/002.json",
+        "content/documents/021.json",
+        "briefs V2 correspondentes",
+        "fontes/evidências locais"
+      ],
+      "concrete_change": "aprofundar002/021 primeiro; matriz escopo/responsabilidade e matriz resultado/dados/limites com três exemplos hipotéticos; manter technical_review",
+      "skill_and_reference": "brief editorial específico, Impeccable leitura e Taste conteúdo demonstrável",
+      "acceptance_test": "perguntas respondidas, exemplos rotulados, fontes vinculadas, sematribuir técnica/equipe/cliente; render preview, nenhum novo público",
+      "evidence_to_save": "diff editorial de cada versão, notas de leitura e captura das matrizes",
+      "human_dependency": "confirmação oferta002 e revisão técnica021 bloqueiam publicação, não layout/pesquisa",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "M:4–8h + revisãohumana",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    },
+    {
+      "id": "B08",
+      "specification": "05-technical-seo-and-quality + 07-measurement-and-release",
+      "requirement_ids": [
+        "S05-R01",
+        "S05-R02",
+        "S05-R03",
+        "S05-R04",
+        "S07-R02"
+      ],
+      "priority": "P1",
+      "dependencies": [
+        "B01",
+        "B02",
+        "B03",
+        "B04",
+        "B05",
+        "B06",
+        "B07"
+      ],
+      "actual_files_or_components": [
+        "tests/editorial.test.mjs",
+        "tests/artifact.test.mjs",
+        "evidências reais de navegador/build"
+      ],
+      "concrete_change": "validar jornada completa e reversão; teste de todas famílias preservadas e regressão reducedmotion Clientes",
+      "skill_and_reference": "Impeccable audit/adapt/polish e Taste revisão renderizada; accessibility/schema",
+      "acceptance_test": "build/tipos/lint/testes,HTTPmetadados,teclado/zoom/forcedcolors/reducedmotion, budgets porrota; nenhumdraft em público",
+      "evidence_to_save": "logs,3larguras,matriz de a11y,Lighthouse/protocolo quando disponível",
+      "human_dependency": "NVDA manual se disponível; publicação exige autorização separada",
+      "permission_needed": "aprovação explícita do lote B para implementação local; publicação continua separada",
+      "classification": "executável localmente após aprovação do plano, salvo liberação factual indicada",
+      "estimated_effort": "M:4–8h",
+      "rollback": "restaurar somente arquivos tocados a partir do snapshot do estado sujo atual; conservar alterações concorrentes e conteúdos/URLs anteriores; não usar reset/clean"
+    }
+  ],
+  "specs": [
+    {
+      "file": "01-scope-and-preservation.md",
+      "requirements": [
+        "S01-R01 baseline do estado sujo e preservação de rotas/PDFs/conteúdo",
+        "S01-R02 separar plano, implementação local e publicação; sem installs silenciosos"
+      ],
+      "acceptance": "rotas atuais e alterações preservadas; nada novo emprodução"
+    },
+    {
+      "file": "02-design-impeccable-taste.md",
+      "requirements": [
+        "S02-R01 direção comum Campo e precisão, identidade preservada",
+        "S02-R02 cobertura de todas famílias e componentes",
+        "S02-R03 responsividade/movimento/foco/provas reais",
+        "S02-R04 contato honesto e canais funcionais",
+        "S02-R05 corrigir regressão comprovada de Clientes: conteúdo visível com reduced motion; texto alternativo derivado de nome real"
+      ],
+      "acceptance": "todas linhas decoverage com evidência e revisão das duas skills, não apenas3capturas"
+    },
+    {
+      "file": "03-blog-and-templates.md",
+      "requirements": [
+        "S03-R01 blog/menu/home/footer",
+        "S03-R02 diretórioe6hubs semduplicação",
+        "S03-R03 paginaçãoestática12 eindexação",
+        "S03-R04 templates distintos serviço/artigo/hub",
+        "S03-R05 relaçõespresentesHTML",
+        "S03-R06 busca real isolada",
+        "S03-R07 estados/noJS/preview"
+      ],
+      "acceptance": "jornada completa e testes0/1/12/13/25"
+    },
+    {
+      "file": "04-original-content-and-90-urls.md",
+      "requirements": [
+        "S04-R01 90 IDs úteis com pergunta/fronteira/artefato/fontes",
+        "S04-R02 primeiros10briefs e002021prioritários",
+        "S04-R03 originalidade, Petrobras documental, escopoocupacionalexcluído",
+        "S04-R04 pesquisaAmbienscomestadoeleiturareal"
+      ],
+      "acceptance": "90IDsdistintos,9lotes10,2substituiçõesregistradas e zeroaprovaçãoinventada"
+    },
+    {
+      "file": "05-technical-seo-and-quality.md",
+      "requirements": [
+        "S05-R01 HTML/metadados/JSONLD coerentes",
+        "S05-R02 canonicals/status/sitemap/robots/aliases",
+        "S05-R03 orçamentos completos e labreproduzível",
+        "S05-R04 WCAG2.2AAobjetivo/manual; reducedmotion semocultar"
+      ],
+      "acceptance": "suíteautomatizada e amostramanual porfamília; limite de cada evidência declarado"
+    },
+    {
+      "file": "06-editorial-operations.md",
+      "requirements": [
+        "S06-R01 manifesto e fontes/versionamento validados emtodasentradas",
+        "S06-R02 aprovaçãohumanareal vinculadaahash comlimiteautenticação explícito",
+        "S06-R03 candidato separado depublicado, pausa failclosed e rollback"
+      ],
+      "acceptance": "fixturesmaliciosas/inválidasbloqueadas; preparação nãopublica"
+    },
+    {
+      "file": "07-measurement-and-release.md",
+      "requirements": [
+        "S07-R01 mediçãoautorizada semPII eclique≠contatorecebido",
+        "S07-R02 release técnico separado deconteúdo, evidência e rollback",
+        "S07-R03 dadosGSC/GA não medidos atéacesso; permissõesbusca/treinamentodistintas"
+      ],
+      "acceptance": "nenhumdeploy/cronautomaticamente; checklistproporcional e planos deobservação apósautorização"
+    }
+  ],
+  "futureBatches": {
+    "C": "redesign About+aliases, Servicessegurança/Dräger, Clients/Testimonials, Careers, Privacy,404 e todos estados; provas e fotos condicionadas sem bloquear layout",
+    "D": "nove lotes editoriais de10 já reconciliados; aprofundarrestantes8pilotos após002021; pesquisar/redigir quando fontessuficientes; publicar apenas aprovados",
+    "E": "regressão completa de17rotas+novostipos, fontes/imagens/budgets/manual; corrigirproblemas efetivos",
+    "F": "prepararcandidatoderelease e artefato anterior; publicação/configexterna só com autorização específica; medição apósrelease"
+  },
+  "materialization": {
+    "status": "complete_documentation_only",
+    "docs": "docs/organic/v2",
+    "specs": "specs/organic/v2",
+    "files": [
+      "PLAN.md",
+      "AUDIT-DELTA.md",
+      "AMBIENS-RESEARCH.md",
+      "ambiens-inventory.csv",
+      "CONTENT-ARCHITECTURE.md",
+      "url-map-v2.csv",
+      "DESIGN-PLAN.md",
+      "design-coverage.csv",
+      "TASKS.md",
+      "VALIDATION-AND-RELEASE.md",
+      "DECISIONS-AND-BLOCKERS.md",
+      "SOURCES-AND-SKILLS.md",
+      "EXECUTION-STATE.md"
+    ],
+    "briefs": "90 revisados porID, primeiros10 detalhados, sem sobrescreveranteriores",
+    "evidence": "copiar15capturas temporárias verificadas e logs reais já obtidos; distinguir screenshots atuais dehistóricas",
+    "taskSchema": [
+      "id",
+      "specification",
+      "requirement_ids",
+      "priority",
+      "dependencies",
+      "actual_files_or_components",
+      "concrete_change",
+      "skill_and_reference",
+      "acceptance_test",
+      "evidence_to_save",
+      "human_dependency",
+      "permission_needed",
+      "estimated_effort",
+      "rollback"
+    ],
+    "nextSpecific": "Consultar TASKS.md e specs; após aprovação do lote B, executar B01/B02 e construir a jornada home/blog/021/002/contato; preservar drafts e manifesto.",
+    "rootMemoryCheckpoint": "monitorar_v2_checkpoint_root",
+    "sharedStore": false,
+    "researchAgent": "dados recuperados em evidence/ambiens-research-snapshot.json",
+    "planFirst": true,
+    "implementationApproved": false,
+    "approvedDirectionOnly": true,
+    "remaining": "Implementação local do lote B após decisão do proprietário; revisão técnica e publicação têm permissões próprias.",
+    "fileCount": 137,
+    "validation": "40/40 gerais e23 editoriais;321arquivos anteriores preservados"
+  },
+  "ambiens": {
+    "discovered": 785,
+    "accessed": 413,
+    "http200": 374,
+    "http404": 39,
+    "assetsExcluded": 313,
+    "robotsBlockedNotRequested": 59,
+    "bodyRead": 24,
+    "variantsOrListingsInspected": 18,
+    "metadataOnly": 332,
+    "denominator": "editorialtargets; robots/sitemap separate",
+    "source": "public_seo_audit final report received",
+    "status": "final",
+    "agentStoreKeys": [
+      "ambiensFinalInventory785Packed",
+      "ambiensSemanticNotes24",
+      "ambiensFinalInventoryManifest",
+      "ambiensPaginationResult"
+    ],
+    "method": "sequential1request/s timeout12s no retries robots respected; BFS395 then18variants/listings; infrastructure separate",
+    "semanticMapping": "licenciamento007017067–073;passivos005016060–066;monitoramento formatting objective→indicator→sampling→quality→interpretation→decision; adjacent topics do not expand business"
+  }
+}

@@ -1,0 +1,73 @@
+[
+  {
+    "port": 4173,
+    "query": "Dräger",
+    "expected": "/servicos/drager",
+    "found": true
+  },
+  {
+    "port": 4173,
+    "query": "DRAGER",
+    "expected": "/servicos/drager",
+    "found": true
+  },
+  {
+    "port": 4173,
+    "query": "segurança do trabalho",
+    "expected": "/servicos/seguranca",
+    "found": true
+  },
+  {
+    "port": 4173,
+    "query": "contato",
+    "expected": "/contato",
+    "found": true
+  },
+  {
+    "port": 4173,
+    "query": "emissoes fugitivas",
+    "expected": "/",
+    "found": true
+  },
+  {
+    "port": 8081,
+    "query": "Dräger",
+    "expected": "/servicos/drager",
+    "found": true
+  },
+  {
+    "port": 8081,
+    "query": "DRAGER",
+    "expected": "/servicos/drager",
+    "found": true
+  },
+  {
+    "port": 8081,
+    "query": "segurança do trabalho",
+    "expected": "/servicos/seguranca",
+    "found": true
+  },
+  {
+    "port": 8081,
+    "query": "contato",
+    "expected": "/contato",
+    "found": true
+  },
+  {
+    "port": 8081,
+    "query": "emissoes fugitivas",
+    "expected": "/",
+    "found": true
+  },
+  {
+    "mobile_video": {
+      "source": "http://127.0.0.1:8081/media/refinaria-pingpong-mobile.mp4",
+      "loop": true,
+      "total": 1261,
+      "dropped": 0
+    }
+  },
+  {
+    "mobile_animated_nested_escape": true
+  }
+]

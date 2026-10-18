@@ -1,0 +1,56 @@
+{
+  "id": "058",
+  "slug": "/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+  "type": "article",
+  "title": "ABNT NBR 10151: contexto e aplicabilidade",
+  "summary": "A ABNT NBR 10151 é uma referência associada à avaliação de ruído em áreas habitadas. Citar seu número, porém, não demonstra que um estudo atende a todos os requisitos pertinentes ao objetivo, à edição e ao contexto da avaliação.",
+  "topic_cluster": "ruido",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Referenciar uma norma exige identificar sua aplicação",
+      "paragraphs": [
+        "A ABNT NBR 10151 é uma referência associada à avaliação de ruído em áreas habitadas. Citar seu número, porém, não demonstra que um estudo atende a todos os requisitos pertinentes ao objetivo, à edição e ao contexto da avaliação.",
+        "Antes de usar a referência, confirme a edição aplicável e seu acesso lícito. Também é necessário verificar a legislação e as exigências específicas do caso. Não reproduza tabelas ou procedimentos protegidos a partir de resumos sem conferir o documento."
+      ]
+    },
+    {
+      "heading": "O que uma citação incompleta esconde",
+      "paragraphs": [
+        "Um relatório hipotético pode mencionar a norma na capa e não identificar os descritores utilizados ou as condições da medição. Nesse caso, a referência bibliográfica não supre a falta de informação sobre a execução.",
+        "Solicite a ligação entre finalidade, procedimento, registros e conclusão. Quando uma condição impedir a aplicação prevista, o documento deve explicar o desvio e suas consequências, em vez de manter uma declaração genérica de conformidade."
+      ]
+    },
+    {
+      "heading": "Limites deste guia",
+      "paragraphs": [
+        "Este artigo não reproduz critérios numéricos nem ensina a executar o ensaio. Seu objetivo é orientar a conferência documental e a contratação de avaliação tecnicamente fundamentada.",
+        "Documentos de saúde pública, como as diretrizes da WHO, podem contextualizar efeitos de exposição ao ruído, mas não substituem a norma de medição ou a legislação local. A aplicação concreta deve ser conduzida e revisada por profissional competente, com a referência pertinente disponível."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.who.int/europe/publications/i/item/9789289053563"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "053",
+    "054",
+    "055"
+  ],
+  "created_at": "2026-10-18T07:00:30.171Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.171Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+  "indexability": false,
+  "review_due_at": null
+}

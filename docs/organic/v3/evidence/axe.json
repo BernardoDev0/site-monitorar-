@@ -1,0 +1,590 @@
+[
+  {
+    "width": 390,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-valid-attr-value",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ],
+        "description": "Ensure all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"radix-:Rpr:\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:Rpr:\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 btn-hero inline-block px-6 py-3 mt-2 bg-[#4fc106] hover:bg-[#43ad06] text-white\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:Rpr:\" data-state=\"closed\">",
+            "target": [
+              "button[aria-controls=\"radix-:Rpr:\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:Rpr:\""
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"radix-:R19r:\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R19r:\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 btn-hero inline-block px-6 py-3 mt-2 bg-[#4fc106] hover:bg-[#43ad06] text-white\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:R19r:\" data-state=\"closed\">",
+            "target": [
+              "button[aria-controls=\"radix-:R19r:\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R19r:\""
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"radix-:R1pr:\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R1pr:\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 btn-hero inline-block px-6 py-3 mt-2 bg-[#4fc106] hover:bg-[#43ad06] text-white\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:R1pr:\" data-state=\"closed\">",
+            "target": [
+              "button[aria-controls=\"radix-:R1pr:\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R1pr:\""
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "27.0pt (36px)",
+                  "fontWeight": "normal",
+                  "messageKey": "imgNode",
+                  "expectedContrastRatio": "3:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"erm-hero-shade\"></div>",
+                    "target": [
+                      ".erm-hero-shade"
+                    ]
+                  },
+                  {
+                    "html": "<img src=\"/assets/hero-1920-BKUG2lzp.webp\" srcset=\"/assets/hero-640-BY1RD1wV.webp 640w, /assets/hero-1280-6h6HFwWw.webp 1280w, /assets/hero-1920-BKUG2lzp.webp 1920w\" sizes=\"100vw\" alt=\"\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" class=\"erm-hero-photo\">",
+                    "target": [
+                      ".erm-hero-photo"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because element contains an image node"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1 data-enter=\"true\" style=\"\">As melhores soluções para o seu negócio – Vamos trabalhar juntos?</h1>",
+            "target": [
+              "h1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "imgNode",
+                  "expectedContrastRatio": "4.5:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"erm-hero-shade\"></div>",
+                    "target": [
+                      ".erm-hero-shade"
+                    ]
+                  },
+                  {
+                    "html": "<img src=\"/assets/hero-1920-BKUG2lzp.webp\" srcset=\"/assets/hero-640-BY1RD1wV.webp 640w, /assets/hero-1280-6h6HFwWw.webp 1280w, /assets/hero-1920-BKUG2lzp.webp 1920w\" sizes=\"100vw\" alt=\"\" width=\"1920\" height=\"1080\" fetchpriority=\"high\" class=\"erm-hero-photo\">",
+                    "target": [
+                      ".erm-hero-photo"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because element contains an image node"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90\">Mantenha sua empresa protegida: com serviços de segurança do trabalho, saúde e meio ambiente alinhados com a sua estratégia.</p>",
+            "target": [
+              ".md\\:text-2xl.max-w-3xl.mb-8"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because element contains an image node"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a data-enter=\"true\" class=\"erm-button\" href=\"https://wa.me/5521997521212?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20uma%20proposta%20com%20a%20Monitorar%20Consultoria.\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"translate: none; rotate: none; scale: none; transform: translate3d(0px, 19.2547px, 0px);\">",
+            "target": [
+              ".erm-button[data-enter=\"true\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "21.0pt (28px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-black/55\"></div>",
+                    "target": [
+                      ".bg-black\\/55"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-cover bg-center bg-no-repeat\" style=\"background-image:url(/assets/landscape-1024-CkVU8urr.webp)\"></div>",
+                    "target": [
+                      ".bg-cover"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"text-3xl md:text-4xl font-bold mb-6 text-white\">Pronto para proteger sua empresa?</h2>",
+            "target": [
+              ".mb-6.text-3xl.md\\:text-4xl"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-black/55\"></div>",
+                    "target": [
+                      ".bg-black\\/55"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-cover bg-center bg-no-repeat\" style=\"background-image:url(/assets/landscape-1024-CkVU8urr.webp)\"></div>",
+                    "target": [
+                      ".bg-cover"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-xl mb-8 max-w-2xl mx-auto text-white/90\">Entre em contato conosco e descubra como podemos ajudar sua empresa a manter os mais altos padrões de segurança e sustentabilidade.</p>",
+            "target": [
+              ".text-white\\/90"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          }
+        ]
+      }
+    ],
+    "passes": 25
+  },
+  {
+    "width": 1440,
+    "violations": [],
+    "incomplete": [
+      {
+        "id": "aria-valid-attr-value",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2"
+        ],
+        "description": "Ensure all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/aria-valid-attr-value?application=axeAPI",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"radix-:Rpr:\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:Rpr:\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 btn-hero inline-block px-6 py-3 mt-2 bg-[#4fc106] hover:bg-[#43ad06] text-white\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:Rpr:\" data-state=\"closed\">",
+            "target": [
+              "button[aria-controls=\"radix-:Rpr:\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:Rpr:\""
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"radix-:R19r:\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R19r:\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 btn-hero inline-block px-6 py-3 mt-2 bg-[#4fc106] hover:bg-[#43ad06] text-white\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:R19r:\" data-state=\"closed\">",
+            "target": [
+              "button[aria-controls=\"radix-:R19r:\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R19r:\""
+          },
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"radix-:R1pr:\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R1pr:\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 h-10 btn-hero inline-block px-6 py-3 mt-2 bg-[#4fc106] hover:bg-[#43ad06] text-white\" type=\"button\" aria-haspopup=\"dialog\" aria-expanded=\"false\" aria-controls=\"radix-:R1pr:\" data-state=\"closed\">",
+            "target": [
+              "button[aria-controls=\"radix-:R1pr:\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"radix-:R1pr:\""
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.10/color-contrast?application=axeAPI",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "48.0pt (64px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"erm-hero-shade\"></div>",
+                    "target": [
+                      ".erm-hero-shade"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1 data-enter=\"true\" style=\"\">As melhores soluções para o seu negócio – Vamos trabalhar juntos?</h1>",
+            "target": [
+              "h1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"erm-hero-shade\"></div>",
+                    "target": [
+                      ".erm-hero-shade"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90\">Mantenha sua empresa protegida: com serviços de segurança do trabalho, saúde e meio ambiente alinhados com a sua estratégia.</p>",
+            "target": [
+              ".md\\:text-2xl.max-w-3xl.mb-8"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "11.3pt (15px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a data-enter=\"true\" class=\"erm-button\" href=\"https://wa.me/5521997521212?text=Ol%C3%A1!%20Gostaria%20de%20conversar%20sobre%20uma%20proposta%20com%20a%20Monitorar%20Consultoria.\" target=\"_blank\" rel=\"noopener noreferrer\" style=\"translate: none; rotate: none; scale: none; transform: translate3d(0px, 19.2466px, 0px);\">",
+            "target": [
+              ".erm-button[data-enter=\"true\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "33.0pt (44px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "3:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-black/55\"></div>",
+                    "target": [
+                      ".bg-black\\/55"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-cover bg-center bg-no-repeat\" style=\"background-image:url(/assets/landscape-1024-CkVU8urr.webp)\"></div>",
+                    "target": [
+                      ".bg-cover"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2 class=\"text-3xl md:text-4xl font-bold mb-6 text-white\">Pronto para proteger sua empresa?</h2>",
+            "target": [
+              ".mb-6.text-3xl.md\\:text-4xl"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": null,
+                  "bgColor": null,
+                  "contrastRatio": 0,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgImage",
+                  "expectedContrastRatio": "4.5:1",
+                  "shadowColor": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-black/55\"></div>",
+                    "target": [
+                      ".bg-black\\/55"
+                    ]
+                  },
+                  {
+                    "html": "<div class=\"absolute inset-0 bg-cover bg-center bg-no-repeat\" style=\"background-image:url(/assets/landscape-1024-CkVU8urr.webp)\"></div>",
+                    "target": [
+                      ".bg-cover"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background image"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-xl mb-8 max-w-2xl mx-auto text-white/90\">Entre em contato conosco e descubra como podemos ajudar sua empresa a manter os mais altos padrões de segurança e sustentabilidade.</p>",
+            "target": [
+              ".text-white\\/90"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image"
+          }
+        ]
+      }
+    ],
+    "passes": 25
+  }
+]

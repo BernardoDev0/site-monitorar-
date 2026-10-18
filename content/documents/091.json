@@ -1,0 +1,57 @@
+{
+  "id": "091",
+  "slug": "/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+  "type": "article",
+  "title": "Médias e picos na qualidade do ar: por que o período importa",
+  "summary": "Uma concentração média de poluente resume medições de um intervalo definido. Um pico descreve um valor elevado em uma escala temporal específica. Compará-los sem identificar os períodos pode criar uma impressão incorreta sobre a condição do ar.",
+  "topic_cluster": "ar",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "A média responde a uma janela de tempo",
+      "paragraphs": [
+        "Uma concentração média de poluente resume medições de um intervalo definido. Um pico descreve um valor elevado em uma escala temporal específica. Compará-los sem identificar os períodos pode criar uma impressão incorreta sobre a condição do ar.",
+        "Antes de interpretar um gráfico, procure o poluente, a unidade, o intervalo de aquisição e a regra de agregação. A linha exibida pode representar dados instantâneos, médias horárias ou outra estatística. O título do painel nem sempre apresenta todos esses detalhes."
+      ]
+    },
+    {
+      "heading": "Um exemplo de leitura",
+      "paragraphs": [
+        "Imagine duas séries hipotéticas com a mesma média diária. Uma varia pouco; outra apresenta intervalos mais altos compensados por períodos mais baixos. A média comum não demonstra que o comportamento ao longo do dia foi igual.",
+        "Da mesma forma, o maior valor registrado não deve ser comparado automaticamente a um padrão definido para outra duração. O critério de referência precisa corresponder ao indicador e ao período utilizados. Não há um único número que resuma todas as perguntas sobre exposição e qualidade do ar."
+      ]
+    },
+    {
+      "heading": "O que pedir junto do resultado",
+      "paragraphs": [
+        "Solicite a série com identificação temporal, regras de validação e indicação de dados ausentes. Para comparações entre locais ou períodos, confirme a compatibilidade dos métodos e da cobertura dos dados.",
+        "Uma visualização útil permite alternar a visão agregada e a série que lhe deu origem. As conclusões devem explicitar qual pergunta cada estatística responde. A avaliação de atendimento aos padrões brasileiros requer consultar a referência vigente e seus critérios, sem transportar diretamente limites ou procedimentos de outro país."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+    "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "045",
+    "046",
+    "047"
+  ],
+  "created_at": "2026-10-18T07:00:30.185Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.185Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+  "indexability": false,
+  "review_due_at": null
+}

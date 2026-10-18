@@ -1,0 +1,105 @@
+{
+  "id": "019",
+  "slug": "/blog/o-que-sao-emissoes-fugitivas",
+  "type": "article",
+  "title": "O que são emissões fugitivas",
+  "summary": "De onde vêm as emissões fugitivas, por que a identificação da fonte importa e quais perguntas um registro de campo precisa responder.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Por onde uma substância pode escapar",
+      "paragraphs": [
+        "Emissões fugitivas são liberações que não seguem necessariamente uma saída canalizada destinada a conduzir o efluente. Em instalações industriais, podem estar associadas a componentes, conexões, vedações e outras interfaces de contenção. A classificação precisa considerar o processo e o mecanismo da liberação.",
+        "Uma válvula com vedação comprometida e uma perda evaporativa em tanque ilustram mecanismos que podem exigir abordagens distintas. São exemplos conceituais: não descrevem uma instalação atendida pela Monitorar nem determinam um método de avaliação."
+      ]
+    },
+    {
+      "heading": "Por que identificar a fonte importa",
+      "paragraphs": [
+        "Uma identificação estável permite relacionar uma observação à intervenção e ao acompanhamento posterior. Sem esse vínculo, registros de campanhas diferentes podem parecer comparáveis mesmo quando tratam de equipamentos ou condições distintos.",
+        "O primeiro mapa útil relaciona processo, componente, substância de interesse e pergunta que precisa ser respondida. A equipe técnica avalia a abordagem apropriada e registra limitações de acesso, condição operacional e cobertura."
+      ]
+    },
+    {
+      "heading": "Detectar não é automaticamente quantificar",
+      "paragraphs": [
+        "Detectar significa obter uma indicação que permite investigar uma ocorrência dentro das capacidades de uma técnica. Quantificar uma taxa de emissão exige estabelecer grandeza, unidade e procedimento capaz de sustentá-las. Uma imagem ou leitura localizada não autoriza qualquer conversão numérica.",
+        "Para interpretar o resultado, procure saber o que o instrumento mede, em que condições foi utilizado e qual conclusão o método permite. O artigo complementar sobre detecção e quantificação desenvolve essa diferença."
+      ]
+    },
+    {
+      "heading": "Como esse conhecimento ajuda na contratação",
+      "paragraphs": [
+        "Antes de solicitar orçamento, descreva a necessidade: localizar perdas, organizar cadastro, acompanhar reparos ou responder a uma demanda documental. Um objetivo específico permite comparar propostas pela informação que entregam, não apenas pelo equipamento anunciado.",
+        "A aplicação de métodos, normas e limites depende do contexto. Este conteúdo é um ponto de partida para conversar com a equipe técnica, não uma instrução para realizar inspeção ou intervir em componentes."
+      ]
+    },
+    {
+      "heading": "Um roteiro para reconhecer a fonte sem antecipar a conclusão",
+      "paragraphs": [
+        "A identificação começa pelo caminho de liberação. Um componente de processo e uma descarga conduzida por uma chaminé pedem descrições diferentes. No guia de boas práticas LDAR da EPA, válvulas, conexões, bombas e compressores aparecem entre as fontes de vazamento de equipamentos. Essa lista serve como referência conceitual, não como inventário completo de uma instalação brasileira.",
+        "Ao receber um registro de campo, procure separar o que foi observado do que foi inferido. Uma suspeita não confirma a substância, e a ausência de indicação durante uma visita não comprova ausência em qualquer condição futura. Essa distinção ajuda o comprador a pedir documentação útil em vez de apenas uma conclusão genérica."
+      ],
+      "table": {
+        "caption": "Perguntas próprias para organizar a leitura de um registro",
+        "headers": [
+          "Pergunta",
+          "Registro útil",
+          "O que ainda precisa ser esclarecido"
+        ],
+        "rows": [
+          [
+            "Onde foi observada a ocorrência?",
+            "Identificador e localização do componente",
+            "Se o cadastro permite reencontrar o ponto"
+          ],
+          [
+            "Qual era a condição de operação?",
+            "Estado operacional e momento da observação",
+            "Se a condição representa outros períodos"
+          ],
+          [
+            "Como a observação foi produzida?",
+            "Técnica e procedimento identificados",
+            "Quais substâncias e condições podem ser avaliadas"
+          ],
+          [
+            "Qual decisão será tomada?",
+            "Finalidade prevista do registro",
+            "Se são necessários dados adicionais"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "002",
+    "021",
+    "023",
+    "013",
+    "022"
+  ],
+  "created_at": "2026-10-16T17:00:00.000Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T16:53:43.110Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas",
+  "indexability": true,
+  "review_due_at": null
+}

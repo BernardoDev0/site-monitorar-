@@ -1,0 +1,94 @@
+{
+  "id": "029",
+  "slug": "/blog/registro-de-vazamentos-em-programas-ldar",
+  "type": "article",
+  "title": "Registro de vazamentos em LDAR",
+  "summary": "Transforme uma ocorrência em um registro que possa ser localizado, interpretado e acompanhado. Confira campos, vínculos e regras para corrigir dados.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O registro deve sobreviver à troca de equipe",
+      "paragraphs": [
+        "Uma anotação útil precisa ser compreensível por quem não estava no campo. “Vazamento na linha” pode ser uma comunicação inicial, mas não basta para vincular o evento a um componente, entender como foi avaliado ou encontrar o responsável pelo próximo passo.",
+        "A base do registro é a ligação entre identificação, momento, procedimento e resultado. Quando houver um valor, sua unidade e seu contexto precisam acompanhar o número. Um valor isolado em uma célula não esclarece se representa concentração, classificação ou estimativa."
+      ]
+    },
+    {
+      "heading": "Corrigir não deve apagar a história",
+      "paragraphs": [
+        "Erros de digitação e de identificação podem acontecer. Uma correção deve registrar a razão e preservar a rastreabilidade suficiente para entender a versão utilizada em um relatório. Se a mudança altera a classificação ou o encaminhamento, os responsáveis precisam ser informados.",
+        "No guia LDAR da EPA, os registros incluem identificação de equipamento, instrumento, operador, detecção, tentativas de reparo e confirmação. A tabela desta página organiza campos para discussão e não constitui uma lista legal completa. Controle de acesso e compartilhamento da base também devem corresponder à confidencialidade da instalação."
+      ]
+    },
+    {
+      "heading": "Quadro de apoio à decisão",
+      "paragraphs": [
+        "Exemplo hipotético: um valor foi digitado no componente vizinho. A correção precisa identificar os dois registros afetados e verificar se houve comunicação ou decisão baseada no dado errado. Alterar apenas a célula final pode deixar relatórios e ordens de serviço inconsistentes."
+      ],
+      "table": {
+        "caption": "Dicionário inicial de campos para um registro de ocorrência",
+        "headers": [
+          "Grupo de campos",
+          "Exemplo de conteúdo",
+          "Por que importa"
+        ],
+        "rows": [
+          [
+            "Identificação",
+            "ID, unidade e localização",
+            "Permite reencontrar a ocorrência"
+          ],
+          [
+            "Observação",
+            "Data, condição operacional e procedimento",
+            "Dá contexto ao resultado"
+          ],
+          [
+            "Resultado",
+            "Valor, unidade e classificação aplicável",
+            "Evita interpretações de números isolados"
+          ],
+          [
+            "Encaminhamento",
+            "Destinatário, responsável e estado",
+            "Liga a informação à ação"
+          ],
+          [
+            "Histórico",
+            "Correções e eventos posteriores",
+            "Preserva rastreabilidade"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "013",
+    "002",
+    "026",
+    "028",
+    "031"
+  ],
+  "created_at": "2026-10-17T17:03:40.668Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T17:03:40.668Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/registro-de-vazamentos-em-programas-ldar",
+  "indexability": true,
+  "review_due_at": null
+}

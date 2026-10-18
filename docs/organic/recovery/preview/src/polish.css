@@ -1,0 +1,71 @@
+/* Only the isolated proposed document receives these rules. Brand tokens and copy are unchanged. */
+body[data-variant="polished"] {
+  padding-top: 108px;
+}
+body[data-variant="polished"] #conteudo p { line-height: 1.65; }
+body[data-variant="polished"] #conteudo li { line-height: 1.6; }
+body[data-variant="polished"] #conteudo h1 { text-wrap: balance; }
+body[data-variant="polished"] #conteudo .card-service { padding: 0; }
+body[data-variant="polished"] #conteudo .card-service > div { padding: 28px; }
+body[data-variant="polished"] #conteudo .card-service li > svg { flex-shrink: 0; }
+body[data-variant="polished"] #conteudo .card-service,
+body[data-variant="polished"] #conteudo .group.rounded-lg {
+  box-shadow: 0 4px 16px hsl(var(--primary) / .06);
+}
+body[data-variant="polished"] #conteudo .card-service:hover,
+body[data-variant="polished"] #conteudo .group:hover {
+  transform: none;
+  box-shadow: 0 8px 24px hsl(var(--primary) / .1);
+}
+body[data-variant="polished"] #conteudo :is(a, button):not(.skip-link) {
+  min-height: 44px;
+}
+body[data-variant="polished"] #conteudo a[class*="items-center"] {
+  white-space: normal;
+  text-align: center;
+  height: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+body[data-variant="polished"] :is(.bg-success,[class*="bg-[#4fc106]"]) {
+  color: hsl(var(--primary));
+}
+/* Use each button's existing hover shade for readable white text. */
+body[data-variant="polished"] #conteudo .bg-green-600 { background-color: #15803d; }
+body[data-variant="polished"] #conteudo .bg-emerald-600 { background-color: #047857; }
+body[data-variant="polished"] #conteudo .bg-cyan-600 { background-color: #0e7490; }
+body[data-variant="polished"] header .header-nav > div { gap: 0; }
+body[data-variant="polished"] header .header-nav a { min-height: 44px; display: flex; align-items: center; }
+body[data-variant="polished"] header .header-nav > div > div > a { padding-inline: 16px; }
+body[data-variant="polished"] header .group:hover > div { opacity: 1; visibility: visible; }
+body[data-variant="polished"] header.bg-white .header-nav a:hover { color: hsl(var(--primary)); }
+body[data-variant="polished"] #conteudo .text-green-600 { color: #15803d; }
+body[data-variant="polished"] header .group > div { margin-top: 0; }
+body[data-variant="polished"] footer a { display: inline-flex; align-items: center; min-height: 44px; }
+body[data-variant="polished"] footer a[aria-label] { min-width: 44px; justify-content: center; }
+body[data-variant="polished"] footer .text-xs { font-size: 14px; line-height: 1.6; }
+body[data-variant="polished"] footer ul { gap: 0; }
+body[data-variant="polished"] footer ul > li { margin-top: 0; }
+body[data-variant="polished"] [role="dialog"] :is(button, a) { min-height: 44px; }
+body[data-variant="polished"] [role="dialog"] > button { min-width: 44px; }
+body[data-variant="polished"] .logos-track:hover { animation-play-state: paused; }
+body[data-variant="polished"] :focus-visible { outline-offset: 4px; }
+@media (min-width: 768px) { body[data-variant="polished"] { padding-top: 116px; } }
+@media (min-width: 1024px) { body[data-variant="polished"] { padding-top: 132px; } }
+@media (min-width: 1024px) and (max-width: 1279px) {
+  body[data-variant="polished"] header .header-nav > div > div > a { padding-inline: 10px; }
+}
+@media (max-width: 767px) {
+  body[data-variant="polished"] #conteudo section.py-20 { padding-block: 56px; }
+  body[data-variant="polished"] #conteudo section.py-16 { padding-block: 48px; }
+  body[data-variant="polished"] #conteudo .mb-16 { margin-bottom: 32px; }
+  body[data-variant="polished"] #conteudo .card-service > div { padding: 24px; }
+  body[data-variant="polished"] #conteudo .text-sm { font-size: 15px; }
+  body[data-variant="polished"] #conteudo section:first-child > .relative { padding-top: 112px; padding-bottom: 64px; }
+  body[data-variant="polished"] [role="dialog"] { max-width: calc(100vw - 32px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body[data-variant="polished"] .logos-track { animation: none !important; transform: none !important; flex-wrap: wrap; width: 100%; justify-content: center; gap: 32px; }
+  /* The reference Home contains 13 clients; the next 13 are loop duplicates. */
+  body[data-variant="polished"] .logos-track > .logo-item:nth-child(n+14) { display: none; }
+}

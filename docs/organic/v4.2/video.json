@@ -1,0 +1,14 @@
+{
+  "source": "public\\media\\refinaria-desktop.mp4",
+  "sha256_source": "2fe1728f5888452f15c4c8d4e53df844efcd52f93c202a1816aa697019cf394d",
+  "source_fps": 24,
+  "output_fps": 60,
+  "forward_frames": 598,
+  "output_frames": 1194,
+  "duration_seconds": 19.9,
+  "method": "FFmpeg motion-compensated interpolation then forward/reverse concatenation; original retained",
+  "outputs": [
+    "/media/refinaria-pingpong-desktop.mp4",
+    "/media/refinaria-pingpong-mobile.mp4"
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "id": "076",
+  "slug": "/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+  "type": "article",
+  "title": "Auditorias internas e de conformidade",
+  "summary": "Uma auditoria interna pode examinar como o sistema de gestão funciona em relação a critérios definidos pela organização. Uma auditoria de conformidade legal concentra a avaliação nos requisitos legais aplicáveis ao escopo. Elas podem compartilhar evidências sem responder exatamente à mesma pergunta.",
+  "topic_cluster": "sms",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O objetivo define a auditoria",
+      "paragraphs": [
+        "Uma auditoria interna pode examinar como o sistema de gestão funciona em relação a critérios definidos pela organização. Uma auditoria de conformidade legal concentra a avaliação nos requisitos legais aplicáveis ao escopo. Elas podem compartilhar evidências sem responder exatamente à mesma pergunta.",
+        "Antes de comparar propostas, identifique objetivo, critérios, unidades, período, equipe e entregas. O nome comercial da auditoria, isoladamente, não informa sua abrangência nem permite concluir que todos os requisitos serão verificados."
+      ]
+    },
+    {
+      "heading": "Perguntas diferentes sobre a mesma evidência",
+      "paragraphs": [
+        "Imagine um procedimento de controle documental. A auditoria do sistema pode perguntar como novas versões chegam aos usuários e como a eficácia desse controle é acompanhada. A avaliação legal pode verificar se determinado registro obrigatório está disponível e atende ao requisito aplicável.",
+        "Uma evidência pode sustentar as duas avaliações, mas as conclusões precisam manter o vínculo com cada critério. A existência de um sistema organizado não comprova automaticamente conformidade com toda a legislação. Uma amostra sem desvios também não garante inexistência de problemas fora dela."
+      ]
+    },
+    {
+      "heading": "Como ler o relatório",
+      "paragraphs": [
+        "Procure a descrição dos critérios e da amostragem antes da lista de constatações. Cada desvio deve permitir compreender o requisito, a evidência observada e a diferença encontrada. Recomendações de melhoria devem ser distinguidas de não conformidades.",
+        "Na contratação, peça que exclusões e limitações sejam explicitadas. A conclusão será tão abrangente quanto o escopo e as evidências permitem. Certificações, pareceres jurídicos e autorizações administrativas são instrumentos distintos; não devem ser prometidos como consequência automática de uma auditoria."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "074",
+    "075",
+    "077"
+  ],
+  "created_at": "2026-10-18T07:00:30.178Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.178Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+  "indexability": false,
+  "review_due_at": null
+}

@@ -1,0 +1,29 @@
+{
+  "status": "awaiting_home_visual_approval",
+  "implemented_scope": "isolated_home_only",
+  "main_app_changed": false,
+  "content_changed": false,
+  "backup": "D:/monitorar-recovery/erm-20261017-202322",
+  "preview": "http://127.0.0.1:4191/",
+  "comparison": "http://127.0.0.1:4190/",
+  "tests": {
+    "existing_passed": 22,
+    "lint_errors": 0,
+    "lint_warnings": 8,
+    "typecheck": "passed",
+    "public_build": "passed",
+    "editorial_build": "passed",
+    "isolated_build": "passed",
+    "browser": "passed",
+    "axe_violations": 0
+  },
+  "images": {
+    "planned": 6,
+    "generated": 0,
+    "fallback": "existing assets"
+  },
+  "next_action": "Wait for owner visual approval of the home before V3-08.",
+  "published": false,
+  "pushed": false,
+  "deployed": false
+}

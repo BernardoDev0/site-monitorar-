@@ -1,0 +1,56 @@
+{
+  "id": "099",
+  "slug": "/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+  "type": "article",
+  "title": "Mudança de uso da área e validade das conclusões ambientais",
+  "summary": "Conclusões ambientais podem estar vinculadas ao uso da área, às condições de exposição e às medidas consideradas no estudo. Uma mudança de uso exige verificar se essas premissas continuam válidas, mesmo quando os resultados analíticos anteriores permanecem disponíveis.",
+  "topic_cluster": "areas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "A conclusão acompanha as hipóteses de uso",
+      "paragraphs": [
+        "Conclusões ambientais podem estar vinculadas ao uso da área, às condições de exposição e às medidas consideradas no estudo. Uma mudança de uso exige verificar se essas premissas continuam válidas, mesmo quando os resultados analíticos anteriores permanecem disponíveis.",
+        "A análise começa por reunir histórico, estudos, decisões do órgão e eventuais restrições. Identifique exatamente para qual cenário a conclusão foi produzida. Expressões genéricas como “área liberada” podem omitir condições essenciais."
+      ]
+    },
+    {
+      "heading": "O que pode mudar",
+      "paragraphs": [
+        "Num exemplo hipotético, uma área antes destinada a atividade industrial passa a ser considerada para outro uso. Receptores, permanência, intervenções no solo e vias de exposição podem mudar. A avaliação precisa examinar essas diferenças antes de reutilizar a conclusão anterior.",
+        "Obras e alterações de infraestrutura também podem modificar condições relevantes. A existência de uma medida de controle deve ser acompanhada de seus requisitos de manutenção e monitoramento, quando previstos. Ela não deve ser removida apenas porque o uso foi redesenhado."
+      ]
+    },
+    {
+      "heading": "Organizar a verificação",
+      "paragraphs": [
+        "Prepare um quadro com condição estudada, condição proposta, documento de referência e pergunta técnica pendente. Isso ajuda a definir quais informações precisam ser atualizadas e quais continuam pertinentes.",
+        "O procedimento deve seguir as exigências do órgão competente e a análise dos profissionais responsáveis. Este artigo não afirma que toda mudança exige o mesmo estudo, nem que um relatório antigo perde automaticamente toda utilidade. O ponto é verificar o alcance da conclusão e documentar sua compatibilidade com o cenário novo."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "060",
+    "061",
+    "062"
+  ],
+  "created_at": "2026-10-18T07:00:30.188Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.188Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+  "indexability": false,
+  "review_due_at": null
+}

@@ -1,0 +1,122 @@
+[
+  {
+    "path": "docs/organic/v2/evidence/screenshots/404-1440.png",
+    "width": 1440,
+    "height": 1495,
+    "sha256": "4dff4f26e3caf0b70825273a944121ca4515065dbf6fb7027834ee6e1fb670eb",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/artigo-1440.png",
+    "width": 1440,
+    "height": 3143,
+    "sha256": "f49a0301bdd908ef6b87ff8d6b8ccaf40ebb4f2fdccfd6941c4d4f6c4f821282",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/artigo-390.png",
+    "width": 390,
+    "height": 5127,
+    "sha256": "c30f1800b4336b73fc59fca7bafdbea67f13b4d7250e2679863e0b95bff4c674",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/carreiras-1440.png",
+    "width": 1440,
+    "height": 4040,
+    "sha256": "c52e74b464538abd284df96019254d3990016c9f0c71f33925e89ec008f47c82",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/clientes-1440.png",
+    "width": 1440,
+    "height": 2530,
+    "sha256": "be48cbd8b9b60ed31becdb09464830313b32708302a7d22af4e133b5af966d31",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/contato-1440.png",
+    "width": 1440,
+    "height": 2442,
+    "sha256": "5bc76b973ed19aa7228d85ab6efdcdad6b9f23d884f0dbbf02d17bfb44933c6d",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/contato-390.png",
+    "width": 390,
+    "height": 4292,
+    "sha256": "eb8dfb2f9260058f7bccc2fa8c5f3493502ca90752614db1c0943b2728f5aa98",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/depoimentos-1440.png",
+    "width": 1440,
+    "height": 2212,
+    "sha256": "a81b06c8dd0e5da80b3995ac26a10b9e5e64a47de63c882ccf1c4559d2c260d8",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/home-1440.png",
+    "width": 1440,
+    "height": 5916,
+    "sha256": "cc5ed87192f83af22cde08eab14b39cb09ce0c61a7bbef04f3fbc327aed5457f",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/home-390.png",
+    "width": 390,
+    "height": 11012,
+    "sha256": "82eb7b2eb93282bcf84ab2eb4ab76d4df56f6bd9254759b37edf334010e11fda",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/indice-1440.png",
+    "width": 1440,
+    "height": 2027,
+    "sha256": "f3ba68f85faffa1f64ae183357c93f2cab6c74767735f8bf72b734c77e9b939b",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/privacidade-1440.png",
+    "width": 1440,
+    "height": 3243,
+    "sha256": "091909b9b8a3786b5ce9fc3afd71915b683c18ba2bf3bdcad7b8947d8dcaec1b",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/servico-1440.png",
+    "width": 1440,
+    "height": 3244,
+    "sha256": "b6a90abb062104feeb8e5bd20bcd8405aed2c5fdba39ccd7e5e45bb545a69c18",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/servicos-1440.png",
+    "width": 1440,
+    "height": 1906,
+    "sha256": "6de2635b42f18374a93137cfb1914798f826262006bf2e136da5e2aeaa50e1ba",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  },
+  {
+    "path": "docs/organic/v2/evidence/screenshots/sobre-1440.png",
+    "width": 1440,
+    "height": 4258,
+    "sha256": "2a3c266d72c9cb902732d0a89f2b6f235c6ad1f1e3c1cd5d36f6b37e9cac30bf",
+    "audit_date": "2026-10-17",
+    "meaning": "current site, not proposed redesign"
+  }
+]

@@ -1,0 +1,57 @@
+{
+  "id": "048",
+  "slug": "/blog/como-ler-relatorio-de-monitoramento-de-pts",
+  "type": "article",
+  "title": "Como ler relatório de PTS",
+  "summary": "Um relatório de PTS precisa permitir identificar o que foi medido, onde, quando e com qual método. A tabela final ganha significado quando é lida junto dos registros de campanha e dos critérios de qualidade.",
+  "topic_cluster": "ar",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Leia além da concentração final",
+      "paragraphs": [
+        "Um relatório de PTS precisa permitir identificar o que foi medido, onde, quando e com qual método. A tabela final ganha significado quando é lida junto dos registros de campanha e dos critérios de qualidade.",
+        "Comece pela fração avaliada e pela unidade. Depois confira ponto, período, duração efetiva e condições relevantes. Uma comparação com referência exige correspondência entre essas informações; não basta localizar um número denominado “limite”."
+      ]
+    },
+    {
+      "heading": "Um roteiro de conferência",
+      "paragraphs": [
+        "Em um exemplo hipotético, a tabela apresenta cinco resultados, mas o cronograma previa seis amostras. Procure a explicação para a ausência: interrupção, invalidação ou atividade não realizada. A média dos cinco valores não deve ocultar a perda nem ser apresentada como cobertura completa do plano.",
+        "Verifique se anexos e tabela principal usam os mesmos identificadores. Mudanças de unidade e arredondamento também precisam ser coerentes. Uma divergência deve ser esclarecida antes de interpretar tendência ou conformidade."
+      ]
+    },
+    {
+      "heading": "O alcance da conclusão",
+      "paragraphs": [
+        "Separe resultado observado, comparação adotada e inferência sobre causas. Uma concentração elevada não identifica sozinha uma fonte específica. Atribuição exige contexto e evidências adicionais.",
+        "Solicite que o relatório declare limitações, desvios de planejamento e necessidade de informação complementar. As referências de monitoramento da EPA reforçam a importância de sistemas de registro e qualidade. O enquadramento normativo brasileiro, entretanto, deve ser demonstrado com a referência aplicável ao caso."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+    "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "045",
+    "046",
+    "047"
+  ],
+  "created_at": "2026-10-18T07:00:30.167Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.167Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-monitoramento-de-pts",
+  "indexability": false,
+  "review_due_at": null
+}

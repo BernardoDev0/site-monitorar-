@@ -1,0 +1,36 @@
+{
+  "people": {},
+  "evidence": {},
+  "sources": {
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
+      "available": true,
+      "checked_at": "2026-10-16T17:25:14.002Z",
+      "status": 200,
+      "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
+    },
+    "https://www.epa.gov/compliance/leak-detection-and-repair-compliance-assistance-guidance": {
+      "available": false,
+      "checked_at": "2026-10-16T17:22:59.616Z",
+      "status": 404,
+      "hash": null
+    },
+    "https://www.who.int/europe/publications/i/item/9789289053563": {
+      "available": true,
+      "checked_at": "2026-10-16T17:25:14.842Z",
+      "status": 200,
+      "hash": "7c3a6de423c4d6b907daced0d418ce5e9d718f794be265c3ee8d9dbc96067daf"
+    },
+    "https://webstore.iec.ch/en/publication/24321": {
+      "available": true,
+      "checked_at": "2026-10-16T17:25:14.883Z",
+      "status": 200,
+      "hash": "b7bf4336e8752527c7dfd66306646e3b5c2d15371075c4a80dd521443083ca83"
+    },
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
+      "available": true,
+      "checked_at": "2026-10-16T17:25:14.755Z",
+      "status": 200,
+      "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+    }
+  }
+}

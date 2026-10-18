@@ -1,0 +1,57 @@
+{
+  "id": "073",
+  "slug": "/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+  "type": "article",
+  "title": "Escopo de estudos ambientais",
+  "summary": "Definir o escopo de um estudo ambiental exige relacionar a decisão pretendida às informações necessárias. Um documento extenso não é automaticamente adequado, assim como um relatório curto não é suficiente apenas por reunir dados existentes.",
+  "topic_cluster": "licenciamento",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O estudo precisa responder à decisão",
+      "paragraphs": [
+        "Definir o escopo de um estudo ambiental exige relacionar a decisão pretendida às informações necessárias. Um documento extenso não é automaticamente adequado, assim como um relatório curto não é suficiente apenas por reunir dados existentes.",
+        "O termo de referência e as exigências aplicáveis devem ser lidos junto das características do empreendimento. Identifique perguntas, área de abrangência, métodos, entregas e limites antes de iniciar a produção."
+      ]
+    },
+    {
+      "heading": "Transformar exigências em trabalho",
+      "paragraphs": [
+        "Considere um pedido hipotético que solicita avaliar determinada interação com o entorno. A proposta deve mostrar quais informações serão levantadas, como serão analisadas e qual produto permitirá responder à pergunta. Uma lista genérica de disciplinas não demonstra esse vínculo.",
+        "Separe dados fornecidos pelo contratante, dados públicos e levantamentos próprios. Registre versões e qualidade esperada. Dependências de acesso ou de informação externa precisam aparecer no planejamento e no cronograma."
+      ]
+    },
+    {
+      "heading": "Critérios de aceite",
+      "paragraphs": [
+        "Verifique cobertura das perguntas, coerência entre métodos e conclusões e exposição das limitações. Se uma questão não puder ser respondida, o relatório deve identificar a lacuna e sua consequência, em vez de preenchê-la com generalidades.",
+        "O escopo pode precisar de ajuste diante de informação nova ou solicitação formal. Controle as mudanças e suas justificativas. A entrega de um estudo não garante aprovação administrativa; sua função é fornecer informação tecnicamente fundamentada para o processo correspondente."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm",
+    "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "067",
+    "068",
+    "069"
+  ],
+  "created_at": "2026-10-18T07:00:30.177Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.177Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+  "indexability": false,
+  "review_due_at": null
+}

@@ -1,0 +1,19 @@
+{
+  "snapshot_files": 538,
+  "unchanged_files": 533,
+  "changed_only_scope_notices": [
+    "DESIGN.md",
+    "PRODUCT.md",
+    "docs/organic/v2/DESIGN-PLAN.md",
+    "docs/organic/v2/EXECUTION-STATE.md",
+    "docs/organic/v2/PLAN.md"
+  ],
+  "deleted_files": [],
+  "recovered_source_matches_zip": {
+    "src/pages/Home.tsx": true,
+    "src/components/Header.tsx": true,
+    "src/components/Footer.tsx": true
+  },
+  "production_source_changes": 0,
+  "editorial_changes": 0
+}

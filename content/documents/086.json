@@ -1,0 +1,55 @@
+{
+  "id": "086",
+  "slug": "/blog/registro-de-treinamento-certificado-e-competencia",
+  "type": "article",
+  "title": "Certificado e competência",
+  "summary": "Um certificado documenta a conclusão de uma atividade formativa conforme as informações que apresenta. Ele não demonstra, sozinho, a capacidade de executar qualquer tarefa relacionada ao tema em todas as condições possíveis.",
+  "topic_cluster": "treinamentos",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O certificado tem um alcance definido",
+      "paragraphs": [
+        "Um certificado documenta a conclusão de uma atividade formativa conforme as informações que apresenta. Ele não demonstra, sozinho, a capacidade de executar qualquer tarefa relacionada ao tema em todas as condições possíveis.",
+        "A leitura começa pela identificação do participante, conteúdo, carga horária, datas e responsáveis, conforme os requisitos pertinentes. Também importa verificar se a capacitação corresponde à atividade efetivamente exercida e à modalidade admitida para aquela situação."
+      ]
+    },
+    {
+      "heading": "Evidências diferentes respondem a perguntas diferentes",
+      "paragraphs": [
+        "Uma lista de presença informa participação registrada. Uma avaliação pode demonstrar aprendizagem no contexto em que foi aplicada. Uma observação prática pode fornecer evidência de desempenho em determinada tarefa. Nenhum desses registros deve ser descrito como prova de algo que não avaliou.",
+        "Considere uma pessoa que concluiu um treinamento em equipamento distinto daquele usado na instalação. O certificado continua sendo um registro real, mas a diferença precisa ser avaliada antes de inferir prontidão para a aplicação local. Integração e orientação específica podem ser necessárias conforme o caso."
+      ]
+    },
+    {
+      "heading": "Decisão sobre atuação",
+      "paragraphs": [
+        "A organização deve relacionar capacitação, experiência, avaliação e demais condições aplicáveis à autorização para a tarefa. Essa decisão precisa ter responsável e fundamento. A simples disponibilidade de um arquivo digital não substitui essa análise.",
+        "Mudanças de função ou processo podem tornar insuficiente uma evidência antes adequada. Preserve o histórico e registre as necessidades novas. As disposições da NR-1 e das normas específicas devem orientar a verificação dos requisitos, sem estabelecer uma validade universal para todo certificado."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "085",
+    "106"
+  ],
+  "created_at": "2026-10-18T07:00:30.182Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.182Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/registro-de-treinamento-certificado-e-competencia",
+  "indexability": false,
+  "review_due_at": null
+}

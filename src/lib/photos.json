@@ -1,0 +1,224 @@
+{
+  "/src/assets/hero-refinery.jpg": {
+    "src": "/media/photos-v41/01-1920.webp",
+    "srcSet": "/media/photos-v41/01-480.webp 480w, /media/photos-v41/01-800.webp 800w, /media/photos-v41/01-1200.webp 1200w, /media/photos-v41/01-1600.webp 1600w, /media/photos-v41/01-1920.webp 1920w",
+    "width": 1920,
+    "height": 1080
+  },
+  "/src/assets/paisagem.png": {
+    "src": "/media/photos-v41/02-1920.webp",
+    "srcSet": "/media/photos-v41/02-480.webp 480w, /media/photos-v41/02-800.webp 800w, /media/photos-v41/02-1200.webp 1200w, /media/photos-v41/02-1600.webp 1600w, /media/photos-v41/02-1920.webp 1920w",
+    "width": 2048,
+    "height": 2048
+  },
+  "/epis.png": {
+    "src": "/media/photos-v41/03-1704.webp",
+    "srcSet": "/media/photos-v41/03-480.webp 480w, /media/photos-v41/03-800.webp 800w, /media/photos-v41/03-1200.webp 1200w, /media/photos-v41/03-1600.webp 1600w, /media/photos-v41/03-1704.webp 1704w",
+    "width": 1704,
+    "height": 1026
+  },
+  "/pessoas/Picture12.jpg": {
+    "src": "/media/photos-v41/04-1152.webp",
+    "srcSet": "/media/photos-v41/04-480.webp 480w, /media/photos-v41/04-800.webp 800w, /media/photos-v41/04-1152.webp 1152w",
+    "width": 1152,
+    "height": 984
+  },
+  "/pessoas/Picture13.jpg": {
+    "src": "/media/photos-v41/05-520.webp",
+    "srcSet": "/media/photos-v41/05-480.webp 480w, /media/photos-v41/05-520.webp 520w",
+    "width": 520,
+    "height": 924
+  },
+  "/pessoas/Picture14.jpg": {
+    "src": "/media/photos-v41/06-716.webp",
+    "srcSet": "/media/photos-v41/06-480.webp 480w, /media/photos-v41/06-716.webp 716w",
+    "width": 716,
+    "height": 954
+  },
+  "/servicos/licenciamento.jpg": {
+    "src": "/media/photos-v41/07-1600.webp",
+    "srcSet": "/media/photos-v41/07-480.webp 480w, /media/photos-v41/07-800.webp 800w, /media/photos-v41/07-1200.webp 1200w, /media/photos-v41/07-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/paisagem2.png": {
+    "src": "/media/photos-v41/08-1408.webp",
+    "srcSet": "/media/photos-v41/08-480.webp 480w, /media/photos-v41/08-800.webp 800w, /media/photos-v41/08-1200.webp 1200w, /media/photos-v41/08-1408.webp 1408w",
+    "width": 1408,
+    "height": 736
+  },
+  "/equipe/equipe5.png": {
+    "src": "/media/photos-v41/09-1536.webp",
+    "srcSet": "/media/photos-v41/09-480.webp 480w, /media/photos-v41/09-800.webp 800w, /media/photos-v41/09-1200.webp 1200w, /media/photos-v41/09-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024
+  },
+  "/equipe/equipe1.JPG": {
+    "src": "/media/photos-v41/10-1280.webp",
+    "srcSet": "/media/photos-v41/10-480.webp 480w, /media/photos-v41/10-800.webp 800w, /media/photos-v41/10-1200.webp 1200w, /media/photos-v41/10-1280.webp 1280w",
+    "width": 1280,
+    "height": 960
+  },
+  "/equipe/equipe2.jpeg": {
+    "src": "/media/photos-v41/11-1920.webp",
+    "srcSet": "/media/photos-v41/11-480.webp 480w, /media/photos-v41/11-800.webp 800w, /media/photos-v41/11-1200.webp 1200w, /media/photos-v41/11-1600.webp 1600w, /media/photos-v41/11-1920.webp 1920w",
+    "width": 2048,
+    "height": 1536
+  },
+  "/equipe/equipe6.jpeg": {
+    "src": "/media/photos-v41/12-1280.webp",
+    "srcSet": "/media/photos-v41/12-480.webp 480w, /media/photos-v41/12-800.webp 800w, /media/photos-v41/12-1200.webp 1200w, /media/photos-v41/12-1280.webp 1280w",
+    "width": 1280,
+    "height": 960
+  },
+  "/src/assets/refinary+floresta.png": {
+    "src": "/media/photos-v41/13-1536.webp",
+    "srcSet": "/media/photos-v41/13-480.webp 480w, /media/photos-v41/13-800.webp 800w, /media/photos-v41/13-1200.webp 1200w, /media/photos-v41/13-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024
+  },
+  "/faleconosco.png": {
+    "src": "/media/photos-v41/14-1536.webp",
+    "srcSet": "/media/photos-v41/14-480.webp 480w, /media/photos-v41/14-800.webp 800w, /media/photos-v41/14-1200.webp 1200w, /media/photos-v41/14-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024
+  },
+  "/depoimentos.png": {
+    "src": "/media/photos-v41/15-1920.webp",
+    "srcSet": "/media/photos-v41/15-480.webp 480w, /media/photos-v41/15-800.webp 800w, /media/photos-v41/15-1200.webp 1200w, /media/photos-v41/15-1600.webp 1600w, /media/photos-v41/15-1920.webp 1920w",
+    "width": 2048,
+    "height": 1576
+  },
+  "/paisagem4.png.png": {
+    "src": "/media/photos-v41/16-1536.webp",
+    "srcSet": "/media/photos-v41/16-480.webp 480w, /media/photos-v41/16-800.webp 800w, /media/photos-v41/16-1200.webp 1200w, /media/photos-v41/16-1536.webp 1536w",
+    "width": 1536,
+    "height": 1024
+  },
+  "/servicos/qualidade-ar.jpg": {
+    "src": "/media/photos-v41/17-1600.webp",
+    "srcSet": "/media/photos-v41/17-480.webp 480w, /media/photos-v41/17-800.webp 800w, /media/photos-v41/17-1200.webp 1200w, /media/photos-v41/17-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/servicos/areas-impactadas.jpg": {
+    "src": "/media/photos-v41/18-1600.webp",
+    "srcSet": "/media/photos-v41/18-480.webp 480w, /media/photos-v41/18-800.webp 800w, /media/photos-v41/18-1200.webp 1200w, /media/photos-v41/18-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/servicos/avaliacao-ruido.jpg": {
+    "src": "/media/photos-v41/19-1600.webp",
+    "srcSet": "/media/photos-v41/19-480.webp 480w, /media/photos-v41/19-800.webp 800w, /media/photos-v41/19-1200.webp 1200w, /media/photos-v41/19-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/servicos/gestao-sms.jpg": {
+    "src": "/media/photos-v41/20-1600.webp",
+    "srcSet": "/media/photos-v41/20-480.webp 480w, /media/photos-v41/20-800.webp 800w, /media/photos-v41/20-1200.webp 1200w, /media/photos-v41/20-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/servicos/hazop.jpg": {
+    "src": "/media/photos-v41/21-1600.webp",
+    "srcSet": "/media/photos-v41/21-480.webp 480w, /media/photos-v41/21-800.webp 800w, /media/photos-v41/21-1200.webp 1200w, /media/photos-v41/21-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/servicos/auditorias.jpg": {
+    "src": "/media/photos-v41/22-1600.webp",
+    "srcSet": "/media/photos-v41/22-480.webp 480w, /media/photos-v41/22-800.webp 800w, /media/photos-v41/22-1200.webp 1200w, /media/photos-v41/22-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "/servicos/treinamentos.jpg": {
+    "src": "/media/photos-v41/23-1600.webp",
+    "srcSet": "/media/photos-v41/23-480.webp 480w, /media/photos-v41/23-800.webp 800w, /media/photos-v41/23-1200.webp 1200w, /media/photos-v41/23-1600.webp 1600w",
+    "width": 1600,
+    "height": 1600
+  },
+  "photo-1518837695005-2083093ee35b": {
+    "src": "/media/photos-v41/24-1920.webp",
+    "srcSet": "/media/photos-v41/24-480.webp 480w, /media/photos-v41/24-800.webp 800w, /media/photos-v41/24-1200.webp 1200w, /media/photos-v41/24-1600.webp 1600w, /media/photos-v41/24-1920.webp 1920w",
+    "width": 2400,
+    "height": 1600
+  },
+  "photo-1441974231531-c6227db76b6e": {
+    "src": "/media/photos-v41/25-1920.webp",
+    "srcSet": "/media/photos-v41/25-480.webp 480w, /media/photos-v41/25-800.webp 800w, /media/photos-v41/25-1200.webp 1200w, /media/photos-v41/25-1600.webp 1600w, /media/photos-v41/25-1920.webp 1920w",
+    "width": 2400,
+    "height": 1598
+  },
+  "photo-1486406146926-c627a92ad1ab": {
+    "src": "/media/photos-v41/26-1920.webp",
+    "srcSet": "/media/photos-v41/26-480.webp 480w, /media/photos-v41/26-800.webp 800w, /media/photos-v41/26-1200.webp 1200w, /media/photos-v41/26-1600.webp 1600w, /media/photos-v41/26-1920.webp 1920w",
+    "width": 2400,
+    "height": 1600
+  },
+  "photo-1581594549595-35f6edc7b762": {
+    "src": "/media/photos-v41/27-1920.webp",
+    "srcSet": "/media/photos-v41/27-480.webp 480w, /media/photos-v41/27-800.webp 800w, /media/photos-v41/27-1200.webp 1200w, /media/photos-v41/27-1600.webp 1600w, /media/photos-v41/27-1920.webp 1920w",
+    "width": 2400,
+    "height": 1600
+  },
+  "/refinary plant.png": {
+    "src": "/media/photos-v41/28-1920.webp",
+    "srcSet": "/media/photos-v41/28-480.webp 480w, /media/photos-v41/28-800.webp 800w, /media/photos-v41/28-1200.webp 1200w, /media/photos-v41/28-1600.webp 1600w, /media/photos-v41/28-1920.webp 1920w",
+    "width": 2048,
+    "height": 2048
+  },
+  "/seguranca_industrial.png": {
+    "src": "/media/photos-v41/29-1920.webp",
+    "srcSet": "/media/photos-v41/29-480.webp 480w, /media/photos-v41/29-800.webp 800w, /media/photos-v41/29-1200.webp 1200w, /media/photos-v41/29-1600.webp 1600w, /media/photos-v41/29-1920.webp 1920w",
+    "width": 3408,
+    "height": 2560
+  },
+  "/equipe/equipe3.jpeg": {
+    "src": "/media/photos-v41/30-1366.webp",
+    "srcSet": "/media/photos-v41/30-480.webp 480w, /media/photos-v41/30-800.webp 800w, /media/photos-v41/30-1200.webp 1200w, /media/photos-v41/30-1366.webp 1366w",
+    "width": 1366,
+    "height": 1356
+  },
+  "/equipe/equipe4.jpg": {
+    "src": "/media/photos-v41/31-1172.webp",
+    "srcSet": "/media/photos-v41/31-480.webp 480w, /media/photos-v41/31-800.webp 800w, /media/photos-v41/31-1172.webp 1172w",
+    "width": 1172,
+    "height": 2048
+  },
+  "/equipe/foto-07.jpg.jpeg": {
+    "src": "/media/photos-v41/32-1200.webp",
+    "srcSet": "/media/photos-v41/32-480.webp 480w, /media/photos-v41/32-800.webp 800w, /media/photos-v41/32-1200.webp 1200w",
+    "width": 1200,
+    "height": 1200
+  },
+  "/equipe/foto-08.jpg.jpeg": {
+    "src": "/media/photos-v41/33-1200.webp",
+    "srcSet": "/media/photos-v41/33-480.webp 480w, /media/photos-v41/33-800.webp 800w, /media/photos-v41/33-1200.webp 1200w",
+    "width": 1200,
+    "height": 1200
+  },
+  "/equipe/matheus.jpeg": {
+    "src": "/media/photos-v41/34-1152.webp",
+    "srcSet": "/media/photos-v41/34-480.webp 480w, /media/photos-v41/34-800.webp 800w, /media/photos-v41/34-1152.webp 1152w",
+    "width": 1152,
+    "height": 2560
+  },
+  "/monitorar/trabalhar-img.jpeg": {
+    "src": "/media/photos-v41/35-1920.webp",
+    "srcSet": "/media/photos-v41/35-480.webp 480w, /media/photos-v41/35-800.webp 800w, /media/photos-v41/35-1200.webp 1200w, /media/photos-v41/35-1600.webp 1600w, /media/photos-v41/35-1920.webp 1920w",
+    "width": 2160,
+    "height": 2160
+  },
+  "/src/assets/environmental-monitoring.jpg": {
+    "src": "/media/photos-v41/36-1600.webp",
+    "srcSet": "/media/photos-v41/36-480.webp 480w, /media/photos-v41/36-800.webp 800w, /media/photos-v41/36-1200.webp 1200w, /media/photos-v41/36-1600.webp 1600w",
+    "width": 1600,
+    "height": 1200
+  },
+  "/src/assets/safety-inspection.jpg": {
+    "src": "/media/photos-v41/37-1600.webp",
+    "srcSet": "/media/photos-v41/37-480.webp 480w, /media/photos-v41/37-800.webp 800w, /media/photos-v41/37-1200.webp 1200w, /media/photos-v41/37-1600.webp 1600w",
+    "width": 1600,
+    "height": 1200
+  }
+}

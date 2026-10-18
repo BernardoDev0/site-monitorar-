@@ -12,7 +12,7 @@ interface CountUpProps {
 export function CountUp({ end, durationMs = 1100, formatter, className = "" }: CountUpProps) {
   const { ref, isVisible } = useIntersectionOnce<HTMLSpanElement>({ threshold: 0.4 });
   const reduced = usePrefersReducedMotion();
-  const [value, setValue] = useState(0);
+  const [value, setValue] = useState(end);
   const frame = useRef<number>();
   const startTs = useRef<number | null>(null);
 

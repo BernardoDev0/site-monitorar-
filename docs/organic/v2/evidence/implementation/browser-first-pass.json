@@ -1,0 +1,122 @@
+[
+  {
+    "path": "/",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/blog",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/contato",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/clientes",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+    "width": 390,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/blog",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/contato",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/clientes",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+    "width": 768,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/blog",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/contato",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/clientes",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  },
+  {
+    "path": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+    "width": 1440,
+    "status": 200,
+    "overflow": false,
+    "h1": 1,
+    "errors": []
+  }
+]

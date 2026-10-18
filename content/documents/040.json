@@ -1,0 +1,57 @@
+{
+  "id": "040",
+  "slug": "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+  "type": "article",
+  "title": "Critérios de vazamento e gatilhos de ação em LDAR",
+  "summary": "Uma definição de vazamento estabelece como uma ocorrência será classificada dentro de determinado programa. O gatilho de ação determina o encaminhamento correspondente. Ambos precisam ter origem identificada e não devem ser escolhidos apenas porque aparecem em outro relatório.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Critério e ação precisam ter origem",
+      "paragraphs": [
+        "Uma definição de vazamento estabelece como uma ocorrência será classificada dentro de determinado programa. O gatilho de ação determina o encaminhamento correspondente. Ambos precisam ter origem identificada e não devem ser escolhidos apenas porque aparecem em outro relatório.",
+        "O guia LDAR da EPA apresenta critérios diferentes no contexto regulatório dos Estados Unidos. Isso demonstra a importância de localizar a regra aplicável; não estabelece um limite universal para instalações brasileiras."
+      ]
+    },
+    {
+      "heading": "Classificação não elimina contexto",
+      "paragraphs": [
+        "Considere uma ocorrência hipotética cuja leitura ultrapassa um critério interno. O registro deve indicar esse critério, sua finalidade e a ação prevista. Se também existir uma obrigação específica de licença ou regulamento, a análise precisa distingui-la do controle interno.",
+        "Uma classificação abaixo de determinado gatilho não comprova ausência de risco ou de qualquer emissão. Ela responde à comparação definida naquele programa. Segurança operacional e outras obrigações continuam exigindo avaliação apropriada."
+      ]
+    },
+    {
+      "heading": "Como evitar decisões inconsistentes",
+      "paragraphs": [
+        "Mantenha uma matriz que relacione classe de componente, condição de serviço, referência, critério e responsável pelo encaminhamento. Controle a versão dessa matriz e documente mudanças para que campanhas anteriores possam ser interpretadas corretamente.",
+        "O plano de acompanhamento deve preservar a ligação entre identificação, ocorrência, providência e reverificação. Prazos e exceções não podem ser inventados a partir de um valor de leitura. Quando uma regra não estiver clara, registre a lacuna e obtenha a definição responsável antes de afirmar conformidade."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "019",
+    "020",
+    "021"
+  ],
+  "created_at": "2026-10-18T07:00:30.164Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.164Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+  "indexability": false,
+  "review_due_at": null
+}

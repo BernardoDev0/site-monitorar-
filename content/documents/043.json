@@ -1,0 +1,57 @@
+{
+  "id": "043",
+  "slug": "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+  "type": "article",
+  "title": "Mudanças na planta e atualização de LDAR",
+  "summary": "Uma modificação de processo pode alterar componentes, fluidos, acessos e condições de operação relevantes para o LDAR. Por isso, o cadastro não deve ser tratado como arquivo definitivo produzido apenas na primeira campanha.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "O cadastro precisa acompanhar a planta",
+      "paragraphs": [
+        "Uma modificação de processo pode alterar componentes, fluidos, acessos e condições de operação relevantes para o LDAR. Por isso, o cadastro não deve ser tratado como arquivo definitivo produzido apenas na primeira campanha.",
+        "A atualização precisa identificar o que mudou e quando passou a valer. Criar uma nova lista sem ligação com a anterior dificulta interpretar histórico de ocorrências, reparos e indicadores."
+      ]
+    },
+    {
+      "heading": "Preservar a identidade ao atualizar",
+      "paragraphs": [
+        "Considere uma válvula hipotética substituída por outro modelo na mesma posição. O sistema deve permitir distinguir localização de identidade física e registrar a substituição. Reutilizar o histórico como se nada tivesse mudado pode atribuir ao equipamento novo ocorrências do anterior.",
+        "Outro caso é a mudança de produto sem substituição da tubulação. Embora a posição permaneça igual, a adequação do método e a classificação dos componentes podem precisar de revisão. Alterações documentais e operacionais devem ser avaliadas em conjunto."
+      ]
+    },
+    {
+      "heading": "Um fluxo de manutenção do cadastro",
+      "paragraphs": [
+        "Registre solicitação de mudança, documento de origem, componentes afetados, conferência e data de entrada em vigor. Mantenha a versão anterior consultável e a justificativa das inclusões, exclusões e alterações.",
+        "Antes da campanha seguinte, reconcilie o cadastro com a situação de campo. Componentes não encontrados devem receber tratamento explícito, sem exclusão silenciosa. Essa prática permite comparar períodos e organizar pendências sem confundir mudança da instalação com melhoria ou piora do programa."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "019",
+    "020",
+    "021"
+  ],
+  "created_at": "2026-10-18T07:00:30.165Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.165Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+  "indexability": false,
+  "review_due_at": null
+}

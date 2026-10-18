@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "articles": {},
+  "topics": {
+    "fugitivas": ["/src/assets/hero-refinery.jpg", "/pessoas/Picture12.jpg", "/servicos/qualidade-ar.jpg"],
+    "ar": ["/servicos/qualidade-ar.jpg", "/paisagem2.png"],
+    "ruido": ["/servicos/avaliacao-ruido.jpg"],
+    "areas": ["/servicos/areas-impactadas.jpg", "/src/assets/paisagem.png"],
+    "licenciamento": ["/servicos/licenciamento.jpg", "/paisagem2.png"],
+    "sms": ["/servicos/gestao-sms.jpg", "/servicos/auditorias.jpg"],
+    "hazop": ["/servicos/hazop.jpg"],
+    "treinamentos": ["/servicos/treinamentos.jpg"],
+    "equipamentos": ["/epis.png", "/pessoas/Picture13.jpg", "/pessoas/Picture14.jpg"]
+  },
+  "note": "Acervo existente temporário. As 90 capas próprias e seis imagens setoriais aguardam acesso ao gerador nativo. Nenhum destes arquivos representa geração nova."
+}

@@ -1,0 +1,95 @@
+{
+  "existing_articles": [
+    {
+      "id": "019",
+      "unchanged": true
+    },
+    {
+      "id": "021",
+      "unchanged": true
+    },
+    {
+      "id": "022",
+      "unchanged": true
+    },
+    {
+      "id": "023",
+      "unchanged": true
+    },
+    {
+      "id": "024",
+      "unchanged": true
+    },
+    {
+      "id": "025",
+      "unchanged": true
+    },
+    {
+      "id": "026",
+      "unchanged": true
+    },
+    {
+      "id": "027",
+      "unchanged": true
+    },
+    {
+      "id": "028",
+      "unchanged": true
+    },
+    {
+      "id": "029",
+      "unchanged": true
+    },
+    {
+      "id": "030",
+      "unchanged": true
+    },
+    {
+      "id": "031",
+      "unchanged": true
+    },
+    {
+      "id": "053",
+      "unchanged": true
+    },
+    {
+      "id": "082",
+      "unchanged": true
+    }
+  ],
+  "service_full_descriptions": [
+    {
+      "index": 1,
+      "exact_in_reference": true
+    },
+    {
+      "index": 2,
+      "exact_in_reference": true
+    },
+    {
+      "index": 3,
+      "exact_in_reference": true
+    },
+    {
+      "index": 4,
+      "exact_in_reference": true
+    },
+    {
+      "index": 5,
+      "exact_in_reference": true
+    },
+    {
+      "index": 6,
+      "exact_in_reference": true
+    },
+    {
+      "index": 7,
+      "exact_in_reference": true
+    },
+    {
+      "index": 8,
+      "exact_in_reference": true
+    }
+  ],
+  "original_assets": true
+}

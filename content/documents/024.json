@@ -1,0 +1,94 @@
+{
+  "id": "024",
+  "slug": "/blog/dados-para-orcamento-de-emissoes-fugitivas",
+  "type": "article",
+  "title": "Dados para orçamento de emissões fugitivas",
+  "summary": "Prepare uma solicitação de orçamento com dados que influenciam cobertura, acesso e entregas. Veja como declarar o que ainda não é conhecido.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Quantidade não explica todo o trabalho",
+      "paragraphs": [
+        "O número de componentes é uma entrada importante, mas não descreve sozinho o esforço de uma campanha. Duas unidades com a mesma contagem podem ter condições diferentes de acesso, distribuição, identificação e funcionamento. Um pedido de preço que omite essas diferenças transfere incertezas para a execução.",
+        "Comece pela finalidade: localizar ocorrências, acompanhar um programa, verificar reparos ou obter dados para outra avaliação. Depois informe as unidades envolvidas, o cadastro disponível e o período pretendido. Se a necessidade inclui uma taxa de emissão, descreva-a explicitamente; a detecção não deve ser contratada como se entregasse automaticamente quantificação."
+      ]
+    },
+    {
+      "heading": "Declare as lacunas em vez de inventar precisão",
+      "paragraphs": [
+        "Se o cadastro estiver desatualizado, informe a data e a origem da estimativa. Uma contagem sem identificação individual pode servir à conversa preliminar, mas não comprova o universo a inspecionar. Peça que a proposta esclareça como diferenças de quantidade serão tratadas.",
+        "As condições internas de segurança, os horários de acesso e a disponibilidade de acompanhamento também precisam ser comunicados. Compartilhe documentos confidenciais apenas por um canal acordado. O guia LDAR da EPA trata identificação e atualização de componentes como elementos do programa; a organização comercial desta página é uma contribuição própria, sem impor exigências brasileiras."
+      ]
+    },
+    {
+      "heading": "Quadro de apoio à decisão",
+      "paragraphs": [
+        "Exemplo hipotético: um comprador informa 800 componentes, mas só 500 têm identificação. A proposta deve discutir a regularização do cadastro e o tratamento dos demais pontos. Não há base para prometer o mesmo prazo de uma campanha com 800 componentes já identificados e acessíveis."
+      ],
+      "table": {
+        "caption": "Ficha própria para preparar o orçamento",
+        "headers": [
+          "Informação",
+          "Como apresentar",
+          "Se não estiver disponível"
+        ],
+        "rows": [
+          [
+            "Objetivo",
+            "Decisão que será apoiada pelo resultado",
+            "Solicitar reunião de definição de escopo"
+          ],
+          [
+            "Universo",
+            "Cadastro, data e critério da contagem",
+            "Identificar quantidade como estimativa"
+          ],
+          [
+            "Operação",
+            "Unidades, substâncias e condição prevista",
+            "Designar responsável pelo esclarecimento"
+          ],
+          [
+            "Acesso",
+            "Horários, permissões e restrições conhecidas",
+            "Prever avaliação prévia de viabilidade"
+          ],
+          [
+            "Entrega",
+            "Relatório, base de dados e retorno esperado",
+            "Combinar formato e critério de aceite"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "013",
+    "002",
+    "023",
+    "025",
+    "026"
+  ],
+  "created_at": "2026-10-17T17:03:40.668Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T17:03:40.668Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/dados-para-orcamento-de-emissoes-fugitivas",
+  "indexability": true,
+  "review_due_at": null
+}

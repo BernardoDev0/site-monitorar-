@@ -1,0 +1,22 @@
+{
+  "typecheck": true,
+  "lint": {
+    "exit_code": 0,
+    "errors": 0,
+    "existing_warnings": 8
+  },
+  "history_bundle_verified": true,
+  "existing_tests": {
+    "passed": 22,
+    "failed": 0
+  },
+  "build": {
+    "isolated_client": true,
+    "isolated_ssr": true
+  },
+  "limitations": [
+    "No full WCAG certification",
+    "Chromium emulation, not physical devices",
+    "No search-engine indexing measurement"
+  ]
+}

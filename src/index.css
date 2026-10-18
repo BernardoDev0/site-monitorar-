@@ -200,7 +200,7 @@
   .skeleton::after { content: ""; position: absolute; inset: 0; background: linear-gradient(90deg, transparent, rgba(255,255,255,.35), transparent); transform: translateX(-100%); animation: skeleton 1.2s infinite; }
   @keyframes skeleton { to { transform: translateX(100%); } }
 
-  /* Reduce motion — desativado por solicitação (sempre animar) */
+
 }
   
   /* Marquee (logos) - Loop infinito contínuo */
@@ -239,3 +239,12 @@
       transform: translateX(100%);
     }
   }
+
+:focus-visible { outline: 3px solid #24304c; outline-offset: 4px; }
+.skip-link { position: fixed; top: -100px; left: 1rem; z-index: 1000; padding: 1rem; background: #f5f7fa; color: #24304c; }
+.skip-link:focus { top: 1rem; }
+@media (prefers-reduced-motion: reduce) {
+ *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+:focus, :target { scroll-margin-top: 9rem; scroll-margin-bottom: 5rem; }

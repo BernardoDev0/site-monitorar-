@@ -1,0 +1,100 @@
+{
+  "id": "053",
+  "slug": "/blog/ruido-extramuros-e-ruido-ocupacional",
+  "type": "article",
+  "title": "Ruído extramuros e ocupacional",
+  "summary": "A avaliação do entorno de uma instalação e a exposição de trabalhadores têm finalidades diferentes. Veja como formular a solicitação adequada a cada contexto.",
+  "topic_cluster": "ruido",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "A pergunta define a avaliação",
+      "paragraphs": [
+        "Ruído extramuros e ocupacional podem envolver a mesma atividade, mas respondem a perguntas distintas. A avaliação ambiental observa a relação da atividade com o entorno; a ocupacional considera a exposição de trabalhadores em suas atividades.",
+        "Isso influencia quais situações devem ser representadas, quais informações operacionais importam e como o resultado poderá ser usado. A diferença vai além da terminologia."
+      ]
+    },
+    {
+      "heading": "Locais e períodos não são intercambiáveis",
+      "paragraphs": [
+        "Uma observação no entorno não representa automaticamente a exposição de uma pessoa durante sua rotina. Uma avaliação associada a uma função também não caracteriza sozinha diferentes receptores externos.",
+        "Confira objetivo, locais, período e condições descritas no relatório. Se não correspondem à pergunta atual, pode ser necessário trabalho adicional, não apenas uma releitura do número."
+      ]
+    },
+    {
+      "heading": "Referências e conclusões",
+      "paragraphs": [
+        "A escolha das referências técnicas e legais considera aplicação e vigência. Valores de contextos diferentes não devem ser comparados como se compartilhassem critérios, duração e significado.",
+        "A conclusão deve permanecer limitada ao cenário estudado. Isso evita apresentar um relatório ambiental como prova de situação ocupacional ou realizar o caminho inverso sem fundamentação."
+      ]
+    },
+    {
+      "heading": "Como formular a solicitação",
+      "paragraphs": [
+        "Explique quem ou o que será avaliado, onde ocorre a situação e qual decisão precisa ser tomada. Registros de operação, localização e horários ajudam a preparar o escopo ambiental. Evite incluir dados pessoais desnecessários em canais públicos.",
+        "Esta comparação é educativa e não reintroduz higiene ocupacional como oferta da Monitorar. A página de serviço de ruído extramuros apresenta o caminho para conversar sobre a necessidade ambiental."
+      ]
+    },
+    {
+      "heading": "Duas solicitações que levam a trabalhos diferentes",
+      "paragraphs": [
+        "No primeiro exemplo hipotético, uma empresa quer avaliar a contribuição de uma operação ao ruído percebido na vizinhança. No segundo, precisa analisar a exposição de trabalhadores ao longo das atividades. O equipamento que produz som pode ser o mesmo, mas a pergunta, a população de interesse e o contexto de interpretação são diferentes.",
+        "Se uma proposta usa apenas a expressão “laudo de ruído”, peça que o objetivo seja escrito de forma explícita. A existência de um relatório ambiental não demonstra que a exposição ocupacional foi avaliada. Da mesma forma, um documento sobre trabalhadores não responde automaticamente às condições do entorno. A comparação é educativa e não amplia a oferta de serviços da Monitorar."
+      ],
+      "table": {
+        "caption": "Comparação conceitual de finalidades, sem valores-limite normativos",
+        "headers": [
+          "Dimensão",
+          "Ruído extramuros",
+          "Exposição ocupacional"
+        ],
+        "rows": [
+          [
+            "Pergunta inicial",
+            "Como a instalação se relaciona com o ambiente externo?",
+            "Como as atividades se relacionam com a exposição do trabalhador?"
+          ],
+          [
+            "Contexto",
+            "Receptores, entorno e operação relevante",
+            "Atividades, grupos e jornada de trabalho"
+          ],
+          [
+            "Documentação",
+            "Objetivo ambiental e condições da avaliação",
+            "Objetivo ocupacional e condições de exposição"
+          ],
+          [
+            "Limite de uso",
+            "Não substitui a avaliação dos trabalhadores",
+            "Não substitui a avaliação ambiental do entorno"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.who.int/europe/publications/i/item/9789289053563"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/ruido-extramuros"
+  ],
+  "related_content_ids": [
+    "006"
+  ],
+  "created_at": "2026-10-16T17:00:00.000Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T16:53:43.112Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/ruido-extramuros-e-ruido-ocupacional",
+  "indexability": true,
+  "review_due_at": null
+}

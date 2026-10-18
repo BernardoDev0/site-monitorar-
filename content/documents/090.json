@@ -1,0 +1,56 @@
+{
+  "id": "090",
+  "slug": "/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+  "type": "article",
+  "title": "Informações para especificar equipamentos",
+  "summary": "Solicitar apenas “um detector de gases” ou “um equipamento de segurança” deixa decisões essenciais para depois da compra. A especificação precisa descrever a necessidade e as condições conhecidas, permitindo que o fornecedor avalie a adequação da solução.",
+  "topic_cluster": "equipamentos",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Uma especificação começa pelo uso pretendido",
+      "paragraphs": [
+        "Solicitar apenas “um detector de gases” ou “um equipamento de segurança” deixa decisões essenciais para depois da compra. A especificação precisa descrever a necessidade e as condições conhecidas, permitindo que o fornecedor avalie a adequação da solução.",
+        "Reúna atividade, ambiente, agentes identificados na avaliação de riscos, frequência de uso, usuários e restrições operacionais. Diferencie informações confirmadas de hipóteses. Uma lacuna importante deve gerar pergunta técnica, não uma escolha presumida."
+      ]
+    },
+    {
+      "heading": "Um formulário de levantamento",
+      "paragraphs": [
+        "Organize campos para objetivo, aplicação, condições ambientais, interfaces, alimentação, acessórios, documentação, capacitação e suporte. Registre também quem forneceu cada informação e qual documento a sustenta. A especificação pode ser revisada conforme novas informações aparecem.",
+        "Num exemplo hipotético, a necessidade de integrar sinais a um sistema existente muda a comparação das propostas. Uma solução adequada para leitura independente pode não oferecer a interface necessária. A compatibilidade precisa ser demonstrada pelo modelo e configuração propostos."
+      ]
+    },
+    {
+      "heading": "Critério de aceite antes da compra",
+      "paragraphs": [
+        "Defina quais documentos e verificações permitirão receber a solução: identificação, instruções, certificados pertinentes e evidências acordadas. Evite critérios baseados apenas em marca ou aparência.",
+        "Solicite que exclusões e limitações sejam explícitas. A resposta comercial deve indicar quais necessidades atende e quais permanecem em análise. A decisão final requer avaliação técnica no contexto dos riscos; este roteiro organiza a informação, sem substituir dimensionamento, seleção de proteção ou procedimentos de uso."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "087",
+    "088",
+    "089"
+  ],
+  "created_at": "2026-10-18T07:00:30.184Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.184Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+  "indexability": false,
+  "review_due_at": null
+}

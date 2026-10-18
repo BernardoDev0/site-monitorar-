@@ -1,8 +1,5 @@
-import { Toaster } from "@/components/ui/toaster";
-import { Toaster as Sonner } from "@/components/ui/sonner";
-import { TooltipProvider } from "@/components/ui/tooltip";
-import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { SiteShell } from '@/components/SiteShell';
+import { Routes, Route, useLocation } from 'react-router-dom';
 import { useEffect } from "react";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
@@ -17,30 +14,13 @@ import Contact from "./pages/Contact";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
-const queryClient = new QueryClient();
-
-// Componente para rolar para o topo em cada mudança de rota
-const ScrollToTop = () => {
-  const location = useLocation();
-
-  useEffect(() => {
-    // Rolar para o topo em cada mudança de localização
-    window.scrollTo(0, 0);
-  }, [location]);
-
-  return null;
-};
 
 const App = () => (
-  <QueryClientProvider client={queryClient}>
-    <TooltipProvider>
-      <Toaster />
-      <Sonner />
-      <BrowserRouter>
-        <ScrollToTop />
-        <div className="min-h-screen flex flex-col">
-          <Header />
-          <main className="flex-1">
+      <>
+        
+        <SiteShell>
+
+          <main tabIndex={-1} id="conteudo" className="flex-1">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/sobre" element={<About />} />
@@ -62,12 +42,8 @@ const App = () => (
               <Route path="*" element={<NotFound />} />
             </Routes>
           </main>
-          <Footer />
-          <WhatsAppButton />
-        </div>
-      </BrowserRouter>
-    </TooltipProvider>
-  </QueryClientProvider>
+        </SiteShell>
+      </>
 );
 
 export default App;

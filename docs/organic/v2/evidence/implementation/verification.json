@@ -1,0 +1,32 @@
+{
+  "checked_at": "2026-10-17T17:08:10.072Z",
+  "checks": [
+    {
+      "command": "npm run typecheck",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run lint",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run build",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run build:preview",
+      "exit_code": 0
+    },
+    {
+      "command": "npm run test",
+      "exit_code": 0
+    }
+  ],
+  "editorial": {
+    "planned": 90,
+    "drafted": 18,
+    "eligible": 0,
+    "manifest": 0
+  },
+  "production_deployed": false
+}

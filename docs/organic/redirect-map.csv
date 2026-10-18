@@ -1,0 +1,18 @@
+existing_path,target_path,action,reason,expected_status
+/,/,preserve,preservação de URL existente; canonical /,200
+/sobre,/sobre,preserve,preservação de URL existente; canonical /sobre,200
+/sobre/historia,/sobre/historia,preserve,preservação de URL existente; canonical /sobre,200
+/sobre/missao,/sobre/missao,preserve,preservação de URL existente; canonical /sobre,200
+/sobre/equipe,/sobre/equipe,preserve,preservação de URL existente; canonical /sobre,200
+/servicos,/servicos,preserve,preservação de URL existente; canonical /servicos,200
+/servicos/meio-ambiente,/servicos/meio-ambiente,preserve,preservação de URL existente; canonical /servicos,200
+/servicos/seguranca,/servicos/seguranca,preserve,preservação de URL existente; canonical /servicos/seguranca,200
+/servicos/hazop,/servicos/hazop,preserve,preservação de URL existente; canonical /servicos/seguranca,200
+/servicos/auditorias,/servicos/auditorias,preserve,preservação de URL existente; canonical /servicos/seguranca,200
+/servicos/treinamentos,/servicos/treinamentos,preserve,preservação de URL existente; canonical /servicos/seguranca,200
+/servicos/drager,/servicos/drager,preserve,preservação de URL existente; canonical /servicos/drager,200
+/clientes,/clientes,preserve,preservação de URL existente; canonical /clientes,200
+/depoimentos,/depoimentos,preserve,preservação de URL existente; canonical /depoimentos,200
+/trabalhe-conosco,/trabalhe-conosco,preserve,preservação de URL existente; canonical /trabalhe-conosco,200
+/contato,/contato,preserve,preservação de URL existente; canonical /contato,200
+/politica-privacidade,/politica-privacidade,preserve,preservação de URL existente; canonical /politica-privacidade,200

@@ -1,0 +1,110 @@
+{
+  "id": "022",
+  "slug": "/blog/o-que-e-ldar",
+  "type": "article",
+  "title": "O que é LDAR",
+  "summary": "Saiba como cadastro, detecção, reparo e reverificação se conectam em um programa LDAR, e por que uma campanha isolada não encerra o acompanhamento.",
+  "topic_cluster": "fugitivas",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Um programa, não apenas uma campanha",
+      "paragraphs": [
+        "LDAR significa Leak Detection and Repair, frequentemente traduzido como detecção e reparo de vazamentos. O conceito reúne identificação, organização de registros, intervenção e acompanhamento. Uma campanha pode integrar esse ciclo sem representar o programa inteiro.",
+        "A utilidade depende da ligação entre observação e ação. Uma ocorrência precisa estar associada a um componente identificável e a uma responsabilidade definida para permitir acompanhamento ao longo do tempo."
+      ]
+    },
+    {
+      "heading": "Cadastro e detecção",
+      "paragraphs": [
+        "O cadastro oferece referência estável para relacionar componentes, observações e mudanças. Sua qualidade influencia a comparação entre campanhas e permite distinguir ponto não avaliado de ponto sem indicação nas condições observadas.",
+        "A detecção segue o escopo e a técnica aplicável. Os registros devem mostrar cobertura e limitações. Ausência de indicação em uma observação não deve ser convertida em afirmação absoluta sobre todas as condições possíveis."
+      ]
+    },
+    {
+      "heading": "Reparo e acompanhamento",
+      "paragraphs": [
+        "A intervenção envolve interfaces com operação e manutenção. É necessário definir quem recebe a informação, quem avalia a ação cabível e como registra o resultado. O trabalho da consultoria não significa autorização para atuar em qualquer equipamento.",
+        "O acompanhamento posterior verifica a condição segundo o programa. Prazos, critérios e exceções dependem do contexto contratual e regulatório; este artigo não atribui uma regra única a todas as instalações brasileiras."
+      ]
+    },
+    {
+      "heading": "O que esclarecer na contratação",
+      "paragraphs": [
+        "Diferencie elaboração de cadastro, campanha de detecção, suporte ao tratamento e avaliação posterior. Registre quais atividades serão realizadas por cada parte e quais arquivos permitirão acompanhar a evolução.",
+        "Documentação pública da EPA ajuda a compreender o tema, mas não prova obrigatoriedade local ou disponibilidade de uma técnica pela Monitorar. A proposta do projeto deve explicitar essas condições."
+      ]
+    },
+    {
+      "heading": "Do registro ao encerramento: estados de acompanhamento",
+      "paragraphs": [
+        "LDAR combina detecção e reparo. Uma planilha de medições pode participar do programa, mas não substitui a ligação entre componente, ocorrência, responsável e retorno. O guia da EPA organiza o tema em identificação, definição de vazamento, monitoramento, reparo e manutenção de registros. As exigências citadas no guia pertencem ao contexto regulatório americano.",
+        "O fluxo ilustrativo abaixo ajuda a detectar um problema de gestão frequente: considerar uma ordem de manutenção encerrada como prova de que o componente foi reverificado. São registros diferentes. Critérios de classificação, intervalos e prazos devem ser definidos conforme o contexto aplicável; esta página não fixa um calendário universal."
+      ],
+      "table": {
+        "caption": "Fluxo ilustrativo de acompanhamento, sem impor prazos normativos",
+        "headers": [
+          "Estado ilustrativo",
+          "Registro que sustenta a mudança",
+          "Pergunta de controle"
+        ],
+        "rows": [
+          [
+            "Cadastrado",
+            "Identificação e enquadramento do componente",
+            "O ponto pode ser encontrado novamente?"
+          ],
+          [
+            "Avaliado",
+            "Resultado, procedimento e condições",
+            "A classificação usa o critério correto?"
+          ],
+          [
+            "Encaminhado",
+            "Comunicação e responsável designado",
+            "Há rastreabilidade do recebimento?"
+          ],
+          [
+            "Intervenção registrada",
+            "Descrição e data da ação",
+            "O reparo está documentado, não apenas previsto?"
+          ],
+          [
+            "Reverificado",
+            "Nova avaliação ligada à ocorrência",
+            "O resultado sustenta o encerramento?"
+          ]
+        ]
+      }
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+  ],
+  "claim_status": "pending",
+  "service_links": [
+    "/servicos/emissoes-fugitivas"
+  ],
+  "related_content_ids": [
+    "002",
+    "019",
+    "021",
+    "023",
+    "013"
+  ],
+  "created_at": "2026-10-16T17:00:00.000Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-17T16:53:43.111Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/o-que-e-ldar",
+  "indexability": true,
+  "review_due_at": null
+}

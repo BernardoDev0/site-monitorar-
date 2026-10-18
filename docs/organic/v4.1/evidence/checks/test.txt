@@ -1,0 +1,176 @@
+
+> vite_react_shadcn_ts@0.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: legacy HTML, canonical, language and sitemap agree
+ok 1 - legacy HTML, canonical, language and sitemap agree
+  ---
+  duration_ms: 13.8287
+  type: 'test'
+  ...
+# Subtest: preview corpus is noindex, internally linked and reachable from its index
+ok 2 - preview corpus is noindex, internally linked and reachable from its index
+  ---
+  duration_ms: 6935.6049
+  type: 'test'
+  ...
+# Subtest: schema graph uses visible breadcrumb and only approved article or service entities
+ok 3 - schema graph uses visible breadcrumb and only approved article or service entities
+  ---
+  duration_ms: 0.9763
+  type: 'test'
+  ...
+# Subtest: unapproved corpus and credential are excluded from public artifacts
+ok 4 - unapproved corpus and credential are excluded from public artifacts
+  ---
+  duration_ms: 19.9941
+  type: 'test'
+  ...
+# Subtest: HTTP contract: known 200, normalized 308, missing and draft 404
+ok 5 - HTTP contract: known 200, normalized 308, missing and draft 404
+  ---
+  duration_ms: 58.3339
+  type: 'test'
+  ...
+# Subtest: every public HTML internal link and image resolves
+ok 6 - every public HTML internal link and image resolves
+  ---
+  duration_ms: 61.3815
+  type: 'test'
+  ...
+# Subtest: real drafts parse but are blocked for publication
+ok 7 - real drafts parse but are blocked for publication
+  ---
+  duration_ms: 58.2621
+  type: 'test'
+  ...
+# Subtest: 108 distinct proposals with 12 services, 6 hubs and 90 articles
+ok 8 - 108 distinct proposals with 12 services, 6 hubs and 90 articles
+  ---
+  duration_ms: 1.5846
+  type: 'test'
+  ...
+# Subtest: approved version succeeds and a material edit invalidates approval
+ok 9 - approved version succeeds and a material edit invalidates approval
+  ---
+  duration_ms: 1.4049
+  type: 'test'
+  ...
+# Subtest: missing source, expired review, future schedule and unauthorized reviewer fail closed
+ok 10 - missing source, expired review, future schedule and unauthorized reviewer fail closed
+  ---
+  duration_ms: 0.7457
+  type: 'test'
+  ...
+# Subtest: simulation is idempotent, retains last version and supports rollback
+ok 11 - simulation is idempotent, retains last version and supports rollback
+  ---
+  duration_ms: 1.2818
+  type: 'test'
+  ...
+# Subtest: pause, duplicate path and draft abort simulation
+ok 12 - pause, duplicate path and draft abort simulation
+  ---
+  duration_ms: 0.3865
+  type: 'test'
+  ...
+# Subtest: changed source and nameless person invalidate publication
+ok 13 - changed source and nameless person invalidate publication
+  ---
+  duration_ms: 0.4403
+  type: 'test'
+  ...
+# Subtest: release refuses deletions and pause; retains baseline
+ok 14 - release refuses deletions and pause; retains baseline
+  ---
+  duration_ms: 0.7049
+  type: 'test'
+  ...
+# Subtest: slug contract excludes trailing slash and sources require HTTPS
+ok 15 - slug contract excludes trailing slash and sources require HTTPS
+  ---
+  duration_ms: 1.097
+  type: 'test'
+  ...
+# Subtest: same content cannot be published under a second slug
+ok 16 - same content cannot be published under a second slug
+  ---
+  duration_ms: 1.4463
+  type: 'test'
+  ...
+# Subtest: reusing a previous approved version after a newer version restores it
+ok 17 - reusing a previous approved version after a newer version restores it
+  ---
+  duration_ms: 1.4232
+  type: 'test'
+  ...
+# Subtest: pagination: 0, 1, 12, 13, 25 articles; no service mixed into blog
+ok 18 - pagination: 0, 1, 12, 13, 25 articles; no service mixed into blog
+  ---
+  duration_ms: 16.8409
+  type: 'test'
+  ...
+# Subtest: manifest rejects mismatched keys, duplicate IDs, duplicate bodies and reserved routes
+ok 19 - manifest rejects mismatched keys, duplicate IDs, duplicate bodies and reserved routes
+  ---
+  duration_ms: 45.7655
+  type: 'test'
+  ...
+# Subtest: unauthorized names never appear in public projection
+ok 20 - unauthorized names never appear in public projection
+  ---
+  duration_ms: 24.827
+  type: 'test'
+  ...
+# Subtest: pause fails closed on invalid JSON or missing boolean
+ok 21 - pause fails closed on invalid JSON or missing boolean
+  ---
+  duration_ms: 5.7451
+  type: 'test'
+  ...
+# Subtest: empty public blog and search have honest noindex states; normalized index and page 1 redirect
+ok 22 - empty public blog and search have honest noindex states; normalized index and page 1 redirect
+  ---
+  duration_ms: 130.4831
+  type: 'test'
+  ...
+# Subtest: video streaming serves correct bytes, MIME, HEAD, suffix and invalid range
+ok 23 - video streaming serves correct bytes, MIME, HEAD, suffix and invalid range
+  ---
+  duration_ms: 105.326
+  type: 'test'
+  ...
+# Subtest: 90 distinct drafted articles with substantive bodies stay outside publication manifest
+ok 24 - 90 distinct drafted articles with substantive bodies stay outside publication manifest
+  ---
+  duration_ms: 39.6937
+  type: 'test'
+  ...
+# Subtest: visual enrichment preserves publication boundary and draft exclusion
+ok 25 - visual enrichment preserves publication boundary and draft exclusion
+  ---
+  duration_ms: 57.0961
+  type: 'test'
+  ...
+# Subtest: all eight blog pages preserve exact article membership with valid cover assets
+ok 26 - all eight blog pages preserve exact article membership with valid cover assets
+  ---
+  duration_ms: 34.961
+  type: 'test'
+  ...
+# Subtest: existing collection is not mislabeled as generated imagery
+ok 27 - existing collection is not mislabeled as generated imagery
+  ---
+  duration_ms: 28.3949
+  type: 'test'
+  ...
+1..27
+# tests 27
+# suites 0
+# pass 27
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 7216.9681

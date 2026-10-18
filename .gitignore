@@ -23,3 +23,18 @@ dist-ssr
 *.sln
 *.sw?
 .env
+.organic-server/
+.organic/
+dist-preview/
+.organic-stage-*/
+dist.previous/
+dist-preview.previous/
+docs/organic/v3/preview/.server/
+
+# Local visual evidence; reports remain versioned, runtime assets stay in public/.
+docs/organic/**/*.png
+docs/organic/**/*.jpg
+docs/organic/**/*.jpeg
+docs/organic/**/*.webp
+docs/organic/**/*.webm
+docs/organic/**/*.mp4

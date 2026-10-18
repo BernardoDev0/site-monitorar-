@@ -1,0 +1,110 @@
+
+> vite_react_shadcn_ts@0.0.0 test
+> node --test tests/*.test.mjs
+
+TAP version 13
+# Subtest: legacy HTML, canonical, language and sitemap agree
+ok 1 - legacy HTML, canonical, language and sitemap agree
+  ---
+  duration_ms: 12.7922
+  type: 'test'
+  ...
+# Subtest: preview corpus is noindex, internally linked and reachable from its index
+ok 2 - preview corpus is noindex, internally linked and reachable from its index
+  ---
+  duration_ms: 667.4123
+  type: 'test'
+  ...
+# Subtest: schema graph uses visible breadcrumb and only approved article or service entities
+ok 3 - schema graph uses visible breadcrumb and only approved article or service entities
+  ---
+  duration_ms: 0.9586
+  type: 'test'
+  ...
+# Subtest: unapproved corpus and credential are excluded from public artifacts
+ok 4 - unapproved corpus and credential are excluded from public artifacts
+  ---
+  duration_ms: 11.9146
+  type: 'test'
+  ...
+# Subtest: HTTP contract: known 200, normalized 308, missing and draft 404
+ok 5 - HTTP contract: known 200, normalized 308, missing and draft 404
+  ---
+  duration_ms: 56.9327
+  type: 'test'
+  ...
+# Subtest: real drafts parse but are blocked for publication
+ok 6 - real drafts parse but are blocked for publication
+  ---
+  duration_ms: 15.3664
+  type: 'test'
+  ...
+# Subtest: 90 distinct proposals with 12 services, 6 hubs and 72 articles
+ok 7 - 90 distinct proposals with 12 services, 6 hubs and 72 articles
+  ---
+  duration_ms: 1.6108
+  type: 'test'
+  ...
+# Subtest: approved version succeeds and a material edit invalidates approval
+ok 8 - approved version succeeds and a material edit invalidates approval
+  ---
+  duration_ms: 1.3614
+  type: 'test'
+  ...
+# Subtest: missing source, expired review, future schedule and unauthorized reviewer fail closed
+ok 9 - missing source, expired review, future schedule and unauthorized reviewer fail closed
+  ---
+  duration_ms: 0.9386
+  type: 'test'
+  ...
+# Subtest: simulation is idempotent, retains last version and supports rollback
+ok 10 - simulation is idempotent, retains last version and supports rollback
+  ---
+  duration_ms: 1.1046
+  type: 'test'
+  ...
+# Subtest: pause, duplicate path and draft abort simulation
+ok 11 - pause, duplicate path and draft abort simulation
+  ---
+  duration_ms: 0.5277
+  type: 'test'
+  ...
+# Subtest: changed source and nameless person invalidate publication
+ok 12 - changed source and nameless person invalidate publication
+  ---
+  duration_ms: 0.4702
+  type: 'test'
+  ...
+# Subtest: release refuses deletions and pause; retains baseline
+ok 13 - release refuses deletions and pause; retains baseline
+  ---
+  duration_ms: 0.6093
+  type: 'test'
+  ...
+# Subtest: slug contract excludes trailing slash and sources require HTTPS
+ok 14 - slug contract excludes trailing slash and sources require HTTPS
+  ---
+  duration_ms: 0.9756
+  type: 'test'
+  ...
+# Subtest: same content cannot be published under a second slug
+ok 15 - same content cannot be published under a second slug
+  ---
+  duration_ms: 1.2744
+  type: 'test'
+  ...
+# Subtest: reusing a previous approved version after a newer version restores it
+ok 16 - reusing a previous approved version after a newer version restores it
+  ---
+  duration_ms: 1.408
+  type: 'test'
+  ...
+1..16
+# tests 16
+# suites 0
+# pass 16
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 877.8961

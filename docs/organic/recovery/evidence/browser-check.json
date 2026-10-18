@@ -1,0 +1,99 @@
+{
+  "viewports": [
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "reference",
+      "width": 320,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "reference",
+      "width": 390,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "reference",
+      "width": 768,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "reference",
+      "width": 1440,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "polished",
+      "width": 320,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "polished",
+      "width": 390,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "polished",
+      "width": 768,
+      "status": 200,
+      "video_requested": false
+    },
+    {
+      "overflow": false,
+      "h1": 1,
+      "images": [],
+      "font": "\"DM Sans\", sans-serif",
+      "sections": 9,
+      "variant": "polished",
+      "width": 1440,
+      "status": 200,
+      "video_requested": false
+    }
+  ],
+  "content_equality": {
+    "320": true,
+    "390": true,
+    "768": true,
+    "1440": true
+  },
+  "page_errors": []
+}

@@ -1,0 +1,56 @@
+{
+  "id": "075",
+  "slug": "/blog/requisitos-legais-matriz-e-evidencias-sms",
+  "type": "article",
+  "title": "Matriz de requisitos e evidências SMS",
+  "summary": "A matriz de requisitos conecta uma obrigação à atividade que a torna aplicável, à pessoa responsável e à evidência de atendimento. Copiar títulos de leis produz um inventário de referências, mas não mostra o que a organização precisa fazer.",
+  "topic_cluster": "sms",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Uma lista de normas não é uma matriz operacional",
+      "paragraphs": [
+        "A matriz de requisitos conecta uma obrigação à atividade que a torna aplicável, à pessoa responsável e à evidência de atendimento. Copiar títulos de leis produz um inventário de referências, mas não mostra o que a organização precisa fazer.",
+        "O primeiro filtro é a aplicabilidade. Considere atividade, localização, instalações, vínculos de trabalho e condições específicas. Registre por que um requisito foi incluído ou excluído. Uma exclusão sem justificativa dificulta a revisão quando a operação muda."
+      ]
+    },
+    {
+      "heading": "Da referência à evidência",
+      "paragraphs": [
+        "Uma linha útil contém referência e versão, trecho pertinente, justificativa de aplicabilidade, ação necessária, responsável, periodicidade quando prevista e localização da evidência. O campo de situação deve distinguir atendimento demonstrado, lacuna identificada e análise ainda pendente.",
+        "Num exemplo hipotético de capacitação, anexar um certificado não encerra toda a análise. É necessário verificar quais pessoas e atividades estão abrangidas, qual requisito foi utilizado e se o registro corresponde ao treinamento exigido. O documento precisa responder à obrigação específica."
+      ]
+    },
+    {
+      "heading": "Revisão orientada por mudanças",
+      "paragraphs": [
+        "Alterações legais, novos equipamentos, atividades contratadas ou mudanças de processo podem exigir revisão. A data da última consulta deve acompanhar a fonte, sem ser confundida com a data de cumprimento da obrigação.",
+        "Evite marcar toda a matriz como conforme com base em uma revisão documental única. Algumas evidências exigem observação em campo ou avaliação especializada. Quando houver dúvida jurídica ou técnica, registre a pergunta e o encaminhamento, mantendo a situação pendente até existir base suficiente para uma conclusão."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "074",
+    "076",
+    "077"
+  ],
+  "created_at": "2026-10-18T07:00:30.178Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.178Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/requisitos-legais-matriz-e-evidencias-sms",
+  "indexability": false,
+  "review_due_at": null
+}

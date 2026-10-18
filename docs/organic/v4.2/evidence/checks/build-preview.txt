@@ -1,0 +1,30 @@
+
+> vite_react_shadcn_ts@0.0.0 build:preview
+> node scripts/build.mjs --preview
+
+vite v5.4.19 building for production...
+transforming...
+✓ 1688 modules transformed.
+rendering chunks...
+computing gzip size...
+.organic-stage-preview/index.html                          1.23 kB │ gzip:  0.57 kB
+.organic-stage-preview/assets/index-DEtgtbkL.css         123.49 kB │ gzip: 22.57 kB
+.organic-stage-preview/assets/EditorialApp-D57fX9cq.js    10.18 kB │ gzip:  3.78 kB
+.organic-stage-preview/assets/ScrollTrigger-88WqrurJ.js   43.98 kB │ gzip: 18.26 kB
+.organic-stage-preview/assets/ArticleCard-IBkN0gi0.js     86.77 kB │ gzip: 33.31 kB
+.organic-stage-preview/assets/App-B4dtNYH6.js            129.00 kB │ gzip: 38.65 kB
+.organic-stage-preview/assets/index-DRjFqoLl.js          160.48 kB │ gzip: 52.48 kB
+✓ built in 3.43s
+vite v5.4.19 building SSR bundle for production...
+transforming...
+✓ 41 modules transformed.
+rendering chunks...
+.organic-server/entry-server.js  123.51 kB
+✓ built in 573ms
+{"output":"dist-preview","legacy":17,"editorial":94,"preview":true,"urls":0}
+Browserslist: browsers data (caniuse-lite) is 16 months old. Please run:
+  npx update-browserslist-db@latest
+  Why you should do it regularly: https://github.com/browserslist/update-db#readme
+[plugin:vite:reporter] [plugin vite:reporter] 
+(!) D:/site-monitorar--main/node_modules/gsap/index.js is dynamically imported by D:/site-monitorar--main/src/hooks/use-page-motion.ts but also statically imported by D:/site-monitorar--main/src/components/Header.tsx, D:/site-monitorar--main/src/components/home/LogosCarousel.tsx, dynamic import will not move module into another chunk.
+

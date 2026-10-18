@@ -1,0 +1,56 @@
+{
+  "id": "050",
+  "slug": "/blog/fumaca-preta-e-opacidade-diferencas",
+  "type": "article",
+  "title": "Fumaça Preta e opacidade",
+  "summary": "Fumaça visível e resultado de opacidade são informações relacionadas à emissão, mas não devem ser tratados como medidas equivalentes. A avaliação instrumental depende de procedimento e condições definidos, não apenas da impressão visual de quem observa.",
+  "topic_cluster": "ar",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Aspecto visual e medição de opacidade",
+      "paragraphs": [
+        "Fumaça visível e resultado de opacidade são informações relacionadas à emissão, mas não devem ser tratados como medidas equivalentes. A avaliação instrumental depende de procedimento e condições definidos, não apenas da impressão visual de quem observa.",
+        "O contexto do veículo, do motor e do ensaio precisa acompanhar o resultado. Uma fotografia isolada não reproduz o procedimento nem demonstra, por si só, atendimento a um critério aplicável."
+      ]
+    },
+    {
+      "heading": "Um registro útil para a frota",
+      "paragraphs": [
+        "Imagine uma frota hipotética com identificação interna diferente da placa registrada no boletim. Antes de interpretar o resultado ou programar acompanhamento, a empresa precisa reconciliar a identidade do veículo. O documento deve permitir ligar avaliação, condição, eventual intervenção e nova verificação.",
+        "Não classifique automaticamente todos os poluentes de um motor a partir de um resultado de opacidade. O parâmetro tem uma finalidade específica; outras substâncias e objetivos podem exigir avaliações próprias."
+      ]
+    },
+    {
+      "heading": "Referência e habilitação",
+      "paragraphs": [
+        "No Rio de Janeiro, o portal do Inea apresenta o Procon Fumaça Preta e orientações sobre medições, registros e habilitação dos executantes. Consulte a versão vigente e a situação do prestador na fonte oficial antes de contratar.",
+        "Este texto não fornece limites ou sequência de ensaio. O objetivo é ajudar a conferir o que o documento representa e quais vínculos precisam ser preservados. A manutenção e a execução de avaliações devem seguir os requisitos técnicos e de segurança pertinentes."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.inea.rj.gov.br/procon-fumaca-preta/"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "045",
+    "046",
+    "047"
+  ],
+  "created_at": "2026-10-18T07:00:30.168Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.168Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/fumaca-preta-e-opacidade-diferencas",
+  "indexability": false,
+  "review_due_at": null
+}

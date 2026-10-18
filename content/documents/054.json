@@ -1,0 +1,56 @@
+{
+  "id": "054",
+  "slug": "/blog/como-preparar-avaliacao-de-ruido-extramuros",
+  "type": "article",
+  "title": "Preparação para avaliação de ruído",
+  "summary": "A avaliação de ruído ambiental começa pela pergunta: qual situação, fonte ou período precisa ser examinado? A descrição da operação e do entorno ajuda a planejar uma avaliação que represente essa situação.",
+  "topic_cluster": "ruido",
+  "primary_intent": "informacional",
+  "body": [
+    {
+      "heading": "Preparar o contexto antes da medição",
+      "paragraphs": [
+        "A avaliação de ruído ambiental começa pela pergunta: qual situação, fonte ou período precisa ser examinado? A descrição da operação e do entorno ajuda a planejar uma avaliação que represente essa situação.",
+        "Reúna horários de funcionamento, atividades relevantes, localização de possíveis fontes e informações sobre os locais de interesse. Relatos de incômodo são úteis para orientar a investigação, mas não substituem a avaliação técnica nem identificam automaticamente a origem do som."
+      ]
+    },
+    {
+      "heading": "Um diário que ajuda sem antecipar conclusões",
+      "paragraphs": [
+        "Num caso hipotético, o relato informa que o ruído ocorre algumas noites, durante poucos minutos. Um diário com data, horário aproximado, duração percebida e condição observada ajuda a reconhecer padrões. Não é necessário inventar um nível sonoro ou atribuir a ocorrência a um equipamento sem evidência.",
+        "Também convém registrar alterações de operação no período: manutenção, funcionamento eventual ou atividade externa. Essas informações permitem discutir representatividade e necessidade de acompanhamento complementar."
+      ]
+    },
+    {
+      "heading": "Definir acessos e documentação",
+      "paragraphs": [
+        "Confirme como a equipe poderá acessar os pontos e quais autorizações serão necessárias. Não improvise posições inseguras ou restrições que alterem o método sem análise responsável.",
+        "O relatório deve explicar as condições efetivamente avaliadas e as referências adotadas, incluindo a edição pertinente de normas e a legislação aplicável. Diretrizes de saúde da WHO fornecem contexto sobre ruído ambiental, mas não substituem o procedimento brasileiro de avaliação nem permitem antecipar uma conclusão de conformidade."
+      ]
+    }
+  ],
+  "author_id": null,
+  "reviewer_id": null,
+  "evidence_ids": [],
+  "source_urls": [
+    "https://www.who.int/europe/publications/i/item/9789289053563"
+  ],
+  "claim_status": "pending",
+  "service_links": [],
+  "related_content_ids": [
+    "053",
+    "055",
+    "056"
+  ],
+  "created_at": "2026-10-18T07:00:30.170Z",
+  "first_published_at": null,
+  "reviewed_at": null,
+  "substantive_updated_at": "2026-10-18T07:00:30.170Z",
+  "status": "technical_review",
+  "approved_by": null,
+  "approved_version": null,
+  "scheduled_at": null,
+  "canonical_url": "https://www.monitorarconsultoria.com.br/blog/como-preparar-avaliacao-de-ruido-extramuros",
+  "indexability": false,
+  "review_due_at": null
+}
