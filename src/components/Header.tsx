@@ -1,7 +1,7 @@
 import { gsap } from 'gsap';
 import { useLocation } from 'react-router-dom';
 import { useContext, useEffect, useRef } from 'react';
-import { Menu, Search, ChevronDown, ArrowRight } from 'lucide-react';
+import { Menu, Search, ChevronDown, ArrowRight, Instagram, Linkedin } from 'lucide-react';
 import { ContentContext } from '@/editorial/ContentContext';
 import { topicLabels, topicPaths } from '@/editorial/topics';
 
@@ -99,7 +99,13 @@ export function Header() {
           </details>
         </div> : <a key={item.href} href={item.href} aria-current={pathname === item.href ? 'page' : undefined}>{item.name}</a>)}
       </nav>
-      <a href="/busca" className="erm-search" aria-label="Buscar no site"><Search size={21}/></a>
+      <div className="erm-header-actions">
+        <nav className="erm-header-social" aria-label="Redes sociais da Monitorar">
+          <a href="https://instagram.com/monitorarconsultoria_" target="_blank" rel="noopener noreferrer" aria-label="Instagram da Monitorar (abre em nova aba)" title="Instagram"><Instagram size={18} aria-hidden="true"/></a>
+          <a href="https://linkedin.com/company/monitorar-consultoria" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn da Monitorar (abre em nova aba)" title="LinkedIn"><Linkedin size={18} aria-hidden="true"/></a>
+        </nav>
+        <a href="/busca" className="erm-search" aria-label="Buscar no site"><Search size={21} aria-hidden="true"/></a>
+      </div>
       <details className="erm-mobile-nav">
         <summary aria-label="Abrir menu de navegação"><Menu size={25}/><span>Menu</span></summary>
         <nav aria-label="Navegação móvel">{items.map(item => <div className="mobile-nav-item" key={item.href}>

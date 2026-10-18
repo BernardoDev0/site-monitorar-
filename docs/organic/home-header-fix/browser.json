@@ -1,0 +1,177 @@
+[
+  {
+    "width": 320,
+    "overflow": false,
+    "videoTime": 1.547434,
+    "videoReady": 4,
+    "src": "http://127.0.0.1:4173/media/refinaria-pingpong-mobile.mp4",
+    "header": [
+      {
+        "label": "Monitorar Consultoria \u2014 in\u00edcio",
+        "left": 25,
+        "right": 111
+      },
+      {
+        "label": "Instagram da Monitorar (abre em nova aba)",
+        "left": 115,
+        "right": 159
+      },
+      {
+        "label": "LinkedIn da Monitorar (abre em nova aba)",
+        "left": 159,
+        "right": 203
+      },
+      {
+        "label": "Buscar no site",
+        "left": 203,
+        "right": 247
+      },
+      {
+        "label": "Abrir menu de navega\u00e7\u00e3o",
+        "left": 251,
+        "right": 295
+      }
+    ],
+    "ctaSVG": true,
+    "heroSocial": false
+  },
+  {
+    "width": 390,
+    "overflow": false,
+    "videoTime": 18.034127,
+    "videoReady": 4,
+    "src": "http://127.0.0.1:4173/media/refinaria-pingpong-mobile.mp4",
+    "header": [
+      {
+        "label": "Monitorar Consultoria \u2014 in\u00edcio",
+        "left": 25,
+        "right": 143
+      },
+      {
+        "label": "Instagram da Monitorar (abre em nova aba)",
+        "left": 185,
+        "right": 229
+      },
+      {
+        "label": "LinkedIn da Monitorar (abre em nova aba)",
+        "left": 229,
+        "right": 273
+      },
+      {
+        "label": "Buscar no site",
+        "left": 273,
+        "right": 317
+      },
+      {
+        "label": "Abrir menu de navega\u00e7\u00e3o",
+        "left": 321,
+        "right": 365
+      }
+    ],
+    "ctaSVG": true,
+    "heroSocial": false
+  },
+  {
+    "width": 768,
+    "overflow": false,
+    "videoTime": 18.848127,
+    "videoReady": 4,
+    "src": "http://127.0.0.1:4173/media/refinaria-pingpong-desktop.mp4",
+    "header": [
+      {
+        "label": "Monitorar Consultoria \u2014 in\u00edcio",
+        "left": 45,
+        "right": 193
+      },
+      {
+        "label": "Instagram da Monitorar (abre em nova aba)",
+        "left": 510.203125,
+        "right": 554.203125
+      },
+      {
+        "label": "LinkedIn da Monitorar (abre em nova aba)",
+        "left": 554.203125,
+        "right": 598.203125
+      },
+      {
+        "label": "Buscar no site",
+        "left": 598.203125,
+        "right": 642.203125
+      },
+      {
+        "label": "Abrir menu de navega\u00e7\u00e3o",
+        "left": 654.203125,
+        "right": 723
+      }
+    ],
+    "ctaSVG": true,
+    "heroSocial": false
+  },
+  {
+    "width": 1280,
+    "overflow": false,
+    "videoTime": 18.830592,
+    "videoReady": 4,
+    "src": "http://127.0.0.1:4173/media/refinaria-pingpong-desktop.mp4",
+    "header": [
+      {
+        "label": "Monitorar Consultoria \u2014 in\u00edcio",
+        "left": 45,
+        "right": 193
+      },
+      {
+        "label": "Instagram da Monitorar (abre em nova aba)",
+        "left": 1022.203125,
+        "right": 1066.203125
+      },
+      {
+        "label": "LinkedIn da Monitorar (abre em nova aba)",
+        "left": 1066.203125,
+        "right": 1110.203125
+      },
+      {
+        "label": "Buscar no site",
+        "left": 1110.203125,
+        "right": 1154.203125
+      },
+      {
+        "label": "Abrir menu de navega\u00e7\u00e3o",
+        "left": 1166.203125,
+        "right": 1235
+      }
+    ],
+    "ctaSVG": true,
+    "heroSocial": false
+  },
+  {
+    "width": 1440,
+    "overflow": false,
+    "videoTime": 18.836019,
+    "videoReady": 4,
+    "src": "http://127.0.0.1:4173/media/refinaria-pingpong-desktop.mp4",
+    "header": [
+      {
+        "label": "Monitorar Consultoria \u2014 in\u00edcio",
+        "left": 45,
+        "right": 193
+      },
+      {
+        "label": "Instagram da Monitorar (abre em nova aba)",
+        "left": 1262.984375,
+        "right": 1306.984375
+      },
+      {
+        "label": "LinkedIn da Monitorar (abre em nova aba)",
+        "left": 1306.984375,
+        "right": 1350.984375
+      },
+      {
+        "label": "Buscar no site",
+        "left": 1350.984375,
+        "right": 1394.984375
+      }
+    ],
+    "ctaSVG": true,
+    "heroSocial": false
+  }
+]
