@@ -1,0 +1,46 @@
+{
+  "origin": "https://www.monitorarconsultoria.com.br",
+  "results": [
+    {
+      "width": 1440,
+      "preference": "reduce",
+      "video": {
+        "time": 0.536128,
+        "ready": 4,
+        "muted": true,
+        "autoplay": true
+      },
+      "revealMidOpacity": 0.8044,
+      "carouselBefore": "matrix(1, 0, 0, 1, -20.592, 0)",
+      "carouselAfter": "matrix(1, 0, 0, 1, -76.3651, 0)"
+    },
+    {
+      "width": 1440,
+      "preference": "no-preference",
+      "video": {
+        "time": 0.530177,
+        "ready": 4,
+        "muted": true,
+        "autoplay": true
+      },
+      "revealMidOpacity": 0.8197,
+      "carouselBefore": "matrix(1, 0, 0, 1, -20.0491, 0)",
+      "carouselAfter": "matrix(1, 0, 0, 1, -76.908, 0)"
+    },
+    {
+      "width": 390,
+      "preference": "reduce",
+      "video": {
+        "time": 0.527545,
+        "ready": 4,
+        "muted": true,
+        "autoplay": true
+      },
+      "revealMidOpacity": 0.8178,
+      "carouselBefore": "matrix(1, 0, 0, 1, -14.6432, 0)",
+      "carouselAfter": "matrix(1, 0, 0, 1, -55.9416, 0)"
+    }
+  ],
+  "noJavaScriptContentVisible": true,
+  "googleVerificationInHTML": true
+}
