@@ -47,7 +47,15 @@ python scripts/audit-indexability.py --base https://www.monitorarconsultoria.com
 python scripts/check-seo-nojs.py --base https://www.monitorarconsultoria.com.br --output docs/organic/technical-seo-audit/nojs-production.json
 ```
 
-## Indexação e continuidade
+## Verificação da publicação
+
+Implementação publicada pelo commit `463586df02ca9c5b2de7fa9ff858b78e9fffeb03`, enviado para `origin/main`. O status de implantação consultado no GitHub retornou `success`.
+
+- `production.json`: auditoria HTTP do domínio canônico concluída com 121 URLs, 90 artigos e zero falhas, incluindo comparação dos agentes de usuário, metadados, corpo editorial, sitemap e redirecionamentos.
+- `nojs-production.json`: cinco páginas aprovadas no Chrome com JavaScript desativado, incluindo Home, listagem, paginação e os artigos de emissões fugitivas e LDAR.
+- Os cinco critérios solicitados permanecem PASS em produção. Não há pendência de implantação das correções desta entrega.
+
+## Acompanhamento do índice Google
 
 Sitemap processado com 121 URLs foi confirmado anteriormente pelo proprietário. O número de artigos efetivamente indexados e a causa de eventual exclusão ainda não foram aferidos com dados de inspeção do Search Console. Não afirmar que só a Home está indexada, que todos os artigos já foram indexados, nem que estas mudanças garantem primeira página.
 
