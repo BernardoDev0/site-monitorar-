@@ -6,7 +6,9 @@ const docs=await loadCorpus(),registry=await loadRegistry();
 
 async function state(){try{return JSON.parse(await readFile('.organic/simulation.json','utf8'));}catch(e){if(e.code!=='ENOENT')throw e;return JSON.parse(await readFile('content/published.json','utf8'));}}
 if(command==='status'){
- console.log(JSON.stringify({proposals:90,drafted:docs.length,technicalReview:docs.filter(d=>d.status==='technical_review').length,approved:docs.filter(d=>!validatePublic(d,registry).length).length,published:'not measured; no production deployment',documents:docs.map(d=>({id:d.id,status:d.status,blockers:validatePublic(d,registry)}))},null,2));
+ const catalog=JSON.parse(await readFile('content/catalog.json','utf8'));
+ const published=JSON.parse(await readFile('content/published.json','utf8'));
+ console.log(JSON.stringify({proposals:catalog.length,articleProposals:catalog.filter(d=>d.type==='article').length,drafted:docs.length,technicalReview:docs.filter(d=>d.status==='technical_review').length,approved:docs.filter(d=>!validatePublic(d,registry).length).length,publishedInManifest:Object.keys(published.current).length,production:'requires separate live verification; manifest count is not proof of deployment or Google indexation',documents:docs.map(d=>({id:d.id,status:d.status,blockers:validatePublic(d,registry)}))},null,2));
 }else if(command==='check-sources'){
  const hosts=new Set(['www.epa.gov','www.who.int','webstore.iec.ch','agencia.petrobras.com.br']);
  const updates=[];let count=0;

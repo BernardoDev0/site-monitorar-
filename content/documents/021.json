@@ -73,8 +73,8 @@
       }
     }
   ],
-  "author_id": null,
-  "reviewer_id": null,
+  "author_id": "bernardo-tavares",
+  "reviewer_id": "bernardo-tavares",
   "evidence_ids": [],
   "source_urls": [
     "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",

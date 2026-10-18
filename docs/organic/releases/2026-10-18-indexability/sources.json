@@ -1,0 +1,327 @@
+[
+  {
+    "url": "https://conama.mma.gov.br/?id=827&option=com_sisconama&task=arquivo.download",
+    "checked_at": "2026-10-18T19:01:10.054451+00:00",
+    "documents": [
+      "093"
+    ],
+    "status": 200,
+    "final_url": "https://conama.mma.gov.br/?id=827&option=com_sisconama&task=arquivo.download",
+    "sha256": "75349443dd3f7e89b3d4d1b1183ce2d83b9455af68279b4014291f8d4822a7aa",
+    "bytes": 291319,
+    "content_type": "application/pdf"
+  },
+  {
+    "url": "https://sustentabilidade.petrobras.com.br/w/sobre-o-relatorio-1",
+    "checked_at": "2026-10-18T19:01:10.055451+00:00",
+    "documents": [
+      "044"
+    ],
+    "status": 200,
+    "final_url": "https://sustentabilidade.petrobras.com.br/w/sobre-o-relatorio-1",
+    "sha256": "d44c048cb2968a793db53702d27adc6adec1b2a4acdfb253f3a4c37f23bcca01",
+    "bytes": 420162,
+    "content_type": "text/html;charset=UTF-8"
+  },
+  {
+    "url": "https://webstore.iec.ch/en/publication/24321",
+    "checked_at": "2026-10-18T19:01:10.055451+00:00",
+    "documents": [
+      "009",
+      "082"
+    ],
+    "status": 200,
+    "final_url": "https://webstore.iec.ch/en/publication/24321",
+    "sha256": "c31bced2e434ab45e384f3d6af640a83c8c4cc99bc82fd5eb462f17559ecce15",
+    "bytes": 440196,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.bipm.org/en/committees/jc/jcgm/publications",
+    "checked_at": "2026-10-18T19:01:10.055451+00:00",
+    "documents": [
+      "096"
+    ],
+    "status": 200,
+    "final_url": "https://www.bipm.org/en/committees/jc/jcgm/publications",
+    "sha256": "1744e072efa68eb9cd0a3b01c2227256b70cc2be425f52921be2d3269060253f",
+    "bytes": 168137,
+    "content_type": "text/html;charset=UTF-8"
+  },
+  {
+    "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+    "checked_at": "2026-10-18T19:01:10.056451+00:00",
+    "documents": [
+      "087",
+      "088",
+      "089",
+      "090",
+      "107",
+      "108"
+    ],
+    "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self signed certificate in certificate chain (_ssl.c:992)>"
+  },
+  {
+    "url": "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring",
+    "checked_at": "2026-10-18T19:01:10.056451+00:00",
+    "documents": [
+      "045",
+      "046",
+      "047",
+      "048",
+      "049",
+      "091",
+      "092"
+    ],
+    "status": 200,
+    "final_url": "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring",
+    "sha256": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a",
+    "bytes": 56930,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "checked_at": "2026-10-18T19:01:10.326035+00:00",
+    "documents": [
+      "002",
+      "013",
+      "019",
+      "020",
+      "021",
+      "022",
+      "023",
+      "032",
+      "033",
+      "034",
+      "035",
+      "036",
+      "037",
+      "038",
+      "039",
+      "040",
+      "041",
+      "042",
+      "043"
+    ],
+    "status": 200,
+    "final_url": "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
+    "sha256": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce",
+    "bytes": 57676,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+    "checked_at": "2026-10-18T19:01:10.559585+00:00",
+    "documents": [
+      "045",
+      "046",
+      "047",
+      "048",
+      "049",
+      "091",
+      "092"
+    ],
+    "status": 200,
+    "final_url": "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
+    "sha256": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559",
+    "bytes": 60919,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide",
+    "checked_at": "2026-10-18T19:01:11.113112+00:00",
+    "documents": [
+      "060",
+      "061",
+      "062",
+      "063",
+      "064",
+      "065",
+      "066",
+      "097",
+      "098",
+      "099"
+    ],
+    "status": 200,
+    "final_url": "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide",
+    "sha256": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e",
+    "bytes": 405564,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf",
+    "checked_at": "2026-10-18T19:01:11.237526+00:00",
+    "documents": [
+      "002",
+      "013",
+      "019",
+      "020",
+      "021",
+      "022",
+      "023",
+      "024",
+      "025",
+      "026",
+      "027",
+      "028",
+      "029",
+      "030",
+      "031",
+      "032",
+      "033",
+      "034",
+      "035",
+      "036",
+      "037",
+      "038",
+      "039",
+      "040",
+      "041",
+      "042",
+      "043"
+    ],
+    "status": 200,
+    "final_url": "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf",
+    "sha256": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583",
+    "bytes": 1442699,
+    "content_type": "application/pdf"
+  },
+  {
+    "url": "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf",
+    "checked_at": "2026-10-18T19:01:11.300537+00:00",
+    "documents": [
+      "021"
+    ],
+    "status": 200,
+    "final_url": "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf",
+    "sha256": "a1a82f0911614ffa4f7acecca192e75a754c2b216dc38539bc72a2437982b6af",
+    "bytes": 298701,
+    "content_type": "application/pdf"
+  },
+  {
+    "url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1",
+    "checked_at": "2026-10-18T19:01:11.548839+00:00",
+    "documents": [
+      "074",
+      "075",
+      "076",
+      "077",
+      "078",
+      "079",
+      "085",
+      "086",
+      "103",
+      "104",
+      "106"
+    ],
+    "status": 200,
+    "final_url": "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1",
+    "sha256": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843",
+    "bytes": 175175,
+    "content_type": "text/html;charset=utf-8"
+  },
+  {
+    "url": "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm",
+    "checked_at": "2026-10-18T19:01:11.839562+00:00",
+    "documents": [
+      "080",
+      "081",
+      "083",
+      "084",
+      "105"
+    ],
+    "status": 200,
+    "final_url": "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm",
+    "sha256": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf",
+    "bytes": 51309,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://www.hse.gov.uk/noise/calculator.htm",
+    "checked_at": "2026-10-18T19:01:12.174628+00:00",
+    "documents": [
+      "094"
+    ],
+    "status": 200,
+    "final_url": "https://www.hse.gov.uk/noise/calculator.htm",
+    "sha256": "5b40c5bb399abf7ddd53c18e62ef0c6f3c35e53ab7ba000f8be7d7c5c72729ea",
+    "bytes": 36969,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://www.inea.rj.gov.br/procon-fumaca-preta/",
+    "checked_at": "2026-10-18T19:01:12.247795+00:00",
+    "documents": [
+      "050",
+      "051",
+      "052"
+    ],
+    "status": 200,
+    "final_url": "https://www.inea.rj.gov.br/procon-fumaca-preta/",
+    "sha256": "1ae707dd1eea59b597a2312f1b02ff72ed5fb6c2160ba0128b0db221ae7b9202",
+    "bytes": 65247,
+    "content_type": "text/html; charset=UTF-8"
+  },
+  {
+    "url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+    "checked_at": "2026-10-18T19:01:12.386322+00:00",
+    "documents": [
+      "067",
+      "068",
+      "069",
+      "070",
+      "071",
+      "072",
+      "073",
+      "100",
+      "101",
+      "102"
+    ],
+    "status": 200,
+    "final_url": "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm",
+    "sha256": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f",
+    "bytes": 350027,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm",
+    "checked_at": "2026-10-18T19:01:12.442322+00:00",
+    "documents": [
+      "067",
+      "068",
+      "069",
+      "070",
+      "071",
+      "072",
+      "073",
+      "100",
+      "101",
+      "102"
+    ],
+    "status": 200,
+    "final_url": "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm",
+    "sha256": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea",
+    "bytes": 54123,
+    "content_type": "text/html"
+  },
+  {
+    "url": "https://www.who.int/europe/publications/i/item/9789289053563",
+    "checked_at": "2026-10-18T19:01:12.504534+00:00",
+    "documents": [
+      "006",
+      "053",
+      "054",
+      "055",
+      "056",
+      "057",
+      "058",
+      "059",
+      "095"
+    ],
+    "status": 200,
+    "final_url": "https://www.who.int/europe/publications/i/item/9789289053563",
+    "sha256": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38",
+    "bytes": 110478,
+    "content_type": "text/html; charset=utf-8"
+  }
+]

@@ -1,5 +1,11 @@
 {
-  "people": {},
+  "people": {
+    "bernardo-tavares": {
+      "name": "Bernardo Tavares",
+      "authorized": true,
+      "authorization_note": "Nome indicado e autorizado pelo proprietário na conversa em 2026-10-18. Indicação não comprova revisão técnica concluída."
+    }
+  },
   "evidence": {},
   "sources": {
     "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {

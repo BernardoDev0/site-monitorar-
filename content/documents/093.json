@@ -29,8 +29,8 @@
       ]
     }
   ],
-  "author_id": null,
-  "reviewer_id": null,
+  "author_id": "bernardo-tavares",
+  "reviewer_id": "bernardo-tavares",
   "evidence_ids": [],
   "source_urls": [
     "https://conama.mma.gov.br/?id=827&option=com_sisconama&task=arquivo.download"

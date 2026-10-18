@@ -1,0 +1,62 @@
+{
+  "checked_at": "2026-10-18T19:00:57.864993+00:00",
+  "routes": [
+    {
+      "path": "/robots.txt",
+      "status": 200,
+      "robots": [],
+      "x_robots_tag": null,
+      "body": "User-agent: Googlebot\nAllow: /\n\nUser-agent: Bingbot\nAllow: /\n\nUser-agent: Twitterbot\nAllow: /\n\nUser-agent: facebookexternalhit\nAllow: /\n\nUser-agent: *\nAllow: /\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n"
+    },
+    {
+      "path": "/sitemap.xml",
+      "status": 200,
+      "robots": [],
+      "x_robots_tag": null,
+      "urls": [
+        "https://www.monitorarconsultoria.com.br/",
+        "https://www.monitorarconsultoria.com.br/sobre",
+        "https://www.monitorarconsultoria.com.br/servicos",
+        "https://www.monitorarconsultoria.com.br/servicos/seguranca",
+        "https://www.monitorarconsultoria.com.br/servicos/drager",
+        "https://www.monitorarconsultoria.com.br/clientes",
+        "https://www.monitorarconsultoria.com.br/depoimentos",
+        "https://www.monitorarconsultoria.com.br/trabalhe-conosco",
+        "https://www.monitorarconsultoria.com.br/contato",
+        "https://www.monitorarconsultoria.com.br/politica-privacidade"
+      ]
+    },
+    {
+      "path": "/blog",
+      "status": 200,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": null
+    },
+    {
+      "path": "/blog/o-que-sao-emissoes-fugitivas",
+      "status": 404,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": null
+    },
+    {
+      "path": "/servicos/emissoes-fugitivas",
+      "status": 404,
+      "robots": [
+        "noindex, follow"
+      ],
+      "x_robots_tag": null
+    },
+    {
+      "path": "/",
+      "status": 200,
+      "robots": [
+        "index, follow"
+      ],
+      "x_robots_tag": null
+    }
+  ]
+}
