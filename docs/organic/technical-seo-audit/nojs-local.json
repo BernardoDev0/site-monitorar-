@@ -1,0 +1,41 @@
+{
+  "base": "http://127.0.0.1:4173",
+  "javascriptEnabled": false,
+  "results": [
+    {
+      "route": "/",
+      "status": 200,
+      "h1": "Engenharia e consultoria ambiental no Rio de Janeiro",
+      "visibleTextCharacters": 4288,
+      "canonical": true
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "h1": "Conhecimento para decisões ambientais",
+      "visibleTextCharacters": 3262,
+      "canonical": true
+    },
+    {
+      "route": "/blog/pagina/8",
+      "status": 200,
+      "h1": "Blog: página 8",
+      "visibleTextCharacters": 2309,
+      "canonical": true
+    },
+    {
+      "route": "/blog/o-que-sao-emissoes-fugitivas",
+      "status": 200,
+      "h1": "O que são emissões fugitivas",
+      "visibleTextCharacters": 4719,
+      "canonical": true
+    },
+    {
+      "route": "/blog/o-que-e-ldar",
+      "status": 200,
+      "h1": "O que é LDAR",
+      "visibleTextCharacters": 4410,
+      "canonical": true
+    }
+  ]
+}

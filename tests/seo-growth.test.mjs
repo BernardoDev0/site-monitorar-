@@ -52,7 +52,7 @@ test('all service anchors actually exist and all topics are in the sitemap',asyn
 });
 test('article schema uses real dates and cover; company data matches its public identity',async()=>{
  const data=await loadSiteData(),row=data.rows.find(r=>r.page?.type==='article');const graph=schemaFor(row)['@graph'];
- const org=graph.find(d=>d['@type']==='Organization'),article=graph.find(d=>d['@type']==='Article');
+ const org=graph.find(d=>d['@type']==='Organization'),article=graph.find(d=>d['@type']==='BlogPosting');
  assert.equal(org.telephone,business.phone);assert.deepEqual(org.sameAs,business.sameAs);assert.equal(org.address.addressLocality,'Rio de Janeiro');
  assert.equal(article.datePublished,state.current[row.path].first_published_at);assert.equal(article.image,business.url+row.page.cover.src);
  const breadcrumb=graph.find(d=>d['@type']==='BreadcrumbList');assert.equal(breadcrumb.itemListElement[1].name,'Blog');

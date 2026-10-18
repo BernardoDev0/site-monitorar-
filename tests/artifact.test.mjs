@@ -30,9 +30,9 @@ test('preview corpus is noindex, internally linked and reachable from its index'
 test('schema graph uses visible breadcrumb and only approved article or service entities',()=>{
  const page={slug:'/blog/example',title:'Example fixture',summary:'Fixture summary',type:'article',author:'Fixture Author',substantive_updated_at:'2026-10-15T00:00:00.000Z'};
  const graph=schemaFor({page},false)['@graph'];
- assert.deepEqual(graph.map(x=>x['@type']),['Organization','WebSite','BreadcrumbList','Article']);
+ assert.deepEqual(graph.map(x=>x['@type']),['Organization','WebSite','BreadcrumbList','BlogPosting']);
  assert.equal(graph[2].itemListElement.at(-1).name,page.title);
- assert.ok(!schemaFor({page},true)['@graph'].some(x=>x['@type']==='Article'));
+ assert.ok(!schemaFor({page},true)['@graph'].some(x=>x['@type']==='BlogPosting'));
  assert.ok(schemaFor({page:{...page,type:'service'}},false)['@graph'].some(x=>x['@type']==='Service'));
 });
 test('credentials are excluded from public artifacts',async()=>{

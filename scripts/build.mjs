@@ -7,6 +7,7 @@ import path from 'node:path';
 import { pathToFileURL } from 'node:url';
 import { legacy } from './routes.mjs';
 import { schemaFor } from './schema.mjs';
+import { publicModifiedAt } from './public-dates.mjs';
 import { loadCorpus,loadRegistry,publicDocument,validatePublic,validateManifest,origin } from './editorial.mjs';
 import { editorialPages } from './editorial-pages.mjs';
 const preview=process.argv.includes('--preview');
@@ -47,7 +48,7 @@ for(const row of rows){
  await mkdir(path.dirname(file),{recursive:true});await writeFile(file,html);
 }
 const urls=preview?[]:rows.filter(r=>r.canonical===r.path&&r.path!=='/404'&&!r.page?.noindex);
-await writeFile(out+'/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(r=>'<url><loc>'+origin+r.path+'</loc>'+(r.page?.substantive_updated_at?'<lastmod>'+r.page.substantive_updated_at+'</lastmod>':'')+'</url>').join('')+'</urlset>');
+await writeFile(out+'/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(r=>{const modified=publicModifiedAt(r.page);return '<url><loc>'+origin+r.path+'</loc>'+(modified?'<lastmod>'+modified+'</lastmod>':'')+'</url>';}).join('')+'</urlset>');
 await writeFile(out+'/robots.txt',preview?'User-agent: *\nDisallow: /\n':(await readFile('public/robots.txt','utf8')).trim()+'\n\nSitemap: '+origin+'/sitemap.xml\n');
 // Promote only a completely rendered artifact; recover the last output on failure.
 const backup=target+'.previous';
