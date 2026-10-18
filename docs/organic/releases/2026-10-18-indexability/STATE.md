@@ -29,3 +29,11 @@ Robots permite acesso; não assegura rastreamento, indexação, posicionamento o
 ## Atualização após indicação de responsável
 
 O proprietário indicou Bernardo Tavares e solicitou push. Nome autorizado cadastrado nos 94 documentos como autor e revisor designado; nenhuma qualificação profissional foi atribuída. Revisão concluída não foi declarada: reviewed_at, claim_status, status e manifesto público permanecem intactos. Build público aprovado (17 rotas institucionais, 0 documentos editoriais, 10 URLs no sitemap) e 11 testes editoriais aprovados. Push solicitado para origin/main inclui cadastro, correção do status e evidências da auditoria; não equivale à publicação dos artigos.
+
+## Publicação autorizada após confirmação da revisão
+
+O proprietário confirmou explicitamente: "EU JA REVISEI DA PUSH LOGO". Registrada a confirmação em nome autorizado de Bernardo Tavares, com data de registro atual; nenhuma certificação independente foi atribuída. Liberados 94 documentos: 90 artigos, 3 serviços e 1 hub. Fontes: 18/18 acessíveis, incluindo manual Dräger HTTP 200 pela execução Node com TLS validado (SHA no registry). Revisão futura programada para 180 dias. Manifesto anterior preservado no histórico e no Git.
+
+HAZOP: promoção explícita da URL existente que antes renderizava a página genérica de serviços; essa página genérica continua em /servicos e /servicos/seguranca. Textos dos 94 documentos mantidos. Blog com oito páginas; 113 URLs canônicas no sitemap; busca interna inclui artigos. Robots continua permitindo rastreamento. Build público e preview aprovados; 29 testes aprovados, incluindo todos os 94 documentos com HTML, autor, canonical, index/follow, H1 único e inclusão no sitemap; links e imagens internos resolvem. Testes de exclusão de rascunhos atualizados para estado publicado, mantendo validação de aprovação, revisão, fontes e credenciais.
+
+Limites: publicação não comprova indexação ou posição no Google. Search Console ainda não conectado. Validador atual exige fontes verificadas há até sete dias: revalidar antes de futuros builds após esse prazo. Próxima etapa: push main e conferência do deployment e URLs públicas.

@@ -40,17 +40,17 @@ test('pause fails closed on invalid JSON or missing boolean',async()=>{
  const dir=await mkdtemp(path.join(tmpdir(),'monitorar-control-'));const file=path.join(dir,'control.json');
  try{assert.equal(await readPause(file),false);for(const body of ['{','{}','{"paused":"false"}']){await writeFile(file,body);await assert.rejects(readPause(file));}await writeFile(file,'{"paused":true}');assert.equal(await readPause(file),true);}finally{await rm(dir,{recursive:true});}
 });
-test('empty public blog and search have honest noindex states; normalized index and page 1 redirect',async()=>{
+test('published blog is indexable and search remains noindex; normalized index and page 1 redirect',async()=>{
  const server=await startServer('dist',0),base='http://127.0.0.1:'+server.address().port;
  try{
-  for(const route of ['/blog','/conteudos','/busca']){const r=await fetch(base+route);assert.equal(r.status,200);assert.match(await r.text(),/noindex, follow/);}
+  for(const route of ['/blog','/conteudos','/busca']){const r=await fetch(base+route);assert.equal(r.status,200);assert.ok((await r.text()).includes('content="'+(route==='/busca'?'noindex, follow':'index, follow')+'"'));}
   for(const [route,destination] of [['/index.html','/'],['/index','/'],['/blog/pagina/1','/blog']]){const r=await fetch(base+route,{redirect:'manual'});assert.equal(r.status,308);assert.equal(r.headers.get('location'),destination);}
-  assert.equal((await fetch(base+'/blog/pagina/2')).status,404);
+  assert.equal((await fetch(base+'/blog/pagina/2')).status,200);
   const index=await (await fetch(base+'/search-index.json')).json();
   assert.ok(index.some(d=>d.slug==='/contato'));
   assert.ok(index.some(d=>d.slug==='/servicos/drager'));
-  assert.ok(index.every(d=>d.topic_cluster==='institucional'));
-  assert.ok(!index.some(d=>d.slug.startsWith('/blog/')));
-  const sitemap=await readFile('dist/sitemap.xml','utf8');for(const route of ['/blog','/conteudos','/busca'])assert.ok(!sitemap.includes(route+'</loc>'));
+  assert.equal(index.filter(d=>d.slug.startsWith('/blog/')).length,90);
+  assert.ok(index.some(d=>d.slug==='/blog/o-que-sao-emissoes-fugitivas'));
+  const sitemap=await readFile('dist/sitemap.xml','utf8');for(const route of ['/blog','/conteudos','/busca'])assert.equal(sitemap.includes(route+'</loc>'),route!=='/busca');
  }finally{await new Promise(r=>server.close(r));}
 });

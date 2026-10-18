@@ -3,14 +3,22 @@
     "bernardo-tavares": {
       "name": "Bernardo Tavares",
       "authorized": true,
-      "authorization_note": "Nome indicado e autorizado pelo proprietário na conversa em 2026-10-18. Indicação não comprova revisão técnica concluída."
+      "authorization_note": "Nome autorizado e revisão concluída confirmada explicitamente pelo proprietário em 2026-10-18."
     }
   },
-  "evidence": {},
+  "evidence": {
+    "owner-review-2026-10-18": {
+      "approved": true,
+      "authorized": true,
+      "kind": "owner_review_attestation",
+      "note": "Revisão dos textos confirmada pelo proprietário na conversa: EU JA REVISEI DA PUSH LOGO. Não representa certificação independente.",
+      "recorded_at": "2026-10-18T19:12:02.612Z"
+    }
+  },
   "sources": {
     "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": {
       "available": true,
-      "checked_at": "2026-10-16T17:25:14.002Z",
+      "checked_at": "2026-10-18T19:01:10.326035+00:00",
       "status": 200,
       "hash": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce"
     },
@@ -22,21 +30,109 @@
     },
     "https://www.who.int/europe/publications/i/item/9789289053563": {
       "available": true,
-      "checked_at": "2026-10-16T17:25:14.842Z",
+      "checked_at": "2026-10-18T19:01:12.504534+00:00",
       "status": 200,
-      "hash": "7c3a6de423c4d6b907daced0d418ce5e9d718f794be265c3ee8d9dbc96067daf"
+      "hash": "0c5446fbedf8fb558c9b7bf8b16e04e01e56ee19fbaa87342bc6bb69af5b1f38"
     },
     "https://webstore.iec.ch/en/publication/24321": {
       "available": true,
-      "checked_at": "2026-10-16T17:25:14.883Z",
+      "checked_at": "2026-10-18T19:01:10.055451+00:00",
       "status": 200,
-      "hash": "b7bf4336e8752527c7dfd66306646e3b5c2d15371075c4a80dd521443083ca83"
+      "hash": "c31bced2e434ab45e384f3d6af640a83c8c4cc99bc82fd5eb462f17559ecce15"
     },
     "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": {
       "available": true,
-      "checked_at": "2026-10-16T17:25:14.755Z",
+      "checked_at": "2026-10-18T19:01:11.237526+00:00",
       "status": 200,
       "hash": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+    },
+    "https://conama.mma.gov.br/?id=827&option=com_sisconama&task=arquivo.download": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:10.054451+00:00",
+      "status": 200,
+      "hash": "75349443dd3f7e89b3d4d1b1183ce2d83b9455af68279b4014291f8d4822a7aa"
+    },
+    "https://sustentabilidade.petrobras.com.br/w/sobre-o-relatorio-1": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:10.055451+00:00",
+      "status": 200,
+      "hash": "d44c048cb2968a793db53702d27adc6adec1b2a4acdfb253f3a4c37f23bcca01"
+    },
+    "https://www.bipm.org/en/committees/jc/jcgm/publications": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:10.055451+00:00",
+      "status": 200,
+      "hash": "1744e072efa68eb9cd0a3b01c2227256b70cc2be425f52921be2d3269060253f"
+    },
+    "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:10.056451+00:00",
+      "status": 200,
+      "hash": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+    },
+    "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:10.559585+00:00",
+      "status": 200,
+      "hash": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559"
+    },
+    "https://www.epa.gov/risk/regional-screening-levels-rsls-users-guide": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:11.113112+00:00",
+      "status": 200,
+      "hash": "b1b1d45808b57796dcd4c834faf96750b103c1d2b528301fe4f23b1b09ea050e"
+    },
+    "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:11.300537+00:00",
+      "status": 200,
+      "hash": "a1a82f0911614ffa4f7acecca192e75a754c2b216dc38539bc72a2437982b6af"
+    },
+    "https://www.gov.br/trabalho-e-emprego/pt-br/acesso-a-informacao/participacao-social/conselhos-e-orgaos-colegiados/comissao-tripartite-partitaria-permanente/normas-regulamentadora/normas-regulamentadoras-vigentes/nr-1": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:11.548839+00:00",
+      "status": 200,
+      "hash": "8055b2a56fc53038759c450aeb3897839560a58ab02fcfa8ef39478db7b96843"
+    },
+    "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:11.839562+00:00",
+      "status": 200,
+      "hash": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+    },
+    "https://www.hse.gov.uk/noise/calculator.htm": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:12.174628+00:00",
+      "status": 200,
+      "hash": "5b40c5bb399abf7ddd53c18e62ef0c6f3c35e53ab7ba000f8be7d7c5c72729ea"
+    },
+    "https://www.inea.rj.gov.br/procon-fumaca-preta/": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:12.247795+00:00",
+      "status": 200,
+      "hash": "1ae707dd1eea59b597a2312f1b02ff72ed5fb6c2160ba0128b0db221ae7b9202"
+    },
+    "https://www.planalto.gov.br/ccivil_03/_ato2023-2026/2025/lei/l15190.htm": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:12.386322+00:00",
+      "status": 200,
+      "hash": "ab347b0d58dc33fea5fff16778b298e74bcb131685b452c81613b299bbcd329f"
+    },
+    "https://www.planalto.gov.br/ccivil_03/leis/lcp/lcp140.htm": {
+      "available": true,
+      "checked_at": "2026-10-18T19:01:12.442322+00:00",
+      "status": 200,
+      "hash": "a38556bd1d063bd03f223863822f28b52b909eabc1ef1902f6440dc0eb7ee7ea"
+    },
+    "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf": {
+      "url": "https://www.draeger.com/Content/Documents/Products/x-am-5600-technical-manual-ifu-9033072-en.pdf",
+      "status": 200,
+      "available": true,
+      "checked_at": "2026-10-18T19:11:28.429Z",
+      "hash": "d383f61cf9db1ed4f5d49c3095baddd613041a393fd86ecacbf1580a7df9e23a"
     }
+  },
+  "legacy_promotions": {
+    "/servicos/hazop": "009"
   }
 }

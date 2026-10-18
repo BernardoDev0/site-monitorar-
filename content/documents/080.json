@@ -31,11 +31,16 @@
   ],
   "author_id": "bernardo-tavares",
   "reviewer_id": "bernardo-tavares",
-  "evidence_ids": [],
+  "evidence_ids": [
+    "owner-review-2026-10-18"
+  ],
   "source_urls": [
     "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm"
   ],
-  "claim_status": "pending",
+  "approved_sources": {
+    "https://www.hse.gov.uk/comah/sragtech/techmeasplantmod.htm": "20c1cff3acebb6cedcfb158a5c98ff1c79d89364f83e2a5f62cb7e34feb64fbf"
+  },
+  "claim_status": "verified",
   "service_links": [],
   "related_content_ids": [
     "074",
@@ -43,14 +48,14 @@
     "076"
   ],
   "created_at": "2026-10-18T07:00:30.180Z",
-  "first_published_at": null,
-  "reviewed_at": null,
+  "first_published_at": "2026-10-18T19:12:02.612Z",
+  "reviewed_at": "2026-10-18T19:12:02.612Z",
   "substantive_updated_at": "2026-10-18T07:00:30.180Z",
-  "status": "technical_review",
-  "approved_by": null,
-  "approved_version": null,
+  "status": "published",
+  "approved_by": "bernardo-tavares",
+  "approved_version": "a79e12ee0a978969e9750ce572294c2b8142fd6c619c8929263cdb7aac431ca2",
   "scheduled_at": null,
   "canonical_url": "https://www.monitorarconsultoria.com.br/blog/procedimentos-operacionais-e-controle-documental-sms",
-  "indexability": false,
-  "review_due_at": null
+  "indexability": true,
+  "review_due_at": "2027-04-16T19:12:02.616Z"
 }

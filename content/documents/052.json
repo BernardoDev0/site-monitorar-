@@ -31,11 +31,16 @@
   ],
   "author_id": "bernardo-tavares",
   "reviewer_id": "bernardo-tavares",
-  "evidence_ids": [],
+  "evidence_ids": [
+    "owner-review-2026-10-18"
+  ],
   "source_urls": [
     "https://www.inea.rj.gov.br/procon-fumaca-preta/"
   ],
-  "claim_status": "pending",
+  "approved_sources": {
+    "https://www.inea.rj.gov.br/procon-fumaca-preta/": "1ae707dd1eea59b597a2312f1b02ff72ed5fb6c2160ba0128b0db221ae7b9202"
+  },
+  "claim_status": "verified",
   "service_links": [],
   "related_content_ids": [
     "045",
@@ -43,14 +48,14 @@
     "047"
   ],
   "created_at": "2026-10-18T07:00:30.169Z",
-  "first_published_at": null,
-  "reviewed_at": null,
+  "first_published_at": "2026-10-18T19:12:02.612Z",
+  "reviewed_at": "2026-10-18T19:12:02.612Z",
   "substantive_updated_at": "2026-10-18T07:00:30.169Z",
-  "status": "technical_review",
-  "approved_by": null,
-  "approved_version": null,
+  "status": "published",
+  "approved_by": "bernardo-tavares",
+  "approved_version": "65480d86749fb20b328f9ce81452446aa8f6cf585a622e833fae4025c7935146",
   "scheduled_at": null,
   "canonical_url": "https://www.monitorarconsultoria.com.br/blog/registros-de-programa-de-controle-de-fumaca-preta",
-  "indexability": false,
-  "review_due_at": null
+  "indexability": true,
+  "review_due_at": "2027-04-16T19:12:02.615Z"
 }

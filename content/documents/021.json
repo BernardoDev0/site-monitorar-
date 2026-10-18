@@ -75,13 +75,20 @@
   ],
   "author_id": "bernardo-tavares",
   "reviewer_id": "bernardo-tavares",
-  "evidence_ids": [],
+  "evidence_ids": [
+    "owner-review-2026-10-18"
+  ],
   "source_urls": [
     "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
     "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf",
     "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf"
   ],
-  "claim_status": "pending",
+  "approved_sources": {
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583",
+    "https://www.epa.gov/sites/default/files/2017-08/documents/method_21.pdf": "a1a82f0911614ffa4f7acecca192e75a754c2b216dc38539bc72a2437982b6af"
+  },
+  "claim_status": "verified",
   "service_links": [
     "/servicos/emissoes-fugitivas"
   ],
@@ -93,14 +100,14 @@
     "022"
   ],
   "created_at": "2026-10-16T17:00:00.000Z",
-  "first_published_at": null,
-  "reviewed_at": null,
+  "first_published_at": "2026-10-18T19:12:02.612Z",
+  "reviewed_at": "2026-10-18T19:12:02.612Z",
   "substantive_updated_at": "2026-10-17T16:53:43.110Z",
-  "status": "technical_review",
-  "approved_by": null,
-  "approved_version": null,
+  "status": "published",
+  "approved_by": "bernardo-tavares",
+  "approved_version": "ca39b463cc23cc7aafe77db493beff0dcbfa4a6a8987a6494b01c84621d37f2a",
   "scheduled_at": null,
   "canonical_url": "https://www.monitorarconsultoria.com.br/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
   "indexability": true,
-  "review_due_at": null
+  "review_due_at": "2027-04-16T19:12:02.614Z"
 }

@@ -31,12 +31,18 @@
   ],
   "author_id": "bernardo-tavares",
   "reviewer_id": "bernardo-tavares",
-  "evidence_ids": [],
+  "evidence_ids": [
+    "owner-review-2026-10-18"
+  ],
   "source_urls": [
     "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics",
     "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring"
   ],
-  "claim_status": "pending",
+  "approved_sources": {
+    "https://www.epa.gov/pm-pollution/particulate-matter-pm-basics": "c96778a56c2c06aff0b1d28f6c0cbce3492a9b6cdd571dfef02db66100c47559",
+    "https://www.epa.gov/air-quality-management-process/managing-air-quality-ambient-air-monitoring": "c8145b489d24a3a484a62cb2b1ad5127739cfd2017645321ef7e2a80df255e6a"
+  },
+  "claim_status": "verified",
   "service_links": [],
   "related_content_ids": [
     "045",
@@ -44,14 +50,14 @@
     "048"
   ],
   "created_at": "2026-10-18T07:00:30.167Z",
-  "first_published_at": null,
-  "reviewed_at": null,
+  "first_published_at": "2026-10-18T19:12:02.612Z",
+  "reviewed_at": "2026-10-18T19:12:02.612Z",
   "substantive_updated_at": "2026-10-18T07:00:30.167Z",
-  "status": "technical_review",
-  "approved_by": null,
-  "approved_version": null,
+  "status": "published",
+  "approved_by": "bernardo-tavares",
+  "approved_version": "047edf2c32f7e9b45540974289fc852cd6a79ff13784bc44d4832c525fa7bac2",
   "scheduled_at": null,
   "canonical_url": "https://www.monitorarconsultoria.com.br/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
-  "indexability": false,
-  "review_due_at": null
+  "indexability": true,
+  "review_due_at": "2027-04-16T19:12:02.615Z"
 }

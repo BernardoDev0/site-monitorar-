@@ -31,12 +31,18 @@
   ],
   "author_id": "bernardo-tavares",
   "reviewer_id": "bernardo-tavares",
-  "evidence_ids": [],
+  "evidence_ids": [
+    "owner-review-2026-10-18"
+  ],
   "source_urls": [
     "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks",
     "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
   ],
-  "claim_status": "pending",
+  "approved_sources": {
+    "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks": "3857553e8971b92e008d547b6dea968a563f3d4611c9593f23edee45f6f0f4ce",
+    "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf": "d64eb972d6f6f1ba120a54d53b19e579a4685fcff5b4fa311cf0bfebf6e42583"
+  },
+  "claim_status": "verified",
   "service_links": [],
   "related_content_ids": [
     "019",
@@ -44,14 +50,14 @@
     "021"
   ],
   "created_at": "2026-10-18T07:00:30.160Z",
-  "first_published_at": null,
-  "reviewed_at": null,
+  "first_published_at": "2026-10-18T19:12:02.612Z",
+  "reviewed_at": "2026-10-18T19:12:02.612Z",
   "substantive_updated_at": "2026-10-18T07:00:30.160Z",
-  "status": "technical_review",
-  "approved_by": null,
-  "approved_version": null,
+  "status": "published",
+  "approved_by": "bernardo-tavares",
+  "approved_version": "fd205c33f9e830d3786410073025a1df17ebad719fba86d2b23df8fda39d9016",
   "scheduled_at": null,
   "canonical_url": "https://www.monitorarconsultoria.com.br/blog/epa-method-21-contexto-e-limites",
-  "indexability": false,
-  "review_due_at": null
+  "indexability": true,
+  "review_due_at": "2027-04-16T19:12:02.614Z"
 }

@@ -3,14 +3,14 @@ import assert from 'node:assert/strict';
 import {access,readFile} from 'node:fs/promises';
 import {loadSiteData,safeJson} from '../scripts/page-data.mjs';
 
-test('visual enrichment preserves publication boundary and draft exclusion',async()=>{
+test('visual enrichment includes the approved corpus',async()=>{
  const publicData=await loadSiteData(false),preview=await loadSiteData(true);
  const articles=preview.documents.filter(d=>d.type==='article');
  assert.equal(articles.length,90);
- assert.equal(publicData.candidates.length,0);
- assert.equal(publicData.content.length,0);
- assert.ok(articles.every(d=>!safeJson(publicData).includes(d.title)));
- assert.ok(publicData.documents.filter(d=>d.type==='listing').every(d=>!d.entries.length));
+ assert.equal(publicData.candidates.length,94);
+ assert.equal(publicData.content.length,94);
+ assert.ok(articles.every(d=>safeJson(publicData).includes(d.title)));
+ assert.ok(publicData.documents.filter(d=>d.type==='listing').every(d=>d.entries.length>0));
 });
 
 test('all eight blog pages preserve exact article membership with valid cover assets',async()=>{
@@ -44,6 +44,6 @@ test('public search includes institutional destinations and existing home offeri
  assert.match(home.searchText,/emissões fugitivas/);
  const source=await readFile('src/components/home/OfferingsSection.tsx','utf8');
  assert.ok(source.includes('Programa de detecção e reparo de vazamentos para redução de emissões fugitivas.'));
- assert.ok(data.search.every(d=>d.topic_cluster==='institucional'));
+ assert.equal(data.search.filter(d=>d.slug.startsWith('/blog/')).length,90);
  assert.equal(new Set(data.search.map(d=>d.slug)).size,data.search.length);
 });

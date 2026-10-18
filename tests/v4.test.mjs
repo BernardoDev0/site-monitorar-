@@ -13,8 +13,8 @@ test('video streaming serves correct bytes, MIME, HEAD, suffix and invalid range
   for(const range of ['bytes=999999999-','bytes=12-1','bytes=-0','bytes=1-2,5-6'])assert.equal((await fetch(url,{headers:{Range:range}})).status,416);
  }finally{await new Promise(r=>server.close(r));}
 });
-test('90 distinct drafted articles with substantive bodies stay outside publication manifest',async()=>{
+test('90 distinct approved articles with substantive bodies are in the publication manifest',async()=>{
  const articles=(await loadCorpus()).filter(d=>d.type==='article');assert.equal(articles.length,90);assert.equal(new Set(articles.map(d=>d.slug)).size,90);assert.equal(new Set(articles.map(d=>JSON.stringify(d.body))).size,90);
- for(const a of articles){assert.ok(a.body.length>=3,a.id);assert.ok(a.body.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length>=180,a.id);assert.ok(a.source_urls.length,a.id);assert.equal(a.approved_by,null,a.id);}
- const manifest=JSON.parse(await readFile('content/published.json','utf8'));assert.equal(Object.keys(manifest.current).length,0);
+ for(const a of articles){assert.ok(a.body.length>=3,a.id);assert.ok(a.body.flatMap(s=>s.paragraphs).join(' ').split(/\s+/).length>=180,a.id);assert.ok(a.source_urls.length,a.id);assert.equal(a.approved_by,'bernardo-tavares',a.id);}
+ const manifest=JSON.parse(await readFile('content/published.json','utf8'));assert.equal(Object.keys(manifest.current).length,94);
 });

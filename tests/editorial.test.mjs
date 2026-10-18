@@ -14,7 +14,7 @@ function fixture(){
  const registry={people:{'test-author':{authorized:true,name:'Test Person (fixture)'},'test-reviewer':{authorized:true,name:'Test Person (fixture)'}},evidence:{'test-evidence':{approved:true,authorized:true}},sources:{'https://example.org/source':{hash:'fixture-hash',available:true,checked_at:'2026-10-16T12:00:00.000Z'}}};
  return {d,registry};
 }
-test('real drafts parse but are blocked for publication',async()=>{const docs=await loadCorpus();assert.ok(docs.length>=10);for(const d of docs){assert.ok(documentSchema.safeParse(d).success);assert.ok(validatePublic(d,{now}).length>0);}});
+test('real corpus requires its approval registry',async()=>{const docs=await loadCorpus();assert.ok(docs.length>=10);for(const d of docs){assert.ok(documentSchema.safeParse(d).success);assert.ok(validatePublic(d,{now}).length>0);}});
 test('108 distinct proposals with 12 services, 6 hubs and 90 articles',async()=>{const c=JSON.parse(await readFile('content/catalog.json'));assert.equal(c.length,108);assert.equal(new Set(c.map(x=>x.slug)).size,108);for(const [type,n] of [['service',12],['hub',6],['article',90]])assert.equal(c.filter(x=>x.type===type).length,n);});
 test('approved version succeeds and a material edit invalidates approval',()=>{const {d,registry}=fixture();assert.deepEqual(validatePublic(d,{...registry,now}),[]);d.body[0].paragraphs[0]='Uma alteração substantiva posterior à revisão humana.';assert.ok(validatePublic(d,{...registry,now}).includes('approval does not match version'));});
 test('missing source, expired review, future schedule and unauthorized reviewer fail closed',()=>{for(const mutate of [
