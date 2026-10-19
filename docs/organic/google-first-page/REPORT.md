@@ -185,3 +185,52 @@ As três primeiras ganham com páginas fracas porque o **domínio** delas tem au
 - Sem novas edições no guia por 3 a 4 semanas depois de indexado, salvo erro de fato (*rankings-push*).
 - Canibalização: se o Google alternar entre guia e artigo por 2 semanas sem subir, propor canonical do artigo para o guia (só com autorização, por ser um dos 90 artigos).
 - O que decide contra Thermo Fisher e Wikipedia é autoridade: o kit do proprietário (`docs/organic/owner-actions.md`, seção "Foco: emissões fugitivas").
+
+
+## Ícone e concorrentes (19/10, 23:50 UTC)
+
+Pedido do proprietário: o ícone sumiu de páginas do blog depois de ter aparecido, e "ver como a Ambiens faz para sempre aparecer na IA e na 1ª página, e copiar".
+
+**Ícone: nada quebrou no site.**
+- Todas as páginas têm as mesmas tags de ícone.
+- `/favicon.ico`, `/favicon-192.png` e `/apple-touch-icon.png` respondem 200 a Googlebot, Googlebot-Image e Google Favicon.
+- O robots.txt libera tudo.
+- A leitura `site:monitorarconsultoria.com.br` sem personalização (`evidence/cycles/serp-site-20261019T2350.json`, recortes `evidence/icons/20261019T2350-neutral-*.png`) mostra:
+  - 1º: a Home **sem www**, com o título antigo e o **logo** (`img`, hash 27542e3c75ae). É o registro antigo de 10/10.
+  - 2º a 10º: blog, conteúdos, sobre, serviços e outras páginas **www**, todas com o **globo** (`svg` 4f5681529f82).
+- O "ícone que apareceu antes" é esse resultado sem www.
+- O Google guarda o ícone por endereço. Para o www, ele só pode processar o ícone a partir da Home www, que entrou no índice em 19/10 às 16:09 (horário local).
+- A documentação do Google fala em "vários dias ou mais". Não há o que mudar no código. O loop mede o hash a cada ciclo.
+
+**Ambiens (www.ambiens.com.br):**
+- Origem: São Paulo, no Wayback desde 2001. O site é feito pela agência **Doutores da Web**: script `doutoresdaweb.com.br/js/cookies.js` e `Disallow: /doutor/` no robots.
+- Modelo: 98 URLs, uma página para cada variação de palavra-chave, como "consultoria-licenciamento-ambiental", "empresas-licenciamento-ambiental" e "estudo-impacto-ambiental-preco".
+- Cada página tem cerca de 400 palavras, título "Palavra-chave - Ambiens", meta keywords e geo e só BreadcrumbList.
+- Leituras sem personalização de hoje: **fora da 1ª página** em "consultoria ambiental", "empresa de consultoria ambiental" e "consultoria ambiental são paulo".
+- **Ausente do quadro de IA** em "emissões fugitivas" e em "consultoria ambiental São Paulo" (que nem gerou quadro).
+- A premissa "sempre aparece" não se confirmou nessas buscas.
+
+**Mineral (www.mineral.eng.br)** é da mesma agência e foi a descoberta útil.
+- Está **citada no quadro de IA de "emissões fugitivas"** (`evidence/cycles/ai-20261019T2352.csv`), ao lado de Alutal, eCycle, UFMG, Wikipedia e YouTube, sem estar entre os 10 orgânicos.
+- A página provável é `/emissoes-fugitivas-ldar`:
+  - tem 427 palavras;
+  - título, H1 e URL repetem "emissões fugitivas LDAR";
+  - a 1ª frase é uma definição direta;
+  - lista os componentes (castelo, conectores, final de linha, flange, selo de bomba, válvula, válvula de segurança);
+  - cita o Método 21 e o Protocolo de 1995 da EPA e o limite de 10.000 ppm;
+  - tem JSON-LD com Article, Person, LocalBusiness e ImageObject;
+  - tem galeria de 4 imagens com alt igual à palavra-chave.
+- Domínio no Wayback desde 2001, a página indexada há anos.
+- O mesmo tipo de conteúdo direto (definição, componentes, Método 21, OGI, LDAR, NOP-INEA-52) já está no nosso guia `/emissoes-fugitivas`. O guia **ainda não está no índice do Google**, e o quadro de IA só cita páginas indexadas.
+
+**O que não copiar:**
+- Texto: é cópia de conteúdo protegido e vira conteúdo duplicado.
+- Uma página por variação de palavra-chave: a política de spam do Google cita *doorway abuse* e *scaled content abuse*, e as nossas páginas passariam a competir entre si.
+- Meta keywords e geo: o Google ignora.
+
+**O que fazer:**
+1. Indexar o guia: é o 1º pedido quando a cota da conta renovar.
+2. oHub, com cadastro gratuito de fornecedor: o diretório é **2º em "consultoria ambiental" no RJ e 1º em "consultoria ambiental são paulo"**, e a Monitorar não está na lista do RJ.
+3. O restante do kit de autoridade.
+
+Foram 6 consultas ao Google entre 23:50 e 23:55 UTC, sem captcha. O próximo ciclo faz no máximo 2, para ficar dentro de 10 em 3 horas.

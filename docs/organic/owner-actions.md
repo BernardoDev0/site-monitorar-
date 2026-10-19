@@ -26,7 +26,9 @@ Dados da empresa para colar em qualquer cadastro (idênticos aos do site):
 
 ## 3. Diretórios (mesmo nome, endereço e telefone em todos)
 
-OHub (https://www.ohub.com.br, aparece em 3º lugar em vários termos do RJ), Guia Mais, Telelistas, Apontador, Bing Places. Cada cadastro cria uma página em site forte e uma citação da empresa.
+OHub (https://www.ohub.com.br), Guia Mais, Telelistas, Apontador, Bing Places. Cada cadastro cria uma página em site forte e uma citação da empresa.
+
+**Comece pelo oHub.** Em 19/10, sem personalização, a página do oHub "Melhores empresas de Consultoria ambiental em Rio de Janeiro" estava em **2º lugar em "consultoria ambiental"** e a de São Paulo em **1º em "consultoria ambiental são paulo"**. A Monitorar não está na lista do RJ. O cadastro de fornecedor é gratuito: https://www.ohub.com.br/cadastro → "Quero ser fornecedor" → categoria **Consultoria ambiental**, cidades do RJ, de SP e do AM, com o link https://www.monitorarconsultoria.com.br e os mesmos dados do site. Os créditos pagos só servem para responder pedidos de orçamento. Não é preciso comprá-los para ter a página. A posição dentro da lista é decisão do oHub.
 
 ## 4. Links reais, pedidos por e-mail
 

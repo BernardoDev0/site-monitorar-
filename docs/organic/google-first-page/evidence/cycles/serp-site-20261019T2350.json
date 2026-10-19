@@ -1,0 +1,138 @@
+{
+ "capturedAt": "2026-10-19T23:50:03+00:00",
+ "phrase": "site:monitorarconsultoria.com.br",
+ "readings": {
+  "neutral": {
+   "phrase": "site:monitorarconsultoria.com.br",
+   "blocked": false,
+   "personalised": false,
+   "linksRead": 10,
+   "monitorar": [
+    {
+     "position": 1,
+     "path": "/",
+     "title": "Monitorar Consultoria - Engenharia Ambiental e Segurança ..."
+    },
+    {
+     "position": 2,
+     "path": "/blog",
+     "title": "Conhecimento para decisões ambientais"
+    },
+    {
+     "position": 3,
+     "path": "/conteudos",
+     "title": "Explore por assunto | Monitorar"
+    },
+    {
+     "position": 4,
+     "path": "/sobre",
+     "title": "Sobre a Monitorar Consultoria"
+    },
+    {
+     "position": 5,
+     "path": "/depoimentos",
+     "title": "Depoimentos"
+    },
+    {
+     "position": 6,
+     "path": "/contato",
+     "title": "Contato"
+    },
+    {
+     "position": 7,
+     "path": "/servicos",
+     "title": "Serviços de engenharia e consultoria ambiental"
+    },
+    {
+     "position": 8,
+     "path": "/clientes",
+     "title": "Clientes"
+    },
+    {
+     "position": 9,
+     "path": "/conteudos/hazop",
+     "title": "HAZOP | Monitorar"
+    },
+    {
+     "position": 10,
+     "path": "/servicos/drager",
+     "title": "Equipamentos Dräger"
+    }
+   ],
+   "icons": [
+    {
+     "path": "/",
+     "iconKind": "img",
+     "iconHash": "27542e3c75ae",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-1.png"
+    },
+    {
+     "path": "/blog",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-2.png"
+    },
+    {
+     "path": "/conteudos",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-3.png"
+    },
+    {
+     "path": "/sobre",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-4.png"
+    },
+    {
+     "path": "/depoimentos",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-5.png"
+    },
+    {
+     "path": "/contato",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-6.png"
+    },
+    {
+     "path": "/servicos",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-7.png"
+    },
+    {
+     "path": "/clientes",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-8.png"
+    },
+    {
+     "path": "/conteudos/hazop",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-9.png"
+    },
+    {
+     "path": "/servicos/drager",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2350-neutral-10.png"
+    }
+   ],
+   "top": [
+    "monitorarconsultoria.com.br/",
+    "www.monitorarconsultoria.com.br/blog",
+    "www.monitorarconsultoria.com.br/conteudos",
+    "www.monitorarconsultoria.com.br/sobre",
+    "www.monitorarconsultoria.com.br/depoimentos",
+    "www.monitorarconsultoria.com.br/contato",
+    "www.monitorarconsultoria.com.br/servicos",
+    "www.monitorarconsultoria.com.br/clientes",
+    "www.monitorarconsultoria.com.br/conteudos/hazop",
+    "www.monitorarconsultoria.com.br/servicos/drager"
+   ]
+  }
+ }
+}
