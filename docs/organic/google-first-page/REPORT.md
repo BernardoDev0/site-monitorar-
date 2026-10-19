@@ -76,3 +76,20 @@ O Google define o ranking; a indexação e a reavaliação da canônica levam di
 
 1. **Autorizar a propriedade do endereço sem www no Search Console** (reversível, sem efeito no ranking): permitiria inspecionar esse endereço e pedir o novo rastreamento, que é o caminho mais rápido para o Google adotar o www como oficial e atribuir o ícone aos artigos. Sem autorização, resta esperar o rastreamento natural do Google.
 2. Se a Home continuar com a canônica sem www depois de cerca de 7 dias: manter www, como escolhido pelo proprietário (as páginas novas já estão indexadas em www e a posição 1 está nelas), ou adotar a versão sem www. Trocar de host reinicia a consolidação e fazer isso agora arriscaria a posição atual; não será feito sem decisão do proprietário. Além disso, o acompanhamento do Search Console hoje só existe para o www.
+
+## Cobertura ampliada: termos genéricos, por estado e os 90 artigos (19/10, tarde)
+
+Pedido do proprietário: 1º lugar orgânico em cada um dos 90 artigos, ou 2º se não for possível, com prioridade para "consultoria ambiental RJ" e "consultoria engenharia ambiental RJ", e também para termos genéricos ("emissões fugitivas") e para outros estados.
+
+**Linha de base parcial** (`rankings/baseline-2026-10-19.csv`, 40 consultas, sem personalização, só a 1ª página): 1º em "monitoramento de emissões fugitivas", "programa LDAR", "Qualidade do ar, PTS e Fumaça Preta" e "Avaliação de ruído extramuros" (em artigos do blog); 2º em "Monitoramento de emissões fugitivas e LDAR" e "empresa de LDAR"; 4º em "ruído extramuros"; **8º em "emissões fugitivas"** (artigo "O que são emissões fugitivas"). **Ausente** em todas as consultas de consultoria e engenharia ambiental com RJ, em "monitoramento da qualidade do ar", "partículas totais em suspensão", "avaliação de ruído ambiental" e afins. O Google respondeu com captcha depois de 40 consultas em 14 minutos e a varredura foi interrompida; o restante (cerca de 160 frases) é medido aos poucos, no máximo 10 por ciclo de 3 horas. Nunca se contorna o captcha.
+
+**Publicado:**
+- `/consultoria-ambiental-rj`: página dedicada a "consultoria ambiental" e "engenharia ambiental" no Rio de Janeiro, com os serviços ligados às páginas de serviço e aos guias, os números que o site já publicava, as regiões do estado e quatro perguntas respondidas com o conteúdo existente. Ligada do cabeçalho, do rodapé, de `/servicos` e dos 90 artigos (três textos de âncora diferentes).
+- `/consultoria-ambiental-por-estado`: uma página de referência com os estados que o proprietário confirmou (RJ, SP, MG, ES, PR, SC, RS, BA, SE, PE, CE), o órgão ambiental oficial de cada um e o endereço do portal (`content/regions.json`, todos conferidos). Só afirma atendimento conforme o escopo. Se o Search Console mostrar impressões para algum estado, esse estado ganha página própria; páginas por cidade copiadas não serão criadas porque o Google as trata como páginas de entrada.
+- Descrições dos 90 artigos ajustadas ao tamanho do resultado (antes, 78 passavam de 160 caracteres); os textos aprovados não mudaram.
+- Um teste impede que qualquer página pública mencione a situação do escritório, por instrução do proprietário.
+
+**Perfil da Empresa no Google (Maps):** existe "Monitorar Consultoria Em Gestão Ambiental LTDA", categoria Engenharia ambiental, sem dono e sem site cadastrado; o endereço no Maps diz "loja 125" e o do site "Loja 205". O proprietário autorizou a reivindicação. O fluxo foi iniciado e parou na verificação, que só aceita **vídeo** (mostrar o local e o comprovante de administração) e é feita pelo proprietário em `business.google.com`. Enquanto isso, o perfil não está ligado ao site, o que pesa nas buscas com cidade.
+
+**O que esperar:** "emissões fugitivas" e "LDAR" estão em disputa real e já aparecem na 1ª página, e o ganho de posição vem de reforço do conjunto de conteúdo e de links. "Consultoria ambiental RJ" é muito disputada (domínios de empresas consolidadas e diretórios); sem links externos e sem o perfil verificado no Maps, entrar na 1ª página leva semanas ou meses. Nenhum prazo nem posição é garantido.
+

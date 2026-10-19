@@ -1,0 +1,21 @@
+{
+ "capturedAt": "2026-10-19T15:30:25+00:00",
+ "command": "request",
+ "results": [
+  {
+   "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado",
+   "verdict": "O URL não está no Google",
+   "coverage": "A página não está indexada: O Google não reconhece o URL",
+   "Último rastreamento": "N/D",
+   "Rastreada como": "N/D",
+   "O rastreamento é permitido?": "N/D",
+   "Busca de página": "N/D",
+   "A indexação é permitida?": "info",
+   "URL canônico declarado pelo usuário": "N/D",
+   "URL canônico selecionado pelo Google": "N/D",
+   "requested": false,
+   "quotaExceeded": true,
+   "dialog": " Saiba mais Entendi error_outline A cota foi excedida Não foi possível processar a solicitação porque sua cota diária foi excedida. Tente novamente amanhã."
+  }
+ ]
+}
