@@ -85,7 +85,7 @@ Pedido do proprietário: 1º lugar orgânico em cada um dos 90 artigos, ou 2º s
 
 **Publicado:**
 - `/consultoria-ambiental-rj`: página dedicada a "consultoria ambiental" e "engenharia ambiental" no Rio de Janeiro, com os serviços ligados às páginas de serviço e aos guias, os números que o site já publicava, as regiões do estado e quatro perguntas respondidas com o conteúdo existente. Ligada do cabeçalho, do rodapé, de `/servicos` e dos 90 artigos (três textos de âncora diferentes).
-- `/consultoria-ambiental-por-estado`: uma página de referência com os estados que o proprietário confirmou (RJ, SP, MG, ES, PR, SC, RS, BA, SE, PE, CE), o órgão ambiental oficial de cada um e o endereço do portal (`content/regions.json`, todos conferidos). Só afirma atendimento conforme o escopo. Se o Search Console mostrar impressões para algum estado, esse estado ganha página própria; páginas por cidade copiadas não serão criadas porque o Google as trata como páginas de entrada.
+- `/consultoria-ambiental-por-estado`: uma página de referência com os 27 estados, o órgão ambiental oficial de cada um e o endereço do portal (`content/regions.json`; MT e RN ficam sem link porque nenhum portal pôde ser verificado). Só afirma atendimento conforme o escopo. (Primeira versão, só com os estados da lista inicial; ampliada à noite, veja a seção seguinte.) Se o Search Console mostrar impressões para algum estado, esse estado ganha página própria; páginas por cidade copiadas não serão criadas porque o Google as trata como páginas de entrada.
 - Descrições dos 90 artigos ajustadas ao tamanho do resultado (antes, 78 passavam de 160 caracteres); os textos aprovados não mudaram.
 - Um teste impede que qualquer página pública mencione a situação do escritório, por instrução do proprietário.
 
@@ -93,3 +93,29 @@ Pedido do proprietário: 1º lugar orgânico em cada um dos 90 artigos, ou 2º s
 
 **O que esperar:** "emissões fugitivas" e "LDAR" estão em disputa real e já aparecem na 1ª página, e o ganho de posição vem de reforço do conjunto de conteúdo e de links. "Consultoria ambiental RJ" é muito disputada (domínios de empresas consolidadas e diretórios); sem links externos e sem o perfil verificado no Maps, entrar na 1ª página leva semanas ou meses. Nenhum prazo nem posição é garantido.
 
+## Escopo corrigido: qualquer estado, atuação principal no RJ, em SP e no Amazonas (19/10, noite)
+
+Instrução do proprietário: a empresa **atende qualquer estado**; a atuação principal é no **RJ, em São Paulo e no Amazonas**; nada no site, **nem a Home**, pode limitar a empresa ao RJ. Isso substitui a lista de regiões da rodada anterior (RJ, Sudeste, Sul, Nordeste).
+
+**Publicado** (commits `caa89bc` e seguintes):
+- Home e hero: "em todo o Brasil… atuação principal no RJ, em São Paulo e no Amazonas".
+- `/consultoria-ambiental-rj` reescrita como "no Rio de Janeiro e em outros estados"; novas `/consultoria-ambiental-sp` e `/consultoria-ambiental-am` (órgão ambiental, CETESB e IPAAM, com o portal oficial; serviços; guias; perguntas); `/consultoria-ambiental-por-estado` com os 27 estados.
+- Dados estruturados: `areaServed` = Rio de Janeiro, São Paulo, Amazonas e Brasil (`content/business.json`).
+- Os artigos ligam as três páginas de estado. Instrução mantida: nenhuma página fala da situação do escritório (teste automatizado).
+
+## Respostas de IA do Google ("Visão geral criada por IA")
+
+**Medido em 19/10** (`scripts/ai-overview.py`, sem personalização, `ai-overview/ai-overview-2026-10-19.csv`):
+
+| Consulta | Quadro de IA | Monitorar citada | Posição orgânica | Fontes citadas |
+|---|---|---|---|---|
+| emissões fugitivas RJ | sim | **não** | 1ª | blog.alutal.com.br, rio.rj.gov.br |
+| emissões fugitivas | sim | **não** | não apareceu nesta leitura (8ª na linha de base da tarde) | alutal, ecycle, mineral.eng.br, UFMG, Wikipedia, YouTube |
+
+Ser o 1º resultado orgânico **não** coloca a empresa no quadro de IA: o Google escolhe, para a resposta, páginas que definem o assunto e o respondem de forma direta, de fontes que ele já trata como referência (órgão público, universidade, enciclopédia, vídeo). Nenhuma ferramenta nem texto força a citação, e o Google não publica as regras.
+
+**Publicado para ser citável:** `/emissoes-fugitivas-perguntas-e-respostas`, um guia com nove perguntas respondidas na primeira frase de cada resposta, com a definição de emissão fugitiva citada literalmente da Resolução CONAMA 382/2006 (art. 3º) e com as fontes primárias: guia LDAR e Método 21 da EPA e a Resolução CONEMA 97/2022 (NOP-INEA-52, INEA). Dados estruturados FAQPage gerados do mesmo arquivo (`content/faq-emissoes-fugitivas.json`) que o texto visível. Ligado do serviço de emissões fugitivas, dos artigos "O que são emissões fugitivas" e "O que é LDAR", dos artigos do assunto e de `/servicos`. Só afirma o que as fontes dizem; o que depende de cada instalação está dito como tal.
+
+**Pendente:** pedido de indexação das quatro páginas novas (a cota diária do Search Console estava esgotada; repetir no primeiro ciclo de 20/10): `/emissoes-fugitivas-perguntas-e-respostas`, `/consultoria-ambiental-por-estado`, `/consultoria-ambiental-sp`, `/consultoria-ambiental-am`. Depois, repetir `ai-overview.py` no máximo uma vez por dia e comparar.
+
+**Fora do código (depende do proprietário):** o Google cita o YouTube nas respostas de IA para o assunto; um vídeo curto e verdadeiro no canal da empresa, explicando LDAR, e a presença em diretórios e na imprensa técnica reforçam o sinal. O Perfil da Empresa verificado também conta nas buscas locais. Nenhum prazo nem citação é garantido.
