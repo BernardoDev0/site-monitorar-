@@ -252,3 +252,9 @@ test('the emissions Q&A guide answers each question first, quotes the norm and c
  nothingAboutTheOffice(html);
  for(const path of ['/servicos/emissoes-fugitivas','/blog/o-que-sao-emissoes-fugitivas','/blog/o-que-e-ldar','/servicos'])assert.ok((await page(path)).includes('href="'+faqPath+'"'),'linked from '+path);
 });
+
+test('the environment services page does not stop at Rio de Janeiro: it links the principal states and the state list',async()=>{
+ // The footer already links these pages everywhere; the page's own content must too.
+ const main=(await page('/servicos/meio-ambiente')).match(/<main[\s\S]*?<\/main>/)[0];
+ for(const href of ['/consultoria-ambiental-rj','/consultoria-ambiental-sp','/consultoria-ambiental-am','/consultoria-ambiental-por-estado'])assert.ok(main.includes('href="'+href+'"'),href);
+});
