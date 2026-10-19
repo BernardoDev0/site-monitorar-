@@ -150,3 +150,5 @@ body { background:var(--site-paper); }
 .editorial-local a, .rj-page a { overflow-wrap:anywhere; }
 .rj-page h3 { font-size:1.2rem; font-weight:600; line-height:1.35; margin:0 0 .5rem; }
 .rj-page .rj-grid article p { margin:.5rem 0 1rem; }
+.rj-page .rj-sources { padding-left:1.2rem; list-style:disc; line-height:2; }
+.editorial-faq-link { margin:1.5rem 0; font-weight:600; }

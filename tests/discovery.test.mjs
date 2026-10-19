@@ -16,7 +16,7 @@ test('full brand name accompanies home and emissions titles',async()=>{
  assert.equal(title(await page('/conteudos/emissoes-fugitivas')),'Conhecimento sobre emissões fugitivas | Monitorar Consultoria');
 });
 test('every sitemap page names the site, keeps a unique branded title and stays short with the full brand',async()=>{
- assert.equal(paths.length,125);
+ assert.equal(paths.length,126);
  const titles=new Set();
  for(const path of paths){
   const html=await page(path),t=title(html);
@@ -37,7 +37,7 @@ test('IndexNow payload carries only canonical sitemap URLs',()=>{
  const key=integrations.INDEXNOW_KEY,payload=indexNowPayload(sitemap,key);
  assert.equal(payload.host,'www.monitorarconsultoria.com.br');
  assert.equal(payload.keyLocation,'https://www.monitorarconsultoria.com.br/'+key+'.txt');
- assert.equal(payload.urlList.length,125);
+ assert.equal(payload.urlList.length,126);
  assert.throws(()=>indexNowPayload('<loc>https://example.org/</loc>',key));
  assert.throws(()=>indexNowPayload('<urlset></urlset>',key));
 });
@@ -229,4 +229,26 @@ test('structured data lists the principal states served',async()=>{
  const graph=JSON.parse((await page('/servicos/emissoes-fugitivas')).match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
  const names=[].concat(graph.find(n=>n['@type']==='Service').areaServed).map(a=>a.name);
  for(const name of ['Rio de Janeiro','São Paulo','Amazonas','Brasil'])assert.ok(names.includes(name),name);
+});
+const faqPath='/emissoes-fugitivas-perguntas-e-respostas';
+test('the emissions Q&A guide answers each question first, quotes the norm and cites its sources',async()=>{
+ assert.ok(paths.includes(faqPath));
+ const html=await page(faqPath);
+ assert.equal(title(html),'Emissões fugitivas: perguntas e respostas | Monitorar Consultoria');
+ const description=text(html.match(/<meta name="description" content="([^"]*)"/)[1]);
+ assert.ok(description.length>=100&&description.length<=160,'description '+description.length);
+ assert.equal(text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,'')),'Emissões fugitivas: perguntas e respostas');
+ assert.ok(words(html)>=700,'words '+words(html));
+ const body=html.split('<div id="root">')[1];
+ const questions=[...body.matchAll(/<h2[^>]*>([^<]*\?)<\/h2>/g)].map(m=>text(m[1]));
+ assert.equal(questions.length,9,'nine question headings');
+ assert.match(body,/lançamento difuso na atmosfera de qualquer forma de matéria sólida, líquida ou gasosa, efetuado por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo/);
+ for(const url of ['https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf','https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks','https://www.inea.rj.gov.br/wp-content/uploads/2022/11/Resolu%C3%A7%C3%A3o-CONEMA-n%C2%BA-97-aprova-a-NOP-INEA-52.pdf'])assert.ok(body.includes('href="'+url+'"'),url);
+ for(const href of ['/blog/o-que-sao-emissoes-fugitivas','/blog/o-que-e-ldar','/blog/emissoes-fugitivas-e-canalizadas','/blog/deteccao-e-quantificacao-de-emissoes-fugitivas','/blog/ogi-e-analisadores-na-deteccao-de-vazamentos','/blog/cadastro-de-componentes-para-ldar','/servicos/emissoes-fugitivas','/consultoria-ambiental-rj'])assert.ok(body.includes('href="'+href+'"'),href);
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+ const faq=graph.find(n=>n['@type']==='FAQPage');
+ assert.ok(faq);assert.equal(faq.mainEntity.length,9);
+ for(const item of faq.mainEntity){assert.ok(questions.includes(item.name),item.name);assert.ok(item.acceptedAnswer.text.length>80);assert.ok(!/\[\[|\]\]/.test(item.acceptedAnswer.text));}
+ nothingAboutTheOffice(html);
+ for(const path of ['/servicos/emissoes-fugitivas','/blog/o-que-sao-emissoes-fugitivas','/blog/o-que-e-ldar','/servicos'])assert.ok((await page(path)).includes('href="'+faqPath+'"'),'linked from '+path);
 });

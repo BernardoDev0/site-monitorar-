@@ -10,6 +10,7 @@ import Services from "./pages/Services";
 import ConsultoriaAmbientalRJ from "./pages/ConsultoriaAmbientalRJ";
 import ConsultoriaPorEstado from "./pages/ConsultoriaPorEstado";
 import { ConsultoriaSP, ConsultoriaAM } from "./pages/ConsultoriaEstado";
+import EmissoesFugitivasFaq from "./pages/EmissoesFugitivasFaq";
 import Clients from "./pages/Clients";
 import Testimonials from "./pages/Testimonials";
 import Careers from "./pages/Careers";
@@ -41,6 +42,7 @@ const App = () => (
               <Route path="/consultoria-ambiental-por-estado" element={<ConsultoriaPorEstado />} />
               <Route path="/consultoria-ambiental-sp" element={<ConsultoriaSP />} />
               <Route path="/consultoria-ambiental-am" element={<ConsultoriaAM />} />
+              <Route path="/emissoes-fugitivas-perguntas-e-respostas" element={<EmissoesFugitivasFaq />} />
               <Route path="/clientes" element={<Clients />} />
               <Route path="/depoimentos" element={<Testimonials />} />
               <Route path="/trabalhe-conosco" element={<Careers />} />

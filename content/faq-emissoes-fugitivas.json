@@ -1,0 +1,64 @@
+[
+  {
+    "q": "O que são emissões fugitivas?",
+    "a": [
+      "Emissões fugitivas são liberações difusas de matéria para a atmosfera, feitas por uma fonte que não tem dispositivo para dirigir ou controlar o fluxo. A Resolução CONAMA nº 382/2006 (art. 3º) define emissão fugitiva como o “lançamento difuso na atmosfera de qualquer forma de matéria sólida, líquida ou gasosa, efetuado por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo”.",
+      "Em instalações industriais, isso inclui vazamentos em equipamentos e componentes de processo. Leia o artigo [[O que são emissões fugitivas|/blog/o-que-sao-emissoes-fugitivas]]."
+    ]
+  },
+  {
+    "q": "Qual é a diferença entre emissão fugitiva e emissão pontual?",
+    "a": [
+      "Na emissão pontual, o lançamento sai por uma fonte provida de dispositivo para dirigir ou controlar o fluxo, como dutos e chaminés. Na emissão fugitiva, a fonte não tem esse dispositivo. As duas definições estão na Resolução CONAMA nº 382/2006, que também classifica como fonte fixa de emissão qualquer instalação, equipamento ou processo, situado em local fixo, que libere matéria para a atmosfera por emissão pontual ou fugitiva.",
+      "Veja o artigo [[Emissões fugitivas e canalizadas|/blog/emissoes-fugitivas-e-canalizadas]]."
+    ]
+  },
+  {
+    "q": "De onde vêm as emissões fugitivas em uma indústria?",
+    "a": [
+      "Dos componentes e equipamentos de processo que podem vazar. O guia de boas práticas LDAR da EPA cita válvulas, conexões, bombas, pontos de amostragem, compressores, dispositivos de alívio de pressão e linhas abertas. Segundo o guia, em uma instalação típica a maior parte das emissões vem de válvulas e conexões, por serem os componentes mais numerosos, e a principal causa é a falha de vedação ou de junta por desgaste normal ou manutenção inadequada.",
+      "Essa é uma referência dos Estados Unidos: cada instalação precisa do seu próprio cadastro de componentes. Veja [[Cadastro de componentes para LDAR|/blog/cadastro-de-componentes-para-ldar]]."
+    ]
+  },
+  {
+    "q": "O que é LDAR?",
+    "a": [
+      "LDAR, do inglês Leak Detection and Repair, é um programa de detecção e reparo de vazamentos. O guia da EPA descreve cinco elementos: identificar os componentes, definir o que é vazamento, monitorar os componentes, repará-los e manter os registros. Uma instalação pode controlar as emissões de equipamentos por um programa LDAR ou substituindo equipamentos por componentes sem vazamento, e muitas regras permitem combinar os dois métodos.",
+      "Veja [[O que é LDAR|/blog/o-que-e-ldar]] e [[Reparo e reverificação em programas LDAR|/blog/reparo-e-reverificacao-em-programas-ldar]]."
+    ]
+  },
+  {
+    "q": "Como as emissões fugitivas são detectadas?",
+    "a": [
+      "Por medição em campo dos componentes, com instrumentos. O Método 21 da EPA descreve o uso de um instrumento portátil para detectar vazamentos de compostos orgânicos voláteis em fontes individuais, e a concentração que define um vazamento é fixada por cada regra aplicável. Câmeras de imagem óptica de gás e analisadores também são usados, cada um com limitações próprias.",
+      "Veja [[OGI e analisadores na detecção de vazamentos|/blog/ogi-e-analisadores-na-deteccao-de-vazamentos]]."
+    ]
+  },
+  {
+    "q": "Detectar um vazamento é o mesmo que quantificar a emissão?",
+    "a": [
+      "Não. O Método 21 da EPA é destinado a localizar e classificar vazamentos e não deve ser usado como medida direta da taxa de emissão em massa de cada fonte. Quantificar exige definir grandeza, unidade e procedimento capaz de sustentar o resultado.",
+      "Veja [[Detecção e quantificação de emissões fugitivas|/blog/deteccao-e-quantificacao-de-emissoes-fugitivas]]."
+    ]
+  },
+  {
+    "q": "Por que controlar emissões fugitivas?",
+    "a": [
+      "O guia LDAR da EPA aponta três benefícios: reduzir perdas de produto, o que normalmente significa perda de receita; aumentar a segurança de trabalhadores e operadores, ao reduzir a exposição a compostos perigosos; e reduzir a exposição da comunidade do entorno a poluentes tóxicos do ar. A EPA também afirma que equipamentos com vazamento, como válvulas, bombas e conexões, são a maior fonte de emissões de compostos orgânicos voláteis em refinarias e na indústria química dos Estados Unidos."
+    ]
+  },
+  {
+    "q": "Emissões fugitivas têm relação com o licenciamento e o inventário de gases de efeito estufa no Rio de Janeiro?",
+    "a": [
+      "Há relação com o inventário de gases de efeito estufa (GEE), exigido no estado do Rio de Janeiro para fins de licenciamento. A Resolução CONEMA nº 97/2022 aprovou a NOP-INEA-52, que estabelece procedimentos, requisitos gerais e critérios para o Programa de Relato de Emissões de GEE para fins de licenciamento ambiental e composição do Cadastro Estadual de Emissões de GEE. A resolução cita o art. 7º, inciso X, da Lei Estadual nº 5.690/2010, que condiciona a liberação de licenças ambientais à apresentação do inventário de GEE, e determina que o inventário expresse obrigatoriamente as emissões de escopo 1, as emissões diretas de fontes da própria organização, e de escopo 2.",
+      "Em geral, perdas por vazamento em equipamentos controlados pela própria empresa são emissões diretas, mas a classificação de cada fonte deve seguir a norma vigente e a metodologia do inventário. Consulte o INEA para o enquadramento de cada empreendimento. Veja também [[Inventário de GEE e monitoramento de emissões fugitivas|/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas]]."
+    ]
+  },
+  {
+    "q": "A Monitorar atende projetos de emissões fugitivas e LDAR?",
+    "a": [
+      "Sim. A Monitorar apresenta LDAR em seu portfólio ambiental, tem sede no Rio de Janeiro, atuação principal no RJ, em São Paulo e no Amazonas, e atende projetos em qualquer estado do Brasil conforme o escopo. Equipe, técnicas, instrumentos e atividades são confirmados na proposta de cada projeto.",
+      "Veja o serviço de [[monitoramento de emissões fugitivas e LDAR|/servicos/emissoes-fugitivas]] e a [[consultoria ambiental no Rio de Janeiro|/consultoria-ambiental-rj]]."
+    ]
+  }
+]
