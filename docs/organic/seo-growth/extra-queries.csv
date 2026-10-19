@@ -1,11 +1,11 @@
 target,kind,phrase
-/conteudos/emissoes-fugitivas,head,emissões fugitivas
-/conteudos/emissoes-fugitivas,head,emissão fugitiva
-/conteudos/emissoes-fugitivas,head,o que é emissão fugitiva
-/conteudos/emissoes-fugitivas,head,tipos de emissões fugitivas
-/conteudos/emissoes-fugitivas,head,fontes de emissões fugitivas
-/conteudos/emissoes-fugitivas,head,como controlar emissões fugitivas
-/conteudos/emissoes-fugitivas,head,emissões fugitivas indústria
+/emissoes-fugitivas,head,emissões fugitivas
+/emissoes-fugitivas,head,emissão fugitiva
+/emissoes-fugitivas,head,o que é emissão fugitiva
+/emissoes-fugitivas,head,tipos de emissões fugitivas
+/emissoes-fugitivas,head,fontes de emissões fugitivas
+/emissoes-fugitivas,head,como controlar emissões fugitivas
+/emissoes-fugitivas,head,emissões fugitivas indústria
 /servicos/emissoes-fugitivas,head,empresa de emissões fugitivas
 /servicos/emissoes-fugitivas,head,monitoramento de emissões fugitivas RJ
 /servicos/emissoes-fugitivas,head,LDAR RJ
@@ -16,9 +16,9 @@ target,kind,phrase
 /blog/o-que-e-ldar,head,LDAR
 /blog/o-que-e-ldar,head,ldar o que é
 /blog/o-que-e-ldar,head,leak detection and repair
-/,head,consultoria ambiental
-/,head,engenharia ambiental
-/,head,empresa de engenharia ambiental
+/consultoria-ambiental,head,consultoria ambiental
+/consultoria-ambiental,head,engenharia ambiental
+/consultoria-ambiental,head,empresa de engenharia ambiental
 /,head,consultoria ambiental para indústria
 /,head,consultoria ambiental industrial
 /,head,consultoria ambiental petróleo e gás
@@ -73,3 +73,9 @@ target,kind,phrase
 /consultoria-ambiental-am,geo,engenharia ambiental Manaus
 /consultoria-ambiental-am,geo,empresa de consultoria ambiental Manaus
 /consultoria-ambiental-am,geo,consultoria ambiental Zona Franca de Manaus
+/emissoes-fugitivas,head,o que são emissões fugitivas
+/emissoes-fugitivas,head,legislação emissões fugitivas
+/emissoes-fugitivas,head,emissões fugitivas RJ
+/consultoria-ambiental,head,empresa de consultoria ambiental
+/consultoria-ambiental,head,o que é consultoria ambiental
+/consultoria-ambiental,head,como escolher uma consultoria ambiental

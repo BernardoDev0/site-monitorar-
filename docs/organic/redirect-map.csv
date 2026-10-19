@@ -32,3 +32,4 @@ existing_path,target_path,action,reason,expected_status
 /perfuracao-e-instalacao-de-pocos-de-monitoramento-ambiental.html,/servicos,redirect,URL do site antigo (Wayback 2013-2016): a Vercel (cleanUrls) remove .html e a regra da forma sem extensão leva ao destino (2 saltos),308
 /engenharia-civil,,none,URL do site antigo sem equivalente atual; permanece 404 para não sugerir serviço não oferecido,404
 /engenharia-civil.html,,none,URL do site antigo sem equivalente atual; permanece 404 para não sugerir serviço não oferecido,404
+/emissoes-fugitivas-perguntas-e-respostas,/emissoes-fugitivas,redirect,Guia de perguntas e respostas incorporado ao guia completo de emissões fugitivas (publicado em 19/10/2026; o Google ainda não o conhecia),308

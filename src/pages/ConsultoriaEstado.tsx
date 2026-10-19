@@ -36,7 +36,7 @@ function ConsultoriaEstado({ uf }: { uf: 'SP' | 'AM' }) {
       <section className="v4-services">
         <h2>{`Atuação principal ${r.in}`}</h2>
         <p>{`${r.name} é um dos estados em que a Monitorar concentra a sua atuação, junto com o Rio de Janeiro e ${otherIn.replace(/^(no|em) /, '')}. O escopo, as atividades, as entregas e os prazos de cada projeto são definidos na proposta comercial. Para começar, informe o objetivo, a localização do empreendimento e o prazo em nossa `}<a className="text-link" href="/contato">página de contato</a>.</p>
-        <p>Conheça também a <a className="text-link" href={rjHref}>consultoria ambiental no Rio de Janeiro</a>, a consultoria ambiental <a className="text-link" href={otherHref}>{otherIn}</a> e a página de <a className="text-link" href="/consultoria-ambiental-por-estado">consultoria ambiental por estado</a>.</p>
+        <p>Conheça também a <a className="text-link" href={rjHref}>consultoria ambiental no Rio de Janeiro</a>, a consultoria ambiental <a className="text-link" href={otherHref}>{otherIn}</a>, a página de <a className="text-link" href="/consultoria-ambiental-por-estado">consultoria ambiental por estado</a> e o <a className="text-link" href="/consultoria-ambiental">guia de consultoria ambiental</a>.</p>
       </section>
       <section className="v4-services">
         <h2>{`Serviços de consultoria ambiental ${r.in}`}</h2>

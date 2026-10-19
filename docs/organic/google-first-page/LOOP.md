@@ -45,14 +45,17 @@ Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**
 
 A cota de 19/10 acabou. No primeiro ciclo de 20/10 (e nos seguintes, até esvaziar), inspecionar cada URL com `gsc.py inspect` e pedir com `gsc.py request` só as que ainda não estão indexadas ou estão com versão antiga, nesta ordem:
 
-1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas-perguntas-e-respostas` (guia de perguntas e respostas, publicado em 19/10, atualizado depois)
-2. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado`
-3. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
-4. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
-5. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj` (reescrita em 19/10)
-6. `https://www.monitorarconsultoria.com.br/` (Home reescrita para qualquer estado)
+1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia completo; o guia de perguntas e respostas virou redirecionamento 308 para ele)
+2. `https://www.monitorarconsultoria.com.br/consultoria-ambiental` (guia de consultoria ambiental)
+3. `https://www.monitorarconsultoria.com.br/` (Home reescrita para qualquer estado, com a seção "Empresa de engenharia e consultoria ambiental")
+4. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj` (reescrita; a versão no Google é a antiga)
+5. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado`
+6. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
+7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
+8. `https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas` (bloco "Empresa de LDAR" e link ao guia)
+9. `https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas` (link ao guia)
 
-Registrar no log quais foram pedidas e riscar daqui as que entraram no índice.
+Registrar no log quais foram pedidas e riscar daqui as que entraram no índice. Depois que a propriedade de domínio sem www estiver verificada (autorizada pelo proprietário em 19/10; ele coloca o TXT no DNS), inspecionar e pedir também `https://monitorarconsultoria.com.br/`, que é o que faz o Google trocar a canônica da Home para www.
 
 ## Captcha
 

@@ -16,7 +16,7 @@ test('full brand name accompanies home and emissions titles',async()=>{
  assert.equal(title(await page('/conteudos/emissoes-fugitivas')),'Conhecimento sobre emissões fugitivas | Monitorar Consultoria');
 });
 test('every sitemap page names the site, keeps a unique branded title and stays short with the full brand',async()=>{
- assert.equal(paths.length,126);
+ assert.equal(paths.length,127);
  const titles=new Set();
  for(const path of paths){
   const html=await page(path),t=title(html);
@@ -37,7 +37,7 @@ test('IndexNow payload carries only canonical sitemap URLs',()=>{
  const key=integrations.INDEXNOW_KEY,payload=indexNowPayload(sitemap,key);
  assert.equal(payload.host,'www.monitorarconsultoria.com.br');
  assert.equal(payload.keyLocation,'https://www.monitorarconsultoria.com.br/'+key+'.txt');
- assert.equal(payload.urlList.length,126);
+ assert.equal(payload.urlList.length,127);
  assert.throws(()=>indexNowPayload('<loc>https://example.org/</loc>',key));
  assert.throws(()=>indexNowPayload('<urlset></urlset>',key));
 });
@@ -230,27 +230,97 @@ test('structured data lists the principal states served',async()=>{
  const names=[].concat(graph.find(n=>n['@type']==='Service').areaServed).map(a=>a.name);
  for(const name of ['Rio de Janeiro','São Paulo','Amazonas','Brasil'])assert.ok(names.includes(name),name);
 });
-const faqPath='/emissoes-fugitivas-perguntas-e-respostas';
-test('the emissions Q&A guide answers each question first, quotes the norm and cites its sources',async()=>{
- assert.ok(paths.includes(faqPath));
- const html=await page(faqPath);
- assert.equal(title(html),'Emissões fugitivas: perguntas e respostas | Monitorar Consultoria');
- const description=text(html.match(/<meta name="description" content="([^"]*)"/)[1]);
- assert.ok(description.length>=100&&description.length<=160,'description '+description.length);
- assert.equal(text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,'')),'Emissões fugitivas: perguntas e respostas');
- assert.ok(words(html)>=700,'words '+words(html));
- const body=html.split('<div id="root">')[1];
- const questions=[...body.matchAll(/<h2[^>]*>([^<]*\?)<\/h2>/g)].map(m=>text(m[1]));
- assert.equal(questions.length,9,'nine question headings');
- assert.match(body,/lançamento difuso na atmosfera de qualquer forma de matéria sólida, líquida ou gasosa, efetuado por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo/);
- for(const url of ['https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf','https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks','https://www.inea.rj.gov.br/wp-content/uploads/2022/11/Resolu%C3%A7%C3%A3o-CONEMA-n%C2%BA-97-aprova-a-NOP-INEA-52.pdf'])assert.ok(body.includes('href="'+url+'"'),url);
- for(const href of ['/blog/o-que-sao-emissoes-fugitivas','/blog/o-que-e-ldar','/blog/emissoes-fugitivas-e-canalizadas','/blog/deteccao-e-quantificacao-de-emissoes-fugitivas','/blog/ogi-e-analisadores-na-deteccao-de-vazamentos','/blog/cadastro-de-componentes-para-ldar','/servicos/emissoes-fugitivas','/consultoria-ambiental-rj'])assert.ok(body.includes('href="'+href+'"'),href);
- const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+const guidePath='/emissoes-fugitivas';
+const oldFaqPath='/emissoes-fugitivas-perguntas-e-respostas';
+const consultingPath='/consultoria-ambiental';
+const clusterSlugs=['o-que-sao-emissoes-fugitivas','emissoes-fugitivas-e-canalizadas','tanques-vedacoes-e-classificacao-de-fontes-fugitivas','substancias-e-condicoes-na-deteccao-de-vazamentos','inventario-de-gee-e-monitoramento-de-emissoes-fugitivas','deteccao-e-quantificacao-de-emissoes-fugitivas','ogi-e-analisadores-na-deteccao-de-vazamentos','epa-method-21-contexto-e-limites','ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes','condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas','calibracao-e-rastreabilidade-de-dados-ldar','o-que-e-ldar','cadastro-de-componentes-para-ldar','componentes-sem-acesso-em-programas-ldar','criterios-de-vazamento-e-gatilhos-de-acao-ldar','reparo-e-reverificacao-em-programas-ldar','registro-de-vazamentos-em-programas-ldar','indicadores-de-programas-ldar','mudancas-na-planta-e-atualizacao-do-programa-ldar','qualidade-e-aceite-de-dados-de-campanhas-ldar','como-contratar-monitoramento-de-emissoes-fugitivas','dados-para-orcamento-de-emissoes-fugitivas','planejamento-de-campanha-de-emissoes-fugitivas','como-ler-relatorio-de-emissoes-fugitivas','comparacao-entre-campanhas-de-emissoes-fugitivas','emissoes-fugitivas-petrobras'].map(slug=>'/blog/'+slug);
+const metaDescription=html=>text(html.match(/<meta name="description" content="([^"]*)"/)[1]);
+const h1Of=html=>text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,''));
+const headings=(html,tag)=>[...html.split('<div id="root">')[1].matchAll(new RegExp('<'+tag+'[^>]*>([^<]*)</'+tag+'>','g'))].map(m=>text(m[1]));
+const graphOf=html=>JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+function guideStructuredData(html,expectedQuestions){
+ const graph=graphOf(html);
+ const article=graph.find(n=>n['@type']==='Article');
+ assert.ok(article&&article.headline&&article.dateModified&&article.publisher,'Article node');
+ const crumbs=graph.find(n=>n['@type']==='BreadcrumbList');
+ assert.ok(crumbs&&crumbs.itemListElement.length===2,'BreadcrumbList with home and the guide');
  const faq=graph.find(n=>n['@type']==='FAQPage');
- assert.ok(faq);assert.equal(faq.mainEntity.length,9);
- for(const item of faq.mainEntity){assert.ok(questions.includes(item.name),item.name);assert.ok(item.acceptedAnswer.text.length>80);assert.ok(!/\[\[|\]\]/.test(item.acceptedAnswer.text));}
+ assert.ok(faq,'FAQPage node');
+ assert.ok(faq.mainEntity.length>=expectedQuestions,'FAQ size '+faq.mainEntity.length);
+ const visible=headings(html,'h3');
+ for(const item of faq.mainEntity){assert.ok(visible.includes(item.name),'visible question '+item.name);assert.ok(item.acceptedAnswer.text.length>60);assert.ok(!/\[\[|\]\]/.test(item.acceptedAnswer.text));}
+}
+test('the emissions guide is the single page for the head term: title, sourced sections, FAQ data and the whole cluster',async()=>{
+ assert.ok(paths.includes(guidePath));
+ assert.ok(!paths.includes(oldFaqPath),'the old Q&A address is only a redirect');
+ const html=await page(guidePath);
+ assert.equal(title(html),'Emissões fugitivas: guia completo e LDAR | Monitorar Consultoria');
+ const description=metaDescription(html);
+ assert.ok(description.length>=100&&description.length<=160,'description '+description.length);
+ assert.match(description,/emissões fugitivas/i);assert.match(description,/LDAR/);
+ assert.match(h1Of(html),/^Emissões fugitivas/);
+ assert.ok(words(html)>=1800,'words '+words(html));
+ const body=html.split('<div id="root">')[1];
+ const h2=headings(html,'h2');
+ for(const heading of ['O que são emissões fugitivas','Emissão fugitiva e emissão pontual','De onde vêm as emissões fugitivas','Por que controlar as emissões fugitivas','Como as emissões fugitivas são detectadas','Detectar não é quantificar','LDAR: o programa de detecção e reparo de vazamentos','Emissões fugitivas no Rio de Janeiro','Perguntas frequentes','Fontes'])assert.ok(h2.includes(heading),'H2 '+heading);
+ assert.match(body,/lançamento difuso na atmosfera de qualquer forma de matéria sólida, líquida ou gasosa, efetuado por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo/);
+ for(const fact of ['63%','56%','mais de 90%','10.000 tCO2eq','Lei Estadual nº 5.690','NOP-INEA-52','ABNT NBR ISO 14064','cinco elementos'])assert.ok(body.includes(fact),'fact '+fact);
+ for(const url of ['https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf','https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks','https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_4_Ch4_Fugitive_Emissions.pdf','https://www.inea.rj.gov.br/wp-content/uploads/2022/11/Resolu%C3%A7%C3%A3o-CONEMA-n%C2%BA-97-aprova-a-NOP-INEA-52.pdf','https://iema.es.gov.br/Media/iema/CQAI/FIGURAS/CRSS/CONAMA/CONAMA_382_2006.pdf'])assert.ok(body.includes('href="'+url+'"'),url);
+ assert.equal(clusterSlugs.length,26);
+ for(const slug of clusterSlugs){assert.ok(paths.includes(slug),slug+' must exist');assert.ok(body.includes('href="'+slug+'"'),'cluster link '+slug);}
+ for(const href of ['/servicos/emissoes-fugitivas','/consultoria-ambiental-rj','/conteudos/emissoes-fugitivas'])assert.ok(body.includes('href="'+href+'"'),href);
+ guideStructuredData(html,9);
  nothingAboutTheOffice(html);
- for(const path of ['/servicos/emissoes-fugitivas','/blog/o-que-sao-emissoes-fugitivas','/blog/o-que-e-ldar','/servicos'])assert.ok((await page(path)).includes('href="'+faqPath+'"'),'linked from '+path);
+});
+const mainOf=html=>html.match(/<main[\s\S]*?<\/main>/)[0];
+test('the emissions guide is linked, in the page content, from the home, the services, the hub and every article of the topic',async()=>{
+ for(const path of ['/','/servicos','/servicos/emissoes-fugitivas','/conteudos/emissoes-fugitivas',...clusterSlugs])assert.ok(mainOf(await page(path)).includes('href="'+guidePath+'"'),'linked from '+path);
+});
+test('the old emissions Q&A address redirects once to the guide',()=>{
+ const rules=vercel.redirects,rule=rules.find(r=>r.source===oldFaqPath);
+ assert.ok(rule,'missing redirect');assert.equal(rule.permanent,true);assert.equal(rule.destination,origin+guidePath);
+ assert.ok(rules.indexOf(rule)<rules.findIndex(r=>r.has?.some(h=>h.type==='host')),'must precede the apex host rule');
+ assert.ok(!rules.some(r=>r.source===guidePath),'no chain through the guide');
+});
+test('the consultoria ambiental guide says what it is, what it does and how to choose, with the law quoted',async()=>{
+ assert.ok(paths.includes(consultingPath));
+ const html=await page(consultingPath);
+ assert.equal(title(html),'Consultoria ambiental: guia para escolher | Monitorar Consultoria');
+ const description=metaDescription(html);
+ assert.ok(description.length>=100&&description.length<=160,'description '+description.length);
+ assert.match(description,/consultoria ambiental/i);assert.match(description,/engenharia ambiental/i);
+ assert.match(h1Of(html),/^Consultoria e engenharia ambiental/);
+ assert.ok(words(html)>=1300,'words '+words(html));
+ const body=html.split('<div id="root">')[1];
+ const h2=headings(html,'h2');
+ for(const heading of ['O que é consultoria ambiental','O que uma empresa de consultoria e engenharia ambiental faz','Licenciamento ambiental: licenças e prazos','Quando contratar uma consultoria ambiental','Como escolher uma empresa de consultoria ambiental','A Monitorar: consultoria e engenharia ambiental no RJ, em SP e no Amazonas','Perguntas frequentes','Fontes'])assert.ok(h2.includes(heading),'H2 '+heading);
+ for(const fact of ['Cadastro Técnico Federal','art. 17','procedimento administrativo pelo qual o órgão ambiental competente licencia a localização, instalação, ampliação e a operação','Licença Prévia','Licença de Instalação','Licença de Operação','relatório ambiental preliminar'])assert.ok(body.includes(fact),'fact '+fact);
+ assert.match(body,/4 anos[\s\S]{0,200}10 anos/);
+ for(const url of ['https://www.planalto.gov.br/ccivil_03/leis/l6938.htm','https://conama.mma.gov.br/?option=com_sisconama&amp;task=arquivo.download&amp;id=237'])assert.ok(body.includes('href="'+url+'"'),url);
+ for(const href of ['/consultoria-ambiental-rj','/consultoria-ambiental-sp','/consultoria-ambiental-am','/consultoria-ambiental-por-estado','/servicos/emissoes-fugitivas',guidePath,'/contato','/clientes'])assert.ok(body.includes('href="'+href+'"'),href);
+ assert.ok((body.match(/<img[^>]+src="\/clientes\//g)||[]).length>=8,'client logos');
+ guideStructuredData(html,6);
+ nothingAboutTheOffice(html);
+});
+test('the consultoria ambiental guide is linked, in the page content, from the home, the services, the state pages and all 90 articles',async()=>{
+ const articles=paths.filter(p=>p.startsWith('/blog/')&&!p.startsWith('/blog/pagina/'));
+ assert.equal(articles.length,90);
+ for(const path of ['/','/servicos','/consultoria-ambiental-rj','/consultoria-ambiental-sp','/consultoria-ambiental-am','/consultoria-ambiental-por-estado',...articles])assert.ok(mainOf(await page(path)).includes('href="'+consultingPath+'"'),'linked from '+path);
+ const footer=await page('/contato');
+ for(const href of [consultingPath,guidePath])assert.ok(footer.includes('href="'+href+'"'),'footer links '+href);
+});
+test('the home and the Rio de Janeiro page carry the commercial phrases in their headings and link both guides',async()=>{
+ const home=await page('/'),rj=await page('/consultoria-ambiental-rj');
+ assert.ok(headings(home,'h2').includes('Empresa de engenharia e consultoria ambiental'),'home H2');
+ assert.ok(headings(rj,'h2').includes('Empresa de engenharia ambiental e segurança do trabalho no Rio de Janeiro'),'RJ H2');
+ assert.match(rj.split('<div id="root">')[1],/empresa de consultoria e engenharia ambiental/i);
+ assert.ok((rj.match(/<img[^>]+src="\/clientes\//g)||[]).length>=8,'RJ client logos');
+ for(const [name,html] of [['home',home],['RJ',rj]])for(const href of [consultingPath,guidePath])assert.ok(mainOf(html).includes('href="'+href+'"'),name+' links '+href);
+});
+test('the LDAR service page names the company as an LDAR provider without touching the approved text',async()=>{
+ const html=await page('/servicos/emissoes-fugitivas');
+ assert.ok(headings(html,'h2').includes('Empresa de LDAR e monitoramento de emissões fugitivas'));
+ assert.equal(h1Of(html),'Monitoramento de emissões fugitivas');
 });
 
 test('the environment services page does not stop at Rio de Janeiro: it links the principal states and the state list',async()=>{

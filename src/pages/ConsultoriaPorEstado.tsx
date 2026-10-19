@@ -27,7 +27,7 @@ export default function ConsultoriaPorEstado() {
     <div className="site-wrap rj-page">
       <section className="v4-services">
         <h2>Como atendemos cada estado</h2>
-        <p>O escopo, as atividades, as entregas e os prazos de cada projeto são definidos na proposta comercial. Para começar, informe o objetivo, a localização do empreendimento e o prazo em nossa <a className="text-link" href="/contato">página de contato</a>. Conheça também os <a className="text-link" href="/servicos">serviços ambientais e de segurança do trabalho</a>.</p>
+        <p>O escopo, as atividades, as entregas e os prazos de cada projeto são definidos na proposta comercial. Para começar, informe o objetivo, a localização do empreendimento e o prazo em nossa <a className="text-link" href="/contato">página de contato</a>. Conheça também os <a className="text-link" href="/servicos">serviços ambientais e de segurança do trabalho</a> e leia o <a className="text-link" href="/consultoria-ambiental">guia de consultoria ambiental</a>.</p>
       </section>
       {groups.map(([group, ufs]) => <section key={group} className="v4-services">
         <h2>{group}</h2>

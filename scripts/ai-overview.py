@@ -13,7 +13,8 @@ import captcha_window
 CDP = 'http://127.0.0.1:9223'
 DOMAIN = 'monitorarconsultoria.com.br'
 PHRASES = ['emissões fugitivas', 'emissões fugitivas RJ', 'o que é LDAR', 'LDAR', 'monitoramento de emissões fugitivas', 'consultoria ambiental',
-           'consultoria ambiental RJ', 'engenharia ambiental RJ', 'consultoria ambiental São Paulo', 'consultoria ambiental Amazonas']
+           'consultoria ambiental RJ', 'engenharia ambiental RJ', 'consultoria ambiental São Paulo', 'consultoria ambiental Amazonas',
+           'empresa de engenharia ambiental', 'empresa de consultoria ambiental']
 AI = """() => {
   const header = [...document.querySelectorAll('div,span,h1,h2')].find(e => !e.children.length && /Visão geral criada por IA|AI Overview/.test(e.textContent));
   if (!header) return {present: false, hrefs: []};

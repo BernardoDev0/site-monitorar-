@@ -119,3 +119,28 @@ Ser o 1º resultado orgânico **não** coloca a empresa no quadro de IA: o Googl
 **Pendente:** pedido de indexação das quatro páginas novas (a cota diária do Search Console estava esgotada; repetir no primeiro ciclo de 20/10): `/emissoes-fugitivas-perguntas-e-respostas`, `/consultoria-ambiental-por-estado`, `/consultoria-ambiental-sp`, `/consultoria-ambiental-am`. Depois, repetir `ai-overview.py` no máximo uma vez por dia e comparar.
 
 **Fora do código (depende do proprietário):** o Google cita o YouTube nas respostas de IA para o assunto; um vídeo curto e verdadeiro no canal da empresa, explicando LDAR, e a presença em diretórios e na imprensa técnica reforçam o sinal. O Perfil da Empresa verificado também conta nas buscas locais. Nenhum prazo nem citação é garantido.
+
+## Palavras-chave por página: guias de emissões fugitivas e de consultoria ambiental (19/10, noite)
+
+Pedido do dono: "emissões fugitivas" e "consultoria ambiental" na IA e em 1º no orgânico; "empresa de engenharia ambiental" e afins; "o domínio tem 16 anos".
+
+**O que a pesquisa mostrou** (leitura; Google BR sem personalização, RDAP do registro.br e leitura das páginas):
+- A idade do domínio não decide. À frente da Monitorar (2009): rioambiental.com.br (registrado em 2015; 1º em "consultoria ambiental RJ", "empresa de engenharia ambiental RJ" e "empresa de consultoria ambiental"), aires.com.br (2019; 1º em "Monitoramento de emissões fugitivas e LDAR") e ldar.com.br (2022; página de cerca de 40 palavras; 1º em "empresa de LDAR").
+- A concorrência comercial do RJ é fraca em conteúdo: Rio Ambiental com ~800–900 palavras, sem FAQ; Ambiental Consult com ~300–400 palavras e ISO. O OHub (diretório) aparece em 3º. Ganham por histórico, presença externa e Maps.
+- Presença externa da Monitorar quase nula: buscar pelo nome ou pelo domínio não acha nenhuma página fora do site. "Monitorar" é também um verbo comum.
+- Cobertura no site antes desta rodada: "empresa de engenharia ambiental" e "empresa de consultoria ambiental" em zero páginas; quatro páginas do tema emissões fugitivas disputavam entre si.
+- Search Console em 19/10: Home não indexada (canônica do Google = sem www); `/consultoria-ambiental-rj` indexada (versão antiga); 3 impressões; relatório de Links "em processamento".
+
+**Mapa palavra-chave → página principal**
+
+| Termo | Página | Situação |
+|---|---|---|
+| emissões fugitivas, emissão fugitiva, o que são, legislação | `/emissoes-fugitivas` (guia novo) | 2.700 palavras, fontes primárias, seção do RJ, FAQ, 26 artigos ligados; substitui o guia de perguntas e respostas (redirecionamento 308) |
+| monitoramento de emissões fugitivas, empresa de LDAR, programa LDAR | `/servicos/emissoes-fugitivas` | 1º/2º; bloco "Empresa de LDAR" e link ao guia |
+| consultoria ambiental, empresa de consultoria ambiental, empresa de engenharia ambiental | `/consultoria-ambiental` (guia novo) + Home | guia com Lei 6.938/1981 e CONAMA 237/1997; Home ganhou a seção "Empresa de engenharia e consultoria ambiental" |
+| consultoria ambiental RJ, engenharia ambiental RJ | `/consultoria-ambiental-rj` | frase "empresa de consultoria e engenharia ambiental", H2 com "Empresa de engenharia ambiental", logos de clientes, 4 perguntas novas |
+| SP, AM, outros estados | `-sp`, `-am`, `-por-estado` | links ao guia |
+
+Todos os fatos dos guias foram conferidos no texto das fontes (CONAMA 382/2006, guia LDAR e Método 21 da EPA, IPCC 2006 vol. 2 cap. 4, NOP-INEA-52, Lei 6.938/1981, CONAMA 237/1997, Lei 6.496/1977). Na conferência saiu um erro meu do guia anterior (a EPA lista cinco benefícios, não três), já corrigido. Nenhuma credencial da empresa é afirmada (o dono respondeu "não sei agora"), e os guias não têm nome de pessoa (decisão do dono). A lista de "como escolher" cita o Cadastro Técnico Federal e a ART como critérios gerais; convém o dono confirmar os registros da própria empresa para poder exibi-los.
+
+**Pendente:** pedidos de indexação (cota; fila em `LOOP.md`), propriedade de domínio sem www no Search Console (autorizada; falta o TXT no DNS, que só o dono coloca), kit do dono em `docs/organic/owner-actions.md`.

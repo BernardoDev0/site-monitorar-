@@ -30,6 +30,7 @@ import { LogosCarousel } from "@/components/home/LogosCarousel";
 import { OfferingsSection } from "@/components/home/OfferingsSection";
 import { InstagramFeed } from "@/components/InstagramFeed";
 import { WHATSAPP_URL, recordContactClick } from "@/lib/contact";
+import { clientsLogos } from "@/lib/clients";
 
 const stats = [
   { number: "16", label: "Anos de experiência", icon: Award },
@@ -69,23 +70,6 @@ const segments = [
   { icon: Flame, name: "Termoelétrica" },
   { icon: Wrench, name: "Siderurgia" },
   { icon: HardHat, name: "Construção Civil" },
-];
-
-const clientsLogos = [
-  { src: "/clientes/petrobras.png", alt: "Petrobras" },
-  { src: "/clientes/transpetro.png", alt: "Transpetro" },
-  { src: "/clientes/csn.png", alt: "CSN" },
-  { src: "/clientes/ream.png", alt: "REAM" },
-  { src: "/clientes/ipiranga.png", alt: "Ipiranga" },
-  { src: "/clientes/lubrizol.png", alt: "Lubrizol" },
-  { src: "/clientes/firjan.png", alt: "FIRJAN", className: "md:h-16 h-14" },
-
-  { src: "/clientes/nitriflex.png", alt: "Nitriflex", className: "md:h-16 h-14 object-contain opacity-80 hover:opacity-100 transition-opacity" },
-  { src: "/clientes/iconic.png", alt: "Iconic" },
-  { src: "/clientes/rand.png", alt: "RAND" },
-  { src: "/clientes/biogenese.jpeg", alt: "Biogenese", className: "md:h-16 h-14" },
-  { src: "/clientes/dratec.jpeg", alt: "Dratec", className: "md:h-16 h-14" },
-  { src: "/clientes/ecologika.jpeg", alt: "Ecologika", className: "md:h-16 h-14" },
 ];
 
 export default function Home() {
@@ -169,6 +153,15 @@ export default function Home() {
             ))}
           </div>
         </div>
+      </section>
+
+      {/* Company summary in the words people search for; links the two guides and the state pages */}
+      <section className="site-wrap section-space home-company">
+        <p className="eyebrow">Consultoria ambiental</p>
+        <h2>Empresa de engenharia e consultoria ambiental</h2>
+        <p>A Monitorar Consultoria é uma empresa de engenharia e consultoria ambiental com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
+        <p>Nossos serviços de consultoria ambiental incluem monitoramento de emissões fugitivas e LDAR, qualidade do ar, PTS e Procon Fumaça Preta, ruído extramuros, áreas impactadas com avaliação geoambiental, licenciamento ambiental, auditoria e certificação ambiental e monitoramento de efluentes.</p>
+        <p>Para entender o que faz uma empresa de consultoria ambiental e como escolher uma, leia o <a className="text-link" href="/consultoria-ambiental">guia de consultoria ambiental</a>. Veja também a consultoria ambiental <a className="text-link" href="/consultoria-ambiental-rj">no Rio de Janeiro</a>, <a className="text-link" href="/consultoria-ambiental-sp">em São Paulo</a> e <a className="text-link" href="/consultoria-ambiental-am">no Amazonas</a>, e o <a className="text-link" href="/emissoes-fugitivas">guia de emissões fugitivas e LDAR</a>.</p>
       </section>
 
       {/* CTA Section */}

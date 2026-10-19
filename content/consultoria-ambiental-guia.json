@@ -1,0 +1,134 @@
+{
+  "path": "/consultoria-ambiental",
+  "eyebrow": "Guia de consultoria ambiental",
+  "title": "Consultoria e engenharia ambiental: o que é, o que faz e como escolher uma empresa",
+  "headline": "Consultoria ambiental: guia para escolher",
+  "published": "2026-10-19",
+  "updated": "2026-10-19",
+  "intro": "Consultoria ambiental é o serviço técnico prestado a empresas e empreendimentos sobre questões ecológicas e ambientais: licenciamento, estudos, monitoramento e conformidade com a legislação. Este guia explica o que faz uma empresa de consultoria e engenharia ambiental, quando contratar e como comparar propostas, com base na Lei nº 6.938/1981 e na Resolução CONAMA nº 237/1997. Atualizado em outubro de 2026.",
+  "sections": [
+    {
+      "id": "o-que-e",
+      "heading": "O que é consultoria ambiental",
+      "paragraphs": [
+        "A Lei nº 6.938/1981, que instituiu a Política Nacional do Meio Ambiente, trata a consultoria técnica sobre problemas ecológicos e ambientais como atividade de registro obrigatório no Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental, administrado pelo Ibama (art. 17, inciso I).",
+        "A mesma lei tem por objetivo a preservação, melhoria e recuperação da qualidade ambiental propícia à vida (art. 2º) e inclui o licenciamento e a revisão de atividades efetiva ou potencialmente poluidoras entre os instrumentos da política (art. 9º, inciso IV).",
+        "Na prática, o trabalho de uma consultoria ambiental cobre estudos, medições, documentos para o órgão ambiental e o acompanhamento do cumprimento das exigências. Os termos consultoria ambiental e engenharia ambiental costumam ser usados para o mesmo tipo de empresa; o que importa é o escopo contratado."
+      ]
+    },
+    {
+      "id": "o-que-faz",
+      "heading": "O que uma empresa de consultoria e engenharia ambiental faz",
+      "paragraphs": [
+        "Os serviços variam conforme a atividade do cliente. A Resolução CONAMA nº 237/1997 define como estudos ambientais todos e quaisquer estudos relativos aos aspectos ambientais da localização, instalação, operação e ampliação de uma atividade ou empreendimento, apresentados como subsídio para a análise da licença requerida, como relatório ambiental, plano e projeto de controle ambiental, relatório ambiental preliminar, diagnóstico ambiental, plano de manejo, plano de recuperação de área degradada e análise preliminar de risco.",
+        "Além dos estudos para o licenciamento, uma empresa do setor costuma realizar monitoramentos de ar, ruído, efluentes e emissões, investigação de áreas impactadas e auditorias ambientais. Os serviços ambientais da Monitorar são estes:"
+      ],
+      "services": true
+    },
+    {
+      "id": "licenciamento",
+      "heading": "Licenciamento ambiental: licenças e prazos",
+      "paragraphs": [
+        "A Resolução CONAMA nº 237/1997 define licenciamento ambiental como o “procedimento administrativo pelo qual o órgão ambiental competente licencia a localização, instalação, ampliação e a operação de empreendimentos e atividades utilizadoras de recursos ambientais, consideradas efetiva ou potencialmente poluidoras ou daquelas que, sob qualquer forma, possam causar degradação ambiental” (art. 1º, inciso I).",
+        "A licença ambiental é o ato pelo qual o órgão ambiental estabelece as condições, restrições e medidas de controle ambiental que o empreendedor deve obedecer (art. 1º, inciso II). A norma prevê três licenças:"
+      ],
+      "table": {
+        "caption": "Licenças ambientais previstas na Resolução CONAMA nº 237/1997 (arts. 8º e 18)",
+        "headers": ["Licença", "O que concede", "Prazo de validade"],
+        "rows": [
+          ["Licença Prévia (LP)", "Concedida na fase preliminar do planejamento, aprova a localização e a concepção, atesta a viabilidade ambiental e estabelece os requisitos básicos e condicionantes das próximas fases", "No mínimo o do cronograma dos planos, programas e projetos; no máximo 5 anos"],
+          ["Licença de Instalação (LI)", "Autoriza a instalação conforme os planos, programas e projetos aprovados, incluindo as medidas de controle ambiental e demais condicionantes", "No mínimo o do cronograma de instalação; no máximo 6 anos"],
+          ["Licença de Operação (LO)", "Autoriza a operação depois de verificado o cumprimento das licenças anteriores, com as medidas de controle e condicionantes para a operação", "No mínimo 4 anos e no máximo 10 anos"]
+        ]
+      },
+      "after": [
+        "As licenças podem ser expedidas de forma isolada ou sucessiva, de acordo com a natureza, as características e a fase do empreendimento. O órgão ambiental competente estabelece o prazo de validade de cada licença, e normas estaduais podem ter regras próprias: consulte o [[INEA|https://www.inea.rj.gov.br/]] no Rio de Janeiro, a [[CETESB|https://cetesb.sp.gov.br/]] em São Paulo e o [[IPAAM|https://www.ipaam.am.gov.br/]] no Amazonas.",
+        "A renovação da Licença de Operação deve ser requerida com antecedência mínima de 120 dias da expiração do prazo de validade fixado na licença, que fica automaticamente prorrogado até a manifestação definitiva do órgão ambiental competente (art. 18, § 4º)."
+      ]
+    },
+    {
+      "id": "quando-contratar",
+      "heading": "Quando contratar uma consultoria ambiental",
+      "paragraphs": [
+        "Os momentos mais comuns são:"
+      ],
+      "items": [
+        "obter a Licença Prévia, a Licença de Instalação ou a Licença de Operação, que exigem estudos e documentos para o órgão ambiental;",
+        "renovar a Licença de Operação dentro do prazo de antecedência;",
+        "cumprir as condicionantes e as medidas de controle que constam da licença;",
+        "apresentar o inventário de emissões de gases de efeito estufa exigido no licenciamento do estado do Rio de Janeiro ([[veja o guia de emissões fugitivas|/emissoes-fugitivas#rio-de-janeiro]]);",
+        "monitorar emissões fugitivas, qualidade do ar, ruído ou efluentes;",
+        "investigar áreas impactadas ou preparar auditorias."
+      ],
+      "after": [
+        "Cada caso depende do órgão ambiental competente e da atividade. Informe o objetivo, a localização e o prazo ao pedir uma proposta."
+      ]
+    },
+    {
+      "id": "como-escolher",
+      "heading": "Como escolher uma empresa de consultoria ambiental",
+      "paragraphs": [
+        "Compare as propostas pelos pontos abaixo e peça tudo por escrito:"
+      ],
+      "items": [
+        "**Registro e responsabilidade técnica:** peça comprovação do registro dos responsáveis técnicos no conselho profissional e a Anotação de Responsabilidade Técnica (ART) dos serviços, exigida em todo contrato de serviços de engenharia (Lei nº 6.496/1977, art. 1º). A consultoria técnica ambiental também consta do Cadastro Técnico Federal do Ibama (Lei nº 6.938/1981, art. 17, inciso I).",
+        "**Escopo claro:** atividades, entregas, prazos e exclusões descritos na proposta.",
+        "**Experiência comparável:** peça referências de projetos parecidos com o seu, no mesmo setor e no mesmo estado.",
+        "**Métodos e instrumentos:** pergunte quais normas e métodos serão usados e como os instrumentos são calibrados e os dados registrados.",
+        "**Conhecimento do órgão ambiental do estado:** confirme que a empresa conhece os procedimentos do órgão competente no estado do empreendimento."
+      ]
+    },
+    {
+      "id": "monitorar",
+      "heading": "A Monitorar: consultoria e engenharia ambiental no RJ, em SP e no Amazonas",
+      "paragraphs": [
+        "A Monitorar Consultoria é uma empresa de consultoria e engenharia ambiental e de segurança do trabalho com sede no Rio de Janeiro. Fundada em 2009, soma 16 anos de experiência, mais de 500 projetos realizados, mais de 100 clientes atendidos e a 33ª posição no ranking da revista Exame.",
+        "Atendemos projetos em qualquer estado do Brasil conforme o escopo, com atuação principal no RJ, em São Paulo e no Amazonas. Veja a consultoria ambiental [[no Rio de Janeiro|/consultoria-ambiental-rj]], [[em São Paulo|/consultoria-ambiental-sp]], [[no Amazonas|/consultoria-ambiental-am]] e [[por estado|/consultoria-ambiental-por-estado]]. Para emissões fugitivas e LDAR, leia o [[guia de emissões fugitivas|/emissoes-fugitivas]] e conheça o [[serviço de monitoramento de emissões fugitivas|/servicos/emissoes-fugitivas]]."
+      ],
+      "clients": true,
+      "after": [
+        "Veja os [[clientes atendidos|/clientes]] e [[fale com a Monitorar|/contato]]."
+      ]
+    }
+  ],
+  "faq": [
+    {
+      "q": "O que faz uma consultoria ambiental?",
+      "a": "Presta serviço técnico a empresas e empreendimentos sobre questões ambientais: estudos para o licenciamento, monitoramentos, investigação de áreas impactadas, auditorias e acompanhamento do cumprimento das exigências do órgão ambiental. [[Ver o que faz uma empresa do setor|#o-que-faz]]."
+    },
+    {
+      "q": "Qual é a diferença entre consultoria ambiental e engenharia ambiental?",
+      "a": "Os dois termos costumam designar o mesmo tipo de empresa. O que muda de um contrato para outro é o escopo: estudos e assessoria, medições, projetos ou acompanhamento. A proposta deve descrever atividades, entregas, prazos e exclusões."
+    },
+    {
+      "q": "Quais são as licenças ambientais?",
+      "a": "A Resolução CONAMA nº 237/1997 prevê a Licença Prévia (LP), a Licença de Instalação (LI) e a Licença de Operação (LO), que podem ser expedidas isolada ou sucessivamente, conforme a natureza, as características e a fase do empreendimento. [[Ver a tabela de licenças|#licenciamento]]."
+    },
+    {
+      "q": "Por quanto tempo vale uma Licença de Operação?",
+      "a": "Segundo a Resolução CONAMA nº 237/1997, o prazo de validade da Licença de Operação deve ser de no mínimo 4 anos e no máximo 10 anos. O órgão ambiental competente estabelece o prazo de cada licença e o informa no próprio documento."
+    },
+    {
+      "q": "Uma consultoria ambiental precisa de registro?",
+      "a": "A Lei nº 6.938/1981 (art. 17, inciso I) institui o Cadastro Técnico Federal de Atividades e Instrumentos de Defesa Ambiental, de registro obrigatório para pessoas físicas ou jurídicas que se dedicam à consultoria técnica sobre problemas ecológicos e ambientais."
+    },
+    {
+      "q": "A Monitorar atende empresas fora do Rio de Janeiro?",
+      "a": "Sim. Com sede no Rio de Janeiro, atendemos projetos em qualquer estado do Brasil conforme o escopo de cada contratação, com atuação principal no RJ, em São Paulo e no Amazonas. [[Ver a consultoria ambiental por estado|/consultoria-ambiental-por-estado]]."
+    },
+    {
+      "q": "Como pedir uma proposta de consultoria ambiental?",
+      "a": "Entre em contato por telefone, WhatsApp ou e-mail e informe o objetivo do projeto, a localização do empreendimento e o prazo. A proposta comercial confirma atividades, entregas, prazos e exclusões. [[Falar com a Monitorar|/contato]]."
+    },
+    {
+      "q": "Quais serviços ambientais a Monitorar oferece?",
+      "a": "Monitoramento de emissões fugitivas e LDAR, qualidade do ar, PTS e Procon Fumaça Preta, ruído extramuros, áreas impactadas com avaliação geoambiental, licenciamento ambiental, auditoria e certificação ambiental e monitoramento de efluentes. [[Ver os serviços|#o-que-faz]]."
+    }
+  ],
+  "sources": [
+    ["Lei nº 6.938, de 31 de agosto de 1981 (Política Nacional do Meio Ambiente), arts. 2º, 9º e 17", "https://www.planalto.gov.br/ccivil_03/leis/l6938.htm"],
+    ["Resolução CONAMA nº 237, de 19 de dezembro de 1997 (licenciamento ambiental), arts. 1º, 8º e 18", "https://conama.mma.gov.br/?option=com_sisconama&task=arquivo.download&id=237"],
+    ["Lei nº 6.496, de 7 de dezembro de 1977 (Anotação de Responsabilidade Técnica), art. 1º", "https://www.planalto.gov.br/ccivil_03/leis/l6496.htm"]
+  ],
+  "disclaimer": "Este guia reúne referências públicas e não substitui a leitura das normas vigentes nem a consulta ao órgão ambiental competente. Prazos e procedimentos podem ter regras próprias em cada estado, e a proposta técnica confirma atividades, entregas, prazos e exclusões."
+}

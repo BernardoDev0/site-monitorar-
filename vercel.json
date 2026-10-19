@@ -42,6 +42,11 @@
       "permanent": true
     },
     {
+      "source": "/emissoes-fugitivas-perguntas-e-respostas",
+      "destination": "https://www.monitorarconsultoria.com.br/emissoes-fugitivas",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {
