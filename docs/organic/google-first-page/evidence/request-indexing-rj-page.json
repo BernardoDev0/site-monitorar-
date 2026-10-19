@@ -1,0 +1,36 @@
+{
+ "capturedAt": "2026-10-19T15:22:51+00:00",
+ "command": "request",
+ "results": [
+  {
+   "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj",
+   "verdict": "O URL não está no Google",
+   "coverage": "A página não está indexada: O Google não reconhece o URL",
+   "Último rastreamento": "N/D",
+   "Rastreada como": "N/D",
+   "O rastreamento é permitido?": "N/D",
+   "Busca de página": "N/D",
+   "A indexação é permitida?": "info",
+   "URL canônico declarado pelo usuário": "N/D",
+   "URL canônico selecionado pelo Google": "N/D",
+   "requested": true,
+   "quotaExceeded": false,
+   "dialog": "Indexação solicitada O URL foi adicionado a uma fila de rastreamento prioritário."
+  },
+  {
+   "url": "https://www.monitorarconsultoria.com.br/servicos",
+   "verdict": "O URL está no Google",
+   "coverage": "A página está indexada",
+   "Último rastreamento": "19 de out. de 2026, 11:01:05",
+   "Rastreada como": "Googlebot Smartphone",
+   "O rastreamento é permitido?": "Sim",
+   "Busca de página": "Com êxito.",
+   "A indexação é permitida?": "Sim",
+   "URL canônico declarado pelo usuário": "https://www.monitorarconsultoria.com.br/servicos",
+   "URL canônico selecionado pelo Google": "URL inspecionado",
+   "requested": true,
+   "quotaExceeded": false,
+   "dialog": "Indexação solicitada O URL foi adicionado a uma fila de rastreamento prioritário."
+  }
+ ]
+}

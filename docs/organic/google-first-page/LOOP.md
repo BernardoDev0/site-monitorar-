@@ -1,6 +1,15 @@
 # Ciclo de acompanhamento: "emissões fugitivas RJ" no Google
 
-Meta: o domínio aparecer entre os 10 primeiros resultados orgânicos do Google para **emissões fugitivas RJ**. Nenhuma posição é garantida; o ciclo mede, corrige o que está sob nosso controle e registra.
+Meta inicial: o domínio aparecer entre os 10 primeiros resultados orgânicos do Google para **emissões fugitivas RJ**. Nenhuma posição é garantida; o ciclo mede, corrige o que está sob nosso controle e registra.
+
+## Metas ampliadas (pedido do proprietário em 19/10)
+
+Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**. Quatro camadas, medidas por `scripts/rank-sweep.py` (sem personalização):
+
+1. **Prioritárias:** "consultoria ambiental RJ" e "consultoria engenharia ambiental RJ" (alvo: `/consultoria-ambiental-rj`).
+2. **Genéricas, sem cidade:** "emissões fugitivas", "LDAR", "consultoria ambiental", "engenharia ambiental" e afins (`extra-queries.csv`, tipo `head`).
+3. **Por estado e cidade:** "consultoria ambiental" + SP, MG, ES, BA, PR, RS, SC, PE, CE, SE, Macaé, Niterói e outras (tipo `geo`). Regiões autorizadas pelo proprietário: estado do RJ, Sudeste, Sul e Nordeste.
+4. **Os 90 artigos**, cada um na consulta de `keyword-map.csv`. Para eles o Search Console (Desempenho, por página) é a fonte principal; a varredura serve de linha de base.
 
 ## Medidas e seus limites
 
@@ -15,19 +24,24 @@ Meta: o domínio aparecer entre os 10 primeiros resultados orgânicos do Google 
 1. `curl -s http://127.0.0.1:9223/json/version` responde (Chrome dedicado aberto, perfil `%USERPROFILE%\.cache\monitorar-seo-chrome`). Senão, abrir o Chrome com os parâmetros de `scripts/gsc.py`.
 2. A inspeção de URL funciona (sessão do Search Console ativa). Se pedir login, registrar "login necessário" no log e encerrar o ciclo, sem perguntar nada ao proprietário.
 
-## Um ciclo
+## Um ciclo (a cada 3 horas)
 
 1. `python scripts/gsc.py inspect https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas https://www.monitorarconsultoria.com.br/ https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas`
 2. `python scripts/google-serp.py "emissões fugitivas RJ" --mode default --output docs/organic/google-first-page/evidence/cycles/<UTC>.json`. Uma consulta por leitura por ciclo, nada além disso.
-3. `python scripts/google-favicon.py`: indicador do ícone no Google. `updated: true` quando o armazém de favicons devolve o tamanho 16 em 16x16 (o ícone antigo, não quadrado, sai em 16x14 e os resultados mostram o globo). Registrar no log. Não há ação possível além de esperar o rastreador do Google; se passarem 7 dias sem mudança, registrar no relatório.
-4. Uma vez por dia (primeiro ciclo depois das 06:00 locais): `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`.
-5. Acrescentar uma linha a `LOOP-LOG.md`: UTC, serviço (indexada, último rastreamento), início (situação e canônica do Google), ícone (`updated`), posição logada, posição na janela limpa ou `bloqueado`, observação.
-6. Decidir:
+3. **Varredura gradual**, somente se nenhuma leitura deste ciclo deu captcha: `python scripts/rank-sweep.py --output docs/organic/google-first-page/rankings/baseline-2026-10-19.csv --kind <tipo> --limit 10 --pause 60`, na ordem `priority`, `head`, `geo`, `commercial`, `article`. Depois de medidas todas as frases, repetir a varredura completa uma vez por semana em `rankings/sweep-<data>.csv` e comparar com `python scripts/rank-report.py <base> <nova>`.
+4. `python scripts/google-favicon.py`: indicador do ícone no Google. `updated: true` quando o armazém de favicons devolve o tamanho 16 em 16x16 (o ícone antigo, não quadrado, sai em 16x14 e os resultados mostram o globo). Registrar no log. Não há ação possível além de esperar o rastreador do Google; se passarem 7 dias sem mudança, registrar no relatório.
+5. Uma vez por dia (primeiro ciclo depois das 06:00 locais): `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`.
+6. Acrescentar uma linha a `LOOP-LOG.md`: UTC, serviço (indexada, último rastreamento), início (situação e canônica do Google), ícone (`updated`), posição logada, posição na janela limpa ou `bloqueado`, observação.
+7. Decidir:
    - **Consulta atendida:** posição `neutral` entre 1 e 10 em **dois ciclos seguidos**. Registrar no `REPORT.md` e continuar acompanhando a estabilidade e o ícone.
    - **Sucesso total:** consulta atendida **e** ícone (`google-favicon.py` com `updated: true`, e resultados dos artigos com o logo no lugar do globo) **e** Home indexada com a canônica em www, em dois ciclos seguidos. Então: `CronDelete`, `REPORT.md` final, encerrar o Chrome dedicado e apagar o perfil.
    - Página-chave "não indexada" ou com conteúdo antigo no índice e ainda há cota hoje (limite de 10 pedidos por dia; contar no log): `python scripts/gsc.py request <url>`.
    - O dado indicar uma alavanca de código, na ordem: rastreio e indexação; relevância na página (título, introdução, links internos); autoridade (relatório de links); conteúdo com fontes, que exige aprovação editorial registrada. Sempre com teste primeiro, publicação e verificação em produção.
-7. Uma vez por dia, commit só de documentos (`LOOP-LOG.md` e `evidence/`) em `main`.
+8. Uma vez por dia, commit só de documentos (`LOOP-LOG.md` e `evidence/`) em `main`.
+
+## Captcha
+
+O Google respondeu com captcha depois de 40 consultas em 14 minutos (19/10). Regra: **captcha em qualquer leitura = nenhuma consulta ao Google pelas 6 horas seguintes**, registrado no log. Nunca contornar. O limite de uso normal é de poucas consultas por ciclo; um bloqueio por excesso também pode atingir as buscas do proprietário.
 
 ## Proibido
 

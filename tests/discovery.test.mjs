@@ -2,6 +2,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import {indexNowPayload} from '../scripts/indexnow.mjs';
+import {seoDescription} from '../scripts/seo-snippets.mjs';
 const integrations=JSON.parse(await readFile('content/site-integrations.json','utf8'));
 const sitemap=await readFile('dist/sitemap.xml','utf8');
 const paths=[...sitemap.matchAll(/<loc>https:\/\/www\.monitorarconsultoria\.com\.br(.*?)<\/loc>/g)].map(m=>m[1]);
@@ -146,4 +147,23 @@ test('every article links to that page with varied anchor text that names the se
  }
  assert.equal(used.size,3,'three anchor variants');
  for(const [anchor,count] of used)assert.ok(count>=20,anchor+' '+count);
+});
+test('seoDescription keeps short summaries, ends cleanly and never overruns the result length',()=>{
+ assert.equal(seoDescription('Resumo curto','Resumo curto e completo.'),'Resumo curto e completo.');
+ const two='Primeira frase completa sobre o tema. '+'Segunda frase bem mais longa que não cabe no que sobra do limite de caracteres permitido aqui para o resultado de busca exibido pelo Google na página.';
+ assert.equal(seoDescription('Primeira frase completa sobre o tema',two),'Primeira frase completa sobre o tema.');
+ const colon='Em uma campanha de monitoramento, rastreabilidade significa reconstruir como cada observação foi produzida: componente, instrumento, configuração, verificações, operador, momento e procedimento utilizados.';
+ assert.equal(seoDescription('Rastreabilidade em campanhas de monitoramento',colon),'Em uma campanha de monitoramento, rastreabilidade significa reconstruir como cada observação foi produzida.');
+ assert.equal(seoDescription('Cadeia de custódia','As amostras precisam de registros contínuos.'),'Cadeia de custódia: as amostras precisam de registros contínuos.');
+ for(const input of [colon,two,'x '.repeat(300)])assert.ok(seoDescription('Qualquer título',input).length<=155);
+ assert.ok(!seoDescription('Palavra',('palavra '.repeat(60)).trim()).includes(', '));
+});
+test('article descriptions fit the result, end cleanly and stay unique',async()=>{
+ const seen=new Set();
+ for(const path of articlePaths){
+  const description=text((await page(path)).match(/<meta name="description" content="([^"]*)"/)[1]);
+  assert.ok(description.length>=60&&description.length<=155,path+' '+description.length);
+  assert.match(description,/[.!?]$/,path);
+  assert.ok(!seen.has(description),'duplicate description '+path);seen.add(description);
+ }
 });
