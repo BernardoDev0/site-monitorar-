@@ -93,3 +93,11 @@ test('articles link to the emissions service with the Rio de Janeiro anchor text
  assert.match(html,/<a href="\/servicos\/emissoes-fugitivas">Monitoramento de emissões fugitivas no RJ/);
  assert.doesNotMatch(html,/<a href="\/servicos\/emissoes-fugitivas">Monitoramento de emissões fugitivas<\/a>/);
 });
+test('service structured data declares the Rio de Janeiro area served, as confirmed for the business scope',async()=>{
+ const html=await page('/servicos/emissoes-fugitivas');
+ const graph=JSON.parse(html.match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+ const service=graph.find(n=>n['@type']==='Service');
+ assert.ok(service,'Service node');
+ const names=[].concat(service.areaServed).map(a=>a.name);
+ assert.ok(names.includes('Rio de Janeiro'));assert.ok(names.includes('Brasil'));
+});

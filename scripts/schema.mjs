@@ -7,7 +7,7 @@ export function schemaFor(row,preview=false) {
  if(row.page) {
   const p=row.page,url=origin+p.slug;
   graph.push({'@type':'BreadcrumbList',itemListElement:(p.breadcrumbs||breadcrumbs(p)).map((item,i)=>({'@type':'ListItem',position:i+1,name:item.title,item:origin+item.slug}))});
-  if(!preview&&p.type==='service') graph.push({'@type':'Service','@id':url+'#service',name:p.title,description:p.summary,url,provider:{'@id':origin+'/#organization'}});
+  if(!preview&&p.type==='service') graph.push({'@type':'Service','@id':url+'#service',name:p.title,description:p.summary,url,areaServed:business.areaServed.map(({type,name})=>({'@type':type,name})),provider:{'@id':origin+'/#organization'}});
   if(!preview&&p.type==='article') graph.push({'@type':'BlogPosting','@id':url+'#article',headline:p.title,description:p.summary,mainEntityOfPage:url,inLanguage:'pt-BR',author:{'@type':'Person',name:p.author},datePublished:p.first_published_at,dateModified:publicModifiedAt(p),...(p.cover?{image:origin+p.cover.src}:{}),publisher:{'@id':origin+'/#organization'}});
  }
  return {'@context':'https://schema.org','@graph':graph};
