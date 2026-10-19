@@ -138,7 +138,7 @@ if __name__ == '__main__':
     parser.add_argument('--output')
     parser.add_argument('--property', choices=['www', 'apex', 'domain'], default='www')
     parser.add_argument('--press-verify', action='store_true', help='verify-domain: press VERIFICAR (only after the TXT record is published)')
-    args = parser.parse_args()
+    args = parser.parse_intermixed_args()  # options may sit between the command and the URLs
     report = {'capturedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'command': args.command, 'results': []}
     with sync_playwright() as p:
         context = p.chromium.connect_over_cdp(CDP).contexts[0]
