@@ -34,6 +34,8 @@ Evidência: `evidence/serp-baseline-emissoes-fugitivas-rj.json`, `evidence/serp-
 
 Na captura do proprietário o site aparece em 4º lugar na 1ª página; na sessão logada do Chrome dedicado, em 1º. Posições diferentes entre as duas telas confirmam a personalização.
 
+- **Sem personalização (link oficial "Testar sem personalização", `peek_pws=0`):** o rodapé confirma "Os resultados não são personalizados" e não há captcha. Em 19/10 às 15:00 UTC, para "emissões fugitivas RJ", **`/blog/emissoes-fugitivas-petrobras` aparece em 1º lugar orgânico** (`evidence/cycles/2026-10-19T1500Z-neutral.json`). É a medida principal do loop (`scripts/google-serp.py --mode default`).
+
 Leitura dos fatos: o conteúdo está indexado e já aparece para a conta do proprietário, mas para um desconhecido ainda não está entre os 10 primeiros. O resultado do primeiro lugar logado tem 15 horas de idade, e páginas novas costumam oscilar nos primeiros dias.
 
 ## Alterações publicadas
@@ -57,7 +59,9 @@ A captura de tela do proprietário (Google, busca "emissoes fugitivas rj") mostr
 
 - O arquivo novo é quadrado e válido, está no ar e é acessível aos robôs do Google (Googlebot, Googlebot-Image e "Google Favicon" recebem 200 em `/`, `/favicon.ico` e `/favicon-192.png`; `robots.txt` libera tudo).
 - O armazém de favicons do Google (`t3.gstatic.com/faviconV2`, `scripts/google-favicon.py`) devolvia o ícone antigo, não quadrado (16x14 e 32x28), para o `www` e continua assim para o endereço **sem www**. Depois do novo rastreamento da Home, o `www` passou a devolver **404 (nenhum ícone registrado)**: o ícone antigo foi descartado e o novo ainda não foi registrado.
-- O ícone acompanha a identidade do site no Google, e o Google ainda considera a versão sem www a oficial da Home. Enquanto isso não for reprocessado, o resultado exibe o globo. É o mesmo problema de canônica da seção "Causa encontrada para a Home e a marca".
+- **Divisão por endereço, vista na própria busca** (`monitorar consultoria emissoes`, captura em `scratchpad`): os resultados de artigo, em `https://www.monitorarconsultoria.com.br › Blog`, mostram o **globo**; o resultado da página principal é `https://monitorarconsultoria.com.br` (**sem www**), com o título antigo, e mostra o **logo verde**. O Google guarda o ícone por endereço, e o `www`, onde estão todos os artigos, nunca recebeu ícone no resultado de busca.
+- A Home com www continua sendo "cópia" da versão sem www para o Google. A causa provável é que ele ainda não refez o rastreamento do endereço sem www depois que o redirecionamento virou permanente (o último rastreamento observado, em 18/10 às 18:20, ainda encontrou um redirecionamento temporário, 307). Enquanto o www não for a página principal do site para o Google, o ícone não é atribuído a ele. O armazém de favicons devolve hoje o ícone antigo para os dois endereços.
+- A conta do proprietário tem **uma única propriedade** no Search Console (`www`). Para pedir o novo rastreamento do endereço sem www seria preciso adicionar essa propriedade e verificá-la. **Essa ação foi bloqueada pelo controle de permissões** (mudança de conta, fora do escopo aprovado) e não foi executada. Depende de autorização expressa do proprietário; não é certo que a verificação funcione, porque o endereço sem www redireciona.
 - Alterado: o ICO passou a ser declarado como `48x48` (o Google desaconselha 16x16), o PNG 192x192 foi mantido e foi acrescentado `apple-touch-icon.png` 180x180 (antes dava 404). O teste `site icons are square, multiples of 48 and declared the way Google documents` protege isso.
 - Indicador para o loop: `python scripts/google-favicon.py` retorna `updated: true` quando o tamanho 16 voltar quadrado (16x16).
 
@@ -68,6 +72,7 @@ Não há ação que acelere o rastreador de favicons do Google. Nenhum prazo é 
 
 O Google define o ranking; a indexação e a reavaliação da canônica levam dias a semanas; a posição oscila. O relatório de links, o de rastreamento e o de indexação ainda não têm dados. A janela limpa está sujeita a captcha. O acesso ao Search Console depende do Chrome dedicado aberto e do PC ligado, e o ciclo expira em 7 dias.
 
-## Decisão registrada, sem pergunta
+## Decisão pendente
 
-Se a Home continuar com a canônica sem www depois de 7 dias, a decisão pendente é manter www, como escolhido pelo proprietário, ou adotar a versão sem www, que o Google já prefere e para a qual apontam os links externos antigos. Trocar de host reinicia a consolidação, então não será feito sem essa decisão.
+1. **Autorizar a propriedade do endereço sem www no Search Console** (reversível, sem efeito no ranking): permitiria inspecionar esse endereço e pedir o novo rastreamento, que é o caminho mais rápido para o Google adotar o www como oficial e atribuir o ícone aos artigos. Sem autorização, resta esperar o rastreamento natural do Google.
+2. Se a Home continuar com a canônica sem www depois de cerca de 7 dias: manter www, como escolhido pelo proprietário (as páginas novas já estão indexadas em www e a posição 1 está nelas), ou adotar a versão sem www. Trocar de host reinicia a consolidação e fazer isso agora arriscaria a posição atual; não será feito sem decisão do proprietário. Além disso, o acompanhamento do Search Console hoje só existe para o www.
