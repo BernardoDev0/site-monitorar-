@@ -1,0 +1,55 @@
+{
+ "capturedAt": "2026-10-19T13:28:13+00:00",
+ "context": "clean (no cookies, not signed in) via isolated browser context",
+ "runs": [
+  {
+   "device": "desktop",
+   "query": "emissões fugitivas RJ",
+   "blocked": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Demiss%25C3"
+  },
+  {
+   "device": "desktop",
+   "query": "emissoes fugitivas RJ",
+   "organicLinksRead": 9,
+   "monitorar": [],
+   "top5": [
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto"
+   ]
+  },
+  {
+   "device": "desktop",
+   "query": "emissões fugitivas rj",
+   "organicLinksRead": 9,
+   "monitorar": [],
+   "top5": [
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto"
+   ]
+  },
+  {
+   "device": "desktop",
+   "query": "monitoramento de emissões fugitivas RJ",
+   "organicLinksRead": 9,
+   "monitorar": [],
+   "top5": [
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto"
+   ]
+  },
+  {
+   "device": "mobile",
+   "query": "emissões fugitivas RJ",
+   "blocked": "https://www.google.com/sorry/index?continue=https://www.google.com/search%3Fq%3Demiss%25C3"
+  }
+ ]
+}

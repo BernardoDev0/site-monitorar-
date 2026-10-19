@@ -1,0 +1,18 @@
+{
+ "capturedAt": "2026-10-19T13:35:34+00:00",
+ "command": "inspect",
+ "results": [
+  {
+   "url": "https://www.monitorarconsultoria.com.br/",
+   "verdict": "O URL não está no Google",
+   "coverage": "A página não está indexada: Cópia, o Google e o usuário selecionaram uma página canônica diferente",
+   "Último rastreamento": "18 de out. de 2026, 18:20:59",
+   "Rastreada como": "Googlebot Smartphone",
+   "O rastreamento é permitido?": "Sim",
+   "Busca de página": "Com êxito.",
+   "A indexação é permitida?": "Sim",
+   "URL canônico declarado pelo usuário": "https://www.monitorarconsultoria.com.br/",
+   "URL canônico selecionado pelo Google": "info"
+  }
+ ]
+}

@@ -38,3 +38,5 @@ docs/organic/**/*.jpeg
 docs/organic/**/*.webp
 docs/organic/**/*.webm
 docs/organic/**/*.mp4
+
+__pycache__/

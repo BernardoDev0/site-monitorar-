@@ -1,0 +1,33 @@
+{
+ "capturedAt": "2026-10-19T14:21:08+00:00",
+ "phrase": "emissões fugitivas RJ",
+ "readings": {
+  "signed": {
+   "phrase": "emissões fugitivas RJ",
+   "blocked": false,
+   "linksRead": 9,
+   "monitorar": [
+    {
+     "position": 1,
+     "path": "/blog/emissoes-fugitivas-petrobras",
+     "title": "Emissões fugitivas Petrobras"
+    }
+   ],
+   "top": [
+    "www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-petrobras",
+    "www.rio.rj.gov.br/dlstatic/10112/1712030/DLFE-222982.pdf/NelsonSINV",
+    "www.mineral.eng.br/monitoramento-controle-emissoes-fugitivas",
+    "prefeitura.rio/comlurb/comlurb-conclui-inventario-inedito-de-gas",
+    "ppe.coppe.ufrj.br/publicacao/as-emissoes-fugitivas-de-gases-de-efei",
+    "www.trt1.jus.br/documents/d/cdis/inventario-de-emissoes-de-gee-1-",
+    "start5g.com.br/emissoes-fugitivas/",
+    "www.bdtd.uerj.br:8443/handle/1/10943",
+    "plataforma.seeg.eco.br/territorio/rj-rio-de-janeiro"
+   ]
+  },
+  "clean": {
+   "phrase": "emissões fugitivas RJ",
+   "blocked": true
+  }
+ }
+}

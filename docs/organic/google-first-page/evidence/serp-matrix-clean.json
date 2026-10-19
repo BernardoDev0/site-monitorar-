@@ -1,0 +1,34 @@
+{
+ "capturedAt": "2026-10-19T13:31:01+00:00",
+ "mode": "clean",
+ "runs": [
+  {
+   "query": "emissões fugitivas RJ",
+   "blocked": true
+  },
+  {
+   "query": "monitorar consultoria emissoes",
+   "organicLinksRead": 9,
+   "monitorar": [],
+   "top5": [
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto"
+   ]
+  },
+  {
+   "query": "monitorar consultoria",
+   "organicLinksRead": 10,
+   "monitorar": [],
+   "top5": [
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto",
+    "www.google.com/goto"
+   ]
+  }
+ ]
+}

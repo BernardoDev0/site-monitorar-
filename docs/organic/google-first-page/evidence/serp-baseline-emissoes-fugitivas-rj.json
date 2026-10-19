@@ -1,0 +1,53 @@
+{
+ "capturedAt": "2026-10-19T13:27:37+00:00",
+ "query": "emissões fugitivas RJ",
+ "engine": "google.com (hl=pt-BR gl=br pws=0)",
+ "blocked": false,
+ "organicLinksRead": 9,
+ "monitorarPositions": [
+  1
+ ],
+ "features": {
+  "aiOverview": true,
+  "localPack": false,
+  "peopleAlsoAsk": false
+ },
+ "results": [
+  {
+   "url": "https://www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-petrobras",
+   "title": "Emissões fugitivas Petrobras"
+  },
+  {
+   "url": "http://www.rio.rj.gov.br/dlstatic/10112/1712030/DLFE-222982.pdf/NelsonSINVENTARIOFINALMAC_Resumo_Geral_Inv_e_Cenario_v05abr_E.pdf",
+   "title": "Inventário e Cenário de Emissões dos Gases de Efeito ..."
+  },
+  {
+   "url": "https://www.mineral.eng.br/monitoramento-controle-emissoes-fugitivas",
+   "title": "Monitoramento e controle de emissões fugitivas - Mineral"
+  },
+  {
+   "url": "https://prefeitura.rio/comlurb/comlurb-conclui-inventario-inedito-de-gases-de-efeito-estufa/",
+   "title": "Comlurb conclui inventário inédito de gases de efeito estufa"
+  },
+  {
+   "url": "https://ppe.coppe.ufrj.br/publicacao/as-emissoes-fugitivas-de-gases-de-efeito-estufa-da-industria-de-petroleo-e-gas-natural-no-brasil-inventario-cenarios-e-propostas-de-mitigacao/",
+   "title": "As emissões fugitivas de gases de efeito estufa da ..."
+  },
+  {
+   "url": "https://www.trt1.jus.br/documents/d/cdis/inventario-de-emissoes-de-gee-1-2",
+   "title": "INVENTÁRIO DE EMISSÕES DE GASES DO EFEITO ESTUFA"
+  },
+  {
+   "url": "https://start5g.com.br/emissoes-fugitivas/",
+   "title": "Emissões fugitivas"
+  },
+  {
+   "url": "https://www.bdtd.uerj.br:8443/handle/1/10943",
+   "title": "Avaliação de emissões fugitivas de biogás na camada ..."
+  },
+  {
+   "url": "https://plataforma.seeg.eco.br/territorio/rj-rio-de-janeiro",
+   "title": "Emissões de GEE (2024) Rio de Janeiro/RJ - Plataforma Seeg"
+  }
+ ]
+}
