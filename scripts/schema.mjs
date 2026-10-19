@@ -5,7 +5,7 @@ import {readFileSync} from 'node:fs';
 const faqEmissoes=JSON.parse(readFileSync(new URL('../content/faq-emissoes-fugitivas.json',import.meta.url),'utf8'));
 const plain=t=>t.replace(/\[\[(.+?)\|.+?\]\]/g,'$1');
 export function schemaFor(row,preview=false) {
- const graph=[{'@type':'Organization','@id':origin+'/#organization',name:business.name,url:origin+'/',logo:origin+business.logo,description:business.description,knowsAbout:['Engenharia Ambiental','Emissões Fugitivas','LDAR'],telephone:business.phone,email:business.email,address:{'@type':'PostalAddress',...business.address},sameAs:business.sameAs},
+ const graph=[{'@type':'Organization','@id':origin+'/#organization',name:business.name,url:origin+'/',logo:origin+business.logo,description:business.description,foundingDate:business.foundingDate,areaServed:business.areaServed.map(({type,name})=>({'@type':type,name})),knowsAbout:['Engenharia Ambiental','Emissões Fugitivas','LDAR'],telephone:business.phone,email:business.email,address:{'@type':'PostalAddress',...business.address},sameAs:business.sameAs},
  {'@type':'WebSite','@id':origin+'/#website',name:'Monitorar Consultoria',url:origin+'/',inLanguage:'pt-BR',publisher:{'@id':origin+'/#organization'}}];
  if(row.path==='/emissoes-fugitivas-perguntas-e-respostas') graph.push({'@type':'FAQPage','@id':origin+row.path+'#faq',inLanguage:'pt-BR',mainEntity:faqEmissoes.map(({q,a})=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:plain(a.join(' '))}}))});
  if(row.page) {

@@ -258,3 +258,13 @@ test('the environment services page does not stop at Rio de Janeiro: it links th
  const main=(await page('/servicos/meio-ambiente')).match(/<main[\s\S]*?<\/main>/)[0];
  for(const href of ['/consultoria-ambiental-rj','/consultoria-ambiental-sp','/consultoria-ambiental-am','/consultoria-ambiental-por-estado'])assert.ok(main.includes('href="'+href+'"'),href);
 });
+
+test('the organization data on every page names the founding year and the areas served',async()=>{
+ for(const path of ['/','/blog/o-que-e-ldar','/consultoria-ambiental-sp']){
+  const graph=JSON.parse((await page(path)).match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
+  const org=graph.find(n=>n['@type']==='Organization');
+  assert.equal(org.foundingDate,'2009',path);
+  const names=[].concat(org.areaServed).map(a=>a.name);
+  for(const name of ['Rio de Janeiro','São Paulo','Amazonas','Brasil'])assert.ok(names.includes(name),path+' '+name);
+ }
+});
