@@ -1,0 +1,46 @@
+{
+ "capturedAt": "2026-10-19T12:26:55+00:00",
+ "engine": "search.brave.com",
+ "queries": {
+  "site": {
+   "query": "site:monitorarconsultoria.com.br",
+   "blockedByCaptcha": true,
+   "linksRead": 0,
+   "monitorarResults": [],
+   "monitorarRankExcludingVideos": null,
+   "favicon": null,
+   "firstLinks": []
+  },
+  "exact": {
+   "query": "monitorar consultoria emissoes",
+   "blockedByCaptcha": true,
+   "linksRead": 0,
+   "monitorarResults": [],
+   "monitorarRankExcludingVideos": null,
+   "favicon": null,
+   "firstLinks": []
+  },
+  "brand": {
+   "query": "monitorar consultoria",
+   "blockedByCaptcha": false,
+   "linksRead": 25,
+   "monitorarResults": [
+    {
+     "rank": 9,
+     "url": "https://www.monitorarconsultoria.com.br/",
+     "text": "Monitorarconsultoria monitorarconsultoria.com.br Monitorar Consultoria - Engenharia Ambiental e Segurança do Trabalho"
+    }
+   ],
+   "monitorarRankExcludingVideos": 4,
+   "favicon": null,
+   "firstLinks": [
+    "https://consultoria.portaliso.com/rio-de-janeiro/rio-de-janeiro-cidade/monitorar/",
+    "https://br.linkedin.com/company/monitorar-consultoria",
+    "https://www.youtube.com/watch?v=kokINjGiwsg",
+    "https://www.youtube.com/watch?v=45zcqf-ciHM",
+    "https://www.youtube.com/watch?v=ishtqoE3Om4",
+    "https://www.youtube.com/watch?v=1221cjV23o0"
+   ]
+  }
+ }
+}
