@@ -20,13 +20,14 @@ PRIORITY = [
 parser = argparse.ArgumentParser()
 parser.add_argument('--output', required=True)
 parser.add_argument('--skip', nargs='*', default=[], help='paths already submitted')
+parser.add_argument('--paths', nargs='*', default=None, help='submit these paths instead of the priority list')
 parser.add_argument('--pause', type=float, default=8.0)
 parser.add_argument('--headed', action='store_true')
 args = parser.parse_args()
 
 sitemap = urllib.request.urlopen(ORIGIN + '/sitemap.xml', timeout=20).read().decode('utf-8')
 live = set(re.findall(r'<loc>(.*?)</loc>', sitemap))
-queue = [p for p in PRIORITY if p not in args.skip]
+queue = [p for p in (args.paths if args.paths is not None else PRIORITY) if p not in args.skip]
 unknown = [p for p in queue if (ORIGIN + p if p != '/' else ORIGIN + '/') not in live]
 if unknown:
     sys.exit('Not in the live sitemap: ' + ', '.join(unknown))

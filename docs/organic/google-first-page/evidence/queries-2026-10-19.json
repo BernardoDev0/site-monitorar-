@@ -1,0 +1,19 @@
+{
+ "capturedAt": "2026-10-19T17:03:12+00:00",
+ "command": "queries",
+ "results": {
+  "totals": {
+   "Total de cliques": "0",
+   "Total de impressões": "3",
+   "CTR média": "0%",
+   "Posição média": "72"
+  },
+  "queries": [
+   {
+    "query": "consultoria em segurança do trabalho rj",
+    "clicks": "0",
+    "impressions": "2"
+   }
+  ]
+ }
+}
