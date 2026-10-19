@@ -101,3 +101,19 @@ test('service structured data declares the Rio de Janeiro area served, as confir
  const names=[].concat(service.areaServed).map(a=>a.name);
  assert.ok(names.includes('Rio de Janeiro'));assert.ok(names.includes('Brasil'));
 });
+const pngSize=buffer=>{assert.equal(buffer.readUInt32BE(0),0x89504e47,'not a PNG');return [buffer.readUInt32BE(16),buffer.readUInt32BE(20)];};
+test('site icons are square, multiples of 48 and declared the way Google documents',async()=>{
+ for(const path of ['/','/servicos/emissoes-fugitivas','/blog/o-que-e-ldar']){
+  const html=await page(path);
+  assert.match(html,/<link rel="icon" type="image\/png" sizes="192x192" href="\/favicon-192\.png"/,path);
+  assert.match(html,/<link rel="icon" type="image\/x-icon" sizes="48x48" href="\/favicon\.ico"/,path);
+  assert.match(html,/<link rel="apple-touch-icon" sizes="180x180" href="\/apple-touch-icon\.png"/,path);
+  assert.ok(!/rel="icon"[^>]*sizes="[^"]*\b16x16/.test(html),'a 16x16 favicon is discouraged: '+path);
+ }
+ assert.deepEqual(pngSize(await readFile('dist/favicon-192.png')),[192,192]);
+ assert.deepEqual(pngSize(await readFile('dist/apple-touch-icon.png')),[180,180]);
+ const ico=await readFile('dist/favicon.ico'),count=ico.readUInt16LE(4),sizes=Array.from({length:count},(_,i)=>[ico[6+16*i]||256,ico[7+16*i]||256]);
+ assert.ok(sizes.every(([w,h])=>w===h),'every ICO image is square: '+JSON.stringify(sizes));
+ assert.ok(sizes.some(([w])=>w===48),'the ICO carries a 48x48 image');
+ assert.deepEqual(await readFile('dist/simbolo-monitorar.ico'),ico,'the previous icon URL keeps serving the valid icon');
+});
