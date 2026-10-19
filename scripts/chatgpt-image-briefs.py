@@ -5,14 +5,30 @@ images into imagens-chatgpt/ without renaming them, and scripts/import-chatgpt-c
 Writes imagens-chatgpt/briefs.json (one brief per document) and imagens-chatgpt/pedidos.html (blocks with copy buttons).
 """
 import html, json, pathlib
+from PIL import Image
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 OUT = ROOT / 'imagens-chatgpt'
 BLOCK = 4
 
 STYLE = ('Estilo para todas: fotografia editorial realista, formato paisagem 3:2, luz natural, cores naturais, cenário '
-         'industrial ou ambiental no Brasil, profundidade de campo rasa. Sem texto, letras ou números legíveis, sem '
-         'logotipos, sem marcas e sem marca d\'água. Pessoas de costas, de longe ou sem rosto reconhecível.')
+         'industrial ou ambiental no Brasil, profundidade de campo rasa. Equipe de campo com macacão ou camisa azul-marinho '
+         'com faixas refletivas e capacete branco. Toda pessoa que usar capacete ou uniforme leva o logo da Monitorar enviado '
+         'no início da conversa: pequeno e nítido no peito e nas costas do uniforme (versão de texto branco) e na frente do '
+         'capacete (versão de texto azul-escuro), fiel ao desenho e às cores, sem mudar as letras. Fora o logo da Monitorar, '
+         'nenhum outro texto, letra, número legível, logotipo, marca ou marca d\'água. Pessoas de costas, de longe ou sem '
+         'rosto reconhecível.')
+
+# Sent once at the start of each ChatGPT conversation, together with the two logo files from imagens-chatgpt/logo/.
+OPENING = ('Vou pedir várias imagens nesta conversa. Os dois arquivos anexados são o logo da Monitorar Consultoria: um com o '
+           'texto branco, para fundo escuro, e outro com o texto azul-escuro, para fundo claro. Em todas as imagens, toda pessoa '
+           'com capacete ou uniforme usa esse logo, pequeno e fiel ao desenho, no peito e nas costas do uniforme azul-marinho '
+           '(versão de texto branco) e na frente do capacete branco (versão de texto azul-escuro). Não gere nada agora; '
+           'responda só "ok".')
+# The official logo files on a solid background, so ChatGPT can see the white lettering of the dark version.
+LOGOS = (('public/moni2.png', (29, 42, 58), 'logo-fundo-escuro.png'), ('public/moni3.png', (255, 255, 255), 'logo-fundo-claro.png'))
+# Images already downloaded and kept: no person in uniform, so the logo rule does not apply to them.
+KEEP = {'006', '013'}
 
 # One scene per document id. Concrete, varied, faithful to the subject of the page, nothing that implies a real client.
 SCENES = {
@@ -105,7 +121,7 @@ SCENES = {
     '101': 'Pastas de documentos e um carimbo sobre uma mesa de madeira, sem texto legível.',
     '102': 'Auditório com pessoas sentadas, de costas, assistindo a uma apresentação numa tela sem texto.',
     '103': 'Mãos de luvas separando documentos de uma pilha com etiquetas coloridas.',
-    '104': 'Duas equipes com uniformes de cores diferentes conversando diante de uma unidade industrial, de costas.',
+    '104': 'Técnico de uniforme conversando com um representante da empresa contratante, de camisa social e sem capacete, numa sala de controle com janela para a planta, ambos de costas.',
     '105': 'Trecho de tubulação com válvulas e um transmissor de pressão numa unidade de processo, close.',
     '106': 'Treinamento prático de resgate em espaço confinado com tripé e equipamento, participantes de costas.',
     '107': 'Close de um detector de gases aberto numa bancada de manutenção, sensor exposto e ferramentas finas.',
@@ -122,8 +138,15 @@ def main():
     briefs = [{'code': d['id'], 'slug': d['slug'], 'title': d['title'], 'scene': SCENES[d['id']]} for d in docs]
     OUT.mkdir(exist_ok=True)
     (OUT / 'briefs.json').write_text(json.dumps(briefs, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
+    (OUT / 'logo').mkdir(exist_ok=True)
+    for source, background, name in LOGOS:
+        mark = Image.open(ROOT / source).convert('RGBA')
+        canvas = Image.new('RGBA', (mark.width + 80, mark.height + 80), background + (255,))
+        canvas.alpha_composite(mark, (40, 40))
+        canvas.convert('RGB').save(OUT / 'logo' / name)
 
-    blocks = [briefs[i:i + BLOCK] for i in range(0, len(briefs), BLOCK)]
+    todo = [b for b in briefs if b['code'] not in KEEP]
+    blocks = [todo[i:i + BLOCK] for i in range(0, len(todo), BLOCK)]
     parts = []
     for n, block in enumerate(blocks, 1):
         lines = [f'Gere {len(block)} imagens separadas, uma para cada item abaixo, na ordem. Não junte tudo numa imagem só.', STYLE, '']
@@ -143,10 +166,13 @@ section{{background:#fff;border:1px solid #d9e2d3;border-radius:12px;padding:16p
 button{{cursor:pointer;border:1px solid #6fae3a;background:#fff;border-radius:8px;padding:4px 10px;margin:4px 0}}button.main{{background:#6fae3a;color:#fff;font-weight:600;padding:8px 14px}}
 .code{{font-weight:700;color:#3b6e17}}small{{color:#556}}li{{margin:10px 0}}.ok{{background:#1d2a3a;color:#fff}}</style></head><body>
 <h1>Pedidos de imagem para o ChatGPT</h1>
-<ol><li>Abra o <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a> e clique em <b>Copiar bloco</b>; cole e envie.</li>
-<li>Se ele fizer só uma imagem, escreva <b>continue</b>.</li>
+<ol><li>Abra uma <b>conversa nova</b> no <a href="https://chatgpt.com" target="_blank" rel="noopener">ChatGPT</a>, anexe os dois logos da pasta <code>{html.escape(str(OUT / 'logo'))}</code> e envie a <b>mensagem de abertura</b>.</li>
+<li>Clique em <b>Copiar bloco</b>, cole e envie. Se ele fizer só uma imagem, escreva <b>continue</b>.</li>
+<li>A cada 3 ou 4 blocos, comece outra conversa e repita a mensagem de abertura com os logos, para o logo não perder a forma.</li>
 <li>Baixe cada imagem nesta pasta, <b>sem renomear</b>: <code>{html.escape(str(OUT))}</code></li>
 <li>Pode fazer em várias vezes, conforme o limite do chat. Quando terminar (ou parar), avise o Claude.</li></ol>
+<p>Já aprovadas do primeiro lote (sem pessoas de uniforme, não precisam do logo): {', '.join(sorted(KEEP))}.</p>
+<section><h2>Mensagem de abertura (com os 2 logos anexados)</h2><p>{html.escape(OPENING)}</p><button class="main" data-copy="{html.escape(OPENING, quote=True)}">Copiar mensagem de abertura</button></section>
 {''.join(parts)}
 <script>for(const b of document.querySelectorAll('button[data-copy]'))b.onclick=async()=>{{const t=b.dataset.copy;try{{await navigator.clipboard.writeText(t)}}catch(e){{const a=document.createElement('textarea');a.value=t;document.body.append(a);a.select();document.execCommand('copy');a.remove()}}b.classList.add('ok');b.textContent='Copiado';}}</script>
 </body></html>'''
