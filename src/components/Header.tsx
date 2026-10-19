@@ -9,7 +9,7 @@ type NavItem = {name:string;href:string;description?:string;children?:string[][]
 const baseItems: NavItem[] = [
   { name: 'Home', href: '/' },
   { name: 'Sobre', href: '/sobre', description: 'Monitorar Consultoria', children: [['Nossa História', '/sobre/historia'], ['Missão e Valores', '/sobre/missao'], ['Equipe', '/sobre/equipe']] },
-  { name: 'Serviços', href: '/servicos', description: 'Segurança do trabalho e meio ambiente', children: [['Segurança do trabalho', '/servicos/seguranca'], ['Meio ambiente', '/servicos/meio-ambiente'], ['Emissões fugitivas e LDAR', '/servicos/emissoes-fugitivas'], ['Ruído extramuros', '/servicos/ruido-extramuros'], ['Representação Drager', '/servicos/drager'], ['HAZOP', '/servicos/hazop'], ['Auditorias', '/servicos/auditorias'], ['Treinamentos', '/servicos/treinamentos']] },
+  { name: 'Serviços', href: '/servicos', description: 'Segurança do trabalho e meio ambiente', children: [['Segurança do trabalho', '/servicos/seguranca'], ['Meio ambiente', '/servicos/meio-ambiente'], ['Consultoria ambiental no RJ', '/consultoria-ambiental-rj'], ['Emissões fugitivas e LDAR', '/servicos/emissoes-fugitivas'], ['Ruído extramuros', '/servicos/ruido-extramuros'], ['Representação Drager', '/servicos/drager'], ['HAZOP', '/servicos/hazop'], ['Auditorias', '/servicos/auditorias'], ['Treinamentos', '/servicos/treinamentos']] },
   { name: 'Nossos Clientes', href: '/clientes' },
   { name: 'Depoimentos', href: '/depoimentos' },
   { name: 'Trabalhe Conosco', href: '/trabalhe-conosco' },

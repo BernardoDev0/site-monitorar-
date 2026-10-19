@@ -15,7 +15,7 @@ test('full brand name accompanies home and emissions titles',async()=>{
  assert.equal(title(await page('/conteudos/emissoes-fugitivas')),'Conhecimento sobre emissões fugitivas | Monitorar Consultoria');
 });
 test('every sitemap page names the site, keeps a unique branded title and stays short with the full brand',async()=>{
- assert.equal(paths.length,121);
+ assert.equal(paths.length,122);
  const titles=new Set();
  for(const path of paths){
   const html=await page(path),t=title(html);
@@ -36,7 +36,7 @@ test('IndexNow payload carries only canonical sitemap URLs',()=>{
  const key=integrations.INDEXNOW_KEY,payload=indexNowPayload(sitemap,key);
  assert.equal(payload.host,'www.monitorarconsultoria.com.br');
  assert.equal(payload.keyLocation,'https://www.monitorarconsultoria.com.br/'+key+'.txt');
- assert.equal(payload.urlList.length,121);
+ assert.equal(payload.urlList.length,122);
  assert.throws(()=>indexNowPayload('<loc>https://example.org/</loc>',key));
  assert.throws(()=>indexNowPayload('<urlset></urlset>',key));
 });
@@ -86,7 +86,7 @@ test('service pages show the Rio de Janeiro location block built from business d
   assert.ok(html.includes(business.address.streetAddress),path);
   assert.ok(html.includes('(21) 3881-1212'),path);
  }
- assert.ok(!(await page('/blog/o-que-sao-emissoes-fugitivas')).includes('editorial-local'));
+ assert.doesNotMatch(await page('/blog/o-que-sao-emissoes-fugitivas'),/class="editorial-local"/);
 });
 test('articles link to the emissions service with the Rio de Janeiro anchor text',async()=>{
  const html=await page('/blog/o-que-sao-emissoes-fugitivas');
@@ -116,4 +116,34 @@ test('site icons are square, multiples of 48 and declared the way Google documen
  assert.ok(sizes.every(([w,h])=>w===h),'every ICO image is square: '+JSON.stringify(sizes));
  assert.ok(sizes.some(([w])=>w===48),'the ICO carries a 48x48 image');
  assert.deepEqual(await readFile('dist/simbolo-monitorar.ico'),ico,'the previous icon URL keeps serving the valid icon');
+});
+const words=html=>html.split('<div id="root">')[1].split('<script id="page-data"')[0].replace(/<[^>]+>/g,' ').replace(/&[a-z#0-9]+;/g,' ').split(/\s+/).filter(Boolean).length;
+const articlePaths=paths.filter(p=>/^\/blog\/[^/]+$/.test(p));
+test('a dedicated page targets consultoria ambiental no RJ and is linked site-wide',async()=>{
+ assert.ok(paths.includes('/consultoria-ambiental-rj'));
+ const html=await page('/consultoria-ambiental-rj');
+ assert.equal(title(html),'Consultoria ambiental no RJ | Monitorar Consultoria');
+ const description=text(html.match(/<meta name="description" content="([^"]*)"/)[1]);
+ assert.match(description,/Rio de Janeiro/);assert.ok(description.length<=160,'description '+description.length);
+ assert.match(html,/<link rel="canonical" href="https:\/\/www\.monitorarconsultoria\.com\.br\/consultoria-ambiental-rj"/);
+ assert.match(html,/<meta name="robots" content="index, follow"/);
+ assert.equal(text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,'')),'Consultoria e engenharia ambiental no Rio de Janeiro');
+ assert.ok(words(html)>=600,'words '+words(html));
+ for(const href of ['/servicos/emissoes-fugitivas','/servicos/ruido-extramuros','/conteudos/qualidade-do-ar','/conteudos/areas-impactadas','/conteudos/licenciamento-ambiental','/servicos/seguranca','/clientes','/contato'])assert.ok(html.includes('href="'+href+'"'),href);
+ assert.ok(html.includes('2009'));
+ for(const path of ['/','/servicos','/blog','/blog/o-que-e-ldar','/servicos/emissoes-fugitivas'])assert.match(await page(path),/href="\/consultoria-ambiental-rj"/,path);
+});
+test('every article links to that page with varied anchor text that names the service and Rio de Janeiro',async()=>{
+ assert.equal(articlePaths.length,90);
+ const used=new Map();
+ for(const path of articlePaths){
+  const html=await page(path);
+  assert.match(html,/<section class="editorial-local-cta"/,path);
+  const anchor=html.match(/<section class="editorial-local-cta".*?<a href="\/consultoria-ambiental-rj">([^<]*)<\/a>/s)?.[1];
+  assert.ok(anchor,path);
+  assert.match(text(anchor),/(RJ|Rio de Janeiro)/,path);
+  used.set(anchor,(used.get(anchor)||0)+1);
+ }
+ assert.equal(used.size,3,'three anchor variants');
+ for(const [anchor,count] of used)assert.ok(count>=20,anchor+' '+count);
 });

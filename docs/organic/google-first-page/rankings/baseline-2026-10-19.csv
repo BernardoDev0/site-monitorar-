@@ -1,0 +1,41 @@
+checked_at,kind,target,phrase,read,target_position,best_position,ours,top3
+2026-10-19T15:04:17+00:00,priority,/,consultoria ambiental RJ,9,,,[],rioambiental.com.br | ohub.com.br | ambientalconsult.com.br
+2026-10-19T15:04:36+00:00,priority,/,consultoria engenharia ambiental RJ,9,,,[],rioambiental.com.br | ambientalconsult.com.br | ohub.com.br
+2026-10-19T15:04:51+00:00,commercial,/,engenharia e consultoria ambiental no Rio de Janeiro,9,,,[],ambientalconsult.com.br | rioambiental.com.br | ohub.com.br
+2026-10-19T15:05:08+00:00,commercial,/,empresa de engenharia ambiental RJ,9,,,[],rioambiental.com.br | ambientalconsult.com.br | reservaeng.com.br
+2026-10-19T15:05:27+00:00,commercial,/,engenharia ambiental Rio de Janeiro,9,,,[],querobolsa.com.br | uva.br | puc-rio.br
+2026-10-19T15:05:46+00:00,commercial,/,empresa de consultoria ambiental,9,,,[],rioambiental.com.br | ohub.com.br | etica-ambiental.com.br
+2026-10-19T15:06:03+00:00,commercial,/servicos/emissoes-fugitivas,Monitoramento de emissões fugitivas e LDAR,9,2,2,"[{""position"": 2, ""path"": ""/servicos/emissoes-fugitivas""}]",aires.com.br | monitorarconsultoria.com.br | mineral.eng.br
+2026-10-19T15:06:22+00:00,commercial,/servicos/emissoes-fugitivas,emissões fugitivas,8,,8,"[{""position"": 8, ""path"": ""/blog/o-que-sao-emissoes-fugitivas""}]",thermofisher.com | blog.alutal.com.br | pt.wikipedia.org
+2026-10-19T15:06:39+00:00,commercial,/servicos/emissoes-fugitivas,monitoramento de emissões fugitivas,8,1,1,"[{""position"": 1, ""path"": ""/servicos/emissoes-fugitivas""}]",monitorarconsultoria.com.br | biotecrs.com.br | mineral.eng.br
+2026-10-19T15:06:56+00:00,commercial,/servicos/emissoes-fugitivas,empresa de LDAR,9,,2,"[{""position"": 2, ""path"": ""/blog/o-que-e-ldar""}]",ldar.com.br | monitorarconsultoria.com.br | enesens.com.br
+2026-10-19T15:07:14+00:00,commercial,/servicos/emissoes-fugitivas,programa LDAR,9,,1,"[{""position"": 1, ""path"": ""/blog/o-que-e-ldar""}]",monitorarconsultoria.com.br | tractian.com | aires.com.br
+2026-10-19T15:07:33+00:00,commercial,/servicos,"Qualidade do ar, PTS e Fumaça Preta",8,,1,"[{""position"": 1, ""path"": ""/blog/registros-de-programa-de-controle-de-fumaca-preta""}, {""position"": 7, ""path"": ""/blog/fumaca-preta-e-opacidade-diferencas""}]",monitorarconsultoria.com.br | jaupavi.com.br | cetesb.sp.gov.br
+2026-10-19T15:07:49+00:00,commercial,/servicos,monitoramento da qualidade do ar,9,,,[],gov.br | carioca.rio | ambienteclima.prefeitura.rio
+2026-10-19T15:08:06+00:00,commercial,/servicos,monitoramento de PTS,8,,,[],gov.br | gnrambiental.com.br | meioambiente.mg.gov.br
+2026-10-19T15:08:22+00:00,commercial,/servicos,partículas totais em suspensão,8,,,[],eea.europa.eu | emiatec.com.br | aeroqual.com
+2026-10-19T15:08:40+00:00,commercial,/servicos,fumaça preta,7,,,[],frotas.localiza.com | cetesb.sp.gov.br | svparts.com.br
+2026-10-19T15:08:59+00:00,commercial,/servicos/ruido-extramuros,Avaliação de ruído extramuros,9,,1,"[{""position"": 1, ""path"": ""/blog/como-preparar-avaliacao-de-ruido-extramuros""}, {""position"": 5, ""path"": ""/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental""}]",monitorarconsultoria.com.br | grengenharia.com | mesegtrabalho.com.br
+2026-10-19T15:09:17+00:00,commercial,/servicos/ruido-extramuros,ruído extramuros,8,,4,"[{""position"": 4, ""path"": ""/blog/como-preparar-avaliacao-de-ruido-extramuros""}]",rigalileo.itegam.org.br | www2.ifrn.edu.br | redalyc.org
+2026-10-19T15:09:36+00:00,commercial,/servicos/ruido-extramuros,avaliação de ruído ambiental,8,,,[],idealambiental.com.br | gov.br | www2.uesb.br
+2026-10-19T15:09:53+00:00,commercial,/servicos/ruido-extramuros,medição de ruído ambiental RJ,9,,,[],kapengenharia.com.br | ambiopar.com.br | radu.com.br
+2026-10-19T15:10:10+00:00,commercial,/servicos/ruido-extramuros,relatório de ruído ambiental,8,,,[],santos.sp.gov.br | masterambiental.com.br | www2.unifap.br
+2026-10-19T15:10:27+00:00,commercial,/servicos,Avaliação de áreas impactadas,7,,,[],grengenharia.com | ebp.global | eletronuclear.gov.br
+2026-10-19T15:10:42+00:00,commercial,/servicos,avaliação geoambiental,8,,,[],geoambiental.com.br | ipt.br | periodicos.rc.biblioteca.unesp.br
+2026-10-19T15:11:00+00:00,commercial,/servicos,investigação ambiental,9,,,[],ambientobrasil.com.br | ambscience.com | ecomaxambiental.com.br
+2026-10-19T15:11:15+00:00,commercial,/servicos,áreas contaminadas,9,,,[],gov.br | cetesb.sp.gov.br | inea.rj.gov.br
+2026-10-19T15:11:30+00:00,commercial,/servicos,investigação confirmatória,9,,,[],oxiambiental.com.br | ambientobrasil.com.br | supremoambiental.com.br
+2026-10-19T15:11:46+00:00,commercial,/servicos,Consultoria para licenciamento ambiental,9,,,[],rioambiental.com.br | metricaambiental.com.br | ambiens.com.br
+2026-10-19T15:12:01+00:00,commercial,/servicos,licenciamento ambiental RJ,9,,,[],carioca.rio | inea.rj.gov.br | desenvolvimentourbano.prefeitura.rio
+2026-10-19T15:12:18+00:00,commercial,/servicos,licenciamento INEA,9,,,[],inea.rj.gov.br | rj.gov.br | rj.gov.br
+2026-10-19T15:12:37+00:00,commercial,/servicos,renovação de licença ambiental,9,,,[],carioca.rio | teraambiental.com.br | ambisis.com.br
+2026-10-19T15:12:56+00:00,commercial,/servicos/seguranca,"Gestão de Segurança, Meio Ambiente e Saúde",8,,,[],nomus.com.br | petrobras.com.br | ufsm.br
+2026-10-19T15:13:14+00:00,commercial,/servicos/seguranca,gestão de SMS,9,,,[],infotecbrasil.com.br | clinimedjoinville.com.br | nomus.com.br
+2026-10-19T15:13:29+00:00,commercial,/servicos/seguranca,consultoria em segurança do trabalho,9,,,[],segmedrio.com.br | ohub.com.br | mnaconsultoria.com.br
+2026-10-19T15:13:47+00:00,commercial,/servicos/seguranca,auditoria de conformidade,9,,,[],apoioauditoria.tcu.gov.br | ibm.com | produttivo.com.br
+2026-10-19T15:14:03+00:00,commercial,/servicos/seguranca,auditoria de segurança do trabalho,9,,,[],onsafety.com.br | soc.com.br | adequada.eng.br
+2026-10-19T15:14:22+00:00,commercial,/servicos/hazop,Estudo HAZOP,7,,,[],onsafety.com.br | dnv.com.br | conect.online
+2026-10-19T15:14:40+00:00,commercial,/servicos/hazop,análise de perigos e operabilidade,8,,,[],dnv.com.br | onsafety.com.br | senior.com.br
+2026-10-19T15:14:58+00:00,commercial,/servicos/hazop,empresa de HAZOP,9,,,[],rse-global.com | dnv.com.br | rca-consultoria.com.br
+2026-10-19T15:15:16+00:00,commercial,/servicos/hazop,segurança de processos,9,,,[],cursos.cetiqt.senai.br | senaicetiqt.com | vemprapuc.pucminas.br
+2026-10-19T15:15:32+00:00,commercial,/servicos/seguranca,Treinamentos em segurança do trabalho,9,,,[],firjan.com.br | ddsonline.com.br | gov.br
