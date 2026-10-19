@@ -1,0 +1,781 @@
+{
+  "base": "https://www.monitorarconsultoria.com.br",
+  "checked_at": "2026-10-19T14:22:32.536Z",
+  "checks": [
+    {
+      "route": "/",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/robots.txt",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/sitemap.xml",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/sobre",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos/seguranca",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos/drager",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/clientes",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/depoimentos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/trabalhe-conosco",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/contato",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/politica-privacidade",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos/emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos/ruido-extramuros",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/servicos/hazop",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/o-que-sao-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/emissoes-fugitivas-e-canalizadas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/o-que-e-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-contratar-monitoramento-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/dados-para-orcamento-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/planejamento-de-campanha-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/cadastro-de-componentes-para-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/componentes-sem-acesso-em-programas-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/reparo-e-reverificacao-em-programas-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/registro-de-vazamentos-em-programas-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/indicadores-de-programas-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-ler-relatorio-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/ogi-e-analisadores-na-deteccao-de-vazamentos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/epa-method-21-contexto-e-limites",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/calibracao-e-rastreabilidade-de-dados-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/comparacao-entre-campanhas-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/emissoes-fugitivas-petrobras",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pts-mp10-e-mp25-diferencas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/planejamento-do-monitoramento-de-pts",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-ler-relatorio-de-monitoramento-de-pts",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/qualidade-do-ar-ambiente-e-emissao-na-fonte",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/fumaca-preta-e-opacidade-diferencas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/procon-fumaca-preta-inea-fontes-e-requisitos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/registros-de-programa-de-controle-de-fumaca-preta",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/ruido-extramuros-e-ruido-ocupacional",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-preparar-avaliacao-de-ruido-extramuros",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/ruido-ambiental-residual-e-especifico",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-ler-relatorio-de-ruido-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/investigacao-de-reclamacoes-de-ruido",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/lacunas-de-dados-em-avaliacoes-geoambientais",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/historico-de-uso-da-area-e-modelo-conceitual",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/avaliacao-preliminar-investigacao-confirmatoria-e-detalhada",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/representatividade-de-amostras-de-solo-e-agua",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/cadeia-de-custodia-de-amostras-ambientais",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-ler-relatorio-de-investigacao-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/medidas-de-gerenciamento-e-remediacao-diferencas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/lp-li-lo-objetivos-e-diferencas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/documentos-para-iniciar-licenciamento-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/condicionantes-ambientais-controle-de-evidencias",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/renovacao-de-licenca-ambiental-planejamento",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/alteracoes-no-empreendimento-e-licenciamento",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/competencia-do-orgao-licenciador",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/gestao-sms-integracao-e-responsabilidades",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/requisitos-legais-matriz-e-evidencias-sms",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-preparar-documentos-para-auditoria-sms",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/indicadores-preventivos-e-reativos-sms",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/procedimentos-operacionais-e-controle-documental-sms",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/hazop-finalidade-e-limites",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/documentos-e-entradas-para-estudo-hazop",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/equipe-e-responsabilidades-em-estudos-hazop",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/recomendacoes-hazop-registro-e-acompanhamento",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/registro-de-treinamento-certificado-e-competencia",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/detectores-portateis-e-fixos-diferencas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/teste-de-resposta-calibracao-e-manutencao-de-detectores",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/dados-ausentes-no-monitoramento-do-ar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/por-que-decibeis-nao-se-somam-como-numeros-comuns",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/ruido-tonal-e-impulsivo",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/resultado-nao-detectado-em-analises-ambientais",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/valores-orientadores-e-avaliacao-de-risco",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/como-organizar-resposta-a-pedido-de-complementacao",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/licenca-ambiental-e-outras-autorizacoes",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/consulta-e-participacao-publica-no-licenciamento",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/amostragem-de-evidencias-em-auditorias-de-sms",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/nos-e-intencao-de-projeto-em-estudos-hazop",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/conteudo-pratico-e-modalidade-de-capacitacao",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/documentacao-do-equipamento-e-adequacao-a-aplicacao",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/2",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/3",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/4",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/5",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/6",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/7",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/8",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/qualidade-do-ar",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/ruido-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/areas-impactadas",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/licenciamento-ambiental",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/seguranca-de-processos-e-gestao-sms",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/hazop",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/treinamentos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos/equipamentos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/conteudos",
+      "status": 200,
+      "expected": 200,
+      "passed": true
+    },
+    {
+      "route": "/__monitorar_missing_check__",
+      "status": 404,
+      "expected": 404,
+      "passed": true
+    },
+    {
+      "route": "/blog/pagina/1",
+      "status": 308,
+      "expected": 308,
+      "passed": true
+    }
+  ],
+  "indexing_measured": false
+}
