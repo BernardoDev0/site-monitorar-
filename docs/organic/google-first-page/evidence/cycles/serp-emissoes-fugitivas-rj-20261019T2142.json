@@ -1,0 +1,49 @@
+{
+ "capturedAt": "2026-10-19T21:42:57+00:00",
+ "phrase": "emissões fugitivas RJ",
+ "readings": {
+  "neutral": {
+   "phrase": "emissões fugitivas RJ",
+   "blocked": false,
+   "personalised": false,
+   "linksRead": 9,
+   "monitorar": [
+    {
+     "position": 1,
+     "path": "/servicos/emissoes-fugitivas",
+     "title": "Monitoramento de emissões fugitivas no RJ"
+    },
+    {
+     "position": 6,
+     "path": "/blog/emissoes-fugitivas-e-canalizadas",
+     "title": "Emissões fugitivas e canalizadas"
+    }
+   ],
+   "icons": [
+    {
+     "path": "/servicos/emissoes-fugitivas",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2143-neutral-1.png"
+    },
+    {
+     "path": "/blog/emissoes-fugitivas-e-canalizadas",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82",
+     "shot": "docs/organic/google-first-page/evidence/icons\\20261019T2143-neutral-2.png"
+    }
+   ],
+   "top": [
+    "www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas",
+    "www.mineral.eng.br/monitoramento-controle-emissoes-fugitivas",
+    "www.rio.rj.gov.br/dlstatic/10112/1712030/DLFE-222982.pdf/NelsonSINV",
+    "ppe.coppe.ufrj.br/publicacao/as-emissoes-fugitivas-de-gases-de-efei",
+    "www.trt1.jus.br/documents/d/cdis/inventario-de-emissoes-de-gee-1-",
+    "www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-e-canalizadas",
+    "prefeitura.rio/comlurb/comlurb-conclui-inventario-inedito-de-gas",
+    "start5g.com.br/emissoes-fugitivas/",
+    "plataforma.seeg.eco.br/territorio/rj-rio-de-janeiro"
+   ]
+  }
+ }
+}

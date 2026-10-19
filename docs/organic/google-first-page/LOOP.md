@@ -44,7 +44,7 @@ Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgâ
 6. **Log:** uma linha em `LOOP-LOG.md` com UTC, Home www (indexada?), apex (último rastreamento), ícone (`iconKind`/hash, armazém), posição de "emissões fugitivas" e qual URL nossa, posição de "emissões fugitivas RJ", pedidos feitos e observação.
 7. **Decidir:**
    - **Ícone resolvido:** `iconKind: img` no nosso resultado em dois ciclos seguidos. Registrar com o recorte de imagem.
-   - **Ponto de decisão do endereço (72 h depois do pedido de reindexação do sem www):** se a Home www continuar fora do índice, mudar o site para o endereço sem www. O proprietário autorizou ("com e sem www, tanto faz, só quero que funcione"). Passos no `REPORT.md`; o redirecionamento de domínio na Vercel é trocado no painel pelo proprietário (o MCP não altera) ou por mim depois de `! npx vercel login`.
+   - **Endereço resolvido em 19/10:** a Home www entrou no índice com a canônica em www, então a mudança para o sem www **não é mais necessária**. Só voltar ao assunto se a Home www sair do índice de novo. (Regra anterior: se a Home www continuasse fora do índice 72 h depois do pedido do sem www, mudar o site para o sem www.) O proprietário autorizou ("com e sem www, tanto faz, só quero que funcione"). Passos no `REPORT.md`; o redirecionamento de domínio na Vercel é trocado no painel pelo proprietário (o MCP não altera) ou por mim depois de `! npx vercel login`.
    - **Canibalização:** depois que o guia `/emissoes-fugitivas` entrar no índice, se o Google alternar entre o guia e o artigo `/blog/o-que-sao-emissoes-fugitivas` por 2 semanas sem nenhum dos dois subir, propor ao proprietário que o artigo aponte o canonical para o guia (é um dos 90 artigos aprovados: só com autorização).
    - **Sem novas edições no guia por 3 a 4 semanas** depois de indexado (skill seo-audit, *rankings-push*), salvo erro de fato. Mudanças empilhadas impedem saber o que funcionou. O que ainda pesa é autoridade (kit do proprietário).
 8. Uma vez por dia, commit só de documentos (`LOOP-LOG.md`, `evidence/`) em `main`.
@@ -53,9 +53,9 @@ Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgâ
 
 Em 19/10 a cota acabou. No primeiro ciclo de 20/10, nesta ordem, inspecionar e pedir só o que não estiver indexado ou estiver com versão antiga:
 
-1. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: faz o Google reler o endereço sem www e ver o redirecionamento permanente (308). Destrava a Home www e o ícone. **Primeiro de todos.**
-2. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; o Google ainda não o conhece)
-3. `https://www.monitorarconsultoria.com.br/` (Home www)
+1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; o Google ainda não o conhece). **Primeiro de todos.**
+2. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: o registro do sem www ainda é de 10/10; o pedido faz o Google ver o 308 e descartar a entrada antiga.
+3. ~~`https://www.monitorarconsultoria.com.br/` (Home www)~~: **indexada em 19/10**, com a canônica em www (rastreio de 19/10 16:09). Não precisa de pedido.
 4. `https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas` (ganhou o link para o guia no topo)
 5. `https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas`
 6. `https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas`
