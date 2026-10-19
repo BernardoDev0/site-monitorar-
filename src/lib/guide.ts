@@ -21,6 +21,9 @@ export type GuideData = {
   updated: string;
   intro: string;
   sections: GuideSectionData[];
+  summary?: { heading: string; items: string[] };
+  figure?: { src: string; alt: string; caption: string; width: number; height: number };
+  glossary?: { id: string; heading: string; terms: [string, string][] };
   clusters?: { heading: string; intro: string; groups: { heading: string; links: [string, string][] }[] };
   company?: { heading: string; paragraphs: string[] };
   faq: { q: string; a: string }[];

@@ -2,7 +2,7 @@
   "path": "/emissoes-fugitivas",
   "eyebrow": "Guia técnico",
   "title": "Emissões fugitivas: o que são, de onde vêm e como medir e controlar",
-  "headline": "Emissões fugitivas: guia completo e LDAR",
+  "headline": "Emissões fugitivas: o que são, fontes e LDAR",
   "published": "2026-10-19",
   "updated": "2026-10-19",
   "intro": "Emissões fugitivas são lançamentos difusos de matéria sólida, líquida ou gasosa na atmosfera, feitos por uma fonte sem dispositivo para dirigir ou controlar o fluxo, como os vazamentos em válvulas, conexões e bombas de uma instalação industrial. Este guia reúne a definição legal, as fontes, os impactos, a detecção, o programa LDAR e as exigências do Rio de Janeiro, com fontes oficiais. Atualizado em outubro de 2026.",
@@ -24,10 +24,22 @@
       ],
       "table": {
         "caption": "Emissão pontual e emissão fugitiva segundo a Resolução CONAMA nº 382/2006",
-        "headers": ["Tipo", "Como a matéria chega à atmosfera", "Exemplos"],
+        "headers": [
+          "Tipo",
+          "Como a matéria chega à atmosfera",
+          "Exemplos"
+        ],
         "rows": [
-          ["Emissão pontual", "Por uma fonte provida de dispositivo para dirigir ou controlar o fluxo", "Dutos e chaminés"],
-          ["Emissão fugitiva", "De forma difusa, por uma fonte desprovida de dispositivo projetado para dirigir ou controlar o fluxo", "Vazamentos em válvulas, conexões, bombas e outros componentes de processo"]
+          [
+            "Emissão pontual",
+            "Por uma fonte provida de dispositivo para dirigir ou controlar o fluxo",
+            "Dutos e chaminés"
+          ],
+          [
+            "Emissão fugitiva",
+            "De forma difusa, por uma fonte desprovida de dispositivo projetado para dirigir ou controlar o fluxo",
+            "Vazamentos em válvulas, conexões, bombas e outros componentes de processo"
+          ]
         ]
       },
       "after": [
@@ -59,7 +71,8 @@
         "evitar ações de fiscalização."
       ],
       "after": [
-        "Quando as exigências LDAR foram desenvolvidas, a EPA estimou que refinarias de petróleo poderiam reduzir em 63% as emissões de vazamentos de equipamentos, e instalações químicas, em 56% as emissões de COV, ao implantar um programa LDAR. Os dois últimos benefícios da lista dependem do regime regulatório dos Estados Unidos."
+        "Quando as exigências LDAR foram desenvolvidas, a EPA estimou que refinarias de petróleo poderiam reduzir em 63% as emissões de vazamentos de equipamentos, e instalações químicas, em 56% as emissões de COV, ao implantar um programa LDAR. Os dois últimos benefícios da lista dependem do regime regulatório dos Estados Unidos.",
+        "Quando a substância liberada é o metano, há também o efeito sobre o clima. Segundo a EPA, o metano tem potencial de aquecimento global (GWP) de 27 a 30 em 100 anos: em 100 anos, uma tonelada de metano absorve de 27 a 30 vezes mais energia do que uma tonelada de CO2 ([[EPA, Understanding Global Warming Potentials|https://www.epa.gov/ghgemissions/understanding-global-warming-potentials]], página atualizada em 29/12/2025)."
       ]
     },
     {
@@ -122,47 +135,125 @@
       {
         "heading": "Compreender as fontes",
         "links": [
-          ["O que são emissões fugitivas", "/blog/o-que-sao-emissoes-fugitivas"],
-          ["Emissões fugitivas e canalizadas", "/blog/emissoes-fugitivas-e-canalizadas"],
-          ["Tanques e classificação de fontes fugitivas", "/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas"],
-          ["Substâncias e condições de detecção", "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos"],
-          ["Inventário de GEE e monitoramento de fugitivas", "/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas"]
+          [
+            "O que são emissões fugitivas",
+            "/blog/o-que-sao-emissoes-fugitivas"
+          ],
+          [
+            "Emissões fugitivas e canalizadas",
+            "/blog/emissoes-fugitivas-e-canalizadas"
+          ],
+          [
+            "Tanques e classificação de fontes fugitivas",
+            "/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas"
+          ],
+          [
+            "Substâncias e condições de detecção",
+            "/blog/substancias-e-condicoes-na-deteccao-de-vazamentos"
+          ],
+          [
+            "Inventário de GEE e monitoramento de fugitivas",
+            "/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas"
+          ]
         ]
       },
       {
         "heading": "Detectar e quantificar",
         "links": [
-          ["Detecção e quantificação de emissões fugitivas", "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas"],
-          ["OGI e analisadores na detecção", "/blog/ogi-e-analisadores-na-deteccao-de-vazamentos"],
-          ["EPA Method 21: contexto e limites", "/blog/epa-method-21-contexto-e-limites"],
-          ["PPM e taxa de emissão", "/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes"],
-          ["Meteorologia em campanhas de fugitivas", "/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas"],
-          ["Calibração e rastreabilidade em LDAR", "/blog/calibracao-e-rastreabilidade-de-dados-ldar"]
+          [
+            "Detecção e quantificação de emissões fugitivas",
+            "/blog/deteccao-e-quantificacao-de-emissoes-fugitivas"
+          ],
+          [
+            "OGI e analisadores na detecção",
+            "/blog/ogi-e-analisadores-na-deteccao-de-vazamentos"
+          ],
+          [
+            "EPA Method 21: contexto e limites",
+            "/blog/epa-method-21-contexto-e-limites"
+          ],
+          [
+            "PPM e taxa de emissão",
+            "/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes"
+          ],
+          [
+            "Meteorologia em campanhas de fugitivas",
+            "/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas"
+          ],
+          [
+            "Calibração e rastreabilidade em LDAR",
+            "/blog/calibracao-e-rastreabilidade-de-dados-ldar"
+          ]
         ]
       },
       {
         "heading": "Operar um programa LDAR",
         "links": [
-          ["O que é LDAR", "/blog/o-que-e-ldar"],
-          ["Cadastro de componentes para LDAR", "/blog/cadastro-de-componentes-para-ldar"],
-          ["Componentes sem acesso em LDAR", "/blog/componentes-sem-acesso-em-programas-ldar"],
-          ["Critérios de vazamento e gatilhos de ação em LDAR", "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar"],
-          ["Reparo e reverificação em LDAR", "/blog/reparo-e-reverificacao-em-programas-ldar"],
-          ["Registro de vazamentos em LDAR", "/blog/registro-de-vazamentos-em-programas-ldar"],
-          ["Indicadores de LDAR", "/blog/indicadores-de-programas-ldar"],
-          ["Mudanças na planta e atualização de LDAR", "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar"],
-          ["Qualidade e aceite de dados LDAR", "/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar"]
+          [
+            "O que é LDAR",
+            "/blog/o-que-e-ldar"
+          ],
+          [
+            "Cadastro de componentes para LDAR",
+            "/blog/cadastro-de-componentes-para-ldar"
+          ],
+          [
+            "Componentes sem acesso em LDAR",
+            "/blog/componentes-sem-acesso-em-programas-ldar"
+          ],
+          [
+            "Critérios de vazamento e gatilhos de ação em LDAR",
+            "/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar"
+          ],
+          [
+            "Reparo e reverificação em LDAR",
+            "/blog/reparo-e-reverificacao-em-programas-ldar"
+          ],
+          [
+            "Registro de vazamentos em LDAR",
+            "/blog/registro-de-vazamentos-em-programas-ldar"
+          ],
+          [
+            "Indicadores de LDAR",
+            "/blog/indicadores-de-programas-ldar"
+          ],
+          [
+            "Mudanças na planta e atualização de LDAR",
+            "/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar"
+          ],
+          [
+            "Qualidade e aceite de dados LDAR",
+            "/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar"
+          ]
         ]
       },
       {
         "heading": "Contratar e interpretar resultados",
         "links": [
-          ["Como contratar monitoramento de emissões fugitivas", "/blog/como-contratar-monitoramento-de-emissoes-fugitivas"],
-          ["Dados para orçamento de emissões fugitivas", "/blog/dados-para-orcamento-de-emissoes-fugitivas"],
-          ["Planejamento de campanha de emissões fugitivas", "/blog/planejamento-de-campanha-de-emissoes-fugitivas"],
-          ["Como ler relatório de emissões fugitivas", "/blog/como-ler-relatorio-de-emissoes-fugitivas"],
-          ["Comparação entre campanhas", "/blog/comparacao-entre-campanhas-de-emissoes-fugitivas"],
-          ["Emissões fugitivas Petrobras", "/blog/emissoes-fugitivas-petrobras"]
+          [
+            "Como contratar monitoramento de emissões fugitivas",
+            "/blog/como-contratar-monitoramento-de-emissoes-fugitivas"
+          ],
+          [
+            "Dados para orçamento de emissões fugitivas",
+            "/blog/dados-para-orcamento-de-emissoes-fugitivas"
+          ],
+          [
+            "Planejamento de campanha de emissões fugitivas",
+            "/blog/planejamento-de-campanha-de-emissoes-fugitivas"
+          ],
+          [
+            "Como ler relatório de emissões fugitivas",
+            "/blog/como-ler-relatorio-de-emissoes-fugitivas"
+          ],
+          [
+            "Comparação entre campanhas",
+            "/blog/comparacao-entre-campanhas-de-emissoes-fugitivas"
+          ],
+          [
+            "Emissões fugitivas Petrobras",
+            "/blog/emissoes-fugitivas-petrobras"
+          ]
         ]
       }
     ]
@@ -213,11 +304,86 @@
     }
   ],
   "sources": [
-    ["Resolução CONAMA nº 382, de 26 de dezembro de 2006, art. 3º (cópia no portal do IEMA-ES)", "https://iema.es.gov.br/Media/iema/CQAI/FIGURAS/CRSS/CONAMA/CONAMA_382_2006.pdf"],
-    ["EPA, Leak Detection and Repair: A Best Practices Guide", "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"],
-    ["EPA, Method 21: Volatile Organic Compound Leaks", "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks"],
-    ["IPCC, 2006 Guidelines for National Greenhouse Gas Inventories, volume 2, capítulo 4: Fugitive Emissions", "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_4_Ch4_Fugitive_Emissions.pdf"],
-    ["Resolução CONEMA nº 97, de 10 de novembro de 2022, que aprova a NOP-INEA-52 (INEA)", "https://www.inea.rj.gov.br/wp-content/uploads/2022/11/Resolu%C3%A7%C3%A3o-CONEMA-n%C2%BA-97-aprova-a-NOP-INEA-52.pdf"]
+    [
+      "Resolução CONAMA nº 382, de 26 de dezembro de 2006, art. 3º (cópia no portal do IEMA-ES)",
+      "https://iema.es.gov.br/Media/iema/CQAI/FIGURAS/CRSS/CONAMA/CONAMA_382_2006.pdf"
+    ],
+    [
+      "EPA, Leak Detection and Repair: A Best Practices Guide",
+      "https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf"
+    ],
+    [
+      "EPA, Method 21: Volatile Organic Compound Leaks",
+      "https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks"
+    ],
+    [
+      "IPCC, 2006 Guidelines for National Greenhouse Gas Inventories, volume 2, capítulo 4: Fugitive Emissions",
+      "https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_4_Ch4_Fugitive_Emissions.pdf"
+    ],
+    [
+      "EPA, Understanding Global Warming Potentials (atualizada em 29/12/2025)",
+      "https://www.epa.gov/ghgemissions/understanding-global-warming-potentials"
+    ],
+    [
+      "Resolução CONEMA nº 97, de 10 de novembro de 2022, que aprova a NOP-INEA-52 (INEA)",
+      "https://www.inea.rj.gov.br/wp-content/uploads/2022/11/Resolu%C3%A7%C3%A3o-CONEMA-n%C2%BA-97-aprova-a-NOP-INEA-52.pdf"
+    ]
   ],
-  "disclaimer": "Este guia reúne referências públicas e não substitui a leitura das normas vigentes nem a definição do escopo de um projeto. A aplicação a cada instalação depende do contexto, e a proposta técnica confirma atividades, entregas, prazos e exclusões."
+  "disclaimer": "Este guia reúne referências públicas e não substitui a leitura das normas vigentes nem a definição do escopo de um projeto. A aplicação a cada instalação depende do contexto, e a proposta técnica confirma atividades, entregas, prazos e exclusões.",
+  "summary": {
+    "heading": "Em resumo",
+    "items": [
+      "**Definição:** lançamento difuso de matéria na atmosfera por uma fonte sem dispositivo para dirigir ou controlar o fluxo, segundo a Resolução CONAMA nº 382/2006. [[Ver a definição|#o-que-sao]]",
+      "**Principais fontes:** estudos da EPA estimaram que válvulas e conexões respondem por mais de 90% das emissões de equipamentos com vazamento. [[Ver as fontes|#de-onde-vem]]",
+      "**Detecção:** o Método 21 da EPA usa um instrumento portátil para localizar e classificar vazamentos; câmeras OGI também apoiam a investigação. [[Ver a detecção|#deteccao]]",
+      "**Controle:** o programa LDAR tem cinco elementos: identificar os componentes, definir o que é vazamento, monitorar, reparar e manter os registros. [[Ver o programa LDAR|#ldar]]",
+      "**Norma no Brasil:** a Resolução CONAMA nº 382/2006 define emissão fugitiva, emissão pontual e fonte fixa e estabelece limites de emissão para fontes fixas. [[Ver a legislação|#legislacao]]",
+      "**Rio de Janeiro:** a NOP-INEA-52 exige inventário anual de GEE, com Verificação, dos empreendimentos de classes 4, 5 e 6 que emitam 10.000 tCO2eq ou mais por ano. [[Ver as exigências do RJ|#rio-de-janeiro]]"
+    ]
+  },
+  "figure": {
+    "src": "/pessoas/Picture12.jpg",
+    "alt": "Técnico com detector portátil de gases medindo a conexão de uma tubulação junto a uma válvula",
+    "caption": "Imagem ilustrativa do acervo existente da Monitorar.",
+    "width": 1152,
+    "height": 984
+  },
+  "glossary": {
+    "id": "termos",
+    "heading": "Termos usados",
+    "terms": [
+      [
+        "Compostos orgânicos voláteis (COV)",
+        "Compostos orgânicos que possuem ponto de ebulição de até 130 °C na pressão atmosférica e podem contribuir na formação dos oxidantes fotoquímicos (Resolução CONAMA nº 382/2006, art. 3º)."
+      ],
+      [
+        "Concentração de definição de vazamento",
+        "Concentração local de COV na superfície de uma fonte que indica a presença de um vazamento. É uma leitura do instrumento baseada em um composto de referência, e o valor é fixado por cada regra aplicável (EPA, Método 21, itens 2.1 e 3.3)."
+      ],
+      [
+        "Fonte fixa de emissão",
+        "Qualquer instalação, equipamento ou processo, situado em local fixo, que libere ou emita matéria para a atmosfera, por emissão pontual ou fugitiva (Resolução CONAMA nº 382/2006)."
+      ],
+      [
+        "Emissão pontual",
+        "Lançamento na atmosfera por uma fonte provida de dispositivo para dirigir ou controlar seu fluxo, como dutos e chaminés (Resolução CONAMA nº 382/2006)."
+      ],
+      [
+        "Emissão fugitiva",
+        "Lançamento difuso na atmosfera por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo (Resolução CONAMA nº 382/2006)."
+      ],
+      [
+        "Escopo 1",
+        "Emissões diretas de gases de efeito estufa de fontes que pertencem ou são controladas pela organização (NOP-INEA-52)."
+      ],
+      [
+        "Escopo 2",
+        "Emissões indiretas associadas à produção de eletricidade comprada ou contratada e consumida em operações próprias ou controladas pela organização (NOP-INEA-52)."
+      ],
+      [
+        "LDAR",
+        "Leak Detection and Repair: prática de trabalho para identificar equipamentos com vazamento, de modo que as emissões possam ser reduzidas por reparos (EPA)."
+      ]
+    ]
+  }
 }

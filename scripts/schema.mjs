@@ -3,6 +3,7 @@ import {business,breadcrumbs} from './seo-data.mjs';
 import {publicModifiedAt} from './public-dates.mjs';
 import {readFileSync} from 'node:fs';
 // Guides rendered by components/Guide.tsx; their FAQ is marked up from the same file as the visible questions.
+const photos=JSON.parse(readFileSync(new URL('../src/lib/photos.json',import.meta.url),'utf8'));
 const guides=Object.fromEntries(['emissoes-fugitivas-guia','consultoria-ambiental-guia'].map(name=>{const guide=JSON.parse(readFileSync(new URL(`../content/${name}.json`,import.meta.url),'utf8'));return [guide.path,guide];}));
 // A trailing "[[Ver ...|#anchor]]." is a pointer for readers, so the structured answer ends before it; other links keep their label.
 const plain=t=>t.replace(/\s*\[\[[^\]|]+\|[^\]]+\]\]\.\s*$/,'').replace(/\[\[(.+?)\|.+?\]\]/g,'$1');
@@ -11,7 +12,7 @@ export function schemaFor(row,preview=false) {
  {'@type':'WebSite','@id':origin+'/#website',name:'Monitorar Consultoria',url:origin+'/',inLanguage:'pt-BR',publisher:{'@id':origin+'/#organization'}}];
  const guide=guides[row.path];
  if(guide){const url=origin+row.path;graph.push(
-  {'@type':'Article','@id':url+'#article',headline:guide.headline,description:row.description,mainEntityOfPage:url,inLanguage:'pt-BR',datePublished:guide.published,dateModified:guide.updated,author:{'@id':origin+'/#organization'},publisher:{'@id':origin+'/#organization'}},
+  {'@type':'Article','@id':url+'#article',headline:guide.headline,description:row.description,mainEntityOfPage:url,inLanguage:'pt-BR',datePublished:guide.published,dateModified:guide.updated,...(guide.figure?{image:origin+(photos[guide.figure.src]?.src||guide.figure.src)}:{}),author:{'@id':origin+'/#organization'},publisher:{'@id':origin+'/#organization'}},
   {'@type':'BreadcrumbList',itemListElement:[{'@type':'ListItem',position:1,name:'Início',item:origin+'/'},{'@type':'ListItem',position:2,name:guide.eyebrow,item:url}]},
   {'@type':'FAQPage','@id':url+'#faq',inLanguage:'pt-BR',mainEntity:guide.faq.map(({q,a})=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:plain(a)}}))});}
  if(row.page) {

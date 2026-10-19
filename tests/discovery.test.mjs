@@ -242,6 +242,7 @@ function guideStructuredData(html,expectedQuestions){
  const graph=graphOf(html);
  const article=graph.find(n=>n['@type']==='Article');
  assert.ok(article&&article.headline&&article.dateModified&&article.publisher,'Article node');
+ if(expectedQuestions===9)assert.match(article.image||'',/^https:\/\/www\.monitorarconsultoria\.com\.br\/media\/photos-v41\/04-/,'Article image');
  const crumbs=graph.find(n=>n['@type']==='BreadcrumbList');
  assert.ok(crumbs&&crumbs.itemListElement.length===2,'BreadcrumbList with home and the guide');
  const faq=graph.find(n=>n['@type']==='FAQPage');
@@ -254,7 +255,7 @@ test('the emissions guide is the single page for the head term: title, sourced s
  assert.ok(paths.includes(guidePath));
  assert.ok(!paths.includes(oldFaqPath),'the old Q&A address is only a redirect');
  const html=await page(guidePath);
- assert.equal(title(html),'Emissões fugitivas: guia completo e LDAR | Monitorar Consultoria');
+ assert.equal(title(html),'Emissões fugitivas: o que são, fontes e LDAR | Monitorar');
  const description=metaDescription(html);
  assert.ok(description.length>=100&&description.length<=160,'description '+description.length);
  assert.match(description,/emissões fugitivas/i);assert.match(description,/LDAR/);
@@ -262,7 +263,21 @@ test('the emissions guide is the single page for the head term: title, sourced s
  assert.ok(words(html)>=1800,'words '+words(html));
  const body=html.split('<div id="root">')[1];
  const h2=headings(html,'h2');
- for(const heading of ['O que são emissões fugitivas','Emissão fugitiva e emissão pontual','De onde vêm as emissões fugitivas','Por que controlar as emissões fugitivas','Como as emissões fugitivas são detectadas','Detectar não é quantificar','LDAR: o programa de detecção e reparo de vazamentos','Emissões fugitivas no Rio de Janeiro','Perguntas frequentes','Fontes'])assert.ok(h2.includes(heading),'H2 '+heading);
+ for(const heading of ['Em resumo','O que são emissões fugitivas','Emissão fugitiva e emissão pontual','De onde vêm as emissões fugitivas','Por que controlar as emissões fugitivas','Como as emissões fugitivas são detectadas','Detectar não é quantificar','LDAR: o programa de detecção e reparo de vazamentos','Emissões fugitivas no Rio de Janeiro','Termos usados','Perguntas frequentes','Fontes'])assert.ok(h2.includes(heading),'H2 '+heading);
+ assert.equal(h2.indexOf('Em resumo'),0,'the summary comes first');
+ const summary=body.match(/<section id="em-resumo"[\s\S]*?<\/section>/)[0];
+ const anchors=[...summary.matchAll(/<li>[\s\S]*?href="#([a-z0-9-]+)"/g)].map(m=>m[1]);
+ assert.equal(anchors.length,6,'six summary points, each pointing to its section');
+ for(const id of anchors)assert.ok(body.includes('id="'+id+'"'),'summary anchor #'+id);
+ assert.match(body,/potencial de aquecimento global \(GWP\) de 27 a 30 em 100 anos/);
+ assert.ok(body.includes('href="https://www.epa.gov/ghgemissions/understanding-global-warming-potentials"'),'EPA GWP source');
+ const glossary=body.match(/<section id="termos"[\s\S]*?<\/section>/)[0];
+ for(const term of ['Compostos orgânicos voláteis (COV)','Concentração de definição de vazamento','Fonte fixa de emissão','Emissão pontual','Emissão fugitiva','Escopo 1','Escopo 2','LDAR'])assert.ok(glossary.includes('<dt>'+term+'</dt>'),'glossary '+term);
+ assert.match(glossary,/ponto de ebulição de até 130 °C/);
+ assert.match(body,/<p class="guide-byline">Monitorar Consultoria · Publicado em 19\/10\/2026 · Atualizado em \d{2}\/\d{2}\/2026<\/p>/);
+ const figure=body.match(/<figure class="guide-figure">[\s\S]*?<\/figure>/)[0];
+ assert.match(figure,/<img[^>]+alt="Técnico com detector portátil de gases[^"]+"/);assert.match(figure,/\/media\/photos-v41\/04-/);
+ assert.match(figure,/<figcaption>Imagem ilustrativa do acervo existente da Monitorar\.<\/figcaption>/);
  assert.match(body,/lançamento difuso na atmosfera de qualquer forma de matéria sólida, líquida ou gasosa, efetuado por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo/);
  for(const fact of ['63%','56%','mais de 90%','10.000 tCO2eq','Lei Estadual nº 5.690','NOP-INEA-52','ABNT NBR ISO 14064','cinco elementos'])assert.ok(body.includes(fact),'fact '+fact);
  for(const url of ['https://www.epa.gov/sites/default/files/2014-02/documents/ldarguide.pdf','https://www.epa.gov/emc/method-21-volatile-organic-compound-leaks','https://www.ipcc-nggip.iges.or.jp/public/2006gl/pdf/2_Volume2/V2_4_Ch4_Fugitive_Emissions.pdf','https://www.inea.rj.gov.br/wp-content/uploads/2022/11/Resolu%C3%A7%C3%A3o-CONEMA-n%C2%BA-97-aprova-a-NOP-INEA-52.pdf','https://iema.es.gov.br/Media/iema/CQAI/FIGURAS/CRSS/CONAMA/CONAMA_382_2006.pdf'])assert.ok(body.includes('href="'+url+'"'),url);
@@ -275,6 +290,14 @@ test('the emissions guide is the single page for the head term: title, sourced s
 const mainOf=html=>html.match(/<main[\s\S]*?<\/main>/)[0];
 test('the emissions guide is linked, in the page content, from the home, the services, the hub and every article of the topic',async()=>{
  for(const path of ['/','/servicos','/servicos/emissoes-fugitivas','/conteudos/emissoes-fugitivas',...clusterSlugs])assert.ok(mainOf(await page(path)).includes('href="'+guidePath+'"'),'linked from '+path);
+});
+test('the article, the hub and the service link the emissions guide right under their summary, not only at the end',async()=>{
+ for(const path of ['/blog/o-que-sao-emissoes-fugitivas','/conteudos/emissoes-fugitivas','/servicos/emissoes-fugitivas']){
+  const html=await page(path);
+  const header=html.match(/<header class="editorial-intro">[\s\S]*?<\/header>/)[0];
+  assert.ok(header.includes('href="'+guidePath+'"'),'guide link in the header of '+path);
+  assert.ok(!html.includes('editorial-faq-link'),'no second guide link at the end of '+path);
+ }
 });
 test('the old emissions Q&A address redirects once to the guide',()=>{
  const rules=vercel.redirects,rule=rules.find(r=>r.source===oldFaqPath);

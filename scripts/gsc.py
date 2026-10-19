@@ -7,7 +7,8 @@ Commands:
   request URL...   inspect, then ask Google to index the URL (stops when the daily quota is exhausted)
   queries          top queries of the Performance report (read-only)
   verify-domain    domain property (DNS TXT, authorised by the owner on 19/10): print the TXT record to publish, or press VERIFICAR once it is in the DNS
-With --property domain, inspect and request work on the domain property (https://monitorarconsultoria.com.br/ and every other host).
+With --property apex they work on the URL-prefix property https://monitorarconsultoria.com.br/ (verified by the HTML tag on 19/10);
+with --property domain, on the domain property (needs the DNS TXT record).
 """
 import argparse, json, re, sys
 from datetime import datetime, timezone
@@ -18,6 +19,7 @@ PROPERTY = 'https://www.monitorarconsultoria.com.br/'
 RES = quote(PROPERTY, safe='')
 DOMAIN = 'monitorarconsultoria.com.br'
 DOMAIN_RES = quote('sc-domain:' + DOMAIN, safe='')
+APEX_RES = quote('https://' + DOMAIN + '/', safe='')
 CDP = 'http://127.0.0.1:9223'
 ICONS = re.compile(r'[-]')
 FIELDS = ['Último rastreamento', 'Rastreada como', 'O rastreamento é permitido?', 'Busca de página', 'A indexação é permitida?',
@@ -134,13 +136,13 @@ if __name__ == '__main__':
     parser.add_argument('command', choices=['inspect', 'request', 'queries', 'verify-domain'])
     parser.add_argument('urls', nargs='*')
     parser.add_argument('--output')
-    parser.add_argument('--property', choices=['www', 'domain'], default='www')
+    parser.add_argument('--property', choices=['www', 'apex', 'domain'], default='www')
     parser.add_argument('--press-verify', action='store_true', help='verify-domain: press VERIFICAR (only after the TXT record is published)')
     args = parser.parse_args()
     report = {'capturedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'command': args.command, 'results': []}
     with sync_playwright() as p:
         context = p.chromium.connect_over_cdp(CDP).contexts[0]
-        resource = DOMAIN_RES if args.property == 'domain' else RES
+        resource = {'www': RES, 'apex': APEX_RES, 'domain': DOMAIN_RES}[args.property]
         if args.command == 'queries':
             report['results'] = top_queries(context)
         elif args.command == 'verify-domain':

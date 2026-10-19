@@ -1,10 +1,13 @@
 import { PageIntro, ProjectCTA } from '@/components/PageIntro';
+import { Photo } from '@/components/Photo';
 import { ClientLogos } from '@/components/ClientLogos';
 import { environmentalServices } from '@/lib/environmental-services';
 import type { GuideData, GuideSectionData } from '@/lib/guide';
 
 const parts = /(\[\[.+?\|.+?\]\]|\*\*.+?\*\*)/g;
 const isExternal = (url: string) => /^https?:\/\//.test(url);
+// ISO date (2026-10-19) as shown to readers (19/10/2026), without time-zone shifts.
+const brDate = (iso: string) => iso.split('-').reverse().join('/');
 
 // Renders [[label|url]] as a link (external ones open in a new tab) and **text** as bold.
 export function Rich({ text }: { text: string }) {
@@ -36,19 +39,29 @@ function Section({ section }: { section: GuideSectionData }) {
 export function Guide({ data }: { data: GuideData }) {
   const toc: [string, string][] = [
     ...data.sections.map((section): [string, string] => [section.id, section.heading]),
+    ...(data.glossary ? [[data.glossary.id, data.glossary.heading] as [string, string]] : []),
     ...(data.clusters ? [['guias', data.clusters.heading] as [string, string]] : []),
     ...(data.company ? [['monitorar-e-o-tema', data.company.heading] as [string, string]] : []),
     ['perguntas-frequentes', 'Perguntas frequentes'],
     ['fontes', 'Fontes'],
   ];
   return <>
-    <PageIntro eyebrow={data.eyebrow} title={data.title}><p>{data.intro}</p></PageIntro>
+    <PageIntro eyebrow={data.eyebrow} title={data.title}><p>{data.intro}</p><p className="guide-byline">{`Monitorar Consultoria · Publicado em ${brDate(data.published)} · Atualizado em ${brDate(data.updated)}`}</p></PageIntro>
     <div className="site-wrap rj-page guide-page">
+      {data.summary && <section id="em-resumo" className="guide-summary">
+        <h2>{data.summary.heading}</h2>
+        <ul>{data.summary.items.map(item => <li key={item}><Rich text={item} /></li>)}</ul>
+      </section>}
       <nav className="guide-toc" aria-label="Nesta página">
         <p>Nesta página</p>
         <ol>{toc.map(([id, label]) => <li key={id}><a href={'#' + id}>{label}</a></li>)}</ol>
       </nav>
+      {data.figure && <figure className="guide-figure"><Photo src={data.figure.src} alt={data.figure.alt} width={data.figure.width} height={data.figure.height} loading="lazy" sizes="(max-width: 767px) 100vw, 720px" /><figcaption>{data.figure.caption}</figcaption></figure>}
       {data.sections.map(section => <Section key={section.id} section={section} />)}
+      {data.glossary && <section id={data.glossary.id} className="v4-services guide-section">
+        <h2>{data.glossary.heading}</h2>
+        <dl className="guide-glossary">{data.glossary.terms.map(([term, definition]) => <div key={term}><dt>{term}</dt><dd>{definition}</dd></div>)}</dl>
+      </section>}
       {data.clusters && <section id="guias" className="v4-services guide-section">
         <h2>{data.clusters.heading}</h2>
         <p><Rich text={data.clusters.intro} /></p>

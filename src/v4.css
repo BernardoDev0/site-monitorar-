@@ -151,7 +151,6 @@ body { background:var(--site-paper); }
 .rj-page h3 { font-size:1.2rem; font-weight:600; line-height:1.35; margin:0 0 .5rem; }
 .rj-page .rj-grid article p { margin:.5rem 0 1rem; }
 .rj-page .rj-sources { padding-left:1.2rem; list-style:disc; line-height:2; }
-.editorial-faq-link { margin:1.5rem 0; font-weight:600; }
 .guide-toc { margin:2rem 0; padding:20px 24px; border:1px solid #d9e2d3; border-radius:16px; background:#f3f7ef; }
 .guide-toc p { margin:0 0 .6rem; font-weight:600; }
 .guide-toc ol { columns:2; padding-left:1.2rem; margin:0; line-height:1.9; }
@@ -172,3 +171,17 @@ body { background:var(--site-paper); }
 /* Links inside running text keep the line height of the paragraph; standalone links keep the padded touch target. */
 .guide-page p .text-link, .guide-page .guide-list .text-link, .rj-faq p .text-link, .home-company p .text-link { display:inline; padding-block:0; }
 .guide-section .rj-grid { margin-bottom:2rem; }
+.editorial-guide-link { margin:1rem 0 0; font-weight:600; }
+.editorial-guide-link a { color:inherit; text-decoration:underline; text-underline-offset:4px; }
+.guide-byline { font-size:.95rem; opacity:.8; }
+.guide-summary { margin:2rem 0; padding:24px 28px; border-left:4px solid #6fae3a; background:#f3f7ef; border-radius:0 16px 16px 0; }
+.guide-summary h2 { margin:0 0 .8rem; }
+.guide-summary ul { padding-left:1.2rem; list-style:disc; line-height:1.75; max-width:75ch; margin:0; }
+.guide-summary li { margin:.45rem 0; }
+.guide-summary .text-link { display:inline; padding-block:0; }
+.guide-figure { margin:2rem 0; max-width:720px; }
+.guide-figure img { width:100%; height:auto; border-radius:16px; }
+.guide-figure figcaption { font-size:.9rem; opacity:.75; margin-top:.5rem; }
+.guide-glossary { display:grid; gap:14px; max-width:75ch; margin:1rem 0; }
+.guide-glossary dt { font-weight:600; }
+.guide-glossary dd { margin:.2rem 0 0; }

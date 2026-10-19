@@ -144,3 +144,44 @@ Pedido do dono: "emissões fugitivas" e "consultoria ambiental" na IA e em 1º n
 Todos os fatos dos guias foram conferidos no texto das fontes (CONAMA 382/2006, guia LDAR e Método 21 da EPA, IPCC 2006 vol. 2 cap. 4, NOP-INEA-52, Lei 6.938/1981, CONAMA 237/1997, Lei 6.496/1977). Na conferência saiu um erro meu do guia anterior (a EPA lista cinco benefícios, não três), já corrigido. Nenhuma credencial da empresa é afirmada (o dono respondeu "não sei agora"), e os guias não têm nome de pessoa (decisão do dono). A lista de "como escolher" cita o Cadastro Técnico Federal e a ART como critérios gerais; convém o dono confirmar os registros da própria empresa para poder exibi-los.
 
 **Pendente:** pedidos de indexação (cota; fila em `LOOP.md`), propriedade de domínio sem www no Search Console (autorizada; falta o TXT no DNS, que só o dono coloca), kit do dono em `docs/organic/owner-actions.md`.
+
+
+## "emissões fugitivas" e o ícone (19/10, noite)
+
+Pedido do proprietário: foco só em "emissões fugitivas" (1º ou 2º) e o ícone da empresa nos resultados, que não aparece em nenhum.
+
+**Medição sem personalização:** "emissões fugitivas" oscila entre o **8º lugar** (artigo "O que são emissões fugitivas") e **fora da 1ª página** em leituras com 20 minutos de intervalo, o que explica o proprietário ver a 2ª página. A 1ª página:
+
+| Pos. | Resultado | O que tem |
+|---|---|---|
+| 1 | thermofisher.com | página **em inglês**, ~650 palavras, de 03/2024, sem imagem, sem índice, sem FAQ |
+| 2 | blog.alutal.com.br | ~950 palavras, estatísticas sem fonte |
+| 3 | pt.wikipedia.org | **~70 palavras** |
+| 4–8 | persefoni.com (inglês), wika.com (produto), UFMG (monografia), start5g.com.br, gov.br/anp | |
+
+As três primeiras ganham com páginas fracas porque o **domínio** delas tem autoridade (links e menções). Portanto não é o conteúdo que falta. Faltam três coisas: o guia indexado (o Google ainda não conhece `/emissoes-fugitivas`), o endereço resolvido e autoridade externa. Já em "emissões fugitivas RJ" somos 1º: quase ninguém disputa o termo com RJ, e a página tem RJ no título e trata do INEA.
+
+**Causa do ícone:**
+- Na Vercel, o endereço sem www redirecionou para o www com **307 (temporário)**, o padrão, até 18/10; agora é 308.
+- Hoje a propriedade `https://monitorarconsultoria.com.br/` foi criada no Search Console e **verificada automaticamente pela tag HTML** (mesmo token da conta). A inspeção mostra o sem www **indexado, com último rastreamento em 10/10/2026**. Naquela data o site antigo ainda declarava o próprio sem www como canônico. O Google ainda não releu o endereço depois da troca para 308.
+- Resultado: a Home www continua "cópia" e o endereço www fica sem Home no índice. O Google mostra o ícone por endereço, a partir da Home oficial dele, então todos os resultados www saem com o **globo**.
+- Prova: o recorte `evidence/icons/20261019T1852-neutral-1.png` (fica só na máquina, porque o repositório ignora PNG em `docs/organic`; o hash está no JSON do ciclo) mostra o globo SVG do Google (`iconKind: svg`, hash `4f5681529f82`), o mesmo de um site sem ícone (Start5G). O logo aparecerá como `iconKind: img`.
+- O pedido de reindexação do sem www não entrou: a cota diária é **por conta**, e a de 19/10 já tinha acabado. É o **primeiro pedido de 20/10**.
+- **Ponto de decisão:** 72 h depois desse pedido, se a Home www continuar fora do índice, o site passa para o endereço sem www, com autorização do proprietário ("com e sem www, tanto faz, só quero que funcione"). A ordem dos passos:
+  1. Vercel: o sem www vira o domínio principal e o www redireciona 308 para ele. É feito no painel, porque o MCP não altera redirect de domínio.
+  2. Código: origem única (`scripts/editorial.mjs`, `content/business.json`, `public/robots.txt`, `vercel.json`, testes e scripts).
+  3. Pedidos de indexação na propriedade do sem www.
+
+**Feito no guia** (seguindo as skills ai-seo e seo-audit, instaladas no commit fixo):
+- título `Emissões fugitivas: o que são, fontes e LDAR | Monitorar`, na intenção que domina a 1ª página;
+- "Em resumo" com 6 pontos, cada um levando à sua seção;
+- estatística do metano com fonte e data (EPA, GWP de 27 a 30 em 100 anos);
+- glossário com definições tiradas das fontes (CONAMA 382, Método 21, NOP-INEA-52, EPA);
+- linha "Publicado em / Atualizado em", sem nome de pessoa;
+- foto do acervo (técnico com detector portátil), também como `image` no Article;
+- **link para o guia no topo** do artigo que está em 8º, do hub e do serviço, em vez de só no pé.
+
+**Regras daqui em diante:**
+- Sem novas edições no guia por 3 a 4 semanas depois de indexado, salvo erro de fato (*rankings-push*).
+- Canibalização: se o Google alternar entre guia e artigo por 2 semanas sem subir, propor canonical do artigo para o guia (só com autorização, por ser um dos 90 artigos).
+- O que decide contra Thermo Fisher e Wikipedia é autoridade: o kit do proprietário (`docs/organic/owner-actions.md`, seção "Foco: emissões fugitivas").

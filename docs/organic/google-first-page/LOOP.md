@@ -25,42 +25,44 @@ Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**
 1. `curl -s http://127.0.0.1:9223/json/version` responde (Chrome dedicado aberto, perfil `%USERPROFILE%\.cache\monitorar-seo-chrome`). Senão, abrir o Chrome com os parâmetros de `scripts/gsc.py`.
 2. A inspeção de URL funciona (sessão do Search Console ativa). Se pedir login, registrar "login necessário" no log e encerrar o ciclo, sem perguntar nada ao proprietário.
 
+## Foco desde 19/10 à noite: só "emissões fugitivas" e o ícone
+
+Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgânico, e o ícone da empresa nos resultados. A varredura das outras frases e a checagem de IA das outras frases ficam **pausadas**.
+
+**Linha de base (19/10, sem personalização):** "emissões fugitivas" oscila entre o 8º lugar (artigo `/blog/o-que-sao-emissoes-fugitivas`) e fora da 1ª página em leituras com 20 minutos de intervalo. "emissões fugitivas RJ": 1º (serviço) e 5º (artigo Petrobras). Ícone: **globo** (`iconKind: svg`, hash `4f5681529f82`) nos dois resultados. O logo aparece como `iconKind: img`.
+
 ## Um ciclo (a cada 3 horas)
 
-1. `python scripts/gsc.py inspect https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas https://www.monitorarconsultoria.com.br/ https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas`
-2. `python scripts/google-serp.py "emissões fugitivas RJ" --mode default --output docs/organic/google-first-page/evidence/cycles/<UTC>.json`. Uma consulta por leitura por ciclo, nada além disso.
-3. **Varredura gradual**, somente se nenhuma leitura deste ciclo deu captcha: `python scripts/rank-sweep.py --output docs/organic/google-first-page/rankings/baseline-2026-10-19.csv --kind <tipo> --limit 10 --pause 60`, na ordem `priority`, `head`, `geo`, `commercial`, `article`. Depois de medidas todas as frases, repetir a varredura completa uma vez por semana em `rankings/sweep-<data>.csv` e comparar com `python scripts/rank-report.py <base> <nova>`.
-3b. **Respostas de IA**, no máximo **uma vez por dia** e só se nenhuma leitura deste ciclo deu captcha: `python scripts/ai-overview.py --output docs/organic/google-first-page/ai-overview/ai-overview-<data>.csv --limit 4`. Registrar no log se "Monitorar citada" mudou. Em captcha o script para e abre a janela do captcha na tela do proprietário (`scripts/captcha_window.py`); ele resolve sozinho, o script nunca resolve nem contorna.
-4. `python scripts/google-favicon.py`: indicador do ícone no Google. `updated: true` quando o armazém de favicons devolve o tamanho 16 em 16x16 (o ícone antigo, não quadrado, sai em 16x14 e os resultados mostram o globo). Registrar no log. Não há ação possível além de esperar o rastreador do Google; se passarem 7 dias sem mudança, registrar no relatório.
-5. Uma vez por dia (primeiro ciclo depois das 06:00 locais): `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`.
-6. Acrescentar uma linha a `LOOP-LOG.md`: UTC, serviço (indexada, último rastreamento), início (situação e canônica do Google), ícone (`updated`), posição logada, posição na janela limpa ou `bloqueado`, observação.
-7. Decidir:
-   - **Consulta atendida:** posição `neutral` entre 1 e 10 em **dois ciclos seguidos**. Registrar no `REPORT.md` e continuar acompanhando a estabilidade e o ícone.
-   - **Sucesso total:** consulta atendida **e** ícone (`google-favicon.py` com `updated: true`, e resultados dos artigos com o logo no lugar do globo) **e** Home indexada com a canônica em www, em dois ciclos seguidos. Então: `CronDelete`, `REPORT.md` final, encerrar o Chrome dedicado e apagar o perfil.
-   - Página-chave "não indexada" ou com conteúdo antigo no índice e ainda há cota hoje (limite de 10 pedidos por dia; contar no log): `python scripts/gsc.py request <url>`.
-   - O dado indicar uma alavanca de código, na ordem: rastreio e indexação; relevância na página (título, introdução, links internos); autoridade (relatório de links); conteúdo com fontes, que exige aprovação editorial registrada. Sempre com teste primeiro, publicação e verificação em produção.
-8. Uma vez por dia, commit só de documentos (`LOOP-LOG.md` e `evidence/`) em `main`.
+1. **Ícone e Home.**
+   - `python scripts/gsc.py inspect --property apex https://monitorarconsultoria.com.br/` (último rastreamento; em 19/10 era 10/10, quando o site antigo ainda declarava o sem www como canônico).
+   - `python scripts/gsc.py inspect https://www.monitorarconsultoria.com.br/` (a Home www entrou no índice? canônica?).
+   - `python scripts/google-favicon.py` (armazém de ícones).
+2. **Posição.** `python scripts/google-serp.py "emissões fugitivas" --mode neutral --output docs/organic/google-first-page/evidence/cycles/serp-emissoes-fugitivas-<UTC>.json --shots docs/organic/google-first-page/evidence/icons`. Se a leitura não deu captcha, também `"emissões fugitivas RJ"` (mesmo formato), que dá o ícone mesmo quando o termo principal não está na 1ª página. Máximo de 2 consultas por ciclo.
+3. **Respostas de IA:** 1×/dia, só "emissões fugitivas": `python scripts/ai-overview.py --output docs/organic/google-first-page/ai-overview/ai-overview-<data>.csv "emissões fugitivas"`.
+4. **Fila de pedidos** (seção seguinte), enquanto houver cota.
+5. **Desempenho:** 1×/dia, `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`. Anotar impressões e posição de "emissões fugitivas" quando aparecerem.
+6. **Log:** uma linha em `LOOP-LOG.md` com UTC, Home www (indexada?), apex (último rastreamento), ícone (`iconKind`/hash, armazém), posição de "emissões fugitivas" e qual URL nossa, posição de "emissões fugitivas RJ", pedidos feitos e observação.
+7. **Decidir:**
+   - **Ícone resolvido:** `iconKind: img` no nosso resultado em dois ciclos seguidos. Registrar com o recorte de imagem.
+   - **Ponto de decisão do endereço (72 h depois do pedido de reindexação do sem www):** se a Home www continuar fora do índice, mudar o site para o endereço sem www. O proprietário autorizou ("com e sem www, tanto faz, só quero que funcione"). Passos no `REPORT.md`; o redirecionamento de domínio na Vercel é trocado no painel pelo proprietário (o MCP não altera) ou por mim depois de `! npx vercel login`.
+   - **Canibalização:** depois que o guia `/emissoes-fugitivas` entrar no índice, se o Google alternar entre o guia e o artigo `/blog/o-que-sao-emissoes-fugitivas` por 2 semanas sem nenhum dos dois subir, propor ao proprietário que o artigo aponte o canonical para o guia (é um dos 90 artigos aprovados: só com autorização).
+   - **Sem novas edições no guia por 3 a 4 semanas** depois de indexado (skill seo-audit, *rankings-push*), salvo erro de fato. Mudanças empilhadas impedem saber o que funcionou. O que ainda pesa é autoridade (kit do proprietário).
+8. Uma vez por dia, commit só de documentos (`LOOP-LOG.md`, `evidence/`) em `main`.
 
-## Fila de pedidos de indexação (cota de cerca de 10 por dia)
+## Fila de pedidos de indexação (cota de cerca de 10 por dia, **por conta**, não por propriedade)
 
-A cota de 19/10 acabou. No primeiro ciclo de 20/10 (e nos seguintes, até esvaziar), inspecionar cada URL com `gsc.py inspect` e pedir com `gsc.py request` só as que ainda não estão indexadas ou estão com versão antiga, nesta ordem:
+Em 19/10 a cota acabou. No primeiro ciclo de 20/10, nesta ordem, inspecionar e pedir só o que não estiver indexado ou estiver com versão antiga:
 
-1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia completo; o guia de perguntas e respostas virou redirecionamento 308 para ele)
-2. `https://www.monitorarconsultoria.com.br/consultoria-ambiental` (guia de consultoria ambiental)
-3. `https://www.monitorarconsultoria.com.br/` (Home reescrita para qualquer estado, com a seção "Empresa de engenharia e consultoria ambiental")
-4. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj` (reescrita; a versão no Google é a antiga)
-5. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado`
-6. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
-7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
-8. `https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas` (bloco "Empresa de LDAR" e link ao guia)
-9. `https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas` (link ao guia)
+1. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: faz o Google reler o endereço sem www e ver o redirecionamento permanente (308). Destrava a Home www e o ícone. **Primeiro de todos.**
+2. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; o Google ainda não o conhece)
+3. `https://www.monitorarconsultoria.com.br/` (Home www)
+4. `https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas` (ganhou o link para o guia no topo)
+5. `https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas`
+6. `https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas`
+7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental`
+8. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj`
 
-Registrar no log quais foram pedidas e riscar daqui as que entraram no índice.
-
-**Propriedade de domínio sem www** (autorizada pelo proprietário em 19/10, no plano; ele coloca o TXT no DNS do domínio, painel skymail). Valor do registro TXT, nome `@`: `google-site-verification=6zXIzKJxknnZ7cfnG7h44ehIHX8HMKWDgoWj3fEdXR4`. Pré-passo de cada ciclo, até verificar:
-
-1. `nslookup -type=TXT monitorarconsultoria.com.br 8.8.8.8` mostra esse valor? Se não, registrar "TXT ainda não publicado" e seguir.
-2. Se sim: `python scripts/gsc.py verify-domain --press-verify`. Se `verified` for verdadeiro: `python scripts/gsc.py inspect --property domain https://monitorarconsultoria.com.br/` e, se não estiver como redirecionamento já reconhecido, `python scripts/gsc.py request --property domain https://monitorarconsultoria.com.br/`. Este pedido é o que faz o Google reprocessar o endereço antigo e trocar a canônica da Home para www. Depois ler o relatório de páginas dos dois endereços e registrar.
+Registrar no log o que foi pedido e riscar daqui o que entrou no índice. A propriedade de domínio (TXT no DNS) deixou de ser necessária; se o TXT aparecer, `gsc.py verify-domain --press-verify` continua valendo.
 
 ## Captcha
 

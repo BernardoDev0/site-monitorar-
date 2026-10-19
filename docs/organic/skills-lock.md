@@ -17,3 +17,12 @@ SEO audit, site architecture, content strategy, programmatic SEO, AI SEO e web-q
 
 Limite: exemplos de schema não substituem documentação oficial ou avaliação de elegibilidade. Não implementado FAQ/HowTo para prometer resultados especiais; nenhum dado fictício foi acrescentado para preencher campos.
 
+
+## Skills de SEO instaladas em 19/10/2026 (pedido do proprietário: "baixa skill, utiliza skill")
+
+| Skill | Origem / versão | Caminho | Licença | Uso |
+|---|---|---|---|---|
+| ai-seo | coreyhaines31/marketingskills @ 06d647eacf349eb0cbf15b8e00f1ce13c24fc2a0 | .agents/skills/ai-seo/ (SKILL.md e 15 referências) | MIT, LICENSE do mesmo commit | checklist do guia: definição no 1º parágrafo, estatística com fonte e data, resumo, data visível, nada de conteúdo separado "para IA" |
+| seo-audit | coreyhaines31/marketingskills @ 06d647eacf349eb0cbf15b8e00f1ce13c24fc2a0 | .agents/skills/seo-audit/ (SKILL.md e 7 referências) | MIT, LICENSE do mesmo commit | consistência www/sem www, uma página por termo (canibalização), *rankings-push* (links internos, 3–4 semanas sem editar), *title-tags* |
+
+SHA256 do SKILL.md: ai-seo 6ae9d428b8eb2c8378c31fd0d07f801bb6d16174c74b3da7ad53978ce86f9e9c; seo-audit e0ebb5808787f2ff26b96d7b429423874d9785541cd4ab775629a5cf1137e7a9. Baixados com `curl` do raw.githubusercontent.com no commit fixo; são instruções em Markdown, sem scripts executados.

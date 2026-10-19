@@ -51,3 +51,21 @@ A IA do Google cita YouTube e Instagram nas respostas sobre o assunto. Cada víd
 ## 6. Credenciais da empresa (quando você souber)
 
 Os guias dizem que a consultoria técnica ambiental precisa estar no Cadastro Técnico Federal do Ibama e que serviços de engenharia exigem ART. Quem ler vai conferir a Monitorar. Me diga, quando tiver: registro da empresa no CREA-RJ, número no Cadastro Técnico Federal, certificações ISO e associações. Com isso eu mostro nas páginas, o que ajuda no ranking e na confiança. Nada é publicado sem você confirmar.
+
+
+## Foco: emissões fugitivas (o que mais pesa para subir)
+
+O guia está em https://www.monitorarconsultoria.com.br/emissoes-fugitivas. O 1º lugar hoje é da Thermo Fisher, com uma página em inglês de ~650 palavras, e o 3º da Wikipedia, com ~70 palavras. Eles ganham pela autoridade do domínio, não pelo texto. O que muda isso são **links e menções reais para o guia**.
+
+1. **Post no LinkedIn da empresa**, com o link do guia:
+
+   > Emissões fugitivas: o que são, de onde vêm e como controlar. Reunimos em um guia a definição da Resolução CONAMA 382/2006, as fontes mais comuns segundo a EPA (válvulas e conexões respondem por mais de 90% das emissões de equipamentos com vazamento), o Método 21, o programa LDAR e o que a NOP-INEA-52 exige no Rio de Janeiro. Leia: https://www.monitorarconsultoria.com.br/emissoes-fugitivas
+   > #emissoesfugitivas #LDAR #meioambiente #INEA
+
+2. **Instagram**: o mesmo texto, com o link na bio apontando para o guia durante a campanha.
+3. **Vídeo de 45 a 60 s no YouTube**: "O que são emissões fugitivas" (roteiro na seção 5 acima), com o link do guia na descrição.
+4. **Pedidos de link para o guia**, não para a Home:
+   - Dräger Brasil: "A Monitorar, representante oficial Dräger, publicou um guia técnico sobre emissões fugitivas e LDAR. Vocês poderiam citá-lo, com link, no conteúdo sobre detecção de gases ou na página de representantes?"
+   - Clientes e parceiros com páginas de fornecedores ou de projetos.
+   - Associações do setor de petróleo, gás e química de que a empresa participe.
+5. **Não fazer:** comprar links, trocar links em massa ou editar a Wikipedia para citar a empresa. A Wikipedia proíbe isso a quem tem interesse próprio, e o Google pune.
