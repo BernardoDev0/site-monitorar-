@@ -43,7 +43,9 @@ export async function loadSiteData(preview = false) {
   const search = [...institutionalSearch, ...candidates.map(({slug,title,summary,topic_cluster,reviewed_at})=>({slug,title,summary,topic_cluster,reviewed_at}))];
   const pages = [...documents,...editorialPages(documents,preview)];
   const rows = legacy.filter(r=>!pages.some(d=>d.slug===r.path)).map(r=>({...r,page:null}));
-  for (const page of pages) rows.push({path:page.slug,title:page.title+' | Monitorar',description:page.summary,canonical:page.slug,page});
+  // Full brand name for brand + topic searches, shortened only where it would push the title past ~65 characters.
+  const branded = title => (title+' | Monitorar Consultoria').length<=65 ? title+' | Monitorar Consultoria' : title+' | Monitorar';
+  for (const page of pages) rows.push({path:page.slug,title:branded(page.title),description:page.summary,canonical:page.slug,page});
   rows.push({path:'/404',title:'Página não encontrada | Monitorar',description:'O endereço solicitado não foi encontrado.',canonical:null,page:null});
   return {rows,content,search,candidates,documents:pages,maintenance:preview?[]:candidates.map(d=>({id:d.id,issues:maintenanceIssues(d,registry)})).filter(d=>d.issues.length)};
 }

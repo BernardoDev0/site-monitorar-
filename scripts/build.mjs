@@ -10,6 +10,7 @@ import { schemaFor } from './schema.mjs';
 import { publicModifiedAt } from './public-dates.mjs';
 import { loadCorpus,loadRegistry,publicDocument,validatePublic,validateManifest,origin } from './editorial.mjs';
 import { editorialPages } from './editorial-pages.mjs';
+import { business } from './seo-data.mjs';
 const preview=process.argv.includes('--preview');
 // Ownership tokens and measurement IDs are public identifiers, not credentials.
 const integrations=JSON.parse(await readFile(new URL('../content/site-integrations.json',import.meta.url),'utf8'));
@@ -36,6 +37,7 @@ for(const row of rows){
  const head=(row.page&&editorialCss?'<link rel="stylesheet" href="/assets/'+editorialCss+'"/>':'')+'<title>'+esc(row.title)+'</title><meta name="description" content="'+esc(row.description)+'"/>'+
  '<meta name="robots" content="'+(noindex?(preview?'noindex, nofollow':'noindex, follow'):'index, follow')+'"/>'+
  (row.canonical?'<link rel="canonical" href="'+origin+row.canonical+'"/>':'')+
+ '<meta property="og:site_name" content="'+esc(business.name)+'"/><meta property="og:locale" content="pt_BR"/>'+
  '<meta property="og:title" content="'+esc(row.title)+'"/><meta property="og:description" content="'+esc(row.description)+'"/><meta property="og:url" content="'+origin+row.path+'"/><meta property="og:image" content="'+origin+'/simbolo-monitorar.png"/><meta property="og:type" content="'+(row.page?.type==='article'?'article':'website')+'"/>';
  const schema=schemaFor(row,preview);
  let html=template.replace(/<title>[\s\S]*?<\/title>/g,'').replace(/<meta\s+(?:name|property)="(?:description|author|keywords|robots|og:[^"]+|twitter:[^"]+)"[^>]*>/g,'').replace(/<link rel="canonical"[^>]*>/g,'');
@@ -50,6 +52,11 @@ for(const row of rows){
 const urls=preview?[]:rows.filter(r=>r.canonical===r.path&&r.path!=='/404'&&!r.page?.noindex);
 await writeFile(out+'/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(r=>{const modified=publicModifiedAt(r.page);return '<url><loc>'+origin+r.path+'</loc>'+(modified?'<lastmod>'+modified+'</lastmod>':'')+'</url>';}).join('')+'</urlset>');
 await writeFile(out+'/robots.txt',preview?'User-agent: *\nDisallow: /\n':(await readFile('public/robots.txt','utf8')).trim()+'\n\nSitemap: '+origin+'/sitemap.xml\n');
+// IndexNow ownership key: a public identifier served only by the public build.
+if(!preview&&integrations.INDEXNOW_KEY){
+ if(!/^[A-Za-z0-9-]{8,128}$/.test(integrations.INDEXNOW_KEY))throw new Error('Invalid INDEXNOW_KEY');
+ await writeFile(out+'/'+integrations.INDEXNOW_KEY+'.txt',integrations.INDEXNOW_KEY);
+}
 // Promote only a completely rendered artifact; recover the last output on failure.
 const backup=target+'.previous';
 // All recursive artifact operations are confined to this project's known output paths.
