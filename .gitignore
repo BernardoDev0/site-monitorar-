@@ -40,3 +40,6 @@ docs/organic/**/*.webm
 docs/organic/**/*.mp4
 
 __pycache__/
+
+# ChatGPT image downloads and the request pack (working files, not published)
+/imagens-chatgpt/
