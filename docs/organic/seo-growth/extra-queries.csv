@@ -34,36 +34,36 @@ target,kind,phrase
 /conteudos/qualidade-do-ar,head,monitoramento da qualidade do ar
 /servicos/ruido-extramuros,head,medição de ruído ambiental
 /conteudos/areas-impactadas,head,avaliação de áreas contaminadas
-/,geo,consultoria ambiental São Paulo
-/,geo,consultoria ambiental SP
-/,geo,consultoria ambiental Minas Gerais
-/,geo,consultoria ambiental Belo Horizonte
-/,geo,consultoria ambiental Espírito Santo
-/,geo,consultoria ambiental Vitória ES
-/,geo,consultoria ambiental Bahia
-/,geo,consultoria ambiental Salvador
-/,geo,consultoria ambiental Paraná
-/,geo,consultoria ambiental Curitiba
-/,geo,consultoria ambiental Rio Grande do Sul
-/,geo,consultoria ambiental Porto Alegre
-/,geo,consultoria ambiental Santa Catarina
-/,geo,consultoria ambiental Pernambuco
-/,geo,consultoria ambiental Recife
-/,geo,consultoria ambiental Ceará
-/,geo,consultoria ambiental Fortaleza
-/,geo,consultoria ambiental Sergipe
-/,geo,consultoria ambiental Macaé
-/,geo,consultoria ambiental Niterói
-/,geo,consultoria ambiental Duque de Caxias
-/,geo,consultoria ambiental Campos dos Goytacazes
-/,geo,consultoria ambiental Volta Redonda
+/consultoria-ambiental-por-estado,geo,consultoria ambiental São Paulo
+/consultoria-ambiental-por-estado,geo,consultoria ambiental SP
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Minas Gerais
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Belo Horizonte
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Espírito Santo
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Vitória ES
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Bahia
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Salvador
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Paraná
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Curitiba
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Rio Grande do Sul
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Porto Alegre
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Santa Catarina
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Pernambuco
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Recife
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Ceará
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Fortaleza
+/consultoria-ambiental-por-estado,geo,consultoria ambiental Sergipe
+/consultoria-ambiental-rj,geo,consultoria ambiental Macaé
+/consultoria-ambiental-rj,geo,consultoria ambiental Niterói
+/consultoria-ambiental-rj,geo,consultoria ambiental Duque de Caxias
+/consultoria-ambiental-rj,geo,consultoria ambiental Campos dos Goytacazes
+/consultoria-ambiental-rj,geo,consultoria ambiental Volta Redonda
 /servicos/emissoes-fugitivas,geo,emissões fugitivas SP
 /servicos/emissoes-fugitivas,geo,emissões fugitivas MG
 /servicos/emissoes-fugitivas,geo,emissões fugitivas ES
 /servicos/emissoes-fugitivas,geo,emissões fugitivas BA
 /servicos/emissoes-fugitivas,geo,emissões fugitivas PR
 /servicos/emissoes-fugitivas,geo,emissões fugitivas São Paulo
-/,geo,engenharia ambiental Niterói
-/,geo,engenharia ambiental Macaé
-/,geo,engenharia ambiental São Paulo
-/,geo,engenharia ambiental Minas Gerais
+/consultoria-ambiental-rj,geo,engenharia ambiental Niterói
+/consultoria-ambiental-rj,geo,engenharia ambiental Macaé
+/consultoria-ambiental-por-estado,geo,engenharia ambiental São Paulo
+/consultoria-ambiental-por-estado,geo,engenharia ambiental Minas Gerais

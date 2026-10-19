@@ -1,0 +1,1001 @@
+{
+  "checkedAt": "2026-10-19T15:29:21.816971+00:00",
+  "source": "dist",
+  "baseline": false,
+  "sitemapURLs": 123,
+  "publishedArticles": 90,
+  "articlesInSitemap": 90,
+  "globalIssues": [],
+  "articleDepths": {
+    "2": 87,
+    "1": 3
+  },
+  "redirects": [],
+  "pages": [
+    {
+      "url": "https://www.monitorarconsultoria.com.br/",
+      "article": false,
+      "status": 200,
+      "title": "Engenharia e consultoria ambiental no RJ | Monitorar Consultoria",
+      "description": "Engenharia e consultoria ambiental no Rio de Janeiro: emissões fugitivas, LDAR, qualidade do ar, ruído e segurança do trabalho. Converse com a Monitorar.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/sobre",
+      "article": false,
+      "status": 200,
+      "title": "Sobre a Monitorar Consultoria",
+      "description": "Conheça a Monitorar Consultoria, sua história e atuação em meio ambiente e segurança do trabalho.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos",
+      "article": false,
+      "status": 200,
+      "title": "Serviços de engenharia e consultoria ambiental | Monitorar",
+      "description": "Consulte os serviços de meio ambiente, segurança do trabalho e equipamentos apresentados pela Monitorar.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/seguranca",
+      "article": false,
+      "status": 200,
+      "title": "Segurança do trabalho | Monitorar Consultoria",
+      "description": "Serviços de gestão de SMS, HAZOP, auditorias e treinamentos apresentados pela Monitorar Consultoria.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj",
+      "article": false,
+      "status": 200,
+      "title": "Consultoria ambiental no RJ | Monitorar Consultoria",
+      "description": "Consultoria e engenharia ambiental com sede no Rio de Janeiro: emissões fugitivas e LDAR, qualidade do ar, ruído, licenciamento e áreas impactadas.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado",
+      "article": false,
+      "status": 200,
+      "title": "Consultoria ambiental por estado | Monitorar Consultoria",
+      "description": "Consultoria ambiental com sede no Rio de Janeiro e atendimento por estado: RJ, SP, MG, ES, PR, SC, RS, BA, SE, PE e CE, conforme o escopo do projeto.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/drager",
+      "article": false,
+      "status": 200,
+      "title": "Equipamentos Dräger | Monitorar Consultoria",
+      "description": "Conheça a área de equipamentos apresentada pela Monitorar e consulte o catálogo disponível.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/clientes",
+      "article": false,
+      "status": 200,
+      "title": "Clientes | Monitorar Consultoria",
+      "description": "Conheça os clientes apresentados no site institucional da Monitorar Consultoria.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/depoimentos",
+      "article": false,
+      "status": 200,
+      "title": "Depoimentos | Monitorar Consultoria",
+      "description": "Leia os depoimentos publicados no site da Monitorar Consultoria.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/trabalhe-conosco",
+      "article": false,
+      "status": 200,
+      "title": "Trabalhe conosco | Monitorar Consultoria",
+      "description": "Informações sobre oportunidades e contato profissional com a Monitorar Consultoria.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/contato",
+      "article": false,
+      "status": 200,
+      "title": "Contato | Monitorar Consultoria",
+      "description": "Converse com a Monitorar sobre seu projeto. Telefone, email, WhatsApp e endereço institucional.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/politica-privacidade",
+      "article": false,
+      "status": 200,
+      "title": "Política de privacidade | Monitorar Consultoria",
+      "description": "Informações sobre privacidade e tratamento de dados no site da Monitorar Consultoria.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas",
+      "article": false,
+      "status": 200,
+      "title": "Monitoramento de emissões fugitivas no RJ | Monitorar Consultoria",
+      "description": "Monitoramento de emissões fugitivas e LDAR com sede no Rio de Janeiro: informações do projeto, entregas e limites do escopo. Fale com a Monitorar Consultoria.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/ruido-extramuros",
+      "article": false,
+      "status": 200,
+      "title": "Avaliação de ruído extramuros | Monitorar Consultoria",
+      "description": "Entenda quais informações sobre a instalação e seu entorno ajudam a definir uma avaliação de ruído ambiental e a interpretar seus resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/servicos/hazop",
+      "article": false,
+      "status": 200,
+      "title": "Estudo HAZOP | Monitorar Consultoria",
+      "description": "Prepare um estudo de perigos e operabilidade com fronteiras claras, documentos consistentes e responsabilidades definidas para as recomendações.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas",
+      "article": false,
+      "status": 200,
+      "title": "Conhecimento sobre emissões fugitivas | Monitorar Consultoria",
+      "description": "Encontre um caminho entre conceitos, interpretação de resultados e contratação de monitoramento de emissões fugitivas e programas LDAR.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "O que são emissões fugitivas | Monitorar Consultoria",
+      "description": "De onde vêm as emissões fugitivas, por que a identificação da fonte importa e quais perguntas um registro de campo precisa responder.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-e-canalizadas",
+      "article": true,
+      "status": 200,
+      "title": "Emissões fugitivas e canalizadas | Monitorar Consultoria",
+      "description": "Emissões fugitivas e canalizadas se distinguem pelo caminho de liberação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/deteccao-e-quantificacao-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Detecção e quantificação de emissões fugitivas | Monitorar",
+      "description": "Detecção e quantificação de emissões fugitivas: uma indicação, uma leitura em ppm e uma taxa em kg/h respondem a perguntas diferentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/o-que-e-ldar",
+      "article": true,
+      "status": 200,
+      "title": "O que é LDAR | Monitorar Consultoria",
+      "description": "Saiba como cadastro, detecção, reparo e reverificação se conectam em um programa LDAR, e por que uma campanha isolada não encerra o acompanhamento.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-contratar-monitoramento-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Como contratar monitoramento de emissões fugitivas | Monitorar",
+      "description": "Como contratar monitoramento de emissões fugitivas: compare propostas de monitoramento pela cobertura, pelos registros e pelas responsabilidades.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/dados-para-orcamento-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Dados para orçamento de emissões fugitivas | Monitorar",
+      "description": "Prepare uma solicitação de orçamento com dados que influenciam cobertura, acesso e entregas. Veja como declarar o que ainda não é conhecido.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/planejamento-de-campanha-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Planejamento de campanha de emissões fugitivas | Monitorar",
+      "description": "Organize uma campanha com uma sequência de decisões: universo, condições de campo, registros, contingências e critérios para encerrar o trabalho.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/cadastro-de-componentes-para-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Cadastro de componentes para LDAR | Monitorar Consultoria",
+      "description": "Um cadastro útil permite reencontrar o componente e acompanhar sua história. Veja como evitar IDs ambíguos, versões conflitantes e alterações sem registro.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/componentes-sem-acesso-em-programas-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Componentes sem acesso em LDAR | Monitorar Consultoria",
+      "description": "Um componente não avaliado não equivale a um resultado negativo. Organize motivos, responsáveis e próximos passos sem esconder lacunas de cobertura.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/reparo-e-reverificacao-em-programas-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Reparo e reverificação em LDAR | Monitorar Consultoria",
+      "description": "Reparo registrado e vazamento reverificado são etapas diferentes. Entenda quais vínculos documentais permitem acompanhar uma ocorrência até o encerramento.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/registro-de-vazamentos-em-programas-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Registro de vazamentos em LDAR | Monitorar Consultoria",
+      "description": "Transforme uma ocorrência em um registro que possa ser localizado, interpretado e acompanhado. Confira campos, vínculos e regras para corrigir dados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/indicadores-de-programas-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Indicadores de LDAR | Monitorar Consultoria",
+      "description": "Indicadores de LDAR: cobertura, pendências e reverificação medem aspectos diferentes do programa.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Como ler relatório de emissões fugitivas | Monitorar Consultoria",
+      "description": "Leia o relatório de emissões fugitivas da finalidade ao resultado. Um roteiro de conferência ajuda a encontrar lacunas entre escopo, dados e conclusão.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ogi-e-analisadores-na-deteccao-de-vazamentos",
+      "article": true,
+      "status": 200,
+      "title": "OGI e analisadores na detecção | Monitorar Consultoria",
+      "description": "OGI e analisadores portáteis podem apoiar a investigação de vazamentos, mas produzem evidências diferentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/epa-method-21-contexto-e-limites",
+      "article": true,
+      "status": 200,
+      "title": "EPA Method 21: contexto e limites | Monitorar Consultoria",
+      "description": "EPA Method 21: contexto e limites: o EPA Method 21 descreve um procedimento para determinação de vazamentos de compostos orgânicos voláteis.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ppm-e-taxa-de-emissao-por-que-nao-sao-equivalentes",
+      "article": true,
+      "status": 200,
+      "title": "PPM e taxa de emissão | Monitorar Consultoria",
+      "description": "PPM expressa uma proporção; uma taxa de emissão expressa quantidade liberada por unidade de tempo. Os resultados não são intercambiáveis.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/calibracao-e-rastreabilidade-de-dados-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Calibração e rastreabilidade em LDAR | Monitorar Consultoria",
+      "description": "Em uma campanha LDAR, rastreabilidade significa poder reconstruir como uma observação foi produzida.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/substancias-e-condicoes-na-deteccao-de-vazamentos",
+      "article": true,
+      "status": 200,
+      "title": "Substâncias e condições de detecção | Monitorar Consultoria",
+      "description": "Substâncias e condições de detecção: a capacidade de detectar uma liberação depende da substância, do princípio de medição e das condições de uso.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/condicoes-meteorologicas-em-campanhas-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Meteorologia em campanhas de fugitivas | Monitorar Consultoria",
+      "description": "Meteorologia em campanhas de fugitivas: vento, chuva e outras condições ambientais podem alterar a dispersão e a observação de uma liberação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/comparacao-entre-campanhas-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Comparação entre campanhas | Monitorar Consultoria",
+      "description": "A comparação entre campanhas LDAR depende de cadastro, cobertura, critérios e condições compatíveis.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/inventario-de-gee-e-monitoramento-de-emissoes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Inventário de GEE e monitoramento de fugitivas | Monitorar",
+      "description": "Um inventário de gases de efeito estufa organiza emissões segundo um período, fronteiras e metodologia definidos.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/criterios-de-vazamento-e-gatilhos-de-acao-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Critérios de vazamento e gatilhos de ação em LDAR | Monitorar",
+      "description": "Uma definição de vazamento estabelece como uma ocorrência será classificada dentro de determinado programa.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas",
+      "article": true,
+      "status": 200,
+      "title": "Tanques e classificação de fontes fugitivas | Monitorar",
+      "description": "Tanques podem apresentar mecanismos de emissão associados à operação e à configuração de armazenamento. Também possuem conexões e outros componentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/qualidade-e-aceite-de-dados-de-campanhas-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Qualidade e aceite de dados LDAR | Monitorar Consultoria",
+      "description": "Qualidade e aceite de dados LDAR: uma campanha não está tecnicamente concluída apenas porque entregou uma planilha preenchida.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/mudancas-na-planta-e-atualizacao-do-programa-ldar",
+      "article": true,
+      "status": 200,
+      "title": "Mudanças na planta e atualização de LDAR | Monitorar Consultoria",
+      "description": "Uma modificação de processo pode alterar componentes, fluidos, acessos e condições de operação relevantes para o LDAR.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/emissoes-fugitivas-petrobras",
+      "article": true,
+      "status": 200,
+      "title": "Emissões fugitivas Petrobras | Monitorar Consultoria",
+      "description": "Emissões fugitivas Petrobras: uma divulgação corporativa sobre emissões precisa ser lida com o período, a fronteira e a metodologia correspondentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pts-mp10-e-mp25-diferencas",
+      "article": true,
+      "status": 200,
+      "title": "PTS, MP10 e MP2,5 | Monitorar Consultoria",
+      "description": "PTS, MP10 e MP2,5 descrevem referências diferentes de material particulado.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/planejamento-do-monitoramento-de-pts",
+      "article": true,
+      "status": 200,
+      "title": "Planejamento de monitoramento de PTS | Monitorar Consultoria",
+      "description": "Planejar monitoramento de PTS exige definir a pergunta antes de escolher pontos ou datas.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/representatividade-dos-pontos-de-monitoramento-do-ar",
+      "article": true,
+      "status": 200,
+      "title": "Representatividade de pontos de monitoramento | Monitorar",
+      "description": "Representatividade de pontos de monitoramento: a localização de um ponto de monitoramento influencia a informação produzida.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-monitoramento-de-pts",
+      "article": true,
+      "status": 200,
+      "title": "Como ler relatório de PTS | Monitorar Consultoria",
+      "description": "Um relatório de PTS precisa permitir identificar o que foi medido, onde, quando e com qual método.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/qualidade-do-ar-ambiente-e-emissao-na-fonte",
+      "article": true,
+      "status": 200,
+      "title": "Ar ambiente e emissão na fonte | Monitorar Consultoria",
+      "description": "Monitoramento do ar ambiente avalia a concentração no ar de determinado local. Medição de emissão na fonte examina uma saída ou mecanismo de liberação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/fumaca-preta-e-opacidade-diferencas",
+      "article": true,
+      "status": 200,
+      "title": "Fumaça Preta e opacidade | Monitorar Consultoria",
+      "description": "Fumaça visível e resultado de opacidade são informações relacionadas à emissão, mas não devem ser tratados como medidas equivalentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/procon-fumaca-preta-inea-fontes-e-requisitos",
+      "article": true,
+      "status": 200,
+      "title": "PROCON Fumaça Preta e fontes oficiais | Monitorar Consultoria",
+      "description": "O Procon Fumaça Preta é um programa apresentado pelo Inea para controle de emissões de veículos do ciclo diesel no Rio de Janeiro.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/registros-de-programa-de-controle-de-fumaca-preta",
+      "article": true,
+      "status": 200,
+      "title": "Registros de controle de Fumaça Preta | Monitorar Consultoria",
+      "description": "O controle documental de Fumaça Preta precisa manter ligação entre veículo, avaliação, resultado e providências posteriores.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ruido-extramuros-e-ruido-ocupacional",
+      "article": true,
+      "status": 200,
+      "title": "Ruído extramuros e ocupacional | Monitorar Consultoria",
+      "description": "Ruído extramuros e ocupacional: a avaliação do entorno de uma instalação e a exposição de trabalhadores têm finalidades diferentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-preparar-avaliacao-de-ruido-extramuros",
+      "article": true,
+      "status": 200,
+      "title": "Preparação para avaliação de ruído | Monitorar Consultoria",
+      "description": "A avaliação de ruído ambiental começa pela pergunta: qual situação, fonte ou período precisa ser examinado?",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ruido-ambiental-residual-e-especifico",
+      "article": true,
+      "status": 200,
+      "title": "Ruído residual e específico | Monitorar Consultoria",
+      "description": "Ruído residual e específico: uma avaliação de ruído pode precisar distinguir o som associado à fonte de interesse das demais contribuições presentes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pontos-e-periodos-de-avaliacao-de-ruido-ambiental",
+      "article": true,
+      "status": 200,
+      "title": "Pontos e períodos de avaliação de ruído | Monitorar Consultoria",
+      "description": "Pontos e períodos de avaliação de ruído devem representar a situação que se pretende examinar.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-ruido-ambiental",
+      "article": true,
+      "status": 200,
+      "title": "Como ler relatório de ruído ambiental | Monitorar Consultoria",
+      "description": "Para ler um relatório de ruído ambiental, identifique primeiro a finalidade, os pontos, os períodos e a operação observada.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/abnt-nbr-10151-contexto-e-aplicabilidade",
+      "article": true,
+      "status": 200,
+      "title": "ABNT NBR 10151: contexto e aplicabilidade | Monitorar Consultoria",
+      "description": "A ABNT NBR 10151 é uma referência associada à avaliação de ruído em áreas habitadas.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/investigacao-de-reclamacoes-de-ruido",
+      "article": true,
+      "status": 200,
+      "title": "Investigação de reclamações de ruído | Monitorar Consultoria",
+      "description": "Investigação de reclamações de ruído: uma reclamação de ruído contém informações sobre uma experiência percebida.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/lacunas-de-dados-em-avaliacoes-geoambientais",
+      "article": true,
+      "status": 200,
+      "title": "Lacunas de dados em avaliações geoambientais | Monitorar",
+      "description": "Lacunas de dados em avaliações geoambientais: em uma avaliação geoambiental, dizer que “faltam dados” é pouco útil sem explicar qual decisão depende deles.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/historico-de-uso-da-area-e-modelo-conceitual",
+      "article": true,
+      "status": 200,
+      "title": "Histórico da área e modelo conceitual | Monitorar Consultoria",
+      "description": "Histórico da área e modelo conceitual: o histórico de uma área reúne informações sobre usos, processos, intervenções e mudanças relevantes.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/avaliacao-preliminar-investigacao-confirmatoria-e-detalhada",
+      "article": true,
+      "status": 200,
+      "title": "Etapas da investigação ambiental | Monitorar Consultoria",
+      "description": "Uma investigação ambiental não deve começar pela escolha aleatória de pontos.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/representatividade-de-amostras-de-solo-e-agua",
+      "article": true,
+      "status": 200,
+      "title": "Representatividade de amostras | Monitorar Consultoria",
+      "description": "Representatividade de amostras: uma amostra representa o material e a condição definidos pelo procedimento de coleta.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/cadeia-de-custodia-de-amostras-ambientais",
+      "article": true,
+      "status": 200,
+      "title": "Cadeia de custódia de amostras | Monitorar Consultoria",
+      "description": "A cadeia de custódia documenta a trajetória da amostra e as transferências de responsabilidade.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-ler-relatorio-de-investigacao-ambiental",
+      "article": true,
+      "status": 200,
+      "title": "Como ler relatório de investigação | Monitorar Consultoria",
+      "description": "Um relatório de investigação ambiental deve ser lido a partir da finalidade, do modelo conceitual e da área efetivamente examinada.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/medidas-de-gerenciamento-e-remediacao-diferencas",
+      "article": true,
+      "status": 200,
+      "title": "Gerenciamento e remediação | Monitorar Consultoria",
+      "description": "Gerenciamento e remediação: o gerenciamento de uma área envolve compreender a situação, definir objetivos e acompanhar medidas compatíveis com o cenário.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/lp-li-lo-objetivos-e-diferencas",
+      "article": true,
+      "status": 200,
+      "title": "LP, LI e LO | Monitorar Consultoria",
+      "description": "LP, LI e LO são denominações conhecidas no licenciamento ambiental, mas o alcance concreto deve ser conferido no ato emitido e no enquadramento aplicável.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/documentos-para-iniciar-licenciamento-ambiental",
+      "article": true,
+      "status": 200,
+      "title": "Documentos para iniciar licenciamento | Monitorar Consultoria",
+      "description": "Uma lista de documentos para iniciar licenciamento só é útil quando está vinculada à atividade, ao local e ao procedimento aplicável.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/condicionantes-ambientais-controle-de-evidencias",
+      "article": true,
+      "status": 200,
+      "title": "Controle de condicionantes ambientais | Monitorar Consultoria",
+      "description": "Controlar condicionantes significa relacionar a exigência do ato à providência, ao responsável e à evidência correspondente.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/renovacao-de-licenca-ambiental-planejamento",
+      "article": true,
+      "status": 200,
+      "title": "Planejamento de renovação de licença | Monitorar Consultoria",
+      "description": "Planejar uma renovação exige verificar o prazo, o objeto e as condições da licença existente, além dos requisitos vigentes para o procedimento.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/alteracoes-no-empreendimento-e-licenciamento",
+      "article": true,
+      "status": 200,
+      "title": "Alterações no empreendimento | Monitorar Consultoria",
+      "description": "Alterações em atividade, capacidade, configuração ou localização podem exigir reavaliação de documentos e do enquadramento ambiental.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/competencia-do-orgao-licenciador",
+      "article": true,
+      "status": 200,
+      "title": "Competência do órgão licenciador | Monitorar Consultoria",
+      "description": "Identificar o órgão licenciador exige considerar as regras de competência e as características da atividade.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/estudos-ambientais-no-licenciamento-como-definir-escopo",
+      "article": true,
+      "status": 200,
+      "title": "Escopo de estudos ambientais | Monitorar Consultoria",
+      "description": "Escopo de estudos ambientais: definir o escopo de um estudo ambiental exige relacionar a decisão pretendida às informações necessárias.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/gestao-sms-integracao-e-responsabilidades",
+      "article": true,
+      "status": 200,
+      "title": "Integração e responsabilidades em SMS | Monitorar Consultoria",
+      "description": "Integração e responsabilidades em SMS: integrar segurança, meio ambiente e saúde exige definir quem decide, quem executa e quem verifica cada atividade.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/requisitos-legais-matriz-e-evidencias-sms",
+      "article": true,
+      "status": 200,
+      "title": "Matriz de requisitos e evidências SMS | Monitorar Consultoria",
+      "description": "A matriz de requisitos conecta uma obrigação à atividade que a torna aplicável, à pessoa responsável e à evidência de atendimento.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/auditoria-interna-e-auditoria-de-conformidade-legal",
+      "article": true,
+      "status": 200,
+      "title": "Auditorias internas e de conformidade | Monitorar Consultoria",
+      "description": "Uma auditoria interna pode examinar como o sistema de gestão funciona em relação a critérios definidos pela organização.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-preparar-documentos-para-auditoria-sms",
+      "article": true,
+      "status": 200,
+      "title": "Preparação de documentos para auditoria | Monitorar Consultoria",
+      "description": "Organizar documentos para uma auditoria significa permitir que o auditor encontre a evidência solicitada e reconheça sua versão, origem e abrangência.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/nao-conformidade-plano-de-acao-e-verificacao-de-eficacia",
+      "article": true,
+      "status": 200,
+      "title": "Não conformidade e eficácia da ação | Monitorar Consultoria",
+      "description": "Não conformidade e eficácia da ação: uma não conformidade é uma diferença demonstrável entre um critério aplicável e a situação observada.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/indicadores-preventivos-e-reativos-sms",
+      "article": true,
+      "status": 200,
+      "title": "Indicadores preventivos e reativos SMS | Monitorar Consultoria",
+      "description": "Indicadores preventivos acompanham atividades e condições associadas ao controle dos riscos. Indicadores reativos registram acontecimentos já ocorridos.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/procedimentos-operacionais-e-controle-documental-sms",
+      "article": true,
+      "status": 200,
+      "title": "Controle documental de procedimentos | Monitorar Consultoria",
+      "description": "Controle documental de procedimentos: controlar procedimentos operacionais exige mais do que numerar arquivos.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/hazop-finalidade-e-limites",
+      "article": true,
+      "status": 200,
+      "title": "HAZOP: finalidade e limites | Monitorar Consultoria",
+      "description": "HAZOP: finalidade e limites: hAZOP é um estudo estruturado que examina desvios em relação à intenção de projeto de um processo.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/documentos-e-entradas-para-estudo-hazop",
+      "article": true,
+      "status": 200,
+      "title": "Documentos e entradas para HAZOP | Monitorar Consultoria",
+      "description": "Documentos e entradas para HAZOP: organize diagramas, informações operacionais e histórico de mudanças para um HAZOP.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/equipe-e-responsabilidades-em-estudos-hazop",
+      "article": true,
+      "status": 200,
+      "title": "Equipe e responsabilidades HAZOP | Monitorar Consultoria",
+      "description": "A equipe de um HAZOP precisa reunir conhecimento suficiente sobre projeto, operação, manutenção e riscos do sistema estudado.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/recomendacoes-hazop-registro-e-acompanhamento",
+      "article": true,
+      "status": 200,
+      "title": "Acompanhamento de recomendações HAZOP | Monitorar Consultoria",
+      "description": "Acompanhar recomendações de HAZOP exige manter o vínculo entre a ação proposta, o cenário discutido e a intenção de projeto.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/matriz-de-treinamentos-requisitos-e-funcoes",
+      "article": true,
+      "status": 200,
+      "title": "Matriz de treinamentos | Monitorar Consultoria",
+      "description": "Uma matriz de treinamentos relaciona atividades e responsabilidades às necessidades de capacitação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/registro-de-treinamento-certificado-e-competencia",
+      "article": true,
+      "status": 200,
+      "title": "Certificado e competência | Monitorar Consultoria",
+      "description": "Certificado e competência: um certificado documenta a conclusão de uma atividade formativa conforme as informações que apresenta.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/deteccao-de-gases-e-protecao-respiratoria-funcoes",
+      "article": true,
+      "status": 200,
+      "title": "Detecção de gases e proteção respiratória | Monitorar Consultoria",
+      "description": "Um detector fornece informações sobre gases para os quais foi projetado e configurado, dentro de condições e limites definidos.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/detectores-portateis-e-fixos-diferencas",
+      "article": true,
+      "status": 200,
+      "title": "Detectores portáteis e fixos | Monitorar Consultoria",
+      "description": "Detectores portáteis e fixos atendem a contextos diferentes de acompanhamento de gases.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/teste-de-resposta-calibracao-e-manutencao-de-detectores",
+      "article": true,
+      "status": 200,
+      "title": "Teste de resposta, calibração e manutenção | Monitorar",
+      "description": "Teste de resposta, calibração e manutenção não são expressões intercambiáveis.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/informacoes-para-especificar-equipamentos-de-seguranca",
+      "article": true,
+      "status": 200,
+      "title": "Informações para especificar equipamentos | Monitorar Consultoria",
+      "description": "Solicitar apenas “um detector de gases” ou “um equipamento de segurança” deixa decisões essenciais para depois da compra.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/medias-e-picos-na-qualidade-do-ar-por-que-o-periodo-importa",
+      "article": true,
+      "status": 200,
+      "title": "Médias e picos na qualidade do ar: por que o período importa | Monitorar",
+      "description": "Uma concentração média de poluente resume medições de um intervalo definido. Um pico descreve um valor elevado em uma escala temporal específica.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/dados-ausentes-no-monitoramento-do-ar",
+      "article": true,
+      "status": 200,
+      "title": "Dados ausentes no monitoramento do ar | Monitorar Consultoria",
+      "description": "Uma lacuna no monitoramento do ar pode resultar de manutenção, falha, invalidação ou indisponibilidade de comunicação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/padroes-de-qualidade-do-ar-como-verificar-a-referencia-vigente",
+      "article": true,
+      "status": 200,
+      "title": "Padrões de qualidade do ar: como verificar a referência vigente | Monitorar",
+      "description": "Verificar um padrão de qualidade do ar exige localizar o ato oficial, sua vigência e os critérios associados ao poluente e ao período de avaliação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/por-que-decibeis-nao-se-somam-como-numeros-comuns",
+      "article": true,
+      "status": 200,
+      "title": "Por que decibéis não se somam como números comuns | Monitorar",
+      "description": "Por que decibéis não se somam como números comuns: níveis sonoros em decibéis não podem ser somados como comprimentos ou quantidades de objetos.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/ruido-tonal-e-impulsivo",
+      "article": true,
+      "status": 200,
+      "title": "Ruído tonal e impulsivo | Monitorar Consultoria",
+      "description": "Ruído tonal apresenta componentes que se destacam em determinadas frequências.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/incerteza-de-medicao-em-relatorios-de-ruido-ambiental",
+      "article": true,
+      "status": 200,
+      "title": "Incerteza de medição em relatórios de ruído ambiental | Monitorar",
+      "description": "Incerteza de medição expressa a dispersão de valores atribuíveis à grandeza medida conforme a avaliação realizada.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/resultado-nao-detectado-em-analises-ambientais",
+      "article": true,
+      "status": 200,
+      "title": "Resultado não detectado em análises ambientais | Monitorar",
+      "description": "Um resultado descrito como não detectado informa que o procedimento analítico não produziu detecção nas condições e no limite informados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/valores-orientadores-e-avaliacao-de-risco",
+      "article": true,
+      "status": 200,
+      "title": "Valores orientadores e avaliação de risco | Monitorar Consultoria",
+      "description": "Valores orientadores e valores de triagem ajudam a organizar a avaliação de resultados ambientais conforme a referência que os define.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/mudanca-de-uso-da-area-e-validade-das-conclusoes-ambientais",
+      "article": true,
+      "status": 200,
+      "title": "Mudança de uso da área e validade das conclusões ambientais | Monitorar",
+      "description": "Conclusões ambientais podem estar vinculadas ao uso da área, às condições de exposição e às medidas consideradas no estudo.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/como-organizar-resposta-a-pedido-de-complementacao",
+      "article": true,
+      "status": 200,
+      "title": "Como organizar resposta a pedido de complementação | Monitorar",
+      "description": "Um pedido de complementação no licenciamento deve ser tratado como um conjunto de perguntas e entregas identificáveis.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/licenca-ambiental-e-outras-autorizacoes",
+      "article": true,
+      "status": 200,
+      "title": "Licença ambiental e outras autorizações | Monitorar Consultoria",
+      "description": "Licença ambiental e outras autorizações: uma licença ambiental se relaciona ao objeto e às condições definidos no ato.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/consulta-e-participacao-publica-no-licenciamento",
+      "article": true,
+      "status": 200,
+      "title": "Consulta e participação pública no licenciamento | Monitorar",
+      "description": "A participação pública no licenciamento envolve mecanismos definidos pelas regras e pelo processo correspondente.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/amostragem-de-evidencias-em-auditorias-de-sms",
+      "article": true,
+      "status": 200,
+      "title": "Amostragem de evidências em auditorias de SMS | Monitorar",
+      "description": "Amostragem de evidências em auditorias de SMS: uma auditoria costuma examinar uma seleção de registros, atividades ou locais.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/troca-de-informacoes-de-riscos-entre-contratante-e-contratadas",
+      "article": true,
+      "status": 200,
+      "title": "Troca de informações de riscos entre contratante e contratadas | Monitorar",
+      "description": "A troca de informações de riscos entre contratante e contratadas deve considerar as atividades e suas interferências.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/nos-e-intencao-de-projeto-em-estudos-hazop",
+      "article": true,
+      "status": 200,
+      "title": "Nós e intenção de projeto em estudos HAZOP | Monitorar",
+      "description": "Nós e intenção de projeto em estudos HAZOP: em um HAZOP, a divisão em nós organiza a análise de trechos do processo.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/conteudo-pratico-e-modalidade-de-capacitacao",
+      "article": true,
+      "status": 200,
+      "title": "Conteúdo prático e modalidade de capacitação | Monitorar",
+      "description": "A escolha entre atividades presenciais, a distância e práticas deve considerar o requisito aplicável e o objetivo de aprendizagem.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/interferencias-e-sensibilidade-cruzada-em-detectores-de-gases",
+      "article": true,
+      "status": 200,
+      "title": "Interferências e sensibilidade cruzada em detectores de gases | Monitorar",
+      "description": "Sensibilidade cruzada é a resposta de um sensor a substâncias diferentes daquela usada como referência principal.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/documentacao-do-equipamento-e-adequacao-a-aplicacao",
+      "article": true,
+      "status": 200,
+      "title": "Documentação do equipamento e adequação à aplicação | Monitorar",
+      "description": "Documentação técnica só ajuda na decisão quando corresponde ao modelo, à configuração e à aplicação avaliados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog",
+      "article": false,
+      "status": 200,
+      "title": "Conhecimento para decisões ambientais | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/2",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 2 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/3",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 3 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/4",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 4 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/5",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 5 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/6",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 6 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/7",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 7 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/blog/pagina/8",
+      "article": false,
+      "status": 200,
+      "title": "Blog: página 8 | Monitorar Consultoria",
+      "description": "Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/qualidade-do-ar",
+      "article": false,
+      "status": 200,
+      "title": "Qualidade do ar | Monitorar Consultoria",
+      "description": "Artigos sobre qualidade do ar: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/ruido-ambiental",
+      "article": false,
+      "status": 200,
+      "title": "Ruído ambiental | Monitorar Consultoria",
+      "description": "Artigos sobre ruído ambiental: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/areas-impactadas",
+      "article": false,
+      "status": 200,
+      "title": "Áreas impactadas | Monitorar Consultoria",
+      "description": "Artigos sobre áreas impactadas: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/licenciamento-ambiental",
+      "article": false,
+      "status": 200,
+      "title": "Licenciamento ambiental | Monitorar Consultoria",
+      "description": "Artigos sobre licenciamento ambiental: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/seguranca-de-processos-e-gestao-sms",
+      "article": false,
+      "status": 200,
+      "title": "Gestão de SMS | Monitorar Consultoria",
+      "description": "Artigos sobre gestão de sms: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/hazop",
+      "article": false,
+      "status": 200,
+      "title": "HAZOP | Monitorar Consultoria",
+      "description": "Artigos sobre hazop: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/treinamentos",
+      "article": false,
+      "status": 200,
+      "title": "Treinamentos | Monitorar Consultoria",
+      "description": "Artigos sobre treinamentos: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos/equipamentos",
+      "article": false,
+      "status": 200,
+      "title": "Equipamentos | Monitorar Consultoria",
+      "description": "Artigos sobre equipamentos: conceitos, preparação de projetos e leitura de resultados.",
+      "issues": []
+    },
+    {
+      "url": "https://www.monitorarconsultoria.com.br/conteudos",
+      "article": false,
+      "status": 200,
+      "title": "Explore por assunto | Monitorar Consultoria",
+      "description": "Um ponto de partida para conectar conceitos, decisões e serviços. Escolha o tema da sua necessidade.",
+      "issues": []
+    }
+  ],
+  "googleIndexationVerified": false
+}

@@ -11,6 +11,7 @@ export const legacy=[
  ['/servicos/auditorias','Auditorias | Monitorar Consultoria','Serviços de auditoria e avaliação de sistemas de gestão apresentados pela Monitorar.','/servicos/seguranca'],
  ['/servicos/treinamentos','Treinamentos | Monitorar Consultoria','Conheça a área de capacitação e treinamentos apresentada pela Monitorar Consultoria.','/servicos/seguranca'],
  ['/consultoria-ambiental-rj','Consultoria ambiental no RJ | Monitorar Consultoria','Consultoria e engenharia ambiental com sede no Rio de Janeiro: emissões fugitivas e LDAR, qualidade do ar, ruído, licenciamento e áreas impactadas.'],
+ ['/consultoria-ambiental-por-estado','Consultoria ambiental por estado | Monitorar Consultoria','Consultoria ambiental com sede no Rio de Janeiro e atendimento por estado: RJ, SP, MG, ES, PR, SC, RS, BA, SE, PE e CE, conforme o escopo do projeto.'],
  ['/servicos/drager','Equipamentos Dräger | Monitorar Consultoria','Conheça a área de equipamentos apresentada pela Monitorar e consulte o catálogo disponível.'],
  ['/clientes','Clientes | Monitorar Consultoria','Conheça os clientes apresentados no site institucional da Monitorar Consultoria.'],
  ['/depoimentos','Depoimentos | Monitorar Consultoria','Leia os depoimentos publicados no site da Monitorar Consultoria.'],

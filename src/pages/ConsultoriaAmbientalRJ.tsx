@@ -50,6 +50,7 @@ export default function ConsultoriaAmbientalRJ() {
       <section className="v4-services">
         <h2>Atendimento no Rio de Janeiro e em outras regiões</h2>
         <p>Com sede na Barra da Tijuca, no Rio de Janeiro, atendemos projetos em todo o estado do RJ e em outras regiões do Brasil conforme o escopo de cada contratação. Para começar, informe o objetivo do projeto, a localização e o prazo.</p>
+        <p>No estado do Rio de Janeiro, o atendimento alcança a capital, Niterói, a Baixada Fluminense, a Região dos Lagos, Macaé e o Norte Fluminense, Volta Redonda e o Sul Fluminense, e Angra dos Reis e a Costa Verde, conforme o escopo. Para projetos em outros estados, veja a página de <a className="text-link" href="/consultoria-ambiental-por-estado">consultoria ambiental por estado</a>.</p>
         <LocationBlock />
       </section>
       <section className="v4-services">

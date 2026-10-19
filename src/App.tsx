@@ -8,6 +8,7 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
 import ConsultoriaAmbientalRJ from "./pages/ConsultoriaAmbientalRJ";
+import ConsultoriaPorEstado from "./pages/ConsultoriaPorEstado";
 import Clients from "./pages/Clients";
 import Testimonials from "./pages/Testimonials";
 import Careers from "./pages/Careers";
@@ -36,6 +37,7 @@ const App = () => (
               <Route path="/servicos/meio-ambiente" element={<Services />} />
               <Route path="/servicos/drager" element={<Services />} />
               <Route path="/consultoria-ambiental-rj" element={<ConsultoriaAmbientalRJ />} />
+              <Route path="/consultoria-ambiental-por-estado" element={<ConsultoriaPorEstado />} />
               <Route path="/clientes" element={<Clients />} />
               <Route path="/depoimentos" element={<Testimonials />} />
               <Route path="/trabalhe-conosco" element={<Careers />} />

@@ -16,7 +16,7 @@ test('full brand name accompanies home and emissions titles',async()=>{
  assert.equal(title(await page('/conteudos/emissoes-fugitivas')),'Conhecimento sobre emissões fugitivas | Monitorar Consultoria');
 });
 test('every sitemap page names the site, keeps a unique branded title and stays short with the full brand',async()=>{
- assert.equal(paths.length,122);
+ assert.equal(paths.length,123);
  const titles=new Set();
  for(const path of paths){
   const html=await page(path),t=title(html);
@@ -37,7 +37,7 @@ test('IndexNow payload carries only canonical sitemap URLs',()=>{
  const key=integrations.INDEXNOW_KEY,payload=indexNowPayload(sitemap,key);
  assert.equal(payload.host,'www.monitorarconsultoria.com.br');
  assert.equal(payload.keyLocation,'https://www.monitorarconsultoria.com.br/'+key+'.txt');
- assert.equal(payload.urlList.length,122);
+ assert.equal(payload.urlList.length,123);
  assert.throws(()=>indexNowPayload('<loc>https://example.org/</loc>',key));
  assert.throws(()=>indexNowPayload('<urlset></urlset>',key));
 });
@@ -120,6 +120,8 @@ test('site icons are square, multiples of 48 and declared the way Google documen
 });
 const words=html=>html.split('<div id="root">')[1].split('<script id="page-data"')[0].replace(/<[^>]+>/g,' ').replace(/&[a-z#0-9]+;/g,' ').split(/\s+/).filter(Boolean).length;
 const articlePaths=paths.filter(p=>/^\/blog\/[^/]+$/.test(p));
+const regions=JSON.parse(await readFile('content/regions.json','utf8'));
+const nothingAboutTheOffice=html=>assert.doesNotMatch(html.split('<div id="root">')[1],/escrit[óo]rio|coworking|virtual/i);
 test('a dedicated page targets consultoria ambiental no RJ and is linked site-wide',async()=>{
  assert.ok(paths.includes('/consultoria-ambiental-rj'));
  const html=await page('/consultoria-ambiental-rj');
@@ -166,4 +168,25 @@ test('article descriptions fit the result, end cleanly and stay unique',async()=
   assert.match(description,/[.!?]$/,path);
   assert.ok(!seen.has(description),'duplicate description '+path);seen.add(description);
  }
+});
+test('the by-state page covers every authorised state with its official environmental agency',async()=>{
+ assert.ok(paths.includes('/consultoria-ambiental-por-estado'));
+ const html=await page('/consultoria-ambiental-por-estado');
+ assert.equal(title(html),'Consultoria ambiental por estado | Monitorar Consultoria');
+ const description=text(html.match(/<meta name="description" content="([^"]*)"/)[1]);
+ assert.ok(description.length<=160&&description.length>=100,'description '+description.length);
+ assert.equal(text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,'')),'Consultoria ambiental por estado: onde a Monitorar atende projetos');
+ assert.ok(words(html)>=550,'words '+words(html));
+ assert.equal(regions.length,11);
+ for(const r of regions){
+  assert.ok(html.includes('Consultoria ambiental em '+r.name),r.uf);
+  assert.ok(html.includes(r.acronym),r.uf);
+  assert.ok(html.includes('href="'+r.url+'"'),r.uf);
+ }
+ for(const href of ['/consultoria-ambiental-rj','/contato','/servicos'])assert.ok(html.includes('href="'+href+'"'),href);
+ assert.match(await page('/consultoria-ambiental-rj'),/href="\/consultoria-ambiental-por-estado"/);
+ assert.match(await page('/'),/href="\/consultoria-ambiental-por-estado"/);
+});
+test('no published page mentions the office arrangement',async()=>{
+ for(const path of ['/consultoria-ambiental-rj','/consultoria-ambiental-por-estado','/contato','/sobre','/servicos/emissoes-fugitivas'])nothingAboutTheOffice(await page(path));
 });
