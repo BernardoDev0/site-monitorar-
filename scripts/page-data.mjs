@@ -12,6 +12,8 @@ export function normalizeRoute(pathname) {
 }
 export async function loadSiteData(preview = false) {
   const registry = await loadRegistry();
+  // Search-result title/description (and internal anchor text) set outside the approved documents so their H1, text and approval hash stay untouched.
+  const seoOverrides = JSON.parse(await readFile('content/seo-overrides.json','utf8'));
   const published = JSON.parse(await readFile('content/published.json','utf8'));
   const receipts = JSON.parse(await readFile('content/publication-receipts.json','utf8'));
   const candidates = preview ? await loadCorpus() : Object.values(published.current);
@@ -24,7 +26,7 @@ export async function loadSiteData(preview = false) {
     const topic=topics.find(t=>t.id===d.topic_cluster);
     const services=[...(d.service_links||[]),...(topic?[topic.service]:[])].map(href=>{
       const [pathname,fragment]=href.split('#'),dest=destinations.get(pathname);
-      return dest?{slug:dest.slug+(fragment?'#'+fragment:''),title:href===topic?.service?topic.serviceTitle:dest.title}:null;
+      return dest?{slug:dest.slug+(fragment?'#'+fragment:''),title:seoOverrides[pathname]?.anchor??(href===topic?.service?topic.serviceTitle:dest.title)}:null;
     }).filter((s,i,all)=>s&&s.slug.split('#')[0]!==d.slug&&all.findIndex(x=>x?.slug===s.slug)===i);
     const peers=illustrated.filter(x=>x.type==='article'&&x.topic_cluster===d.topic_cluster&&x.id!==d.id);
     const configured=candidates.find(c=>c.id===d.id).related_content_ids;
@@ -45,8 +47,6 @@ export async function loadSiteData(preview = false) {
   const rows = legacy.filter(r=>!pages.some(d=>d.slug===r.path)).map(r=>({...r,page:null}));
   // Full brand name for brand + topic searches, shortened only where it would push the title past ~65 characters.
   const branded = title => (title+' | Monitorar Consultoria').length<=65 ? title+' | Monitorar Consultoria' : title+' | Monitorar';
-  // Search-result title/description for a page, set outside the approved document so its H1, text and approval hash stay untouched.
-  const seoOverrides = JSON.parse(await readFile('content/seo-overrides.json','utf8'));
   for (const slug of Object.keys(seoOverrides)) if (!pages.some(p=>p.slug===slug)) throw new Error('SEO override for unknown page: '+slug);
   for (const page of pages) rows.push({path:page.slug,title:seoOverrides[page.slug]?.title??branded(page.title),description:seoOverrides[page.slug]?.description??page.summary,canonical:page.slug,page});
   rows.push({path:'/404',title:'Página não encontrada | Monitorar',description:'O endereço solicitado não foi encontrado.',canonical:null,page:null});

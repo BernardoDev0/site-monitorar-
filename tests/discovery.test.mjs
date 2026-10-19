@@ -61,15 +61,16 @@ test('service search title and description name Rio de Janeiro while the approve
 });
 test('old site URLs redirect permanently, in one hop, to pages that exist today',()=>{
  const rules=vercel.redirects,sources=new Set(rules.map(r=>r.source));
+ assert.equal(vercel.cleanUrls,true);
  const hostRule=rules.findIndex(r=>r.has?.some(h=>h.type==='host'));
  for(const [from,to] of Object.entries(legacy)){
-  for(const source of [from,from+'.html']){
-   const rule=rules.find(r=>r.source===source);
-   assert.ok(rule,'missing redirect '+source);
-   assert.equal(rule.permanent,true,source);
-   assert.equal(rule.destination,origin+to,source);
-   assert.ok(rules.indexOf(rule)<hostRule,source+' must precede the apex host rule to avoid a second hop');
-  }
+  // cleanUrls redirects /x.html to /x before custom rules run, so an .html rule would be unreachable.
+  const rule=rules.find(r=>r.source===from);
+  assert.ok(rule,'missing redirect '+from);
+  assert.equal(rule.permanent,true,from);
+  assert.equal(rule.destination,origin+to,from);
+  assert.ok(rules.indexOf(rule)<hostRule,from+' must precede the apex host rule to avoid a second hop');
+  assert.ok(!sources.has(from+'.html'),from+'.html is handled by cleanUrls');
   assert.ok(paths.includes(to),to+' must be a live sitemap page');
   assert.ok(!paths.includes(from),from+' must not be a live page');
   assert.ok(!sources.has(to),'redirect chain through '+to);
@@ -86,4 +87,9 @@ test('service pages show the Rio de Janeiro location block built from business d
   assert.ok(html.includes('(21) 3881-1212'),path);
  }
  assert.ok(!(await page('/blog/o-que-sao-emissoes-fugitivas')).includes('editorial-local'));
+});
+test('articles link to the emissions service with the Rio de Janeiro anchor text',async()=>{
+ const html=await page('/blog/o-que-sao-emissoes-fugitivas');
+ assert.match(html,/<a href="\/servicos\/emissoes-fugitivas">Monitoramento de emissões fugitivas no RJ/);
+ assert.doesNotMatch(html,/<a href="\/servicos\/emissoes-fugitivas">Monitoramento de emissões fugitivas<\/a>/);
 });

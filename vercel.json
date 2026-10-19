@@ -12,17 +12,7 @@
       "permanent": true
     },
     {
-      "source": "/monitoramento-de-emissoes-fugitivas.html",
-      "destination": "https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas",
-      "permanent": true
-    },
-    {
       "source": "/engenharia-ambiental",
-      "destination": "https://www.monitorarconsultoria.com.br/servicos",
-      "permanent": true
-    },
-    {
-      "source": "/engenharia-ambiental.html",
       "destination": "https://www.monitorarconsultoria.com.br/servicos",
       "permanent": true
     },
@@ -32,17 +22,7 @@
       "permanent": true
     },
     {
-      "source": "/engenharia-do-trabalho.html",
-      "destination": "https://www.monitorarconsultoria.com.br/servicos/seguranca",
-      "permanent": true
-    },
-    {
       "source": "/quem-somos",
-      "destination": "https://www.monitorarconsultoria.com.br/sobre",
-      "permanent": true
-    },
-    {
-      "source": "/quem-somos.html",
       "destination": "https://www.monitorarconsultoria.com.br/sobre",
       "permanent": true
     },
@@ -52,27 +32,12 @@
       "permanent": true
     },
     {
-      "source": "/missao-e-visao.html",
-      "destination": "https://www.monitorarconsultoria.com.br/sobre",
-      "permanent": true
-    },
-    {
       "source": "/nosso-valores",
       "destination": "https://www.monitorarconsultoria.com.br/sobre",
       "permanent": true
     },
     {
-      "source": "/nosso-valores.html",
-      "destination": "https://www.monitorarconsultoria.com.br/sobre",
-      "permanent": true
-    },
-    {
       "source": "/perfuracao-e-instalacao-de-pocos-de-monitoramento-ambiental",
-      "destination": "https://www.monitorarconsultoria.com.br/servicos",
-      "permanent": true
-    },
-    {
-      "source": "/perfuracao-e-instalacao-de-pocos-de-monitoramento-ambiental.html",
       "destination": "https://www.monitorarconsultoria.com.br/servicos",
       "permanent": true
     },

@@ -1,6 +1,7 @@
 {
   "/servicos/emissoes-fugitivas": {
     "title": "Monitoramento de emissões fugitivas no RJ | Monitorar Consultoria",
-    "description": "Monitoramento de emissões fugitivas e LDAR com sede no Rio de Janeiro: informações do projeto, entregas e limites do escopo. Fale com a Monitorar Consultoria."
+    "description": "Monitoramento de emissões fugitivas e LDAR com sede no Rio de Janeiro: informações do projeto, entregas e limites do escopo. Fale com a Monitorar Consultoria.",
+    "anchor": "Monitoramento de emissões fugitivas no RJ"
   }
 }
