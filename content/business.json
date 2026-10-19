@@ -13,5 +13,5 @@
   },
   "sameAs": ["https://instagram.com/monitorarconsultoria_", "https://linkedin.com/company/monitorar-consultoria"],
   "logo": "/moni3.png",
-  "areaServed": [{"type": "State", "name": "Rio de Janeiro"}, {"type": "Country", "name": "Brasil"}]
+  "areaServed": [{"type": "State", "name": "Rio de Janeiro"}, {"type": "State", "name": "São Paulo"}, {"type": "State", "name": "Amazonas"}, {"type": "Country", "name": "Brasil"}]
 }

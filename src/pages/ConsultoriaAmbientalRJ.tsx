@@ -1,18 +1,10 @@
 import { PageIntro, ProjectCTA } from '@/components/PageIntro';
 import { LocationBlock } from '@/components/LocationBlock';
+import { environmentalServices as services } from '@/lib/environmental-services';
 import topics from '../../content/topics.json';
 
-// Services and figures below repeat what the site already publishes (home, about and services pages).
-const services = [
-  { title: 'Monitoramento de emissões fugitivas e LDAR', text: 'Organize a contratação de uma campanha de emissões fugitivas: informações iniciais, responsabilidades, entregas e limites que precisam constar no escopo.', href: '/servicos/emissoes-fugitivas', cta: 'Conheça o serviço de emissões fugitivas e LDAR' },
-  { title: 'Qualidade do ar, PTS e Procon Fumaça Preta', text: 'Monitoramento e avaliação da qualidade do ar em ambientes industriais e urbanos.', href: '/conteudos/qualidade-do-ar', cta: 'Guias sobre qualidade do ar, PTS e Fumaça Preta' },
-  { title: 'Avaliação de ruído extramuros', text: 'Medição e análise de ruído para atendimento às normas ambientais.', href: '/servicos/ruido-extramuros', cta: 'Conheça o serviço de ruído extramuros' },
-  { title: 'Áreas impactadas e avaliação geoambiental', text: 'Investigação e remediação de áreas contaminadas conforme legislação ambiental.', href: '/conteudos/areas-impactadas', cta: 'Guias sobre áreas impactadas e avaliação geoambiental' },
-  { title: 'Licenciamento ambiental (LP, LI e LO)', text: 'Assessoria completa para obtenção de licenças ambientais, renovações e conformidade regulatória.', href: '/conteudos/licenciamento-ambiental', cta: 'Guias sobre licenciamento ambiental (LP, LI e LO)' },
-  { title: 'Auditoria, certificação ambiental e efluentes', text: 'Auditoria e certificação ambiental e monitoramento de efluentes para empresas que precisam comprovar conformidade.', href: '/servicos', cta: 'Ver todos os serviços ambientais' },
-];
 const faq = [
-  ['A Monitorar atende empresas fora do Rio de Janeiro?', 'Sim. Com sede no Rio de Janeiro, atendemos projetos no RJ e em outras regiões do Brasil conforme o escopo de cada contratação.'],
+  ['A Monitorar atende empresas fora do Rio de Janeiro?', 'Sim. Com sede no Rio de Janeiro, atendemos projetos em qualquer estado do Brasil conforme o escopo de cada contratação, com atuação principal no RJ, em São Paulo e no Amazonas.'],
   ['Quais serviços de consultoria ambiental a Monitorar oferece?', 'Monitoramento de emissões fugitivas e LDAR, qualidade do ar, PTS e Procon Fumaça Preta, ruído extramuros, áreas impactadas com avaliação geoambiental, licenciamento ambiental, auditoria e certificação ambiental e monitoramento de efluentes.'],
   ['Há quanto tempo a Monitorar atua?', 'A Monitorar foi fundada em 2009 e soma 16 anos de experiência em meio ambiente e segurança do trabalho.'],
   ['Como solicitar uma proposta de consultoria ambiental?', 'Entre em contato por telefone, WhatsApp ou e-mail e informe o objetivo do projeto, a localização e o prazo. A proposta comercial confirma atividades, entregas, prazos e exclusões.'],
@@ -21,7 +13,7 @@ const faq = [
 export default function ConsultoriaAmbientalRJ() {
   return <>
     <PageIntro eyebrow="Consultoria ambiental no RJ" title="Consultoria e engenharia ambiental no Rio de Janeiro">
-      <p>A Monitorar Consultoria é uma consultoria de engenharia ambiental e segurança do trabalho com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos no RJ e em outras regiões do Brasil conforme o escopo.</p>
+      <p>A Monitorar Consultoria é uma consultoria de engenharia ambiental e segurança do trabalho com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
     </PageIntro>
     <div className="site-wrap rj-page">
       <section className="v4-services">
@@ -48,9 +40,9 @@ export default function ConsultoriaAmbientalRJ() {
         <p>Fundada em 2009, a Monitorar soma 16 anos de experiência, mais de 500 projetos realizados, mais de 100 clientes atendidos e a 33ª posição no ranking da revista Exame. Conheça a <a className="text-link" href="/sobre">história da empresa</a>, os <a className="text-link" href="/clientes">clientes atendidos</a> e os <a className="text-link" href="/depoimentos">depoimentos</a>.</p>
       </section>
       <section className="v4-services">
-        <h2>Atendimento no Rio de Janeiro e em outras regiões</h2>
-        <p>Com sede na Barra da Tijuca, no Rio de Janeiro, atendemos projetos em todo o estado do RJ e em outras regiões do Brasil conforme o escopo de cada contratação. Para começar, informe o objetivo do projeto, a localização e o prazo.</p>
-        <p>No estado do Rio de Janeiro, o atendimento alcança a capital, Niterói, a Baixada Fluminense, a Região dos Lagos, Macaé e o Norte Fluminense, Volta Redonda e o Sul Fluminense, e Angra dos Reis e a Costa Verde, conforme o escopo. Para projetos em outros estados, veja a página de <a className="text-link" href="/consultoria-ambiental-por-estado">consultoria ambiental por estado</a>.</p>
+        <h2>Atendimento no Rio de Janeiro e em outros estados</h2>
+        <p>Com sede na Barra da Tijuca, no Rio de Janeiro, atendemos projetos em todo o estado do RJ e em qualquer outro estado do Brasil conforme o escopo de cada contratação. Para começar, informe o objetivo do projeto, a localização e o prazo.</p>
+        <p>No estado do Rio de Janeiro, o atendimento alcança a capital, Niterói, a Baixada Fluminense, a Região dos Lagos, Macaé e o Norte Fluminense, Volta Redonda e o Sul Fluminense, e Angra dos Reis e a Costa Verde, conforme o escopo. Para projetos em outros estados, veja a consultoria ambiental <a className="text-link" href="/consultoria-ambiental-sp">em São Paulo</a> e <a className="text-link" href="/consultoria-ambiental-am">no Amazonas</a>, estados de atuação principal, e a página de <a className="text-link" href="/consultoria-ambiental-por-estado">consultoria ambiental por estado</a>.</p>
         <LocationBlock />
       </section>
       <section className="v4-services">

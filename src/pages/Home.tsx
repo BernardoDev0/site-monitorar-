@@ -93,11 +93,11 @@ export default function Home() {
     <div className="erm-home">
       {/* Hero Section */}
       <StaticHero>
-        <h1 data-enter>Engenharia e consultoria ambiental no Rio de Janeiro</h1>
+        <h1 data-enter>Engenharia e consultoria ambiental em todo o Brasil</h1>
         <p className="home-brand-line">As melhores soluções para o seu negócio – Vamos trabalhar juntos?</p>
         <Reveal delayMs={80}>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
-            Mantenha sua empresa protegida: com serviços de segurança do trabalho, saúde e meio ambiente alinhados com a sua estratégia. Com sede no Rio de Janeiro, atendemos projetos no RJ e em outras regiões do Brasil conforme o escopo.
+            Mantenha sua empresa protegida: com serviços de segurança do trabalho, saúde e meio ambiente alinhados com a sua estratégia. Com sede no Rio de Janeiro, atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.
           </p>
         </Reveal>
       </StaticHero>

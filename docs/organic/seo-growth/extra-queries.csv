@@ -34,8 +34,8 @@ target,kind,phrase
 /conteudos/qualidade-do-ar,head,monitoramento da qualidade do ar
 /servicos/ruido-extramuros,head,medição de ruído ambiental
 /conteudos/areas-impactadas,head,avaliação de áreas contaminadas
-/consultoria-ambiental-por-estado,geo,consultoria ambiental São Paulo
-/consultoria-ambiental-por-estado,geo,consultoria ambiental SP
+/consultoria-ambiental-sp,geo,consultoria ambiental São Paulo
+/consultoria-ambiental-sp,geo,consultoria ambiental SP
 /consultoria-ambiental-por-estado,geo,consultoria ambiental Minas Gerais
 /consultoria-ambiental-por-estado,geo,consultoria ambiental Belo Horizonte
 /consultoria-ambiental-por-estado,geo,consultoria ambiental Espírito Santo
@@ -65,5 +65,11 @@ target,kind,phrase
 /servicos/emissoes-fugitivas,geo,emissões fugitivas São Paulo
 /consultoria-ambiental-rj,geo,engenharia ambiental Niterói
 /consultoria-ambiental-rj,geo,engenharia ambiental Macaé
-/consultoria-ambiental-por-estado,geo,engenharia ambiental São Paulo
+/consultoria-ambiental-sp,geo,engenharia ambiental São Paulo
 /consultoria-ambiental-por-estado,geo,engenharia ambiental Minas Gerais
+/consultoria-ambiental-am,geo,consultoria ambiental Amazonas
+/consultoria-ambiental-am,geo,consultoria ambiental Manaus
+/consultoria-ambiental-am,geo,consultoria ambiental AM
+/consultoria-ambiental-am,geo,engenharia ambiental Manaus
+/consultoria-ambiental-am,geo,empresa de consultoria ambiental Manaus
+/consultoria-ambiental-am,geo,consultoria ambiental Zona Franca de Manaus

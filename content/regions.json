@@ -1,13 +1,218 @@
 [
-  {"uf": "RJ", "name": "Rio de Janeiro", "agency": "Instituto Estadual do Ambiente", "acronym": "INEA", "url": "https://www.inea.rj.gov.br/"},
-  {"uf": "SP", "name": "São Paulo", "agency": "Companhia Ambiental do Estado de São Paulo", "acronym": "CETESB", "url": "https://cetesb.sp.gov.br/"},
-  {"uf": "MG", "name": "Minas Gerais", "agency": "Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável", "acronym": "SEMAD", "url": "https://www.meioambiente.mg.gov.br/"},
-  {"uf": "ES", "name": "Espírito Santo", "agency": "Instituto Estadual de Meio Ambiente e Recursos Hídricos", "acronym": "IEMA", "url": "https://iema.es.gov.br/"},
-  {"uf": "PR", "name": "Paraná", "agency": "Instituto Água e Terra", "acronym": "IAT", "url": "https://www.iat.pr.gov.br/"},
-  {"uf": "SC", "name": "Santa Catarina", "agency": "Instituto do Meio Ambiente de Santa Catarina", "acronym": "IMA", "url": "https://www.ima.sc.gov.br/"},
-  {"uf": "RS", "name": "Rio Grande do Sul", "agency": "Fundação Estadual de Proteção Ambiental Henrique Luiz Roessler", "acronym": "FEPAM", "url": "https://www.fepam.rs.gov.br/"},
-  {"uf": "BA", "name": "Bahia", "agency": "Instituto do Meio Ambiente e Recursos Hídricos", "acronym": "INEMA", "url": "https://www.ba.gov.br/inema/"},
-  {"uf": "SE", "name": "Sergipe", "agency": "Administração Estadual do Meio Ambiente", "acronym": "ADEMA", "url": "https://adema.se.gov.br/"},
-  {"uf": "PE", "name": "Pernambuco", "agency": "Agência Estadual de Meio Ambiente", "acronym": "CPRH", "url": "https://www2.cprh.pe.gov.br/"},
-  {"uf": "CE", "name": "Ceará", "agency": "Superintendência Estadual do Meio Ambiente", "acronym": "SEMACE", "url": "https://www.semace.ce.gov.br/"}
+  {
+    "uf": "AC",
+    "name": "Acre",
+    "agency": "Instituto de Meio Ambiente do Acre",
+    "acronym": "IMAC",
+    "url": "https://imac.ac.gov.br/",
+    "in": "no Acre"
+  },
+  {
+    "uf": "AL",
+    "name": "Alagoas",
+    "agency": "Instituto do Meio Ambiente de Alagoas",
+    "acronym": "IMA",
+    "url": "https://www2.ima.al.gov.br/",
+    "in": "em Alagoas"
+  },
+  {
+    "uf": "AP",
+    "name": "Amapá",
+    "agency": "Secretaria de Estado do Meio Ambiente",
+    "acronym": "SEMA",
+    "url": "https://sema.portal.ap.gov.br/",
+    "in": "no Amapá"
+  },
+  {
+    "uf": "AM",
+    "name": "Amazonas",
+    "agency": "Instituto de Proteção Ambiental do Amazonas",
+    "acronym": "IPAAM",
+    "url": "https://www.ipaam.am.gov.br/",
+    "in": "no Amazonas"
+  },
+  {
+    "uf": "BA",
+    "name": "Bahia",
+    "agency": "Instituto do Meio Ambiente e Recursos Hídricos",
+    "acronym": "INEMA",
+    "url": "https://www.ba.gov.br/inema/",
+    "in": "na Bahia"
+  },
+  {
+    "uf": "CE",
+    "name": "Ceará",
+    "agency": "Superintendência Estadual do Meio Ambiente",
+    "acronym": "SEMACE",
+    "url": "https://www.semace.ce.gov.br/",
+    "in": "no Ceará"
+  },
+  {
+    "uf": "DF",
+    "name": "Distrito Federal",
+    "agency": "Instituto Brasília Ambiental",
+    "acronym": "IBRAM",
+    "url": "https://www.ibram.df.gov.br/",
+    "in": "no Distrito Federal"
+  },
+  {
+    "uf": "ES",
+    "name": "Espírito Santo",
+    "agency": "Instituto Estadual de Meio Ambiente e Recursos Hídricos",
+    "acronym": "IEMA",
+    "url": "https://iema.es.gov.br/",
+    "in": "no Espírito Santo"
+  },
+  {
+    "uf": "GO",
+    "name": "Goiás",
+    "agency": "Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável",
+    "acronym": "SEMAD",
+    "url": "https://goias.gov.br/meioambiente/",
+    "in": "em Goiás"
+  },
+  {
+    "uf": "MA",
+    "name": "Maranhão",
+    "agency": "Secretaria de Estado do Meio Ambiente e Recursos Naturais",
+    "acronym": "SEMA",
+    "url": "https://sema.ma.gov.br/",
+    "in": "no Maranhão"
+  },
+  {
+    "uf": "MT",
+    "name": "Mato Grosso",
+    "agency": "Secretaria de Estado de Meio Ambiente",
+    "acronym": "SEMA",
+    "url": null,
+    "in": "no Mato Grosso"
+  },
+  {
+    "uf": "MS",
+    "name": "Mato Grosso do Sul",
+    "agency": "Instituto de Meio Ambiente de Mato Grosso do Sul",
+    "acronym": "IMASUL",
+    "url": "https://www.imasul.ms.gov.br/",
+    "in": "no Mato Grosso do Sul"
+  },
+  {
+    "uf": "MG",
+    "name": "Minas Gerais",
+    "agency": "Secretaria de Estado de Meio Ambiente e Desenvolvimento Sustentável",
+    "acronym": "SEMAD",
+    "url": "https://www.meioambiente.mg.gov.br/",
+    "in": "em Minas Gerais"
+  },
+  {
+    "uf": "PA",
+    "name": "Pará",
+    "agency": "Secretaria de Estado de Meio Ambiente, Clima e Sustentabilidade",
+    "acronym": "SEMAS",
+    "url": "https://www.semas.pa.gov.br/",
+    "in": "no Pará"
+  },
+  {
+    "uf": "PB",
+    "name": "Paraíba",
+    "agency": "Superintendência de Administração do Meio Ambiente",
+    "acronym": "SUDEMA",
+    "url": "https://sudema.pb.gov.br/",
+    "in": "na Paraíba"
+  },
+  {
+    "uf": "PR",
+    "name": "Paraná",
+    "agency": "Instituto Água e Terra",
+    "acronym": "IAT",
+    "url": "https://www.iat.pr.gov.br/",
+    "in": "no Paraná"
+  },
+  {
+    "uf": "PE",
+    "name": "Pernambuco",
+    "agency": "Agência Estadual de Meio Ambiente",
+    "acronym": "CPRH",
+    "url": "https://www2.cprh.pe.gov.br/",
+    "in": "em Pernambuco"
+  },
+  {
+    "uf": "PI",
+    "name": "Piauí",
+    "agency": "Secretaria de Estado do Meio Ambiente e Recursos Hídricos",
+    "acronym": "SEMARH",
+    "url": "https://www.semarh.pi.gov.br/",
+    "in": "no Piauí"
+  },
+  {
+    "uf": "RJ",
+    "name": "Rio de Janeiro",
+    "agency": "Instituto Estadual do Ambiente",
+    "acronym": "INEA",
+    "url": "https://www.inea.rj.gov.br/",
+    "in": "no Rio de Janeiro"
+  },
+  {
+    "uf": "RN",
+    "name": "Rio Grande do Norte",
+    "agency": "Instituto de Desenvolvimento Sustentável e Meio Ambiente",
+    "acronym": "IDEMA",
+    "url": null,
+    "in": "no Rio Grande do Norte"
+  },
+  {
+    "uf": "RS",
+    "name": "Rio Grande do Sul",
+    "agency": "Fundação Estadual de Proteção Ambiental Henrique Luiz Roessler",
+    "acronym": "FEPAM",
+    "url": "https://www.fepam.rs.gov.br/",
+    "in": "no Rio Grande do Sul"
+  },
+  {
+    "uf": "RO",
+    "name": "Rondônia",
+    "agency": "Secretaria de Estado do Desenvolvimento Ambiental",
+    "acronym": "SEDAM",
+    "url": "https://rondonia.ro.gov.br/sedam/",
+    "in": "em Rondônia"
+  },
+  {
+    "uf": "RR",
+    "name": "Roraima",
+    "agency": "Fundação Estadual do Meio Ambiente e Recursos Hídricos",
+    "acronym": "FEMARH",
+    "url": "https://femarh.rr.gov.br/",
+    "in": "em Roraima"
+  },
+  {
+    "uf": "SC",
+    "name": "Santa Catarina",
+    "agency": "Instituto do Meio Ambiente de Santa Catarina",
+    "acronym": "IMA",
+    "url": "https://www.ima.sc.gov.br/",
+    "in": "em Santa Catarina"
+  },
+  {
+    "uf": "SP",
+    "name": "São Paulo",
+    "agency": "Companhia Ambiental do Estado de São Paulo",
+    "acronym": "CETESB",
+    "url": "https://cetesb.sp.gov.br/",
+    "in": "em São Paulo"
+  },
+  {
+    "uf": "SE",
+    "name": "Sergipe",
+    "agency": "Administração Estadual do Meio Ambiente",
+    "acronym": "ADEMA",
+    "url": "https://adema.se.gov.br/",
+    "in": "em Sergipe"
+  },
+  {
+    "uf": "TO",
+    "name": "Tocantins",
+    "agency": "Instituto Natureza do Tocantins",
+    "acronym": "NATURATINS",
+    "url": "https://www.to.gov.br/naturatins",
+    "in": "no Tocantins"
+  }
 ]

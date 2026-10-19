@@ -1,5 +1,5 @@
 export const legacy=[
- ['/', 'Engenharia e consultoria ambiental no RJ | Monitorar Consultoria','Engenharia e consultoria ambiental no Rio de Janeiro: emissões fugitivas, LDAR, qualidade do ar, ruído e segurança do trabalho. Converse com a Monitorar.'],
+ ['/', 'Consultoria e engenharia ambiental | Monitorar Consultoria','Consultoria e engenharia ambiental em qualquer estado, com foco em RJ, SP e Amazonas. Sede no Rio de Janeiro. Emissões fugitivas, LDAR, ar e ruído.'],
  ['/sobre','Sobre a Monitorar Consultoria','Conheça a Monitorar Consultoria, sua história e atuação em meio ambiente e segurança do trabalho.'],
  ['/sobre/historia','História | Monitorar Consultoria','História e trajetória apresentadas pela Monitorar Consultoria.','/sobre'],
  ['/sobre/missao','Missão | Monitorar Consultoria','Missão e valores apresentados pela Monitorar Consultoria.','/sobre'],
@@ -11,7 +11,9 @@ export const legacy=[
  ['/servicos/auditorias','Auditorias | Monitorar Consultoria','Serviços de auditoria e avaliação de sistemas de gestão apresentados pela Monitorar.','/servicos/seguranca'],
  ['/servicos/treinamentos','Treinamentos | Monitorar Consultoria','Conheça a área de capacitação e treinamentos apresentada pela Monitorar Consultoria.','/servicos/seguranca'],
  ['/consultoria-ambiental-rj','Consultoria ambiental no RJ | Monitorar Consultoria','Consultoria e engenharia ambiental com sede no Rio de Janeiro: emissões fugitivas e LDAR, qualidade do ar, ruído, licenciamento e áreas impactadas.'],
- ['/consultoria-ambiental-por-estado','Consultoria ambiental por estado | Monitorar Consultoria','Consultoria ambiental com sede no Rio de Janeiro e atendimento por estado: RJ, SP, MG, ES, PR, SC, RS, BA, SE, PE e CE, conforme o escopo do projeto.'],
+ ['/consultoria-ambiental-sp','Consultoria ambiental em São Paulo | Monitorar Consultoria','Consultoria e engenharia ambiental em São Paulo, um dos estados de atuação principal da Monitorar: emissões fugitivas, LDAR, ar, ruído e licenciamento ambiental.'],
+ ['/consultoria-ambiental-am','Consultoria ambiental no Amazonas | Monitorar Consultoria','Consultoria e engenharia ambiental no Amazonas, um dos estados de atuação principal da Monitorar: emissões fugitivas, LDAR, ar, ruído e licenciamento ambiental.'],
+ ['/consultoria-ambiental-por-estado','Consultoria ambiental por estado | Monitorar Consultoria','Consultoria ambiental em qualquer estado, com atuação principal no RJ, SP e Amazonas. Sede no Rio de Janeiro. Veja o órgão ambiental de cada estado.'],
  ['/servicos/drager','Equipamentos Dräger | Monitorar Consultoria','Conheça a área de equipamentos apresentada pela Monitorar e consulte o catálogo disponível.'],
  ['/clientes','Clientes | Monitorar Consultoria','Conheça os clientes apresentados no site institucional da Monitorar Consultoria.'],
  ['/depoimentos','Depoimentos | Monitorar Consultoria','Leia os depoimentos publicados no site da Monitorar Consultoria.'],
