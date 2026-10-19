@@ -55,7 +55,12 @@ A cota de 19/10 acabou. No primeiro ciclo de 20/10 (e nos seguintes, até esvazi
 8. `https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas` (bloco "Empresa de LDAR" e link ao guia)
 9. `https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas` (link ao guia)
 
-Registrar no log quais foram pedidas e riscar daqui as que entraram no índice. Depois que a propriedade de domínio sem www estiver verificada (autorizada pelo proprietário em 19/10; ele coloca o TXT no DNS), inspecionar e pedir também `https://monitorarconsultoria.com.br/`, que é o que faz o Google trocar a canônica da Home para www.
+Registrar no log quais foram pedidas e riscar daqui as que entraram no índice.
+
+**Propriedade de domínio sem www** (autorizada pelo proprietário em 19/10, no plano; ele coloca o TXT no DNS do domínio, painel skymail). Valor do registro TXT, nome `@`: `google-site-verification=6zXIzKJxknnZ7cfnG7h44ehIHX8HMKWDgoWj3fEdXR4`. Pré-passo de cada ciclo, até verificar:
+
+1. `nslookup -type=TXT monitorarconsultoria.com.br 8.8.8.8` mostra esse valor? Se não, registrar "TXT ainda não publicado" e seguir.
+2. Se sim: `python scripts/gsc.py verify-domain --press-verify`. Se `verified` for verdadeiro: `python scripts/gsc.py inspect --property domain https://monitorarconsultoria.com.br/` e, se não estiver como redirecionamento já reconhecido, `python scripts/gsc.py request --property domain https://monitorarconsultoria.com.br/`. Este pedido é o que faz o Google reprocessar o endereço antigo e trocar a canônica da Home para www. Depois ler o relatório de páginas dos dois endereços e registrar.
 
 ## Captcha
 

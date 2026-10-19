@@ -6,6 +6,8 @@ Commands:
   inspect URL...   index status, last crawl and canonicals of each URL (read-only)
   request URL...   inspect, then ask Google to index the URL (stops when the daily quota is exhausted)
   queries          top queries of the Performance report (read-only)
+  verify-domain    domain property (DNS TXT, authorised by the owner on 19/10): print the TXT record to publish, or press VERIFICAR once it is in the DNS
+With --property domain, inspect and request work on the domain property (https://monitorarconsultoria.com.br/ and every other host).
 """
 import argparse, json, re, sys
 from datetime import datetime, timezone
@@ -14,6 +16,8 @@ from playwright.sync_api import sync_playwright
 
 PROPERTY = 'https://www.monitorarconsultoria.com.br/'
 RES = quote(PROPERTY, safe='')
+DOMAIN = 'monitorarconsultoria.com.br'
+DOMAIN_RES = quote('sc-domain:' + DOMAIN, safe='')
 CDP = 'http://127.0.0.1:9223'
 ICONS = re.compile(r'[-]')
 FIELDS = ['Último rastreamento', 'Rastreada como', 'O rastreamento é permitido?', 'Busca de página', 'A indexação é permitida?',
@@ -24,9 +28,9 @@ def page_text(page):
     return ICONS.sub('', page.inner_text('body').split('PrivacidadeTermos', 1)[-1])
 
 
-def open_inspection(context, url):
+def open_inspection(context, url, resource=RES):
     page = context.new_page()
-    page.goto(f'https://search.google.com/search-console?resource_id={RES}', wait_until='domcontentloaded', timeout=60000)
+    page.goto(f'https://search.google.com/search-console?resource_id={resource}', wait_until='domcontentloaded', timeout=60000)
     box = page.locator('input[aria-label^="Inspecionar qualquer URL"]').first
     box.wait_for(timeout=30000)
     box.click(); box.fill(url); page.keyboard.press('Enter')
@@ -47,16 +51,16 @@ def parse_inspection(url, text):
     return {'url': url, 'verdict': verdict, 'coverage': coverage, **{f: value(f) for f in FIELDS}}
 
 
-def inspect(context, url):
-    page = open_inspection(context, url)
+def inspect(context, url, resource=RES):
+    page = open_inspection(context, url, resource)
     try:
         return parse_inspection(url, page_text(page))
     finally:
         page.close()
 
 
-def request_indexing(context, url):
-    page = open_inspection(context, url)
+def request_indexing(context, url, resource=RES):
+    page = open_inspection(context, url, resource)
     result = {'url': url}
     try:
         result.update(parse_inspection(url, page_text(page)))
@@ -84,6 +88,32 @@ def request_indexing(context, url):
     return result
 
 
+def verify_domain(context, press_verify):
+    """Open the add-property dialog for the domain. Without press_verify it only reads the TXT record Google wants in the DNS;
+    with it, it presses VERIFICAR and reports what Google answered."""
+    page = context.new_page()
+    try:
+        page.goto('https://search.google.com/search-console/welcome', wait_until='domcontentloaded', timeout=60000)
+        page.get_by_text('Adicionar um site', exact=True).first.click(timeout=30000)
+        box = page.locator('input[aria-label="example.com"]:visible').first
+        box.wait_for(timeout=30000)
+        box.click(); box.fill(DOMAIN)
+        page.locator('text=CONTINUAR').first.click()
+        page.get_by_text('Verificar a propriedade do domínio', exact=False).first.wait_for(timeout=30000)
+        page.wait_for_timeout(2000)
+        record = next((v for v in (page.locator('input, textarea').nth(i).input_value() for i in range(page.locator('input, textarea').count())) if 'google-site-verification' in v), None)
+        result = {'domain': DOMAIN, 'txt': record}
+        if press_verify:
+            page.get_by_text('VERIFICAR', exact=True).last.click()
+            page.wait_for_timeout(15000)
+            answer = re.sub(r'\s+', ' ', page_text(page))
+            result['verified'] = bool(re.search(r'[Pp]ropriedade verificada|verificada com sucesso|Propriedade adicionada', answer))
+            result['answer'] = answer[-300:]
+        return result
+    finally:
+        page.close()
+
+
 def top_queries(context):
     page = context.new_page()
     try:
@@ -101,18 +131,24 @@ def top_queries(context):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('command', choices=['inspect', 'request', 'queries'])
+    parser.add_argument('command', choices=['inspect', 'request', 'queries', 'verify-domain'])
     parser.add_argument('urls', nargs='*')
     parser.add_argument('--output')
+    parser.add_argument('--property', choices=['www', 'domain'], default='www')
+    parser.add_argument('--press-verify', action='store_true', help='verify-domain: press VERIFICAR (only after the TXT record is published)')
     args = parser.parse_args()
     report = {'capturedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'command': args.command, 'results': []}
     with sync_playwright() as p:
         context = p.chromium.connect_over_cdp(CDP).contexts[0]
+        resource = DOMAIN_RES if args.property == 'domain' else RES
         if args.command == 'queries':
             report['results'] = top_queries(context)
+        elif args.command == 'verify-domain':
+            report['results'] = verify_domain(context, args.press_verify)
+            print(json.dumps(report['results'], ensure_ascii=False))
         else:
             for url in args.urls:
-                outcome = (request_indexing if args.command == 'request' else inspect)(context, url)
+                outcome = (request_indexing if args.command == 'request' else inspect)(context, url, resource)
                 report['results'].append(outcome)
                 print(json.dumps(outcome, ensure_ascii=False), flush=True)
                 if outcome.get('quotaExceeded'):
