@@ -41,6 +41,19 @@ Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**
    - O dado indicar uma alavanca de código, na ordem: rastreio e indexação; relevância na página (título, introdução, links internos); autoridade (relatório de links); conteúdo com fontes, que exige aprovação editorial registrada. Sempre com teste primeiro, publicação e verificação em produção.
 8. Uma vez por dia, commit só de documentos (`LOOP-LOG.md` e `evidence/`) em `main`.
 
+## Fila de pedidos de indexação (cota de cerca de 10 por dia)
+
+A cota de 19/10 acabou. No primeiro ciclo de 20/10 (e nos seguintes, até esvaziar), inspecionar cada URL com `gsc.py inspect` e pedir com `gsc.py request` só as que ainda não estão indexadas ou estão com versão antiga, nesta ordem:
+
+1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas-perguntas-e-respostas` (guia de perguntas e respostas, publicado em 19/10, atualizado depois)
+2. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado`
+3. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
+4. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
+5. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj` (reescrita em 19/10)
+6. `https://www.monitorarconsultoria.com.br/` (Home reescrita para qualquer estado)
+
+Registrar no log quais foram pedidas e riscar daqui as que entraram no índice.
+
 ## Captcha
 
 O Google respondeu com captcha depois de 40 consultas em 14 minutos (19/10). Regra: **captcha em qualquer leitura = nenhuma consulta ao Google pelas 6 horas seguintes**, registrado no log. Nunca contornar. O limite de uso normal é de poucas consultas por ciclo; um bloqueio por excesso também pode atingir as buscas do proprietário.
