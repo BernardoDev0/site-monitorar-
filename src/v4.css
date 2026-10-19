@@ -78,7 +78,7 @@ body { background:var(--site-paper); }
 .entry-list .entry-first { background:#24304c; color:#fcfdfd; }
 .entry-list .entry-first :is(h2,p,a) { color:#fcfdfd; }
 .pagination a { border-radius:999px; min-width:44px; min-height:44px; display:grid; place-items:center; }
-.editorial-contact,.editorial-empty { border-radius:24px; padding:32px; background:#e6ece4; }
+.editorial-contact,.editorial-empty,.editorial-local { border-radius:24px; padding:32px; background:#e6ece4; }
 .featured-articles { grid-template-columns:1.3fr 1fr; }
 .featured-articles article:first-child { grid-row:span 2; background:#24304c; color:#fcfdfd; padding:32px; border-radius:24px; border:0; }
 .featured-articles article:first-child p { color:#e4ece0; }

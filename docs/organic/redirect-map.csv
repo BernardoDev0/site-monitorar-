@@ -16,3 +16,19 @@ existing_path,target_path,action,reason,expected_status
 /trabalhe-conosco,/trabalhe-conosco,preserve,preservação de URL existente; canonical /trabalhe-conosco,200
 /contato,/contato,preserve,preservação de URL existente; canonical /contato,200
 /politica-privacidade,/politica-privacidade,preserve,preservação de URL existente; canonical /politica-privacidade,200
+/monitoramento-de-emissoes-fugitivas,/servicos/emissoes-fugitivas,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/monitoramento-de-emissoes-fugitivas.html,/servicos/emissoes-fugitivas,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/engenharia-ambiental,/servicos,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/engenharia-ambiental.html,/servicos,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/engenharia-do-trabalho,/servicos/seguranca,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/engenharia-do-trabalho.html,/servicos/seguranca,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/quem-somos,/sobre,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/quem-somos.html,/sobre,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/missao-e-visao,/sobre,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/missao-e-visao.html,/sobre,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/nosso-valores,/sobre,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/nosso-valores.html,/sobre,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/perfuracao-e-instalacao-de-pocos-de-monitoramento-ambiental,/servicos,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/perfuracao-e-instalacao-de-pocos-de-monitoramento-ambiental.html,/servicos,redirect,URL do site antigo (capturas do Wayback Machine 2013-2016) com equivalente atual,308
+/engenharia-civil,,none,URL do site antigo sem equivalente atual; permanece 404 para não sugerir serviço não oferecido,404
+/engenharia-civil.html,,none,URL do site antigo sem equivalente atual; permanece 404 para não sugerir serviço não oferecido,404
