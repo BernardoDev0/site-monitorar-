@@ -1,6 +1,6 @@
 url,intencao,consulta_principal,variacoes,destino_comercial,prioridade
-/,comercial local,engenharia e consultoria ambiental no Rio de Janeiro,empresa de engenharia ambiental RJ | engenharia ambiental Rio de Janeiro | consultoria ambiental RJ | empresa de consultoria ambiental | consultoria ambiental Rio de Janeiro | consultoria ambiental para empresas,/,1
-/servicos/emissoes-fugitivas,comercial,Monitoramento de emissões fugitivas e LDAR,emissões fugitivas | monitoramento de emissões fugitivas | empresa de LDAR | programa LDAR | orçamento de monitoramento de emissões fugitivas | detecção de vazamentos industriais,/servicos/emissoes-fugitivas,1
+/,comercial,consultoria ambiental,empresa de engenharia ambiental | empresa de engenharia e consultoria ambiental | engenharia e consultoria ambiental | empresa de consultoria ambiental | consultoria ambiental para empresas,/,1
+/servicos/emissoes-fugitivas,comercial,Monitoramento de emissões fugitivas e LDAR,monitoramento de emissões fugitivas | empresa de LDAR | programa LDAR | orçamento de monitoramento de emissões fugitivas | detecção de vazamentos industriais,/servicos/emissoes-fugitivas,1
 /servicos#qualidade-ar,comercial,"Qualidade do ar, PTS e Fumaça Preta",monitoramento da qualidade do ar | monitoramento de PTS | partículas totais em suspensão | fumaça preta | PROCON Fumaça Preta | monitoramento ambiental industrial,/servicos#qualidade-ar,1
 /servicos/ruido-extramuros,comercial,Avaliação de ruído extramuros,ruído extramuros | avaliação de ruído ambiental | medição de ruído ambiental RJ | relatório de ruído ambiental,/servicos/ruido-extramuros,1
 /servicos#areas-impactadas,comercial,Avaliação de áreas impactadas,avaliação geoambiental | investigação ambiental | áreas contaminadas | investigação confirmatória | investigação detalhada,/servicos#areas-impactadas,2
@@ -9,7 +9,6 @@ url,intencao,consulta_principal,variacoes,destino_comercial,prioridade
 /servicos/hazop,comercial,Estudo HAZOP,estudo HAZOP | análise de perigos e operabilidade | empresa de HAZOP | segurança de processos,/servicos/hazop,2
 /servicos/seguranca#treinamentos,comercial,Treinamentos em segurança do trabalho,treinamento de segurança do trabalho | capacitação em segurança do trabalho | matriz de treinamentos | treinamentos NR 33 e NR 35,/servicos/seguranca#treinamentos,2
 /servicos/drager,comercial,Equipamentos Dräger,equipamentos Dräger | detectores de gases | detector portátil de gases | proteção respiratória | calibração de detectores de gases,/servicos/drager,2
-/blog/o-que-sao-emissoes-fugitivas,informacional,O que são emissões fugitivas,o que são emissões fugitivas,/servicos/emissoes-fugitivas,1
 /blog/emissoes-fugitivas-e-canalizadas,informacional,Emissões fugitivas e canalizadas,emissões fugitivas e canalizadas,/servicos/emissoes-fugitivas,1
 /blog/deteccao-e-quantificacao-de-emissoes-fugitivas,informacional,Detecção e quantificação de emissões fugitivas,detecção e quantificação de emissões fugitivas,/servicos/emissoes-fugitivas,1
 /blog/o-que-e-ldar,informacional,O que é LDAR,o que é ldar,/servicos/emissoes-fugitivas,1
@@ -103,4 +102,4 @@ url,intencao,consulta_principal,variacoes,destino_comercial,prioridade
 /consultoria-ambiental-sp,comercial local,consultoria ambiental em São Paulo,consultoria ambiental SP | engenharia ambiental São Paulo | empresa de consultoria ambiental SP,/consultoria-ambiental-sp,1
 /consultoria-ambiental-am,comercial local,consultoria ambiental no Amazonas,consultoria ambiental Manaus | consultoria ambiental AM | engenharia ambiental Manaus,/consultoria-ambiental-am,1
 /emissoes-fugitivas,informacional,emissões fugitivas,emissão fugitiva | o que são emissões fugitivas | emissões fugitivas RJ | legislação emissões fugitivas | fontes de emissões fugitivas,/servicos/emissoes-fugitivas,1
-/consultoria-ambiental,comercial,consultoria ambiental,empresa de consultoria ambiental | empresa de engenharia ambiental | engenharia ambiental | o que é consultoria ambiental | como escolher uma consultoria ambiental | licença prévia licença de instalação licença de operação,/contato,1
+/consultoria-ambiental,informacional,o que é consultoria ambiental,como escolher uma consultoria ambiental | como escolher uma empresa de engenharia ambiental | o que faz uma consultoria ambiental | licença prévia licença de instalação licença de operação,/,1
