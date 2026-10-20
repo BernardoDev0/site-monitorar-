@@ -395,11 +395,62 @@ test('the environment services page does not stop at Rio de Janeiro: it links th
 test('the organization data on every page names the founding year and the areas served',async()=>{
  for(const path of ['/','/blog/o-que-e-ldar','/consultoria-ambiental-sp']){
   const graph=JSON.parse((await page(path)).match(/<script type="application\/ld\+json">(.*?)<\/script>/s)[1])['@graph'];
-  const org=graph.find(n=>n['@type']==='Organization');
+  const org=graph.find(n=>[].concat(n['@type']).includes('Organization'));
   assert.equal(org.foundingDate,'2009',path);
   const names=[].concat(org.areaServed).map(a=>a.name);
   for(const name of ['Rio de Janeiro','São Paulo','Amazonas','Brasil'])assert.ok(names.includes(name),path+' '+name);
  }
+});
+const companyOf=graph=>graph.find(n=>[].concat(n['@type']).includes('Organization'));
+test('the company node is an Organization and a LocalBusiness with verified address, geo and contact point',async()=>{
+ assert.equal(business.address.postalCode,'22775-056','CEP from ViaCEP for the avenue');
+ for(const path of ['/','/consultoria-ambiental-rj','/servicos/emissoes-fugitivas','/blog/o-que-e-ldar']){
+  const org=companyOf(graphOf(await page(path)));
+  assert.deepEqual([].concat(org['@type']),['Organization','LocalBusiness'],path);
+  assert.equal(org['@id'],ORIGIN+'/#organization');
+  assert.equal(org.address.postalCode,business.address.postalCode,path);
+  assert.deepEqual(org.geo,business.geo?{'@type':'GeoCoordinates',...business.geo}:undefined,path+' geo only when verified');
+  assert.equal(org.contactPoint[0].telephone,business.phone,path);
+  assert.deepEqual([].concat(org.areaServed).map(a=>a.name),['Rio de Janeiro','São Paulo','Amazonas','Brasil'],path);
+  for(const field of ['openingHoursSpecification','openingHours','hasMap','aggregateRating','review','priceRange'])assert.equal(org[field],undefined,path+' '+field);
+  assert.ok(org.knowsAbout.includes('Licenciamento ambiental')&&org.knowsAbout.includes('LDAR'),path);
+  assert.ok(org.hasOfferCatalog.itemListElement.some(o=>o.itemOffered['@id']===ORIGIN+'/servicos/emissoes-fugitivas#service'),path);
+ }
+});
+const pageTypeOf=path=>/^\/(blog|conteudos)(\/|$)/.test(path)&&!/^\/blog\/(?!pagina\/)[^/]+$/.test(path)?'CollectionPage':path==='/sobre'?'AboutPage':path==='/contato'?'ContactPage':'WebPage';
+test('every page has a WebPage node tied to the site, its breadcrumb and its main entity',async()=>{
+ for(const path of paths){
+  const graph=graphOf(await page(path)),url=ORIGIN+path,id=url+'#webpage';
+  const nodes=graph.filter(n=>n['@id']===id);
+  assert.equal(nodes.length,1,path+' one WebPage node');
+  const web=nodes[0];
+  assert.equal(web['@type'],pageTypeOf(path),path);
+  assert.equal(web.url,url,path);
+  assert.deepEqual(web.isPartOf,{'@id':ORIGIN+'/#website'},path);
+  const crumbs=graph.find(n=>n['@type']==='BreadcrumbList');
+  if(crumbs){assert.equal(crumbs['@id'],url+'#breadcrumb',path);assert.deepEqual(web.breadcrumb,{'@id':url+'#breadcrumb'},path);}
+  for(const node of graph.filter(n=>['Article','BlogPosting','Service'].includes(n['@type'])))assert.deepEqual(node.mainEntityOfPage,{'@id':id},path+' '+node['@type']);
+ }
+});
+test('state pages declare a consultoria ambiental Service for their state',async()=>{
+ for(const [path,state] of [['/consultoria-ambiental-rj','Rio de Janeiro'],['/consultoria-ambiental-sp','São Paulo'],['/consultoria-ambiental-am','Amazonas']]){
+  const service=graphOf(await page(path)).find(n=>n['@type']==='Service');
+  assert.ok(service,path);
+  assert.equal(service['@id'],ORIGIN+path+'#service');
+  assert.equal(service.serviceType,'Consultoria ambiental');
+  assert.deepEqual(service.areaServed,{'@type':'State',name:state},path);
+  assert.deepEqual(service.provider,{'@id':ORIGIN+'/#organization'},path);
+ }
+});
+test('the LDAR service names LDAR and points to the guide',async()=>{
+ const service=graphOf(await page('/servicos/emissoes-fugitivas')).find(n=>n['@type']==='Service');
+ assert.ok([].concat(service.alternateName).includes('LDAR'));
+ assert.ok(service.serviceType);
+ assert.deepEqual(service.subjectOf,{'@id':ORIGIN+'/emissoes-fugitivas#article'});
+});
+test('articles name their subject as the section',async()=>{
+ const article=graphOf(await page('/blog/o-que-e-ldar')).find(n=>n['@type']==='BlogPosting');
+ assert.equal(article.articleSection,'Emissões fugitivas');
 });
 const lastmods=Object.fromEntries([...sitemap.matchAll(/<url><loc>https:\/\/www\.monitorarconsultoria\.com\.br(.*?)<\/loc>(?:<lastmod>(.*?)<\/lastmod>)?<\/url>/g)].map(m=>[m[1],m[2]]));
 test('every sitemap URL carries the date of its last public change',async()=>{
