@@ -1,0 +1,66 @@
+{
+ "capturedAt": "2026-10-20T12:01:57+00:00",
+ "phrase": "emissões fugitivas",
+ "readings": {
+  "peek": {
+   "phrase": "emissões fugitivas",
+   "blocked": false,
+   "personalised": false,
+   "linksRead": 8,
+   "monitorar": [],
+   "icons": [],
+   "top": [
+    "www.thermofisher.com/blog/identifying-threats/what-are-fugitive-emissi",
+    "blog.alutal.com.br/industria/o-que-sao-emissoes-fugitivas/",
+    "pt.wikipedia.org/wiki/Emiss%C3%A3o_fugitiva",
+    "www.wika.com/pt-br/emissoes_fugitivas-2.WIKA",
+    "www.persefoni.com/blog/fugitive-emissions",
+    "monografias.dcc.ufmg.br/monografia/monitoramento-de-emissoes-fugitivas-a-",
+    "start5g.com.br/emissoes-fugitivas/",
+    "www.gov.br/anp/pt-br/assuntos/renovabio/arq/arquivos-estudos"
+   ],
+   "results": [
+    {
+     "position": 1,
+     "url": "https://www.thermofisher.com/blog/identifying-threats/what-are-fugitive-emissions-why-do-they-matter/",
+     "title": "O que são emissões fugitivas e por que elas são ..."
+    },
+    {
+     "position": 2,
+     "url": "https://blog.alutal.com.br/industria/o-que-sao-emissoes-fugitivas/",
+     "title": "O que são emissões fugitivas e por que são perigosas"
+    },
+    {
+     "position": 3,
+     "url": "https://pt.wikipedia.org/wiki/Emiss%C3%A3o_fugitiva",
+     "title": "Emissão fugitiva – Wikipédia, a enciclopédia livre"
+    },
+    {
+     "position": 4,
+     "url": "https://www.wika.com/pt-br/emissoes_fugitivas-2.WIKA",
+     "title": "Emissões fugitivas - WIKA Brasil"
+    },
+    {
+     "position": 5,
+     "url": "https://www.persefoni.com/blog/fugitive-emissions",
+     "title": "Emissões Fugitivas: Um Guia Explicativo"
+    },
+    {
+     "position": 6,
+     "url": "https://monografias.dcc.ufmg.br/monografia/monitoramento-de-emissoes-fugitivas-a-partir-de-imagens-de-cameras-de-seguranca/",
+     "title": "Monitoramento de Emissões Fugitivas à partir de Imagens de ..."
+    },
+    {
+     "position": 7,
+     "url": "https://start5g.com.br/emissoes-fugitivas/",
+     "title": "Emissões fugitivas"
+    },
+    {
+     "position": 8,
+     "url": "https://www.gov.br/anp/pt-br/assuntos/renovabio/arq/arquivos-estudos-relatorio-e-seminarios/renovabio_emissoes_fugitivas_biometano_nota_tecnica_2026.pdf",
+     "title": "estudo sobre a inclusão de emissões fugitivas na rota de"
+    }
+   ]
+  }
+ }
+}

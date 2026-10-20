@@ -121,20 +121,29 @@ def sitemap_entries(xml):
 
 
 def robots_lines(text):
-    groups, previous, out = 0, None, {'disallow': [], 'allow': [], 'sitemaps': []}
+    """Directives of every group, plus `google`: the Disallow rules Googlebot obeys (its own group, else the * group)."""
+    groups, previous, out = [], None, {'disallow': [], 'allow': [], 'sitemaps': []}
     for line in (text or '').splitlines():
         line = line.split('#', 1)[0].strip()
         if ':' not in line:
             continue
         key, value = (part.strip() for part in line.split(':', 1))
         key = key.lower()
-        if key == 'user-agent' and previous != 'user-agent':
-            groups += 1
+        if key == 'user-agent':
+            if previous != 'user-agent':
+                groups.append({'agents': [], 'disallow': []})
+            groups[-1]['agents'].append(value.lower())
+        elif key == 'disallow' and value and groups:
+            groups[-1]['disallow'].append(value)
         previous = key
         target = {'disallow': 'disallow', 'allow': 'allow', 'sitemap': 'sitemaps'}.get(key)
         if target and value and value not in out[target]:
             out[target].append(value)
-    return {'groups': groups, **out}
+    own = [g for g in groups if 'googlebot' in g['agents']] or [g for g in groups if '*' in g['agents']]
+    google = []
+    for group in own:
+        google += [rule for rule in group['disallow'] if rule not in google]
+    return {'groups': len(groups), **out, 'google': google}
 
 
 # ---------- fetch ----------
@@ -228,7 +237,7 @@ def fetch_site(client, origin, urls, folder):
     while queue and total < MAX_URLS:
         url, source = queue.pop(0)
         if source == 'child' and fetched >= MAX_CHILDREN:
-            record['sitemaps'].append({'url': url, 'skipped': f'more than {MAX_CHILDREN} child sitemaps'})
+            record['sitemaps'].append({'url': url, 'from': source, 'skipped': f'more than {MAX_CHILDREN} child sitemaps'})
             continue
         answer = client.get(url)
         kind = sitemap_kind(answer['body']) if answer['status'] == 200 else None
@@ -310,7 +319,8 @@ def cms_of(robots, sitemap_text, generators):
         if probe in blob and name not in found:
             found.append(name)
     for generator in generators:
-        if generator and generator.split(' ')[0] not in ' '.join(found):
+        generator = generator.split(';')[0].strip()[:40]
+        if generator and generator.split(' ')[0] not in ' '.join(found) and generator not in found:
             found.append(generator)
     if not found and '/wp-admin/' in (robots or ''):
         found.append('WordPress (robots)')
@@ -385,9 +395,10 @@ def analyze(args):
                 types = jsonld_types(html)
                 klass = 'nosso' if name == OWN_HOST else classes.get(name, 'nao-classificado')
                 path = urlparse(page['url']).path
-                phrases = [r['phrase'] for r in page['ranks']] or [p for p, pillar in PILLARS.items() if pillar == (path or '/')]
-                if path == '/consultoria-ambiental':
-                    phrases = phrases or ['consultoria ambiental']
+                phrases = [r['phrase'] for r in page['ranks']]
+                if klass == 'nosso':
+                    pillar = [p for p, target in PILLARS.items() if target == (path or '/')] + (['consultoria ambiental'] if path == '/consultoria-ambiental' else [])
+                    phrases += [p for p in pillar if plain(p) not in map(plain, phrases)]
                 text = main_text(html)
                 pages.append({'domain': name, 'class': klass, 'url': page['url'], 'ranks': page['ranks'], 'rendered': bool(page.get('rendered')),
                               'type': page_type(path, types, klass), 'title': seen['title'], 'titleLength': len(seen['title'] or ''),
@@ -396,9 +407,11 @@ def analyze(args):
                               'jsonld': blocks, 'terms': [measure(html, page['url'], phrase) for phrase in phrases]})
         sites.append({'domain': name, 'class': 'nosso' if name == OWN_HOST else classes.get(name, 'nao-classificado'),
                       'cms': cms_of(robots, sitemap_text, generators), 'robotsStatus': (record['robots'] or {}).get('status'),
-                      'groups': lines['groups'], 'disallow': lines['disallow'], 'sitemapLines': lines['sitemaps'],
+                      'groups': lines['groups'], 'disallow': lines['disallow'], 'google': lines['google'], 'sitemapLines': lines['sitemaps'],
                       'sitemapSource': record['sitemapSource'],
-                      'tried': [f"{urlparse(s['url']).path} {s.get('status')}" for s in record['sitemaps'] if s['from'] != 'child' and not s.get('kind')],
+                      'declared': {s['url']: s.get('status') for s in record['sitemaps'] if s.get('from') == 'robots'},
+                      'guessed': [urlparse(s['url']).path for s in record['sitemaps'] if s.get('from') == 'guess' and s.get('kind')],
+                      'tried': [f"{urlparse(s['url']).path} {s.get('status')}" for s in record['sitemaps'] if s.get('from') != 'child' and not s.get('kind')],
                       'index': any(s.get('kind') == 'index' for s in record['sitemaps']), 'children': children, 'urls': len(urls),
                       'lastmodPct': share('lastmod'), 'priorityPct': share('priority'), 'changefreqPct': share('changefreq'),
                       'patterns': dict(patterns.most_common(8))})
@@ -409,7 +422,7 @@ def analyze(args):
 
 
 def write_sites(sites, out):
-    columns = ['domain', 'class', 'cms', 'robotsStatus', 'groups', 'disallow', 'sitemapLines', 'sitemapSource', 'tried', 'index', 'children',
+    columns = ['domain', 'class', 'cms', 'robotsStatus', 'groups', 'google', 'disallow', 'sitemapLines', 'sitemapSource', 'tried', 'index', 'children',
                'urls', 'lastmodPct', 'priorityPct', 'changefreqPct', 'patterns']
     with open(os.path.join(out, 'robots-sitemaps.csv'), 'w', encoding='utf-8', newline='') as handle:
         writer = csv.writer(handle)
@@ -417,14 +430,22 @@ def write_sites(sites, out):
         for site in sites:
             writer.writerow([' | '.join(map(str, v)) if isinstance(v, list) else (json.dumps(v, ensure_ascii=False) if isinstance(v, dict) else v)
                              for v in (site[c] for c in columns)])
-    rows = ['# Robots e sitemaps dos sites da página 1', '', 'Gerado por `scripts/serp_reverse_engineer.py analyze`. Uma linha por domínio.', '',
-            '| Domínio | Classe | CMS | Grupos no robots | Disallow | Sitemap no robots | Índice e filhos | URLs | % lastmod | % priority | % changefreq | Padrões de URL |',
+    rows = ['# Robots e sitemaps dos sites da página 1', '', 'Gerado por `scripts/serp_reverse_engineer.py analyze`. Uma linha por domínio. '
+            '"Disallow para o Google" = regras do grupo Googlebot ou, sem ele, do grupo `*`; a lista completa de todos os grupos está no CSV.',
+            'Status entre parênteses = resposta do sitemap declarado. Até 10 filhos e 5.000 URLs lidos por domínio.', '',
+            '| Domínio | Classe | CMS | Grupos no robots | Disallow para o Google | Sitemap no robots | Índice e filhos | URLs lidas | % lastmod | % priority | % changefreq | Padrões de URL |',
             '|---|---|---|---|---|---|---|---|---|---|---|---|']
+    first = lambda items, n: ', '.join(items[:n]) + (f' (+{len(items) - n})' if len(items) > n else '')
     for s in sorted(sites, key=lambda s: (s['class'] != 'nosso', s['class'], s['domain'])):
-        sitemap = ', '.join(s['sitemapLines']) or ('nenhum; tentativas: ' + (', '.join(s['tried']) or '—'))
-        index = ('índice: ' + ', '.join(s['children'])) if s['index'] else ('urlset' if s['urls'] else '—')
+        if s['sitemapLines']:
+            sitemap = first([f"{u} ({s['declared'].get(u, 'não lido')})" for u in s['sitemapLines']], 3)
+        elif s['guessed']:
+            sitemap = 'nenhum; achado em ' + ', '.join(s['guessed'])
+        else:
+            sitemap = 'nenhum; tentativas: ' + (', '.join(s['tried']) or '—')
+        index = ('índice: ' + first(list(dict.fromkeys(s['children'])), 8)) if s['index'] else ('urlset' if s['urls'] else '—')
         pct = lambda v: '—' if v is None else f'{v}%'
-        rows.append(f"| {s['domain']} | {s['class']} | {s['cms']} | {s['groups']} | {', '.join(f'`{d}`' for d in s['disallow']) or '—'} | "
+        rows.append(f"| {s['domain']} | {s['class']} | {s['cms']} | {s['groups']} | {first([f'`{d}`' for d in s['google']], 6) or '—'} | "
                     f"{sitemap} | {index} | {s['urls']} | {pct(s['lastmodPct'])} | {pct(s['priorityPct'])} | {pct(s['changefreqPct'])} | "
                     f"{', '.join(f'{k} ({v})' for k, v in s['patterns'].items()) or '—'} |")
     open(os.path.join(out, 'robots-sitemaps.md'), 'w', encoding='utf-8').write('\n'.join(rows) + '\n')
@@ -435,11 +456,14 @@ def write_pages(pages, out):
     rows = ['# On-page e Schema: concorrentes diretos × nosso pilar', '',
             'Gerado por `scripts/serp_reverse_engineer.py analyze`. Por termo: os 3 concorrentes diretos mais bem colocados e o nosso pilar.',
             'Densidade = ocorrências do termo (sem o nome do lugar) por 1.000 palavras do texto principal (trafilatura).', '']
-    phrases = sorted({r['phrase'] for p in pages for r in p['ranks']} | set(PILLARS))
-    for phrase in phrases:
+    phrases = {}
+    for phrase in [r['phrase'] for p in pages for r in p['ranks']] + list(PILLARS):
+        phrases.setdefault(plain(phrase), phrase)
+    for phrase in sorted(phrases.values(), key=plain):
         ranked = sorted(((r['position'], p) for p in pages for r in p['ranks'] if plain(r['phrase']) == plain(phrase)), key=lambda x: x[0])
         direct = [(pos, p) for pos, p in ranked if p['class'] == 'direto'][:3] or [(pos, p) for pos, p in ranked if p['class'] != 'nosso'][:3]
-        ours = [p for p in pages if p['class'] == 'nosso' and urlparse(p['url']).path in (PILLARS.get(plain(phrase)), PILLARS.get(phrase.lower()))]
+        pillar = next((target for key, target in PILLARS.items() if plain(key) == plain(phrase)), None)
+        ours = [p for p in pages if p['class'] == 'nosso' and (urlparse(p['url']).path == pillar or any(plain(r['phrase']) == plain(phrase) for r in p['ranks']))]
         if not direct and not ours:
             continue
         rows += [f'## {phrase}', '', '| Pos. | Página | Tipo | Title (caracteres) | Meta (caracteres) | H1 / H2 | Palavras | Termo: ocorrências, por 1.000 | Title / H1 / URL / 100 primeiras | JSON-LD |',
@@ -495,7 +519,11 @@ def selftest():
     entries = sitemap_entries('<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>https://a.br/</loc><lastmod>2026-01-01</lastmod><priority>1.0</priority></url><url><loc>https://a.br/x</loc></url></urlset>')
     assert entries == [{'loc': 'https://a.br/', 'lastmod': '2026-01-01', 'priority': '1.0', 'changefreq': None}, {'loc': 'https://a.br/x', 'lastmod': None, 'priority': None, 'changefreq': None}], entries
     robots = robots_lines('User-agent: *\nDisallow: /wp-admin/\nAllow: /wp-admin/admin-ajax.php\n\nUser-agent: Bingbot\nDisallow:\n# Sitemap: commented\nSitemap: https://a.br/sitemap_index.xml\n')
-    assert robots == {'groups': 2, 'disallow': ['/wp-admin/'], 'allow': ['/wp-admin/admin-ajax.php'], 'sitemaps': ['https://a.br/sitemap_index.xml']}, robots
+    assert robots == {'groups': 2, 'disallow': ['/wp-admin/'], 'allow': ['/wp-admin/admin-ajax.php'], 'sitemaps': ['https://a.br/sitemap_index.xml'],
+                      'google': ['/wp-admin/']}, robots
+    # A Googlebot group replaces the * group for Google; a Disallow: / aimed at another bot is not a block for Google.
+    robots = robots_lines('User-agent: *\nDisallow: /a\n\nUser-agent: Googlebot\nUser-agent: Googlebot-Image\nDisallow: /b\n\nUser-agent: GPTBot\nDisallow: /\n')
+    assert robots['groups'] == 3 and robots['google'] == ['/b'] and robots['disallow'] == ['/a', '/b', '/'], robots
     assert term_of('consultoria ambiental RJ') == ('consultoria ambiental', True)
     assert term_of('emissões fugitivas') == ('emissoes fugitivas', False)
     print('selftest: PASS')

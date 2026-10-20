@@ -1,0 +1,72 @@
+{
+ "capturedAt": "2026-10-20T12:06:57+00:00",
+ "phrase": "empresa de engenharia ambiental",
+ "readings": {
+  "peek": {
+   "phrase": "empresa de engenharia ambiental",
+   "blocked": false,
+   "personalised": false,
+   "linksRead": 9,
+   "monitorar": [],
+   "icons": [],
+   "top": [
+    "ambientalconsult.com.br/",
+    "rioambiental.com.br/",
+    "masterplan.eng.br/",
+    "eea.eng.br/quem-somos",
+    "weberambiental.com.br/",
+    "reservaeng.com.br/",
+    "www.ebp.global/br-pt",
+    "ambientobrasil.com.br/",
+    "orionambiental.com.br/"
+   ],
+   "results": [
+    {
+     "position": 1,
+     "url": "https://ambientalconsult.com.br/",
+     "title": "Ambiental – Engenharia e Consultoria"
+    },
+    {
+     "position": 2,
+     "url": "https://rioambiental.com.br/",
+     "title": "Rio Ambiental — Engenharia e Assessoria Ambiental no Rio ..."
+    },
+    {
+     "position": 3,
+     "url": "https://masterplan.eng.br/",
+     "title": "Masterplan – Engenharia Consultiva e Ambiental"
+    },
+    {
+     "position": 4,
+     "url": "https://eea.eng.br/quem-somos",
+     "title": "Empresa de Engenharia Ambiental"
+    },
+    {
+     "position": 5,
+     "url": "https://weberambiental.com.br/",
+     "title": "Weber Ambiental – Consultoria e Engenharia Ambiental"
+    },
+    {
+     "position": 6,
+     "url": "https://reservaeng.com.br/",
+     "title": "Reserva Engenharia e Meio Ambiente - Consultoria ..."
+    },
+    {
+     "position": 7,
+     "url": "https://www.ebp.global/br-pt",
+     "title": "EBP Brasil – Consultoria e Engenharia Ambiental"
+    },
+    {
+     "position": 8,
+     "url": "https://ambientobrasil.com.br/",
+     "title": "Ambiento Brasil: Soluções Ambientais e Engenharia Ambiental"
+    },
+    {
+     "position": 9,
+     "url": "https://orionambiental.com.br/",
+     "title": "Orion – Ambiental"
+    }
+   ]
+  }
+ }
+}

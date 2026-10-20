@@ -1,0 +1,78 @@
+{
+ "capturedAt": "2026-10-20T12:03:37+00:00",
+ "phrase": "consultoria ambiental",
+ "readings": {
+  "peek": {
+   "phrase": "consultoria ambiental",
+   "blocked": false,
+   "personalised": false,
+   "linksRead": 8,
+   "monitorar": [
+    {
+     "position": 2,
+     "path": "/consultoria-ambiental-rj",
+     "title": "Consultoria e engenharia ambiental no Rio de Janeiro"
+    }
+   ],
+   "icons": [
+    {
+     "path": "/consultoria-ambiental-rj",
+     "iconKind": "svg",
+     "iconHash": "4f5681529f82"
+    }
+   ],
+   "top": [
+    "www.ohub.com.br/empresas/consultoria-ambiental/rj/rio-de-janeiro",
+    "www.monitorarconsultoria.com.br/consultoria-ambiental-rj",
+    "rioambiental.com.br/",
+    "ambientalconsult.com.br/",
+    "masterplan.eng.br/",
+    "etica-ambiental.com.br/",
+    "consultoriagpr.com.br/",
+    "www.metricaambiental.com.br/"
+   ],
+   "results": [
+    {
+     "position": 1,
+     "url": "https://www.ohub.com.br/empresas/consultoria-ambiental/rj/rio-de-janeiro",
+     "title": "Melhores empresas de Consultoria ambiental em Rio ..."
+    },
+    {
+     "position": 2,
+     "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj",
+     "title": "Consultoria e engenharia ambiental no Rio de Janeiro"
+    },
+    {
+     "position": 3,
+     "url": "https://rioambiental.com.br/",
+     "title": "Rio Ambiental — Engenharia e Assessoria Ambiental no Rio ..."
+    },
+    {
+     "position": 4,
+     "url": "https://ambientalconsult.com.br/",
+     "title": "Ambiental – Engenharia e Consultoria"
+    },
+    {
+     "position": 5,
+     "url": "https://masterplan.eng.br/",
+     "title": "Masterplan – Engenharia Consultiva e Ambiental"
+    },
+    {
+     "position": 6,
+     "url": "https://etica-ambiental.com.br/",
+     "title": "Ética Ambiental: Consultoria Ambiental e Gestão Ambiental"
+    },
+    {
+     "position": 7,
+     "url": "https://consultoriagpr.com.br/",
+     "title": "GPR | Consultoria Ambiental - Projetos Ambientais"
+    },
+    {
+     "position": 8,
+     "url": "https://www.metricaambiental.com.br/",
+     "title": "Métrica Ambiental: Consultoria Ambiental e Licenciamento no ..."
+    }
+   ]
+  }
+ }
+}
