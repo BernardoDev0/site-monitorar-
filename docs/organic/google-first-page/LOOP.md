@@ -25,6 +25,14 @@ Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**
 1. `curl -s http://127.0.0.1:9223/json/version` responde (Chrome dedicado aberto, perfil `%USERPROFILE%\.cache\monitorar-seo-chrome`). Senão, abrir o Chrome com os parâmetros de `scripts/gsc.py`.
 2. A inspeção de URL funciona (sessão do Search Console ativa). Se pedir login, registrar "login necessário" no log e encerrar o ciclo, sem perguntar nada ao proprietário.
 
+## Meta desde 20/10, 17:30 UTC: top 3 nas 4 frases
+
+Pedido do proprietário: "só quero que tudo esteja no mínimo top 3 em tudo, fique em loop até conseguir". Ele avisou que **não fará nenhuma ação manual** (Maps, avaliações, pedidos de link, diretórios com senha). O loop segue só com o que está sob nosso controle: o site, os sinais de indexação e os cadastros gratuitos que não pedem senha nova nem código.
+
+- A meta vale para "emissões fugitivas", "consultoria ambiental", "consultoria ambiental RJ" e "empresa de engenharia ambiental".
+- A mutação passa a valer para qualquer frase **fora do top 3**, e não só fora da página 1.
+- Para as duas frases de consultoria, o top 3 de 20/10 é a lista do oHub e Homes de empresas locais, com 103 a 728 palavras. O que as separa de nós está fora da página (Perfil da Empresa no Google, histórico, links). O relato ao proprietário diz isso sem prometer posição nem prazo.
+
 ## Foco desde 20/10, 13:40 UTC: "emissões fugitivas" e "consultoria ambiental" na página 1
 
 Pedido do proprietário: "tem que estar na primeira página em emissões fugitivas e consultoria ambiental", com o loop sempre rodando. Plano: `~/.claude/plans/foda-se-irm-o-continua-delegated-liskov.md`.
@@ -45,9 +53,10 @@ Histórico anterior (ícone, sem www, varredura de 187 frases): ver `LOOP-LOG.md
    - Cada leitura entra em `evidence/engine/readings.jsonl`, de onde sai o "N de M leituras (24 h)".
    - Para cada frase, mede o nosso pilar contra o top 3: palavras, a frase por região, os termos do nicho, os bigramas, os links internos com âncora exata, os tipos de JSON-LD e o TTFB. Grava também as perguntas do "As pessoas também perguntam".
    - Relatório em `evidence/engine/<UTC>/report.md`. Código de saída 2 = captcha: registrar e pausar 6 h.
-   - **Mutação:** se uma frase continua fora da página 1 e o relatório aponta gap concreto (termo do nicho que 2 dos 3 primeiros têm e nós não, região sem a frase ou bigrama comum do top 3), ajustar o pilar dessa frase. O ajuste segue as regras do plano `~/.claude/plans/foda-se-irm-o-continua-delegated-liskov.md` (Fase 3). Fluxo: teste falhando primeiro, build, suíte inteira e push.
+   - **Mutação:** se uma frase continua fora do top 3 e o relatório aponta gap concreto (termo do nicho que 2 dos 3 primeiros têm e nós não, região sem a frase ou bigrama comum do top 3), ajustar o pilar dessa frase. O ajuste segue as regras do plano `~/.claude/plans/foda-se-irm-o-continua-delegated-liskov.md` (Fase 3). Fluxo: teste falhando primeiro, build, suíte inteira e push.
    - **Limite:** **no máximo 1 deploy a cada 24 h** (ver a data do último commit `seo(loop)` no git).
    - **Sem gap concreto:** não mexer. A diferença está fora da página (histórico, links, Maps), e o relatório registra isso.
+   - **Pergunta do "As pessoas também perguntam" sem resposta nossa** conta como gap: a resposta entra num FAQ visível (com `FAQPage`), só com fato que tenha fonte. Fila pronta na seção "Próxima mutação".
 3. **Brave Search, 1×/dia.** `python scripts/brave-measure.py --headed --output docs/organic/brave-search-visibility/evidence/brave-<data>.json "emissões fugitivas" "consultoria ambiental"`. O proprietário também busca lá.
 4. **Índice.**
    - `python scripts/gsc.py inspect` em `/emissoes-fugitivas`, `/` e `/consultoria-ambiental`, enquanto houver cota de inspeção.
@@ -56,7 +65,7 @@ Histórico anterior (ícone, sem www, varredura de 187 frases): ver `LOOP-LOG.md
    - O campo certo é "Insira o URL do sitemap". O campo "Inspecionar qualquer URL" é outro.
    - O botão é exatamente "Enviar".
 6. **Desempenho, 1×/dia.** `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`. Anotar impressões e posição média das 2 frases.
-7. **oHub.** Enquanto o cadastro estiver pendente ou recente, abrir sem login `https://www.ohub.com.br/empresas/consultoria-ambiental/rj/rio-de-janeiro` e anotar se a Monitorar aparece na lista.
+7. **oHub.** Perfil grátis criado em 20/10 (`https://www.ohub.com.br/empresa/monitorar-consultoria-rio-de-janeiro-rj-741022`, descrição salva). 1×/dia, abrir sem login `https://www.ohub.com.br/empresas/consultoria-ambiental/rj/rio-de-janeiro` e anotar se a Monitorar aparece na lista (20/10: 41 perfis, Monitorar fora). Nunca comprar créditos nem plano.
 8. **Log.** Uma linha em `LOOP-LOG.md` com:
    - UTC;
    - cada frase como "Xº em N de M leituras (24 h)" ou "ausente em M de M", com a URL nossa;
@@ -64,7 +73,7 @@ Histórico anterior (ícone, sem www, varredura de 187 frases): ver `LOOP-LOG.md
    - os pedidos feitos;
    - a contagem de consultas;
    - a observação do ciclo.
-9. **Relatar ao proprietário só quando algo mudar.** Conta como mudança: uma frase entrar ou sair da página 1 em 2 leituras seguidas, uma URL entrar no índice ou um pedido de indexação ser aceito. O relato leva a captura de tela.
+9. **Relatar ao proprietário só quando algo mudar.** Conta como mudança: uma frase entrar ou sair da página 1 ou do top 3 em 2 leituras seguidas, uma URL entrar no índice ou um pedido de indexação ser aceito. O relato leva a captura de tela.
 10. **Regras.**
     - Guias sem edição por 3 a 4 semanas depois de indexados.
     - Nenhuma página por variação de frase.
@@ -72,6 +81,17 @@ Histórico anterior (ícone, sem www, varredura de 187 frases): ver `LOOP-LOG.md
     - Escopo de qualquer estado.
     - Canibalização de "emissões fugitivas" resolvida em 20/10 (artigo fundido no guia com 308); outra fusão só com aprovação.
 11. **Commit diário** só de documentos (`LOOP-LOG.md`, `evidence/`) em `main`.
+
+## Próxima mutação (pronta; sai no 1º ciclo depois de 21/10, 14:26 UTC, se as frases seguirem fora do top 3)
+
+Perguntas do "As pessoas também perguntam" lidas em 20/10 que o site ainda não responde com a mesma pergunta:
+
+1. **"Qual o valor de uma consultoria ambiental?"** Aparece em "consultoria ambiental" e em "consultoria ambiental RJ". Vai no FAQ de `/consultoria-ambiental-rj` e no FAQ da Home. Resposta sem preço inventado: não há tabela; o valor depende do escopo (licença ou estudo, pontos e campanhas de monitoramento, análises de laboratório, deslocamento, prazo), e a proposta comercial detalha atividades, entregas, prazos e exclusões.
+2. **"O que faz uma empresa de Engenharia Ambiental?"** Aparece em "empresa de engenharia ambiental". Hoje a Home pergunta "O que faz uma empresa de engenharia e consultoria ambiental?". Acrescentar a pergunta exata ao FAQ da Home, com a parte de engenharia (projetos, monitoramentos, ART exigida em serviços de engenharia pela Lei nº 6.496/1977, art. 1º, fato já com fonte no guia de consultoria).
+3. **"Quem pode dar consultoria ambiental?"** Aparece em "consultoria ambiental". Resposta pelo fato já com fonte no guia: a Lei nº 6.938/1981, art. 17, inciso I, exige o Cadastro Técnico Federal do Ibama para a consultoria técnica sobre problemas ecológicos e ambientais. Vai no FAQ da Home.
+4. **"Como fazer uma denúncia no INEA RJ?"** Aparece em "consultoria ambiental RJ". Vai no FAQ de `/consultoria-ambiental-rj`. Fonte: https://www.inea.rj.gov.br/ouvidoria/ (lida em 20/10). A página diz que o Fala.BR recebe denúncias, aceita fotos e vídeos e gera um protocolo; o Núcleo de Atendimento ao Público também recebe denúncias. Para denúncia anônima de crime ambiental, o Linha Verde do Disque Denúncia (https://www.disquedenuncia.org.br/post/green-line). **Sem telefone**: as páginas do INEA trazem números diferentes. Reler a fonte no dia da mutação.
+
+Fluxo da Fase 3: teste falhando primeiro (`tests/discovery.test.mjs`: perguntas no HTML do `dist/` e no `FAQPage`), build, suíte, commit `seo(loop): …`, push, `check-live`, `npm run indexnow`, e a Home e a página RJ no topo da fila de pedidos do dia seguinte.
 
 ## Rodada diária de pedidos (07:20 UTC, depois da renovação da cota)
 
@@ -102,6 +122,22 @@ Home www, `/servicos/emissoes-fugitivas`, `/conteudos/emissoes-fugitivas` e `/co
 **Inspeção completa.** A cota de inspeção é **por propriedade**, renova diariamente e acabou depois de cerca de 40 URLs. Em cada ciclo, enquanto ela durar, inspecionar as URLs do sitemap que ainda não estão em `evidence/inspection-2026-10-20.json` (87 em 20/10). `gsc.py inspect` para sozinho com `quotaExceeded`. Acrescentar os resultados ao mesmo arquivo. As não indexadas entram no fim desta fila.
 
 Registrar no log o que foi pedido e riscar daqui o que entrou no índice. A propriedade de domínio (TXT no DNS) deixou de ser necessária; se o TXT aparecer, `gsc.py verify-domain --press-verify` continua valendo.
+
+## Agendamentos (só existem com a sessão do Claude Code aberta e o PC ligado; expiram em 7 dias)
+
+| ID | Cron (hora local) | O quê |
+|---|---|---|
+| `9174657d` | `7 */3 * * *` | Ciclo de 3 h, criado em 20/10, 17:30 UTC. Prompt no bloco abaixo. |
+| `e788eb03` | `20 4 * * *` | Rodada diária de pedidos. Prompt: "Rodada diária de pedidos de indexação (D:\site-monitorar--main): seguir a fila de docs/organic/google-first-page/LOOP.md, seção "Fila de pedidos de indexação", com python scripts/gsc.py request <URLs na ordem> --output docs/organic/google-first-page/evidence/requests-<data>.json (o script para em "Cota excedida"). Primeiro /emissoes-fugitivas, depois a Home www e /consultoria-ambiental. Registrar no LOOP-LOG.md e riscar da fila o que já está no índice." |
+| `62da9d89` | `13 10 26 10 *` (uma vez) | Renova os dois acima e se reagenda 6 dias à frente. |
+
+Prompt do ciclo de 3 h:
+
+```text
+Ciclo do loop de SEO em D:\site-monitorar--main (docs/organic/google-first-page/LOOP.md, seções "Meta desde 20/10" e "Um ciclo"). Meta: top 3 em "emissões fugitivas", "consultoria ambiental", "consultoria ambiental RJ" e "empresa de engenharia ambiental"; o dono não fará nenhuma ação manual. 1) Trava: Chrome 9223 responde. 2) .venv-seo/Scripts/python -I scripts/serp_loop_engine.py run (4 leituras peek, trava de captcha e de 8 consultas/3 h embutida; saída 2 = captcha: registrar e pausar 6 h; saída 3 = trava: registrar e encerrar). 3) Ler o report.md gerado. Se uma frase segue fora do top 3 e há gap concreto (termo do nicho que 2 de 3 do top 3 têm e nós não, região sem a frase, bigrama comum, ou pergunta do "As pessoas também perguntam" sem resposta nossa — fila pronta em LOOP.md, seção "Próxima mutação"), mutar conforme a Fase 3 do plano ~/.claude/plans/foda-se-irm-o-continua-delegated-liskov.md: reler a fonte de cada fato, teste falhando primeiro, build, suíte (node --test --test-concurrency=1 tests/*.test.mjs), commit "seo(loop): …" e git push origin HEAD:main — no máximo 1 deploy a cada 24 h (git log --grep="seo(loop)" -1 --format=%cI); sem dado não verificado, sem editar texto aprovado de artigo, sem limitar a Home ao RJ, nada sobre o escritório, nunca pagar nada. Depois do deploy: node scripts/check-live.mjs, npm run indexnow, e pôr as páginas mexidas no topo da fila de pedidos. Riscar da fila "Próxima mutação" o que foi publicado. 4) Passos diários de LOOP.md se ainda não feitos hoje (Brave, sitemap, desempenho, lista do oHub RJ). 5) Linha no LOOP-LOG.md com "Xº em N de M leituras (24 h)"; nunca afirmar posição de uma leitura só. 6) Relatar ao dono (em português, curto) só se algo mudou — frase entrou/saiu da página 1 ou do top 3 em 2 leituras seguidas, URL entrou no índice, deploy feito — com a captura salva pelo motor. Commit diário só de documentos em main.
+```
+
+Se a sessão fechar, os agendamentos somem: na próxima sessão, recriar os três a partir desta seção.
 
 ## Captcha
 
