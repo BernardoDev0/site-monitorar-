@@ -2,6 +2,15 @@
 
 Meta inicial: o domínio aparecer entre os 10 primeiros resultados orgânicos do Google para **emissões fugitivas RJ**. Nenhuma posição é garantida; o ciclo mede, corrige o que está sob nosso controle e registra.
 
+## Valem desde 20/10, 22:00 UTC e passam por cima do resto deste arquivo
+
+O proprietário proibiu o uso da conta Google dele ("sem acessar pelo meu Google") e qualquer janela de navegador. A pesquisa no YouTube, no Reddit e no X está em `PESQUISA-2026-10-20.md`.
+
+- **Suspensos:** pré-condições, passos 1, 2, 4, 5 e 6 do ciclo, rodada diária de pedidos, inspeção e tudo que usa o Chrome da porta 9223 (`gsc.py`, `google-serp.py`, `serp_loop_engine.py`, `rank-sweep.py`, `ai-overview.py`). Os agendamentos da seção "Agendamentos" não existem mais (eram da sessão anterior) e não devem ser recriados.
+- **Site congelado até 17/11/2026:** sem mudar title, H1, URL, template, sitemap ou estrutura, sem artigo novo. A "Próxima mutação" espera até lá. Só correção de erro sai antes.
+- **Sem leitura de posição no Google:** HTTP puro recebe 403 e Chrome invisível sem conta recebe captcha (20/10, 21:28 UTC). Não afirmar posição sem leitura; se o proprietário mandar captura, registrar como "leitura do proprietário".
+- **Continua:** `check-live`, IndexNow quando algo mudar, Brave sem janela se possível, e pesquisa por HTTP (Reddit por RSS, transcrições do YouTube, X pela API do fxtwitter).
+
 ## Metas ampliadas (pedido do proprietário em 19/10)
 
 Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**. Quatro camadas, medidas por `scripts/rank-sweep.py` (sem personalização):
