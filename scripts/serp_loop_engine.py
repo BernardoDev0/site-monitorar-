@@ -137,6 +137,7 @@ def run(args):
         print(json.dumps({'stopped': 'query budget used', **state}))
         return 3
     readings = []
+    folder = os.path.join(args.out, now.replace(':', '').replace('+0000', 'Z').replace('-', ''))
     if not args.no_google:
         from playwright.sync_api import sync_playwright
         reader = google_reader()
@@ -145,11 +146,13 @@ def run(args):
             for i, phrase in enumerate(phrases):
                 if i:
                     time.sleep(args.pause)
-                r = reader.read(context, phrase, peek=True)
+                # Our result blocks are saved as images, the evidence that goes with each report to the owner.
+                r = reader.read(context, phrase, peek=True, shots=os.path.join(folder, 'shots'))
                 ours = [x for x in r.get('results', []) if DOMAIN in urlparse(x['url']).netloc]
                 entry = {'at': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'phrase': phrase, 'mode': 'peek', 'blocked': r.get('blocked', False),
                          'error': r.get('error'), 'position': ours[0]['position'] if ours else None, 'url': ours[0]['url'] if ours else None,
-                         'results': [x['url'] for x in r.get('results', [])], 'questions': r.get('questions', [])}
+                         'results': [x['url'] for x in r.get('results', [])], 'questions': r.get('questions', []),
+                         'shots': [i['shot'] for i in r.get('icons', []) if i.get('shot')]}
                 with open(args.ledger, 'a', encoding='utf-8') as handle:
                     handle.write(json.dumps(entry, ensure_ascii=False) + '\n')
                 readings.append(entry)
@@ -168,7 +171,6 @@ def run(args):
                                               'trend': n_of_m(load_ledger(args.ledger), entry['phrase'], entry['at']),
                                               'gap': gap(ours, ok) if ours.get('status') == 200 and ok else None,
                                               'inbound': internal_inbound(args.dist, pillar, anchors), 'ours': ours, 'top3': rivals}
-    folder = os.path.join(args.out, now.replace(':', '').replace('+0000', 'Z').replace('-', ''))
     os.makedirs(folder, exist_ok=True)
     open(os.path.join(folder, 'report.json'), 'w', encoding='utf-8').write(json.dumps(report, ensure_ascii=False, indent=1))
     open(os.path.join(folder, 'report.md'), 'w', encoding='utf-8').write(markdown(report, readings))
