@@ -5,6 +5,7 @@ import {loadRegistry,validatePublic,validatePublished,maintenanceIssues,prepareR
 import {loadSiteData} from '../scripts/page-data.mjs';
 import {topics,business} from '../scripts/seo-data.mjs';
 import {schemaFor} from '../scripts/schema.mjs';
+import {readSitemap} from '../scripts/sitemaps.mjs';
 import {checkSource,sourceHosts} from '../scripts/source-check.mjs';
 import {verificationMeta} from '../scripts/site-verification.mjs';
 const state=JSON.parse(await readFile('content/published.json','utf8'));
@@ -47,7 +48,7 @@ test('nine topics cover every article exactly once and every article links to a 
  }
 });
 test('all service anchors actually exist and all topics are in the sitemap',async()=>{
- const sitemap=await readFile('dist/sitemap.xml','utf8');
+ const sitemap=await readSitemap();
  for(const t of topics){assert.ok(sitemap.includes(t.slug+'</loc>'));const [slug,anchor]=t.service.split('#');if(anchor)assert.ok((await readFile('dist'+slug+'.html','utf8')).includes('id="'+anchor+'"'));}
 });
 test('article schema uses real dates and cover; company data matches its public identity',async()=>{

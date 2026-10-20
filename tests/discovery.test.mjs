@@ -3,8 +3,10 @@ import assert from 'node:assert/strict';
 import {readFile,access} from 'node:fs/promises';
 import {indexNowPayload} from '../scripts/indexnow.mjs';
 import {seoDescription} from '../scripts/seo-snippets.mjs';
+import {readSitemap} from '../scripts/sitemaps.mjs';
+import {loadSiteData} from '../scripts/page-data.mjs';
 const integrations=JSON.parse(await readFile('content/site-integrations.json','utf8'));
-const sitemap=await readFile('dist/sitemap.xml','utf8');
+const sitemap=await readSitemap();
 const paths=[...sitemap.matchAll(/<loc>https:\/\/www\.monitorarconsultoria\.com\.br(.*?)<\/loc>/g)].map(m=>m[1]);
 const page=path=>readFile('dist'+(path==='/'?'/index.html':path+'.html'),'utf8');
 const text=s=>s.replaceAll('&quot;','"').replaceAll('&lt;','<').replaceAll('&amp;','&');
@@ -43,6 +45,41 @@ test('IndexNow payload carries only canonical sitemap URLs',()=>{
  assert.equal(payload.urlList.length,127);
  assert.throws(()=>indexNowPayload('<loc>https://example.org/</loc>',key));
  assert.throws(()=>indexNowPayload('<urlset></urlset>',key));
+});
+const ORIGIN='https://www.monitorarconsultoria.com.br';
+const locs=xml=>[...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
+const children={page:await readFile('dist/page-sitemap.xml','utf8').catch(()=>''),post:await readFile('dist/post-sitemap.xml','utf8').catch(()=>''),category:await readFile('dist/category-sitemap.xml','utf8').catch(()=>'')};
+test('sitemap.xml is an index of the page, post and category sitemaps',async()=>{
+ const index=await readFile('dist/sitemap.xml','utf8');
+ assert.match(index,/^<\?xml[^>]*\?><sitemapindex xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+ assert.deepEqual(locs(index),['page','post','category'].map(name=>ORIGIN+'/'+name+'-sitemap.xml'));
+ for(const [name,xml] of Object.entries(children)){
+  const dates=[...xml.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map(m=>m[1]);
+  const newest=dates.reduce((a,b)=>Date.parse(b)>Date.parse(a)?b:a);
+  assert.ok(index.includes('<sitemap><loc>'+ORIGIN+'/'+name+'-sitemap.xml</loc><lastmod>'+newest+'</lastmod></sitemap>'),name+' child lastmod must be its newest URL date '+newest);
+ }
+});
+test('articles live only in the post sitemap, listings in the category sitemap, everything else in the page sitemap',async()=>{
+ const of=name=>locs(children[name]).map(u=>u.slice(ORIGIN.length)||'/');
+ const post=of('post'),category=of('category'),pages=of('page');
+ assert.ok(post.length===90&&post.every(p=>/^\/blog\/(?!pagina\/)[^/]+$/.test(p)),'post sitemap: the articles only');
+ assert.ok(category.every(p=>/^\/(blog|conteudos)(\/pagina\/\d+|\/[^/]+)?$/.test(p)&&!post.includes(p)),'category sitemap: blog pages and subjects only');
+ for(const p of ['/blog','/blog/pagina/2','/conteudos','/conteudos/emissoes-fugitivas','/conteudos/licenciamento-ambiental'])assert.ok(category.includes(p),p);
+ for(const p of ['/','/emissoes-fugitivas','/consultoria-ambiental','/consultoria-ambiental-rj','/consultoria-ambiental-sp','/consultoria-ambiental-am','/consultoria-ambiental-por-estado','/servicos/emissoes-fugitivas'])assert.ok(pages.includes(p),p);
+ const all=[...pages,...post,...category];
+ assert.equal(new Set(all).size,all.length,'no URL in two sitemaps');
+ const {rows}=await loadSiteData(false);
+ const expected=rows.filter(r=>r.canonical===r.path&&r.path!=='/404'&&!r.page?.noindex).map(r=>r.path);
+ assert.deepEqual([...all].sort(),[...expected].sort());
+});
+test('no sitemap carries priority or changefreq',async()=>{
+ for(const xml of [await readFile('dist/sitemap.xml','utf8'),...Object.values(children)])assert.doesNotMatch(xml,/<priority>|<changefreq>/);
+});
+test('IndexNow refuses a sitemap index and submits the URLs of its children',async()=>{
+ const key=integrations.INDEXNOW_KEY,index=await readFile('dist/sitemap.xml','utf8');
+ assert.throws(()=>indexNowPayload(index,key),/index/i);
+ assert.equal(indexNowPayload(sitemap,key).urlList.length,locs(sitemap).length);
+ assert.equal(locs(sitemap).length,Object.values(children).reduce((n,xml)=>n+locs(xml).length,0));
 });
 const business=JSON.parse(await readFile('content/business.json','utf8'));
 const vercel=JSON.parse(await readFile('vercel.json','utf8'));

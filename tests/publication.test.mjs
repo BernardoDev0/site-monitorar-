@@ -2,10 +2,11 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 import {readFile} from 'node:fs/promises';
 import {loadCorpus,loadRegistry,validatePublished} from '../scripts/editorial.mjs';
+import {readSitemap} from '../scripts/sitemaps.mjs';
 test('all 94 approved documents are rendered, canonical, indexable and listed in sitemap',async()=>{
  const docs=await loadCorpus(),registry=await loadRegistry();
  const receipts=JSON.parse(await readFile('content/publication-receipts.json','utf8'));
- const sitemap=await readFile('dist/sitemap.xml','utf8');
+ const sitemap=await readSitemap();
  assert.equal(docs.length,94);assert.equal(docs.filter(d=>d.type==='article').length,90);
  for(const d of docs){
   assert.deepEqual(validatePublished(d,registry,receipts[d.slug]),[],d.slug);

@@ -3,8 +3,9 @@ import {readFile,readdir} from 'node:fs/promises';import path from 'node:path';
 import {legacy} from '../scripts/routes.mjs';import {startServer} from '../scripts/serve.mjs';
 import {schemaFor} from '../scripts/schema.mjs';
 import {loadCorpus} from '../scripts/editorial.mjs';
+import {readSitemap} from '../scripts/sitemaps.mjs';
 test('legacy HTML, canonical, language and sitemap agree',async()=>{
- const sitemap=await readFile('dist/sitemap.xml','utf8');
+ const sitemap=await readSitemap();
  for(const row of legacy.filter(r=>r.path!=='/servicos/hazop')){const html=await readFile(path.join('dist',row.path==='/'?'index.html':row.path.slice(1)+'.html'),'utf8');
  assert.match(html,/<html lang="pt-BR">/);assert.match(html,/<h1[\s>]/);assert.ok(html.includes('href="https://www.monitorarconsultoria.com.br'+row.canonical+'"'));
  assert.equal(sitemap.includes('<loc>https://www.monitorarconsultoria.com.br'+row.path+'</loc>'),row.path===row.canonical);

@@ -26,7 +26,10 @@ parser.add_argument('--headed', action='store_true')
 args = parser.parse_args()
 
 sitemap = urllib.request.urlopen(ORIGIN + '/sitemap.xml', timeout=20).read().decode('utf-8')
-live = set(re.findall(r'<loc>(.*?)</loc>', sitemap))
+# /sitemap.xml is an index of the page, post and category sitemaps.
+for child in re.findall(r'<sitemap><loc>(.*?)</loc>', sitemap):
+    sitemap += urllib.request.urlopen(child, timeout=20).read().decode('utf-8')
+live = set(re.findall(r'<url><loc>(.*?)</loc>', sitemap))
 queue = [p for p in (args.paths if args.paths is not None else PRIORITY) if p not in args.skip]
 unknown = [p for p in queue if (ORIGIN + p if p != '/' else ORIGIN + '/') not in live]
 if unknown:

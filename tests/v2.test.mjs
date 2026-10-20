@@ -6,6 +6,7 @@ import path from 'node:path';
 import {loadCorpus,validateManifest,publicDocument,readPause} from '../scripts/editorial.mjs';
 import {editorialPages} from '../scripts/editorial-pages.mjs';
 import {startServer} from '../scripts/serve.mjs';
+import {readSitemap} from '../scripts/sitemaps.mjs';
 
 test('pagination: 0, 1, 12, 13, 25 articles; no service mixed into blog',()=>{
  for(const n of [0,1,12,13,25]){
@@ -51,6 +52,6 @@ test('published blog is indexable and search remains noindex; normalized index a
   assert.ok(index.some(d=>d.slug==='/servicos/drager'));
   assert.equal(index.filter(d=>d.slug.startsWith('/blog/')).length,90);
   assert.ok(index.some(d=>d.slug==='/blog/o-que-sao-emissoes-fugitivas'));
-  const sitemap=await readFile('dist/sitemap.xml','utf8');for(const route of ['/blog','/conteudos','/busca'])assert.equal(sitemap.includes(route+'</loc>'),route!=='/busca');
+  const sitemap=await readSitemap();for(const route of ['/blog','/conteudos','/busca'])assert.equal(sitemap.includes(route+'</loc>'),route!=='/busca');
  }finally{await new Promise(r=>server.close(r));}
 });

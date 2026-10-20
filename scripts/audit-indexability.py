@@ -46,7 +46,10 @@ def read(route,agent='Googlebot'):
 
 xml,status,_,mime,_=read('/sitemap.xml')
 ns={'s':'http://www.sitemaps.org/schemas/sitemap/0.9'}
-entries=ET.fromstring(xml).findall('s:url',ns)
+# /sitemap.xml is an index of the page, post and category sitemaps: read the children.
+root=ET.fromstring(xml)
+children=[e.findtext('s:loc',namespaces=ns) for e in root.findall('s:sitemap',ns)]
+entries=[e for child in children for e in ET.fromstring(read(urlsplit(child).path)[0]).findall('s:url',ns)] if children else root.findall('s:url',ns)
 locations=[e.findtext('s:loc',namespaces=ns) for e in entries]
 modified={e.findtext('s:loc',namespaces=ns):e.findtext('s:lastmod',namespaces=ns) for e in entries}
 problems=[]
@@ -54,6 +57,7 @@ def require(condition,message):
     if not condition:problems.append(message)
 require(status==200 and 'application/xml' in mime,'Sitemap response/MIME')
 require(len(locations)==len(set(locations)),'Duplicate sitemap entries')
+require([urlsplit(c).path for c in children]==['/page-sitemap.xml','/post-sitemap.xml','/category-sitemap.xml'],'Sitemap index of page, post and category sitemaps')
 require(all(ORIGIN+slug in locations for slug in articles),'Missing published article in sitemap')
 require(all(urlsplit(url).netloc=='www.monitorarconsultoria.com.br' for url in locations),'Unexpected canonical host')
 robots=read('/robots.txt')[0]
