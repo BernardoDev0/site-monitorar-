@@ -5,7 +5,7 @@ export function editorialPages(documents,preview=false) {
  const base={body:[],source_urls:[],author:null,reviewer:null,reviewed_at:null,substantive_updated_at:null,preview};
  const pages=[];
  const count=Math.max(1,Math.ceil(articles.length/12));
- for(let n=1;n<=count;n++)pages.push({...base,id:'blog-'+n,slug:n===1?'/blog':'/blog/pagina/'+n,type:'listing',title:n===1?'Conhecimento para decisões ambientais':'Blog: página '+n,summary:'Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.',entries:articles.slice((n-1)*12,n*12).map(entryOf),pageNumber:n,pageCount:count,noindex:!articles.length});
+ for(let n=1;n<=count;n++)pages.push({...base,id:'blog-'+n,slug:n===1?'/blog':'/blog/pagina/'+n,type:'listing',title:n===1?'Conhecimento para decisões ambientais':'Blog: página '+n,summary:'Conceitos, critérios e perguntas para preparar o seu projeto. Explore os artigos por tema e aprofunde o que importa para a sua operação.'+(n>1?' Página '+n+' de '+count+'.':''),entries:articles.slice((n-1)*12,n*12).map(entryOf),pageNumber:n,pageCount:count,noindex:!articles.length});
  const collections=topics.map(topic=>{
   const entries=articles.filter(d=>d.topic_cluster===topic.id);
   const existing=documents.find(d=>d.slug===topic.slug);

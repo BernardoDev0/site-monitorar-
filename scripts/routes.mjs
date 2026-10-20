@@ -13,7 +13,7 @@ export const legacy=[
  ['/sobre/missao','Missão | Monitorar Consultoria','Missão e valores apresentados pela Monitorar Consultoria.','/sobre'],
  ['/sobre/equipe','Equipe | Monitorar Consultoria','Conheça a atuação da equipe da Monitorar Consultoria.','/sobre'],
  ['/servicos','Serviços de engenharia e consultoria ambiental | Monitorar','Consulte os serviços de meio ambiente, segurança do trabalho e equipamentos apresentados pela Monitorar.'],
- ['/servicos/meio-ambiente','Consultoria ambiental | Monitorar Consultoria','Conheça as áreas de atuação ambiental da Monitorar, incluindo qualidade do ar, LDAR, ruído e licenciamento.','/servicos'],
+ ['/servicos/meio-ambiente','Meio ambiente | Monitorar Consultoria','Conheça as áreas de atuação ambiental da Monitorar, incluindo qualidade do ar, LDAR, ruído e licenciamento.','/servicos'],
  ['/servicos/seguranca','Segurança do trabalho | Monitorar Consultoria','Serviços de gestão de SMS, HAZOP, auditorias e treinamentos apresentados pela Monitorar Consultoria.'],
  ['/servicos/hazop','HAZOP | Monitorar Consultoria','Informações sobre análise de operabilidade e perigos e contato com a Monitorar.','/servicos/seguranca'],
  ['/servicos/auditorias','Auditorias | Monitorar Consultoria','Serviços de auditoria e avaliação de sistemas de gestão apresentados pela Monitorar.','/servicos/seguranca'],

@@ -3,7 +3,7 @@
 Drives a Chrome that the property owner signed in to once, started with a dedicated profile and a local debug port:
   chrome.exe --user-data-dir=%USERPROFILE%\\.cache\\monitorar-seo-chrome --remote-debugging-port=9223 https://search.google.com/search-console
 Commands:
-  inspect URL...   index status, last crawl and canonicals of each URL (read-only)
+  inspect URL...   index status, last crawl and canonicals of each URL (read-only; stops when the property's daily inspection quota is used up)
   request URL...   inspect, then ask Google to index the URL (stops when the daily quota is exhausted)
   queries          top queries of the Performance report (read-only)
   verify-domain    domain property (DNS TXT, authorised by the owner on 19/10): print the TXT record to publish, or press VERIFICAR once it is in the DNS
@@ -30,6 +30,10 @@ def page_text(page):
     return ICONS.sub('', page.inner_text('body').split('PrivacidadeTermos', 1)[-1])
 
 
+class QuotaExceeded(Exception):
+    """The property's daily URL-inspection quota is used up ("Cota excedida"); it renews the next day."""
+
+
 def open_inspection(context, url, resource=RES):
     page = context.new_page()
     page.goto(f'https://search.google.com/search-console?resource_id={resource}', wait_until='domcontentloaded', timeout=60000)
@@ -37,7 +41,15 @@ def open_inspection(context, url, resource=RES):
     box.wait_for(timeout=30000)
     box.click(); box.fill(url); page.keyboard.press('Enter')
     heading = page.get_by_text('Indexação das páginas', exact=True).first  # no string eval: the page enforces Trusted Types
-    heading.wait_for(timeout=120000)
+    for _ in range(60):  # the result, or the dialog that ends every inspection until the quota renews
+        if 'Cota excedida' in page_text(page):
+            page.close()
+            raise QuotaExceeded('URL inspection quota of the property is used up; it renews daily')
+        if heading.is_visible():
+            break
+        page.wait_for_timeout(2000)
+    else:
+        heading.wait_for(timeout=1000)  # neither appeared: fail with Playwright's own timeout error
     page.wait_for_timeout(1500)
     if 'Último rastreamento' not in page_text(page):  # indexed URLs start collapsed, excluded ones expanded
         heading.click(timeout=10000)
@@ -150,7 +162,10 @@ if __name__ == '__main__':
             print(json.dumps(report['results'], ensure_ascii=False))
         else:
             for url in args.urls:
-                outcome = (request_indexing if args.command == 'request' else inspect)(context, url, resource)
+                try:
+                    outcome = (request_indexing if args.command == 'request' else inspect)(context, url, resource)
+                except QuotaExceeded as error:
+                    outcome = {'url': url, 'quotaExceeded': True, 'error': str(error), 'readBefore': len(report['results'])}
                 report['results'].append(outcome)
                 print(json.dumps(outcome, ensure_ascii=False), flush=True)
                 if outcome.get('quotaExceeded'):

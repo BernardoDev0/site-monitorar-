@@ -395,3 +395,25 @@ test('static pages move their sitemap date when their source changes',async()=>{
   assert.ok((lastmods[path]||'')>=git.stdout.trim(),path+': sitemap date '+lastmods[path]+' is older than its last change '+git.stdout.trim());
  }
 });
+const canonicalOf=html=>html.match(/<link rel="canonical" href="https:\/\/www\.monitorarconsultoria\.com\.br([^"]*)"/)?.[1];
+test('internal links point only at canonical pages',async()=>{
+ const targets=new Set();
+ for(const path of paths)for(const m of (await page(path)).matchAll(/<a[^>]+href="(\/[^"#?]*)/g))targets.add(m[1]);
+ for(const target of targets){
+  const html=await page(target).catch(()=>null);
+  if(!html)continue;
+  const canonical=canonicalOf(html);
+  assert.ok(!canonical||canonical===target,target+' is linked but declares '+canonical+' as canonical');
+ }
+});
+test('the old environment services URL no longer competes for consultoria ambiental',async()=>{
+ assert.equal(title(await page('/servicos/meio-ambiente')),'Meio ambiente | Monitorar Consultoria');
+});
+test('every sitemap page has its own meta description',async()=>{
+ const seen=new Map();
+ for(const path of paths){
+  const description=text((await page(path)).match(/<meta name="description" content="([^"]*)"/)[1]);
+  assert.ok(!seen.has(description),path+' repeats the description of '+seen.get(description));
+  seen.set(description,path);
+ }
+});

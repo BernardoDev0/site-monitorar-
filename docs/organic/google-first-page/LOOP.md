@@ -54,16 +54,22 @@ Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgâ
 
 ## Fila de pedidos de indexação (cota de cerca de 10 por dia, **por conta**, não por propriedade)
 
-Em 19/10 a cota acabou. No primeiro ciclo de 20/10, nesta ordem, inspecionar e pedir só o que não estiver indexado ou estiver com versão antiga:
+Ordem definida pela inspeção de 20/10 (`evidence/inspection-2026-10-20.json`). Pedir só o que continuar fora do índice:
 
-1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; o Google ainda não o conhece). **Primeiro de todos.**
-2. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: o registro do sem www ainda é de 10/10; o pedido faz o Google ver o 308 e descartar a entrada antiga.
-3. ~~`https://www.monitorarconsultoria.com.br/` (Home www)~~: **indexada em 19/10**, com a canônica em www (rastreio de 19/10 16:09). Não precisa de pedido.
-4. `https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas` (ganhou o link para o guia no topo)
-5. `https://www.monitorarconsultoria.com.br/servicos/emissoes-fugitivas`
-6. `https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas`
-7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental`
-8. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj`
+1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; "Detectada, mas não indexada"). **Primeiro de todos.**
+2. `https://www.monitorarconsultoria.com.br/consultoria-ambiental` (guia; "Detectada, mas não indexada")
+3. `https://www.monitorarconsultoria.com.br/servicos/ruido-extramuros` (serviço; "Detectada, mas não indexada")
+4. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: o registro do sem www ainda é de 10/10, do tempo do redirecionamento 307. O pedido faz o Google ver o 308 e descartar a entrada antiga.
+5. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado` ("O Google não reconhece o URL")
+6. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
+7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
+8. `https://www.monitorarconsultoria.com.br/blog/planejamento-de-campanha-de-emissoes-fugitivas`
+9. `https://www.monitorarconsultoria.com.br/blog/componentes-sem-acesso-em-programas-ldar`
+10. `https://www.monitorarconsultoria.com.br/politica-privacidade`, só se sobrar cota.
+
+Home www, `/servicos/emissoes-fugitivas`, `/conteudos/emissoes-fugitivas`, `/blog/o-que-sao-emissoes-fugitivas` e `/consultoria-ambiental-rj` **já estão indexadas** (rastreio em 19/10).
+
+**Inspeção completa.** A cota de inspeção é **por propriedade**, renova diariamente e acabou depois de cerca de 40 URLs. Em cada ciclo, enquanto ela durar, inspecionar as URLs do sitemap que ainda não estão em `evidence/inspection-2026-10-20.json` (87 em 20/10). `gsc.py inspect` para sozinho com `quotaExceeded`. Acrescentar os resultados ao mesmo arquivo. As não indexadas entram no fim desta fila.
 
 Registrar no log o que foi pedido e riscar daqui o que entrou no índice. A propriedade de domínio (TXT no DNS) deixou de ser necessária; se o TXT aparecer, `gsc.py verify-domain --press-verify` continua valendo.
 

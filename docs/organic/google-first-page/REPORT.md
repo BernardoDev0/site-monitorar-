@@ -234,3 +234,43 @@ Pedido do proprietário: o ícone sumiu de páginas do blog depois de ter aparec
 3. O restante do kit de autoridade.
 
 Foram 6 consultas ao Google entre 23:50 e 23:55 UTC, sem captcha. O próximo ciclo faz no máximo 2, para ficar dentro de 10 em 3 horas.
+
+
+## Auditoria profunda (20/10, 00:00–01:10 UTC)
+
+Pedido do proprietário: "se cavar mais a fundo, vai ver que o Google está travando muita coisa".
+
+**Travas encontradas e o que foi feito:**
+
+| Trava | Evidência | Feito |
+|---|---|---|
+| Google com o sitemap de 18/10 | Search Console: última leitura 18/10, 121 URLs, sem os 2 guias, RJ, SP, AM e por estado | Sitemap reenviado duas vezes; `lastmod` nas 127 URLs (`6e4d9df`); IndexNow |
+| Páginas detectadas e não indexadas | Inspeção de 40 URLs: 31 indexadas, **8 "Detectada, mas não indexada no momento"** (os 2 guias, SP, AM, `/servicos/ruido-extramuros`, 2 artigos, privacidade) e 1 desconhecida (`/consultoria-ambiental-por-estado`) | Fila nova no LOOP.md; as outras 87 serão inspecionadas quando a cota renovar |
+| Menu levando a 6 cópias em todas as páginas | `/sobre/historia`, `/sobre/missao`, `/sobre/equipe`, `/servicos/meio-ambiente`, `/servicos/auditorias`, `/servicos/treinamentos`: 200 com canonical para a página-mãe | O menu agora usa as URLs canônicas com âncora (`/sobre#historia`, `/servicos/seguranca#auditorias`…); as 6 URLs continuam respondendo. Teste: nenhum link interno para página não canônica |
+| `/servicos/meio-ambiente` com o título "Consultoria ambiental" | Página que se declara cópia de `/servicos` disputando o nome do guia `/consultoria-ambiental` | Título "Meio ambiente \| Monitorar Consultoria" |
+| Descrição repetida nas 8 páginas do blog | `/blog` e `/blog/pagina/2` a `8` | "Página N de M" nas páginas 2 a 8; teste de descrição única no sitemap |
+| Registro do sem www de 10/10 | Inspeção: rastreado em 10/10 durante o redirecionamento 307 (temporário); o Google escolheu o próprio sem www como canônica | Pedido de rastreio na fila (4º) |
+| `gsc.py` preso no aviso de cota | "Cota excedida": cada URL esperava 120 s | `gsc.py` reconhece o aviso e para em segundos (`quotaExceeded`) |
+
+**Rastreio pelo Search Console** (Configurações → Estatísticas de rastreamento, até 17/10):
+- 426 pedidos em 90 dias, 99% com resposta 200, tempo médio de 174 ms.
+- Status do host: "teve problemas nos últimos 90 dias", hoje com taxa de falhas aceitável em robots.txt, DNS e conexão.
+- Rastreio baixo é sinal de pouca demanda, não de servidor ruim.
+
+**O que pesa e não é defeito do site** (Wayback):
+- 2010 a 2022: site antigo de poucas páginas, a Home sem mudança por 12 anos.
+- 2018: hospedagem suspensa.
+- Ago/2024 a fev/2025 (último registro): só a imagem "Site em Construção".
+- O site atual, com SEO, está no ar desde 18/10/2026.
+- Para o Google, o conteúdo tem 2 dias. A idade do domínio sem conteúdo nem links não dá autoridade.
+
+**Conferido e limpo:**
+- 127 páginas com 200, `index, follow`, canonical própria, 1 H1, JSON-LD válido e sem `X-Robots-Tag`.
+- 135 links internos e 42 imagens sem erro.
+- Renderização como Googlebot celular: o JavaScript não altera robots, canonical nem título e não dá erro.
+- http, sem www, barra final, `.html` e `index.html` redirecionam.
+- URLs de 2013–2016 redirecionam (3 a 4 saltos). Só `/Empresa.html` e `/engenharia-civil.html` ficam 404.
+- Sem ação manual, problema de segurança ou remoção.
+- Páginas e Links do Search Console ainda "em processamento": a propriedade www tem dados só desde 17/10.
+
+**Curtas, sem inventar texto:** `/servicos/drager` (92 palavras), `/clientes` (89), `/contato`, `/depoimentos`, `/trabalhe-conosco`, `/conteudos/treinamentos`.
