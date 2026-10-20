@@ -59,7 +59,7 @@ const modifiedAt=row=>publicModifiedAt(row.page)||row.updated||newest((row.page?
 const children=sitemapGroups.map(name=>{const entries=urls.filter(r=>sitemapGroup(r)===name).map(r=>({loc:origin+r.path,lastmod:modifiedAt(r)}));return {name,entries,lastmod:newest(entries.map(e=>e.lastmod))};});
 for(const child of children)await writeFile(out+'/'+child.name+'-sitemap.xml',urlsetXml(child.entries));
 await writeFile(out+'/sitemap.xml',sitemapIndexXml(children.map(child=>({loc:origin+'/'+child.name+'-sitemap.xml',lastmod:child.lastmod}))));
-await writeFile(out+'/robots.txt',preview?'User-agent: *\nDisallow: /\n':(await readFile('public/robots.txt','utf8')).trim()+'\n\nSitemap: '+origin+'/sitemap.xml\n');
+await writeFile(out+'/robots.txt',preview?'User-agent: *\nDisallow: /\n':(await readFile('public/robots.txt','utf8')).replace(/\r\n/g,'\n').trim()+'\n\nSitemap: '+origin+'/sitemap.xml\n');
 // IndexNow ownership key: a public identifier served only by the public build.
 if(!preview&&integrations.INDEXNOW_KEY){
  if(!/^[A-Za-z0-9-]{8,128}$/.test(integrations.INDEXNOW_KEY))throw new Error('Invalid INDEXNOW_KEY');
