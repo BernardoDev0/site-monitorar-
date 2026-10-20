@@ -1,13 +1,13 @@
 import {readFileSync} from 'node:fs';
 const guideUpdated=name=>JSON.parse(readFileSync(new URL(`../content/${name}-guia.json`,import.meta.url),'utf8')).updated;
 // Last change to each page's public content, for the sitemap lastmod (never the build time). The guides keep theirs in their JSON.
-const updated={'/':'2026-10-19','/sobre':'2026-10-18','/servicos':'2026-10-19','/servicos/seguranca':'2026-10-19','/servicos/drager':'2026-10-19',
+const updated={'/':'2026-10-20','/sobre':'2026-10-18','/servicos':'2026-10-19','/servicos/seguranca':'2026-10-19','/servicos/drager':'2026-10-19',
  '/consultoria-ambiental-rj':'2026-10-19','/consultoria-ambiental-sp':'2026-10-19','/consultoria-ambiental-am':'2026-10-19','/consultoria-ambiental-por-estado':'2026-10-19',
  '/emissoes-fugitivas':guideUpdated('emissoes-fugitivas'),'/consultoria-ambiental':guideUpdated('consultoria-ambiental'),
  '/clientes':'2026-10-18','/depoimentos':'2026-10-18','/trabalhe-conosco':'2026-10-18','/contato':'2026-10-18','/politica-privacidade':'2026-10-18'};
 
 export const legacy=[
- ['/', 'Consultoria e engenharia ambiental | Monitorar Consultoria','Consultoria e engenharia ambiental em qualquer estado, com foco em RJ, SP e Amazonas. Sede no Rio de Janeiro. Emissões fugitivas, LDAR, ar e ruído.'],
+ ['/', 'Engenharia e consultoria ambiental | Monitorar Consultoria','Empresa de engenharia e consultoria ambiental com sede no RJ. Atende qualquer estado, com foco em RJ, SP e Amazonas: emissões fugitivas, LDAR, ar e ruído.'],
  ['/sobre','Sobre a Monitorar Consultoria','Conheça a Monitorar Consultoria, sua história e atuação em meio ambiente e segurança do trabalho.'],
  ['/sobre/historia','História | Monitorar Consultoria','História e trajetória apresentadas pela Monitorar Consultoria.','/sobre'],
  ['/sobre/missao','Missão | Monitorar Consultoria','Missão e valores apresentados pela Monitorar Consultoria.','/sobre'],
@@ -22,7 +22,7 @@ export const legacy=[
  ['/consultoria-ambiental-sp','Consultoria ambiental em São Paulo | Monitorar Consultoria','Consultoria e engenharia ambiental em São Paulo, um dos estados de atuação principal da Monitorar: emissões fugitivas, LDAR, ar, ruído e licenciamento ambiental.'],
  ['/consultoria-ambiental-am','Consultoria ambiental no Amazonas | Monitorar Consultoria','Consultoria e engenharia ambiental no Amazonas, um dos estados de atuação principal da Monitorar: emissões fugitivas, LDAR, ar, ruído e licenciamento ambiental.'],
  ['/emissoes-fugitivas','Emissões fugitivas: o que são, fontes e LDAR | Monitorar','Emissões fugitivas: o que são, de onde vêm, como detectar e controlar com LDAR e o inventário de GEE no RJ, com fontes oficiais (CONAMA, EPA, IPCC e INEA).'],
- ['/consultoria-ambiental','Consultoria ambiental: guia para escolher | Monitorar Consultoria','O que é consultoria ambiental, o que uma empresa de engenharia ambiental faz, quando contratar e como escolher, com a Lei 6.938 e a CONAMA 237.'],
+ ['/consultoria-ambiental','O que é consultoria ambiental e como escolher | Monitorar','O que é consultoria ambiental, o que uma empresa de engenharia ambiental faz, quando contratar e como escolher, com a Lei 6.938 e a CONAMA 237.'],
  ['/consultoria-ambiental-por-estado','Consultoria ambiental por estado | Monitorar Consultoria','Consultoria ambiental em qualquer estado, com atuação principal no RJ, SP e Amazonas. Sede no Rio de Janeiro. Veja o órgão ambiental de cada estado.'],
  ['/servicos/drager','Equipamentos Dräger | Monitorar Consultoria','Conheça a área de equipamentos apresentada pela Monitorar e consulte o catálogo disponível.'],
  ['/clientes','Clientes | Monitorar Consultoria','Conheça os clientes apresentados no site institucional da Monitorar Consultoria.'],

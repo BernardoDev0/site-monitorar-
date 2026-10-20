@@ -228,8 +228,8 @@ test('no published page mentions the office arrangement',async()=>{
 });
 test('the home page no longer limits the company to Rio de Janeiro',async()=>{
  const html=await page('/');
- assert.equal(title(html),'Consultoria e engenharia ambiental | Monitorar Consultoria');
- assert.equal(text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,'')),'Engenharia e consultoria ambiental em todo o Brasil');
+ assert.equal(title(html),'Engenharia e consultoria ambiental | Monitorar Consultoria');
+ assert.equal(text(html.match(/<h1[^>]*>(.*?)<\/h1>/s)[1].replace(/<[^>]+>/g,'')),'Empresa de engenharia e consultoria ambiental em todo o Brasil');
  const description=text(html.match(/<meta name="description" content="([^"]*)"/)[1]);
  assert.ok(description.length<=160&&description.length>=100,'description '+description.length);
  assert.match(description,/qualquer estado/);assert.match(description,/RJ, SP e Amazonas/);
@@ -361,11 +361,11 @@ test('the old emissions Q&A address redirects once to the guide',()=>{
 test('the consultoria ambiental guide says what it is, what it does and how to choose, with the law quoted',async()=>{
  assert.ok(paths.includes(consultingPath));
  const html=await page(consultingPath);
- assert.equal(title(html),'Consultoria ambiental: guia para escolher | Monitorar Consultoria');
+ assert.equal(title(html),'O que é consultoria ambiental e como escolher | Monitorar');
  const description=metaDescription(html);
  assert.ok(description.length>=100&&description.length<=160,'description '+description.length);
  assert.match(description,/consultoria ambiental/i);assert.match(description,/engenharia ambiental/i);
- assert.match(h1Of(html),/^Consultoria e engenharia ambiental/);
+ assert.match(h1Of(html),/^Consultoria ambiental: o que é, o que faz e como escolher/);
  assert.ok(words(html)>=1300,'words '+words(html));
  const body=html.split('<div id="root">')[1];
  const h2=headings(html,'h2');
@@ -387,7 +387,9 @@ test('the consultoria ambiental guide is linked, in the page content, from the h
 });
 test('the home and the Rio de Janeiro page carry the commercial phrases in their headings and link both guides',async()=>{
  const home=await page('/'),rj=await page('/consultoria-ambiental-rj');
- assert.ok(headings(home,'h2').includes('Empresa de engenharia e consultoria ambiental'),'home H2');
+ assert.match(h1Of(home),/^Empresa de engenharia e consultoria ambiental/,'home H1');
+ assert.ok(!headings(home,'h2').some(h=>h.startsWith('Empresa de engenharia e consultoria ambiental')),'no H2 repeats the H1');
+ assert.ok(headings(home,'h2').includes('Consultoria ambiental para empresas de todo o Brasil'),'home H2');
  assert.ok(headings(rj,'h2').includes('Empresa de engenharia ambiental e segurança do trabalho no Rio de Janeiro'),'RJ H2');
  assert.match(rj.split('<div id="root">')[1],/empresa de consultoria e engenharia ambiental/i);
  assert.ok((rj.match(/<img[^>]+src="\/clientes\//g)||[]).length>=8,'RJ client logos');
@@ -542,4 +544,24 @@ test('the consultoria ambiental guide links the home and the RJ page with their 
  const main=mainOf(await page('/consultoria-ambiental'));
  assert.ok(main.includes('href="/">empresa de engenharia e consultoria ambiental</a>'));
  assert.ok(main.includes('href="/consultoria-ambiental-rj">consultoria ambiental no RJ</a>'));
+});
+test('each pillar title and H1 lead with its keyword',async()=>{
+ const pillars=[['/','consultoria ambiental','Engenharia e consultoria ambiental | Monitorar Consultoria',/^Empresa de engenharia e consultoria ambiental/],
+  ['/consultoria-ambiental','o que é consultoria ambiental','O que é consultoria ambiental e como escolher | Monitorar',/^Consultoria ambiental: o que é/],
+  ['/consultoria-ambiental-rj','consultoria ambiental no RJ','Consultoria ambiental no RJ | Monitorar Consultoria',/^Consultoria e engenharia ambiental no Rio de Janeiro$/],
+  ['/emissoes-fugitivas','emissões fugitivas','Emissões fugitivas: o que são, fontes e LDAR | Monitorar',/^Emissões fugitivas/]];
+ for(const [path,keyword,expected,h1] of pillars){
+  const html=await page(path),t=title(html);
+  assert.equal(t,expected,path);
+  assert.ok(t.toLowerCase().includes(keyword.toLowerCase())||t.toLowerCase().startsWith('engenharia e consultoria ambiental'),path+' keyword in title');
+  assert.match(h1Of(html),h1,path);
+  const description=metaDescription(html);
+  assert.ok(description.length<=160,path+' description '+description.length);
+ }
+ assert.match(metaDescription(await page('/')),/^Empresa de engenharia e consultoria ambiental/);
+});
+test('home keeps the any-state scope next to the H1',async()=>{
+ const main=text(mainOf(await page('/')));
+ assert.match(h1Of(await page('/')),/em todo o Brasil$/);
+ for(const phrase of ['qualquer estado do Brasil','no RJ, em São Paulo e no Amazonas'])assert.ok(main.includes(phrase),phrase);
 });

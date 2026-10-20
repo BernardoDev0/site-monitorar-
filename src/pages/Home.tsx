@@ -77,7 +77,7 @@ export default function Home() {
     <div className="erm-home">
       {/* Hero Section */}
       <StaticHero>
-        <h1 data-enter>Engenharia e consultoria ambiental em todo o Brasil</h1>
+        <h1 data-enter>Empresa de engenharia e consultoria ambiental em todo o Brasil</h1>
         <p className="home-brand-line">As melhores soluções para o seu negócio – Vamos trabalhar juntos?</p>
         <Reveal delayMs={80}>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed opacity-90">
@@ -158,7 +158,7 @@ export default function Home() {
       {/* Company summary in the words people search for; links the two guides and the state pages */}
       <section className="site-wrap section-space home-company">
         <p className="eyebrow">Consultoria ambiental</p>
-        <h2>Empresa de engenharia e consultoria ambiental</h2>
+        <h2>Consultoria ambiental para empresas de todo o Brasil</h2>
         <p>A Monitorar Consultoria é uma empresa de engenharia e consultoria ambiental com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
         <p>Nossos serviços de consultoria ambiental incluem monitoramento de emissões fugitivas e LDAR, qualidade do ar, PTS e Procon Fumaça Preta, ruído extramuros, áreas impactadas com avaliação geoambiental, licenciamento ambiental, auditoria e certificação ambiental e monitoramento de efluentes.</p>
         <p>Para entender o que faz uma empresa de consultoria ambiental e como escolher uma, leia o <a className="text-link" href="/consultoria-ambiental">guia de consultoria ambiental</a>. Veja também a consultoria ambiental <a className="text-link" href="/consultoria-ambiental-rj">no Rio de Janeiro</a>, <a className="text-link" href="/consultoria-ambiental-sp">em São Paulo</a> e <a className="text-link" href="/consultoria-ambiental-am">no Amazonas</a>, e o <a className="text-link" href="/emissoes-fugitivas">guia de emissões fugitivas e LDAR</a>.</p>
