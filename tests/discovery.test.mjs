@@ -361,3 +361,37 @@ test('the organization data on every page names the founding year and the areas 
   for(const name of ['Rio de Janeiro','São Paulo','Amazonas','Brasil'])assert.ok(names.includes(name),path+' '+name);
  }
 });
+const lastmods=Object.fromEntries([...sitemap.matchAll(/<url><loc>https:\/\/www\.monitorarconsultoria\.com\.br(.*?)<\/loc>(?:<lastmod>(.*?)<\/lastmod>)?<\/url>/g)].map(m=>[m[1],m[2]]));
+test('every sitemap URL carries the date of its last public change',async()=>{
+ const today=new Date().toISOString().slice(0,10);
+ assert.equal(Object.keys(lastmods).length,paths.length);
+ for(const path of paths){
+  assert.ok(lastmods[path]&&Number.isFinite(Date.parse(lastmods[path])),'no lastmod for '+path);
+  assert.ok(lastmods[path].slice(0,10)<=today,path+' '+lastmods[path]);
+ }
+ for(const name of ['emissoes-fugitivas-guia','consultoria-ambiental-guia']){
+  const guide=JSON.parse(await readFile('content/'+name+'.json','utf8'));
+  assert.equal(lastmods[guide.path],guide.updated);
+ }
+});
+test('a listing is dated by the newest article it lists',async()=>{
+ for(const path of ['/blog','/blog/pagina/8','/conteudos/qualidade-do-ar']){
+  const listed=[...new Set([...mainOf(await page(path)).matchAll(/href="(\/blog\/(?!pagina\/)[^"#]+)"/g)].map(m=>m[1]))];
+  assert.ok(listed.length,path);
+  const newest=listed.map(p=>lastmods[p]).reduce((a,b)=>Date.parse(b)>Date.parse(a)?b:a);
+  assert.equal(lastmods[path],newest,path);
+ }
+});
+test('static pages move their sitemap date when their source changes',async()=>{
+ const {spawnSync}=await import('node:child_process');
+ const services=['src/pages/Services.tsx'],state=['src/pages/ConsultoriaEstado.tsx','src/lib/environmental-services.ts','content/regions.json','content/topics.json'];
+ const sources={'/':['src/pages/Home.tsx','src/lib/clients.ts','src/lib/contact.ts'],'/sobre':['src/pages/About.tsx'],'/servicos':services,'/servicos/seguranca':services,'/servicos/drager':services,
+  '/consultoria-ambiental-rj':['src/pages/ConsultoriaAmbientalRJ.tsx','src/lib/environmental-services.ts','content/topics.json'],'/consultoria-ambiental-sp':state,'/consultoria-ambiental-am':state,
+  '/consultoria-ambiental-por-estado':['src/pages/ConsultoriaPorEstado.tsx','content/regions.json'],'/clientes':['src/pages/Clients.tsx'],'/depoimentos':['src/pages/Testimonials.tsx'],
+  '/trabalhe-conosco':['src/pages/Careers.tsx','src/lib/contact.ts'],'/contato':['src/pages/Contact.tsx','src/lib/contact.ts'],'/politica-privacidade':['src/pages/Privacy.tsx','src/lib/contact.ts']};
+ for(const [path,files] of Object.entries(sources)){
+  const git=spawnSync('git',['log','-1','--format=%cs','--',...files],{encoding:'utf8'});
+  if(git.status!==0)return;
+  assert.ok((lastmods[path]||'')>=git.stdout.trim(),path+': sitemap date '+lastmods[path]+' is older than its last change '+git.stdout.trim());
+ }
+});

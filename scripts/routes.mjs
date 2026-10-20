@@ -1,3 +1,11 @@
+import {readFileSync} from 'node:fs';
+const guideUpdated=name=>JSON.parse(readFileSync(new URL(`../content/${name}-guia.json`,import.meta.url),'utf8')).updated;
+// Last change to each page's public content, for the sitemap lastmod (never the build time). The guides keep theirs in their JSON.
+const updated={'/':'2026-10-19','/sobre':'2026-10-18','/servicos':'2026-10-19','/servicos/seguranca':'2026-10-19','/servicos/drager':'2026-10-19',
+ '/consultoria-ambiental-rj':'2026-10-19','/consultoria-ambiental-sp':'2026-10-19','/consultoria-ambiental-am':'2026-10-19','/consultoria-ambiental-por-estado':'2026-10-19',
+ '/emissoes-fugitivas':guideUpdated('emissoes-fugitivas'),'/consultoria-ambiental':guideUpdated('consultoria-ambiental'),
+ '/clientes':'2026-10-18','/depoimentos':'2026-10-18','/trabalhe-conosco':'2026-10-18','/contato':'2026-10-18','/politica-privacidade':'2026-10-18'};
+
 export const legacy=[
  ['/', 'Consultoria e engenharia ambiental | Monitorar Consultoria','Consultoria e engenharia ambiental em qualquer estado, com foco em RJ, SP e Amazonas. Sede no Rio de Janeiro. Emissões fugitivas, LDAR, ar e ruído.'],
  ['/sobre','Sobre a Monitorar Consultoria','Conheça a Monitorar Consultoria, sua história e atuação em meio ambiente e segurança do trabalho.'],
@@ -22,4 +30,4 @@ export const legacy=[
  ['/trabalhe-conosco','Trabalhe conosco | Monitorar Consultoria','Informações sobre oportunidades e contato profissional com a Monitorar Consultoria.'],
  ['/contato','Contato | Monitorar Consultoria','Converse com a Monitorar sobre seu projeto. Telefone, email, WhatsApp e endereço institucional.'],
  ['/politica-privacidade','Política de privacidade | Monitorar Consultoria','Informações sobre privacidade e tratamento de dados no site da Monitorar Consultoria.']
-].map(([path,title,description,canonical])=>({path,title,description,canonical:canonical||path}));
+].map(([path,title,description,canonical])=>({path,title,description,canonical:canonical||path,updated:updated[path]}));

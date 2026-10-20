@@ -50,7 +50,11 @@ for(const row of rows){
  await mkdir(path.dirname(file),{recursive:true});await writeFile(file,html);
 }
 const urls=preview?[]:rows.filter(r=>r.canonical===r.path&&r.path!=='/404'&&!r.page?.noindex);
-await writeFile(out+'/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(r=>{const modified=publicModifiedAt(r.page);return '<url><loc>'+origin+r.path+'</loc>'+(modified?'<lastmod>'+modified+'</lastmod>':'')+'</url>';}).join('')+'</urlset>');
+// A listing changes when what it lists changes: it takes the newest date among the pages it lists.
+const rowBySlug=new Map(rows.map(r=>[r.path,r]));
+const newest=dates=>dates.filter(Boolean).reduce((a,b)=>a===null||Date.parse(b)>Date.parse(a)?b:a,null);
+const modifiedAt=row=>publicModifiedAt(row.page)||row.updated||newest((row.page?.entries||[]).map(e=>rowBySlug.get(e.slug)).filter(Boolean).map(modifiedAt));
+await writeFile(out+'/sitemap.xml','<?xml version="1.0" encoding="UTF-8"?><urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'+urls.map(r=>{const modified=modifiedAt(r);return '<url><loc>'+origin+r.path+'</loc>'+(modified?'<lastmod>'+modified+'</lastmod>':'')+'</url>';}).join('')+'</urlset>');
 await writeFile(out+'/robots.txt',preview?'User-agent: *\nDisallow: /\n':(await readFile('public/robots.txt','utf8')).trim()+'\n\nSitemap: '+origin+'/sitemap.xml\n');
 // IndexNow ownership key: a public identifier served only by the public build.
 if(!preview&&integrations.INDEXNOW_KEY){
