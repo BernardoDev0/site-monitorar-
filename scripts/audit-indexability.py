@@ -35,7 +35,9 @@ parser.add_argument('--output',required=True)
 parser.add_argument('--baseline',action='store_true',help='Record pre-fix schema/date/redirect findings without requiring new behavior')
 args=parser.parse_args()
 docs=json.loads(Path('content/published.json').read_text(encoding='utf-8'))['current']
-articles={k:v for k,v in docs.items() if v['type']=='article'}
+# Retired articles stay in the approved manifest but redirect (content/retired.json): they must leave the sitemap.
+retired=json.loads(Path('content/retired.json').read_text(encoding='utf-8'))
+articles={k:v for k,v in docs.items() if v['type']=='article' and k not in retired}
 def read(route,agent='Googlebot'):
     if args.base:
         req=urllib.request.Request(args.base.rstrip('/')+route,headers={'User-Agent':agent})

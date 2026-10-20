@@ -1,13 +1,13 @@
 {
-  "checkedAt": "2026-10-20T12:49:11.013877+00:00",
+  "checkedAt": "2026-10-20T13:04:16.337200+00:00",
   "source": "dist",
   "baseline": false,
-  "sitemapURLs": 127,
-  "publishedArticles": 90,
-  "articlesInSitemap": 90,
+  "sitemapURLs": 126,
+  "publishedArticles": 89,
+  "articlesInSitemap": 89,
   "globalIssues": [],
   "articleDepths": {
-    "2": 87,
+    "2": 86,
     "1": 3
   },
   "redirects": [],
@@ -16,8 +16,8 @@
       "url": "https://www.monitorarconsultoria.com.br/",
       "article": false,
       "status": 200,
-      "title": "Consultoria e engenharia ambiental | Monitorar Consultoria",
-      "description": "Consultoria e engenharia ambiental em qualquer estado, com foco em RJ, SP e Amazonas. Sede no Rio de Janeiro. Emissões fugitivas, LDAR, ar e ruído.",
+      "title": "Engenharia e consultoria ambiental | Monitorar Consultoria",
+      "description": "Empresa de engenharia e consultoria ambiental com sede no RJ. Atende qualquer estado, com foco em RJ, SP e Amazonas: emissões fugitivas, LDAR, ar e ruído.",
       "issues": []
     },
     {
@@ -80,7 +80,7 @@
       "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental",
       "article": false,
       "status": 200,
-      "title": "Consultoria ambiental: guia para escolher | Monitorar Consultoria",
+      "title": "O que é consultoria ambiental e como escolher | Monitorar",
       "description": "O que é consultoria ambiental, o que uma empresa de engenharia ambiental faz, quando contratar e como escolher, com a Lei 6.938 e a CONAMA 237.",
       "issues": []
     },
@@ -162,14 +162,6 @@
       "status": 200,
       "title": "Estudo HAZOP | Monitorar Consultoria",
       "description": "Prepare um estudo de perigos e operabilidade com fronteiras claras, documentos consistentes e responsabilidades definidas para as recomendações.",
-      "issues": []
-    },
-    {
-      "url": "https://www.monitorarconsultoria.com.br/blog/o-que-sao-emissoes-fugitivas",
-      "article": true,
-      "status": 200,
-      "title": "O que são emissões fugitivas | Monitorar Consultoria",
-      "description": "De onde vêm as emissões fugitivas, por que a identificação da fonte importa e quais perguntas um registro de campo precisa responder.",
       "issues": []
     },
     {
@@ -888,8 +880,8 @@
       "url": "https://www.monitorarconsultoria.com.br/conteudos/emissoes-fugitivas",
       "article": false,
       "status": 200,
-      "title": "Conhecimento sobre emissões fugitivas | Monitorar Consultoria",
-      "description": "Encontre um caminho entre conceitos, interpretação de resultados e contratação de monitoramento de emissões fugitivas e programas LDAR.",
+      "title": "Artigos sobre emissões fugitivas e LDAR | Monitorar Consultoria",
+      "description": "Artigos da Monitorar sobre emissões fugitivas e LDAR: fontes, detecção, campanhas, reparo, indicadores e relatórios. Para a visão geral, veja o guia.",
       "issues": []
     },
     {
