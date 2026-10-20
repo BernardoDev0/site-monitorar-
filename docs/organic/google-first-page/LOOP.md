@@ -29,6 +29,8 @@ Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**
 
 Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgânico, e o ícone da empresa nos resultados. A varredura das outras frases e a checagem de IA das outras frases ficam **pausadas**.
 
+**Atualização (20/10, 00:10 UTC):** o proprietário pediu "primeira página em TUDO". A varredura lenta de todas as frases do mapa (`keyword-map.csv`, `extra-queries.csv` e as prioritárias, cerca de 187) **volta**, dentro do limite: no máximo 6 frases por ciclo (passo 2b), além das 2 leituras focadas. São no máximo 8 consultas a cada 3 horas, e uma passada completa leva cerca de 4 dias. A checagem de IA continua só em "emissões fugitivas".
+
 **Linha de base (19/10, sem personalização):** "emissões fugitivas" oscila entre o 8º lugar (artigo `/blog/o-que-sao-emissoes-fugitivas`) e fora da 1ª página em leituras com 20 minutos de intervalo. "emissões fugitivas RJ": 1º (serviço) e 5º (artigo Petrobras). Ícone: **globo** (`iconKind: svg`, hash `4f5681529f82`) nos dois resultados. O logo aparece como `iconKind: img`.
 
 ## Um ciclo (a cada 3 horas)
@@ -38,6 +40,7 @@ Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgâ
    - `python scripts/gsc.py inspect https://www.monitorarconsultoria.com.br/` (a Home www entrou no índice? canônica?).
    - `python scripts/google-favicon.py` (armazém de ícones).
 2. **Posição.** `python scripts/google-serp.py "emissões fugitivas" --mode neutral --output docs/organic/google-first-page/evidence/cycles/serp-emissoes-fugitivas-<UTC>.json --shots docs/organic/google-first-page/evidence/icons`. Se a leitura não deu captcha, também `"emissões fugitivas RJ"` (mesmo formato), que dá o ícone mesmo quando o termo principal não está na 1ª página. Máximo de 2 consultas por ciclo.
+2b. **Varredura lenta (todas as frases).** Só se o passo 2 não deu captcha: `python scripts/rank-sweep.py --output docs/organic/google-first-page/rankings/sweep-2026-10-20.csv --limit 6 --pause 30`. O CSV é retomado de onde parou. Quando cobrir todas as frases, comparar com a passada anterior (`python scripts/rank-report.py docs/organic/google-first-page/rankings/baseline-2026-10-19.csv docs/organic/google-first-page/rankings/sweep-2026-10-20.csv`), registrar no REPORT o que entrou e saiu da 1ª página e começar um CSV novo com a data do dia.
 3. **Respostas de IA:** 1×/dia, só "emissões fugitivas": `python scripts/ai-overview.py --output docs/organic/google-first-page/ai-overview/ai-overview-<data>.csv "emissões fugitivas"`.
 4. **Fila de pedidos** (seção seguinte), enquanto houver cota.
 5. **Desempenho:** 1×/dia, `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`. Anotar impressões e posição de "emissões fugitivas" quando aparecerem.
