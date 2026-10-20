@@ -23,7 +23,7 @@ export default function ConsultoriaAmbientalRJ() {
     </PageIntro>
     <div className="site-wrap rj-page">
       <section className="v4-services">
-        <h2>Serviços de consultoria ambiental</h2>
+        <h2>Consultoria ambiental RJ: serviços para empresas no Rio de Janeiro</h2>
         <p>Ajudamos empresas a cumprir regulamentos ambientais, reduzir impactos negativos e promover a sustentabilidade, com planos de ação e práticas corretas.</p>
         <div className="rj-grid">
           {services.map(s => <article key={s.title}><h3>{s.title}</h3><p>{s.text}</p><a className="text-link" href={s.href}>{s.cta} ↗</a></article>)}

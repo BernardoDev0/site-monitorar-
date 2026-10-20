@@ -12,8 +12,32 @@
     "postalCode": "22775-056",
     "addressCountry": "BR"
   },
-  "sameAs": ["https://instagram.com/monitorarconsultoria_", "https://linkedin.com/company/monitorar-consultoria"],
+  "geo": {
+    "latitude": -22.988655,
+    "longitude": -43.3606056
+  },
+  "sameAs": [
+    "https://instagram.com/monitorarconsultoria_",
+    "https://linkedin.com/company/monitorar-consultoria"
+  ],
   "foundingDate": "2009",
   "logo": "/moni3.png",
-  "areaServed": [{"type": "State", "name": "Rio de Janeiro"}, {"type": "State", "name": "São Paulo"}, {"type": "State", "name": "Amazonas"}, {"type": "Country", "name": "Brasil"}]
+  "areaServed": [
+    {
+      "type": "State",
+      "name": "Rio de Janeiro"
+    },
+    {
+      "type": "State",
+      "name": "São Paulo"
+    },
+    {
+      "type": "State",
+      "name": "Amazonas"
+    },
+    {
+      "type": "Country",
+      "name": "Brasil"
+    }
+  ]
 }

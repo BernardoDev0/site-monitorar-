@@ -31,6 +31,8 @@ import { OfferingsSection } from "@/components/home/OfferingsSection";
 import { InstagramFeed } from "@/components/InstagramFeed";
 import { WHATSAPP_URL, recordContactClick } from "@/lib/contact";
 import { clientsLogos } from "@/lib/clients";
+import { Rich } from "@/components/Guide";
+import faq from "../../content/home-faq.json";
 
 const stats = [
   { number: "16", label: "Anos de experiência", icon: Award },
@@ -159,9 +161,25 @@ export default function Home() {
       <section className="site-wrap section-space home-company">
         <p className="eyebrow">Consultoria ambiental</p>
         <h2>Consultoria ambiental para empresas de todo o Brasil</h2>
-        <p>A Monitorar Consultoria é uma empresa de engenharia e consultoria ambiental com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
+        <p>A Monitorar Consultoria é uma empresa de engenharia ambiental e de consultoria ambiental com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
         <p>Nossos serviços de consultoria ambiental incluem monitoramento de emissões fugitivas e LDAR, qualidade do ar, PTS e Procon Fumaça Preta, ruído extramuros, áreas impactadas com avaliação geoambiental, licenciamento ambiental, auditoria e certificação ambiental e monitoramento de efluentes.</p>
-        <p>Para entender o que faz uma empresa de consultoria ambiental e como escolher uma, leia o <a className="text-link" href="/consultoria-ambiental">guia de consultoria ambiental</a>. Veja também a consultoria ambiental <a className="text-link" href="/consultoria-ambiental-rj">no Rio de Janeiro</a>, <a className="text-link" href="/consultoria-ambiental-sp">em São Paulo</a> e <a className="text-link" href="/consultoria-ambiental-am">no Amazonas</a>, e o <a className="text-link" href="/emissoes-fugitivas">guia de emissões fugitivas e LDAR</a>.</p>
+        <p>Para entender o que faz uma empresa de consultoria ambiental, leia <a className="text-link" href="/consultoria-ambiental">o que é consultoria ambiental e como escolher</a>. Para empresas no Rio de Janeiro, veja a <a className="text-link" href="/consultoria-ambiental-rj">consultoria ambiental no RJ</a>; atendemos também <a className="text-link" href="/consultoria-ambiental-sp">em São Paulo</a> e <a className="text-link" href="/consultoria-ambiental-am">no Amazonas</a>.</p>
+      </section>
+
+      {/* Emissions summary from the guide's sourced facts; the guide stays the page for the head term */}
+      <section className="site-wrap section-space home-company">
+        <p className="eyebrow">Emissões fugitivas</p>
+        <h2>Monitoramento de emissões fugitivas e LDAR</h2>
+        <p>Emissões fugitivas são liberações difusas de matéria para a atmosfera, feitas por fontes sem dispositivo para dirigir ou controlar o fluxo, como define a Resolução CONAMA nº 382/2006. Na indústria, vêm de válvulas, conexões, bombas, compressores e outros componentes de processo; estudos da EPA estimaram que válvulas e conexões respondem por mais de 90% das emissões de equipamentos com vazamento.</p>
+        <p>O controle é feito por programas LDAR, de detecção e reparo de vazamentos, que identificam os componentes, definem o que é vazamento, monitoram, reparam e mantêm os registros. O Método 21 da EPA localiza e classifica vazamentos com instrumento portátil, e câmeras OGI e analisadores portáteis apoiam a investigação; detectar não é quantificar a taxa de emissão. No Rio de Janeiro, o inventário de gases de efeito estufa exigido no licenciamento segue a NOP-INEA-52.</p>
+        <p>Leia o <a className="text-link" href="/emissoes-fugitivas">guia de emissões fugitivas</a> e conheça o serviço de <a className="text-link" href="/servicos/emissoes-fugitivas">monitoramento de emissões fugitivas</a> da Monitorar, com atendimento em qualquer estado.</p>
+      </section>
+
+      {/* Questions people ask about the service; the same list feeds the FAQPage data in scripts/schema.mjs */}
+      <section id="perguntas" className="site-wrap section-space home-company">
+        <p className="eyebrow">Perguntas frequentes</p>
+        <h2>Perguntas frequentes sobre consultoria ambiental</h2>
+        {faq.map(item => <div key={item.q}><h3>{item.q}</h3><p><Rich text={item.a} /></p></div>)}
       </section>
 
       {/* CTA Section */}

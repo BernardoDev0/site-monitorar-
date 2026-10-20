@@ -565,3 +565,46 @@ test('home keeps the any-state scope next to the H1',async()=>{
  assert.match(h1Of(await page('/')),/em todo o Brasil$/);
  for(const phrase of ['qualquer estado do Brasil','no RJ, em São Paulo e no Amazonas'])assert.ok(main.includes(phrase),phrase);
 });
+test('the company node carries the verified pin of its Google Maps place',async()=>{
+ assert.deepEqual(business.geo,{latitude:-22.988655,longitude:-43.3606056},'pin of the Maps place at number 200, CEP 22775-056');
+ const org=companyOf(graphOf(await page('/')));
+ assert.deepEqual(org.geo,{'@type':'GeoCoordinates',latitude:-22.988655,longitude:-43.3606056});
+});
+test('the home answers the target phrases in its own text and links each pillar with its exact anchor',async()=>{
+ const main=text(mainOf(await page('/')));
+ for(const phrase of ['empresa de engenharia ambiental','consultoria ambiental','emissões fugitivas','LDAR','Resolução CONAMA nº 382/2006','Método 21','câmeras OGI'])assert.ok(main.includes(phrase),phrase);
+ assert.ok(headings(await page('/'),'h2').includes('Monitoramento de emissões fugitivas e LDAR'),'emissions H2');
+ for(const [href,anchor] of [['/emissoes-fugitivas','guia de emissões fugitivas'],['/servicos/emissoes-fugitivas','monitoramento de emissões fugitivas'],['/consultoria-ambiental-rj','consultoria ambiental no RJ'],['/consultoria-ambiental','o que é consultoria ambiental e como escolher']])
+  assert.ok(main.includes('<a class="text-link" href="'+href+'">'+anchor+'</a>'),href+' '+anchor);
+ assert.match(main,/qualquer estado do Brasil/);
+});
+test('the home FAQ is visible and marked up with the same questions',async()=>{
+ const html=await page('/'),faq=JSON.parse(await readFile('content/home-faq.json','utf8'));
+ assert.equal(faq.length,5);
+ const section=html.match(/<section id="perguntas"[\s\S]*?<\/section>/)?.[0]||'';
+ const node=graphOf(html).find(n=>n['@type']==='FAQPage');
+ assert.ok(node,'FAQPage node');assert.equal(node['@id'],ORIGIN+'/#faq');
+ assert.deepEqual(node.mainEntity.map(q=>q.name),faq.map(f=>f.q));
+ for(const item of node.mainEntity){assert.ok(text(section).includes(item.name),'visible '+item.name);assert.ok(item.acceptedAnswer.text.length>60);assert.doesNotMatch(item.acceptedAnswer.text,/\[\[|\]\]/);}
+});
+test('the home declares its consultoria and engineering services',async()=>{
+ const graph=graphOf(await page('/'));
+ for(const [id,type] of [['/#consultoria-ambiental','Consultoria ambiental'],['/#engenharia-ambiental','Engenharia ambiental']]){
+  const service=graph.find(n=>n['@id']===ORIGIN+id);
+  assert.ok(service&&service['@type']==='Service',id);assert.equal(service.serviceType,type);
+  assert.deepEqual(service.provider,{'@id':ORIGIN+'/#organization'});
+  assert.ok(companyOf(graph).hasOfferCatalog.itemListElement.some(o=>o.itemOffered['@id']===ORIGIN+id),id+' in the catalog');
+ }
+});
+test('every article opens and closes with links to the pillars',async()=>{
+ for(const path of articlePaths){
+  const html=await page(path),header=html.match(/<header class="editorial-intro">[\s\S]*?<\/header>/)[0],block=html.match(/<section class="editorial-local-cta">[\s\S]*?<\/section>/)[0];
+  assert.ok(text(header).includes('<a href="/">empresa de engenharia ambiental</a>'),path+' top: home');
+  assert.ok(text(header).includes('<a href="/consultoria-ambiental-rj">consultoria ambiental RJ</a>'),path+' top: RJ');
+  assert.ok(text(block).includes('<a href="/emissoes-fugitivas">emissões fugitivas</a>'),path+' end: guide');
+  assert.ok(text(block).includes('<a href="/servicos/emissoes-fugitivas">monitoramento de emissões fugitivas</a>'),path+' end: service');
+ }
+});
+test('the RJ page names the RJ phrase in a heading',async()=>{
+ assert.ok(headings(await page('/consultoria-ambiental-rj'),'h2').includes('Consultoria ambiental RJ: serviços para empresas no Rio de Janeiro'));
+});

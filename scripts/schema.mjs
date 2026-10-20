@@ -14,12 +14,15 @@ const states={'/consultoria-ambiental-rj':'Rio de Janeiro','/consultoria-ambient
 const areaServed=business.areaServed.map(({type,name})=>({'@type':type,name}));
 const ref=id=>({'@id':id});
 const organization=ref(origin+'/#organization');
+const homeFaq=JSON.parse(readFileSync(new URL('../content/home-faq.json',import.meta.url),'utf8'));
+// Services the Home describes in its own text; the catalogue also lists every page with a Service node.
+const homeServices=[['/#consultoria-ambiental','Consultoria ambiental'],['/#engenharia-ambiental','Engenharia ambiental']];
 // Only verified data: no opening hours, ratings or map pin; geo only once a building-level match is recorded in business.json.
 const company={'@type':['Organization','LocalBusiness'],'@id':origin+'/#organization',name:business.name,url:origin+'/',logo:origin+business.logo,image:origin+business.logo,description:business.description,foundingDate:business.foundingDate,areaServed,
  knowsAbout:['Engenharia ambiental','Consultoria ambiental',...topics.map(t=>t.label).filter(label=>label!=='Equipamentos'),'LDAR'],
  telephone:business.phone,email:business.email,address:{'@type':'PostalAddress',...business.address},...(business.geo?{geo:{'@type':'GeoCoordinates',...business.geo}}:{}),
  contactPoint:[{'@type':'ContactPoint',telephone:business.phone,email:business.email,contactType:'customer service',areaServed:'BR',availableLanguage:'pt-BR'}],
- hasOfferCatalog:{'@type':'OfferCatalog',name:'Serviços da Monitorar Consultoria',itemListElement:[...services,...Object.keys(states)].map(slug=>({'@type':'Offer',itemOffered:ref(origin+slug+'#service')}))},
+ hasOfferCatalog:{'@type':'OfferCatalog',name:'Serviços da Monitorar Consultoria',itemListElement:[...homeServices.map(([id])=>origin+id),...[...services,...Object.keys(states)].map(slug=>origin+slug+'#service')].map(id=>({'@type':'Offer',itemOffered:ref(id)}))},
  sameAs:business.sameAs};
 const pageType=row=>['listing','collection','directory','hub'].includes(row.page?.type)?'CollectionPage':row.path==='/sobre'?'AboutPage':row.path==='/contato'?'ContactPage':'WebPage';
 export function schemaFor(row,preview=false) {
@@ -33,6 +36,8 @@ export function schemaFor(row,preview=false) {
   {'@type':'Article','@id':url+'#article',headline:guide.headline,description:row.description,mainEntityOfPage:webpage,inLanguage:'pt-BR',datePublished:guide.published,dateModified:guide.updated,...(guide.figure?{image:origin+(photos[guide.figure.src]?.src||guide.figure.src)}:{}),author:organization,publisher:organization},
   {'@type':'BreadcrumbList','@id':url+'#breadcrumb',itemListElement:[{'@type':'ListItem',position:1,name:'Início',item:origin+'/'},{'@type':'ListItem',position:2,name:guide.eyebrow,item:url}]},
   {'@type':'FAQPage','@id':url+'#faq',inLanguage:'pt-BR',mainEntity:guide.faq.map(({q,a})=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:plain(a)}}))});
+ if(row.path==='/')graph.push(...homeServices.map(([id,name])=>({'@type':'Service','@id':origin+id,name,serviceType:name,url:origin+'/',mainEntityOfPage:webpage,areaServed,provider:organization})),
+  {'@type':'FAQPage','@id':origin+'/#faq',inLanguage:'pt-BR',mainEntity:homeFaq.map(({q,a})=>({'@type':'Question',name:q,acceptedAnswer:{'@type':'Answer',text:plain(a)}}))});
  if(states[row.path])graph.push({'@type':'Service','@id':url+'#service',name:'Consultoria ambiental em '+states[row.path],serviceType:'Consultoria ambiental',description:row.description,url,mainEntityOfPage:webpage,areaServed:{'@type':'State',name:states[row.path]},provider:organization});
  if(row.page) {
   const p=row.page;
