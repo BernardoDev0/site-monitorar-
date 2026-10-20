@@ -15,7 +15,7 @@ const og=(html,property)=>html.match(new RegExp('<meta property="'+property+'" c
 test('full brand name accompanies home and emissions titles',async()=>{
  assert.match(title(await page('/')),/\| Monitorar Consultoria$/);
  assert.equal(title(await page('/servicos/emissoes-fugitivas')),'Monitoramento de emissões fugitivas no RJ | Monitorar Consultoria');
- assert.equal(title(await page('/conteudos/emissoes-fugitivas')),'Conhecimento sobre emissões fugitivas | Monitorar Consultoria');
+ assert.equal(title(await page('/conteudos/emissoes-fugitivas')),'Artigos sobre emissões fugitivas e LDAR | Monitorar Consultoria');
 });
 test('every sitemap page names the site, keeps a unique branded title and stays short with the full brand',async()=>{
  assert.equal(paths.length,126);
@@ -176,19 +176,14 @@ test('a dedicated page targets consultoria ambiental no RJ and is linked site-wi
  assert.ok(html.includes('2009'));
  for(const path of ['/','/servicos','/blog','/blog/o-que-e-ldar','/servicos/emissoes-fugitivas'])assert.match(await page(path),/href="\/consultoria-ambiental-rj"/,path);
 });
-test('every article links to that page with varied anchor text that names the service and Rio de Janeiro',async()=>{
+test('every article links each pillar with its exact anchor',async()=>{
  assert.equal(articlePaths.length,89);
- const used=new Map();
  for(const path of articlePaths){
-  const html=await page(path);
-  assert.match(html,/<section class="editorial-local-cta"/,path);
-  const anchor=html.match(/<section class="editorial-local-cta".*?<a href="\/consultoria-ambiental-rj">([^<]*)<\/a>/s)?.[1];
-  assert.ok(anchor,path);
-  assert.match(text(anchor),/(RJ|Rio de Janeiro)/,path);
-  used.set(anchor,(used.get(anchor)||0)+1);
+  const block=(await page(path)).match(/<section class="editorial-local-cta">[\s\S]*?<\/section>/)?.[0];
+  assert.ok(block,path);
+  for(const [href,anchor] of [['/','empresa de engenharia e consultoria ambiental'],['/consultoria-ambiental-rj','consultoria ambiental no RJ'],['/consultoria-ambiental-sp','em São Paulo'],['/consultoria-ambiental-am','no Amazonas'],['/consultoria-ambiental','o que é consultoria ambiental e como escolher']])
+   assert.ok(text(block).includes('<a href="'+href+'">'+anchor+'</a>'),path+' '+href);
  }
- assert.equal(used.size,3,'three anchor variants');
- for(const [anchor,count] of used)assert.ok(count>=20,anchor+' '+count);
 });
 test('seoDescription keeps short summaries, ends cleanly and never overruns the result length',()=>{
  assert.equal(seoDescription('Resumo curto','Resumo curto e completo.'),'Resumo curto e completo.');
@@ -525,4 +520,26 @@ test('every sitemap page has its own meta description',async()=>{
   assert.ok(!seen.has(description),path+' repeats the description of '+seen.get(description));
   seen.set(description,path);
  }
+});
+const crumbsOf=html=>graphOf(html).find(n=>n['@type']==='BreadcrumbList').itemListElement;
+const visibleCrumbs=html=>[...html.match(/<nav aria-label="Caminho da página"[\s\S]*?<\/nav>/)[0].matchAll(/<a href="([^"]*)">([^<]*)<\/a>/g)].map(m=>[m[1],text(m[2])]);
+test('articles sit under their pillar in the breadcrumb',async()=>{
+ for(const [path,pillar,name] of [['/blog/o-que-e-ldar','/emissoes-fugitivas','Emissões fugitivas'],['/blog/emissoes-fugitivas-petrobras','/emissoes-fugitivas','Emissões fugitivas'],['/blog/ruido-extramuros-e-ruido-ocupacional','/conteudos/ruido-ambiental','Ruído ambiental']]){
+  const html=await page(path),crumbs=crumbsOf(html);
+  assert.equal(crumbs.length,3,path);
+  assert.deepEqual([crumbs[1].item,crumbs[1].name],[ORIGIN+pillar,name],path);
+  assert.deepEqual(visibleCrumbs(html),[['/','Início'],[pillar,name]],path+' visible breadcrumb');
+ }
+});
+test('the topic hub no longer competes for the head term',async()=>{
+ const html=await page('/conteudos/emissoes-fugitivas');
+ assert.equal(title(html),'Artigos sobre emissões fugitivas e LDAR | Monitorar Consultoria');
+ assert.match(metaDescription(html),/^Artigos da Monitorar sobre emissões fugitivas e LDAR/);
+ assert.ok(metaDescription(html).length<=160);
+ assert.equal(h1Of(html),'Conhecimento sobre emissões fugitivas','approved H1 stays');
+});
+test('the consultoria ambiental guide links the home and the RJ page with their exact anchors',async()=>{
+ const main=mainOf(await page('/consultoria-ambiental'));
+ assert.ok(main.includes('href="/">empresa de engenharia e consultoria ambiental</a>'));
+ assert.ok(main.includes('href="/consultoria-ambiental-rj">consultoria ambiental no RJ</a>'));
 });

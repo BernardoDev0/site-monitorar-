@@ -56,7 +56,7 @@ test('article schema uses real dates and cover; company data matches its public 
  const org=graph.find(d=>[].concat(d['@type']).includes('Organization')),article=graph.find(d=>d['@type']==='BlogPosting');
  assert.equal(org.telephone,business.phone);assert.deepEqual(org.sameAs,business.sameAs);assert.equal(org.address.addressLocality,'Rio de Janeiro');
  assert.equal(article.datePublished,state.current[row.path].first_published_at);assert.equal(article.image,business.url+row.page.cover.src);
- const breadcrumb=graph.find(d=>d['@type']==='BreadcrumbList');assert.equal(breadcrumb.itemListElement[1].name,'Blog');
+ const breadcrumb=graph.find(d=>d['@type']==='BreadcrumbList');assert.equal(breadcrumb.itemListElement[1].name,row.page.topic.title);
  assert.equal(breadcrumb.itemListElement.at(-1).name,row.page.title);
 });
 test('source checker permits corpus hosts, rejects unsafe redirects and reports HTTP failures',async()=>{
