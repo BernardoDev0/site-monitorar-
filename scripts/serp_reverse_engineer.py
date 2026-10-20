@@ -167,7 +167,8 @@ class Client:
             body = response.content
             if body[:2] == b'\x1f\x8b':
                 body = gzip.decompress(body)
-            return {'status': response.status_code, 'finalUrl': response.url, 'type': response.headers.get('Content-Type', ''), 'body': body}
+            return {'status': response.status_code, 'finalUrl': response.url, 'type': response.headers.get('Content-Type', ''), 'body': body,
+                    'elapsed': round(response.elapsed.total_seconds(), 3)}
         except Exception as error:
             return {'status': None, 'error': type(error).__name__ + ': ' + str(error)[:160], 'body': b''}
         finally:

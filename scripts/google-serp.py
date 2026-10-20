@@ -32,6 +32,10 @@ LINKS = """() => {
 }"""
 
 
+# Questions of the "As pessoas também perguntam" block, in the order Google shows them.
+QUESTIONS = """() => [...new Set([...document.querySelectorAll('[data-q]')].map(e => e.getAttribute('data-q').trim()).filter(Boolean))].slice(0, 8)"""
+
+
 # For each Monitorar result: the small image Google shows as the site icon in the same result block.
 ICONS = """(domain) => {
   const out = [];
@@ -89,7 +93,8 @@ def read(context, phrase, neutral=False, shots=None, peek=False):
         return {'phrase': phrase, 'blocked': False, 'personalised': 'Os resultados são personalizados' in footer,
                 'linksRead': len(links), 'monitorar': ours, 'icons': icons(page, shots, 'peek' if peek else 'neutral' if neutral else 'signed'),
                 'top': [urlparse(l['url']).netloc + urlparse(l['url']).path[:50] for l in links[:10]],
-                'results': [{'position': i + 1, 'url': l['url'], 'title': l['title']} for i, l in enumerate(links)]}
+                'results': [{'position': i + 1, 'url': l['url'], 'title': l['title']} for i, l in enumerate(links)],
+                'questions': page.evaluate(QUESTIONS)}
     finally:
         page.close()
 

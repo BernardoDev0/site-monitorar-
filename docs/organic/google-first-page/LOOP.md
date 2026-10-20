@@ -40,10 +40,14 @@ Histórico anterior (ícone, sem www, varredura de 187 frases): ver `LOOP-LOG.md
    - Nenhum captcha nas últimas 6 h (ver `LOOP-LOG.md`).
    - No máximo 8 consultas ao Google nas últimas 3 h, contando as do log.
    - Se a trava falhar, registrar o motivo no log e encerrar o ciclo.
-2. **Google, 4 consultas `peek`, com 90 s entre elas.**
-   - O comando, para cada frase: `python scripts/google-serp.py "<frase>" --mode peek --output docs/organic/google-first-page/evidence/cycles/serp-<slug>-<UTC>.json --shots docs/organic/google-first-page/evidence/icons`.
-   - As frases: "emissões fugitivas", "consultoria ambiental", "consultoria ambiental RJ" e "empresa de engenharia ambiental".
-   - Captcha (código 2): parar, registrar e pausar 6 h.
+2. **Google e gap: o motor.** `.venv-seo/Scripts/python -I scripts/serp_loop_engine.py run`.
+   - Faz 4 leituras `peek`, com 90 s entre elas, e respeita sozinho a trava: para se houve captcha nas últimas 6 h e corta as frases que passariam de 8 consultas em 3 h.
+   - Cada leitura entra em `evidence/engine/readings.jsonl`, de onde sai o "N de M leituras (24 h)".
+   - Para cada frase, mede o nosso pilar contra o top 3: palavras, a frase por região, os termos do nicho, os bigramas, os links internos com âncora exata, os tipos de JSON-LD e o TTFB. Grava também as perguntas do "As pessoas também perguntam".
+   - Relatório em `evidence/engine/<UTC>/report.md`. Código de saída 2 = captcha: registrar e pausar 6 h.
+   - **Mutação:** se uma frase continua fora da página 1 e o relatório aponta gap concreto (termo do nicho que 2 dos 3 primeiros têm e nós não, região sem a frase ou bigrama comum do top 3), ajustar o pilar dessa frase. O ajuste segue as regras do plano `~/.claude/plans/foda-se-irm-o-continua-delegated-liskov.md` (Fase 3). Fluxo: teste falhando primeiro, build, suíte inteira e push.
+   - **Limite:** **no máximo 1 deploy a cada 24 h** (ver a data do último commit `seo(loop)` no git).
+   - **Sem gap concreto:** não mexer. A diferença está fora da página (histórico, links, Maps), e o relatório registra isso.
 3. **Brave Search, 1×/dia.** `python scripts/brave-measure.py --headed --output docs/organic/brave-search-visibility/evidence/brave-<data>.json "emissões fugitivas" "consultoria ambiental"`. O proprietário também busca lá.
 4. **Índice.**
    - `python scripts/gsc.py inspect` em `/emissoes-fugitivas`, `/` e `/consultoria-ambiental`, enquanto houver cota de inspeção.
