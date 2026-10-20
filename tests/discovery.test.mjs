@@ -27,6 +27,9 @@ test('every sitemap page names the site, keeps a unique branded title and stays 
   assert.ok(!titles.has(t),'duplicate title '+t);titles.add(t);
  }
 });
+test('robots.txt has one group for every crawler, allows everything and names the sitemap',async()=>{
+ assert.equal(await readFile('dist/robots.txt','utf8'),'User-agent: *\nAllow: /\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n');
+});
 test('IndexNow key is published only by the public build',async()=>{
  const key=integrations.INDEXNOW_KEY;
  assert.match(key,/^[A-Za-z0-9-]{8,128}$/);
