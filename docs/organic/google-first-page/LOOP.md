@@ -1,4 +1,4 @@
-# Ciclo de acompanhamento: "emissões fugitivas RJ" no Google
+# Ciclo de acompanhamento: "emissões fugitivas" e "consultoria ambiental" no Google
 
 Meta inicial: o domínio aparecer entre os 10 primeiros resultados orgânicos do Google para **emissões fugitivas RJ**. Nenhuma posição é garantida; o ciclo mede, corrige o que está sob nosso controle e registra.
 
@@ -25,32 +25,53 @@ Em cada consulta: **1º lugar orgânico; se não der, 2º; o máximo possível**
 1. `curl -s http://127.0.0.1:9223/json/version` responde (Chrome dedicado aberto, perfil `%USERPROFILE%\.cache\monitorar-seo-chrome`). Senão, abrir o Chrome com os parâmetros de `scripts/gsc.py`.
 2. A inspeção de URL funciona (sessão do Search Console ativa). Se pedir login, registrar "login necessário" no log e encerrar o ciclo, sem perguntar nada ao proprietário.
 
-## Foco desde 19/10 à noite: só "emissões fugitivas" e o ícone
+## Foco desde 20/10, 13:40 UTC: "emissões fugitivas" e "consultoria ambiental" na página 1
 
-Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgânico, e o ícone da empresa nos resultados. A varredura das outras frases e a checagem de IA das outras frases ficam **pausadas**.
+Pedido do proprietário: "tem que estar na primeira página em emissões fugitivas e consultoria ambiental", com o loop sempre rodando. Plano: `~/.claude/plans/foda-se-irm-o-continua-delegated-liskov.md`.
 
-**Atualização (20/10, 00:10 UTC):** o proprietário pediu "primeira página em TUDO". A varredura lenta de todas as frases do mapa (`keyword-map.csv`, `extra-queries.csv` e as prioritárias, cerca de 187) **volta**, dentro do limite: no máximo 6 frases por ciclo (passo 2b), além das 2 leituras focadas. São no máximo 8 consultas a cada 3 horas, e uma passada completa leva cerca de 4 dias. A checagem de IA continua só em "emissões fugitivas".
+**Por que a regra de leitura mudou:** às 12:03 UTC de 20/10, uma leitura mostrou `/consultoria-ambiental-rj` em 2º em "consultoria ambiental". Às 13:30 o proprietário procurou e não achou. Às 13:3x, duas leituras (sem personalização e com conta) mostravam a Monitorar fora da página 1. Uma página nova oscila em minutos. **Posição só se afirma assim: "Xº em N de M leituras das últimas 24 h". Uma posição só é dada como certa depois de 2 leituras seguidas iguais.** Sempre com "sem personalização, IP do RJ".
 
-**Linha de base (19/10, sem personalização):** "emissões fugitivas" oscila entre o 8º lugar (artigo `/blog/o-que-sao-emissoes-fugitivas`) e fora da 1ª página em leituras com 20 minutos de intervalo. "emissões fugitivas RJ": 1º (serviço) e 5º (artigo Petrobras). Ícone: **globo** (`iconKind: svg`, hash `4f5681529f82`) nos dois resultados. O logo aparece como `iconKind: img`.
+Histórico anterior (ícone, sem www, varredura de 187 frases): ver `LOOP-LOG.md` e `REPORT.md`. A varredura lenta (`rank-sweep.py`) fica **pausada** enquanto o foco for este: as 8 consultas a cada 3 horas vão para as 4 frases do pedido.
 
-## Um ciclo (a cada 3 horas)
+## Um ciclo (a cada 3 horas, minuto 7)
 
-1. **Ícone e Home.**
-   - `python scripts/gsc.py inspect --property apex https://monitorarconsultoria.com.br/` (último rastreamento; em 19/10 era 10/10, quando o site antigo ainda declarava o sem www como canônico).
-   - `python scripts/gsc.py inspect https://www.monitorarconsultoria.com.br/` (a Home www entrou no índice? canônica?).
-   - `python scripts/google-favicon.py` (armazém de ícones).
-2. **Posição.** `python scripts/google-serp.py "emissões fugitivas" --mode neutral --output docs/organic/google-first-page/evidence/cycles/serp-emissoes-fugitivas-<UTC>.json --shots docs/organic/google-first-page/evidence/icons`. Se a leitura não deu captcha, também `"emissões fugitivas RJ"` (mesmo formato), que dá o ícone mesmo quando o termo principal não está na 1ª página. Máximo de 2 consultas por ciclo.
-2b. **Varredura lenta (todas as frases).** Só se o passo 2 não deu captcha: `python scripts/rank-sweep.py --output docs/organic/google-first-page/rankings/sweep-2026-10-20.csv --limit 6 --pause 30`. O CSV é retomado de onde parou. Quando cobrir todas as frases, comparar com a passada anterior (`python scripts/rank-report.py docs/organic/google-first-page/rankings/baseline-2026-10-19.csv docs/organic/google-first-page/rankings/sweep-2026-10-20.csv`), registrar no REPORT o que entrou e saiu da 1ª página e começar um CSV novo com a data do dia.
-3. **Respostas de IA:** 1×/dia, só "emissões fugitivas": `python scripts/ai-overview.py --output docs/organic/google-first-page/ai-overview/ai-overview-<data>.csv "emissões fugitivas"`.
-4. **Fila de pedidos** (seção seguinte), enquanto houver cota.
-5. **Desempenho:** 1×/dia, `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`. Anotar impressões e posição de "emissões fugitivas" quando aparecerem.
-6. **Log:** uma linha em `LOOP-LOG.md` com UTC, Home www (indexada?), apex (último rastreamento), ícone (`iconKind`/hash, armazém), posição de "emissões fugitivas" e qual URL nossa, posição de "emissões fugitivas RJ", pedidos feitos e observação.
-7. **Decidir:**
-   - **Ícone resolvido:** `iconKind: img` no nosso resultado em dois ciclos seguidos. Registrar com o recorte de imagem.
-   - **Endereço resolvido em 19/10:** a Home www entrou no índice com a canônica em www, então a mudança para o sem www **não é mais necessária**. Só voltar ao assunto se a Home www sair do índice de novo. (Regra anterior: se a Home www continuasse fora do índice 72 h depois do pedido do sem www, mudar o site para o sem www.) O proprietário autorizou ("com e sem www, tanto faz, só quero que funcione"). Passos no `REPORT.md`; o redirecionamento de domínio na Vercel é trocado no painel pelo proprietário (o MCP não altera) ou por mim depois de `! npx vercel login`.
-   - **Canibalização:** resolvida em 20/10. O dono aprovou fundir o artigo `/blog/o-que-sao-emissoes-fugitivas` no guia `/emissoes-fugitivas`; o artigo responde 308 para o guia (`content/retired.json`, `vercel.json`). Qualquer outra fusão precisa de nova aprovação.
-   - **Sem novas edições no guia por 3 a 4 semanas** depois de indexado (skill seo-audit, *rankings-push*), salvo erro de fato. Mudanças empilhadas impedem saber o que funcionou. O que ainda pesa é autoridade (kit do proprietário).
-8. Uma vez por dia, commit só de documentos (`LOOP-LOG.md`, `evidence/`) em `main`.
+1. **Trava.**
+   - `curl -s http://127.0.0.1:9223/json/version` responde.
+   - Nenhum captcha nas últimas 6 h (ver `LOOP-LOG.md`).
+   - No máximo 8 consultas ao Google nas últimas 3 h, contando as do log.
+   - Se a trava falhar, registrar o motivo no log e encerrar o ciclo.
+2. **Google, 4 consultas `peek`, com 90 s entre elas.**
+   - O comando, para cada frase: `python scripts/google-serp.py "<frase>" --mode peek --output docs/organic/google-first-page/evidence/cycles/serp-<slug>-<UTC>.json --shots docs/organic/google-first-page/evidence/icons`.
+   - As frases: "emissões fugitivas", "consultoria ambiental", "consultoria ambiental RJ" e "empresa de engenharia ambiental".
+   - Captcha (código 2): parar, registrar e pausar 6 h.
+3. **Brave Search, 1×/dia.** `python scripts/brave-measure.py --headed --output docs/organic/brave-search-visibility/evidence/brave-<data>.json "emissões fugitivas" "consultoria ambiental"`. O proprietário também busca lá.
+4. **Índice.**
+   - `python scripts/gsc.py inspect` em `/emissoes-fugitivas`, `/` e `/consultoria-ambiental`, enquanto houver cota de inspeção.
+   - Os pedidos de indexação saem na rodada diária das 07:20 UTC (fila abaixo).
+5. **Sitemap, 1×/dia.** Na página Sitemaps do Search Console, conferir que o Google leu o índice `/sitemap.xml` e os 3 filhos (126 URLs).
+   - O campo certo é "Insira o URL do sitemap". O campo "Inspecionar qualquer URL" é outro.
+   - O botão é exatamente "Enviar".
+6. **Desempenho, 1×/dia.** `python scripts/gsc.py queries --output docs/organic/google-first-page/evidence/queries-<data>.json`. Anotar impressões e posição média das 2 frases.
+7. **oHub.** Enquanto o cadastro estiver pendente ou recente, abrir sem login `https://www.ohub.com.br/empresas/consultoria-ambiental/rj/rio-de-janeiro` e anotar se a Monitorar aparece na lista.
+8. **Log.** Uma linha em `LOOP-LOG.md` com:
+   - UTC;
+   - cada frase como "Xº em N de M leituras (24 h)" ou "ausente em M de M", com a URL nossa;
+   - o estado de índice do guia, da Home e do guia de consultoria;
+   - os pedidos feitos;
+   - a contagem de consultas;
+   - a observação do ciclo.
+9. **Relatar ao proprietário só quando algo mudar.** Conta como mudança: uma frase entrar ou sair da página 1 em 2 leituras seguidas, uma URL entrar no índice ou um pedido de indexação ser aceito. O relato leva a captura de tela.
+10. **Regras.**
+    - Guias sem edição por 3 a 4 semanas depois de indexados.
+    - Nenhuma página por variação de frase.
+    - Nada sobre a situação do escritório.
+    - Escopo de qualquer estado.
+    - Canibalização de "emissões fugitivas" resolvida em 20/10 (artigo fundido no guia com 308); outra fusão só com aprovação.
+11. **Commit diário** só de documentos (`LOOP-LOG.md`, `evidence/`) em `main`.
+
+## Rodada diária de pedidos (07:20 UTC, depois da renovação da cota)
+
+Seguir a fila da seção seguinte com `python scripts/gsc.py request <URL> ... --output docs/organic/google-first-page/evidence/requests-<data>.json`. O script para sozinho em "Cota excedida". Antes de cada pedido, a inspeção de URL diz se a URL já está no índice. Riscar da fila o que entrou e registrar no log.
 
 ## Fila de pedidos de indexação (cota de cerca de 10 por dia, **por conta**, não por propriedade)
 

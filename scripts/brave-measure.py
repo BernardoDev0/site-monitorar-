@@ -19,7 +19,10 @@ JS = """() => {
 parser = argparse.ArgumentParser()
 parser.add_argument('--output', required=True)
 parser.add_argument('--headed', action='store_true', help='Brave answers headless browsers with a captcha')
+parser.add_argument('phrases', nargs='*', help='phrases to read instead of the site:, exact and brand queries')
 args = parser.parse_args()
+if args.phrases:
+    QUERIES = {phrase: phrase for phrase in args.phrases}
 report = {'capturedAt': datetime.now(timezone.utc).isoformat(timespec='seconds'), 'engine': 'search.brave.com', 'queries': {}}
 with sync_playwright() as p:
     browser = p.chromium.launch(channel='chrome', headless=not args.headed)
