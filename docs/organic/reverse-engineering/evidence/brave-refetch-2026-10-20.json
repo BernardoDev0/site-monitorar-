@@ -1,0 +1,33 @@
+{
+ "engine": "search.brave.com/submit-url",
+ "results": [
+  {
+   "url": "https://www.monitorarconsultoria.com.br/",
+   "at": "2026-10-20T13:10:37+00:00",
+   "httpStatus": 200,
+   "message": "Insert the URL to be re-fetched Submitted Success Thank you for your submission. Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in S",
+   "accepted": true
+  },
+  {
+   "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental",
+   "at": "2026-10-20T13:10:48+00:00",
+   "httpStatus": 200,
+   "message": "Insert the URL to be re-fetched Submitted Success Thank you for your submission. Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in S",
+   "accepted": true
+  },
+  {
+   "url": "https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj",
+   "at": "2026-10-20T13:10:59+00:00",
+   "httpStatus": 200,
+   "message": "Insert the URL to be re-fetched Submitted Success Thank you for your submission. Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in S",
+   "accepted": true
+  },
+  {
+   "url": "https://www.monitorarconsultoria.com.br/emissoes-fugitivas",
+   "at": "2026-10-20T13:11:10+00:00",
+   "httpStatus": 200,
+   "message": "Insert the URL to be re-fetched Submitted Success Thank you for your submission. Brave Search uses private usage metrics to estimate overall activity and performance. You can turn off this option in S",
+   "accepted": true
+  }
+ ]
+}

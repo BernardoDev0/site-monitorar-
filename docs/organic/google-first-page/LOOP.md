@@ -54,20 +54,25 @@ Pedido do proprietário: "foque só em emissões fugitivas", 1º ou 2º no orgâ
 
 ## Fila de pedidos de indexação (cota de cerca de 10 por dia, **por conta**, não por propriedade)
 
-Ordem definida pela inspeção de 20/10 (`evidence/inspection-2026-10-20.json`). Pedir só o que continuar fora do índice:
+Ordem revista em 20/10, 13:10 UTC, depois da publicação da engenharia reversa (`docs/organic/reverse-engineering/`). A cota de **inspeção** da propriedade já estava esgotada nesse horário (`gsc.py request` parou no 1º pedido), então nada foi pedido em 20/10. Pedir só o que continuar fora do índice ou que mudou:
 
-1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; "Detectada, mas não indexada"). **Primeiro de todos.**
-2. `https://www.monitorarconsultoria.com.br/consultoria-ambiental` (guia; "Detectada, mas não indexada")
-3. `https://www.monitorarconsultoria.com.br/servicos/ruido-extramuros` (serviço; "Detectada, mas não indexada")
-4. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: o registro do sem www ainda é de 10/10, do tempo do redirecionamento 307. O pedido faz o Google ver o 308 e descartar a entrada antiga.
-5. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado` ("O Google não reconhece o URL")
-6. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
-7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
-8. `https://www.monitorarconsultoria.com.br/blog/planejamento-de-campanha-de-emissoes-fugitivas`
-9. `https://www.monitorarconsultoria.com.br/blog/componentes-sem-acesso-em-programas-ldar`
-10. `https://www.monitorarconsultoria.com.br/politica-privacidade`, só se sobrar cota.
+1. `https://www.monitorarconsultoria.com.br/emissoes-fugitivas` (guia; "Detectada, mas não indexada"; recebeu a fusão do artigo 019 em 20/10). **Primeiro de todos.**
+2. `https://www.monitorarconsultoria.com.br/` (Home: title "Engenharia e consultoria ambiental", H1 "Empresa de engenharia e consultoria ambiental em todo o Brasil" e LocalBusiness, publicados em 20/10).
+3. `https://www.monitorarconsultoria.com.br/consultoria-ambiental` (guia; "Detectada, mas não indexada"; title novo "O que é consultoria ambiental e como escolher").
+4. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-rj` (já indexada; ganhou o Service no JSON-LD; title e H1 não mudaram porque ela está em 2º em "consultoria ambiental").
+5. `https://www.monitorarconsultoria.com.br/servicos/ruido-extramuros` (serviço; "Detectada, mas não indexada")
+6. `python scripts/gsc.py request --property apex https://monitorarconsultoria.com.br/`: o registro do sem www ainda é de 10/10, do tempo do redirecionamento 307. O pedido faz o Google ver o 308 e descartar a entrada antiga.
+7. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-por-estado` ("O Google não reconhece o URL")
+8. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-sp`
+9. `https://www.monitorarconsultoria.com.br/consultoria-ambiental-am`
+10. `https://www.monitorarconsultoria.com.br/blog/planejamento-de-campanha-de-emissoes-fugitivas`
+11. `https://www.monitorarconsultoria.com.br/blog/componentes-sem-acesso-em-programas-ldar`
 
-Home www, `/servicos/emissoes-fugitivas`, `/conteudos/emissoes-fugitivas`, `/blog/o-que-sao-emissoes-fugitivas` e `/consultoria-ambiental-rj` **já estão indexadas** (rastreio em 19/10).
+Home www, `/servicos/emissoes-fugitivas`, `/conteudos/emissoes-fugitivas` e `/consultoria-ambiental-rj` **já estão indexadas** (rastreio em 19/10). `/blog/o-que-sao-emissoes-fugitivas` também estava, mas desde 20/10 responde 308 para o guia: não pedir indexação dela; o Google troca a entrada no próximo rastreio.
+
+**Sitemap:** desde 20/10, `/sitemap.xml` é um índice com `page-sitemap.xml`, `post-sitemap.xml` e `category-sitemap.xml` (126 URLs). Reenviado no Search Console em 20/10, 13:09 UTC ("Sitemap enviado"). No próximo ciclo, conferir em Sitemaps que o Google leu o índice e os 3 filhos.
+
+**Medida das 4 frases do pedido** ("emissões fugitivas", "consultoria ambiental", "consultoria ambiental RJ", "empresa de engenharia ambiental"): uma vez por semana, com `python scripts/google-serp.py "<frase>" --mode peek --output docs/organic/reverse-engineering/serp/<slug>-<data>.json` (1 consulta cada, dentro do limite de 8 a cada 3 h). Linha de base de 20/10: 2º e 5º com `/consultoria-ambiental-rj` nas duas de consultoria; ausente nas outras duas.
 
 **Inspeção completa.** A cota de inspeção é **por propriedade**, renova diariamente e acabou depois de cerca de 40 URLs. Em cada ciclo, enquanto ela durar, inspecionar as URLs do sitemap que ainda não estão em `evidence/inspection-2026-10-20.json` (87 em 20/10). `gsc.py inspect` para sozinho com `quotaExceeded`. Acrescentar os resultados ao mesmo arquivo. As não indexadas entram no fim desta fila.
 

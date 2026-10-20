@@ -160,3 +160,16 @@ O guia já supera o 2º colocado em tudo o que se mede no HTML. O que falta é *
 - Nos termos de consultoria já estamos na página 1 com a página RJ, por isso a Task 9 não mexe no H1 nem no título dela.
 - Em "emissões fugitivas" o bloqueio é a indexação do guia.
 - Em "empresa de engenharia ambiental" a Home precisa mirar a frase (Task 9) e ganhar autoridade (kit do dono em `docs/organic/owner-actions.md`).
+
+## Publicação (20/10, 13:05 UTC)
+
+A Etapa 6 foi implementada e publicada (commits `4e5fca9`..`63f60b3`, deploy de produção pela Vercel). O que mudou e por quê está no `REPORT.md` de `docs/organic/google-first-page/`.
+
+**Evidências** (em `evidence/`):
+- `check-live.json`: 137 verificações, 0 falhas;
+- `audit-local.json`: 126 URLs e 89 artigos, sem problemas;
+- `gsc-requests-2026-10-20.json`: cota de inspeção esgotada;
+- `brave-refetch-2026-10-20.json`: 4 aceitos.
+
+**Próxima medida:** as 4 frases uma vez por semana, com `google-serp.py --mode peek` (ver `LOOP.md`).
+

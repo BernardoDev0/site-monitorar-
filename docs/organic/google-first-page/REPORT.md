@@ -274,3 +274,43 @@ Pedido do proprietário: "se cavar mais a fundo, vai ver que o Google está trav
 - Páginas e Links do Search Console ainda "em processamento": a propriedade www tem dados só desde 17/10.
 
 **Curtas, sem inventar texto:** `/servicos/drager` (92 palavras), `/clientes` (89), `/contato`, `/depoimentos`, `/trabalhe-conosco`, `/conteudos/treinamentos`.
+
+## Engenharia reversa da página 1 e publicação (20/10)
+
+Pedido do dono em 6 etapas: copiar a parte técnica de quem está na página 1 para "emissões fugitivas", "consultoria ambiental", "consultoria ambiental RJ" e "empresa de engenharia ambiental". Dados, decisões e fontes em `docs/organic/reverse-engineering/` (`README.md`, `robots-sitemaps.md`, `on-page-schema.md`, `canibalizacao.md`, `hub-spoke.md`).
+
+**Leitura do Google (20/10, sem personalização, IP do RJ):**
+- "consultoria ambiental": Monitorar em **2º**, com `/consultoria-ambiental-rj`, atrás do diretório oHub;
+- "consultoria ambiental RJ": **5º**, com a mesma página;
+- "emissões fugitivas" e "empresa de engenharia ambiental": ausente.
+
+**O que os líderes têm:**
+- **Parte técnica igual ou pior que a nossa:**
+  - a Rio Ambiental tem um sitemap de 6 URLs e só um LocalBusiness;
+  - a Ética declara um sitemap que dá 404;
+  - Masterplan e Reserva não têm H1;
+  - a Ambiental Consult não tem nenhum JSON-LD.
+- **O que não se copia:** anos de histórico, links, Perfil no Maps.
+
+**Publicado em 20/10** (commits `4e5fca9`..`63f60b3`):
+- robots.txt com um grupo;
+- `/sitemap.xml` como índice de `page`, `post` e `category` (modelo Yoast/Rank Math), só com `loc` e `lastmod`;
+- empresa como Organization + LocalBusiness, com CEP 22775-056 (ViaCEP), contato e catálogo de serviços. Sem `geo`, porque o OpenStreetMap não tem o prédio nº 200;
+- nó WebPage em todas as páginas e Service nas páginas RJ, SP e AM;
+- artigo "O que são emissões fugitivas" fundido no guia, com 308 (aprovado pelo dono);
+- breadcrumb dos artigos pelo pilar;
+- âncoras exatas para a Home, o RJ e o guia de consultoria;
+- Home com title "Engenharia e consultoria ambiental" e H1 "Empresa de engenharia e consultoria ambiental em todo o Brasil";
+- guia de consultoria com title "O que é consultoria ambiental e como escolher".
+- A página RJ não mudou de title nem de H1, porque já está na página 1.
+
+**Conferido em produção:**
+- check-live: 137 de 137;
+- 308 do artigo para o guia;
+- validator.schema.org: 0 erros e 0 avisos em 4 páginas;
+- IndexNow: 200;
+- sitemap reenviado no Search Console;
+- Brave aceitou os 4 pilares.
+
+A cota de inspeção do Search Console estava esgotada: os pedidos de indexação ficaram na fila do `LOOP.md`.
+
