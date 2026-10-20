@@ -6,8 +6,11 @@ Uses the Chrome started for scripts/gsc.py (debug port 9223). Modes:
   signed   the same profile with the ordinary results. Personalised: Google favours sites the account visits, so it overstates.
   clean    an isolated context with no cookies. Closer to a stranger but Google often answers with a captcha, which is reported
            as blocked and never bypassed.
+  peek     one load with peek_pws=0 (the parameter behind that link), confirmed by the footer "Os resultados não são
+           personalizados"; one query instead of two, for rounds that read many phrases.
   default  signed + neutral.
 The first page is the ~10 organic links read; a position is the rank among them (AI Overview and ads excluded).
+Each reading keeps `results`, the full URL and title of every organic link in order, for scripts/serp_reverse_engineer.py.
 With --shots DIR, each Monitorar result is also saved as an image, and the site icon Google shows next to it is hashed:
 the globe placeholder keeps one hash while the icon is missing, and the hash changes when Google starts showing the logo.
 """
@@ -63,10 +66,11 @@ def icons(page, shots, label):
     return found
 
 
-def read(context, phrase, neutral=False, shots=None):
+def read(context, phrase, neutral=False, shots=None, peek=False):
     page = context.new_page()
     try:
-        page.goto('https://www.google.com/search?q=' + quote(phrase) + '&hl=pt-BR&gl=br', wait_until='domcontentloaded', timeout=60000)
+        page.goto('https://www.google.com/search?q=' + quote(phrase) + '&hl=pt-BR&gl=br' + ('&peek_pws=0' if peek else ''),
+                  wait_until='domcontentloaded', timeout=60000)
         page.wait_for_timeout(3500)
         if neutral and '/sorry/' not in page.url:
             link = page.locator('a:has-text("Testar sem personalização")').first
@@ -79,10 +83,13 @@ def read(context, phrase, neutral=False, shots=None):
             return {'phrase': phrase, 'blocked': True}
         links = page.evaluate(LINKS)
         footer = page.inner_text('body')
+        if peek and 'Os resultados não são personalizados' not in footer:
+            return {'phrase': phrase, 'blocked': False, 'error': 'not confirmed as non-personalised'}
         ours = [{'position': i + 1, 'path': urlparse(l['url']).path, 'title': l['title']} for i, l in enumerate(links) if DOMAIN in l['url']]
         return {'phrase': phrase, 'blocked': False, 'personalised': 'Os resultados são personalizados' in footer,
-                'linksRead': len(links), 'monitorar': ours, 'icons': icons(page, shots, 'neutral' if neutral else 'signed'),
-                'top': [urlparse(l['url']).netloc + urlparse(l['url']).path[:50] for l in links[:10]]}
+                'linksRead': len(links), 'monitorar': ours, 'icons': icons(page, shots, 'peek' if peek else 'neutral' if neutral else 'signed'),
+                'top': [urlparse(l['url']).netloc + urlparse(l['url']).path[:50] for l in links[:10]],
+                'results': [{'position': i + 1, 'url': l['url'], 'title': l['title']} for i, l in enumerate(links)]}
     finally:
         page.close()
 
@@ -90,7 +97,7 @@ def read(context, phrase, neutral=False, shots=None):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('phrase')
-    parser.add_argument('--mode', choices=['neutral', 'signed', 'clean', 'default'], default='default')
+    parser.add_argument('--mode', choices=['neutral', 'peek', 'signed', 'clean', 'default'], default='default')
     parser.add_argument('--output')
     parser.add_argument('--shots', help='folder for images of the Monitorar results, to see the icon Google shows')
     args = parser.parse_args()
@@ -101,6 +108,8 @@ if __name__ == '__main__':
             report['readings']['signed'] = read(browser.contexts[0], args.phrase, shots=args.shots)
         if args.mode in ('neutral', 'default'):
             report['readings']['neutral'] = read(browser.contexts[0], args.phrase, neutral=True, shots=args.shots)
+        if args.mode == 'peek':
+            report['readings']['peek'] = read(browser.contexts[0], args.phrase, shots=args.shots, peek=True)
         if args.mode == 'clean':
             clean = browser.new_context(locale='pt-BR')
             try:
@@ -111,5 +120,5 @@ if __name__ == '__main__':
     if args.output:
         open(args.output, 'w', encoding='utf-8').write(text)
     print(json.dumps({k: {x: v[x] for x in ('blocked', 'personalised', 'monitorar', 'icons', 'error') if x in v} for k, v in report['readings'].items()}, ensure_ascii=False))
-    primary = report['readings'].get('neutral') or report['readings'].get('clean')
+    primary = report['readings'].get('neutral') or report['readings'].get('peek') or report['readings'].get('clean')
     sys.exit(0 if not primary or (not primary['blocked'] and 'error' not in primary) else 2)

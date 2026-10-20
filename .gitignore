@@ -43,3 +43,6 @@ __pycache__/
 
 # ChatGPT image downloads and the request pack (working files, not published)
 /imagens-chatgpt/
+
+# Python tools for the competitor reverse-engineering scripts (scripts/requirements-seo.txt)
+.venv-seo/
