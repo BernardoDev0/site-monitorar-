@@ -43,7 +43,7 @@ test('credentials are excluded from public artifacts',async()=>{
 });
 test('HTTP contract: known 200, normalized 308, missing and draft 404',async()=>{
  const server=await startServer('dist',0);const base='http://127.0.0.1:'+server.address().port;
- try{for(const [url,status] of [['/sobre',200],['/contato',200],['/sobre/?x=1',308],['/sobre.html',308],['/missing',404],['/blog/o-que-sao-emissoes-fugitivas',200],['/missing.png',404]]){
+ try{for(const [url,status] of [['/sobre',200],['/contato',200],['/sobre/?x=1',308],['/sobre.html',308],['/missing',404],['/blog/emissoes-fugitivas-petrobras',200],['/missing.png',404]]){
  const r=await fetch(base+url,{redirect:'manual'});assert.equal(r.status,status,url);if(status===404)assert.match(await r.text(),/noindex/);if(url.includes('?'))assert.equal(r.headers.get('location'),'/sobre?x=1');
  }assert.match((await fetch(base+'/sitemap.xml')).headers.get('content-type'),/xml/);}finally{await new Promise(r=>server.close(r));}
 });

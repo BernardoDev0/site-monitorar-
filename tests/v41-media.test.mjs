@@ -6,9 +6,9 @@ import {loadSiteData,safeJson} from '../scripts/page-data.mjs';
 test('visual enrichment includes the approved corpus',async()=>{
  const publicData=await loadSiteData(false),preview=await loadSiteData(true);
  const articles=preview.documents.filter(d=>d.type==='article');
- assert.equal(articles.length,90);
- assert.equal(publicData.candidates.length,94);
- assert.equal(publicData.content.length,94);
+ assert.equal(articles.length,89);
+ assert.equal(publicData.candidates.length,94,'approved documents, retired ones included');
+ assert.equal(publicData.content.length,93,'public documents');
  assert.ok(articles.every(d=>safeJson(publicData).includes(d.title)));
  assert.ok(publicData.documents.filter(d=>d.type==='listing').every(d=>d.entries.length>0));
 });
@@ -18,9 +18,9 @@ test('all eight blog pages preserve exact article membership with valid cover as
  const pages=data.documents.filter(d=>d.type==='listing');
  assert.equal(pages.length,8);
  const listed=pages.flatMap(p=>p.entries.map(d=>d.slug));
- assert.equal(listed.length,90);assert.equal(new Set(listed).size,90);
+ assert.equal(listed.length,89);assert.equal(new Set(listed).size,89);
  assert.deepEqual([...listed].sort(),articles.map(d=>d.slug).sort());
- for(const page of pages)assert.equal(page.entries.length,page.pageNumber===8?6:12);
+ for(const page of pages)assert.equal(page.entries.length,page.pageNumber===8?5:12);
  for(const doc of articles){
   assert.ok(doc.cover.src.startsWith('/media/'));
   await access('public'+doc.cover.src);
@@ -44,6 +44,6 @@ test('public search includes institutional destinations and existing home offeri
  assert.match(home.searchText,/emissões fugitivas/);
  const source=await readFile('src/components/home/OfferingsSection.tsx','utf8');
  assert.ok(source.includes('Programa de detecção e reparo de vazamentos para redução de emissões fugitivas.'));
- assert.equal(data.search.filter(d=>d.slug.startsWith('/blog/')).length,90);
+ assert.equal(data.search.filter(d=>d.slug.startsWith('/blog/')).length,89);
  assert.equal(new Set(data.search.map(d=>d.slug)).size,data.search.length);
 });

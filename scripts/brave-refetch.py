@@ -9,7 +9,7 @@ from playwright.sync_api import sync_playwright
 
 ORIGIN = 'https://www.monitorarconsultoria.com.br'
 PRIORITY = [
-    '/', '/servicos/emissoes-fugitivas', '/conteudos/emissoes-fugitivas', '/blog/o-que-sao-emissoes-fugitivas',
+    '/', '/servicos/emissoes-fugitivas', '/conteudos/emissoes-fugitivas', '/emissoes-fugitivas',
     '/blog/o-que-e-ldar', '/servicos', '/sobre', '/contato', '/blog', '/conteudos', '/servicos/drager',
     '/servicos/ruido-extramuros', '/servicos/hazop', '/servicos/seguranca',
     '/conteudos/qualidade-do-ar', '/conteudos/ruido-ambiental', '/conteudos/areas-impactadas',

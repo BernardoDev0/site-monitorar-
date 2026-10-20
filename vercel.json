@@ -47,6 +47,11 @@
       "permanent": true
     },
     {
+      "source": "/blog/o-que-sao-emissoes-fugitivas",
+      "destination": "https://www.monitorarconsultoria.com.br/emissoes-fugitivas",
+      "permanent": true
+    },
+    {
       "source": "/:path*",
       "has": [
         {

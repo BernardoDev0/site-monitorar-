@@ -4,7 +4,7 @@
   "title": "Emissões fugitivas: o que são, de onde vêm e como medir e controlar",
   "headline": "Emissões fugitivas: o que são, fontes e LDAR",
   "published": "2026-10-19",
-  "updated": "2026-10-19",
+  "updated": "2026-10-20",
   "intro": "Emissões fugitivas são lançamentos difusos de matéria sólida, líquida ou gasosa na atmosfera, feitos por uma fonte sem dispositivo para dirigir ou controlar o fluxo, como os vazamentos em válvulas, conexões e bombas de uma instalação industrial. Este guia reúne a definição legal, as fontes, os impactos, a detecção, o programa LDAR e as exigências do Rio de Janeiro, com fontes oficiais. Atualizado em outubro de 2026.",
   "sections": [
     {
@@ -12,7 +12,7 @@
       "heading": "O que são emissões fugitivas",
       "paragraphs": [
         "Emissões fugitivas são liberações difusas de matéria para a atmosfera, feitas por uma fonte que não tem dispositivo para dirigir ou controlar o fluxo. A Resolução CONAMA nº 382/2006 (art. 3º) define emissão fugitiva como o “lançamento difuso na atmosfera de qualquer forma de matéria sólida, líquida ou gasosa, efetuado por uma fonte desprovida de dispositivo projetado para dirigir ou controlar seu fluxo”.",
-        "Em instalações industriais, isso inclui vazamentos em equipamentos e componentes de processo, como válvulas, conexões, bombas e compressores. O artigo [[O que são emissões fugitivas|/blog/o-que-sao-emissoes-fugitivas]] trata de onde vêm as emissões fugitivas, de por que identificar a fonte importa e de quais perguntas um registro de campo precisa responder.",
+        "Em instalações industriais, isso inclui vazamentos em equipamentos e componentes de processo, como válvulas, conexões, bombas e compressores. [[Ver como reconhecer a fonte|#reconhecer-a-fonte]].",
         "Nos inventários de gases de efeito estufa, o guia do IPCC de 2006 (volume 2, capítulo 4) usa o termo para a liberação, intencional ou não, de gases de efeito estufa durante a extração, o processamento e a entrega de combustíveis fósseis até o ponto de uso final. A definição do IPCC serve à contabilização de gases de efeito estufa; a da CONAMA 382, às fontes fixas de poluentes atmosféricos."
       ]
     },
@@ -54,6 +54,24 @@
         "Em uma instalação típica, a maior parte das emissões vem de válvulas e conexões, por serem os componentes mais numerosos, e a principal causa é a falha de vedação ou de junta por desgaste normal ou manutenção inadequada. Estudos anteriores da EPA estimaram que válvulas e conexões respondem por mais de 90% das emissões de equipamentos com vazamento, sendo as válvulas a fonte mais significativa. Informações mais recentes sugerem que linhas abertas e pontos de amostragem podem representar até 5% a 10% das emissões totais de compostos orgânicos voláteis (COV) por vazamentos de equipamentos.",
         "Segundo o guia, os vazamentos em bombas ocorrem tipicamente na vedação, e os vazamentos em válvulas de alívio de pressão podem ocorrer se a válvula não estiver bem assentada, se operar muito perto da pressão de ajuste ou se a vedação estiver gasta ou danificada.",
         "Essa é uma referência dos Estados Unidos: cada instalação precisa do seu próprio cadastro de componentes. Veja [[Cadastro de componentes para LDAR|/blog/cadastro-de-componentes-para-ldar]] e [[Tanques e classificação de fontes fugitivas|/blog/tanques-vedacoes-e-classificacao-de-fontes-fugitivas]]."
+      ]
+    },
+    {
+      "id": "reconhecer-a-fonte",
+      "heading": "Como reconhecer a fonte de uma emissão fugitiva",
+      "paragraphs": [
+        "A identificação começa pelo caminho de liberação: um componente de processo e uma descarga conduzida por uma chaminé pedem descrições diferentes. Um registro de campo útil relaciona quatro informações:"
+      ],
+      "items": [
+        "o processo em que a liberação acontece;",
+        "o componente, com uma identificação estável, que liga a observação ao reparo e ao acompanhamento;",
+        "a substância de interesse;",
+        "a pergunta que o registro precisa responder."
+      ],
+      "after": [
+        "Sem identificação estável, registros de campanhas diferentes podem parecer comparáveis mesmo quando tratam de equipamentos ou condições distintos.",
+        "Ao receber um registro de campo, separe o que foi observado do que foi inferido. Uma suspeita não confirma a substância, e a ausência de indicação durante uma visita não comprova ausência em qualquer condição futura.",
+        "Antes de pedir orçamento, descreva a necessidade: localizar perdas, organizar o cadastro de componentes, acompanhar reparos ou responder a uma exigência documental. Um objetivo definido permite comparar propostas pela informação que entregam, não só pelo equipamento anunciado. Veja [[Como contratar monitoramento de emissões fugitivas|/blog/como-contratar-monitoramento-de-emissoes-fugitivas]]."
       ]
     },
     {
@@ -135,10 +153,6 @@
       {
         "heading": "Compreender as fontes",
         "links": [
-          [
-            "O que são emissões fugitivas",
-            "/blog/o-que-sao-emissoes-fugitivas"
-          ],
           [
             "Emissões fugitivas e canalizadas",
             "/blog/emissoes-fugitivas-e-canalizadas"

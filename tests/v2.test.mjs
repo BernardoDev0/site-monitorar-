@@ -50,8 +50,9 @@ test('published blog is indexable and search remains noindex; normalized index a
   const index=await (await fetch(base+'/search-index.json')).json();
   assert.ok(index.some(d=>d.slug==='/contato'));
   assert.ok(index.some(d=>d.slug==='/servicos/drager'));
-  assert.equal(index.filter(d=>d.slug.startsWith('/blog/')).length,90);
-  assert.ok(index.some(d=>d.slug==='/blog/o-que-sao-emissoes-fugitivas'));
+  assert.equal(index.filter(d=>d.slug.startsWith('/blog/')).length,89);
+  assert.ok(index.some(d=>d.slug==='/blog/emissoes-fugitivas-petrobras'));
+  assert.ok(!index.some(d=>d.slug==='/blog/o-que-sao-emissoes-fugitivas'),'retired article left the search');
   const sitemap=await readSitemap();for(const route of ['/blog','/conteudos','/busca'])assert.equal(sitemap.includes(route+'</loc>'),route!=='/busca');
  }finally{await new Promise(r=>server.close(r));}
 });

@@ -21,7 +21,11 @@ export async function loadSiteData(preview = false) {
   if (!preview) { validateManifest(published.current, registry); for (const doc of candidates) { const errors = validatePublished(doc, registry,receipts[doc.slug]); if (errors.length) throw new Error(doc.id+': '+errors.join('; ')); } }
   const seen = new Set();
   for (const doc of candidates) { if (seen.has(doc.slug)) throw new Error('Duplicate path: '+doc.slug); seen.add(doc.slug); }
-  const illustrated = await withEditorialMedia(candidates.map(d=>publicDocument(d,registry,preview)));
+  // Retired pages stay approved in the manifest (and its receipts) but leave every public output; vercel.json redirects them.
+  const retired = JSON.parse(await readFile('content/retired.json','utf8'));
+  for (const slug of Object.keys(retired)) if (!seen.has(slug)) throw new Error('Retired page not in the manifest: '+slug);
+  const visible = candidates.filter(d=>!retired[d.slug]);
+  const illustrated = await withEditorialMedia(visible.map(d=>publicDocument(d,registry,preview)));
   const destinations=new Map([...legacy.map(r=>[r.path,{slug:r.canonical,title:r.title.split(' | ')[0]}]),...illustrated.map(d=>[d.slug,{slug:d.slug,title:d.title}])]);
   const documents = illustrated.map(d=>{
     const topic=topics.find(t=>t.id===d.topic_cluster);
@@ -42,8 +46,8 @@ export async function loadSiteData(preview = false) {
   // Index the existing home offerings verbatim, without publishing editorial drafts.
   const offeringsSource = await readFile('src/components/home/OfferingsSection.tsx','utf8');
   const homeSearchText = [...offeringsSource.matchAll(/(?:title|description|fullDescription):\s*"([^"]+)"/g)].map(m=>m[1]).join(' ');
-  const institutionalSearch = legacy.filter(r=>!candidates.some(d=>d.slug===r.path)).map(r=>({slug:r.path,title:r.title.split(' | ')[0],summary:r.description,topic_cluster:'institucional',...(r.path==='/'?{searchText:homeSearchText}:{})}));
-  const search = [...institutionalSearch, ...candidates.map(({slug,title,summary,topic_cluster,reviewed_at})=>({slug,title,summary,topic_cluster,reviewed_at}))];
+  const institutionalSearch = legacy.filter(r=>!visible.some(d=>d.slug===r.path)).map(r=>({slug:r.path,title:r.title.split(' | ')[0],summary:r.description,topic_cluster:'institucional',...(r.path==='/'?{searchText:homeSearchText}:{})}));
+  const search = [...institutionalSearch, ...visible.map(({slug,title,summary,topic_cluster,reviewed_at})=>({slug,title,summary,topic_cluster,reviewed_at}))];
   const pages = [...documents,...editorialPages(documents,preview)];
   const rows = legacy.filter(r=>!pages.some(d=>d.slug===r.path)).map(r=>({...r,page:null}));
   // Full brand name for brand + topic searches, shortened only where it would push the title past ~65 characters.

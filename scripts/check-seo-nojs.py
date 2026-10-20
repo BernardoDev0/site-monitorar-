@@ -8,7 +8,7 @@ parser.add_argument('--base',default='http://127.0.0.1:4173')
 parser.add_argument('--output',required=True)
 args=parser.parse_args()
 docs=json.loads(Path('content/published.json').read_text(encoding='utf-8'))['current']
-routes=['/','/blog','/blog/pagina/8','/blog/o-que-sao-emissoes-fugitivas','/blog/o-que-e-ldar']
+routes=['/','/blog','/blog/pagina/8','/blog/emissoes-fugitivas-petrobras','/blog/o-que-e-ldar']
 results=[]
 with sync_playwright() as p:
     browser=p.chromium.launch(channel='chrome')
