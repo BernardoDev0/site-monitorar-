@@ -19,8 +19,6 @@ import {
   FileText,
   CheckCircle
 } from "lucide-react";
-import { photoUrl } from '@/lib/photo';
-const paisagemImage=photoUrl('/src/assets/paisagem.png');
 import { VideoHero as StaticHero } from "@/components/VideoHero";
 import { FeaturedArticles } from "@/components/FeaturedArticles";
 import { Reveal } from "@/components/Reveal";
@@ -184,10 +182,7 @@ export default function Home() {
 
       {/* CTA Section */}
       <section className="erm-cta erm-section relative overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${paisagemImage})` }}
-        ></div>
+        <Photo src="/src/assets/paisagem.png" alt="" width={2048} height={2048} loading="lazy" sizes="100vw" className="absolute inset-0 h-full w-full object-cover"/>
 
         <div className="absolute inset-0 bg-black/55"></div>
 
