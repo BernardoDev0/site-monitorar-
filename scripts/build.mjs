@@ -8,7 +8,7 @@ import { pathToFileURL } from 'node:url';
 import { legacy } from './routes.mjs';
 import { schemaFor } from './schema.mjs';
 import { publicModifiedAt } from './public-dates.mjs';
-import { sitemapGroups,sitemapGroup,urlsetXml,sitemapIndexXml } from './sitemaps.mjs';
+import { sitemapGroups,sitemapGroup,urlsetXml,readableUrlsetXml } from './sitemaps.mjs';
 import { loadCorpus,loadRegistry,publicDocument,validatePublic,validateManifest,origin } from './editorial.mjs';
 import { editorialPages } from './editorial-pages.mjs';
 import { business } from './seo-data.mjs';
@@ -55,10 +55,10 @@ const urls=preview?[]:rows.filter(r=>r.canonical===r.path&&r.path!=='/404'&&!r.p
 const rowBySlug=new Map(rows.map(r=>[r.path,r]));
 const newest=dates=>dates.filter(Boolean).reduce((a,b)=>a===null||Date.parse(b)>Date.parse(a)?b:a,null);
 const modifiedAt=row=>publicModifiedAt(row.page)||row.updated||newest((row.page?.entries||[]).map(e=>rowBySlug.get(e.slug)).filter(Boolean).map(modifiedAt));
-// Each child sitemap takes the newest date among its URLs; the index at /sitemap.xml lists the three.
+// Keep the old grouped endpoints available; /sitemap.xml lists all public URLs directly.
 const children=sitemapGroups.map(name=>{const entries=urls.filter(r=>sitemapGroup(r)===name).map(r=>({loc:origin+r.path,lastmod:modifiedAt(r)}));return {name,entries,lastmod:newest(entries.map(e=>e.lastmod))};});
 for(const child of children)await writeFile(out+'/'+child.name+'-sitemap.xml',urlsetXml(child.entries));
-await writeFile(out+'/sitemap.xml',sitemapIndexXml(children.map(child=>({loc:origin+'/'+child.name+'-sitemap.xml',lastmod:child.lastmod}))));
+await writeFile(out+'/sitemap.xml',readableUrlsetXml(urls.map(r=>({loc:origin+r.path,lastmod:modifiedAt(r)}))));
 await writeFile(out+'/robots.txt',preview?'User-agent: *\nDisallow: /\n':(await readFile('public/robots.txt','utf8')).replace(/\r\n/g,'\n').trim()+'\n\nSitemap: '+origin+'/sitemap.xml\n');
 // IndexNow ownership key: a public identifier served only by the public build.
 if(!preview&&integrations.INDEXNOW_KEY){

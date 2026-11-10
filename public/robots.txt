@@ -1,2 +1,4 @@
 User-agent: *
-Allow: /
+Disallow: /doutor/
+Disallow: /inc/
+Disallow: /imagens/informacoes/thumb/

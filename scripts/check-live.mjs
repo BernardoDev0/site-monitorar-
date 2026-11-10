@@ -9,11 +9,12 @@ await check('/contato',200,/Preparar mensagem/);
 await check('/blog',200,/<h1[\s>]/);
 const robots=await check('/robots.txt',200,/Sitemap: https:\/\/www.monitorarconsultoria.com.br\/sitemap.xml/);
 if(/^Disallow:\s*\/\s*$/m.test(robots))results.push({route:'/robots.txt',passed:false,reason:'Whole-site disallow found; inspect user-agent group'});
-// /sitemap.xml is an index; every child must answer and every URL in them must be a live, indexable page.
-const index=await check('/sitemap.xml',200,/<sitemapindex/);
-let sitemap='';
-for(const [,child] of index.matchAll(/<sitemap><loc>(.*?)<\/loc>/g))sitemap+=await check(new URL(child).pathname,200,/<urlset/);
-for(const [,url] of sitemap.matchAll(/<url><loc>(.*?)<\/loc>/g)){
+// Accept a direct urlset or the previous index, including indented XML.
+const index=await check('/sitemap.xml',200,/<(?:sitemapindex|urlset)[\s>]/);
+let sitemap=index.includes('<sitemapindex')?'':index;
+for(const [,child] of index.matchAll(/<sitemap>\s*<loc>(.*?)<\/loc>/g))sitemap+=await check(new URL(child).pathname,200,/<urlset/);
+if(!/<url>\s*<loc>/.test(sitemap))results.push({route:'/sitemap.xml',passed:false,reason:'Empty sitemap'});
+for(const [,url] of sitemap.matchAll(/<url>\s*<loc>(.*?)<\/loc>/g)){
  const u=new URL(url);if(u.origin!==origin){results.push({url,passed:false,reason:'Unexpected canonical host'});continue;}
  const body=await check(u.pathname,200,/<h1[\s>]/);
  if(/<meta name="robots" content="noindex/.test(body))results.push({url,passed:false,reason:'Noindex URL in sitemap'});

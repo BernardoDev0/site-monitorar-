@@ -4,6 +4,7 @@ import urllib.request, urllib.error, xml.etree.ElementTree as ET
 from html.parser import HTMLParser
 from pathlib import Path
 from urllib.parse import urljoin, urlsplit
+from urllib.robotparser import RobotFileParser
 
 ORIGIN='https://www.monitorarconsultoria.com.br'
 class HTML(HTMLParser):
@@ -59,11 +60,13 @@ def require(condition,message):
     if not condition:problems.append(message)
 require(status==200 and 'application/xml' in mime,'Sitemap response/MIME')
 require(len(locations)==len(set(locations)),'Duplicate sitemap entries')
-require([urlsplit(c).path for c in children]==['/page-sitemap.xml','/post-sitemap.xml','/category-sitemap.xml'],'Sitemap index of page, post and category sitemaps')
+require(root.tag in ['{'+ns['s']+'}urlset','{'+ns['s']+'}sitemapindex'] and bool(entries),'Valid nonempty sitemap')
 require(all(ORIGIN+slug in locations for slug in articles),'Missing published article in sitemap')
 require(all(urlsplit(url).netloc=='www.monitorarconsultoria.com.br' for url in locations),'Unexpected canonical host')
 robots=read('/robots.txt')[0]
-require('User-agent: *' in robots and 'Allow: /' in robots and 'Sitemap: '+ORIGIN+'/sitemap.xml' in robots,'robots directives')
+require('User-agent: *' in robots and 'Sitemap: '+ORIGIN+'/sitemap.xml' in robots,'robots directives')
+robot_rules=RobotFileParser();robot_rules.parse(robots.splitlines())
+require(all(robot_rules.can_fetch(agent,url) for agent in ['Googlebot','bingbot','OAI-SearchBot'] for url in locations),'Robots allows all sitemap URLs')
 require(not re.search(r'^Disallow:\s*/\s*$',robots,re.M),'Whole-site robots block')
 
 def check(url):

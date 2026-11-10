@@ -3,7 +3,7 @@ import assert from 'node:assert/strict';
 import {readFile,readdir,access} from 'node:fs/promises';
 import {indexNowPayload} from '../scripts/indexnow.mjs';
 import {seoDescription} from '../scripts/seo-snippets.mjs';
-import {readSitemap} from '../scripts/sitemaps.mjs';
+import {readSitemap,sitemapIndexXml,expandSitemap} from '../scripts/sitemaps.mjs';
 import {loadSiteData} from '../scripts/page-data.mjs';
 const integrations=JSON.parse(await readFile('content/site-integrations.json','utf8'));
 const sitemap=await readSitemap();
@@ -29,8 +29,11 @@ test('every sitemap page names the site, keeps a unique branded title and stays 
   assert.ok(!titles.has(t),'duplicate title '+t);titles.add(t);
  }
 });
-test('robots.txt has one group for every crawler, allows everything and names the sitemap',async()=>{
- assert.equal(await readFile('dist/robots.txt','utf8'),'User-agent: *\nAllow: /\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n');
+test('robots.txt follows the requested reference without blocking public URLs',async()=>{
+ const robots=await readFile('dist/robots.txt','utf8');
+ assert.equal(robots,'User-agent: *\nDisallow: /doutor/\nDisallow: /inc/\nDisallow: /imagens/informacoes/thumb/\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n');
+ const blocked=[...robots.matchAll(/^Disallow: (.+)$/gm)].map(m=>m[1]);
+ for(const path of [...paths,'/assets/','/media/','/favicon.ico'])assert.ok(blocked.every(prefix=>!path.startsWith(prefix)),path);
 });
 test('IndexNow key is published only by the public build',async()=>{
  const key=integrations.INDEXNOW_KEY;
@@ -49,15 +52,15 @@ test('IndexNow payload carries only canonical sitemap URLs',()=>{
 const ORIGIN='https://www.monitorarconsultoria.com.br';
 const locs=xml=>[...xml.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
 const children={page:await readFile('dist/page-sitemap.xml','utf8').catch(()=>''),post:await readFile('dist/post-sitemap.xml','utf8').catch(()=>''),category:await readFile('dist/category-sitemap.xml','utf8').catch(()=>'')};
-test('sitemap.xml is an index of the page, post and category sitemaps',async()=>{
- const index=await readFile('dist/sitemap.xml','utf8');
- assert.match(index,/^<\?xml[^>]*\?><sitemapindex xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
- assert.deepEqual(locs(index),['page','post','category'].map(name=>ORIGIN+'/'+name+'-sitemap.xml'));
- for(const [name,xml] of Object.entries(children)){
-  const dates=[...xml.matchAll(/<lastmod>(.*?)<\/lastmod>/g)].map(m=>m[1]);
-  const newest=dates.reduce((a,b)=>Date.parse(b)>Date.parse(a)?b:a);
-  assert.ok(index.includes('<sitemap><loc>'+ORIGIN+'/'+name+'-sitemap.xml</loc><lastmod>'+newest+'</lastmod></sitemap>'),name+' child lastmod must be its newest URL date '+newest);
- }
+test('sitemap.xml directly lists every URL and preserves grouped endpoints',async()=>{
+ const xml=await readFile('dist/sitemap.xml','utf8');
+ assert.match(xml,/^<\?xml[^>]*\?>\s*<urlset xmlns="http:\/\/www\.sitemaps\.org\/schemas\/sitemap\/0\.9">/);
+ assert.doesNotMatch(xml,/<sitemapindex|ambiens\.com\.br|Screaming Frog/);
+ assert.equal(locs(xml).length,126);
+ assert.equal(new Set(locs(xml)).size,126);
+ assert.deepEqual(locs(xml).sort(),Object.values(children).flatMap(locs).sort());
+ const entries=source=>[...source.matchAll(/<url>\s*<loc>(.*?)<\/loc>\s*<lastmod>(.*?)<\/lastmod>/g)].map(m=>[m[1],m[2]]).sort();
+ assert.deepEqual(entries(xml),Object.values(children).flatMap(entries).sort());
 });
 test('articles live only in the post sitemap, listings in the category sitemap, everything else in the page sitemap',async()=>{
  const of=name=>locs(children[name]).map(u=>u.slice(ORIGIN.length)||'/');
@@ -72,12 +75,20 @@ test('articles live only in the post sitemap, listings in the category sitemap, 
  const expected=rows.filter(r=>r.canonical===r.path&&r.path!=='/404'&&!r.page?.noindex).map(r=>r.path);
  assert.deepEqual([...all].sort(),[...expected].sort());
 });
-test('no sitemap carries priority or changefreq',async()=>{
- for(const xml of [await readFile('dist/sitemap.xml','utf8'),...Object.values(children)])assert.doesNotMatch(xml,/<priority>|<changefreq>/);
+test('public sitemap follows the weekly reference with home and internal priorities',async()=>{
+ const xml=await readFile('dist/sitemap.xml','utf8');
+ const entries=[...xml.matchAll(/<url>([\s\S]*?)<\/url>/g)];
+ assert.equal(entries.length,126);
+ for(const [,entry] of entries){
+  assert.match(entry,/<changefreq>weekly<\/changefreq>/);
+  assert.ok(entry.includes('<priority>'+(entry.includes('<loc>'+ORIGIN+'/</loc>')?'1.0':'0.8')+'</priority>'));
+ }
 });
 test('IndexNow refuses a sitemap index and submits the URLs of its children',async()=>{
- const key=integrations.INDEXNOW_KEY,index=await readFile('dist/sitemap.xml','utf8');
+ const key=integrations.INDEXNOW_KEY,index=sitemapIndexXml(Object.keys(children).map(name=>({loc:ORIGIN+'/'+name+'-sitemap.xml'})));
  assert.throws(()=>indexNowPayload(index,key),/index/i);
+ const expanded=await expandSitemap(index,loc=>readFile('dist'+new URL(loc).pathname,'utf8'));
+ assert.deepEqual(locs(expanded).sort(),locs(sitemap).sort());
  assert.equal(indexNowPayload(sitemap,key).urlList.length,locs(sitemap).length);
  assert.equal(locs(sitemap).length,Object.values(children).reduce((n,xml)=>n+locs(xml).length,0));
 });
@@ -467,7 +478,7 @@ test('articles name their subject as the section',async()=>{
  const article=graphOf(await page('/blog/o-que-e-ldar')).find(n=>n['@type']==='BlogPosting');
  assert.equal(article.articleSection,'Emissões fugitivas');
 });
-const lastmods=Object.fromEntries([...sitemap.matchAll(/<url><loc>https:\/\/www\.monitorarconsultoria\.com\.br(.*?)<\/loc>(?:<lastmod>(.*?)<\/lastmod>)?<\/url>/g)].map(m=>[m[1],m[2]]));
+const lastmods=Object.fromEntries([...sitemap.matchAll(/<url>\s*<loc>https:\/\/www\.monitorarconsultoria\.com\.br(.*?)<\/loc>\s*<lastmod>(.*?)<\/lastmod>/g)].map(m=>[m[1],m[2]]));
 test('every sitemap URL carries the date of its last public change',async()=>{
  const today=new Date().toISOString().slice(0,10);
  assert.equal(Object.keys(lastmods).length,paths.length);
