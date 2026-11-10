@@ -1,14 +1,14 @@
 import {readFileSync} from 'node:fs';
 const guideUpdated=name=>JSON.parse(readFileSync(new URL(`../content/${name}-guia.json`,import.meta.url),'utf8')).updated;
 // Last change to each page's public content, for the sitemap lastmod (never the build time). The guides keep theirs in their JSON.
-const updated={'/':'2026-11-10','/sobre':'2026-10-18','/servicos':'2026-10-19','/servicos/seguranca':'2026-10-19','/servicos/drager':'2026-10-19',
- '/consultoria-ambiental-rj':'2026-10-20','/consultoria-ambiental-sp':'2026-10-19','/consultoria-ambiental-am':'2026-10-19','/consultoria-ambiental-por-estado':'2026-10-19',
+const updated={'/':'2026-11-10','/sobre':'2026-11-10','/servicos':'2026-10-19','/servicos/seguranca':'2026-10-19','/servicos/drager':'2026-10-19',
+ '/consultoria-ambiental-rj':'2026-11-10','/consultoria-ambiental-sp':'2026-10-19','/consultoria-ambiental-am':'2026-10-19','/consultoria-ambiental-por-estado':'2026-10-19',
  '/emissoes-fugitivas':guideUpdated('emissoes-fugitivas'),'/consultoria-ambiental':guideUpdated('consultoria-ambiental'),
  '/clientes':'2026-10-18','/depoimentos':'2026-10-18','/trabalhe-conosco':'2026-10-18','/contato':'2026-10-18','/politica-privacidade':'2026-10-18'};
 
 export const legacy=[
- ['/', 'Engenharia e consultoria ambiental | Monitorar Consultoria','Empresa de engenharia e consultoria ambiental com sede no RJ. Atende qualquer estado, com foco em RJ, SP e Amazonas: emissões fugitivas, LDAR, ar e ruído.'],
- ['/sobre','Sobre a Monitorar Consultoria','Conheça a Monitorar Consultoria, sua história e atuação em meio ambiente e segurança do trabalho.'],
+ ['/', 'Engenharia e consultoria ambiental | Monitorar Consultoria','Empresa de engenharia e consultoria ambiental desde 2009: mais de 16 anos. Atende qualquer estado, com foco em RJ, SP e Amazonas. Emissões fugitivas e LDAR.'],
+ ['/sobre','Sobre a Monitorar Consultoria','Conheça a Monitorar Consultoria: desde 2009, há mais de 16 anos de atuação em meio ambiente e segurança do trabalho, com sede no Rio de Janeiro.'],
  ['/sobre/historia','História | Monitorar Consultoria','História e trajetória apresentadas pela Monitorar Consultoria.','/sobre'],
  ['/sobre/missao','Missão | Monitorar Consultoria','Missão e valores apresentados pela Monitorar Consultoria.','/sobre'],
  ['/sobre/equipe','Equipe | Monitorar Consultoria','Conheça a atuação da equipe da Monitorar Consultoria.','/sobre'],
@@ -18,7 +18,7 @@ export const legacy=[
  ['/servicos/hazop','HAZOP | Monitorar Consultoria','Informações sobre análise de operabilidade e perigos e contato com a Monitorar.','/servicos/seguranca'],
  ['/servicos/auditorias','Auditorias | Monitorar Consultoria','Serviços de auditoria e avaliação de sistemas de gestão apresentados pela Monitorar.','/servicos/seguranca'],
  ['/servicos/treinamentos','Treinamentos | Monitorar Consultoria','Conheça a área de capacitação e treinamentos apresentada pela Monitorar Consultoria.','/servicos/seguranca'],
- ['/consultoria-ambiental-rj','Consultoria ambiental no RJ | Monitorar Consultoria','Consultoria e engenharia ambiental com sede no Rio de Janeiro: emissões fugitivas e LDAR, qualidade do ar, ruído, licenciamento e áreas impactadas.'],
+ ['/consultoria-ambiental-rj','Consultoria ambiental no RJ | Monitorar Consultoria','Consultoria ambiental no Rio de Janeiro desde 2009, há mais de 16 anos. Engenharia ambiental, emissões fugitivas, LDAR, ruído e licenciamento.'],
  ['/consultoria-ambiental-sp','Consultoria ambiental em São Paulo | Monitorar Consultoria','Consultoria e engenharia ambiental em São Paulo, um dos estados de atuação principal da Monitorar: emissões fugitivas, LDAR, ar, ruído e licenciamento ambiental.'],
  ['/consultoria-ambiental-am','Consultoria ambiental no Amazonas | Monitorar Consultoria','Consultoria e engenharia ambiental no Amazonas, um dos estados de atuação principal da Monitorar: emissões fugitivas, LDAR, ar, ruído e licenciamento ambiental.'],
  ['/emissoes-fugitivas','Emissões fugitivas: o que são, fontes e LDAR | Monitorar','Emissões fugitivas: o que são, de onde vêm, como detectar e controlar com LDAR e o inventário de GEE no RJ, com fontes oficiais (CONAMA, EPA, IPCC e INEA).'],

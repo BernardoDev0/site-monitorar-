@@ -32,7 +32,7 @@ const achievements = [
 ];
 
 
-export default function About(){return <div className="v4-company"><PageIntro eyebrow="Sobre Nós" title="Monitorar Consultoria"><p>16 anos construindo excelência em segurança do trabalho e meio ambiente</p><p>Fundada em 2009 · 500+ Projetos · 33º no Ranking Exame</p></PageIntro>      {/* Nossa História */}
+export default function About(){return <div className="v4-company"><PageIntro eyebrow="Sobre Nós" title="Monitorar Consultoria"><p>Mais de 16 anos construindo excelência em segurança do trabalho e meio ambiente</p><p>Fundada em 2009 · 500+ Projetos · 33º no Ranking Exame</p></PageIntro>      {/* Nossa História */}
       <section id="historia" className="py-20 bg-gradient-to-br from-slate-50 to-green-50/30">
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto">

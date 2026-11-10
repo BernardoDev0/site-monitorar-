@@ -33,7 +33,7 @@ import { Rich } from "@/components/Guide";
 import faq from "../../content/home-faq.json";
 
 const stats = [
-  { number: "16", label: "Anos de experiência", icon: Award },
+  { number: "16+", label: "Anos de experiência", icon: Award },
   { number: "800%", label: "Crescimento", icon: TrendingUp },
   { number: "33ª", label: "Colocação ranking Exame", icon: Globe },
   { number: "100+", label: "Clientes atendidos", icon: Users },
@@ -159,7 +159,7 @@ export default function Home() {
       <section className="site-wrap section-space home-company">
         <p className="eyebrow">Consultoria ambiental</p>
         <h2>Consultoria ambiental para empresas de todo o Brasil</h2>
-        <p>A Monitorar Consultoria é uma empresa de engenharia ambiental e de consultoria ambiental com sede no Rio de Janeiro, fundada em 2009. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
+        <p>A Monitorar Consultoria é uma empresa de engenharia ambiental e de consultoria ambiental com sede no Rio de Janeiro. Atuamos desde 2009, há mais de 16 anos. Atendemos projetos em qualquer estado do Brasil, com atuação principal no RJ, em São Paulo e no Amazonas.</p>
         <p>Nossos serviços de consultoria ambiental incluem monitoramento de emissões fugitivas e LDAR, qualidade do ar, PTS e Procon Fumaça Preta, ruído extramuros, áreas impactadas com avaliação geoambiental, licenciamento ambiental, auditoria e certificação ambiental e monitoramento de efluentes.</p>
         <p>Para entender o que faz uma empresa de consultoria ambiental, leia <a className="text-link" href="/consultoria-ambiental">o que é consultoria ambiental e como escolher</a>. Para empresas no Rio de Janeiro, veja a <a className="text-link" href="/consultoria-ambiental-rj">consultoria ambiental no RJ</a>; atendemos também <a className="text-link" href="/consultoria-ambiental-sp">em São Paulo</a> e <a className="text-link" href="/consultoria-ambiental-am">no Amazonas</a>.</p>
       </section>
