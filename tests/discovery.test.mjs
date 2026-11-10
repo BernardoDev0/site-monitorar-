@@ -29,9 +29,13 @@ test('every sitemap page names the site, keeps a unique branded title and stays 
   assert.ok(!titles.has(t),'duplicate title '+t);titles.add(t);
  }
 });
-test('robots.txt follows the requested reference without blocking public URLs',async()=>{
+test('robots.txt allows public discovery and declares the canonical sitemap once',async()=>{
  const robots=await readFile('dist/robots.txt','utf8');
- assert.equal(robots,'User-agent: *\nDisallow: /doutor/\nDisallow: /inc/\nDisallow: /imagens/informacoes/thumb/\n\nSitemap: https://www.monitorarconsultoria.com.br/sitemap.xml\n');
+ assert.match(robots,/User-agent: \*\nAllow: \/\n/);
+ for(const agent of ['Googlebot','bingbot','OAI-SearchBot','PerplexityBot','Claude-SearchBot'])assert.ok(robots.includes('User-agent: '+agent+'\n'),agent);
+ assert.deepEqual(robots.match(/^Sitemap:.*$/gm),['Sitemap: https://www.monitorarconsultoria.com.br/sitemap.xml']);
+ assert.doesNotMatch(robots,/Disallow:|wp-admin|\/doutor\/|\/inc\/|\/imagens\/informacoes\/thumb\//);
+ assert.equal(await readFile('dist-preview/robots.txt','utf8'),'User-agent: *\nDisallow: /\n');
  const blocked=[...robots.matchAll(/^Disallow: (.+)$/gm)].map(m=>m[1]);
  for(const path of [...paths,'/assets/','/media/','/favicon.ico'])assert.ok(blocked.every(prefix=>!path.startsWith(prefix)),path);
 });

@@ -1,4 +1,11 @@
+# Monitorar Consultoria - paginas e recursos publicos.
 User-agent: *
-Disallow: /doutor/
-Disallow: /inc/
-Disallow: /imagens/informacoes/thumb/
+Allow: /
+
+# Busca tradicional e descoberta em assistentes de IA.
+User-agent: Googlebot
+User-agent: bingbot
+User-agent: OAI-SearchBot
+User-agent: PerplexityBot
+User-agent: Claude-SearchBot
+Allow: /

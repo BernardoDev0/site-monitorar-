@@ -1,5 +1,7 @@
 # Experimento de formato de sitemap e robots — 10/11/2026
 
+Atualização: a política de robots deste registro histórico foi substituída por [robots-ai-policy.md](../robots-ai-policy.md), a pedido do proprietário. O sitemap deste experimento permanece.
+
 Solicitação explícita do proprietário: adotar o formato de https://www.ambiens.com.br/sitemap.xml e as regras de https://www.ambiens.com.br/robots.txt, adaptados ao domínio da Monitorar, para observar o resultado.
 
 ## Mudança isolada
